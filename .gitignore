@@ -1,0 +1,59 @@
+# Virtual Environment
+.venv_cuda/
+.venv/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# MuJoCo Logs
+MUJOCO_LOG.TXT
+*.log
+
+# Git / IDE local files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Extra Build Backups & Experimental Folders
+GENESIS/
+final_build_checkpoint/
+
+# Datasets & Big Demos (Keep repository lightweight)
+memory/vision_dataset/
+memory/multi_object_dataset/
+memory/scout_demos.npz
+memory/demo_dataset.npz
+
+# Unused / Alternate Model Weights (Only keeping active CARL-Omega weights)
+memory/carl_vision.pt
+memory/carl_brain.npz
+memory/carl_brain_experiment_backup.npz
+memory/carl_arm_weights.npz
+memory/carl_scout_arm_weights.npz
+memory/carl_arm_standalone_weights_v2.npz
+memory/blob_brain.npz
+memory/scout_bc_weights.npz
+memory/scout_ppo_numpy.npz
+memory/scout_ppo_weights.pth
+
+# Intermediate Testing / Diagnostics Images (Keep only benchmark proof plots)
+mujoco_eye_cam_test.jpg
+multi_object_verification_result.png
+vision_verification_result.png
+eye_cam vision training run and test verification.png
+ebca_project_gantt.png
+ebca_project_gantt.csv
+
+# Telemetry data dumps
+memory/telemetry_autonomous.csv
+memory/*.csv
+memory/*.npy
+memory/*.npz.tmp
