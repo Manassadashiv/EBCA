@@ -23,7 +23,8 @@ import functools
 import torch.nn as nn
 from torchvision.models.detection.ssdlite import SSDLiteClassificationHead
 
-sys.path.append("D:/ebca")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(BASE_DIR)
 
 # Imports from modular brain package
 from brain.carl_reservoir import LiquidStateReservoir
@@ -98,7 +99,7 @@ class SimulationHAL(HardwareInterface):
 
             self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
             self.vision_model = get_ssdlite_model()
-            weights_path = "D:/ebca/memory/carl_multi_object_vision.pt"
+            weights_path = os.path.join(BASE_DIR, "memory", "carl_multi_object_vision.pt")
             if os.path.exists(weights_path):
                 self.vision_model.load_state_dict(torch.load(weights_path, map_location=self.device))
                 print(f"[VISION] Loaded trained multi-object SSD-Lite model on {self.device}")
@@ -433,7 +434,7 @@ class CarlSimulationRunner:
 
         self.dt = 0.033
 
-        xml_path = "D:/ebca/world/vessel_kinetic.xml"
+        xml_path = os.path.join(BASE_DIR, "world", "vessel_kinetic.xml")
         self.hal = SimulationHAL(xml_path, open_space=open_space)
 
         # 2. LSM Reservoir Brain (Layer 1)
@@ -442,7 +443,7 @@ class CarlSimulationRunner:
             spectral_radius=1.0, sparsity=0.15,
             tau=0.1, sigma_in=0.1, seed=42
         )
-        reservoir_path = "D:/ebca/memory/carl_reservoir.npz"
+        reservoir_path = os.path.join(BASE_DIR, "memory", "carl_reservoir.npz")
         self.reservoir.load(reservoir_path)
 
         # 3. Biological Endocrine Kinetics (Layer 2)
@@ -460,7 +461,7 @@ class CarlSimulationRunner:
         self.last_active_place_cell = -1
 
         # 7. Telemetry Logger
-        telemetry_path = "D:/ebca/memory/telemetry_autonomous.csv"
+        telemetry_path = os.path.join(BASE_DIR, "memory", "telemetry_autonomous.csv")
         self.telemetry = TelemetryLogger(telemetry_path, flush_interval=30)
 
         self.current_tick = 0
@@ -887,7 +888,7 @@ def run_simulation(open_space: bool = False):
     except KeyboardInterrupt:
         print("\n[HAL-911] Shutdown requested.")
     finally:
-        runner.reservoir.save("D:/ebca/memory/carl_reservoir.npz")
+        runner.reservoir.save(os.path.join(BASE_DIR, "memory", "carl_reservoir.npz"))
         runner.telemetry.close()
         print(f"[GIS-901] Session complete. Food eaten: {runner.food_eaten_total}. "
               f"RLS updates: {runner.reservoir.total_rls_updates}.")

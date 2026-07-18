@@ -6,6 +6,10 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 import numpy as np
 import cv2
+import os as _os
+_FILE_DIR = _os.path.dirname(_os.path.abspath(__file__))
+BASE_DIR = _os.path.dirname(_FILE_DIR)
+
 
 class CarlVisionDataset(Dataset):
     def __init__(self, dataset_dir, W=160, H=120):
@@ -92,7 +96,7 @@ class CarlVisionNet(nn.Module):
         return cls_out, bbox_out
 
 def train_model():
-    dataset_dir = "D:/ebca/memory/vision_dataset"
+    dataset_dir = os.path.join(BASE_DIR, "memory", "vision_dataset")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"[VISION-TRAIN] Using training device: {device}")
     
@@ -149,7 +153,7 @@ def train_model():
         print(f"Epoch {epoch+1:02d}/{epochs:02d} - Loss: {epoch_loss:.4f} (Cls: {epoch_cls:.4f}, Bbox: {epoch_bbox:.4f})")
         
     # Save model weights
-    save_path = "D:/ebca/memory/carl_vision.pt"
+    save_path = os.path.join(BASE_DIR, "memory", "carl_vision.pt")
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     torch.save(model.state_dict(), save_path)
     print(f"[VISION-TRAIN] Successfully saved model to {save_path}!")

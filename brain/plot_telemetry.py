@@ -6,9 +6,13 @@ import csv
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import os as _os
+_FILE_DIR = _os.path.dirname(_os.path.abspath(__file__))
+BASE_DIR = _os.path.dirname(_FILE_DIR)
+
 
 def generate_proof():
-    csv_path = "D:/ebca/memory/telemetry_autonomous.csv"
+    csv_path = os.path.join(BASE_DIR, "memory", "telemetry_autonomous.csv")
     if not os.path.exists(csv_path):
         print(f"[ERROR] Telemetry file not found at {csv_path}")
         return
@@ -134,7 +138,7 @@ def generate_proof():
     plt.tight_layout()
     
     # Save image
-    output_path = "D:/ebca/autonomous_emergence_proof.png"
+    output_path = os.path.join(BASE_DIR, "autonomous_emergence_proof.png")
     plt.savefig(output_path, dpi=150, bbox_inches='tight')
     print(f"[WIT-401] Verification plot saved to: {output_path}")
 

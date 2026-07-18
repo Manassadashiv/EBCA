@@ -9,7 +9,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-TELEMETRY_PATH = "D:/ebca/memory/telemetry_autonomous.csv"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+TELEMETRY_PATH = os.path.join(BASE_DIR, "memory", "telemetry_autonomous.csv")
 
 def read_telemetry():
     if not os.path.exists(TELEMETRY_PATH):

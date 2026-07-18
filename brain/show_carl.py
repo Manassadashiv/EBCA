@@ -1,9 +1,13 @@
 import mujoco
 import mujoco.viewer
 import numpy as np
+import os as _os
+_FILE_DIR = _os.path.dirname(_os.path.abspath(__file__))
+BASE_DIR = _os.path.dirname(_FILE_DIR)
+
 
 def show_carl():
-    xml_path = "D:/ebca/world/vessel_kinetic.xml"
+    xml_path = os.path.join(BASE_DIR, "world", "vessel_kinetic.xml")
     print(f"Loading model from {xml_path}...")
     model = mujoco.MjModel.from_xml_path(xml_path)
     data = mujoco.MjData(model)

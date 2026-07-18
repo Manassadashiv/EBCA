@@ -9,6 +9,10 @@ import cv2
 import functools
 import torchvision
 from torchvision.models.detection.ssdlite import SSDLite320_MobileNet_V3_Large_Weights, SSDLiteClassificationHead
+import os as _os
+_FILE_DIR = _os.path.dirname(_os.path.abspath(__file__))
+BASE_DIR = _os.path.dirname(_FILE_DIR)
+
 
 class CarlMultiObjectDataset(Dataset):
     def __init__(self, dataset_dir, W=160, H=120):
@@ -106,7 +110,7 @@ def get_ssdlite_model():
     return model
 
 def train_model():
-    dataset_dir = "D:/ebca/memory/multi_object_dataset"
+    dataset_dir = os.path.join(BASE_DIR, "memory", "multi_object_dataset")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"[MULTI-VISION-TRAIN] Using training device: {device}")
     
@@ -158,7 +162,7 @@ def train_model():
         
         print(f"Epoch {epoch+1:02d}/{epochs:02d} - Loss: {epoch_loss:.4f} (Cls: {epoch_cls:.4f}, Bbox: {epoch_box:.4f})")
         
-    save_path = "D:/ebca/memory/carl_multi_object_vision.pt"
+    save_path = os.path.join(BASE_DIR, "memory", "carl_multi_object_vision.pt")
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     torch.save(model.state_dict(), save_path)
     print(f"[MULTI-VISION-TRAIN] Successfully saved model to {save_path}!")

@@ -5,6 +5,10 @@ import cv2
 import mujoco
 import math
 import random
+import os as _os
+_FILE_DIR = _os.path.dirname(_os.path.abspath(__file__))
+BASE_DIR = _os.path.dirname(_FILE_DIR)
+
 
 def project_to_camera(model, data, cam_id, world_pos, W, H):
     cam_pos = data.cam_xpos[cam_id]
@@ -128,11 +132,11 @@ def get_geom_bbox(model, data, cam_id, geom_name, W, H):
     return u_min, v_min, u_max, v_max
 
 def generate_multi_object_dataset():
-    xml_path = "D:/ebca/world/vessel_kinetic.xml"
+    xml_path = os.path.join(BASE_DIR, "world", "vessel_kinetic.xml")
     model = mujoco.MjModel.from_xml_path(xml_path)
     data = mujoco.MjData(model)
     
-    base_dir = "D:/ebca/memory/multi_object_dataset"
+    base_dir = os.path.join(BASE_DIR, "memory", "multi_object_dataset")
     os.makedirs(os.path.join(base_dir, "images"), exist_ok=True)
     os.makedirs(os.path.join(base_dir, "labels"), exist_ok=True)
     os.makedirs(os.path.join(base_dir, "debug_images"), exist_ok=True)

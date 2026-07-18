@@ -7,14 +7,18 @@ import cv2
 import random
 
 # Import model definition from train_vision.py
-sys.path.append("D:/ebca/brain")
+sys.path.append(BASE_DIR)
 from train_vision import CarlVisionNet, CarlVisionDataset
+import os as _os
+_FILE_DIR = _os.path.dirname(_os.path.abspath(__file__))
+BASE_DIR = _os.path.dirname(_FILE_DIR)
+
 
 def verify_predictions():
     device = torch.device("cpu")
     model = CarlVisionNet()
     
-    weights_path = "D:/ebca/memory/carl_vision.pt"
+    weights_path = os.path.join(BASE_DIR, "memory", "carl_vision.pt")
     if not os.path.exists(weights_path):
         print(f"Error: Trained model weights not found at {weights_path}!")
         return
@@ -22,7 +26,7 @@ def verify_predictions():
     model.load_state_dict(torch.load(weights_path, map_location=device))
     model.eval()
     
-    dataset_dir = "D:/ebca/memory/vision_dataset"
+    dataset_dir = os.path.join(BASE_DIR, "memory", "vision_dataset")
     dataset = CarlVisionDataset(dataset_dir)
     
     if len(dataset) == 0:
@@ -88,7 +92,7 @@ def verify_predictions():
     bot_row = np.hstack((grid_imgs[2], grid_imgs[3]))
     grid_all = np.vstack((top_row, bot_row))
     
-    output_path = "D:/ebca/vision_verification_result.png"
+    output_path = os.path.join(BASE_DIR, "vision_verification_result.png")
     cv2.imwrite(output_path, grid_all)
     print(f"[VERIFY] Successfully saved predictions grid to {output_path}!")
 
