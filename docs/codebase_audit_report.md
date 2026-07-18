@@ -11,7 +11,7 @@
 
 | Category | Count |
 |---|---|
-| Python source files | 22 |
+| Python source files | 21 |
 | XML / URDF world files | 3 |
 | Syntax errors | **0** |
 | Stub / TODO markers in code | **0** |
@@ -26,22 +26,22 @@ All files compile clean (`py_compile` verified):
 
 | File | Lines | Status |
 |---|---|---|
-| `carl_reservoir.py` | ~320 | ✅ Active — wired into `carl_simulation.py` |
-| `carl_endocrine.py` | ~280 | ✅ Active — DA/5-HT/NE/ACh wired |
-| `carl_reflex.py` | ~180 | ✅ Active — spiking reflex layer |
-| `carl_grid_cells.py` | ~452 | ✅ Active — place/grid cells wired |
-| `carl_stdp.py` | ~200 | ✅ Active — STDP evaluator |
-| `carl_physarum.py` | ~150 | 🟡 Built, not yet wired into main loop |
-| `carl_omega_extensions.py` | ~280 | 🟡 Built (mirror neurons, theta gate), not yet wired |
-| `astar.py` | ~60 | ✅ Active — used by grid cells |
-| `collect_multi_object_dataset.py` | ~160 | 🔧 Data pipeline — run manually |
-| `collect_vision_dataset.py` | ~120 | 🔧 Data pipeline — run manually |
-| `train_multi_object_vision.py` | ~200 | 🔧 Training script — run manually |
-| `train_vision.py` | ~170 | 🔧 Training script — run manually |
-| `verify_multi_object_predictions.py` | ~100 | 🔧 Eval script — run manually |
-| `verify_vision_predictions.py` | ~100 | 🔧 Eval script — run manually |
-| `plot_telemetry.py` | ~145 | 🔧 Analysis script — run manually |
-| `show_carl.py` | ~60 | 🔧 Visualizer — run manually |
+| `carl_reservoir.py` | 160 | ✅ Active — wired into `carl_simulation.py` |
+| `carl_endocrine.py` | 99 | ✅ Active — DA/5-HT/NE/ACh wired |
+| `carl_reflex.py` | 149 | ✅ Active — spiking reflex layer |
+| `carl_grid_cells.py` | 374 | ✅ Active — place/grid cells wired |
+| `carl_stdp.py` | 221 | ✅ Active — STDP evaluator |
+| `carl_physarum.py` | 213 | 🟡 Built, not yet wired into main loop |
+| `carl_omega_extensions.py` | 107 | 🟡 Built (mirror neurons, theta gate), not yet wired |
+| `astar.py` | 70 | ✅ Active — used by grid cells |
+| `collect_multi_object_dataset.py` | 252 | 🔧 Data pipeline — run manually |
+| `collect_vision_dataset.py` | 211 | 🔧 Data pipeline — run manually |
+| `train_multi_object_vision.py` | 165 | 🔧 Training script — run manually |
+| `train_vision.py` | 157 | 🔧 Training script — run manually |
+| `verify_multi_object_predictions.py` | 91 | 🔧 Eval script — run manually |
+| `verify_vision_predictions.py` | 96 | 🔧 Eval script — run manually |
+| `plot_telemetry.py` | 134 | 🔧 Analysis script — run manually |
+| `show_carl.py` | 40 | 🔧 Visualizer — run manually |
 
 ---
 
