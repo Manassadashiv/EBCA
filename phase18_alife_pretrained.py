@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# CARL Phase 15 â€” MuJoCo Edition
+# CARL Phase 15 — MuJoCo Edition
 # Full biological brain + MuJoCo physics + milestone innovations incoming
 import sys, time, math, numpy as np, asyncio, websockets, json, threading, random
 import os

@@ -1,69 +1,113 @@
-# EBCA: Embodied Biological Cognitive Architecture
+# EBCA — Embodied Biological Cognitive Architecture
 
-This workspace contains the clean, modular, bottom-up implementation of **CARL** (Cognitive Autonomous Recurrent Lifeform). The codebase is structured sequentially, matching the hierarchical layers of a biological robot from the physics level up to the cognitive processing stack.
+**CARL** (Cognitive Autonomous Recurrent Lifeform) is a MuJoCo-simulated digital organism combining a Liquid State Machine reservoir, endocrine neuromodulator dynamics (DA / 5-HT / NE / ACh), STDP plasticity, hippocampal grid & place cells, and a planned imagination / free-energy engine — built toward an eventual sub-₹7,000 physical hardware deployment.
 
 ---
 
-## Workspace Directory Architecture
+## Current Status
+
+| Scope | Completion |
+|---|---|
+| Phase 1 — Digital Twin | **62.5%** |
+| — Codebase modules written | 100% |
+| — Modules actively wired into control loop | 25% |
+| Phase 2 — Physical Hardware | 0% (planned) |
+| **Overall** | **34.4%** |
+
+Full per-module breakdown: [`.agents/AGENTS.md`](.agents/AGENTS.md)
+
+---
+
+## Simulation Worlds
+
+This repo contains **two separate experiments** — they are not interchangeable:
+
+| World file | Body | Entry point | Stage |
+|---|---|---|---|
+| `world/vessel_kinetic.xml` | 28-DOF arm + wheels (100 geoms, 18 joints) | `carl_simulation.py` | Primary development loop |
+| `world/carl_mujoco.xml` | 2-body wheeled predator/prey (48 sensors) | `phase18_alife_pretrained.py` | Standalone emergent-behaviour demo |
+
+---
+
+## Repository Structure
 
 ```
-D:\ebca\
+EBCA/
+├── carl_simulation.py          — Main entry point (30 Hz HAL loop)
+├── phase18_alife_pretrained.py — Standalone ALife demo (emergent brain)
+├── live_plotter.py             — Real-time telemetry dashboard
+├── requirements.txt
 │
-├── [LEVEL 0: PHYSICAL EMBODIMENT & SIMULATION ENGINE]
-│   ├── world/
-│   │   ├── carl_mujoco.xml   <── 3D physics body and actuator definitions (joints, tires, LiDAR)
-│   │   └── carl_mj_physics.py <── MuJoCo engine wrapper and physics stepping control
-│   └── carl_simulation.py     <── Main simulation runner: coordinates HAL and control loops
+├── world/                      — Physics bodies & MuJoCo wrapper
+│   ├── carl_mujoco.xml
+│   ├── vessel_kinetic.xml
+│   ├── carl.urdf
+│   └── carl_mj_physics.py
 │
-├── [LEVEL 1: NEUROMODULATORY REFLEXES & INSTINCTUAL PATHWAYS]
-│   └── brain/
-│       ├── carl_stdp.py       <── Synaptic weight adjustment via Spike-Timing-Dependent Plasticity
-│       └── carl_grid_cells.py <── Hexagonal grid wave models mapping spatial coordinates
+├── brain/                      — Cognitive modules
+│   ├── carl_reservoir.py       — LSM reservoir (RLS-trained readout)
+│   ├── carl_endocrine.py       — DA/NE/5-HT/ACh kinetics
+│   ├── carl_reflex.py          — Spiking reflex layer
+│   ├── carl_grid_cells.py      — Hexagonal grid + place cells
+│   ├── carl_stdp.py            — STDP action evaluator
+│   ├── carl_physarum.py        — Slime-mould-inspired pathfinding
+│   ├── carl_omega_extensions.py— Mirror neurons, predictive allostasis, theta gate
+│   ├── astar.py
+│   └── (8 vision dataset / train / verify scripts — SSD-Lite)
 │
-├── [LEVEL 2: RECURRENT COGNITIVE RESERVOIR & PLANNING]
-│   └── GENESIS/
-│       └── carl_scout/
-│           ├── carl_agent.py   <── Nervous system coordinator running the 8-layer stack
-│           ├── carl_cortex.py  <── Liquid State Machine (LSM) recurrent neural reservoir (500 neurons)
-│           ├── carl_bios.py    <── Dynamic endocrine decay kinetics (DA, 5-HT, NE, ACh)
-│           ├── carl_planner.py <── Spatial navigation routing and A* pathfinding
-│           └── carl_imagination.py <── Predictive world models (T_wm) simulating trajectory forecasts
+├── memory/                     — Checkpoints (gitignored; created at runtime)
 │
-├── [LEVEL 3: PERSISTENT WEIGHT STATE & CHECKPOINTS]
-│   └── memory/
-│       └── carl_brain.npz      <── Serialized neural weights and offline learning state configurations
+├── docs/                       — Architecture docs & roadmaps
 │
-├── [SYSTEM VALIDATION & PERFORMANCE PROFILES]
-│   └── GENESIS/tests_and_diagnostics/
-│       ├── test_speed.py       <── Checks control loop frequency stability against the 30 Hz budget
-│       └── test_stability.py   <── Validates signal value bounding (clamps, NaN prevention checks)
-│
-└── [TECHNICAL DOCUMENTATION & BLUEPRINTS]
-    └── docs/
-        ├── TECHNICAL_SPECIFICATIONS.md <── Mathematical formulations of matrices and updates
-        └── EVOLUTIONARY_ROADMAP.md      <── Rebuild roadmaps and step-by-step progress checklists
+└── external/                   — Adjacent research documents (not CARL-specific)
+    └── cocl.md                 — COCL 2.0 aeroelastic capstone treatise
 ```
 
 ---
 
-## Core Task Mapping & Directory Reference
+## 8-Layer Cognitive Stack
 
-For developers and researchers modifying subsystems:
+| Layer | Concept | Status |
+|---|---|---|
+| 0 | Physical embodiment (chassis, LiDAR, IMU) | ✅ Two world XMLs |
+| 1 | Two-speed memory (working + holographic LTM, HDC) | 🟡 Reservoir built; HDC not wired |
+| 2 | Endocrine + R-STDP plasticity | ✅ Built, partially wired |
+| 3 | Grid/place cells, danger mapping | ✅ Built & wired |
+| 4 | The Witness (metacognition, failure-pattern detection) | ❌ Planned |
+| 5 | Causal reasoning / Optimal MPC | ❌ Planned |
+| 6 | Imagination engine (predictive world model) | 🟡 Referenced; not integrated |
+| 7 | Concept Genesis (unsupervised SOM) | ❌ Planned |
 
-| Task Objective | Target File | Directory Path |
-| :--- | :--- | :--- |
-| Modify physical geometry or actuator properties | `carl_mujoco.xml` | [D:\ebca\world\](file:///D:/ebca/world/) |
-| Edit sensor pre-processing or exteroceptive mapping | `carl_simulation.py` | [D:\ebca\](file:///D:/ebca/) |
-| Adjust hormone baseline levels or decay metrics | `carl_bios.py` | [D:\ebca\GENESIS\carl_scout\](file:///D:/ebca/GENESIS/carl_scout/) |
-| Inspect or alter spatial grid wave dimensions | `carl_grid_cells.py` | [D:\ebca\brain\](file:///D:/ebca/brain/) |
-| Reference core update equations and matrix dimensions | `TECHNICAL_SPECIFICATIONS.md` | [D:\ebca\docs\](file:///D:/ebca/docs/) |
+Full target architecture: [`docs/EBCA_MASTER_ROADMAP.md`](docs/EBCA_MASTER_ROADMAP.md)
 
 ---
 
-## Execution Instructions
+## Quick Start
 
-To start the simulation environment and initialize the base Hardware Abstraction Layer (HAL) loop:
-```powershell
+```bash
+git clone https://github.com/Manassadashiv/EBCA.git
+cd EBCA
+pip install -r requirements.txt
+
+# Primary simulation loop
 python carl_simulation.py
+
+# Standalone emergent-brain demo
+python phase18_alife_pretrained.py
 ```
-This boots the 30 Hz control cycle and launches the interactive MuJoCo visualization viewer.
+
+> Both entry points resolve all paths relative to `__file__` — no drive-letter assumptions.
+> MuJoCo and a CUDA-capable PyTorch install are required for full functionality.
+
+---
+
+## Key Docs
+
+| Doc | Purpose |
+|---|---|
+| [`docs/EBCA_MASTER_ROADMAP.md`](docs/EBCA_MASTER_ROADMAP.md) | Target 8-layer architecture & Pillar definitions |
+| [`docs/GENESIS_MANIFEST.md`](docs/GENESIS_MANIFEST.md) | Phase-by-phase build plan |
+| [`docs/TECHNICAL_SPECIFICATIONS.md`](docs/TECHNICAL_SPECIFICATIONS.md) | Matrix dimensions, update equations |
+| [`docs/SESSION_STATE.md`](docs/SESSION_STATE.md) | Living session notes & current focus |
+| [`.agents/AGENTS.md`](.agents/AGENTS.md) | Per-module integration checklist (honest % complete) |
+| [`docs/codebase_audit_report.md`](docs/codebase_audit_report.md) | Repo health report (regenerated `cee9225`) |
