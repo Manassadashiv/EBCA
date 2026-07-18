@@ -1,6 +1,6 @@
 # Codebase Audit Report
 
-> **Last regenerated:** 18 July 2026 against commit `cee9225`
+> **Last regenerated:** 18 July 2026 against commit `203b3eb` — line counts sourced via `git show HEAD:<file>` on a clean tree (no local diffs)
 > **Scope:** Files actually pushed to the repository — local-only workspace directories
 > (`GENESIS/`, `GENESIS_BIPED/`, `GENESIS_HAND/`) are **excluded** by `.gitignore`
 > and do **not** appear in a fresh clone.
@@ -26,22 +26,22 @@ All files compile clean (`py_compile` verified):
 
 | File | Lines | Status |
 |---|---|---|
-| `carl_reservoir.py` | 160 | ✅ Active — wired into `carl_simulation.py` |
-| `carl_endocrine.py` | 99 | ✅ Active — DA/5-HT/NE/ACh wired |
-| `carl_reflex.py` | 149 | ✅ Active — spiking reflex layer |
-| `carl_grid_cells.py` | 374 | ✅ Active — place/grid cells wired |
-| `carl_stdp.py` | 221 | ✅ Active — STDP evaluator |
-| `carl_physarum.py` | 213 | 🟡 Built, not yet wired into main loop |
-| `carl_omega_extensions.py` | 107 | 🟡 Built (mirror neurons, theta gate), not yet wired |
-| `astar.py` | 70 | ✅ Active — used by grid cells |
-| `collect_multi_object_dataset.py` | 252 | 🔧 Data pipeline — run manually |
-| `collect_vision_dataset.py` | 211 | 🔧 Data pipeline — run manually |
-| `train_multi_object_vision.py` | 165 | 🔧 Training script — run manually |
-| `train_vision.py` | 157 | 🔧 Training script — run manually |
-| `verify_multi_object_predictions.py` | 91 | 🔧 Eval script — run manually |
-| `verify_vision_predictions.py` | 96 | 🔧 Eval script — run manually |
-| `plot_telemetry.py` | 134 | 🔧 Analysis script — run manually |
-| `show_carl.py` | 40 | 🔧 Visualizer — run manually |
+| `carl_reservoir.py` | 196 | ✅ Active — wired into `carl_simulation.py` |
+| `carl_endocrine.py` | 118 | ✅ Active — DA/5-HT/NE/ACh wired |
+| `carl_reflex.py` | 176 | ✅ Active — spiking reflex layer |
+| `carl_grid_cells.py` | 452 | ✅ Active — place/grid cells wired |
+| `carl_stdp.py` | 277 | ✅ Active — STDP evaluator |
+| `carl_physarum.py` | 256 | 🟡 Built, not yet wired into main loop |
+| `carl_omega_extensions.py` | 125 | 🟡 Built (mirror neurons, theta gate), not yet wired |
+| `astar.py` | 72 | ✅ Active — used by grid cells |
+| `collect_multi_object_dataset.py` | 259 | 🔧 Data pipeline — run manually |
+| `collect_vision_dataset.py` | 216 | 🔧 Data pipeline — run manually |
+| `train_multi_object_vision.py` | 171 | 🔧 Training script — run manually |
+| `train_vision.py` | 162 | 🔧 Training script — run manually |
+| `verify_multi_object_predictions.py` | 95 | 🔧 Eval script — run manually |
+| `verify_vision_predictions.py` | 100 | 🔧 Eval script — run manually |
+| `plot_telemetry.py` | 146 | 🔧 Analysis script — run manually |
+| `show_carl.py` | 43 | 🔧 Visualizer — run manually |
 
 ---
 
@@ -49,20 +49,20 @@ All files compile clean (`py_compile` verified):
 
 | File | Lines | Status |
 |---|---|---|
-| `carl_simulation.py` | 901 | ✅ Primary entry point (README-documented) |
-| `phase18_alife_pretrained.py` | 1,033 | ✅ Standalone ALife demo (emergent brain) |
-| `live_plotter.py` | 131 | 🔧 Real-time telemetry dashboard |
+| `carl_simulation.py` | 902 | ✅ Primary entry point (README-documented) |
+| `phase18_alife_pretrained.py` | 1,035 | ✅ Standalone ALife demo (emergent brain) |
+| `live_plotter.py` | 132 | 🔧 Real-time telemetry dashboard |
 
 ---
 
 ## 3. World Files
 
-| File | Body | Used by |
-|---|---|---|
-| `world/vessel_kinetic.xml` | 28-DOF arm + wheels (100 geoms, 18 joints) | `carl_simulation.py` |
-| `world/carl_mujoco.xml` | 2-body wheeled predator/prey (48 sensors) | `phase18_alife_pretrained.py` |
-| `world/carl.urdf` | URDF mirror of kinetic body | Import reference |
-| `world/carl_mj_physics.py` | MuJoCo wrapper | Both simulation runners |
+| World file | Lines | Body | Used by |
+|---|---|---|---|
+| `world/vessel_kinetic.xml` | — | 28-DOF arm + wheels (100 geoms, 18 joints) | `carl_simulation.py` |
+| `world/carl_mujoco.xml` | — | 2-body wheeled predator/prey (48 sensors) | `phase18_alife_pretrained.py` |
+| `world/carl.urdf` | — | URDF mirror of kinetic body | Import reference |
+| `world/carl_mj_physics.py` | 210 | MuJoCo wrapper | Both simulation runners |
 
 > **Note:** `vessel_kinetic.xml` and `carl_mujoco.xml` define **different robots** for two different experiment stages.
 > They are not interchangeable entry points — see README §"Simulation Worlds" for the distinction.
