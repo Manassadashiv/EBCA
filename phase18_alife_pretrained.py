@@ -2,6 +2,8 @@
 # CARL Phase 15 â€” MuJoCo Edition
 # Full biological brain + MuJoCo physics + milestone innovations incoming
 import sys, time, math, numpy as np, asyncio, websockets, json, threading, random
+import os
+sys.path.extend(["world", "brain"])
 from collections import deque
 from carl_mj_physics import (BCFG, init_physics, launch_viewer, viewer_sync,
                               viewer_running, get_state, get_yaw, get_pos_2d,
@@ -512,7 +514,7 @@ def pfc_worker(b_idx):
 def main():
     global CM_global, goal_pos, brains, pfc_active
 
-    model, data = init_physics('carl_mujoco.xml')
+    model, data = init_physics('world/carl_mujoco.xml')
     viewer = launch_viewer()
 
     T_ltm, P_ltm   = fresh_ltm()
@@ -521,17 +523,17 @@ def main():
     
     # ── LOAD OVERNIGHT CHECKPOINT ─────────────────────────────────────────
     import os
-    if os.path.exists('mj_ltm_T.npy'):
-        T_ltm = np.load('mj_ltm_T.npy')
+    if os.path.exists('memory/mj_ltm_T.npy'):
+        T_ltm = np.load('memory/mj_ltm_T.npy')
         print('  [MEMORY] Loaded overnight T_ltm (362k+ steps of physics experience)')
-    if os.path.exists('mj_ltm_P.npy'):
-        P_ltm = np.load('mj_ltm_P.npy')
+    if os.path.exists('memory/mj_ltm_P.npy'):
+        P_ltm = np.load('memory/mj_ltm_P.npy')
         print('  [MEMORY] Loaded overnight P_ltm (confidence matrix)')
-    if os.path.exists('mj_danger.npy'):
-        D_global = np.load('mj_danger.npy')
+    if os.path.exists('memory/mj_danger.npy'):
+        D_global = np.load('memory/mj_danger.npy')
         print('  [MEMORY] Loaded overnight danger grid')
-    if os.path.exists('mj_cm.npy'):
-        CM_global = np.load('mj_cm.npy')
+    if os.path.exists('memory/mj_cm.npy'):
+        CM_global = np.load('memory/mj_cm.npy')
         print('  [MEMORY] Loaded overnight cognitive map')
     
     # Pre-seed wall geometry so A* avoids walls from episode 1
@@ -1025,9 +1027,9 @@ def main():
         time.sleep(DT)
 
         if step % 2000 == 0:
-            np.save('mj_ltm_T.npy', T_ltm_ep); np.save('mj_ltm_P.npy', P_ltm_ep)
-            np.save('mj_danger.npy', D_global); np.save('mj_cm.npy', CM_global)
-            print(f'  [CHECKPOINT ALife Step {step}]')
+            np.save('memory/mj_ltm_T.npy', T_ltm_ep); np.save('memory/mj_ltm_P.npy', P_ltm_ep)
+            np.save('memory/mj_danger.npy', D_global); np.save('memory/mj_cm.npy', CM_global)
+            print(f'  [MEMORY] Saved checkpoint ALife Step {step}')
 
 if __name__ == '__main__':
     main()
