@@ -62,3 +62,6 @@ memory/*.npz.tmp
 
 # Project planning files
 ebca_project_gantt.csv
+
+# Generated PDF walkthroughs
+textbook/*.pdf
