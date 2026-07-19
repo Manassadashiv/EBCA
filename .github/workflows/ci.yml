@@ -43,7 +43,7 @@ jobs:
           from carl_reservoir import LiquidStateReservoir
           from carl_grid_cells import GridCellModule, PlaceCellLayer, HippocampalNavigator
           from carl_reflex import SpikingReflexLayer
-          from carl_stdp import STDPEvaluator
+          from carl_stdp import STDPActionEvaluator
           print('All brain module imports: OK')
           "
 
