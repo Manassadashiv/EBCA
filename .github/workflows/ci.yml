@@ -28,7 +28,7 @@ jobs:
           # Install torch CPU-only (MuJoCo/CUDA not available in CI)
           pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
           # Install remaining deps (skip mujoco — no display/GPU in CI)
-          pip install numpy scipy websockets opencv-python-headless
+          pip install numpy scipy websockets opencv-python-headless pytest pandas matplotlib
 
       - name: Syntax check — all Python files
         run: |

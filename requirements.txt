@@ -6,3 +6,5 @@ matplotlib
 torchvision
 websockets
 opencv-python
+pandas
+pytest
