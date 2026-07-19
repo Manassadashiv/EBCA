@@ -59,3 +59,6 @@ memory/scout_ppo_weights.pth
 memory/telemetry_autonomous.csv
 memory/*.csv
 memory/*.npz.tmp
+
+# Project planning files
+ebca_project_gantt.csv

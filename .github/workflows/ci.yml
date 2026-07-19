@@ -1,0 +1,52 @@
+name: CARL-Ω CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  foundation-checks:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install CPU-only dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # Install torch CPU-only (MuJoCo/CUDA not available in CI)
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          # Install remaining deps (skip mujoco — no display/GPU in CI)
+          pip install numpy scipy websockets opencv-python-headless
+
+      - name: Syntax check — all Python files
+        run: |
+          python -m compileall -q carl_simulation.py phase18_alife_pretrained.py live_plotter.py brain/ world/
+
+      - name: Import smoke test — brain modules (no MuJoCo required)
+        run: |
+          python -c "
+          import sys
+          sys.path.insert(0, 'brain')
+          from carl_endocrine import EndocrineSystem
+          from carl_reservoir import LiquidStateReservoir
+          from carl_grid_cells import GridCellModule, PlaceCellLayer, HippocampalNavigator
+          from carl_reflex import SpikingReflexLayer
+          from carl_stdp import STDPEvaluator
+          print('All brain module imports: OK')
+          "
+
+      - name: Unit tests — core numerical modules
+        run: |
+          python -m pytest tests/ -v --tb=short
