@@ -1,0 +1,22 @@
+{
+  "total_candidate_rollouts_evaluated": 1280,
+  "confusion_matrix": {
+    "true_positives": 17,
+    "false_positives_conservative_vetoes": 665,
+    "false_negatives_missed_collisions": 0,
+    "true_negatives_safe_accepted": 598
+  },
+  "accuracy_pct": 48.05,
+  "false_positive_veto_rate_pct": 52.65,
+  "false_negative_rate_pct": 0.0,
+  "corridor_entering_candidates": {
+    "total_evaluated": 128,
+    "accepted": 128,
+    "acceptance_rate_pct": 100.0
+  },
+  "clearance_metrics": {
+    "min_predicted_clearance_m": 0.0024,
+    "mean_predicted_clearance_m": 0.1305
+  },
+  "safety_audit": "PASS"
+}

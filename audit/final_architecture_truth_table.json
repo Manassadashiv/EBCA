@@ -1,0 +1,110 @@
+[
+  {
+    "subsystem": "Locomotion Kinematics",
+    "mechanism_type": "Differential Drive S-Curve Filter",
+    "code_location": "brain/carl_embodied_organism.py:80-140",
+    "explicitly_engineered": "Wheel radius 0.048m, wheelbase 0.230m, max acceleration 10 rad/s^2",
+    "dynamically_learned": "None",
+    "scientific_status": "ENGINEERED_BEHAVIOUR_DEMONSTRATED",
+    "alternative_explanation": "Standard industrial differential drive controller"
+  },
+  {
+    "subsystem": "Active Gaze Saccades",
+    "mechanism_type": "Uncertainty-Weighted Scan",
+    "code_location": "brain/carl_autonomous_agent.py:210-225",
+    "explicitly_engineered": "Periodic sinusoidal head sweep schedule with target tracking bearing",
+    "dynamically_learned": "Target bearing tracking",
+    "scientific_status": "ENGINEERED_BEHAVIOUR_DEMONSTRATED",
+    "alternative_explanation": "Heuristic head sweep schedule with target tracking"
+  },
+  {
+    "subsystem": "Endogenous Goal Generation",
+    "mechanism_type": "Drive-Threshold Priority Arbitration",
+    "code_location": "brain/carl_endogenous_agency.py:60-140",
+    "explicitly_engineered": "Fixed thresholds (energy < 0.50 -> VIABILITY, thermal > 0.70 -> REST, curiosity > 0.40 -> EXPLORE)",
+    "dynamically_learned": "None",
+    "scientific_status": "ENGINEERED_BEHAVIOUR_DEMONSTRATED",
+    "alternative_explanation": "Classical homeostatic state machine / utility agent"
+  },
+  {
+    "subsystem": "Directional Action Selection",
+    "mechanism_type": "Active Inference & Counterfactual Dreamer",
+    "code_location": "brain/carl_generative_self_model.py:115-320",
+    "explicitly_engineered": "14 discrete curvature candidate arcs, fixed reward weights (+25 velocity, +40 centering, -100 idling)",
+    "dynamically_learned": "None",
+    "scientific_status": "ENGINEERED_BEHAVIOUR_DEMONSTRATED",
+    "alternative_explanation": "20-step Model Predictive Path Integral (MPPI) / Arc Rollout"
+  },
+  {
+    "subsystem": "Operational Action Veto",
+    "mechanism_type": "Geometric Clearance & Boundary Guard",
+    "code_location": "brain/carl_endogenous_agency.py:145-235",
+    "explicitly_engineered": "Dead-end veto, obstacle veto, boundary veto thresholds",
+    "dynamically_learned": "None",
+    "scientific_status": "ENGINEERED_BEHAVIOUR_DEMONSTRATED",
+    "alternative_explanation": "Safety filter / Control Barrier Function"
+  },
+  {
+    "subsystem": "Directional Hysteresis Hold",
+    "mechanism_type": "Steering Persistence Filter",
+    "code_location": "brain/carl_endogenous_agency.py:40-58",
+    "explicitly_engineered": "6-10 tick steering hold upon initiating curve",
+    "dynamically_learned": "None",
+    "scientific_status": "ENGINEERED_BEHAVIOUR_DEMONSTRATED",
+    "alternative_explanation": "Schmitt trigger / low-pass filter preventing chatter"
+  },
+  {
+    "subsystem": "Online Parameter Estimation",
+    "mechanism_type": "Recursive Slip Adaptation",
+    "code_location": "brain/carl_generative_self_model.py:95-102",
+    "explicitly_engineered": "Update rule multiplying friction coefficient on slip ratio mismatch",
+    "dynamically_learned": "Ground friction coefficient mu in [0.1, 2.5]",
+    "scientific_status": "ADAPTATION_DEMONSTRATED",
+    "alternative_explanation": "Recursive least squares / parameter estimator"
+  },
+  {
+    "subsystem": "Episodic Memory Biasing",
+    "mechanism_type": "2048-dim HDC Associative Recall",
+    "code_location": "brain/carl_episodic_memory.py:60-140",
+    "explicitly_engineered": "Quantized 50x50 grid, +25 Free Energy penalty on recalled hazard",
+    "dynamically_learned": "Episodic storage of (x, y, need, action, valence)",
+    "scientific_status": "CAUSALLY_VERIFIED",
+    "alternative_explanation": "Associative vector memory biasing planner cost"
+  },
+  {
+    "subsystem": "Tri-Drive Empowerment",
+    "mechanism_type": "Reachable State Dispersion Capacity",
+    "code_location": "brain/carl_empowerment.py:30-95",
+    "explicitly_engineered": "8-probe kinematic rollout covariance ln det(Cov), clearance scaling",
+    "dynamically_learned": "Mutual information I(A; S) estimation",
+    "scientific_status": "EMERGENT_CANDIDATE",
+    "alternative_explanation": "Information-theoretic controllability estimation"
+  },
+  {
+    "subsystem": "Stuck Detection & Escalation",
+    "mechanism_type": "Rolling Window Stall Monitor",
+    "code_location": "brain/carl_stuck_recovery.py:25-180",
+    "explicitly_engineered": "20-tick displacement window threshold (dx < 0.02m), 3-tier state machine (Reverse -> Spin -> Breakout)",
+    "dynamically_learned": "None",
+    "scientific_status": "ENGINEERED_BEHAVIOUR_DEMONSTRATED",
+    "alternative_explanation": "Classical fault detection and recovery protocol"
+  },
+  {
+    "subsystem": "Vertical Jumping",
+    "mechanism_type": "Physical Impulse Limit",
+    "code_location": "world/vessel_kinetic.xml",
+    "explicitly_engineered": "Wheels and hips have no vertical linear authority; Mg = 14.4N >> F_dyn < 0.8N",
+    "dynamically_learned": "None",
+    "scientific_status": "PHYSICALLY_UNSUPPORTED",
+    "alternative_explanation": "Physical law: rigid wheeled robot without vertical pistons cannot jump"
+  },
+  {
+    "subsystem": "Affect & Audio Expression",
+    "mechanism_type": "State-Mapped Audio Synthesizer",
+    "code_location": "brain/carl_audio_synth.py:90-110",
+    "explicitly_engineered": "5 pre-computed procedural WAV waveforms mapped to neuro-endocrine levels",
+    "dynamically_learned": "None",
+    "scientific_status": "ENGINEERED_BEHAVIOUR_DEMONSTRATED",
+    "alternative_explanation": "Rule-based procedural audio triggering"
+  }
+]

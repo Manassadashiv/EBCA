@@ -1,0 +1,2256 @@
+[
+  {
+    "tick": 0,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 83,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.8500000238418579,
+      -0.8500000238418579
+    ],
+    "efe_total": 1.3031623363494873,
+    "pragmatic_cost": 12.431798934936523,
+    "epistemic_cost": 0.007513151969760656
+  },
+  {
+    "tick": 1,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 83,
+    "mppi_entropy": 3.696980350229188e-18,
+    "chosen_action": [
+      0.8500000238418579,
+      -0.8500000238418579
+    ],
+    "efe_total": 0.972555935382843,
+    "pragmatic_cost": 9.500920295715332,
+    "epistemic_cost": -0.010639038868248463
+  },
+  {
+    "tick": 2,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 7.452147999749803e-31,
+    "chosen_action": [
+      0.8500000238418579,
+      -0.8500000238418579
+    ],
+    "efe_total": 0.6369341015815735,
+    "pragmatic_cost": 8.600922584533691,
+    "epistemic_cost": -0.003861858742311597
+  },
+  {
+    "tick": 3,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 78,
+    "mppi_entropy": 3.195776054574885e-30,
+    "chosen_action": [
+      0.75,
+      -0.75
+    ],
+    "efe_total": 0.13240817189216614,
+    "pragmatic_cost": 6.245911598205566,
+    "epistemic_cost": 0.00474892184138298
+  },
+  {
+    "tick": 4,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 98,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.37557601928711,
+    "pragmatic_cost": 22.59567642211914,
+    "epistemic_cost": 0.012342849746346474
+  },
+  {
+    "tick": 5,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.34899139404297,
+    "pragmatic_cost": 20.232635498046875,
+    "epistemic_cost": 0.02051631174981594
+  },
+  {
+    "tick": 6,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.344762802124023,
+    "pragmatic_cost": 19.199350357055664,
+    "epistemic_cost": 0.025677360594272614
+  },
+  {
+    "tick": 7,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.338375091552734,
+    "pragmatic_cost": 18.93170928955078,
+    "epistemic_cost": 0.03069298528134823
+  },
+  {
+    "tick": 8,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.4466495513916,
+    "pragmatic_cost": 18.710542678833008,
+    "epistemic_cost": -0.07569758594036102
+  },
+  {
+    "tick": 9,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.44119644165039,
+    "pragmatic_cost": 18.60793113708496,
+    "epistemic_cost": -0.0677868202328682
+  },
+  {
+    "tick": 10,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.434368133544922,
+    "pragmatic_cost": 18.73784828186035,
+    "epistemic_cost": -0.05962199345231056
+  },
+  {
+    "tick": 11,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.427509307861328,
+    "pragmatic_cost": 18.443117141723633,
+    "epistemic_cost": -0.05070630460977554
+  },
+  {
+    "tick": 12,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.420394897460938,
+    "pragmatic_cost": 18.21539306640625,
+    "epistemic_cost": -0.041803885251283646
+  },
+  {
+    "tick": 13,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.420265197753906,
+    "pragmatic_cost": 18.117990493774414,
+    "epistemic_cost": -0.034427985548973083
+  },
+  {
+    "tick": 14,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.41801643371582,
+    "pragmatic_cost": 17.985218048095703,
+    "epistemic_cost": -0.02698175236582756
+  },
+  {
+    "tick": 15,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.411108016967773,
+    "pragmatic_cost": 17.91327476501465,
+    "epistemic_cost": -0.01891324482858181
+  },
+  {
+    "tick": 16,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      -0.699999988079071,
+      -0.699999988079071
+    ],
+    "efe_total": -31.398740768432617,
+    "pragmatic_cost": 17.935775756835938,
+    "epistemic_cost": -0.009988639503717422
+  },
+  {
+    "tick": 17,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 1,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -28.18081283569336,
+    "pragmatic_cost": 2.832963228225708,
+    "epistemic_cost": 0.03978652134537697
+  },
+  {
+    "tick": 18,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -28.123958587646484,
+    "pragmatic_cost": -6.109653472900391,
+    "epistemic_cost": -0.061619434505701065
+  },
+  {
+    "tick": 19,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -28.1048583984375,
+    "pragmatic_cost": -6.105473518371582,
+    "epistemic_cost": -0.06585274636745453
+  },
+  {
+    "tick": 20,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -28.134519577026367,
+    "pragmatic_cost": -6.103010654449463,
+    "epistemic_cost": -0.07245545834302902
+  },
+  {
+    "tick": 21,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 9,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.9977407455444336,
+      1.0
+    ],
+    "efe_total": -24.163345336914062,
+    "pragmatic_cost": -4.074323654174805,
+    "epistemic_cost": -0.02077934518456459
+  },
+  {
+    "tick": 22,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 22,
+    "mppi_entropy": 4.548065506200341e-37,
+    "chosen_action": [
+      1.0,
+      0.9333117008209229
+    ],
+    "efe_total": -25.30379295349121,
+    "pragmatic_cost": -4.685863018035889,
+    "epistemic_cost": -0.030332187190651894
+  },
+  {
+    "tick": 23,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 45,
+    "mppi_entropy": 1.0553588253969792e-05,
+    "chosen_action": [
+      1.0,
+      0.8191024661064148
+    ],
+    "efe_total": -25.9005184173584,
+    "pragmatic_cost": -5.151721000671387,
+    "epistemic_cost": -0.03985524922609329
+  },
+  {
+    "tick": 24,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 32,
+    "mppi_entropy": 1.0590706143777228e-23,
+    "chosen_action": [
+      0.9816665649414062,
+      0.8596246242523193
+    ],
+    "efe_total": -23.209030151367188,
+    "pragmatic_cost": -3.492004632949829,
+    "epistemic_cost": -0.03765854984521866
+  },
+  {
+    "tick": 25,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 3,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      0.8500000238418579
+    ],
+    "efe_total": -21.927064895629883,
+    "pragmatic_cost": -2.6962900161743164,
+    "epistemic_cost": -0.04105358570814133
+  },
+  {
+    "tick": 26,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 12,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      0.9207229018211365
+    ],
+    "efe_total": -23.734792709350586,
+    "pragmatic_cost": -4.138148784637451,
+    "epistemic_cost": -0.057923104614019394
+  },
+  {
+    "tick": 27,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 18,
+    "mppi_entropy": 2.438642445673461e-22,
+    "chosen_action": [
+      1.0,
+      0.8607168197631836
+    ],
+    "efe_total": -25.149616241455078,
+    "pragmatic_cost": -4.81236457824707,
+    "epistemic_cost": 0.04799657315015793
+  },
+  {
+    "tick": 28,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 1,
+    "mppi_entropy": 4.405634616768962e-16,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -25.759355545043945,
+    "pragmatic_cost": -5.130426406860352,
+    "epistemic_cost": 0.03689190372824669
+  },
+  {
+    "tick": 29,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.385711669921875,
+    "pragmatic_cost": -5.792627811431885,
+    "epistemic_cost": 0.0265808142721653
+  },
+  {
+    "tick": 30,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -28.094768524169922,
+    "pragmatic_cost": -6.157649517059326,
+    "epistemic_cost": 0.012013014405965805
+  },
+  {
+    "tick": 31,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.685413360595703,
+    "pragmatic_cost": -6.005550861358643,
+    "epistemic_cost": -0.004532777704298496
+  },
+  {
+    "tick": 32,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.009300231933594,
+    "pragmatic_cost": -5.781060218811035,
+    "epistemic_cost": -0.01584179699420929
+  },
+  {
+    "tick": 33,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -26.688827514648438,
+    "pragmatic_cost": -5.645345211029053,
+    "epistemic_cost": -0.027007343247532845
+  },
+  {
+    "tick": 34,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -26.640663146972656,
+    "pragmatic_cost": -5.634790420532227,
+    "epistemic_cost": -0.03891750052571297
+  },
+  {
+    "tick": 35,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -26.598594665527344,
+    "pragmatic_cost": -5.5978803634643555,
+    "epistemic_cost": -0.05040557309985161
+  },
+  {
+    "tick": 36,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 34,
+    "mppi_entropy": 9.011133852748596e-40,
+    "chosen_action": [
+      1.0,
+      0.9982001781463623
+    ],
+    "efe_total": -25.164474487304688,
+    "pragmatic_cost": -4.628810882568359,
+    "epistemic_cost": -0.0570177398622036
+  },
+  {
+    "tick": 37,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 35,
+    "mppi_entropy": 1.0243792000362486e-14,
+    "chosen_action": [
+      1.0,
+      0.8373289108276367
+    ],
+    "efe_total": -25.031641006469727,
+    "pragmatic_cost": -4.921289443969727,
+    "epistemic_cost": -0.07217326760292053
+  },
+  {
+    "tick": 38,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 1,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -23.363889694213867,
+    "pragmatic_cost": -4.377649307250977,
+    "epistemic_cost": -0.08601682633161545
+  },
+  {
+    "tick": 39,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 23,
+    "mppi_entropy": 2.0476957307690703e-33,
+    "chosen_action": [
+      0.8990494608879089,
+      1.0
+    ],
+    "efe_total": -20.654396057128906,
+    "pragmatic_cost": -2.9307782649993896,
+    "epistemic_cost": 0.013396790251135826
+  },
+  {
+    "tick": 40,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 4,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.8500000238418579,
+      1.0
+    ],
+    "efe_total": -20.98859405517578,
+    "pragmatic_cost": 0.846918523311615,
+    "epistemic_cost": 0.0021496445406228304
+  },
+  {
+    "tick": 41,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 27,
+    "mppi_entropy": 1.555441295400547e-43,
+    "chosen_action": [
+      0.776152491569519,
+      1.0
+    ],
+    "efe_total": -17.746442794799805,
+    "pragmatic_cost": -1.2690379619598389,
+    "epistemic_cost": -0.0011156599503010511
+  },
+  {
+    "tick": 42,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 24,
+    "mppi_entropy": 1.432127030539963e-42,
+    "chosen_action": [
+      0.6438690423965454,
+      1.0
+    ],
+    "efe_total": -13.649755477905273,
+    "pragmatic_cost": 0.6439743638038635,
+    "epistemic_cost": -0.012085635215044022
+  },
+  {
+    "tick": 43,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 41,
+    "mppi_entropy": 1.6321252872262286e-23,
+    "chosen_action": [
+      0.729318380355835,
+      0.9899387955665588
+    ],
+    "efe_total": -10.665454864501953,
+    "pragmatic_cost": 1.891958475112915,
+    "epistemic_cost": -0.022267380729317665
+  },
+  {
+    "tick": 44,
+    "accepted_candidates": 125,
+    "rejected_candidates": 3,
+    "selected_candidate_index": 36,
+    "mppi_entropy": 0.5979663729667664,
+    "chosen_action": [
+      0.8299986124038696,
+      0.9814488887786865
+    ],
+    "efe_total": -13.24506950378418,
+    "pragmatic_cost": 1.2748703956604004,
+    "epistemic_cost": -0.03222836181521416
+  },
+  {
+    "tick": 45,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 32,
+    "mppi_entropy": 2.7941443104563535e-13,
+    "chosen_action": [
+      0.6330094933509827,
+      1.0
+    ],
+    "efe_total": -9.194202423095703,
+    "pragmatic_cost": 5.2475481033325195,
+    "epistemic_cost": -0.0434025339782238
+  },
+  {
+    "tick": 46,
+    "accepted_candidates": 99,
+    "rejected_candidates": 29,
+    "selected_candidate_index": 31,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.4382740557193756,
+      0.9829116463661194
+    ],
+    "efe_total": -1.0906155109405518,
+    "pragmatic_cost": 10.580812454223633,
+    "epistemic_cost": -0.05889322608709335
+  },
+  {
+    "tick": 47,
+    "accepted_candidates": 82,
+    "rejected_candidates": 46,
+    "selected_candidate_index": 111,
+    "mppi_entropy": 4.062385410702474e-12,
+    "chosen_action": [
+      -0.781461775302887,
+      -0.781461775302887
+    ],
+    "efe_total": 3.8546030521392822,
+    "pragmatic_cost": 14.314422607421875,
+    "epistemic_cost": -0.07243382185697556
+  },
+  {
+    "tick": 48,
+    "accepted_candidates": 123,
+    "rejected_candidates": 5,
+    "selected_candidate_index": 37,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      -0.5996899604797363,
+      -0.7279356718063354
+    ],
+    "efe_total": 4.019253730773926,
+    "pragmatic_cost": 11.233163833618164,
+    "epistemic_cost": 0.021526243537664413
+  },
+  {
+    "tick": 49,
+    "accepted_candidates": 122,
+    "rejected_candidates": 6,
+    "selected_candidate_index": 106,
+    "mppi_entropy": 4.5120850700186566e-06,
+    "chosen_action": [
+      -0.7583198547363281,
+      -0.7583198547363281
+    ],
+    "efe_total": 5.13612699508667,
+    "pragmatic_cost": 12.125957489013672,
+    "epistemic_cost": 0.022859781980514526
+  },
+  {
+    "tick": 50,
+    "accepted_candidates": 122,
+    "rejected_candidates": 6,
+    "selected_candidate_index": 21,
+    "mppi_entropy": 1.947332739504759e-09,
+    "chosen_action": [
+      -0.7294890284538269,
+      -0.8770793676376343
+    ],
+    "efe_total": 4.5615315437316895,
+    "pragmatic_cost": 12.16334342956543,
+    "epistemic_cost": 0.029581110924482346
+  },
+  {
+    "tick": 51,
+    "accepted_candidates": 122,
+    "rejected_candidates": 6,
+    "selected_candidate_index": 8,
+    "mppi_entropy": 0.006074197590351105,
+    "chosen_action": [
+      -0.5821812748908997,
+      -0.7520847320556641
+    ],
+    "efe_total": 4.296180725097656,
+    "pragmatic_cost": 11.58036994934082,
+    "epistemic_cost": 0.036578431725502014
+  },
+  {
+    "tick": 52,
+    "accepted_candidates": 122,
+    "rejected_candidates": 6,
+    "selected_candidate_index": 11,
+    "mppi_entropy": 2.1935305916260536e-27,
+    "chosen_action": [
+      -0.7234324812889099,
+      -0.862072229385376
+    ],
+    "efe_total": 3.6181769371032715,
+    "pragmatic_cost": 10.780479431152344,
+    "epistemic_cost": 0.04448356851935387
+  },
+  {
+    "tick": 53,
+    "accepted_candidates": 122,
+    "rejected_candidates": 6,
+    "selected_candidate_index": 11,
+    "mppi_entropy": 1.0792923385621194e-18,
+    "chosen_action": [
+      -0.5661496520042419,
+      -0.7752069234848022
+    ],
+    "efe_total": 2.0020556449890137,
+    "pragmatic_cost": 8.684284210205078,
+    "epistemic_cost": 0.050273679196834564
+  },
+  {
+    "tick": 54,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 8,
+    "mppi_entropy": 1.6107830740357161e-15,
+    "chosen_action": [
+      -0.5425564050674438,
+      -0.5448760390281677
+    ],
+    "efe_total": 1.2469706535339355,
+    "pragmatic_cost": 6.990045070648193,
+    "epistemic_cost": 0.0542580783367157
+  },
+  {
+    "tick": 55,
+    "accepted_candidates": 125,
+    "rejected_candidates": 3,
+    "selected_candidate_index": 23,
+    "mppi_entropy": 0.3420926332473755,
+    "chosen_action": [
+      -0.6331549882888794,
+      -0.6120989322662354
+    ],
+    "efe_total": 0.43892213702201843,
+    "pragmatic_cost": 5.483000755310059,
+    "epistemic_cost": 0.060421086847782135
+  },
+  {
+    "tick": 56,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 6,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.75,
+      1.0
+    ],
+    "efe_total": -3.805070161819458,
+    "pragmatic_cost": 4.6227240562438965,
+    "epistemic_cost": 0.06247297301888466
+  },
+  {
+    "tick": 57,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 47,
+    "mppi_entropy": 2.1181188016864292e-26,
+    "chosen_action": [
+      0.7601239085197449,
+      0.9764387607574463
+    ],
+    "efe_total": -8.310417175292969,
+    "pragmatic_cost": 1.865492582321167,
+    "epistemic_cost": -0.009298475459218025
+  },
+  {
+    "tick": 58,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 34,
+    "mppi_entropy": 0.00015323278785217553,
+    "chosen_action": [
+      0.6955643892288208,
+      0.9999999403953552
+    ],
+    "efe_total": -12.259958267211914,
+    "pragmatic_cost": 0.11107227206230164,
+    "epistemic_cost": -0.01673581451177597
+  },
+  {
+    "tick": 59,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 4,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.8500000238418579,
+      1.0
+    ],
+    "efe_total": -19.230558395385742,
+    "pragmatic_cost": -2.079557418823242,
+    "epistemic_cost": -0.016573887318372726
+  },
+  {
+    "tick": 60,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 1,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -14.833904266357422,
+    "pragmatic_cost": 1.5619620084762573,
+    "epistemic_cost": -0.022021768614649773
+  },
+  {
+    "tick": 61,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 13,
+    "mppi_entropy": 2.9330386648581197e-21,
+    "chosen_action": [
+      0.9937769770622253,
+      0.872584342956543
+    ],
+    "efe_total": -18.84140396118164,
+    "pragmatic_cost": -2.187147855758667,
+    "epistemic_cost": -0.046709924936294556
+  },
+  {
+    "tick": 62,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 21,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.9777086973190308,
+      1.0
+    ],
+    "efe_total": -17.86272621154785,
+    "pragmatic_cost": -1.902420997619629,
+    "epistemic_cost": -0.05826491862535477
+  },
+  {
+    "tick": 63,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.7051202058792114,
+    "chosen_action": [
+      0.9213006496429443,
+      0.9925488829612732
+    ],
+    "efe_total": -14.30808162689209,
+    "pragmatic_cost": -0.18704378604888916,
+    "epistemic_cost": -0.06126571074128151
+  },
+  {
+    "tick": 64,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 1,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -13.573274612426758,
+    "pragmatic_cost": 0.5632375478744507,
+    "epistemic_cost": -0.06575252115726471
+  },
+  {
+    "tick": 65,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 29,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -14.886937141418457,
+    "pragmatic_cost": 0.6322125792503357,
+    "epistemic_cost": -0.07430152595043182
+  },
+  {
+    "tick": 66,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 1,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.18246078491211,
+    "pragmatic_cost": -4.085574150085449,
+    "epistemic_cost": -0.07717546075582504
+  },
+  {
+    "tick": 67,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.588438034057617,
+    "pragmatic_cost": -5.060143947601318,
+    "epistemic_cost": 0.032689422369003296
+  },
+  {
+    "tick": 68,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 37,
+    "mppi_entropy": 4.4372855390051313e-10,
+    "chosen_action": [
+      0.9780147671699524,
+      0.9759424328804016
+    ],
+    "efe_total": -23.787687301635742,
+    "pragmatic_cost": -3.385881185531616,
+    "epistemic_cost": 0.03487061336636543
+  },
+  {
+    "tick": 69,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 31,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      0.9002020359039307
+    ],
+    "efe_total": -23.52796745300293,
+    "pragmatic_cost": -3.2276837825775146,
+    "epistemic_cost": 0.02858072891831398
+  },
+  {
+    "tick": 70,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 11,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      0.9001925587654114
+    ],
+    "efe_total": -22.386388778686523,
+    "pragmatic_cost": -2.9124066829681396,
+    "epistemic_cost": 0.024146948009729385
+  },
+  {
+    "tick": 71,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 43,
+    "mppi_entropy": 1.0488511580088562e-22,
+    "chosen_action": [
+      1.0,
+      0.744123637676239
+    ],
+    "efe_total": -21.09819221496582,
+    "pragmatic_cost": -2.638916254043579,
+    "epistemic_cost": 0.018090976402163506
+  },
+  {
+    "tick": 72,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 3,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      0.8500000238418579
+    ],
+    "efe_total": -17.75727081298828,
+    "pragmatic_cost": -0.2753381133079529,
+    "epistemic_cost": 0.021590635180473328
+  },
+  {
+    "tick": 73,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 5,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      0.75
+    ],
+    "efe_total": -13.434550285339355,
+    "pragmatic_cost": 0.9174383282661438,
+    "epistemic_cost": 0.020992793142795563
+  },
+  {
+    "tick": 74,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 25,
+    "mppi_entropy": 1.2570137187140062e-05,
+    "chosen_action": [
+      0.9644059538841248,
+      0.7536519765853882
+    ],
+    "efe_total": -15.512968063354492,
+    "pragmatic_cost": -0.6970278024673462,
+    "epistemic_cost": 0.005719450768083334
+  },
+  {
+    "tick": 75,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 3,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      0.8500000238418579
+    ],
+    "efe_total": -18.13553810119629,
+    "pragmatic_cost": -1.65837824344635,
+    "epistemic_cost": 0.002196802059188485
+  },
+  {
+    "tick": 76,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 33,
+    "mppi_entropy": 2.0380598471092526e-06,
+    "chosen_action": [
+      0.9795345664024353,
+      0.8595921993255615
+    ],
+    "efe_total": -21.708715438842773,
+    "pragmatic_cost": -3.3262124061584473,
+    "epistemic_cost": -0.0037571038119494915
+  },
+  {
+    "tick": 77,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 40,
+    "mppi_entropy": 5.6834770744948545e-34,
+    "chosen_action": [
+      1.0,
+      0.7695264220237732
+    ],
+    "efe_total": -23.888851165771484,
+    "pragmatic_cost": -4.208755970001221,
+    "epistemic_cost": -0.011745193041861057
+  },
+  {
+    "tick": 78,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 1,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -26.653423309326172,
+    "pragmatic_cost": -5.182999610900879,
+    "epistemic_cost": -0.021973099559545517
+  },
+  {
+    "tick": 79,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.882646560668945,
+    "pragmatic_cost": -5.998526573181152,
+    "epistemic_cost": -0.03321126848459244
+  },
+  {
+    "tick": 80,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -26.939176559448242,
+    "pragmatic_cost": -5.531343936920166,
+    "epistemic_cost": 0.07018818706274033
+  },
+  {
+    "tick": 81,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 14,
+    "mppi_entropy": 1.740431274676778e-25,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -26.52601432800293,
+    "pragmatic_cost": -5.28261661529541,
+    "epistemic_cost": 0.05997419357299805
+  },
+  {
+    "tick": 82,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 21,
+    "mppi_entropy": 7.418756467814092e-06,
+    "chosen_action": [
+      0.9177952408790588,
+      1.0
+    ],
+    "efe_total": -25.987361907958984,
+    "pragmatic_cost": -4.983186721801758,
+    "epistemic_cost": 0.05046536773443222
+  },
+  {
+    "tick": 83,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 15,
+    "mppi_entropy": 9.196981284449357e-31,
+    "chosen_action": [
+      0.8681623935699463,
+      1.0
+    ],
+    "efe_total": -24.565723419189453,
+    "pragmatic_cost": -4.166504859924316,
+    "epistemic_cost": 0.03899692744016647
+  },
+  {
+    "tick": 84,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 42,
+    "mppi_entropy": 5.154925969997959e-24,
+    "chosen_action": [
+      0.9466301798820496,
+      0.9924733638763428
+    ],
+    "efe_total": -23.550264358520508,
+    "pragmatic_cost": -3.785489082336426,
+    "epistemic_cost": 0.028724124655127525
+  },
+  {
+    "tick": 85,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 15,
+    "mppi_entropy": 0.00016581747331656516,
+    "chosen_action": [
+      0.8292991518974304,
+      0.9999998807907104
+    ],
+    "efe_total": -23.342147827148438,
+    "pragmatic_cost": -3.565115451812744,
+    "epistemic_cost": 0.01974378153681755
+  },
+  {
+    "tick": 86,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 26,
+    "mppi_entropy": 1.45706546827995e-09,
+    "chosen_action": [
+      0.6949242353439331,
+      0.979947030544281
+    ],
+    "efe_total": -22.62653160095215,
+    "pragmatic_cost": -3.275482177734375,
+    "epistemic_cost": 0.008459361270070076
+  },
+  {
+    "tick": 87,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 36,
+    "mppi_entropy": 1.54826575453626e-05,
+    "chosen_action": [
+      0.8490774035453796,
+      1.0
+    ],
+    "efe_total": -22.029773712158203,
+    "pragmatic_cost": -2.7324819564819336,
+    "epistemic_cost": -0.004520599264651537
+  },
+  {
+    "tick": 88,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 23,
+    "mppi_entropy": 1.0957132090538835e-08,
+    "chosen_action": [
+      0.6734864115715027,
+      0.9262827038764954
+    ],
+    "efe_total": -21.71943473815918,
+    "pragmatic_cost": -2.839371919631958,
+    "epistemic_cost": -0.014073057100176811
+  },
+  {
+    "tick": 89,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 4,
+    "mppi_entropy": 5.938555024235106e-18,
+    "chosen_action": [
+      0.8500000238418579,
+      1.0
+    ],
+    "efe_total": -21.317052841186523,
+    "pragmatic_cost": -2.705942392349243,
+    "epistemic_cost": -0.02403808757662773
+  },
+  {
+    "tick": 90,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 20,
+    "mppi_entropy": 1.589527470438639e-16,
+    "chosen_action": [
+      0.7421932816505432,
+      0.9652259945869446
+    ],
+    "efe_total": -21.0098876953125,
+    "pragmatic_cost": -2.8102867603302,
+    "epistemic_cost": -0.03397418186068535
+  },
+  {
+    "tick": 91,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 4,
+    "mppi_entropy": 9.80407248440951e-12,
+    "chosen_action": [
+      0.8500000238418579,
+      1.0
+    ],
+    "efe_total": -20.60558319091797,
+    "pragmatic_cost": -2.487717628479004,
+    "epistemic_cost": -0.12422532588243484
+  },
+  {
+    "tick": 92,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      0.8500000238418579,
+      1.0
+    ],
+    "efe_total": -17.272682189941406,
+    "pragmatic_cost": -1.0509247779846191,
+    "epistemic_cost": -0.1270010769367218
+  },
+  {
+    "tick": 93,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 6,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.75,
+      1.0
+    ],
+    "efe_total": -13.017939567565918,
+    "pragmatic_cost": 1.402534008026123,
+    "epistemic_cost": -0.01225308608263731
+  },
+  {
+    "tick": 94,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 11,
+    "mppi_entropy": 1.0775733181142019e-36,
+    "chosen_action": [
+      0.6661803126335144,
+      1.0
+    ],
+    "efe_total": -9.972875595092773,
+    "pragmatic_cost": 2.2832980155944824,
+    "epistemic_cost": -0.019697299227118492
+  },
+  {
+    "tick": 95,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 31,
+    "mppi_entropy": 2.9887831961093e-25,
+    "chosen_action": [
+      0.609296441078186,
+      1.0
+    ],
+    "efe_total": -11.848559379577637,
+    "pragmatic_cost": 1.6970829963684082,
+    "epistemic_cost": -0.026404179632663727
+  },
+  {
+    "tick": 96,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 16,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.672199010848999,
+      1.0
+    ],
+    "efe_total": -14.405447959899902,
+    "pragmatic_cost": 0.7078844904899597,
+    "epistemic_cost": -0.03303798288106918
+  },
+  {
+    "tick": 97,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 15,
+    "mppi_entropy": 2.4074295197351603e-06,
+    "chosen_action": [
+      0.8057699799537659,
+      1.0
+    ],
+    "efe_total": -17.198978424072266,
+    "pragmatic_cost": -0.16350868344306946,
+    "epistemic_cost": -0.040288735181093216
+  },
+  {
+    "tick": 98,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 4,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.8500000238418579,
+      1.0
+    ],
+    "efe_total": -19.487760543823242,
+    "pragmatic_cost": -1.0591548681259155,
+    "epistemic_cost": -0.005088999401777983
+  },
+  {
+    "tick": 99,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 9,
+    "mppi_entropy": 3.741842339449741e-12,
+    "chosen_action": [
+      0.7907871007919312,
+      1.0
+    ],
+    "efe_total": -21.865352630615234,
+    "pragmatic_cost": -2.36484432220459,
+    "epistemic_cost": -0.017356697469949722
+  },
+  {
+    "tick": 100,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 40,
+    "mppi_entropy": 4.449458356248215e-05,
+    "chosen_action": [
+      0.8065395951271057,
+      0.9999998211860657
+    ],
+    "efe_total": -24.023019790649414,
+    "pragmatic_cost": -3.607663631439209,
+    "epistemic_cost": -0.026424294337630272
+  },
+  {
+    "tick": 101,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 1,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -25.463064193725586,
+    "pragmatic_cost": -4.316556930541992,
+    "epistemic_cost": -0.03802045062184334
+  },
+  {
+    "tick": 102,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 4,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.8500000238418579,
+      1.0
+    ],
+    "efe_total": -20.55721092224121,
+    "pragmatic_cost": 0.5613538026809692,
+    "epistemic_cost": -0.06398056447505951
+  },
+  {
+    "tick": 103,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 6,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.75,
+      1.0
+    ],
+    "efe_total": -12.05044937133789,
+    "pragmatic_cost": 2.927494525909424,
+    "epistemic_cost": -0.07142561674118042
+  },
+  {
+    "tick": 104,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 14,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.5415585041046143,
+      1.0
+    ],
+    "efe_total": -2.06356143951416,
+    "pragmatic_cost": 7.144136428833008,
+    "epistemic_cost": -0.08216207474470139
+  },
+  {
+    "tick": 105,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 53,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      -0.6000000238418579,
+      0.6000000238418579
+    ],
+    "efe_total": 2.1490533351898193,
+    "pragmatic_cost": 10.814077377319336,
+    "epistemic_cost": -0.09782266616821289
+  },
+  {
+    "tick": 106,
+    "accepted_candidates": 123,
+    "rejected_candidates": 5,
+    "selected_candidate_index": 25,
+    "mppi_entropy": 3.388982736431107e-24,
+    "chosen_action": [
+      -0.7340977191925049,
+      0.6039913296699524
+    ],
+    "efe_total": 3.120936632156372,
+    "pragmatic_cost": 9.435667037963867,
+    "epistemic_cost": -0.04773590713739395
+  },
+  {
+    "tick": 107,
+    "accepted_candidates": 123,
+    "rejected_candidates": 5,
+    "selected_candidate_index": 55,
+    "mppi_entropy": 5.169028956497976e-30,
+    "chosen_action": [
+      -0.8500000238418579,
+      0.8500000238418579
+    ],
+    "efe_total": 4.158003330230713,
+    "pragmatic_cost": 10.869873046875,
+    "epistemic_cost": -0.051627855747938156
+  },
+  {
+    "tick": 108,
+    "accepted_candidates": 123,
+    "rejected_candidates": 5,
+    "selected_candidate_index": 13,
+    "mppi_entropy": 1.0410648343395223e-08,
+    "chosen_action": [
+      -0.8985316157341003,
+      0.9215054512023926
+    ],
+    "efe_total": 2.7769346237182617,
+    "pragmatic_cost": 9.866510391235352,
+    "epistemic_cost": 0.05941194295883179
+  },
+  {
+    "tick": 109,
+    "accepted_candidates": 123,
+    "rejected_candidates": 5,
+    "selected_candidate_index": 8,
+    "mppi_entropy": 0.6155374050140381,
+    "chosen_action": [
+      -0.9559133648872375,
+      0.8300316333770752
+    ],
+    "efe_total": 3.4312233924865723,
+    "pragmatic_cost": 10.729419708251953,
+    "epistemic_cost": 0.0567036047577858
+  },
+  {
+    "tick": 110,
+    "accepted_candidates": 123,
+    "rejected_candidates": 5,
+    "selected_candidate_index": 53,
+    "mppi_entropy": 1.1954076617470832e-10,
+    "chosen_action": [
+      -0.6000000238418579,
+      0.6000000238418579
+    ],
+    "efe_total": 5.854701042175293,
+    "pragmatic_cost": 12.86862850189209,
+    "epistemic_cost": 0.055214304476976395
+  },
+  {
+    "tick": 111,
+    "accepted_candidates": 123,
+    "rejected_candidates": 5,
+    "selected_candidate_index": 32,
+    "mppi_entropy": 0.0009391040075570345,
+    "chosen_action": [
+      -0.6944831609725952,
+      0.6515108346939087
+    ],
+    "efe_total": 6.087289810180664,
+    "pragmatic_cost": 13.289624214172363,
+    "epistemic_cost": 0.05414411798119545
+  },
+  {
+    "tick": 112,
+    "accepted_candidates": 123,
+    "rejected_candidates": 5,
+    "selected_candidate_index": 53,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      -0.6000000238418579,
+      0.6000000238418579
+    ],
+    "efe_total": 6.173512935638428,
+    "pragmatic_cost": 13.976434707641602,
+    "epistemic_cost": 0.05314819887280464
+  },
+  {
+    "tick": 113,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 18,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      -0.7362164258956909,
+      0.6705543398857117
+    ],
+    "efe_total": 5.242530345916748,
+    "pragmatic_cost": 13.660942077636719,
+    "epistemic_cost": 0.05278812348842621
+  },
+  {
+    "tick": 114,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 52,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      -0.44999998807907104,
+      0.44999998807907104
+    ],
+    "efe_total": 5.166443824768066,
+    "pragmatic_cost": 13.883365631103516,
+    "epistemic_cost": 0.05309560149908066
+  },
+  {
+    "tick": 115,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 52,
+    "mppi_entropy": 5.755532633605273e-14,
+    "chosen_action": [
+      -0.44999998807907104,
+      0.44999998807907104
+    ],
+    "efe_total": 4.64181661605835,
+    "pragmatic_cost": 12.972223281860352,
+    "epistemic_cost": 0.052438151091337204
+  },
+  {
+    "tick": 116,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 43,
+    "mppi_entropy": 2.0421484076558018e-19,
+    "chosen_action": [
+      -0.5128524303436279,
+      0.564985454082489
+    ],
+    "efe_total": 3.3815836906433105,
+    "pragmatic_cost": 11.872020721435547,
+    "epistemic_cost": 0.0522741824388504
+  },
+  {
+    "tick": 117,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 43,
+    "mppi_entropy": 5.655592563305084e-19,
+    "chosen_action": [
+      -0.564697802066803,
+      0.7092479467391968
+    ],
+    "efe_total": 2.85109543800354,
+    "pragmatic_cost": 11.075783729553223,
+    "epistemic_cost": 0.051019564270973206
+  },
+  {
+    "tick": 118,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 6,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.75,
+      1.0
+    ],
+    "efe_total": 2.45556640625,
+    "pragmatic_cost": 12.40426254272461,
+    "epistemic_cost": 0.05078812688589096
+  },
+  {
+    "tick": 119,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 8,
+    "mppi_entropy": 1.4345271872806266e-24,
+    "chosen_action": [
+      0.6201583743095398,
+      1.0
+    ],
+    "efe_total": -2.3504621982574463,
+    "pragmatic_cost": 8.718425750732422,
+    "epistemic_cost": -0.0036949976347386837
+  },
+  {
+    "tick": 120,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 34,
+    "mppi_entropy": 1.8898894015501367e-19,
+    "chosen_action": [
+      0.6440162062644958,
+      0.9694938063621521
+    ],
+    "efe_total": -6.290101528167725,
+    "pragmatic_cost": 6.438337802886963,
+    "epistemic_cost": -0.00714151281863451
+  },
+  {
+    "tick": 121,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 47,
+    "mppi_entropy": 2.65629358786601e-12,
+    "chosen_action": [
+      0.7042555809020996,
+      1.0
+    ],
+    "efe_total": -11.33082389831543,
+    "pragmatic_cost": 3.6038477420806885,
+    "epistemic_cost": -0.012796618044376373
+  },
+  {
+    "tick": 122,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 4,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.8500000238418579,
+      1.0
+    ],
+    "efe_total": -15.64355754852295,
+    "pragmatic_cost": 1.2627818584442139,
+    "epistemic_cost": -0.01889658533036709
+  },
+  {
+    "tick": 123,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 26,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.8014682531356812,
+      1.0
+    ],
+    "efe_total": -19.952932357788086,
+    "pragmatic_cost": -1.072184443473816,
+    "epistemic_cost": -0.033074911683797836
+  },
+  {
+    "tick": 124,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 17,
+    "mppi_entropy": 2.163470806490312e-35,
+    "chosen_action": [
+      0.7420768737792969,
+      0.8659297227859497
+    ],
+    "efe_total": -23.622581481933594,
+    "pragmatic_cost": -2.842881202697754,
+    "epistemic_cost": -0.0341845266520977
+  },
+  {
+    "tick": 125,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 1,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.47290802001953,
+    "pragmatic_cost": -3.664210319519043,
+    "epistemic_cost": -0.04021816700696945
+  },
+  {
+    "tick": 126,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 43,
+    "mppi_entropy": 3.511734542449693e-16,
+    "chosen_action": [
+      1.0,
+      0.9993919134140015
+    ],
+    "efe_total": -27.08156967163086,
+    "pragmatic_cost": -4.996841907501221,
+    "epistemic_cost": -0.06228660047054291
+  },
+  {
+    "tick": 127,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 23,
+    "mppi_entropy": 0.2851579189300537,
+    "chosen_action": [
+      0.9555275440216064,
+      1.0
+    ],
+    "efe_total": -26.08437156677246,
+    "pragmatic_cost": -4.658796787261963,
+    "epistemic_cost": -0.07271231710910797
+  },
+  {
+    "tick": 128,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 35,
+    "mppi_entropy": 8.810395989156117e-13,
+    "chosen_action": [
+      0.8519694209098816,
+      1.0
+    ],
+    "efe_total": -25.33812141418457,
+    "pragmatic_cost": -4.356042861938477,
+    "epistemic_cost": -0.08280022442340851
+  },
+  {
+    "tick": 129,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 19,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.9383847117424011,
+      1.0
+    ],
+    "efe_total": -24.82603645324707,
+    "pragmatic_cost": -3.9911892414093018,
+    "epistemic_cost": -0.09329362213611603
+  },
+  {
+    "tick": 130,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 1,
+    "mppi_entropy": 6.581898886933666e-42,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -26.534570693969727,
+    "pragmatic_cost": -5.019711971282959,
+    "epistemic_cost": -0.09464437514543533
+  },
+  {
+    "tick": 131,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -28.165359497070312,
+    "pragmatic_cost": -5.861598014831543,
+    "epistemic_cost": -0.10688133537769318
+  },
+  {
+    "tick": 132,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 14,
+    "mppi_entropy": 0.0064489571377635,
+    "chosen_action": [
+      1.0,
+      0.9528255462646484
+    ],
+    "efe_total": -27.266756057739258,
+    "pragmatic_cost": -5.5243096351623535,
+    "epistemic_cost": -0.10972107201814651
+  },
+  {
+    "tick": 133,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.00027963443426415324,
+    "chosen_action": [
+      0.9931812882423401,
+      0.9874106049537659
+    ],
+    "efe_total": -26.786718368530273,
+    "pragmatic_cost": -5.499983310699463,
+    "epistemic_cost": 0.02560431696474552
+  },
+  {
+    "tick": 134,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 1,
+    "mppi_entropy": 8.081608297496486e-32,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.4194278717041,
+    "pragmatic_cost": -5.766261100769043,
+    "epistemic_cost": 0.015862757340073586
+  },
+  {
+    "tick": 135,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.882001876831055,
+    "pragmatic_cost": -6.014007091522217,
+    "epistemic_cost": 0.00486336462199688
+  },
+  {
+    "tick": 136,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.988269805908203,
+    "pragmatic_cost": -6.076930046081543,
+    "epistemic_cost": -0.0023839985951781273
+  },
+  {
+    "tick": 137,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -26.94582176208496,
+    "pragmatic_cost": -5.600667476654053,
+    "epistemic_cost": -0.009525204077363014
+  },
+  {
+    "tick": 138,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 22,
+    "mppi_entropy": 5.832577016917639e-07,
+    "chosen_action": [
+      0.9106878638267517,
+      0.9862453937530518
+    ],
+    "efe_total": -24.736787796020508,
+    "pragmatic_cost": -4.367254734039307,
+    "epistemic_cost": -0.014898093417286873
+  },
+  {
+    "tick": 139,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 4,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.8500000238418579,
+      1.0
+    ],
+    "efe_total": -21.5756778717041,
+    "pragmatic_cost": -1.5938427448272705,
+    "epistemic_cost": -0.016135359182953835
+  },
+  {
+    "tick": 140,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 0,
+    "mppi_entropy": 0.6931471824645996,
+    "chosen_action": [
+      0.8500000238418579,
+      1.0
+    ],
+    "efe_total": -19.490652084350586,
+    "pragmatic_cost": -2.0228259563446045,
+    "epistemic_cost": -0.029271632432937622
+  },
+  {
+    "tick": 141,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 41,
+    "mppi_entropy": 5.26472653513551e-38,
+    "chosen_action": [
+      0.6876276731491089,
+      1.0
+    ],
+    "efe_total": -17.199020385742188,
+    "pragmatic_cost": -0.5476309061050415,
+    "epistemic_cost": -0.03367779403924942
+  },
+  {
+    "tick": 142,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 26,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.7659633159637451,
+      1.0
+    ],
+    "efe_total": -13.86685562133789,
+    "pragmatic_cost": 1.23430597782135,
+    "epistemic_cost": -0.03731713071465492
+  },
+  {
+    "tick": 143,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 11,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.5792011618614197,
+      0.934553325176239
+    ],
+    "efe_total": -12.568676948547363,
+    "pragmatic_cost": 2.3596854209899902,
+    "epistemic_cost": -0.042585209012031555
+  },
+  {
+    "tick": 144,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 34,
+    "mppi_entropy": 3.41165150651241e-21,
+    "chosen_action": [
+      0.6199263334274292,
+      1.0
+    ],
+    "efe_total": -11.073793411254883,
+    "pragmatic_cost": 2.8434982299804688,
+    "epistemic_cost": -0.04763011634349823
+  },
+  {
+    "tick": 145,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 21,
+    "mppi_entropy": 3.694834583362703e-27,
+    "chosen_action": [
+      0.4974544048309326,
+      0.8923577070236206
+    ],
+    "efe_total": -9.364617347717285,
+    "pragmatic_cost": 3.844330310821533,
+    "epistemic_cost": 0.0643693208694458
+  },
+  {
+    "tick": 146,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 6,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.75,
+      1.0
+    ],
+    "efe_total": -8.404290199279785,
+    "pragmatic_cost": 4.439230442047119,
+    "epistemic_cost": 0.0618414469063282
+  },
+  {
+    "tick": 147,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 37,
+    "mppi_entropy": 4.880222338439835e-14,
+    "chosen_action": [
+      0.7504429817199707,
+      0.9535143375396729
+    ],
+    "efe_total": -12.10787582397461,
+    "pragmatic_cost": 2.4749209880828857,
+    "epistemic_cost": -0.042630791664123535
+  },
+  {
+    "tick": 148,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 4,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      0.8500000238418579,
+      1.0
+    ],
+    "efe_total": -16.11936378479004,
+    "pragmatic_cost": 0.8023467659950256,
+    "epistemic_cost": -0.0528680756688118
+  },
+  {
+    "tick": 149,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 24,
+    "mppi_entropy": 2.5617521437482083e-09,
+    "chosen_action": [
+      0.8428910970687866,
+      1.0
+    ],
+    "efe_total": -21.28801918029785,
+    "pragmatic_cost": -1.6451817750930786,
+    "epistemic_cost": -0.06362082064151764
+  },
+  {
+    "tick": 150,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 28,
+    "mppi_entropy": 4.974996841156099e-07,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -24.352760314941406,
+    "pragmatic_cost": -3.235269069671631,
+    "epistemic_cost": -0.07230585813522339
+  },
+  {
+    "tick": 151,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 1,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.169292449951172,
+    "pragmatic_cost": -3.602128505706787,
+    "epistemic_cost": -0.07516001164913177
+  },
+  {
+    "tick": 152,
+    "accepted_candidates": 126,
+    "rejected_candidates": 2,
+    "selected_candidate_index": 10,
+    "mppi_entropy": 2.3115369877728447e-24,
+    "chosen_action": [
+      0.9124873280525208,
+      1.0
+    ],
+    "efe_total": -25.76083755493164,
+    "pragmatic_cost": -4.067932605743408,
+    "epistemic_cost": -0.09943410754203796
+  },
+  {
+    "tick": 153,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 1,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      1.0
+    ],
+    "efe_total": -27.96548843383789,
+    "pragmatic_cost": -5.149188041687012,
+    "epistemic_cost": -0.10009191185235977
+  },
+  {
+    "tick": 154,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 19,
+    "mppi_entropy": 2.6744174583259728e-11,
+    "chosen_action": [
+      0.9887635707855225,
+      0.9349073767662048
+    ],
+    "efe_total": -27.280227661132812,
+    "pragmatic_cost": -4.91551399230957,
+    "epistemic_cost": -0.10540622472763062
+  },
+  {
+    "tick": 155,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 5,
+    "mppi_entropy": 0.2493041604757309,
+    "chosen_action": [
+      0.9999999403953552,
+      0.7568332552909851
+    ],
+    "efe_total": -15.080981254577637,
+    "pragmatic_cost": 2.7883832454681396,
+    "epistemic_cost": -0.10811609774827957
+  },
+  {
+    "tick": 156,
+    "accepted_candidates": 124,
+    "rejected_candidates": 4,
+    "selected_candidate_index": 31,
+    "mppi_entropy": 3.6034042812566785e-22,
+    "chosen_action": [
+      1.0,
+      0.7366464734077454
+    ],
+    "efe_total": -15.040678977966309,
+    "pragmatic_cost": 0.5723166465759277,
+    "epistemic_cost": -0.12286607921123505
+  },
+  {
+    "tick": 157,
+    "accepted_candidates": 104,
+    "rejected_candidates": 24,
+    "selected_candidate_index": 9,
+    "mppi_entropy": 1.6962501553103443e-13,
+    "chosen_action": [
+      1.0,
+      0.6194112300872803
+    ],
+    "efe_total": -9.466740608215332,
+    "pragmatic_cost": 2.9645278453826904,
+    "epistemic_cost": -0.12472577393054962
+  },
+  {
+    "tick": 158,
+    "accepted_candidates": 104,
+    "rejected_candidates": 24,
+    "selected_candidate_index": 46,
+    "mppi_entropy": 0.0004542171081993729,
+    "chosen_action": [
+      1.0,
+      0.6018483638763428
+    ],
+    "efe_total": -8.533190727233887,
+    "pragmatic_cost": 3.0290188789367676,
+    "epistemic_cost": -0.011779497377574444
+  },
+  {
+    "tick": 159,
+    "accepted_candidates": 127,
+    "rejected_candidates": 1,
+    "selected_candidate_index": 45,
+    "mppi_entropy": -0.0,
+    "chosen_action": [
+      1.0,
+      0.5770594477653503
+    ],
+    "efe_total": -10.380270004272461,
+    "pragmatic_cost": 2.0980122089385986,
+    "epistemic_cost": -0.01653151959180832
+  },
+  {
+    "tick": 160,
+    "accepted_candidates": 128,
+    "rejected_candidates": 0,
+    "selected_candidate_index": 43,
+    "mppi_entropy": 5.11871742212459e-30,
+    "chosen_action": [
+      1.0,
+      0.5325714349746704
+    ],
+    "efe_total": -10.857141494750977,
+    "pragmatic_cost": 1.606813907623291,
+    "epistemic_cost": -0.023458080366253853
+  }
+]

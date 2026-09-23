@@ -1,0 +1,31 @@
+# CARL-DX ARCHITECTURE TRUTH TABLE & MECHANISM DECONSTRUCTION
+
+**Trial Standard**: NASA-Inspired Systems Engineering Rigor (Zero-Trust Forensic Audit)  
+**Deliverable**: Comprehensive Line-by-Line Mechanism Deconstruction & Honest Classification
+
+---
+
+## 1. Complete Mechanism Classification Registry
+
+| Module / Component | Exact Function & Lines | Mechanism Classification | Inputs | Outputs | Hardcoded Constants / Thresholds | Truth Verdict |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Locomotion & S-Curve Motor Filter** | `CarlEmbodiedOrganism.write_actuator_commands` ([L310-380](file:///D:/ebca/brain/carl_embodied_organism.py#L310-L380)) | **`ENGINEERED_CONTROLLER`** | `target_w_L, target_w_R`, simulated `dt` | `data.ctrl[0..5]` | $\text{max\_w}=12.0\text{ rad/s}$, $\text{max\_accel}=10.0\text{ rad/s}^2$, $\text{max\_jerk}=30.0\text{ rad/s}^3$ | Deterministic S-curve jerk-limited motor profile. Zero learned components. |
+| **Sonar Rangefinder** | `CarlEmbodiedOrganism.read_proprioception` ([L205-260](file:///D:/ebca/brain/carl_embodied_organism.py#L205-L260)) | **`ENGINEERED_CONTROLLER`** | `hal.data.geom_xpos`, `model.geom_size` | 15-ray sonar array $\in [0.05, 5.0]\text{m}$ | 15 rays spanning $[-120^\circ, +120^\circ]$, outer arena boundary at $\pm 4.80\text{m}$ | Geometric 2D ray-AABB slab intersection. |
+| **Head Attention & Gaze** | `CarlAutonomousOrganismAgent.step_cognitive_cycle` ([L238-250](file:///D:/ebca/brain/carl_autonomous_agent.py#L238-L250)) | **`ENGINEERED_RULE`** | `target_visible`, `target_bearing`, `min_obstacle_dist`, `goal_coords` | `target_head_yaw` | If visible: clip(bearing, -1.2, 1.2). If obstacle $<1.0\text{m}$: $0.60\sin(0.25t)$. Else: $0.40\sin(0.10t)$. | Deterministic piecewise gaze policy. Not an autonomous active inference gaze planner. |
+| **Homeostatic Drives** | `CarlHomeostaticCore.update_interoception` ([L25-75](file:///D:/ebca/brain/carl_embodied_organism.py#L25-L75)) | **`STATE_MACHINE`** | Speed, torque, prediction error, food contact | `energy, thermal_load, curiosity, dominant_need` | Energy decay: $0.00035/\text{tick}$, food reward: $+0.50$, thermal rise: $0.0005 \times \tau^2$, curiosity decay: $-0.001$ on motion | Multi-compartment leaky integrator state machine. |
+| **Endogenous Goal Generation** | `CarlEndogenousAgency.arbitrate_active_goal` ([L60-110](file:///D:/ebca/brain/carl_endogenous_agency.py#L60-L110)) | **`ENGINEERED_RULE`** | `energy, thermal_load, curiosity_drive` | `active_goal` (VIABILITY, REST, EXPLORATION) | Thresholds: `energy < 0.50` $\rightarrow$ VIABILITY; `thermal > 0.70` $\rightarrow$ REST; `curiosity > 0.40` $\rightarrow$ EXPLORATION | Hardcoded priority threshold decision tree. |
+| **Counterfactual Imagination (Dreamer)** | `CarlGenerativeSelfModel.imagine_counterfactual_rollouts` ([L115-220](file:///D:/ebca/brain/carl_generative_self_model.py#L115-L220)) | **`ENGINEERED_CONTROLLER`** | 15-ray sonar, target position, last action, steering bias | Free Energy scores for 14 discrete candidate arcs | 14 discrete candidate $(w_L, w_R)$ primitives, horizon $H=20$ steps ($0.66\text{s}$) | Discrete model-predictive Expected Free Energy minimization. |
+| **Online Parameter Adaptation** | `CarlGenerativeSelfModel.update_with_observation` ([L60-110](file:///D:/ebca/brain/carl_generative_self_model.py#L60-L110)) | **`PARAMETER_ESTIMATOR`** | Measured vs predicted $(x, y, \theta, v)$ | Updated friction $\hat{\mu}$, prediction error $\epsilon$ | Learning rate $\eta = 0.05$, bounds $\hat{\mu} \in [0.4, 2.5]$, clipping $[-0.15, +0.15]$ | Genuine recursive estimation: $\hat{\mu}_{t+1} = \hat{\mu}_t + \eta \cdot \text{sign}(v_{\text{act}} - v_{\text{pred}}) \cdot \min(\epsilon, 0.15)$. |
+| **Episodic Memory (HDC)** | `CarlEpisodicMemory` ([L20-110](file:///D:/ebca/brain/carl_episodic_memory.py#L20-L110)) | **`MEMORY_SYSTEM`** | $(x, y)$, need, action, valence | Recall alert, EFE penalty $+25.0$ | Vector dimension $D = 2048$, similarity threshold $0.42$, distance $<1.2\text{m}$ | 2048-dim HDC binding ($\mathbf{h} = \mathbf{v}_{\text{pos}} \otimes \mathbf{v}_{\text{need}} \otimes \mathbf{v}_{\text{valence}}$) adding Free Energy bias. |
+| **Safety Veto & Directional Hysteresis** | `CarlEndogenousAgency.evaluate_internal_action_veto` ([L150-230](file:///D:/ebca/brain/carl_endogenous_agency.py#L150-L230)) | **`ENGINEERED_RULE`** | Front/left/right clearance, horizon $(x, y)$ | Veto asserted, recommended escape command | Thresholds: `front < 0.55m`, `horizon > 4.60m`, `dead_end` $(F<1.1, L<1.4, R<1.4)$, steering hold $6\text{ ticks}$ | Deterministic safety barrier filter. Prevents chattering via 6-tick directional persistence. |
+| **Stuck Detector & Recovery Manager** | `CarlStuckDetector` + `CarlRecoveryManager` ([L38-265](file:///D:/ebca/brain/carl_stuck_recovery.py#L38-L265)) | **`STATE_MACHINE`** | Displacement, commanded velocity, obstacle clearance | Recovery actions (Tier 1, Tier 2, Tier 3) | Window $20\text{ ticks}$, stall threshold $\Delta x < 0.025\text{m}$ over 15 ticks near obstacles | 3-tier escalating state machine: Tier 1 reverse arc, Tier 2 targeted spin, Tier 3 forward breakout. |
+| **Empowerment Core** | `CarlEmpowermentCore.evaluate_empowerment` ([L25-95](file:///D:/ebca/brain/carl_empowerment.py#L25-L95)) | **`ENGINEERED_CONTROLLER`** | Raycasts, candidate rollouts | Controllability entropy $\mathcal{E}$ | Horizon 15 steps, $k$-means state clustering ($K=6$) | Monte Carlo empirical mutual information $I(A; S' \mid s)$ estimator. |
+
+---
+
+## 2. Summary of Architectural Reality
+
+1. **What is genuinely adaptive**: The online friction parameter estimator $\hat{\mu}$ recursively adjusts to wheel slip based on observed kinematic error ($\epsilon: 0.12 \rightarrow 0.015$).
+2. **What is associative memory**: The 2048-dim HDC episodic memory stores autobiographical experiences and causally diverts trajectories away from recalled hazard locations.
+3. **What is engineered heuristic/controller**: 6-DoF S-curve motor filtering, 14 discrete candidate action primitives, homeostatic priority thresholding, directional steering hysteresis hold, and safety vetoes.
+4. **What is emergent candidate**: Unscripted dead-end corridor avoidance arising from Empowerment entropy collapse without global topological maps.

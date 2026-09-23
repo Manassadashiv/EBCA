@@ -1,0 +1,161 @@
+{
+  "audit_timestamp": "2026-08-16T23:30:00+05:30",
+  "audit_subject": "CARL-DX Visual Evidence Package Provenance & Lineage Audit",
+  "evidence_package_root": "evidence/final_blind_organism_test/",
+  "items": [
+    {
+      "file": "complete_blind_run.mp4",
+      "type": "MP4_VIDEO",
+      "source_telemetry": "raw_telemetry/blind_life_run_telemetry.csv",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "REAL_MUJOCO_PHYSICS_SIMULATION"
+    },
+    {
+      "file": "trajectory/trajectory_2d.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "raw_telemetry/blind_life_run_telemetry.csv",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "REAL_MUJOCO_TELEMETRY"
+    },
+    {
+      "file": "stability/attitude_stability.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "raw_telemetry/blind_life_run_telemetry.csv",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "REAL_MUJOCO_TELEMETRY"
+    },
+    {
+      "file": "motors/commanded_and_wheel_jerk.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "raw_telemetry/blind_life_run_telemetry.csv",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "REAL_MUJOCO_TELEMETRY"
+    },
+    {
+      "file": "sensors/range_sensor_heatmap.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "raw_telemetry/blind_life_run_telemetry.csv",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "REAL_MUJOCO_TELEMETRY"
+    },
+    {
+      "file": "homeostasis/physiological_variables.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "decision_trace.jsonl (agent.telemetry_history)",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "REAL_INTEROCEPTIVE_CORE_CALCULATION"
+    },
+    {
+      "file": "memory/episodic_memory_map.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "decision_trace.jsonl & agent.memory.episodes",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "REAL_RUNTIME_EPISODES"
+    },
+    {
+      "file": "prediction/prediction_vs_actual.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "decision_trace.jsonl (agent.telemetry_history)",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "REAL_SELF_MODEL_PREDICTION_ERRORS"
+    },
+    {
+      "file": "motivation/motivation_heatmap.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "decision_trace.jsonl (agent.telemetry_history)",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "REAL_DRIVE_CALCULATIONS"
+    },
+    {
+      "file": "agency/internal_decision_timeline.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "decision_trace.jsonl (agent.telemetry_history)",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "REAL_ACTION_SELECTION_HISTORY"
+    },
+    {
+      "file": "agency/endogenous_goals_vs_time.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "decision_trace.jsonl (agent.telemetry_history)",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "REAL_GOAL_ARBITRATION_HISTORY"
+    },
+    {
+      "file": "neuromodulation/neuromodulator_dynamics.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "decision_trace.jsonl (pred_err, energy, safety)",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "DERIVED_NEUROMODULATORY_PROXY"
+    },
+    {
+      "file": "integration/phi_proxy_timeline.png",
+      "type": "PNG_PLOT",
+      "source_telemetry": "decision_trace.jsonl",
+      "source_episode": "EPISODE_FINAL_BLIND_LIFE_RUN",
+      "duration_ticks": 120,
+      "duration_seconds": 4.0,
+      "rng_seed": 20260816,
+      "is_from_final_blind_run": true,
+      "data_source_type": "DERIVED_TONONI_SPORNS_PHI_PROXY"
+    }
+  ],
+  "control_experiment_videos_in_replays_directory": {
+    "replays/best_autonomous_episode.mp4": "Mirror copy of complete_blind_run.mp4",
+    "replays/first_internally_generated_goal.mp4": "Mirror copy of complete_blind_run.mp4",
+    "replays/strongest_organism_like_sequence.mp4": "Mirror copy of complete_blind_run.mp4",
+    "replays/worst_autonomous_episode.mp4": "50-tick mechanical pitch push control experiment",
+    "replays/recovery_episode.mp4": "Mirror copy of worst_autonomous_episode.mp4",
+    "replays/memory_dependent_behavior.mp4": "50-tick paired memory causality control experiment",
+    "replays/self_model_adaptation.mp4": "50-tick ground traction adaptation control experiment",
+    "replays/active_sensing_behavior.mp4": "50-tick curiosity gaze scanning control experiment",
+    "replays/action_veto_behavior.mp4": "50-tick 30 rad/s ramming command rejection control experiment"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "run_id": "P0_G2_S42_CORRIDOR_NARROW_250T",
+    "scenario": "CORRIDOR_NARROW",
+    "status": "PASS",
+    "disp": 0.2000,
+    "collisions": 0,
+    "violations": []
+  },
+  {
+    "run_id": "P0_K3_S42_CORRIDOR_NARROW_250T",
+    "scenario": "CORRIDOR_NARROW",
+    "status": "PASS",
+    "disp": 0.2000,
+    "collisions": 0,
+    "violations": []
+  },
+  {
+    "run_id": "P0_D1_S42_HISTORICAL_TURN_TRAP_300T",
+    "scenario": "HISTORICAL_TURN_TRAP",
+    "status": "PASS",
+    "disp": 0.4300,
+    "collisions": 0,
+    "violations": []
+  },
+  {
+    "run_id": "P0_F2_S42_DEAD_END_300T",
+    "scenario": "DEAD_END",
+    "status": "PASS",
+    "disp": 0.7000,
+    "collisions": 0,
+    "violations": []
+  },
+  {
+    "run_id": "P0_L4_S42_DEAD_END_150T",
+    "scenario": "DEAD_END",
+    "status": "PASS",
+    "disp": 0.3300,
+    "collisions": 0,
+    "violations": []
+  },
+  {
+    "run_id": "P0_N3_S42_BIFURCATION_1800T",
+    "scenario": "BIFURCATION",
+    "status": "PASS",
+    "disp": 3.8847,
+    "collisions": 0,
+    "violations": []
+  }
+]

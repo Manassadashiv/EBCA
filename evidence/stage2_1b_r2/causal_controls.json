@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "timestamp": "2026-09-04 16:51:16 UTC",
+    "stage": "Stage 2.1B-R.2",
+    "task": "Task 2: Stochastic Validation of Learned Motor Efference",
+    "unseen_test_seeds": [
+      303,
+      404,
+      505,
+      606,
+      707
+    ],
+    "frozen_k_eff": 4.0862
+  },
+  "comparative_controls": {
+    "substrate_a_sensory_only": {
+      "description": "Recurrent CANN with zero sensory/motor input during blackout",
+      "mean_error_deg": 112.21,
+      "individual_errors_deg": [
+        106.9,
+        100.09,
+        120.11,
+        110.7,
+        123.23
+      ]
+    },
+    "substrate_b_correct_efference": {
+      "description": "Recurrent CANN driven by frozen developmental efference copy (k_eff * delta_u)",
+      "mean_error_deg": 5.82,
+      "individual_errors_deg": [
+        6.44,
+        1.19,
+        5.62,
+        7.31,
+        8.52
+      ]
+    },
+    "substrate_c_inverted_efference": {
+      "description": "Recurrent CANN driven by inverted efference copy (-k_eff * delta_u)",
+      "mean_error_deg": 132.43,
+      "individual_errors_deg": [
+        138.39,
+        160.89,
+        126.74,
+        129.93,
+        106.19
+      ],
+      "unwrapped_divergence_deg": [
+        228.05,
+        197.92,
+        227.65,
+        237.38,
+        97.67
+      ]
+    },
+    "substrate_d_classical": {
+      "description": "Classical Euler numerical dead reckoning integration of efference copy",
+      "mean_error_deg": 4.25,
+      "individual_errors_deg": [
+        3.52,
+        6.37,
+        7.26,
+        3.02,
+        1.09
+      ]
+    }
+  }
+}

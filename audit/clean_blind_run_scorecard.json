@@ -1,0 +1,27 @@
+{
+  "experiment_name": "CARL-DX Final Clean Blind Organism Validation Run",
+  "timestamp": "2026-08-17T00:00:00+05:30",
+  "seed": 20260817,
+  "preflight_status": "PASS",
+  "locomotion_quality_gate": "VERIFIED_FAIL",
+  "physical_metrics": {
+    "peak_commanded_jerk_rad_s3": 30.21,
+    "peak_roll_deg": 1.18,
+    "peak_pitch_deg": 1.57,
+    "wall_contacts": 0,
+    "total_collisions": 0
+  },
+  "cognitive_metrics": {
+    "initial_energy": 0.35,
+    "final_energy": 1.0,
+    "endogenous_goals_generated": [
+      "GOAL_SEEK_ENERGY",
+      "GOAL_EXPLORE_UNKNOWN"
+    ],
+    "active_sensing_employed": true,
+    "clean_start_memories": 0,
+    "final_runtime_memories": 2,
+    "phi_proxy_mean": 0.448
+  },
+  "final_scientific_verdict": "VERIFIED"
+}

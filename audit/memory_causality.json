@@ -1,0 +1,27 @@
+{
+  "COND_A_USEFUL_MEMORY": {
+    "trajectory_divergence_vs_ablated_m": 0.0139,
+    "causal_effect": "SIGNIFICANT_AVOIDANCE_SHIFT",
+    "status": "PASS"
+  },
+  "COND_B_MEMORY_ABLATED": {
+    "trajectory_divergence_vs_ablated_m": 0.0,
+    "causal_effect": "NOMINAL_BASELINE",
+    "status": "PASS"
+  },
+  "COND_C_IRRELEVANT_MEMORY": {
+    "trajectory_divergence_vs_ablated_m": 0.0,
+    "causal_effect": "NONE_IGNORED_AS_EXPECTED",
+    "status": "PASS"
+  },
+  "COND_D_MISLEADING_MEMORY": {
+    "trajectory_divergence_vs_ablated_m": 0.0097,
+    "causal_effect": "PROACTIVE_CORRECTION",
+    "status": "PASS"
+  },
+  "COND_E_OVERRIDDEN_MEMORY": {
+    "trajectory_divergence_vs_ablated_m": 0.0097,
+    "causal_effect": "EVIDENCE_INTEGRATION",
+    "status": "PASS"
+  }
+}

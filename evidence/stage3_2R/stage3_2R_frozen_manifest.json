@@ -1,0 +1,12 @@
+{
+  "CARL_STAGE3_2R_FINAL_PREREGISTERED_PROTOCOL.md": "2e54acc70578372b6fd5dc1f472aa0ed4eb28004d53966b3234f9faced5583e3",
+  "carl_stage2_3_r1_deliberation.py": "651682c3e0950a0bfa03b7841c313e4bd6028a3b29eb5a7af3d4015b35579019",
+  "carl_stage2_2_r2_occupancy_memory.py": "d68d1b6804ac09a2367f54f0a93bbc0aa6a7e5c3b78c545454a0f1c75f6bf904",
+  "carl_stage2_2_r2_body_model.py": "495cf2423c8fcc919d25bc793acc930f479a613df6406f6a86ccb104102e8c95",
+  "carl_stage2_integrated_brain.py": "7ca0d38794de86088eb6b0a678b4b119b934b181573911d4bca8d970c5e1f78c",
+  "carl_stage1_hal.py": "3a37fd1569980880310f96b21b006ada74cfdf20f1e13a84ff9671c3fdf8f89f",
+  "stage3_2R_task_fixtures.py": "e06b77f661d312a4be7d4c87b2e3aced5a64508a0b5d9a9ab07668d008d17e42",
+  "test_stage3_2R_observational_equivalence.py": "f604764b7a4eac5f2a6b43b7f52b171c81f60b95c0e36b16518fac97f057124c",
+  "clean_arena.xml": "547a084f9d50b729ed449c4959ce9f834716a34f000760b67b0ff58cf668e425",
+  "vessel_kinetic.xml": "95280be72383dd0f7d9790129ed43e5a83f0ded003a5bfc0643828f2e8f8075d"
+}

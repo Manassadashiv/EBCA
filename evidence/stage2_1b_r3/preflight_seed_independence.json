@@ -1,0 +1,150 @@
+{
+  "verified_distinct": true,
+  "seed_count": 8,
+  "profiles": {
+    "42": {
+      "seed": 42,
+      "partition": "DEV",
+      "pos_x": -0.01506,
+      "pos_y": 0.05408,
+      "yaw_deg": 20.88,
+      "accel_noise_sample": [
+        0.00993,
+        -0.00277,
+        0.01295
+      ],
+      "gyro_noise_sample": [
+        0.02285,
+        -0.00351,
+        -0.00351
+      ],
+      "hash": "647d7fd4011a8f45"
+    },
+    "101": {
+      "seed": 101,
+      "partition": "DEV",
+      "pos_x": 0.00197,
+      "pos_y": 0.00848,
+      "yaw_deg": -42.44,
+      "accel_noise_sample": [
+        0.05414,
+        0.01256,
+        0.01816
+      ],
+      "gyro_noise_sample": [
+        0.00756,
+        0.00977,
+        -0.00479
+      ],
+      "hash": "064f03fedd7a25fa"
+    },
+    "202": {
+      "seed": 202,
+      "partition": "DEV",
+      "pos_x": -0.0331,
+      "pos_y": -0.02832,
+      "yaw_deg": 42.96,
+      "accel_noise_sample": [
+        -0.01472,
+        -0.0172,
+        -0.01847
+      ],
+      "gyro_noise_sample": [
+        0.00358,
+        -0.00875,
+        0.01011
+      ],
+      "hash": "119fb5a3a0c283ac"
+    },
+    "303": {
+      "seed": 303,
+      "partition": "UNSEEN",
+      "pos_x": 0.03001,
+      "pos_y": -0.02628,
+      "yaw_deg": 4.57,
+      "accel_noise_sample": [
+        -0.01683,
+        0.01923,
+        0.02683
+      ],
+      "gyro_noise_sample": [
+        0.00329,
+        -0.01606,
+        0.03008
+      ],
+      "hash": "69868d403c36263e"
+    },
+    "404": {
+      "seed": 404,
+      "partition": "UNSEEN",
+      "pos_x": 0.02026,
+      "pos_y": -0.01792,
+      "yaw_deg": 35.38,
+      "accel_noise_sample": [
+        -0.02365,
+        0.02675,
+        -0.00629
+      ],
+      "gyro_noise_sample": [
+        0.00835,
+        -0.00314,
+        -0.00018
+      ],
+      "hash": "d64c1f73af3b631e"
+    },
+    "505": {
+      "seed": 505,
+      "partition": "UNSEEN",
+      "pos_x": 0.04207,
+      "pos_y": -0.02489,
+      "yaw_deg": -24.92,
+      "accel_noise_sample": [
+        -0.00922,
+        0.01558,
+        -0.01314
+      ],
+      "gyro_noise_sample": [
+        -0.00903,
+        -0.01478,
+        -0.00499
+      ],
+      "hash": "d2cf223648a11f8a"
+    },
+    "606": {
+      "seed": 606,
+      "partition": "UNSEEN",
+      "pos_x": -0.0314,
+      "pos_y": 0.03222,
+      "yaw_deg": 5.57,
+      "accel_noise_sample": [
+        0.01538,
+        -0.01498,
+        0.02678
+      ],
+      "gyro_noise_sample": [
+        0.03688,
+        0.00708,
+        0.01398
+      ],
+      "hash": "6fd24a098fe84488"
+    },
+    "707": {
+      "seed": 707,
+      "partition": "UNSEEN",
+      "pos_x": -0.03454,
+      "pos_y": -0.0116,
+      "yaw_deg": -31.1,
+      "accel_noise_sample": [
+        -0.009,
+        -0.02678,
+        0.0078
+      ],
+      "gyro_noise_sample": [
+        -0.01542,
+        -0.01845,
+        -0.00853
+      ],
+      "hash": "488f25b6b752989e"
+    }
+  }
+}

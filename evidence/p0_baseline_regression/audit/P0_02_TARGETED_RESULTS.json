@@ -1,0 +1,95 @@
+{
+  "test_suite": "P0-02 Targeted Recovery Verification Suite",
+  "timestamp": "2026-08-18T00:54:00Z",
+  "scorer_used": "D:\\ebca\\tools\\p0_independent_scorer.py (Hardened Fail-Closed 12-Gate Engine)",
+  "total_runs": 7,
+  "passed_runs": 7,
+  "failed_runs": 0,
+  "pass_rate_pct": 100.0,
+  "runs": [
+    {
+      "run_id": "P0_D1_S42_HISTORICAL_TURN_TRAP_300T",
+      "group": "D1",
+      "arena": "HISTORICAL_TURN_TRAP",
+      "duration_ticks": 300,
+      "status": "PASS",
+      "recovery_episodes_completed": 0,
+      "recovery_episodes_started": 0,
+      "recovery_active_at_end": false,
+      "net_displacement_m": 0.3151,
+      "gate_violations": []
+    },
+    {
+      "run_id": "P0_G2_S42_CORRIDOR_NARROW_250T",
+      "group": "G2",
+      "arena": "CORRIDOR_NARROW",
+      "duration_ticks": 250,
+      "status": "PASS",
+      "recovery_episodes_completed": 3,
+      "recovery_episodes_started": 3,
+      "recovery_active_at_end": false,
+      "net_displacement_m": 0.1287,
+      "gate_violations": []
+    },
+    {
+      "run_id": "P0_K3_S42_CORRIDOR_NARROW_250T",
+      "group": "K3",
+      "arena": "CORRIDOR_NARROW",
+      "duration_ticks": 250,
+      "status": "PASS",
+      "recovery_episodes_completed": 3,
+      "recovery_episodes_started": 3,
+      "recovery_active_at_end": false,
+      "net_displacement_m": 0.1287,
+      "gate_violations": []
+    },
+    {
+      "run_id": "P0_F2_S42_DEAD_END_300T",
+      "group": "F2",
+      "arena": "DEAD_END",
+      "duration_ticks": 300,
+      "status": "PASS",
+      "recovery_episodes_completed": 1,
+      "recovery_episodes_started": 1,
+      "recovery_active_at_end": false,
+      "net_displacement_m": 1.0032,
+      "gate_violations": []
+    },
+    {
+      "run_id": "P0_L4_S42_DEAD_END_150T",
+      "group": "L4",
+      "arena": "DEAD_END",
+      "duration_ticks": 150,
+      "status": "PASS",
+      "recovery_episodes_completed": 1,
+      "recovery_episodes_started": 1,
+      "recovery_active_at_end": false,
+      "net_displacement_m": 0.2825,
+      "gate_violations": []
+    },
+    {
+      "run_id": "P0_N2_S42_CORRIDOR_WIDE_900T",
+      "group": "N2",
+      "arena": "CORRIDOR_WIDE",
+      "duration_ticks": 900,
+      "status": "PASS",
+      "recovery_episodes_completed": 0,
+      "recovery_episodes_started": 0,
+      "recovery_active_at_end": false,
+      "net_displacement_m": 3.7476,
+      "gate_violations": []
+    },
+    {
+      "run_id": "P0_N3_S42_BIFURCATION_1800T",
+      "group": "N3",
+      "arena": "BIFURCATION",
+      "duration_ticks": 1800,
+      "status": "PASS",
+      "recovery_episodes_completed": 1,
+      "recovery_episodes_started": 1,
+      "recovery_active_at_end": false,
+      "net_displacement_m": 5.2745,
+      "gate_violations": []
+    }
+  ]
+}

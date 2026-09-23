@@ -1,0 +1,57 @@
+{
+  "benchmark_type": "DIAGNOSTIC SCREENING \u2014 NOT CERTIFICATION",
+  "sample_size": 10,
+  "tested_configs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "arm_a": {
+    "escaped": 5,
+    "escape_rate_pct": 50.0,
+    "collided": 2,
+    "collision_rate_pct": 20.0,
+    "timeout": 3,
+    "timeout_rate_pct": 30.0,
+    "gate2_complete": 4,
+    "gate2_rate_pct": 40.0,
+    "mean_heading_error_deg": 10.18969501936015,
+    "mean_lateral_drift_m": 0.17067910447785067,
+    "min_hull_clearance_m": 0.00022467569215223193,
+    "mean_candidate_rejection_frac": 0.12897861072214223
+  },
+  "arm_b": {
+    "escaped": 2,
+    "escape_rate_pct": 20.0,
+    "collided": 3,
+    "collision_rate_pct": 30.0,
+    "timeout": 5,
+    "timeout_rate_pct": 50.0,
+    "gate2_complete": 4,
+    "gate2_rate_pct": 40.0
+  },
+  "comparative": {
+    "delta_escape_pct": 30.0,
+    "mcnemar_b": 3,
+    "mcnemar_c": 0,
+    "mcnemar_p_value": 0.125,
+    "mean_action_divergence": 0.8713202785482068
+  },
+  "latency": {
+    "sample_count": 1977,
+    "mean_ms": 20.547385685596677,
+    "median_ms": 14.628999982960522,
+    "p95_ms": 86.67263999814168,
+    "p99_ms": 157.53949201898652,
+    "max_ms": 374.61609998717904,
+    "budget_mean_pass": false,
+    "budget_p95_pass": false
+  }
+}

@@ -1,0 +1,8 @@
+condition,total_runs,successful,failed,timed_out,acquisition_rate,mean_acquisition_time_s,median_acquisition_time_s,mean_final_target_distance_m,mean_min_target_distance_m,mean_trajectory_tortuosity,mean_action_entropy_bits
+FULL_P1,75,0,75,75,0.0,NULL,NULL,2.0815,2.0398,1.1323,1.4023
+GEN_ENV_2,75,0,75,75,0.0,NULL,NULL,2.2405,2.1196,1.3225,2.0395
+GEN_ENV_3,75,0,75,75,0.0,NULL,NULL,2.0815,2.0398,1.1323,1.4023
+NO_ADAPTATION,75,0,75,75,0.0,NULL,NULL,2.0815,2.0398,1.1323,1.4023
+NO_MEMORY,75,0,75,75,0.0,NULL,NULL,2.0815,2.0398,1.1323,1.4023
+NO_NEED,75,0,75,75,0.0,NULL,NULL,2.0815,2.0398,1.1323,1.4023
+P0_CONTROL,75,0,75,75,0.0,NULL,NULL,2.0815,2.0398,1.1323,1.4023

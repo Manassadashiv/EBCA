@@ -1,0 +1,47 @@
+{
+  "videos_audited": 4,
+  "total_frames_decoded": 400,
+  "verdict": "ALL_VIDEO_FRAMES_VALID_AND_CONSISTENT",
+  "video_records": [
+    {
+      "video_file": "evidence\\final_truth\\videos\\scenario_10_corner_wedge_trap_s101.mp4",
+      "total_frames_decoded": 100,
+      "keyframes": [
+        "evidence/truth_trial/video_frames/scenario_10_corner_wedge_trap_s101_frame_001.png",
+        "evidence/truth_trial/video_frames/scenario_10_corner_wedge_trap_s101_frame_050.png",
+        "evidence/truth_trial/video_frames/scenario_10_corner_wedge_trap_s101_frame_098.png"
+      ],
+      "decoding_integrity": "VERIFIED_VALID"
+    },
+    {
+      "video_file": "evidence\\final_truth\\videos\\scenario_10_corner_wedge_trap_s2024.mp4",
+      "total_frames_decoded": 100,
+      "keyframes": [
+        "evidence/truth_trial/video_frames/scenario_10_corner_wedge_trap_s2024_frame_001.png",
+        "evidence/truth_trial/video_frames/scenario_10_corner_wedge_trap_s2024_frame_050.png",
+        "evidence/truth_trial/video_frames/scenario_10_corner_wedge_trap_s2024_frame_098.png"
+      ],
+      "decoding_integrity": "VERIFIED_VALID"
+    },
+    {
+      "video_file": "evidence\\final_truth\\videos\\scenario_10_corner_wedge_trap_s42.mp4",
+      "total_frames_decoded": 100,
+      "keyframes": [
+        "evidence/truth_trial/video_frames/scenario_10_corner_wedge_trap_s42_frame_001.png",
+        "evidence/truth_trial/video_frames/scenario_10_corner_wedge_trap_s42_frame_050.png",
+        "evidence/truth_trial/video_frames/scenario_10_corner_wedge_trap_s42_frame_098.png"
+      ],
+      "decoding_integrity": "VERIFIED_VALID"
+    },
+    {
+      "video_file": "evidence\\final_truth\\videos\\scenario_1_open_space_locomotion_s101.mp4",
+      "total_frames_decoded": 100,
+      "keyframes": [
+        "evidence/truth_trial/video_frames/scenario_1_open_space_locomotion_s101_frame_001.png",
+        "evidence/truth_trial/video_frames/scenario_1_open_space_locomotion_s101_frame_050.png",
+        "evidence/truth_trial/video_frames/scenario_1_open_space_locomotion_s101_frame_098.png"
+      ],
+      "decoding_integrity": "VERIFIED_VALID"
+    }
+  ]
+}

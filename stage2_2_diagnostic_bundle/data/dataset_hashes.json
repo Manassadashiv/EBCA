@@ -1,0 +1,28 @@
+{
+  "DEV_TRAIN": {
+    "path": "evidence\\stage2_2_diag\\datasets\\DEV_TRAIN.npz",
+    "sha256": "f01e84103449158d38d40c612650d37f4019b579cedcdf96cbf411683d35fcf3",
+    "metrics": {
+      "total_episodes": 60,
+      "total_timesteps": 24000,
+      "sonar_saturation_fraction": 0.2495777777777778,
+      "active_sonar_fraction": 0.7504222222222222,
+      "mean_abs_sonar_delta_m": 0.23034076392650604,
+      "high_change_transition_fraction": 0.5789473684210527,
+      "collision_timestep_fraction": 0.07691666666666666
+    }
+  },
+  "DEV_VAL": {
+    "path": "evidence\\stage2_2_diag\\datasets\\DEV_VAL.npz",
+    "sha256": "6eac8745dfc3254e2690a7e402581bc1c1931f8538a07fefb202409ba5e033c9",
+    "metrics": {
+      "total_episodes": 20,
+      "total_timesteps": 8000,
+      "sonar_saturation_fraction": 0.238375,
+      "active_sonar_fraction": 0.761625,
+      "mean_abs_sonar_delta_m": 0.2615651786327362,
+      "high_change_transition_fraction": 0.6320802005012531,
+      "collision_timestep_fraction": 0.0035
+    }
+  }
+}

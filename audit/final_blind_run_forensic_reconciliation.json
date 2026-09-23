@@ -1,0 +1,61 @@
+{
+  "audit_timestamp": "2026-08-16T23:30:00+05:30",
+  "audit_subject": "CARL-DX Final Blind Run Master Forensic Reconciliation",
+  "final_verdict": "VERIFIED_WITH_LIMITATIONS",
+  "issues_reconciled": {
+    "issue_1_memory_contradiction": {
+      "status": "RECONCILED",
+      "summary": "Agent started memory-clean at tick 0. The 120 memories in decision_trace.jsonl were generated at runtime due to a false-positive collision condition (sensory.ncon > 4). Post-run serialization stamped the final count (120) across all rows.",
+      "provenance_report": "audit/blind_run_memory_provenance.md"
+    },
+    "issue_2_collision_contradiction": {
+      "status": "RECONCILED",
+      "summary": "Independent MuJoCo contact analysis proves the physical run was 100% collision-free (0 wall contacts, 0 obstacle contacts, 0 self-collisions). The collision_occurred telemetry flag was triggered by normal floor contacts of arena objects.",
+      "contact_report": "audit/blind_run_contact_reconciliation.md"
+    },
+    "issue_3_resource_absorption": {
+      "status": "RECONCILED",
+      "summary": "Physical trajectory entered within 0.2966m of the resource beacon at tick 46-48 (capture radius 0.30m). Energy replenishment from 0.3478 to 1.0000 was 100% physically and mathematically caused by this spatial encounter.",
+      "capture_report": "audit/resource_capture_reconciliation.json"
+    },
+    "issue_4_visual_evidence_provenance": {
+      "status": "RECONCILED",
+      "summary": "All 12 diagnostic PNG plots and complete_blind_run.mp4 originate directly from the 120-tick final blind run. Other MP4s in replays/ represent targeted 50-tick control experiments or mirror cuts.",
+      "visual_report": "audit/visual_evidence_provenance.md"
+    },
+    "issue_5_capability_taxonomy": {
+      "homeostasis": "ENGINEERED_RULE",
+      "endogenous_goal_generation": "ENGINEERED_RULE_AUTONOMOUS_ARBITRATION",
+      "curiosity_and_gaze": "ENGINEERED_RULE",
+      "episodic_hdc_memory": "MEMORY_DEPENDENT",
+      "generative_self_model": "LEARNED_AND_ADAPTED",
+      "dreamer_rollout_engine": "ENGINEERED_RULE_PLANNING_ENGINE",
+      "operational_action_veto": "ENGINEERED_RULE",
+      "affective_posture": "ENGINEERED_RULE"
+    }
+  },
+  "scientific_status_summary": {
+    "what_is_proven": [
+      "Smooth, stable physical locomotion passing jerk (<120 rad/s^3) and roll/pitch (<8.6 deg) quality gates.",
+      "Autonomous spatial navigation and energy beacon absorption without external teleoperation.",
+      "Mathematical causality of homeostatic replenishment dE/dt driven by physical proximity.",
+      "Online self-model adaptation of estimated ground friction under traction changes.",
+      "Causal trajectory divergence (0.3353m) induced by episodic memory recall in paired control benchmarks.",
+      "Rejection and operational veto of hazardous 30 rad/s external commands."
+    ],
+    "what_is_only_implemented": [
+      "Differential metabolic homeostasis equations (E, T, F, S, Dh).",
+      "2048-D Hyperdimensional Computing (HDC) vector space binding.",
+      "Discrete candidate trajectory rollout evaluation (Dreamer EFE minimization).",
+      "Postural affect trim mapping from interoceptive state."
+    ],
+    "what_is_suggestive": [
+      "Autonomous transition from energy seeking to curiosity exploration upon homeostatic satiety.",
+      "High Tononi-Sporns cross-channel causal coupling (Phi_proxy = 0.4525)."
+    ],
+    "what_remains_unproven": [
+      "Pure unguided deep-neural developmental emergence from scratch.",
+      "Open-ended lifelong linguistic or symbolic concept invention."
+    ]
+  }
+}

@@ -1,0 +1,1783 @@
+{
+  "projectName": "CARL Quadruped Robot",
+  "nodes": [
+    {
+      "id": "mcu_can_node_1",
+      "name": "Front Right Limb Controller",
+      "productName": "STM32G474RET6",
+      "category": "electrical",
+      "type": "mcu",
+      "pins": [
+        "CAN_FD",
+        "PWM",
+        "ADC"
+      ],
+      "dimensions": "10x10x2mm",
+      "quantity": 1,
+      "estimatedCost": 12,
+      "purchaseUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G474RET6/10468307",
+      "partId": "3ba4c909-27d8-4097-be8b-2375ef216cc1",
+      "description": "Automotive-grade microcontroller for HHO system control and vehicle monitoring.",
+      "imageUrl": "https://m.media-amazon.com/images/I/41l997G0+UL._SL500_.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/s/fwx308cRD9Eny963e3KDdYxyIpNj8TXVr7saiF9Um5rMUg1kZtJALLnfa2LNXtiVgnxdD8Og6MmvwBoxhnSYQGM6r0c08U4TfX8DFGo7vviCuu3q62Q60OAhRZcqm3G8PtwM69xY7TOEWRrvulP5ukZQ4uQbBBtaVsdr6EffAqVmp3O5GyUANU2DoA3dJufNhDfh7KOlLgKIvRVhDxRESHLmea6fTE26gLUqKEUuuizJiLENrCbax94DZHDu8WhaXM9vQ86gzlqceNPO5w3vwXm4VrBF3x2lAMEl06wgNdTSMiT7cNG4HIdW0JxgZ0qYlF2b32spYvkOtrCExaJ1zeLvyJBSm9HMlIe2VoWsbDqY3vNyz9OIY3kVnL5Z79dBYA0weAQvM0vQoOiATnP94nT0F0hJHzoEO82pQaCimyZOEJH9d7Gr9rawcvBONhB4rBxEbySUeMvRFrlOS4iAryW7KgyWLzzK5mVJhy75ujdKzbmbONPYvCYO4dcfjoyuOu6576mrs7YxBR3skpsuUGRWB9LOLBS7JmV6U0O3B0RGRFLnaL31xh4M6M6IzBOH1sLkWF7RPnRilY4jdebPzeYV46gzhS7X1pFS7G5tJdPwwK8FGNRSXjVIzkBBS0lvWygH99Ir2zC5VwaPjY165F5GnYXXnIcuuSXHUbTKJyOgriTCLnGH4qIrIVl6OYPeaNA4ri6KXFOtI2GCoiq9xWArYgzkPXY8hzKRYXmAqEZ3SQSyivwZJoNWyb2UTQ2gVpuN6CzRrnlmZQ0bJekaVOkZKXHibTrTjOapLVlR7Dz7ffWLs4t9PymQJUlCIqvcRWFPJRYHWuxwvgj7X8sV2zIdI8Dku7IlSIvgluJuxDCZwfYmRAMCrV82fmJN03Qkxuc98tr3PVGvGFQDNm0B9FtrxXUgAXUtRRC5lDTvVVcaIiR02gKNLBdWvSanQd4Ii1HNPLOJzpgm47N5Mf",
+      "research": {
+        "sourcing": [
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B01I8XLEM8?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$27.59"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0DJ1QZJQP?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$10.22"
+          },
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/item/1005011608582746.html?pdp_npi=6%40dis%21USD%213.56%212.67%21%21%213.56%212.67%21%400b8ded7b17793369768932412e0f76%2112000056046599568%21affd%21%21%21%211%210%21",
+            "price": "$2.67"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0DNYKY9NZ?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$14.26"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=STM32G474RET6&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B01I8XLEM8?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "mcu_can_node_2",
+      "name": "Front Left Limb Controller",
+      "productName": "STM32G474RET6",
+      "category": "electrical",
+      "type": "mcu",
+      "pins": [
+        "CAN_FD",
+        "PWM",
+        "ADC"
+      ],
+      "dimensions": "10x10x2mm",
+      "quantity": 1,
+      "estimatedCost": 12,
+      "purchaseUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G474RET6/10468307",
+      "partId": "3ba4c909-27d8-4097-be8b-2375ef216cc1",
+      "description": "Automotive-grade microcontroller for HHO system control and vehicle monitoring.",
+      "imageUrl": "https://m.media-amazon.com/images/I/41l997G0+UL._SL500_.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/s/fwx308cRD9Eny963e3KDdYxyIpNj8TXVr7saiF9Um5rMUg1kZtJALLnfa2LNXtiVgnxdD8Og6MmvwBoxhnSYQGM6r0c08U4TfX8DFGo7vviCuu3q62Q60OAhRZcqm3G8PtwM69xY7TOEWRrvulP5ukZQ4uQbBBtaVsdr6EffAqVmp3O5GyUANU2DoA3dJufNhDfh7KOlLgKIvRVhDxRESHLmea6fTE26gLUqKEUuuizJiLENrCbax94DZHDu8WhaXM9vQ86gzlqceNPO5w3vwXm4VrBF3x2lAMEl06wgNdTSMiT7cNG4HIdW0JxgZ0qYlF2b32spYvkOtrCExaJ1zeLvyJBSm9HMlIe2VoWsbDqY3vNyz9OIY3kVnL5Z79dBYA0weAQvM0vQoOiATnP94nT0F0hJHzoEO82pQaCimyZOEJH9d7Gr9rawcvBONhB4rBxEbySUeMvRFrlOS4iAryW7KgyWLzzK5mVJhy75ujdKzbmbONPYvCYO4dcfjoyuOu6576mrs7YxBR3skpsuUGRWB9LOLBS7JmV6U0O3B0RGRFLnaL31xh4M6M6IzBOH1sLkWF7RPnRilY4jdebPzeYV46gzhS7X1pFS7G5tJdPwwK8FGNRSXjVIzkBBS0lvWygH99Ir2zC5VwaPjY165F5GnYXXnIcuuSXHUbTKJyOgriTCLnGH4qIrIVl6OYPeaNA4ri6KXFOtI2GCoiq9xWArYgzkPXY8hzKRYXmAqEZ3SQSyivwZJoNWyb2UTQ2gVpuN6CzRrnlmZQ0bJekaVOkZKXHibTrTjOapLVlR7Dz7ffWLs4t9PymQJUlCIqvcRWFPJRYHWuxwvgj7X8sV2zIdI8Dku7IlSIvgluJuxDCZwfYmRAMCrV82fmJN03Qkxuc98tr3PVGvGFQDNm0B9FtrxXUgAXUtRRC5lDTvVVcaIiR02gKNLBdWvSanQd4Ii1HNPLOJzpgm47N5Mf",
+      "research": {
+        "sourcing": [
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B01I8XLEM8?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$27.59"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0DJ1QZJQP?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$10.22"
+          },
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/item/1005011608582746.html?pdp_npi=6%40dis%21USD%213.56%212.67%21%21%213.56%212.67%21%400b8ded7b17793369768932412e0f76%2112000056046599568%21affd%21%21%21%211%210%21",
+            "price": "$2.67"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0DNYKY9NZ?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$14.26"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=STM32G474RET6&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B01I8XLEM8?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "mcu_can_node_3",
+      "name": "Rear Right Limb Controller",
+      "productName": "STM32G474RET6",
+      "category": "electrical",
+      "type": "mcu",
+      "pins": [
+        "CAN_FD",
+        "PWM",
+        "ADC"
+      ],
+      "dimensions": "10x10x2mm",
+      "quantity": 1,
+      "estimatedCost": 12,
+      "purchaseUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G474RET6/10468307",
+      "partId": "3ba4c909-27d8-4097-be8b-2375ef216cc1",
+      "description": "Automotive-grade microcontroller for HHO system control and vehicle monitoring.",
+      "imageUrl": "https://m.media-amazon.com/images/I/41l997G0+UL._SL500_.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/s/fwx308cRD9Eny963e3KDdYxyIpNj8TXVr7saiF9Um5rMUg1kZtJALLnfa2LNXtiVgnxdD8Og6MmvwBoxhnSYQGM6r0c08U4TfX8DFGo7vviCuu3q62Q60OAhRZcqm3G8PtwM69xY7TOEWRrvulP5ukZQ4uQbBBtaVsdr6EffAqVmp3O5GyUANU2DoA3dJufNhDfh7KOlLgKIvRVhDxRESHLmea6fTE26gLUqKEUuuizJiLENrCbax94DZHDu8WhaXM9vQ86gzlqceNPO5w3vwXm4VrBF3x2lAMEl06wgNdTSMiT7cNG4HIdW0JxgZ0qYlF2b32spYvkOtrCExaJ1zeLvyJBSm9HMlIe2VoWsbDqY3vNyz9OIY3kVnL5Z79dBYA0weAQvM0vQoOiATnP94nT0F0hJHzoEO82pQaCimyZOEJH9d7Gr9rawcvBONhB4rBxEbySUeMvRFrlOS4iAryW7KgyWLzzK5mVJhy75ujdKzbmbONPYvCYO4dcfjoyuOu6576mrs7YxBR3skpsuUGRWB9LOLBS7JmV6U0O3B0RGRFLnaL31xh4M6M6IzBOH1sLkWF7RPnRilY4jdebPzeYV46gzhS7X1pFS7G5tJdPwwK8FGNRSXjVIzkBBS0lvWygH99Ir2zC5VwaPjY165F5GnYXXnIcuuSXHUbTKJyOgriTCLnGH4qIrIVl6OYPeaNA4ri6KXFOtI2GCoiq9xWArYgzkPXY8hzKRYXmAqEZ3SQSyivwZJoNWyb2UTQ2gVpuN6CzRrnlmZQ0bJekaVOkZKXHibTrTjOapLVlR7Dz7ffWLs4t9PymQJUlCIqvcRWFPJRYHWuxwvgj7X8sV2zIdI8Dku7IlSIvgluJuxDCZwfYmRAMCrV82fmJN03Qkxuc98tr3PVGvGFQDNm0B9FtrxXUgAXUtRRC5lDTvVVcaIiR02gKNLBdWvSanQd4Ii1HNPLOJzpgm47N5Mf",
+      "research": {
+        "sourcing": [
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B01I8XLEM8?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$27.59"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0DJ1QZJQP?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$10.22"
+          },
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/item/1005011608582746.html?pdp_npi=6%40dis%21USD%213.56%212.67%21%21%213.56%212.67%21%400b8ded7b17793369768932412e0f76%2112000056046599568%21affd%21%21%21%211%210%21",
+            "price": "$2.67"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0DNYKY9NZ?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$14.26"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=STM32G474RET6&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B01I8XLEM8?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "mcu_can_node_4",
+      "name": "Rear Left Limb Controller",
+      "productName": "STM32G474RET6",
+      "category": "electrical",
+      "type": "mcu",
+      "pins": [
+        "CAN_FD",
+        "PWM",
+        "ADC"
+      ],
+      "dimensions": "10x10x2mm",
+      "quantity": 1,
+      "estimatedCost": 12,
+      "purchaseUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G474RET6/10468307",
+      "partId": "3ba4c909-27d8-4097-be8b-2375ef216cc1",
+      "description": "Automotive-grade microcontroller for HHO system control and vehicle monitoring.",
+      "imageUrl": "https://m.media-amazon.com/images/I/41l997G0+UL._SL500_.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/s/fwx308cRD9Eny963e3KDdYxyIpNj8TXVr7saiF9Um5rMUg1kZtJALLnfa2LNXtiVgnxdD8Og6MmvwBoxhnSYQGM6r0c08U4TfX8DFGo7vviCuu3q62Q60OAhRZcqm3G8PtwM69xY7TOEWRrvulP5ukZQ4uQbBBtaVsdr6EffAqVmp3O5GyUANU2DoA3dJufNhDfh7KOlLgKIvRVhDxRESHLmea6fTE26gLUqKEUuuizJiLENrCbax94DZHDu8WhaXM9vQ86gzlqceNPO5w3vwXm4VrBF3x2lAMEl06wgNdTSMiT7cNG4HIdW0JxgZ0qYlF2b32spYvkOtrCExaJ1zeLvyJBSm9HMlIe2VoWsbDqY3vNyz9OIY3kVnL5Z79dBYA0weAQvM0vQoOiATnP94nT0F0hJHzoEO82pQaCimyZOEJH9d7Gr9rawcvBONhB4rBxEbySUeMvRFrlOS4iAryW7KgyWLzzK5mVJhy75ujdKzbmbONPYvCYO4dcfjoyuOu6576mrs7YxBR3skpsuUGRWB9LOLBS7JmV6U0O3B0RGRFLnaL31xh4M6M6IzBOH1sLkWF7RPnRilY4jdebPzeYV46gzhS7X1pFS7G5tJdPwwK8FGNRSXjVIzkBBS0lvWygH99Ir2zC5VwaPjY165F5GnYXXnIcuuSXHUbTKJyOgriTCLnGH4qIrIVl6OYPeaNA4ri6KXFOtI2GCoiq9xWArYgzkPXY8hzKRYXmAqEZ3SQSyivwZJoNWyb2UTQ2gVpuN6CzRrnlmZQ0bJekaVOkZKXHibTrTjOapLVlR7Dz7ffWLs4t9PymQJUlCIqvcRWFPJRYHWuxwvgj7X8sV2zIdI8Dku7IlSIvgluJuxDCZwfYmRAMCrV82fmJN03Qkxuc98tr3PVGvGFQDNm0B9FtrxXUgAXUtRRC5lDTvVVcaIiR02gKNLBdWvSanQd4Ii1HNPLOJzpgm47N5Mf",
+      "research": {
+        "sourcing": [
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B01I8XLEM8?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$27.59"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0DJ1QZJQP?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$10.22"
+          },
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/item/1005011608582746.html?pdp_npi=6%40dis%21USD%213.56%212.67%21%21%213.56%212.67%21%400b8ded7b17793369768932412e0f76%2112000056046599568%21affd%21%21%21%211%210%21",
+            "price": "$2.67"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0DNYKY9NZ?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$14.26"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=STM32G474RET6&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B01I8XLEM8?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "lidar_sensor",
+      "name": "360 Degree LiDAR",
+      "productName": "RPLIDAR S2",
+      "category": "electrical",
+      "type": "sensor",
+      "pins": [
+        "UART",
+        "5V_Power"
+      ],
+      "dimensions": "71x71x42mm",
+      "quantity": 1,
+      "estimatedCost": 399,
+      "purchaseUrl": "https://www.slamtec.com/en/Lidar/S2",
+      "partId": "a47a2791-2785-4c8e-92c4-1b4d6ad73e67",
+      "description": "360-degree LiDAR for obstacle avoidance, environment mapping, and precise navigation for the Queen.",
+      "imageUrl": "https://m.media-amazon.com/images/I/21hYQxfeF8L._SL500_.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/s/fwx308cRD9Eny963e3KDdYxyIpNj8TXVr7saiF9Um5rMUg1kZtJALLnfa2LNXtiVgnxdD8Og6MmvwBoxhnSYQGM6r0c08U4TfX8DFGo7vviCuu3q62Q60OAhRZcqm3G8PtwM69xY7TOEWRrvulP5ukZQ4uQbBBtaVsdr6EffAqVmp3O5GyUANU2DoA3dJufNhDfh7KOlLgKIvRVhDxRESHLmea6fTE26gLUqKEUuuizJiLENrCbax94DZHDu8WhaXM9vQ86gzlqceNPO5w3vwXm4VrBF3x2lAMEl06wgNdTSMiT7cNG4HIdW0Jxw6uL28e8ixafgcIhpS9Lx0hPCH1hK21PrrJZJjUFzDKvrQHsnQQSnmcXmqmMKUVKWeYfw8oTnTg0Cez4E9Rc16M6FjjiBmgflHZ02BgV31tTmOCBJgndcMRs6il3qZRJIfSSweQTOsqhDgM9Ln00fdym2iGJaYHsQUq2bRSIZcB9ULsoRKFkW8JRN9yN8onX6vU5js1fPy3uuXjosQWXXRT9HhtWILaikus6OsOI2cT692jJjMVHJMiUAfvWiugZVuwf3oOR3VbXhAV7AziZWTbaZ0A1WDnaQZy2rdrJGTXX0svlb75YO1jUvGFYEkwUq7miAnL7XjTwTHwGP6N3qzZOyPgzmnePN8Mc38sm0ZLtAxgUPuwuIibBXKsESWziw1NkRjb2lJSVLwVdX0pbIzkW5dShQiyIkEP7L0YDbj8epCySZTXtAeRhzhqDlrzYnCjDRGIt7MRYpCuOj98GlCMpAYdA5jgWBBbH8fRmHMsIVNZeA8zY2xawkSpjSVDPH6WINX2PZfsTzZA9Lk4N2KpK00yY5AP98Bi74cVsWgRII8gRJLRQrm6xwqWJFWxTAHMV6VDRWPWA2nMERISUrVfDoeqwopi0pUP1ihVeeJ8NeSrpi0nAo5RnQOfsIbHN1l6RUNvBYbUcGV9KZU2PIAf",
+      "research": {
+        "sourcing": [
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B09XD4C52M?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$329.99"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0BGXXTXSB?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$299"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0G4M3J1L8?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$349"
+          },
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/item/1005007846437323.html?pdp_npi=6%40dis%21USD%2139.00%2139.00%21%21%2139.00%2139.00%21%402151fca717796681502538495e0f50%2112000056009551792%21affd%21%21%21%211%210%21",
+            "price": "$39"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=RPLIDAR+S2&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B09XD4C52M?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "imu_sensor",
+      "name": "9-Axis IMU",
+      "productName": "Bosch BNO085",
+      "category": "electrical",
+      "type": "sensor",
+      "pins": [
+        "I2C",
+        "SPI"
+      ],
+      "dimensions": "25x20x5mm",
+      "quantity": 1,
+      "estimatedCost": 45,
+      "purchaseUrl": "https://www.adafruit.com/product/4754",
+      "partId": "4d3964d2-f5b8-4883-bc43-8833c7b70ea7",
+      "description": "9-axis IMU with sensor fusion for cart navigation and orientation sensing.",
+      "imageUrl": "https://m.media-amazon.com/images/I/41OOgZrdIsL._SL500_.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/e/_c3mu9Q29",
+      "research": {
+        "sourcing": [
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0CDGZMLPP?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$19.59"
+          },
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/w/wholesale-bosch-bno085.html"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=Bosch+BNO085&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B0CDGZMLPP?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "actuator_joint_fl1",
+      "name": "Front Left Hip Joint",
+      "productName": "T-Motor AK70-10",
+      "category": "electrical",
+      "type": "actuator",
+      "pins": [
+        "Phase_A",
+        "Phase_B",
+        "Phase_C",
+        "Encoder"
+      ],
+      "dimensions": "85x85x45mm",
+      "quantity": 1,
+      "estimatedCost": 220,
+      "purchaseUrl": "https://store.tmotor.com/product/ak70-10-kv100.html",
+      "partId": "869bf184-8a4e-4069-879a-6d853b4733af",
+      "imageUrl": "https://m.media-amazon.com/images/I/31j0hALmj6L._SL500_.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/s/NdpwztbAIgDMmxGbP8fFks7yUFfsHjzlImSYmA68h7xlMRgzueFsRgokQ9f9hcpVKttxtQE2VzIoqkXJXrpOr6uR3zv7mP4CDO9CddoFf4t0QE5DXPy8Pgjhz4irfQSEjEGUmy5yF3A5gJ9h3NYjLMgqIMqa3zcpq5E2BC3W5EbV40Dm9buQxWpZzw1lbX8Zm2kZtNIa4KyDieNjsH7IU6Yv8StELKVvT9r4eFAaXPGhwHsgaDqdNcmY116r3GC2YvsOopeiiZPhJrV0cwgOQDSkW93v7gVKDqPkXyZF1oSWa6wSAOeznMFVlVYQv1C6k9PuJCrWuCvrOeWeNK9qRQmj6YH6UDmIdjzaIkgeBubhqjOD2XX5ddHDNijoZMDQA9k1f45EAqtle8epmgO5FAqJPW0QdUaimpzhPbUpCTrkYOpyj4nSFfqkMJ7teHfXBGEruLNsJyJhf1oeCF3CKa3Z6V8xxDmuf3V8qyf2V7hfwy13WTX2vLNNffGbQykCwzO5pLppxbs8al3YcL9swwbhTYG6IM8HtuMBKOyvsual3M7Sgm48LfvtpJnCa0eN4h1Lddup7cJU34M0vbuaU7GlaFeyenbE3Vp6337K1CHHDlemk0415lc5iFO1wGsZpfH41074NHm2kKvzeUSgituXDgBZ50GwZLG8R33QldhvZFOQ06MrgYy0UrfZudSsYlJI2YGPnM3tsX1hLWAdFxAGlCg7Psc89uZ3QDpRbwTGgPziIjRT8UA6h601T97alYJDSdZKkpD3AgccWn9winV8coiLRDrOU5ejcrEClatvVkE2xugF8XJYf6U11i9J6JgCF2NTx7rH6bLwgOzLAGykkavqLd7C0467ftKmikcU3EwODTvmJ7wGcbT4fPP5oWXlR9Ij4qjgYbbC9yFCkdU8H80cyhJ9cTDCBi2upp27LZXyII4KyxPhpTh1uHFsHXm7wewIJ0ur6xQ5nOHQbk7DLBmt76tcVpJz0I8tZXZWb",
+      "research": {
+        "sourcing": [
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/item/1005004133831101.html?pdp_npi=6%40dis%21USD%21326.53%21326.53%21%21%212209.26%212209.26%21%4021013cc017835229467341544e101d%2112000033859081798%21affd%21%21%21%211%210%21",
+            "price": "$326.53"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0FX91HGTL?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$516.2"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0H4PD8531?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$2050.95"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0H7WM1KRT?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$581.95"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=T-Motor+AK70-10&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B0FX91HGTL?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "power_module",
+      "name": "24V Power Distribution",
+      "productName": "Custom 24V BMS Power Board",
+      "category": "electrical",
+      "type": "power",
+      "pins": [
+        "VCC_IN",
+        "GND",
+        "CAN_ISO"
+      ],
+      "dimensions": "100x80x20mm",
+      "quantity": 1,
+      "estimatedCost": 85,
+      "purchaseUrl": "https://www.digikey.com/en/products/result?keywords=BMS+PCB",
+      "partId": "f9a633d2-6cb7-451e-a17e-055c6f59c20c",
+      "imageUrl": "https://m.media-amazon.com/images/I/519vaKQ3-IL._SL500_.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/s/fwx308cRD9Eny963e3KDdYxyIpNj8TXVr7saiF9Um5rMUg1kZtJALLnfa2LNXtiVgnxdD8Og6MmvwBoxhnSYQGM6r0c08U4TfX8DFGo7vviCuu3q62Q60OAhRZcqm3G8PtwM69xY7TOEWRrvulP5ukZQ4uQbBBtaVsdr6EffAqVmp3O5GyUANU2DoA3dJufNhDfh7KOlLgKIvRVhDxRESHLmea6fTE26gLUqKEUuuizJiLENrCbax94DZHDu8WhaXM9vQ86gzlqceNPO5w3vwXm4VrBF3x2lAMEl06wgNdTSMiT7cNG4HIdW0JxRdOSXQ36XqkAQeP8W0MZypnjEI6T4VzW5x4RSMdOvO08DzUcZ2EdlThsrylRqeQzds8QweTv5RmOubfVEsgAkQbabSxDzfcJnkUIch4MT7VPTyUXUUfTBgA81kDAs8r1DySnhEk7IbtMZKGH3aON1g9hNSc5GVLDjFFemptpRUAVpetnzquO78Ag23l6LaX3tLR6D1jzjZj2rCRXBMwBb25z6OBFzJevdD2j75QlIBYao7iN6zcteOEn1Ke9Ht0FOZaYnktrgCyPZ9pLB7XtMXOpLxA3kRzO1mz6ivCXPFVmuV3PhwcPuh1VtHbP1DJUaHK8chlz3TRVWq9P9EPjWm7GV6bqqXq8slsjgCRfbICmKGJ56unppTd8gQnpiWGKCXEkQ11GJ0okMtlVjDFx73OSDRZe7Mp3pi2LHoZ6gifotdwXJj8qtGORr0TYmEuN41eI7MoCsFevh3tRNvmSypYEI7tLZJaTq8jFWyfK9lBCRaslbf9SZPlQeydjOED8dZFQwh1QRTJ1VrjcnYvTfRZ1PdpIXSQVCb7ulAZrU27CO5Qhzpr4nlMvFWEkRixWQMMZHfxAFJDiTPCJM7elbUehYp6oysAz5cHwDo8SW9CiNbc4PZjlb2OSZuFRsMjmv6t2z6WMJJdxbbK5LL4eBsJ",
+      "research": {
+        "sourcing": [
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0B7J5MFD6?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$11.99"
+          },
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/item/1005006064385669.html?pdp_npi=6%40dis%21USD%218.68%212.78%21%21%2158.55%2118.74%21%4021013cc017849866676364543e0efe%2112000035847981133%21affd%21%21%21%211%210%21",
+            "price": "$2.78"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=Custom+24V+BMS+Power+Board&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B0B7J5MFD6?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "chassis_main_plate",
+      "name": "Main Chassis Frame",
+      "category": "mechanical",
+      "type": "structural",
+      "description": "Central carbon fiber chassis plate providing mounting points for the battery, compute module, and leg assemblies.",
+      "dimensions": "550x250x4mm",
+      "material": "Carbon Fiber",
+      "quantity": 1,
+      "estimatedCost": 85,
+      "purchaseUrl": "https://www.amazon.com/dp/B0CRV5XP4M?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+      "partId": "335183a9-2a52-417a-ac98-e3bc3672e623",
+      "productName": "Main Chassis Frame",
+      "imageUrl": "https://m.media-amazon.com/images/I/316SZ227GtL._SL500_.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/e/_c4OC2jXn",
+      "research": {
+        "sourcing": [
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0CRV5XP4M?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$59.99"
+          },
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/w/wholesale-main-chassis-frame.html"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=Main+Chassis+Frame&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B0CRV5XP4M?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "mount_jetson_orin",
+      "name": "Orin NX Mount",
+      "category": "mechanical",
+      "type": "3d_printed",
+      "description": "Vibration-dampened 3D printed housing for the NVIDIA Jetson Orin NX.",
+      "dimensions": "100x80x40mm",
+      "material": "PETG",
+      "printSettings": "30% infill, 0.2mm layer",
+      "mountsFor": "main_compute_node",
+      "quantity": 1,
+      "estimatedCost": 2.5,
+      "purchaseUrl": "https://www.amazon.com/s?k=PETG+filament",
+      "research": {
+        "specs": [
+          {
+            "label": "Recommended Material",
+            "value": "TPU (Thermoplastic Polyurethane) for vibration damping or PETG for structural rigidity"
+          },
+          {
+            "label": "Layer Height",
+            "value": "0.2mm"
+          },
+          {
+            "label": "Infill Percentage",
+            "value": "20% (Gyroid pattern recommended for isotropic strength)"
+          },
+          {
+            "label": "Support Requirements",
+            "value": "Support structures needed for mounting holes and overhangs"
+          },
+          {
+            "label": "Print Orientation",
+            "value": "Bottom face flat against the print bed"
+          },
+          {
+            "label": "Estimated Print Time",
+            "value": "3.5 to 5 hours depending on infill density"
+          },
+          {
+            "label": "Dimensional Compatibility",
+            "value": "Standard NVIDIA Jetson Orin NX module footprint with M3 clearance holes"
+          }
+        ],
+        "summary": "This 3D-printed housing is specifically engineered to secure the NVIDIA Jetson Orin NX within the CARL quadruped chassis. It features vibration-dampening mounting points to protect sensitive compute hardware from the high-frequency impact forces generated during quadrupedal locomotion.",
+        "cadFileUrls": [
+          {
+            "label": "GrabCAD",
+            "url": "https://grabcad.com/library?query=Orin%20NX%20Mount",
+            "description": "Community-shared mechanical designs, typically including STEP, IGES, and STL files for custom housings and brackets."
+          },
+          {
+            "label": "SnapEDA",
+            "url": "https://www.snapeda.com/search/?q=Orin%20NX%20Mount",
+            "description": "Primarily focused on PCB footprints and schematic symbols, though sometimes contains 3D housing models for components."
+          },
+          {
+            "label": "Ultra Librarian",
+            "url": "https://www.ultralibrarian.com/search?q=Orin%20NX%20Mount",
+            "description": "Library of CAD parts primarily for electronics, offering 3D models and footprint data for integration into CAD software."
+          },
+          {
+            "label": "Thingiverse",
+            "url": "https://www.thingiverse.com/search?q=Orin%20NX%20Mount",
+            "description": "Repository for hobbyist-focused 3D printable designs, specifically STL files for mounting enclosures and brackets."
+          }
+        ],
+        "sourcing": []
+      }
+    },
+    {
+      "id": "mount_lidar",
+      "name": "LiDAR Mast",
+      "category": "mechanical",
+      "type": "3d_printed",
+      "description": "Elevated pedestal for 360 LiDAR sensor to ensure clear field of view above chassis.",
+      "dimensions": "80x80x120mm",
+      "material": "PETG",
+      "printSettings": "40% infill, 0.2mm layer",
+      "mountsFor": "lidar_sensor",
+      "quantity": 1,
+      "estimatedCost": 3,
+      "purchaseUrl": "https://www.amazon.com/s?k=PETG+filament"
+    },
+    {
+      "id": "leg_fl_upper",
+      "name": "FL Upper Leg",
+      "category": "mechanical",
+      "type": "structural",
+      "description": "Aluminum upper thigh linkage connecting hip actuator to knee joint.",
+      "dimensions": "200x40x20mm",
+      "material": "Aluminum 6061",
+      "quantity": 1,
+      "estimatedCost": 35,
+      "purchaseUrl": "https://www.amazon.com/s?k=aluminum+c-channel",
+      "partId": "ae8f6b18-ab0d-43d5-860b-5df233ba1fdf",
+      "productName": "Aluminum 6061 U-Channel",
+      "imageUrl": "https://m.media-amazon.com/images/I/31PBr-vQu-L._SL500_.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/e/_c4lPzDph",
+      "research": {
+        "sourcing": [
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/w/wholesale-aluminum-6061-u-channel.html"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=Aluminum+6061+U-Channel&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B003U6HPH2?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "motor_mount_fl",
+      "name": "FL Hip Motor Mount",
+      "category": "mechanical",
+      "type": "3d_printed",
+      "description": "Structural interface bracket for front-left hip actuator.",
+      "dimensions": "65x65x30mm",
+      "material": "PETG",
+      "printSettings": "100% infill, 0.2mm layer",
+      "mountsFor": "actuator_joint_fl1",
+      "quantity": 1,
+      "estimatedCost": 2,
+      "purchaseUrl": "https://www.amazon.com/s?k=PETG+filament"
+    },
+    {
+      "id": "fastener_m3_12",
+      "name": "M3x12mm Bolts",
+      "category": "mechanical",
+      "type": "misc",
+      "description": "Standard stainless steel hex cap screw for modular component fastening.",
+      "dimensions": "M3x12mm",
+      "quantity": 50,
+      "estimatedCost": 0.15,
+      "purchaseUrl": "https://s.click.aliexpress.com/s/fwx308cRD9Eny963e3KDdYxyIpNj8TXVr7saiF9Um5rMUg1kZtJALLnfa2LNXtiVgnxdD8Og6MmvwBoxhnSYQGM6r0c08U4TfX8DFGo7vviCuu3q62Q60OAhRZcqm3G8PtwM69xY7TOEWRrvulP5ukZQ4uQbBBtaVsdr6EffAqVmp3O5GyUANU2DoA3dJufNhDfh7KOlLgKIvRVhDxRESHLmea6fTE26gLUqKEUuuizJiLENrCbax94DZHDu8WhaXM9vQ86gzlqceNPO5w3vwXm4VrBF3xpjK0z5F4tXx7la8qLVQd4zJbXyg9diIpayl5ec0KinGlwZJIEtlfyfr7U9Z8yu2oGFVGkKy1oS0iXUgdYK0BgvB8J0WfjQ7B8viwfoLGdFMEIm8DSxHFqQmuZG276yREhVhGnyNxZAVjk3WawBqr9wlDb6WhwdaGncTifzZYcfn5cZMr0m5FeOEm27nyq8jf4laCYPjcfJzWd3f56EobltJV8uyVk8Tx1CeSOKKeLU7q7EmiVIUNtXKS0iuG5MlOzkEqgCDj9dw7ecIFZgR0EwYq3NlosYqz78nqZ7hBMmIAs4IPhcdTCM2yJXgua3wlM6RQRE755TRCm7Dpl6IZYlUbdCi7UyVIKKqFfCEWeWyZcK7YqEuQbR04w0RksXxIjHi5zygRJrtLtc08RKz6yaFmAU96HCtVDhsVvRcD1fFCPgTvYfdLqtnJdxxrp84eW8jlSdHOavXsUSGdKtJMGopqX2r5rMNwVrX5Sb7kYBXcdudvthQChT5G9ss6UXHWRqLvOorHoEIKGbZYIIWkp2yb0gJJqYbG7GExSL45nlBJnNOTjlqTsIqik1MULITlv3luRTQmKf5vI0X0mmNUuvrlXAWXRrGD1q1hUifGjRhL1YggRsGrXkgiLzbsOjFFQzVElb4j8keiOn3RUhyHDuo1ySTcv3FL4yGfun9fozcMRtXrcqXt",
+      "partId": "78418463-fc9d-47de-a443-05c755270914",
+      "productName": "M3x12mm Bolts",
+      "material": "Steel",
+      "imageUrl": "https://m.media-amazon.com/images/I/41KIuBfN39L._SL500_.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/s/fwx308cRD9Eny963e3KDdYxyIpNj8TXVr7saiF9Um5rMUg1kZtJALLnfa2LNXtiVgnxdD8Og6MmvwBoxhnSYQGM6r0c08U4TfX8DFGo7vviCuu3q62Q60OAhRZcqm3G8PtwM69xY7TOEWRrvulP5ukZQ4uQbBBtaVsdr6EffAqVmp3O5GyUANU2DoA3dJufNhDfh7KOlLgKIvRVhDxRESHLmea6fTE26gLUqKEUuuizJiLENrCbax94DZHDu8WhaXM9vQ86gzlqceNPO5w3vwXm4VrBF3xpjK0z5F4tXx7la8qLVQd4zJbXyg9diIpayl5ec0KinGlwZJIEtlfyfr7U9Z8yu2oGFVGkKy1oS0iXUgdYK0BgvB8J0WfjQ7B8viwfoLGdFMEIm8DSxHFqQmuZG276yREhVhGnyNxZAVjk3WawBqr9wlDb6WhwdaGncTifzZYcfn5cZMr0m5FeOEm27nyq8jf4laCYPjcfJzWd3f56EobltJV8uyVk8Tx1CeSOKKeLU7q7EmiVIUNtXKS0iuG5MlOzkEqgCDj9dw7ecIFZgR0EwYq3NlosYqz78nqZ7hBMmIAs4IPhcdTCM2yJXgua3wlM6RQRE755TRCm7Dpl6IZYlUbdCi7UyVIKKqFfCEWeWyZcK7YqEuQbR04w0RksXxIjHi5zygRJrtLtc08RKz6yaFmAU96HCtVDhsVvRcD1fFCPgTvYfdLqtnJdxxrp84eW8jlSdHOavXsUSGdKtJMGopqX2r5rMNwVrX5Sb7kYBXcdudvthQChT5G9ss6UXHWRqLvOorHoEIKGbZYIIWkp2yb0gJJqYbG7GExSL45nlBJnNOTjlqTsIqik1MULITlv3luRTQmKf5vI0X0mmNUuvrlXAWXRrGD1q1hUifGjRhL1YggRsGrXkgiLzbsOjFFQzVElb4j8keiOn3RUhyHDuo1ySTcv3FL4yGfun9fozcMRtXrcqXt",
+      "research": {
+        "sourcing": [
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/item/4001162137731.html?pdp_npi=6%40dis%21USD%212.44%212.44%21%21%212.44%212.44%21%40212a7b8d17846467253018659e1058%2110000014950138353%21affd%21%21%21%211%210%21",
+            "price": "$2.44"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0DJQGMQZM?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$7.64"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=M3x12mm+Bolts&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B0DJQGMQZM?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "heat_set_insert",
+      "name": "M3 Heat Set Inserts",
+      "category": "mechanical",
+      "type": "misc",
+      "description": "Brass threaded inserts for mounting electrical modules to 3D printed parts.",
+      "dimensions": "M3x4mm",
+      "quantity": 30,
+      "estimatedCost": 0.2,
+      "purchaseUrl": "https://s.click.aliexpress.com/s/fwx308cRD9Eny963e3KDdYxyIpNj8TXVr7saiF9Um5rMUg1kZtJALLnfa2LNXtiVgnxdD8Og6MmvwBoxhnSYQGM6r0c08U4TfX8DFGo7vviCuu3q62Q60OAhRZcqm3G8PtwM69xY7TOEWRrvulP5ukZQ4uQbBBtaVsdr6EffAqVmp3O5GyUANU2DoA3dJufNhDfh7KOlLgKIvRVhDxRESHLmea6fTE26gLUqKEUuuizJiLENrCbax94DZHDu8WhaXM9vQ86gzlqceNPO5w3vwXm4VrBF3x2lAMEl06wgNdTSMiT7cNG4HIdW0JxgNN69lIIDIECscgtgGU9UYxef4BRiw7YumAEEqwxfnfC3Yg67nOYI4dFlZCGwoomZsjoNu8orcnDAMD7B9ug5ljEl8J2qRKQrspZ0SYqxZIHKBRoDD5m0MTsX2TX0DyPj7M2IMyGVVlZVrhtqSl2m9AbLDTVdocvmpCeVWuVvBJFKYM4sacYEtD8eojrkr2NpnME7qmu1yZEVgTRKFaCKgwbcUOmH9Kkbg6uPfVQC1Ny2e3PnChYkrf2QX2TRnlBVzuBcTKqT9gG4JFWZ4oTYIf05EYjH0Dd0dEh04ugCa3jiWxEJdGXhykEliE779weOMYFmhZyBIMHHRAx0gxB51kUkswIU0jos9ByDRU1j5gdwXORvIohlXNxktBNzjaXarzrJcI8WstMTjrWVLqmexOMZY4UFM0ufFLeKT2i42JgchQPXA0JC7Jd2eDz50Yuxffs5mKf0sKOqu0W6zU99OaLd2V91nRV1wIf9zAvwvdlgAwdMHeWovKAppP5BJ5fJ9kuSW4Lfts2a4k3luLqdksvboQUyLpVmZidcUwTRy0j0qwuS061zhKtcSP1orCyQUJU3PygURPDFen0aH5X2zYgEN11I85CNWZZtjI4xX9tQ03SfJG9DqCnROHwxB4zoHBt9jibfkShF1Np3Juc6Th",
+      "partId": "07e09168-e929-4896-9e3b-4a363c771f48",
+      "productName": "M3 Heat Set Inserts",
+      "imageUrl": "https://cdn-shop.adafruit.com/640x480/4255-02.jpg",
+      "aliexpressUrl": "https://s.click.aliexpress.com/s/fwx308cRD9Eny963e3KDdYxyIpNj8TXVr7saiF9Um5rMUg1kZtJALLnfa2LNXtiVgnxdD8Og6MmvwBoxhnSYQGM6r0c08U4TfX8DFGo7vviCuu3q62Q60OAhRZcqm3G8PtwM69xY7TOEWRrvulP5ukZQ4uQbBBtaVsdr6EffAqVmp3O5GyUANU2DoA3dJufNhDfh7KOlLgKIvRVhDxRESHLmea6fTE26gLUqKEUuuizJiLENrCbax94DZHDu8WhaXM9vQ86gzlqceNPO5w3vwXm4VrBF3x2lAMEl06wgNdTSMiT7cNG4HIdW0JxgNN69lIIDIECscgtgGU9UYxef4BRiw7YumAEEqwxfnfC3Yg67nOYI4dFlZCGwoomZsjoNu8orcnDAMD7B9ug5ljEl8J2qRKQrspZ0SYqxZIHKBRoDD5m0MTsX2TX0DyPj7M2IMyGVVlZVrhtqSl2m9AbLDTVdocvmpCeVWuVvBJFKYM4sacYEtD8eojrkr2NpnME7qmu1yZEVgTRKFaCKgwbcUOmH9Kkbg6uPfVQC1Ny2e3PnChYkrf2QX2TRnlBVzuBcTKqT9gG4JFWZ4oTYIf05EYjH0Dd0dEh04ugCa3jiWxEJdGXhykEliE779weOMYFmhZyBIMHHRAx0gxB51kUkswIU0jos9ByDRU1j5gdwXORvIohlXNxktBNzjaXarzrJcI8WstMTjrWVLqmexOMZY4UFM0ufFLeKT2i42JgchQPXA0JC7Jd2eDz50Yuxffs5mKf0sKOqu0W6zU99OaLd2V91nRV1wIf9zAvwvdlgAwdMHeWovKAppP5BJ5fJ9kuSW4Lfts2a4k3luLqdksvboQUyLpVmZidcUwTRy0j0qwuS061zhKtcSP1orCyQUJU3PygURPDFen0aH5X2zYgEN11I85CNWZZtjI4xX9tQ03SfJG9DqCnROHwxB4zoHBt9jibfkShF1Np3Juc6Th",
+      "research": {
+        "documentationUrls": [
+          {
+            "url": "https://www.adafruit.com/product/4255",
+            "title": "Product Page (Adafruit)"
+          }
+        ],
+        "sourcing": [
+          {
+            "vendor": "Adafruit",
+            "url": "https://www.adafruit.com/product/4255",
+            "price": "$5.95"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0CS6VZYL8?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$6.9"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B08BCRZZS3?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$9.99"
+          },
+          {
+            "vendor": "AliExpress",
+            "url": "https://www.aliexpress.com/item/1005008429882858.html?pdp_npi=6%40dis%21USD%217.67%213.84%21%21%2151.98%2125.99%21%402140d36217793323913271977e1175%2112000045059903241%21affd%21%21%21%211%210%21",
+            "price": "$3.84"
+          },
+          {
+            "vendor": "Amazon",
+            "url": "https://www.amazon.com/dp/B0DG59PW2R?tag=blueprintam-20&linkCode=osi&th=1&psc=1",
+            "price": "$9.99"
+          }
+        ]
+      },
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=M3+Heat+Set+Inserts&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "amazonUrl": "https://www.amazon.com/dp/B0CS6VZYL8?tag=blueprintam-20&linkCode=osi&th=1&psc=1"
+    },
+    {
+      "id": "mount_d455",
+      "name": "Depth Sensor Mount",
+      "category": "mechanical",
+      "type": "3d_printed",
+      "description": "Modular swivel mount for RealSense D455 unit.",
+      "dimensions": "100x40x30mm",
+      "material": "PETG",
+      "printSettings": "20% infill, 0.2mm layer",
+      "mountsFor": "depth_sensor_1",
+      "quantity": 1,
+      "estimatedCost": 1.5,
+      "purchaseUrl": "https://www.amazon.com/s?k=PETG+filament"
+    },
+    {
+      "id": "mcu_can_node_1_mount",
+      "name": "Front Right Limb Controller Mount",
+      "category": "mechanical",
+      "type": "3d_printed",
+      "mountsFor": "mcu_can_node_1",
+      "description": "Standoff bracket sized to the Front Right Limb Controller's mounting hole pattern. M2.5 holes for board fasteners; vented underside for airflow.",
+      "material": "PETG",
+      "printSettings": "30% infill, 0.2mm layer, 4 perimeters",
+      "quantity": 1,
+      "estimatedCost": 2,
+      "purchaseUrl": "",
+      "dimensions": "60x40x12mm"
+    },
+    {
+      "id": "mcu_can_node_2_mount",
+      "name": "Front Left Limb Controller Mount",
+      "category": "mechanical",
+      "type": "3d_printed",
+      "mountsFor": "mcu_can_node_2",
+      "description": "Standoff bracket sized to the Front Left Limb Controller's mounting hole pattern. M2.5 holes for board fasteners; vented underside for airflow.",
+      "material": "PETG",
+      "printSettings": "30% infill, 0.2mm layer, 4 perimeters",
+      "quantity": 1,
+      "estimatedCost": 2,
+      "purchaseUrl": "",
+      "dimensions": "60x40x12mm"
+    },
+    {
+      "id": "mcu_can_node_3_mount",
+      "name": "Rear Right Limb Controller Mount",
+      "category": "mechanical",
+      "type": "3d_printed",
+      "mountsFor": "mcu_can_node_3",
+      "description": "Standoff bracket sized to the Rear Right Limb Controller's mounting hole pattern. M2.5 holes for board fasteners; vented underside for airflow.",
+      "material": "PETG",
+      "printSettings": "30% infill, 0.2mm layer, 4 perimeters",
+      "quantity": 1,
+      "estimatedCost": 2,
+      "purchaseUrl": "",
+      "dimensions": "60x40x12mm"
+    },
+    {
+      "id": "mcu_can_node_4_mount",
+      "name": "Rear Left Limb Controller Mount",
+      "category": "mechanical",
+      "type": "3d_printed",
+      "mountsFor": "mcu_can_node_4",
+      "description": "Standoff bracket sized to the Rear Left Limb Controller's mounting hole pattern. M2.5 holes for board fasteners; vented underside for airflow.",
+      "material": "PETG",
+      "printSettings": "30% infill, 0.2mm layer, 4 perimeters",
+      "quantity": 1,
+      "estimatedCost": 2,
+      "purchaseUrl": "",
+      "dimensions": "60x40x12mm"
+    },
+    {
+      "id": "depth_sensor_2_mount",
+      "name": "Navigation Vision Sensor Mount",
+      "category": "mechanical",
+      "type": "3d_printed",
+      "mountsFor": "depth_sensor_2",
+      "description": "Form-fitting cradle for the Navigation Vision Sensor that holds the sensing surface in its rated orientation. Snap-fit retention so it can be removed for calibration without tools.",
+      "material": "PETG",
+      "printSettings": "30% infill, 0.2mm layer, 4 perimeters",
+      "quantity": 1,
+      "estimatedCost": 2,
+      "purchaseUrl": "",
+      "dimensions": "30x30x15mm"
+    },
+    {
+      "id": "imu_sensor_mount",
+      "name": "9-Axis IMU Mount",
+      "category": "mechanical",
+      "type": "3d_printed",
+      "mountsFor": "imu_sensor",
+      "description": "Form-fitting cradle for the 9-Axis IMU that holds the sensing surface in its rated orientation. Snap-fit retention so it can be removed for calibration without tools.",
+      "material": "PETG",
+      "printSettings": "30% infill, 0.2mm layer, 4 perimeters",
+      "quantity": 1,
+      "estimatedCost": 2,
+      "purchaseUrl": "",
+      "dimensions": "30x30x15mm"
+    },
+    {
+      "id": "rpi_4_node",
+      "name": "Raspberry Pi 4",
+      "productName": "Raspberry Pi 4 Model B",
+      "category": "electrical",
+      "type": "module",
+      "quantity": 1,
+      "estimatedCost": 60,
+      "purchaseUrl": "https://www.raspberrypi.com/products/raspberry-pi-4-model-b/",
+      "description": "Main controller board for processing sensor data and managing robot logic.",
+      "pins": [
+        "GPIO_UART",
+        "GPIO_I2C",
+        "USB_3.0",
+        "5V_POWER"
+      ],
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=Raspberry+Pi+4+Model+B&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "imageUrl": "https://m.media-amazon.com/images/I/51Eq7iy91mL._SL500_.jpg"
+    },
+    {
+      "id": "buck_converter_module",
+      "name": "Step Down Converter",
+      "productName": "LM2596 DC-DC Buck Converter",
+      "category": "electrical",
+      "type": "power",
+      "quantity": 1,
+      "estimatedCost": 5,
+      "purchaseUrl": "https://www.amazon.in/LM2596-Converter-Module-Adjustable-Display/dp/B07T2667Z6",
+      "description": "Efficiently steps down 24V from the power distribution module to 5V for the Raspberry Pi.",
+      "pins": [
+        "IN+",
+        "IN-",
+        "OUT+",
+        "OUT-"
+      ],
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=LM2596+DC-DC+Buck+Converter&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1",
+      "imageUrl": "https://m.media-amazon.com/images/I/51BMWf4VE0L._SL500_.jpg"
+    },
+    {
+      "id": "cad_assembly_model",
+      "name": "Project Assembly CAD Model",
+      "productName": "3D Assembly/Digital Twin",
+      "category": "mechanical",
+      "type": "other",
+      "quantity": 1,
+      "estimatedCost": 0,
+      "purchaseUrl": "https://www.autodesk.com/products/fusion-360/overview",
+      "description": "Digital twin container for storing and managing 3D assembly visual files.",
+      "ebayUrl": "https://www.ebay.com/sch/i.html?_nkw=3D+Assembly%2FDigital+Twin&_sacat=0&_from=R40&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339153059&customid=blueprint&toolid=10001&mkevt=1"
+    }
+  ],
+  "electricalConnections": [
+    {
+      "source": "power_module",
+      "target": "lidar_sensor",
+      "type": "power",
+      "voltage": "5V",
+      "current": "1A"
+    },
+    {
+      "source": "power_module",
+      "target": "mcu_can_node_1",
+      "type": "power",
+      "voltage": "24V",
+      "current": "10A"
+    },
+    {
+      "source": "power_module",
+      "target": "mcu_can_node_2",
+      "type": "power",
+      "voltage": "24V",
+      "current": "10A"
+    },
+    {
+      "source": "power_module",
+      "target": "mcu_can_node_3",
+      "type": "power",
+      "voltage": "24V",
+      "current": "10A"
+    },
+    {
+      "source": "power_module",
+      "target": "mcu_can_node_4",
+      "type": "power",
+      "voltage": "24V",
+      "current": "10A"
+    },
+    {
+      "source": "mcu_can_node_2",
+      "target": "actuator_joint_fl1",
+      "type": "data",
+      "protocol": "pwm",
+      "sourcePin": "PWM",
+      "targetPin": "Phase_A"
+    },
+    {
+      "source": "power_module",
+      "target": "buck_converter_module",
+      "type": "power",
+      "label": "24V input to Buck",
+      "voltage": "24V"
+    },
+    {
+      "source": "buck_converter_module",
+      "target": "rpi_4_node",
+      "type": "power",
+      "sourcePin": "OUT+",
+      "targetPin": "5V_POWER",
+      "voltage": "5V"
+    },
+    {
+      "source": "rpi_4_node",
+      "target": "mcu_can_node_1",
+      "type": "data",
+      "sourcePin": "GPIO_UART",
+      "targetPin": "CAN_FD",
+      "voltage": "3.3V"
+    },
+    {
+      "source": "rpi_4_node",
+      "target": "mcu_can_node_2",
+      "type": "data",
+      "sourcePin": "GPIO_UART",
+      "targetPin": "CAN_FD",
+      "voltage": "3.3V"
+    },
+    {
+      "source": "rpi_4_node",
+      "target": "mcu_can_node_3",
+      "type": "data",
+      "sourcePin": "GPIO_UART",
+      "targetPin": "CAN_FD",
+      "voltage": "3.3V"
+    },
+    {
+      "source": "rpi_4_node",
+      "target": "mcu_can_node_4",
+      "type": "data",
+      "sourcePin": "GPIO_UART",
+      "targetPin": "CAN_FD",
+      "voltage": "3.3V"
+    },
+    {
+      "source": "rpi_4_node",
+      "target": "imu_sensor",
+      "type": "data",
+      "sourcePin": "GPIO_I2C",
+      "targetPin": "I2C"
+    }
+  ],
+  "mechanicalConnections": [
+    {
+      "source": "chassis_main_plate",
+      "target": "mount_lidar",
+      "label": "M3 bolts",
+      "delta": {
+        "x": 0,
+        "y": 62,
+        "z": 0
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "motor_mount_fl",
+      "label": "M3 bolts",
+      "delta": {
+        "x": -242.5,
+        "y": 17,
+        "z": 92.5
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "mcu_can_node_1_mount",
+      "label": "M3 bolts",
+      "delta": {
+        "x": 245,
+        "y": 8,
+        "z": 105
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "mcu_can_node_2_mount",
+      "label": "M3 bolts",
+      "delta": {
+        "x": -245,
+        "y": -8,
+        "z": 105
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "mcu_can_node_3_mount",
+      "label": "M3 bolts",
+      "delta": {
+        "x": 245,
+        "y": -8,
+        "z": -105
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "mcu_can_node_4_mount",
+      "label": "M3 bolts",
+      "delta": {
+        "x": -245,
+        "y": -8,
+        "z": -105
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "imu_sensor_mount",
+      "label": "M3 bolts",
+      "delta": {
+        "x": 0,
+        "y": -9.5,
+        "z": 0
+      }
+    },
+    {
+      "source": "motor_mount_fl",
+      "target": "leg_fl_upper",
+      "label": "M3 bolts and heat set inserts",
+      "delta": {
+        "x": 0,
+        "y": -25,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 90
+      }
+    },
+    {
+      "source": "mount_lidar",
+      "target": "lidar_sensor",
+      "label": "mount",
+      "delta": {
+        "x": 0,
+        "y": 81,
+        "z": 0
+      }
+    },
+    {
+      "source": "motor_mount_fl",
+      "target": "actuator_joint_fl1",
+      "label": "mount",
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "source": "mcu_can_node_1_mount",
+      "target": "mcu_can_node_1",
+      "label": "mount",
+      "delta": {
+        "x": 0,
+        "y": 7,
+        "z": 0
+      }
+    },
+    {
+      "source": "mcu_can_node_2_mount",
+      "target": "mcu_can_node_2",
+      "label": "mount",
+      "delta": {
+        "x": 0,
+        "y": 7,
+        "z": 0
+      }
+    },
+    {
+      "source": "mcu_can_node_3_mount",
+      "target": "mcu_can_node_3",
+      "label": "mount",
+      "delta": {
+        "x": 0,
+        "y": 7,
+        "z": 0
+      }
+    },
+    {
+      "source": "mcu_can_node_4_mount",
+      "target": "mcu_can_node_4",
+      "label": "mount",
+      "delta": {
+        "x": 0,
+        "y": 7,
+        "z": 0
+      }
+    },
+    {
+      "source": "imu_sensor_mount",
+      "target": "imu_sensor",
+      "label": "mount",
+      "delta": {
+        "x": 0,
+        "y": 10,
+        "z": 0
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "power_module",
+      "label": "attached",
+      "delta": {
+        "x": 0,
+        "y": 12,
+        "z": 0
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "rpi_4_node",
+      "label": "M3 standoff and bolts",
+      "delta": {
+        "x": 0,
+        "y": 5,
+        "z": 0
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "buck_converter_module",
+      "label": "Double-sided mounting tape",
+      "delta": {
+        "x": 40,
+        "y": 3,
+        "z": 0
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "depth_sensor_2_mount",
+      "label": "attached",
+      "delta": {
+        "x": 580,
+        "y": -100.5,
+        "z": -110
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "mount_d455",
+      "label": "attached",
+      "delta": {
+        "x": 485,
+        "y": -93,
+        "z": -105
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "mount_jetson_orin",
+      "label": "attached",
+      "delta": {
+        "x": 355,
+        "y": -88,
+        "z": -85
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "cad_assembly_model",
+      "label": "digital link",
+      "delta": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "depth_sensor_2_mount",
+      "label": "attached",
+      "delta": {
+        "x": 0,
+        "y": 9.5,
+        "z": 125
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "mount_d455",
+      "label": "attached",
+      "delta": {
+        "x": 0,
+        "y": 17,
+        "z": 105
+      }
+    },
+    {
+      "source": "chassis_main_plate",
+      "target": "mount_jetson_orin",
+      "label": "attached",
+      "delta": {
+        "x": 0,
+        "y": 22,
+        "z": 0
+      }
+    }
+  ],
+  "projectDescription": "CARL is a dog-sized, 12-DOF biologically inspired quadruped robot built on a 24V power system and modular electronics. Featuring ROS2 compatibility, the platform utilizes an NVIDIA Orin NX, Raspberry Pi 4, and 360-degree LiDAR to manage autonomous navigation and complex limb actuation across its modular chassis.",
+  "imagePromptSnapshot": {
+    "description": "Project idea: Design an open-source, biologically inspired embodied autonomous quadruped research robot named CARL.\n\nRequirements:\n- Dog-sized platform (50-70 cm body length)\n- 12 DOF legs (3 DOF per leg)\n- Modular electronics and actuators\n- NVIDIA Jetson Orin NX as main computer\n- STM32 motor control network over CAN-FD\n- ROS2 compatible\n- Intel RealSense D455\n- OAK-D Lite\n- 360° LiDAR\n- 9-axis IMU\n- Foot force sensors\n- Battery powered (24V Li-ion)\n\nThe robot should support:\n- autonomous navigation\n- visual SLAM\n- embodied AI\n- self-calibration\n- lifelong learning\n- digital twin synchronization\n- future tactile skin integration\n\nGenerate:\n- complete CAD concept\n- exploded assembly\n- BOM\n- wiring diagram\n- PCB architecture\n- power budget\n- communication architecture\n- actuator recommendations\n- manufacturing plan\n- estimated cost\n\nDesign notes: dog-sized platform, 12 DOF legs, modular electronics, ROS2 compatible, 24V power system, biologically inspired\n\nElectrical components (current): Main Compute Board (module, 70x45x15mm); 4x mcu: Front Right Limb Controller, Front Left Limb Controller, Rear Right Limb Controller, Rear Left Limb Controller; 4x sensor: Primary Vision Sensor, Navigation Vision Sensor, 360 Degree LiDAR, 9-Axis IMU; Front Left Hip Joint (actuator, 85x85x45mm); 24V Power Distribution (power, 100x80x20mm)\n\nMechanical/structural parts (current): 2x structural: Main Chassis Frame, FL Upper Leg; 10x 3d_printed: Orin NX Mount, LiDAR Mast, FL Hip Motor Mount, Depth Sensor Mount +6 more; 2x misc: M3x12mm Bolts, M3 Heat Set Inserts",
+    "tags": [
+      "dog-sized platform",
+      "12 DOF legs",
+      "modular electronics",
+      "ROS2 compatible",
+      "24V power system",
+      "biologically inspired"
+    ]
+  },
+  "originalPrompt": "Design an open-source, biologically inspired embodied autonomous quadruped research robot named CARL.\n\nRequirements:\n- Dog-sized platform (50-70 cm body length)\n- 12 DOF legs (3 DOF per leg)\n- Modular electronics and actuators\n- NVIDIA Jetson Orin NX as main computer\n- STM32 motor control network over CAN-FD\n- ROS2 compatible\n- Intel RealSense D455\n- OAK-D Lite\n- 360° LiDAR\n- 9-axis IMU\n- Foot force sensors\n- Battery powered (24V Li-ion)\n\nThe robot should support:\n- autonomous navigation\n- visual SLAM\n- embodied AI\n- self-calibration\n- lifelong learning\n- digital twin synchronization\n- future tactile skin integration\n\nGenerate:\n- complete CAD concept\n- exploded assembly\n- BOM\n- wiring diagram\n- PCB architecture\n- power budget\n- communication architecture\n- actuator recommendations\n- manufacturing plan\n- estimated cost",
+  "plan": "- Select high-torque brushless DC (BLDC) motors with integrated cycloidal or planetary gearboxes for 3 DOF leg joints.- Utilize custom CNC-machined aluminum or high-strength carbon fiber chassis plates to house the 24V Li-ion battery and internal electronics.- Implement an STM32-based distributed motor control network via CAN-FD for low-latency gait execution.- Integrate the NVIDIA Jetson Orin NX as the primary compute node for SLAM, navigation, and neural network inference.- 3D print protective enclosures, sensor mounts for D455/OAK-D, and leg cable conduits for durability and cable management.- Deploy custom foot force sensor assemblies using piezoresistive arrays or load cells at the contact points for ground reaction force feedback.",
+  "notes": [
+    "dog-sized platform",
+    "12 DOF legs",
+    "modular electronics",
+    "ROS2 compatible",
+    "24V power system",
+    "biologically inspired"
+  ],
+  "projectId": "5909bb6a-1db2-440c-8dbf-702333a636ca",
+  "instructionPreamble": {
+    "tools": [
+      "3D printer (PETG capable)",
+      "M3 hex key set",
+      "Soldering iron with fine tip",
+      "Wire strippers and crimping tool",
+      "Multimeter",
+      "Heat gun",
+      "Precision screwdriver set"
+    ],
+    "assumptions": [
+      "Access to a 24V high-current DC power supply",
+      "Prior experience with 3D printer slicing (PETG profiles)",
+      "Basic understanding of CAN bus and I2C protocols",
+      "ROS2 Humble or later environment configured on development machine"
+    ]
+  },
+  "instructionSteps": [
+    {
+      "id": "fabricate",
+      "subSteps": [
+        {
+          "id": "fabricate_1",
+          "title": "3D print chassis mounts and structural components using PETG",
+          "partIds": [
+            "mount_jetson_orin",
+            "mount_lidar",
+            "motor_mount_fl",
+            "mcu_can_node_1_mount",
+            "mcu_can_node_2_mount",
+            "mcu_can_node_3_mount",
+            "mcu_can_node_4_mount",
+            "imu_sensor_mount",
+            "depth_sensor_2_mount",
+            "mount_d455"
+          ]
+        },
+        {
+          "id": "fabricate_2",
+          "title": "Install heat-set inserts into leg components",
+          "partIds": [
+            "leg_fl_upper",
+            "heat_set_insert"
+          ]
+        },
+        {
+          "id": "fabricate_3",
+          "title": "Verify chassis plate dimensions and mounting hole alignment",
+          "partIds": [
+            "chassis_main_plate",
+            "cad_assembly_model"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wire",
+      "subSteps": [
+        {
+          "id": "wire_1",
+          "title": "Solder power leads to 24V distribution module",
+          "partIds": [
+            "power_module"
+          ]
+        },
+        {
+          "id": "wire_2",
+          "title": "Construct wiring harness for 24V to 5V step-down",
+          "partIds": [
+            "buck_converter_module",
+            "power_module",
+            "rpi_4_node"
+          ]
+        },
+        {
+          "id": "wire_3",
+          "title": "Prepare CAN-FD data lines for limb controllers",
+          "partIds": [
+            "mcu_can_node_1",
+            "mcu_can_node_2",
+            "mcu_can_node_3",
+            "mcu_can_node_4",
+            "rpi_4_node"
+          ]
+        },
+        {
+          "id": "wire_4",
+          "title": "Perform continuity check on all logic power rails",
+          "partIds": [
+            "power_module",
+            "rpi_4_node",
+            "mcu_can_node_1",
+            "mcu_can_node_2",
+            "mcu_can_node_3",
+            "mcu_can_node_4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bringup",
+      "subSteps": [
+        {
+          "id": "bringup_1",
+          "title": "Flash firmware to MCU nodes and verify CAN bus communication",
+          "partIds": [
+            "mcu_can_node_1",
+            "mcu_can_node_2",
+            "mcu_can_node_3",
+            "mcu_can_node_4"
+          ]
+        },
+        {
+          "id": "bringup_2",
+          "title": "Initialize I2C bus and verify IMU sensor data streams",
+          "partIds": [
+            "rpi_4_node",
+            "imu_sensor"
+          ]
+        },
+        {
+          "id": "bringup_3",
+          "title": "Calibrate joint actuators and verify PWM range limits",
+          "partIds": [
+            "mcu_can_node_2",
+            "actuator_joint_fl1"
+          ]
+        },
+        {
+          "id": "bringup_4",
+          "title": "Validate lidar sensor UART connection in ROS2",
+          "partIds": [
+            "rpi_4_node",
+            "lidar_sensor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assemble",
+      "subSteps": [
+        {
+          "id": "assemble_1",
+          "title": "Mount MCU controllers and IMU to chassis base plate",
+          "partIds": [
+            "chassis_main_plate",
+            "mcu_can_node_1",
+            "mcu_can_node_2",
+            "mcu_can_node_3",
+            "mcu_can_node_4",
+            "imu_sensor",
+            "fastener_m3_12"
+          ]
+        },
+        {
+          "id": "assemble_2",
+          "title": "Assemble upper leg structure with hip motor",
+          "partIds": [
+            "motor_mount_fl",
+            "leg_fl_upper",
+            "actuator_joint_fl1",
+            "fastener_m3_12"
+          ]
+        },
+        {
+          "id": "assemble_3",
+          "title": "Install LiDAR mast and sensor array to chassis",
+          "partIds": [
+            "chassis_main_plate",
+            "mount_lidar",
+            "lidar_sensor"
+          ]
+        },
+        {
+          "id": "assemble_4",
+          "title": "Mount computing modules and cable manage the chassis",
+          "partIds": [
+            "chassis_main_plate",
+            "rpi_4_node",
+            "mount_jetson_orin",
+            "power_module"
+          ]
+        }
+      ]
+    }
+  ],
+  "assembly": {
+    "version": 2,
+    "joints": [
+      {
+        "id": "mig-motor_mount_fl-actuator_joint_fl1",
+        "parent": {
+          "part": "motor_mount_fl"
+        },
+        "child": {
+          "part": "actuator_joint_fl1"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-buck_converter_module",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "buck_converter_module"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 40,
+            "y": 3,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-depth_sensor_2_mount",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "depth_sensor_2_mount"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 580,
+            "y": -100.5,
+            "z": -110
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-imu_sensor_mount-imu_sensor",
+        "parent": {
+          "part": "imu_sensor_mount"
+        },
+        "child": {
+          "part": "imu_sensor"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": 10,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-imu_sensor_mount",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "imu_sensor_mount"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": -9.5,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-motor_mount_fl-leg_fl_upper",
+        "parent": {
+          "part": "motor_mount_fl"
+        },
+        "child": {
+          "part": "leg_fl_upper"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": -25,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 90
+          }
+        }
+      },
+      {
+        "id": "mig-mount_lidar-lidar_sensor",
+        "parent": {
+          "part": "mount_lidar"
+        },
+        "child": {
+          "part": "lidar_sensor"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": 81,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-mcu_can_node_1_mount-mcu_can_node_1",
+        "parent": {
+          "part": "mcu_can_node_1_mount"
+        },
+        "child": {
+          "part": "mcu_can_node_1"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": 7,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-mcu_can_node_1_mount",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "mcu_can_node_1_mount"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 245,
+            "y": 8,
+            "z": 105
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-mcu_can_node_2_mount-mcu_can_node_2",
+        "parent": {
+          "part": "mcu_can_node_2_mount"
+        },
+        "child": {
+          "part": "mcu_can_node_2"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": 7,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-mcu_can_node_2_mount",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "mcu_can_node_2_mount"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": -245,
+            "y": -8,
+            "z": 105
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-mcu_can_node_3_mount-mcu_can_node_3",
+        "parent": {
+          "part": "mcu_can_node_3_mount"
+        },
+        "child": {
+          "part": "mcu_can_node_3"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": 7,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-mcu_can_node_3_mount",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "mcu_can_node_3_mount"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 245,
+            "y": -8,
+            "z": -105
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-mcu_can_node_4_mount-mcu_can_node_4",
+        "parent": {
+          "part": "mcu_can_node_4_mount"
+        },
+        "child": {
+          "part": "mcu_can_node_4"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": 7,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-mcu_can_node_4_mount",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "mcu_can_node_4_mount"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": -245,
+            "y": -8,
+            "z": -105
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-motor_mount_fl",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "motor_mount_fl"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": -242.5,
+            "y": 17,
+            "z": 92.5
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-mount_d455",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "mount_d455"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 485,
+            "y": -93,
+            "z": -105
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-mount_jetson_orin",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "mount_jetson_orin"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 355,
+            "y": -88,
+            "z": -85
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-mount_lidar",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "mount_lidar"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": 62,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-power_module",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "power_module"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": 12,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      },
+      {
+        "id": "mig-chassis_main_plate-rpi_4_node",
+        "parent": {
+          "part": "chassis_main_plate"
+        },
+        "child": {
+          "part": "rpi_4_node"
+        },
+        "type": "rigid",
+        "offset": {
+          "translation": {
+            "x": 0,
+            "y": 5,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      }
+    ]
+  }
+}

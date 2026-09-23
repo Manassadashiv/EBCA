@@ -1,0 +1,25 @@
+{
+  "protocol_id": "P1R5_BOUNDED_FINAL_VALIDATION_PROTOCOL",
+  "version": "1.0.0",
+  "date": "2026-08-26",
+  "seeds": [42, 101, 2024],
+  "episodes_per_run": 8,
+  "conditions": ["STDP_ACTIVE", "NO_STDP", "SHUFFLED_STDP", "STDP_ABLATION"],
+  "geometric_corridor_definition": {
+    "north_corridor": "max_y > +0.25m and min_y > -0.20m (x >= 0.35m)",
+    "south_corridor": "min_y < -0.25m and max_y < +0.20m (x >= 0.35m)",
+    "center_uncommitted": "|y| <= 0.25m across trajectory"
+  },
+  "causal_pass_criteria": {
+    "C1_INITIAL_BASELINE": "Zero pre-existing STDP weight bias at initial state (||W|| = 0.0 at tick 0)",
+    "C2_GEOMETRIC_VALIDITY": "Route choice defined by physical corridor boundary occupancy (y > +0.25m or y < -0.25m)",
+    "C3_HAZARD_EVENT": "Tested hazard encounter timestamped with physical collision/stall telemetry",
+    "C4_LEARNING_ATTRIBUTION": "Attributable STDP updates distinguished from startup/wheel slip transients",
+    "C5_TEMPORAL_PRECEDENCE": "Hazard encounter precedes attributable learning, which precedes policy difference",
+    "C6_PHYSICAL_POLICY_EFFECT": "Learned state causes physically distinguishable trajectory divergence",
+    "C7_COUNTERFACTUAL_CONTROL": "NO_STDP fails to reproduce adaptive route switch under matched initial state",
+    "C8_TEMPORAL_STRUCTURE_CONTROL": "SHUFFLED_STDP breaks structured timing-dependent adaptation",
+    "C9_ABLATION": "Zeroing W in STDP_ABLATION abolishes the learned detour behaviour",
+    "C10_REPLICATION": "Results evaluated consistently across Seeds 42, 101, 2024"
+  }
+}

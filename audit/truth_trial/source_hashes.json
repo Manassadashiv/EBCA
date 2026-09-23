@@ -1,0 +1,258 @@
+{
+  "brain\\astar.py": {
+    "sha256": "04e817093aaf1cc7cf4daea37554d433a417ff2f9436f504f0dbf5d7eff2ae8c",
+    "size_bytes": 2708
+  },
+  "brain\\carl_adaptation.py": {
+    "sha256": "708da24b85119ef496423a45b9166218a5a0fac790de1a928f0391d011665f79",
+    "size_bytes": 2971
+  },
+  "brain\\carl_adversarial_emergence_harness.py": {
+    "sha256": "98de082607ec6b603f5b2214eb4c4d2467ad15da04f75b484b4f5e18f4e0568f",
+    "size_bytes": 36659
+  },
+  "brain\\carl_audio_synth.py": {
+    "sha256": "4ac093293feda399f0f3d8ddec935a19e7f3d46132553f992a9fb230ff2733d1",
+    "size_bytes": 4473
+  },
+  "brain\\carl_automatic_liar_detector.py": {
+    "sha256": "44c2248bb5f9ea76236818c144cfba670cfef06c0202ad68eb3b2ef988585466",
+    "size_bytes": 9820
+  },
+  "brain\\carl_autonomous_agent.py": {
+    "sha256": "2cbd1919ddc2f146dbf06672d2af03fea07b9d3443b0bb08190cb7f5027c579f",
+    "size_bytes": 15031
+  },
+  "brain\\carl_cerebellum.py": {
+    "sha256": "a20d4833295f795eee1e4703b289b681d62cf3b9e3a2a6e82562aa187889d2ae",
+    "size_bytes": 12515
+  },
+  "brain\\carl_cig.py": {
+    "sha256": "eabcaeab055cd2d94e7b6585a4f20ef0ff9655c278bb701adf625228baeb620a",
+    "size_bytes": 3179
+  },
+  "brain\\carl_command_interface.py": {
+    "sha256": "7306681f1ec63832d96b4e1fc1140713740c8485663b70d3d4f505248dab5154",
+    "size_bytes": 2975
+  },
+  "brain\\carl_concept_genesis.py": {
+    "sha256": "926a34f2b331742f05409468aece77cb38105ac2b390f0fbc5a01669b9de1a94",
+    "size_bytes": 4450
+  },
+  "brain\\carl_embodied_organism.py": {
+    "sha256": "ba9609857946555d0a397e776cc8d84dc24f71034469f6bd0c84185629838cab",
+    "size_bytes": 22155
+  },
+  "brain\\carl_emergence_laboratory.py": {
+    "sha256": "42701f048ef24fe618095fdc82227f3ec95abb097e373f954635f07aef934613",
+    "size_bytes": 13557
+  },
+  "brain\\carl_empowerment.py": {
+    "sha256": "88dcac9219b432573380778d42958199e9562a234c59f99315742df6d55c61b6",
+    "size_bytes": 5709
+  },
+  "brain\\carl_endocrine.py": {
+    "sha256": "c2dbd75b005b9ff9273a7203f75891f04e8894ab31f185018feff9c136b01013",
+    "size_bytes": 9550
+  },
+  "brain\\carl_endogenous_agency.py": {
+    "sha256": "db9ec4ae55fa7a646b4dcaf5fe2975bd906543a0eda10634d202e98e3d5cae8d",
+    "size_bytes": 11719
+  },
+  "brain\\carl_epigenetics.py": {
+    "sha256": "3022a6f7760d4acc651933698db7311828dd78ed34ffafdb1e9681d896ac348a",
+    "size_bytes": 3254
+  },
+  "brain\\carl_episodic_memory.py": {
+    "sha256": "7dfae138336d4888ad068889201000cbb4546a0977de6e243bd3dcffc18c967f",
+    "size_bytes": 8169
+  },
+  "brain\\carl_experiment_auditor.py": {
+    "sha256": "a0d6b0115a40e48b10685d0156289eaf8b1ead384a888008f952e5d894092004",
+    "size_bytes": 11037
+  },
+  "brain\\carl_expressive_visor.py": {
+    "sha256": "ac46130f5cba2d87b0da22dddba6e7cfe8f7d72b6c142a2a6b8ce545a95bf307",
+    "size_bytes": 2033
+  },
+  "brain\\carl_failure_forensics.py": {
+    "sha256": "43a85845cff56a06308ef516342f79557122cb5e1a4097d32374556967568c1f",
+    "size_bytes": 14687
+  },
+  "brain\\carl_final_evidence_package_generator.py": {
+    "sha256": "81a00b31422d1785a66d0ebce1128cd8893f3c734578108a8db0f323ab7b1ce4",
+    "size_bytes": 25364
+  },
+  "brain\\carl_gemini_er.py": {
+    "sha256": "562649cefa31ff1abe60ef7b381a2bf4143fbe8e14bdb7fee70d5f0305433429",
+    "size_bytes": 3871
+  },
+  "brain\\carl_generative_self_model.py": {
+    "sha256": "c5261ced7fe9e1033c2d04b33f71fe80d4eba76890024c7eb1ee7c1533b50163",
+    "size_bytes": 16124
+  },
+  "brain\\carl_gis.py": {
+    "sha256": "afdf73bdf1b5ecde23e9d287693c0f73475a1ed3275215e2bab8c76794128ca3",
+    "size_bytes": 8680
+  },
+  "brain\\carl_grid_cells.py": {
+    "sha256": "78970cfde9ae4afdc32430e420a0240039c5d684b71b9279a1fdffcb96856f14",
+    "size_bytes": 20629
+  },
+  "brain\\carl_hdc.py": {
+    "sha256": "fef7d9b0f68943005c6811f7bae6cb4fa4eb0702c5ba3b02042f5c301a4d285a",
+    "size_bytes": 5818
+  },
+  "brain\\carl_homeostatic_core.py": {
+    "sha256": "c199a83eb81b8758a08399c0981c5c300921c6d26308daf8575fa7ced1ccf2ce",
+    "size_bytes": 7642
+  },
+  "brain\\carl_integrated_information.py": {
+    "sha256": "07e2775c031b764f736df7365cf1fc7c5cfef913bd13d04c070a7501311ab6e7",
+    "size_bytes": 4372
+  },
+  "brain\\carl_local_cortex.py": {
+    "sha256": "665f9031a6d57b12982e57a93520b5311ef58c2cca11424111cd13febcca0ff2",
+    "size_bytes": 5017
+  },
+  "brain\\carl_locomotion_quality_evaluator.py": {
+    "sha256": "960f8235a85671c6f37aa11af7d51cd652faece542c7f6ed66a37cb4873cbdc4",
+    "size_bytes": 14143
+  },
+  "brain\\carl_master_embodiment_evaluator.py": {
+    "sha256": "724a930e4e55cfe35caebe05fee6101ada7d39588915921aef29d007cfc05cad",
+    "size_bytes": 24394
+  },
+  "brain\\carl_motor_filter.py": {
+    "sha256": "dc5308186abca5cff3c5a25e34d82461edab1bb03d5d1e2068d02c3d6f04afd2",
+    "size_bytes": 8046
+  },
+  "brain\\carl_mpc.py": {
+    "sha256": "1c8c7dfd5f695a6a7867c993b1c8dd047d0841285719d1c5c0fd5630a92ed451",
+    "size_bytes": 2456
+  },
+  "brain\\carl_mppi.py": {
+    "sha256": "921b2e8c77a2d1b2efd401986b806f8961237ad283fb48e53bac0db54cbdc928",
+    "size_bytes": 5151
+  },
+  "brain\\carl_multi_agent.py": {
+    "sha256": "69fc3ee6d3aba3dd5987450b5f8e3862ea6a5722d9b41f4d726f1c5f17abf3dc",
+    "size_bytes": 6161
+  },
+  "brain\\carl_multiseed_evaluation.py": {
+    "sha256": "b62a38a7728f97177123295f7c7224e7ca88245248888719f5c02f9999d6e6fc",
+    "size_bytes": 2499
+  },
+  "brain\\carl_omega_extensions.py": {
+    "sha256": "5cfc21fa68dd6a78090304d75fcb9208adb7bef27e09959a9baf9f68817502bd",
+    "size_bytes": 5593
+  },
+  "brain\\carl_osc_dmp.py": {
+    "sha256": "5d0738c7098d5b7ec3bc2e723088f56f07dabdf0a620c616de4e48656429bc42",
+    "size_bytes": 2475
+  },
+  "brain\\carl_overnight_master_suite.py": {
+    "sha256": "5c97f00e873d941d2d59a0a0d9e3f00d97b9526abc9765001db0c768e77c2db6",
+    "size_bytes": 28528
+  },
+  "brain\\carl_physarum.py": {
+    "sha256": "7f25fc7aa2f06c94bdea68d5ececdd0bc04c2c65623c523309a297513e57df0c",
+    "size_bytes": 11897
+  },
+  "brain\\carl_policy_head.py": {
+    "sha256": "200ed20e50c1e99e56e0c9c4d12924f39cddd2c3d6997190d69ccb533ea95da9",
+    "size_bytes": 9044
+  },
+  "brain\\carl_reflex.py": {
+    "sha256": "5b211f72f73c7b8e1ae073280266df94d5baac5b4374c54442fcc1f72468d2df",
+    "size_bytes": 7865
+  },
+  "brain\\carl_reflex_laboratory.py": {
+    "sha256": "69414d809c75a4806d0ac8eeebe04859e8c81c4851659859732dc69c86339125",
+    "size_bytes": 18296
+  },
+  "brain\\carl_rem_sleep.py": {
+    "sha256": "cfebf666930189a1bd8f270bcde689c763f3e8eefc22ffb01df0589ff8f774b0",
+    "size_bytes": 3939
+  },
+  "brain\\carl_reservoir.py": {
+    "sha256": "fa7f04bebd892b1d82ebb14d69d014c378fd9ed7cb6eac62da681ce5a8e36a67",
+    "size_bytes": 15037
+  },
+  "brain\\carl_stdp.py": {
+    "sha256": "68deb241b5b4c6274419c6a25b70a1821b9edf64b85e981e74cbff449ccad9b5",
+    "size_bytes": 11013
+  },
+  "brain\\carl_stuck_recovery.py": {
+    "sha256": "0d3786b2cf4d0cc01a8bfd9dbdc1625d14f97a250b15d839e888153103182d12",
+    "size_bytes": 11543
+  },
+  "brain\\carl_visual_telemetry_pipeline.py": {
+    "sha256": "81e9b94ff8aea71e75bedb960af104557283d305a167991b7af81e544833ec40",
+    "size_bytes": 15217
+  },
+  "brain\\carl_vlm_cortex.py": {
+    "sha256": "18c2565e99fdb4ccfd68fed7bc1b7c0d47d4198a84379f3044b19f0f8db10797",
+    "size_bytes": 7613
+  },
+  "brain\\carl_wall_avoidance_benchmarks.py": {
+    "sha256": "6f80e3978c2a771d12af5f8e966d666c0a022311225baa5d2dd1074e2d667231",
+    "size_bytes": 29053
+  },
+  "brain\\carl_witness.py": {
+    "sha256": "aecd44030f4d152cbf84a430313393bf22bf2e399cbd84616c2e6f9f056024a6",
+    "size_bytes": 4041
+  },
+  "brain\\carl_world_model.py": {
+    "sha256": "344287ccbc59b7cdcc15e0e70e62fcd8b94d8735bfc01cf7327fa4277b545169",
+    "size_bytes": 3159
+  },
+  "brain\\collect_multi_object_dataset.py": {
+    "sha256": "568e0ebeab3339f13497ea546fbddbc967a4c49d6371e78ae95e29535dc98b50",
+    "size_bytes": 10710
+  },
+  "brain\\collect_vision_dataset.py": {
+    "sha256": "98ef6eb0092a8dca24c7abb58ee626a31a473875222b45838a59bd14a1c1b275",
+    "size_bytes": 8796
+  },
+  "brain\\generate_comparison_plots.py": {
+    "sha256": "d11ac3513e72e220247da4551389859e63af380bbba4c5570e08590baae6297e",
+    "size_bytes": 11680
+  },
+  "brain\\plot_telemetry.py": {
+    "sha256": "15e79bfa96c9f71e95a11476b33f2d4ac4902bcd11d976f4fd2f266069e34b18",
+    "size_bytes": 6800
+  },
+  "brain\\render_vessel_pngs.py": {
+    "sha256": "718c4380fd071b5cf3ac6c3ba9a64e60445eafd0b839d49dc6ec59ee8b9b492b",
+    "size_bytes": 2343
+  },
+  "brain\\show_carl.py": {
+    "sha256": "3723c6b9475c25f4162dee5a00891341fb4f7412da77e35d8ecac5764cd2e10d",
+    "size_bytes": 1684
+  },
+  "brain\\train_multi_object_vision.py": {
+    "sha256": "8e05e48c16ae694b55424491405d02348c7ab76346940fecf66bfce661d3ec68",
+    "size_bytes": 7005
+  },
+  "brain\\train_vision.py": {
+    "sha256": "c0a4404ce5c586bfed0d8955bb40eb5007ff648e73d198c5eb9ddad6607807d5",
+    "size_bytes": 5900
+  },
+  "brain\\verify_multi_object_predictions.py": {
+    "sha256": "5fe78dfe532dff9f49c8ccfc858dacb99f02788f8a3998184becf8a2c4e826c3",
+    "size_bytes": 3637
+  },
+  "brain\\verify_vision_predictions.py": {
+    "sha256": "2af854945102d604f14563b7274e0b8d29683e25c7e072d779e8f283722c062e",
+    "size_bytes": 3946
+  },
+  "carl_live_playground.py": {
+    "sha256": "6304b4223a48445e253b77f98eb1bb8fc06775084ad09a9ba7309f577ac47b45",
+    "size_bytes": 8759
+  },
+  "carl_simulation.py": {
+    "sha256": "d5510217772f3ae91fabb137057688248c78c0484f1deb9547cf9ddec53770a3",
+    "size_bytes": 59036
+  }
+}

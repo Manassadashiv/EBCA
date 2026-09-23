@@ -1,0 +1,112 @@
+{
+  "PROTO_01_FRESH_LAUNCH": {
+    "net_displacement_m": 0.4513,
+    "total_ticks": 100,
+    "collisions": 0,
+    "clean_autonomous_execution": true,
+    "final_position": [
+      0.452,
+      0.0
+    ],
+    "status": "PASS"
+  },
+  "PROTO_02_SEED_42": {
+    "net_displacement_m": 0.4513,
+    "total_ticks": 100,
+    "collisions": 0,
+    "clean_autonomous_execution": true,
+    "final_position": [
+      0.452,
+      0.0
+    ],
+    "status": "PASS"
+  },
+  "PROTO_03_SEED_101": {
+    "net_displacement_m": 0.4513,
+    "total_ticks": 100,
+    "collisions": 0,
+    "clean_autonomous_execution": true,
+    "final_position": [
+      0.452,
+      -0.0
+    ],
+    "status": "PASS"
+  },
+  "PROTO_04_SEED_2024": {
+    "net_displacement_m": 0.4513,
+    "total_ticks": 100,
+    "collisions": 0,
+    "clean_autonomous_execution": true,
+    "final_position": [
+      0.452,
+      0.0
+    ],
+    "status": "PASS"
+  },
+  "PROTO_05_ENVIRONMENT_RESET": {
+    "net_displacement_m": 0.4513,
+    "total_ticks": 100,
+    "collisions": 0,
+    "clean_autonomous_execution": true,
+    "final_position": [
+      0.452,
+      0.0
+    ],
+    "status": "PASS"
+  },
+  "PROTO_06_MUJOCO_STATE_RESET": {
+    "net_displacement_m": 0.4513,
+    "total_ticks": 100,
+    "collisions": 0,
+    "clean_autonomous_execution": true,
+    "final_position": [
+      0.452,
+      0.0
+    ],
+    "status": "PASS"
+  },
+  "PROTO_07_CONTROLLER_RESET": {
+    "net_displacement_m": 0.4513,
+    "total_ticks": 100,
+    "collisions": 0,
+    "clean_autonomous_execution": true,
+    "final_position": [
+      0.452,
+      0.0
+    ],
+    "status": "PASS"
+  },
+  "PROTO_08_INTERNAL_STATE_RESET": {
+    "net_displacement_m": 0.4492,
+    "total_ticks": 100,
+    "collisions": 0,
+    "clean_autonomous_execution": true,
+    "final_position": [
+      0.449,
+      0.002
+    ],
+    "status": "PASS"
+  },
+  "PROTO_09_MEMORY_RESET": {
+    "net_displacement_m": 0.4513,
+    "total_ticks": 100,
+    "collisions": 0,
+    "clean_autonomous_execution": true,
+    "final_position": [
+      0.452,
+      0.0
+    ],
+    "status": "PASS"
+  },
+  "PROTO_10_REPEATED_RESET_10X": {
+    "net_displacement_m": 0.4513,
+    "total_ticks": 100,
+    "collisions": 0,
+    "clean_autonomous_execution": true,
+    "final_position": [
+      0.452,
+      0.0
+    ],
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "protocol_id": "CARL-P1R3-PROTO-V1.0",
+  "name": "CARL-DX Phase 1-R3 Memory-Causality & Experience-Dependent Route Choice",
+  "timestamp": "2026-08-23T02:05:00Z",
+  "hypotheses": {
+    "H0": "P(Route A | FULL, Ep 2) == P(Route A | NO_MEMORY, Ep 2)",
+    "H1": "P(Route A | FULL, Ep 2) < P(Route A | NO_MEMORY, Ep 2) before hazard is locally visible"
+  },
+  "environment": {
+    "start_pose": [0.0, 0.0, 0.0],
+    "target_food": [2.20, 0.0],
+    "decision_point_x": 0.0,
+    "decision_commitment_x": 0.40,
+    "route_a_corridor_y": [0.35, 0.95],
+    "route_b_corridor_y": [-0.95, -0.35],
+    "latent_hazard_coords": [1.40, 0.65],
+    "hazard_occlusion_line_x": 0.50
+  },
+  "episode_structure": {
+    "ep1_experience": {
+      "route_a_hazard_active": true,
+      "route_b_open": true
+    },
+    "ep2_recurrence": {
+      "route_a_hazard_active": true,
+      "route_b_open": true
+    },
+    "ep3_extinction": {
+      "route_a_hazard_active": false,
+      "route_b_open": true
+    }
+  },
+  "conditions": ["FULL_P1_R3", "NO_MEMORY", "P0_CONTROL"],
+  "seeds": [42, 101, 2024],
+  "episodes_per_seed": 3,
+  "total_pilot_episodes": 27,
+  "deliverables": {
+    "videos": [
+      "p1r3_full_experience_ep1.mp4",
+      "p1r3_full_recurrence_ep2.mp4",
+      "p1r3_full_extinction_ep3.mp4",
+      "p1r3_nomem_experience_ep1.mp4",
+      "p1r3_nomem_recurrence_ep2.mp4"
+    ],
+    "plots": [
+      "01_matched_decision_state.png",
+      "02_route_choice_probability_full_vs_nomemory.png",
+      "03_memory_retrieval_vs_route_choice.png",
+      "04_prediction_error_episode_progression.png",
+      "05_pre_hazard_trajectory_divergence.png",
+      "06_EFE_route_comparison_at_decision.png",
+      "07_context_reversal_extinction_test.png",
+      "08_seed_replication.png"
+    ],
+    "reports": [
+      "CARL_P1R3_PROTOCOL.md",
+      "CARL_P1R3_PROTOCOL.json",
+      "CARL_P1R3_PILOT_REPORT.md",
+      "CARL_P1R3_PILOT_REPORT.json",
+      "P1R3_RAW_RUN_LEDGER.csv",
+      "P1R3_DECISION_TRACE.json",
+      "P1R3_ANTI_ENGINEERING_AUDIT.json"
+    ]
+  }
+}

@@ -1,0 +1,1773 @@
+[
+  {
+    "tick": 0,
+    "lateral_offset": 0.008694064039067808,
+    "predicted_hull_clearance": 0.20742012560367584,
+    "actual_mujoco_clearance": 0.20566363522911832,
+    "physical_pos": [
+      0.4908269598603026,
+      0.008694064039067808,
+      0.0056036842179841145
+    ]
+  },
+  {
+    "tick": 1,
+    "lateral_offset": 0.008892718051243205,
+    "predicted_hull_clearance": 0.16991236805915833,
+    "actual_mujoco_clearance": 0.1698378168284499,
+    "physical_pos": [
+      0.4907575552983689,
+      0.008892718051243205,
+      -0.44313230272041404
+    ]
+  },
+  {
+    "tick": 2,
+    "lateral_offset": 0.009063518163851383,
+    "predicted_hull_clearance": 0.17264869809150696,
+    "actual_mujoco_clearance": 0.15692249023880334,
+    "physical_pos": [
+      0.49079824407845085,
+      0.009063518163851383,
+      -0.8917169622917026
+    ]
+  },
+  {
+    "tick": 3,
+    "lateral_offset": 0.009163123460867558,
+    "predicted_hull_clearance": 0.11035120487213135,
+    "actual_mujoco_clearance": 0.17637929161123733,
+    "physical_pos": [
+      0.4909182233597457,
+      0.009163123460867558,
+      -1.3403021348596154
+    ]
+  },
+  {
+    "tick": 4,
+    "lateral_offset": 0.009162222475610984,
+    "predicted_hull_clearance": 0.13176581263542175,
+    "actual_mujoco_clearance": 0.177242869208456,
+    "physical_pos": [
+      0.4910728140691861,
+      0.009162222475610984,
+      -1.7888878408507405
+    ]
+  },
+  {
+    "tick": 5,
+    "lateral_offset": 0.009454247830981775,
+    "predicted_hull_clearance": 0.11972996592521667,
+    "actual_mujoco_clearance": 0.1562370005084588,
+    "physical_pos": [
+      0.49155517569944174,
+      0.009454247830981775,
+      -2.2375379134507836
+    ]
+  },
+  {
+    "tick": 6,
+    "lateral_offset": 0.009722500730464724,
+    "predicted_hull_clearance": 0.12064463645219803,
+    "actual_mujoco_clearance": 0.16492814436527514,
+    "physical_pos": [
+      0.49140728880240786,
+      0.009722500730464724,
+      -2.5904727072844973
+    ]
+  },
+  {
+    "tick": 7,
+    "lateral_offset": 0.011881751954954296,
+    "predicted_hull_clearance": 0.13968412578105927,
+    "actual_mujoco_clearance": 0.16527315383386476,
+    "physical_pos": [
+      0.4966606891156066,
+      0.011881751954954296,
+      -2.6803446414658376
+    ]
+  },
+  {
+    "tick": 8,
+    "lateral_offset": 0.013747648904705843,
+    "predicted_hull_clearance": 0.16261419653892517,
+    "actual_mujoco_clearance": 0.16678023880158477,
+    "physical_pos": [
+      0.5019765610206238,
+      0.013747648904705843,
+      -2.7691252686067362
+    ]
+  },
+  {
+    "tick": 9,
+    "lateral_offset": 0.015338801748490082,
+    "predicted_hull_clearance": 0.1582212746143341,
+    "actual_mujoco_clearance": 0.16943412875615382,
+    "physical_pos": [
+      0.5072921921913143,
+      0.015338801748490082,
+      -2.8570416500216176
+    ]
+  },
+  {
+    "tick": 10,
+    "lateral_offset": 0.015722709304690573,
+    "predicted_hull_clearance": 0.1527235358953476,
+    "actual_mujoco_clearance": 0.17262225677913656,
+    "physical_pos": [
+      0.5121566858224591,
+      0.015722709304690573,
+      -2.9352355135727053
+    ]
+  },
+  {
+    "tick": 11,
+    "lateral_offset": 0.014075237007675517,
+    "predicted_hull_clearance": 0.14832833409309387,
+    "actual_mujoco_clearance": 0.17473535722059208,
+    "physical_pos": [
+      0.5160872347998373,
+      0.014075237007675517,
+      -2.989055934026797
+    ]
+  },
+  {
+    "tick": 12,
+    "lateral_offset": 0.012710403288666867,
+    "predicted_hull_clearance": 0.1395213007926941,
+    "actual_mujoco_clearance": 0.1751877530184035,
+    "physical_pos": [
+      0.5215214409908048,
+      0.012710403288666867,
+      -3.0384304838477636
+    ]
+  },
+  {
+    "tick": 13,
+    "lateral_offset": 0.01023028588790501,
+    "predicted_hull_clearance": 0.18702059984207153,
+    "actual_mujoco_clearance": 0.1737164032340187,
+    "physical_pos": [
+      0.5329153118800979,
+      0.01023028588790501,
+      -3.1163687413003074
+    ]
+  },
+  {
+    "tick": 14,
+    "lateral_offset": 0.007529908932794193,
+    "predicted_hull_clearance": 0.16485707461833954,
+    "actual_mujoco_clearance": 0.15761768331185044,
+    "physical_pos": [
+      0.5456508946717138,
+      0.007529908932794193,
+      -3.192584367166763
+    ]
+  },
+  {
+    "tick": 15,
+    "lateral_offset": 0.0029900362511461856,
+    "predicted_hull_clearance": 0.15475252270698547,
+    "actual_mujoco_clearance": 0.14025508242160967,
+    "physical_pos": [
+      0.5560861731119574,
+      0.0029900362511461856,
+      -3.2477646335301893
+    ]
+  },
+  {
+    "tick": 16,
+    "lateral_offset": -0.0024401250646217346,
+    "predicted_hull_clearance": 0.18708275258541107,
+    "actual_mujoco_clearance": 0.11860256422574222,
+    "physical_pos": [
+      0.5728615004467973,
+      -0.0024401250646217346,
+      -3.2886150323196754
+    ]
+  },
+  {
+    "tick": 17,
+    "lateral_offset": -0.006288137118940127,
+    "predicted_hull_clearance": 0.19564121961593628,
+    "actual_mujoco_clearance": 0.10463905590518974,
+    "physical_pos": [
+      0.5911233686893521,
+      -0.006288137118940127,
+      -3.2525190220333444
+    ]
+  },
+  {
+    "tick": 18,
+    "lateral_offset": -0.009782098840836473,
+    "predicted_hull_clearance": 0.18902479112148285,
+    "actual_mujoco_clearance": 0.10144647707775933,
+    "physical_pos": [
+      0.597274877366258,
+      -0.009782098840836473,
+      -3.228459320656463
+    ]
+  },
+  {
+    "tick": 19,
+    "lateral_offset": -0.012335081658853237,
+    "predicted_hull_clearance": 0.18488383293151855,
+    "actual_mujoco_clearance": 0.10158273057161216,
+    "physical_pos": [
+      0.6007571310315897,
+      -0.012335081658853237,
+      -3.199810490458527
+    ]
+  },
+  {
+    "tick": 20,
+    "lateral_offset": -0.014644790335750122,
+    "predicted_hull_clearance": 0.18044275045394897,
+    "actual_mujoco_clearance": 0.10353840533697856,
+    "physical_pos": [
+      0.6024142217268349,
+      -0.014644790335750122,
+      -3.171970896250659
+    ]
+  },
+  {
+    "tick": 21,
+    "lateral_offset": -0.016781415843288416,
+    "predicted_hull_clearance": 0.1677519530057907,
+    "actual_mujoco_clearance": 0.10746045401878634,
+    "physical_pos": [
+      0.602021425940683,
+      -0.016781415843288416,
+      -3.1454368836545603
+    ]
+  },
+  {
+    "tick": 22,
+    "lateral_offset": -0.018750936516787334,
+    "predicted_hull_clearance": 0.15693873167037964,
+    "actual_mujoco_clearance": 0.10802070479589432,
+    "physical_pos": [
+      0.5992505347378349,
+      -0.018750936516787334,
+      -3.1212010994850354
+    ]
+  },
+  {
+    "tick": 23,
+    "lateral_offset": -0.020653888290216946,
+    "predicted_hull_clearance": 0.15439154207706451,
+    "actual_mujoco_clearance": 0.10987599703821616,
+    "physical_pos": [
+      0.5944846859120788,
+      -0.020653888290216946,
+      -3.0990358189060108
+    ]
+  },
+  {
+    "tick": 24,
+    "lateral_offset": -0.02348396448519327,
+    "predicted_hull_clearance": 0.16687531769275665,
+    "actual_mujoco_clearance": 0.11265053553334803,
+    "physical_pos": [
+      0.5859127240687365,
+      -0.02348396448519327,
+      -3.053455470994763
+    ]
+  },
+  {
+    "tick": 25,
+    "lateral_offset": -0.026354817896436972,
+    "predicted_hull_clearance": 0.1825348287820816,
+    "actual_mujoco_clearance": 0.11249972753992599,
+    "physical_pos": [
+      0.5759620909803458,
+      -0.026354817896436972,
+      -2.968450087003668
+    ]
+  },
+  {
+    "tick": 26,
+    "lateral_offset": -0.0259367473543867,
+    "predicted_hull_clearance": 0.17018552124500275,
+    "actual_mujoco_clearance": 0.12319813489544507,
+    "physical_pos": [
+      0.569224707678916,
+      -0.0259367473543867,
+      -3.002748073929294
+    ]
+  },
+  {
+    "tick": 27,
+    "lateral_offset": -0.026150276541771555,
+    "predicted_hull_clearance": 0.13533784449100494,
+    "actual_mujoco_clearance": 0.14194715661107782,
+    "physical_pos": [
+      0.5599870951304767,
+      -0.026150276541771555,
+      -3.080203147130404
+    ]
+  },
+  {
+    "tick": 28,
+    "lateral_offset": -0.022565165672508953,
+    "predicted_hull_clearance": 0.17124861478805542,
+    "actual_mujoco_clearance": 0.1541331136354951,
+    "physical_pos": [
+      0.5510772135342918,
+      -0.022565165672508953,
+      -3.1776326813736904
+    ]
+  },
+  {
+    "tick": 29,
+    "lateral_offset": -0.018576420015693783,
+    "predicted_hull_clearance": 0.14237463474273682,
+    "actual_mujoco_clearance": 0.15071241719389095,
+    "physical_pos": [
+      0.5398767762035002,
+      -0.018576420015693783,
+      -3.2961444973575773
+    ]
+  },
+  {
+    "tick": 30,
+    "lateral_offset": -0.013248897355104617,
+    "predicted_hull_clearance": 0.18351706862449646,
+    "actual_mujoco_clearance": 0.14888778597213148,
+    "physical_pos": [
+      0.5280587153009495,
+      -0.013248897355104617,
+      -3.4238843596306494
+    ]
+  },
+  {
+    "tick": 31,
+    "lateral_offset": -0.005600611189659366,
+    "predicted_hull_clearance": 0.1333787888288498,
+    "actual_mujoco_clearance": 0.1493704054772408,
+    "physical_pos": [
+      0.5149511232334314,
+      -0.005600611189659366,
+      -3.569855256160292
+    ]
+  },
+  {
+    "tick": 32,
+    "lateral_offset": -0.0024918463922637074,
+    "predicted_hull_clearance": 0.12351501733064651,
+    "actual_mujoco_clearance": 0.15850098042032534,
+    "physical_pos": [
+      0.5034725049513689,
+      -0.0024918463922637074,
+      -3.602272363908983
+    ]
+  },
+  {
+    "tick": 33,
+    "lateral_offset": 0.0018056878425662304,
+    "predicted_hull_clearance": 0.12131252884864807,
+    "actual_mujoco_clearance": 0.16894906612864535,
+    "physical_pos": [
+      0.49391185923047276,
+      0.0018056878425662304,
+      -3.5897417644368788
+    ]
+  },
+  {
+    "tick": 34,
+    "lateral_offset": 0.004013269152629549,
+    "predicted_hull_clearance": 0.1210678294301033,
+    "actual_mujoco_clearance": 0.17506929778994096,
+    "physical_pos": [
+      0.48859663618979343,
+      0.004013269152629549,
+      -3.5771793795509668
+    ]
+  },
+  {
+    "tick": 35,
+    "lateral_offset": 0.0052774045912367005,
+    "predicted_hull_clearance": 0.12158618122339249,
+    "actual_mujoco_clearance": 0.1741575783316306,
+    "physical_pos": [
+      0.4841873297802863,
+      0.0052774045912367005,
+      -3.569826248729127
+    ]
+  },
+  {
+    "tick": 36,
+    "lateral_offset": 0.009078984844014693,
+    "predicted_hull_clearance": 0.10841034352779388,
+    "actual_mujoco_clearance": 0.174648977389717,
+    "physical_pos": [
+      0.46700177361421513,
+      0.009078984844014693,
+      -3.4919730710819135
+    ]
+  },
+  {
+    "tick": 37,
+    "lateral_offset": 0.013494617583502533,
+    "predicted_hull_clearance": 0.11282417178153992,
+    "actual_mujoco_clearance": 0.16631462242566059,
+    "physical_pos": [
+      0.4530192278952308,
+      0.013494617583502533,
+      -3.5622198742819835
+    ]
+  },
+  {
+    "tick": 38,
+    "lateral_offset": 0.017973689493294618,
+    "predicted_hull_clearance": 0.09375039488077164,
+    "actual_mujoco_clearance": 0.15877851274412424,
+    "physical_pos": [
+      0.439036579508653,
+      0.017973689493294618,
+      -3.6318797815960404
+    ]
+  },
+  {
+    "tick": 39,
+    "lateral_offset": 0.0268548105006857,
+    "predicted_hull_clearance": 0.06927745789289474,
+    "actual_mujoco_clearance": 0.20125057364819124,
+    "physical_pos": [
+      0.42370132863659027,
+      0.0268548105006857,
+      -3.7070747066024943
+    ]
+  },
+  {
+    "tick": 40,
+    "lateral_offset": 0.03376038374039348,
+    "predicted_hull_clearance": 0.05995898321270943,
+    "actual_mujoco_clearance": 0.13966177183536416,
+    "physical_pos": [
+      0.4172899657771979,
+      0.03376038374039348,
+      -3.754326534733959
+    ]
+  },
+  {
+    "tick": 41,
+    "lateral_offset": 0.0464230990853092,
+    "predicted_hull_clearance": 0.04801053926348686,
+    "actual_mujoco_clearance": 0.21948234126350574,
+    "physical_pos": [
+      0.4055740510607839,
+      0.0464230990853092,
+      -3.77992318083325
+    ]
+  },
+  {
+    "tick": 42,
+    "lateral_offset": 0.055575763538087165,
+    "predicted_hull_clearance": 0.039919208735227585,
+    "actual_mujoco_clearance": 0.22852673227150613,
+    "physical_pos": [
+      0.39822036330581156,
+      0.055575763538087165,
+      -3.7897236259251255
+    ]
+  },
+  {
+    "tick": 43,
+    "lateral_offset": 0.06492235764526247,
+    "predicted_hull_clearance": 0.0368807278573513,
+    "actual_mujoco_clearance": 0.2379562622237169,
+    "physical_pos": [
+      0.3881268497334505,
+      0.06492235764526247,
+      -3.7820843858117503
+    ]
+  },
+  {
+    "tick": 44,
+    "lateral_offset": 0.07232268197633633,
+    "predicted_hull_clearance": 0.034565672278404236,
+    "actual_mujoco_clearance": 0.2307799738918066,
+    "physical_pos": [
+      0.37286725042553653,
+      0.07232268197633633,
+      -3.739190793993076
+    ]
+  },
+  {
+    "tick": 45,
+    "lateral_offset": 0.07854121162616262,
+    "predicted_hull_clearance": 0.011862787418067455,
+    "actual_mujoco_clearance": 0.22789385806194198,
+    "physical_pos": [
+      0.36025608989550495,
+      0.07854121162616262,
+      -3.7586248260951796
+    ]
+  },
+  {
+    "tick": 46,
+    "lateral_offset": 0.08598763345525307,
+    "predicted_hull_clearance": 0.004396283067762852,
+    "actual_mujoco_clearance": 0.22949547451116592,
+    "physical_pos": [
+      0.3482360202306861,
+      0.08598763345525307,
+      -3.8109352909342338
+    ]
+  },
+  {
+    "tick": 47,
+    "lateral_offset": 0.09401944374739536,
+    "predicted_hull_clearance": 0.013019347563385963,
+    "actual_mujoco_clearance": 0.23148789345746007,
+    "physical_pos": [
+      0.3384272312037149,
+      0.09401944374739536,
+      -3.8682677528093565
+    ]
+  },
+  {
+    "tick": 48,
+    "lateral_offset": 0.0994725959731207,
+    "predicted_hull_clearance": 0.008074912242591381,
+    "actual_mujoco_clearance": 0.23272854489438471,
+    "physical_pos": [
+      0.3319613649243059,
+      0.0994725959731207,
+      -3.906286640008322
+    ]
+  },
+  {
+    "tick": 49,
+    "lateral_offset": 0.10270778161803443,
+    "predicted_hull_clearance": 0.005558545235544443,
+    "actual_mujoco_clearance": 0.2354760465784883,
+    "physical_pos": [
+      0.32718589533664744,
+      0.10270778161803443,
+      -3.9401419164313207
+    ]
+  },
+  {
+    "tick": 50,
+    "lateral_offset": 0.09900596565743253,
+    "predicted_hull_clearance": 0.002908679423853755,
+    "actual_mujoco_clearance": 0.2577138541113275,
+    "physical_pos": [
+      0.32793594877876475,
+      0.09900596565743253,
+      -4.04472185619468
+    ]
+  },
+  {
+    "tick": 51,
+    "lateral_offset": 0.09408825126681432,
+    "predicted_hull_clearance": 0.007767742034047842,
+    "actual_mujoco_clearance": 0.2726747916251355,
+    "physical_pos": [
+      0.3244055552258385,
+      0.09408825126681432,
+      -4.1064485075106125
+    ]
+  },
+  {
+    "tick": 52,
+    "lateral_offset": 0.08877097520763294,
+    "predicted_hull_clearance": 0.012751931324601173,
+    "actual_mujoco_clearance": 0.27039892025512163,
+    "physical_pos": [
+      0.32407100524315,
+      0.08877097520763294,
+      -4.166564398849952
+    ]
+  },
+  {
+    "tick": 53,
+    "lateral_offset": 0.07682889202731624,
+    "predicted_hull_clearance": 0.025653216987848282,
+    "actual_mujoco_clearance": 0.25805595175476964,
+    "physical_pos": [
+      0.32873139397866374,
+      0.07682889202731624,
+      -4.159285101746024
+    ]
+  },
+  {
+    "tick": 54,
+    "lateral_offset": 0.06296223257037774,
+    "predicted_hull_clearance": 0.029174882918596268,
+    "actual_mujoco_clearance": 0.2413723640461618,
+    "physical_pos": [
+      0.33502671564357495,
+      0.06296223257037774,
+      -4.102539935827935
+    ]
+  },
+  {
+    "tick": 55,
+    "lateral_offset": 0.04916169372011152,
+    "predicted_hull_clearance": 0.03733959421515465,
+    "actual_mujoco_clearance": 0.22530553730881536,
+    "physical_pos": [
+      0.34121824529649836,
+      0.04916169372011152,
+      -4.045745238107356
+    ]
+  },
+  {
+    "tick": 56,
+    "lateral_offset": 0.03791927540678287,
+    "predicted_hull_clearance": 0.04641558974981308,
+    "actual_mujoco_clearance": 0.21237274792196495,
+    "physical_pos": [
+      0.34510629178512425,
+      0.03791927540678287,
+      -3.989558580832948
+    ]
+  },
+  {
+    "tick": 57,
+    "lateral_offset": 0.0343376593023559,
+    "predicted_hull_clearance": 0.050684962421655655,
+    "actual_mujoco_clearance": 0.2076998227189531,
+    "physical_pos": [
+      0.3420099615214474,
+      0.0343376593023559,
+      -3.936271436036822
+    ]
+  },
+  {
+    "tick": 58,
+    "lateral_offset": 0.031832697806602084,
+    "predicted_hull_clearance": 0.055122874677181244,
+    "actual_mujoco_clearance": 0.20461988498570494,
+    "physical_pos": [
+      0.3378825185755788,
+      0.031832697806602084,
+      -3.8852557868221744
+    ]
+  },
+  {
+    "tick": 59,
+    "lateral_offset": 0.034834632580946705,
+    "predicted_hull_clearance": 0.05829078331589699,
+    "actual_mujoco_clearance": 0.20870722902603234,
+    "physical_pos": [
+      0.33357129495372284,
+      0.034834632580946705,
+      -3.7300813846654717
+    ]
+  },
+  {
+    "tick": 60,
+    "lateral_offset": 0.0382827808514674,
+    "predicted_hull_clearance": 0.0615752749145031,
+    "actual_mujoco_clearance": 0.21712094048914854,
+    "physical_pos": [
+      0.3353567697710951,
+      0.0382827808514674,
+      -3.5823958086462344
+    ]
+  },
+  {
+    "tick": 61,
+    "lateral_offset": 0.044723775036129364,
+    "predicted_hull_clearance": 0.05819830670952797,
+    "actual_mujoco_clearance": 0.2238213156970364,
+    "physical_pos": [
+      0.3358200514490506,
+      0.044723775036129364,
+      -3.529601309451548
+    ]
+  },
+  {
+    "tick": 62,
+    "lateral_offset": 0.05050902430587643,
+    "predicted_hull_clearance": 0.0476888082921505,
+    "actual_mujoco_clearance": 0.2264961682173361,
+    "physical_pos": [
+      0.3306237192497182,
+      0.05050902430587643,
+      -3.582605298875696
+    ]
+  },
+  {
+    "tick": 63,
+    "lateral_offset": 0.05502770881753059,
+    "predicted_hull_clearance": 0.04403242841362953,
+    "actual_mujoco_clearance": 0.22120242337230195,
+    "physical_pos": [
+      0.3266368310508212,
+      0.05502770881753059,
+      -3.577804571424052
+    ]
+  },
+  {
+    "tick": 64,
+    "lateral_offset": 0.05885527652436584,
+    "predicted_hull_clearance": 0.04740579426288605,
+    "actual_mujoco_clearance": 0.20386676963869613,
+    "physical_pos": [
+      0.3148452837670216,
+      0.05885527652436584,
+      -3.4922671954398146
+    ]
+  },
+  {
+    "tick": 65,
+    "lateral_offset": 0.06277445271642512,
+    "predicted_hull_clearance": 0.04922265559434891,
+    "actual_mujoco_clearance": 0.1870831486805803,
+    "physical_pos": [
+      0.30307143744690174,
+      0.06277445271642512,
+      -3.4067670492757327
+    ]
+  },
+  {
+    "tick": 66,
+    "lateral_offset": 0.06572421791012577,
+    "predicted_hull_clearance": 0.05308817699551582,
+    "actual_mujoco_clearance": 0.166451502441941,
+    "physical_pos": [
+      0.2960341717287838,
+      0.06572421791012577,
+      -3.2801406316774004
+    ]
+  },
+  {
+    "tick": 67,
+    "lateral_offset": 0.06398247937445327,
+    "predicted_hull_clearance": 0.060765862464904785,
+    "actual_mujoco_clearance": 0.15732447075683686,
+    "physical_pos": [
+      0.29084136651103737,
+      0.06398247937445327,
+      -3.1947995336327852
+    ]
+  },
+  {
+    "tick": 68,
+    "lateral_offset": 0.05968023484448664,
+    "predicted_hull_clearance": 0.07837215065956116,
+    "actual_mujoco_clearance": 0.26893375074422304,
+    "physical_pos": [
+      0.28060938857740564,
+      0.05968023484448664,
+      -3.0900408524605467
+    ]
+  },
+  {
+    "tick": 69,
+    "lateral_offset": 0.05511911601173776,
+    "predicted_hull_clearance": 0.09653575718402863,
+    "actual_mujoco_clearance": 0.2555343626676462,
+    "physical_pos": [
+      0.26703505848982945,
+      0.05511911601173776,
+      -3.0030836378861365
+    ]
+  },
+  {
+    "tick": 70,
+    "lateral_offset": 0.0493145197475297,
+    "predicted_hull_clearance": 0.1040930226445198,
+    "actual_mujoco_clearance": 0.2492592147675347,
+    "physical_pos": [
+      0.25352957360423767,
+      0.0493145197475297,
+      -2.998124635586906
+    ]
+  },
+  {
+    "tick": 71,
+    "lateral_offset": 0.044287087374206016,
+    "predicted_hull_clearance": 0.11155790835618973,
+    "actual_mujoco_clearance": 0.24346051842307348,
+    "physical_pos": [
+      0.24227772532966013,
+      0.044287087374206016,
+      -2.989910907361848
+    ]
+  },
+  {
+    "tick": 72,
+    "lateral_offset": 0.04049775218348247,
+    "predicted_hull_clearance": 0.12976182997226715,
+    "actual_mujoco_clearance": 0.23405338718287544,
+    "physical_pos": [
+      0.23457785169289777,
+      0.04049775218348247,
+      -2.9263819902902948
+    ]
+  },
+  {
+    "tick": 73,
+    "lateral_offset": 0.03531986162922919,
+    "predicted_hull_clearance": 0.13876724243164062,
+    "actual_mujoco_clearance": 0.22220111511309096,
+    "physical_pos": [
+      0.22371157004920803,
+      0.03531986162922919,
+      -2.8392495381918854
+    ]
+  },
+  {
+    "tick": 74,
+    "lateral_offset": 0.02854149244412829,
+    "predicted_hull_clearance": 0.13760721683502197,
+    "actual_mujoco_clearance": 0.21544131810335362,
+    "physical_pos": [
+      0.20825516810261427,
+      0.02854149244412829,
+      -2.839516348304838
+    ]
+  },
+  {
+    "tick": 75,
+    "lateral_offset": 0.023461305006749096,
+    "predicted_hull_clearance": 0.13625134527683258,
+    "actual_mujoco_clearance": 0.21795688562258592,
+    "physical_pos": [
+      0.19087447280360947,
+      0.023461305006749096,
+      -2.937520506253703
+    ]
+  },
+  {
+    "tick": 76,
+    "lateral_offset": 0.018608512808679152,
+    "predicted_hull_clearance": 0.13136352598667145,
+    "actual_mujoco_clearance": 0.22212283175256514,
+    "physical_pos": [
+      0.17345285526638957,
+      0.018608512808679152,
+      -3.0348306102373863
+    ]
+  },
+  {
+    "tick": 77,
+    "lateral_offset": 0.01700257024257882,
+    "predicted_hull_clearance": 0.12075349688529968,
+    "actual_mujoco_clearance": 0.2280520105000278,
+    "physical_pos": [
+      0.16113251455258826,
+      0.01700257024257882,
+      -3.106510434560888
+    ]
+  },
+  {
+    "tick": 78,
+    "lateral_offset": 0.017846258149641647,
+    "predicted_hull_clearance": 0.10813259333372116,
+    "actual_mujoco_clearance": 0.22735435500042628,
+    "physical_pos": [
+      0.14787141292602268,
+      0.017846258149641647,
+      -3.1907884564642948
+    ]
+  },
+  {
+    "tick": 79,
+    "lateral_offset": 0.021096886045451707,
+    "predicted_hull_clearance": 0.09586482495069504,
+    "actual_mujoco_clearance": 0.22153145561737086,
+    "physical_pos": [
+      0.13474708875121094,
+      0.021096886045451707,
+      -3.279898856885183
+    ]
+  },
+  {
+    "tick": 80,
+    "lateral_offset": 0.02510819244191621,
+    "predicted_hull_clearance": 0.08714726567268372,
+    "actual_mujoco_clearance": 0.21848626805097254,
+    "physical_pos": [
+      0.1147731858179427,
+      0.02510819244191621,
+      -3.358933584859458
+    ]
+  },
+  {
+    "tick": 81,
+    "lateral_offset": 0.029338491196496435,
+    "predicted_hull_clearance": 0.0837259292602539,
+    "actual_mujoco_clearance": 0.16514224982031134,
+    "physical_pos": [
+      0.08341035586832789,
+      0.029338491196496435,
+      -3.3458388903734524
+    ]
+  },
+  {
+    "tick": 82,
+    "lateral_offset": 0.03360623561785349,
+    "predicted_hull_clearance": 0.08018986135721207,
+    "actual_mujoco_clearance": 0.16200748912548874,
+    "physical_pos": [
+      0.05214534795268883,
+      0.03360623561785349,
+      -3.332702347942196
+    ]
+  },
+  {
+    "tick": 83,
+    "lateral_offset": 0.03729953534482681,
+    "predicted_hull_clearance": 0.07522483915090561,
+    "actual_mujoco_clearance": 0.15673444561896865,
+    "physical_pos": [
+      0.041492470794395477,
+      0.03729953534482681,
+      -3.351106186597639
+    ]
+  },
+  {
+    "tick": 84,
+    "lateral_offset": 0.03894957138583262,
+    "predicted_hull_clearance": 0.07337486743927002,
+    "actual_mujoco_clearance": 0.15448423921540955,
+    "physical_pos": [
+      0.033862102661510796,
+      0.03894957138583262,
+      -3.3582639860784713
+    ]
+  },
+  {
+    "tick": 85,
+    "lateral_offset": 0.039280976854165275,
+    "predicted_hull_clearance": 0.0730099007487297,
+    "actual_mujoco_clearance": 0.15410229097487627,
+    "physical_pos": [
+      0.029029889285902468,
+      0.039280976854165275,
+      -3.3588711700102545
+    ]
+  },
+  {
+    "tick": 86,
+    "lateral_offset": 0.03927388668594988,
+    "predicted_hull_clearance": 0.07298599183559418,
+    "actual_mujoco_clearance": 0.1540454617796101,
+    "physical_pos": [
+      0.025344555203446324,
+      0.03927388668594988,
+      -3.359640045883808
+    ]
+  },
+  {
+    "tick": 87,
+    "lateral_offset": 0.03862046767361176,
+    "predicted_hull_clearance": 0.07356391847133636,
+    "actual_mujoco_clearance": 0.15455555964889112,
+    "physical_pos": [
+      0.023935898081553945,
+      0.03862046767361176,
+      -3.3613680998952042
+    ]
+  },
+  {
+    "tick": 88,
+    "lateral_offset": 0.037260539315965194,
+    "predicted_hull_clearance": 0.07474637776613235,
+    "actual_mujoco_clearance": 0.15565378805808605,
+    "physical_pos": [
+      0.02509683441074159,
+      0.037260539315965194,
+      -3.3645381564436714
+    ]
+  },
+  {
+    "tick": 89,
+    "lateral_offset": 0.0355921820945676,
+    "predicted_hull_clearance": 0.07626599818468094,
+    "actual_mujoco_clearance": 0.15704645097442868,
+    "physical_pos": [
+      0.026929127941908333,
+      0.0355921820945676,
+      -3.367898611122148
+    ]
+  },
+  {
+    "tick": 90,
+    "lateral_offset": 0.033001811727183104,
+    "predicted_hull_clearance": 0.07853028923273087,
+    "actual_mujoco_clearance": 0.15914112166739763,
+    "physical_pos": [
+      0.032196601283441345,
+      0.033001811727183104,
+      -3.3739960578786934
+    ]
+  },
+  {
+    "tick": 91,
+    "lateral_offset": 0.030120855138779448,
+    "predicted_hull_clearance": 0.08112137764692307,
+    "actual_mujoco_clearance": 0.16150480669862022,
+    "physical_pos": [
+      0.037991933170984114,
+      0.030120855138779448,
+      -3.3804372698858836
+    ]
+  },
+  {
+    "tick": 92,
+    "lateral_offset": 0.031140860346141414,
+    "predicted_hull_clearance": 0.07794354856014252,
+    "actual_mujoco_clearance": 0.15671116433488735,
+    "physical_pos": [
+      0.04041213639819553,
+      0.031140860346141414,
+      -3.430205706975021
+    ]
+  },
+  {
+    "tick": 93,
+    "lateral_offset": 0.03525738046743841,
+    "predicted_hull_clearance": 0.06956280022859573,
+    "actual_mujoco_clearance": 0.14744594621713358,
+    "physical_pos": [
+      0.03921908961775773,
+      0.03525738046743841,
+      -3.508977554871342
+    ]
+  },
+  {
+    "tick": 94,
+    "lateral_offset": 0.043333388091590604,
+    "predicted_hull_clearance": 0.05691096559166908,
+    "actual_mujoco_clearance": 0.13685678515651484,
+    "physical_pos": [
+      0.04050146971953528,
+      0.043333388091590604,
+      -3.5546754982530078
+    ]
+  },
+  {
+    "tick": 95,
+    "lateral_offset": 0.050285591333037664,
+    "predicted_hull_clearance": 0.05375434085726738,
+    "actual_mujoco_clearance": 0.13196105643830164,
+    "physical_pos": [
+      0.033555145847056315,
+      0.050285591333037664,
+      -3.5168269596831507
+    ]
+  },
+  {
+    "tick": 96,
+    "lateral_offset": 0.05717290149425165,
+    "predicted_hull_clearance": 0.05408596992492676,
+    "actual_mujoco_clearance": 0.13055489687796318,
+    "physical_pos": [
+      0.0212150581899806,
+      0.05717290149425165,
+      -3.431938801251082
+    ]
+  },
+  {
+    "tick": 97,
+    "lateral_offset": 0.06465106000269749,
+    "predicted_hull_clearance": 0.05048445612192154,
+    "actual_mujoco_clearance": 0.13074296549578576,
+    "physical_pos": [
+      0.006346168668964187,
+      0.06465106000269749,
+      -3.3352256429362495
+    ]
+  },
+  {
+    "tick": 98,
+    "lateral_offset": 0.06729793283046748,
+    "predicted_hull_clearance": 0.052568525075912476,
+    "actual_mujoco_clearance": 0.13583078478996977,
+    "physical_pos": [
+      -0.008488551720747525,
+      0.06729793283046748,
+      -3.2522232393757484
+    ]
+  },
+  {
+    "tick": 99,
+    "lateral_offset": 0.06534702284782129,
+    "predicted_hull_clearance": 0.059514932334423065,
+    "actual_mujoco_clearance": 0.14390817498548286,
+    "physical_pos": [
+      -0.017985583227649093,
+      0.06534702284782129,
+      -3.1931288656578225
+    ]
+  },
+  {
+    "tick": 100,
+    "lateral_offset": 0.06248599926359042,
+    "predicted_hull_clearance": 0.07373315840959549,
+    "actual_mujoco_clearance": 0.15765116031242715,
+    "physical_pos": [
+      -0.03289016028865009,
+      0.06248599926359042,
+      -3.098022018450407
+    ]
+  },
+  {
+    "tick": 101,
+    "lateral_offset": 0.05794586459298791,
+    "predicted_hull_clearance": 0.08724755793809891,
+    "actual_mujoco_clearance": 0.16955471506697678,
+    "physical_pos": [
+      -0.045863889729049596,
+      0.05794586459298791,
+      -3.0388964463812846
+    ]
+  },
+  {
+    "tick": 102,
+    "lateral_offset": 0.05889751168272906,
+    "predicted_hull_clearance": 0.05946038290858269,
+    "actual_mujoco_clearance": 0.14482545124859825,
+    "physical_pos": [
+      -0.06901857268864084,
+      0.05889751168272906,
+      -3.2462705973256103
+    ]
+  },
+  {
+    "tick": 103,
+    "lateral_offset": 0.06019881735562119,
+    "predicted_hull_clearance": 0.04787119850516319,
+    "actual_mujoco_clearance": 0.12602117046199157,
+    "physical_pos": [
+      -0.09200374733521498,
+      0.06019881735562119,
+      -3.453546978428801
+    ]
+  },
+  {
+    "tick": 104,
+    "lateral_offset": 0.061899024922823585,
+    "predicted_hull_clearance": 0.0314103327691555,
+    "actual_mujoco_clearance": 0.11382703092575375,
+    "physical_pos": [
+      -0.11473271027045413,
+      0.061899024922823585,
+      -3.660895272622667
+    ]
+  },
+  {
+    "tick": 105,
+    "lateral_offset": 0.06389418566905812,
+    "predicted_hull_clearance": 0.022694680839776993,
+    "actual_mujoco_clearance": 0.1088045710568421,
+    "physical_pos": [
+      -0.13708096131063172,
+      0.06389418566905812,
+      -3.868462877416047
+    ]
+  },
+  {
+    "tick": 106,
+    "lateral_offset": 0.06719264123102343,
+    "predicted_hull_clearance": 0.0218111053109169,
+    "actual_mujoco_clearance": 0.10781434589313477,
+    "physical_pos": [
+      -0.15036342549644366,
+      0.06719264123102343,
+      -4.010083822210967
+    ]
+  },
+  {
+    "tick": 107,
+    "lateral_offset": 0.07459763410818789,
+    "predicted_hull_clearance": 0.021855492144823074,
+    "actual_mujoco_clearance": 0.10405447927308636,
+    "physical_pos": [
+      -0.15923052259424783,
+      0.07459763410818789,
+      -4.1078867581988785
+    ]
+  },
+  {
+    "tick": 108,
+    "lateral_offset": 0.07450825892303568,
+    "predicted_hull_clearance": 0.02334381267428398,
+    "actual_mujoco_clearance": 0.10085985152507856,
+    "physical_pos": [
+      -0.15435532054585124,
+      0.07450825892303568,
+      -4.0221922692931065
+    ]
+  },
+  {
+    "tick": 109,
+    "lateral_offset": 0.0810877810382723,
+    "predicted_hull_clearance": 0.014564256183803082,
+    "actual_mujoco_clearance": 0.09290748864583837,
+    "physical_pos": [
+      -0.15081069813366932,
+      0.0810877810382723,
+      -3.970020068557405
+    ]
+  },
+  {
+    "tick": 110,
+    "lateral_offset": 0.08726800997814842,
+    "predicted_hull_clearance": 0.00787367019802332,
+    "actual_mujoco_clearance": 0.0858418209939642,
+    "physical_pos": [
+      -0.14685888639489372,
+      0.08726800997814842,
+      -3.918518262721516
+    ]
+  },
+  {
+    "tick": 111,
+    "lateral_offset": 0.0922420752202174,
+    "predicted_hull_clearance": 0.005562171805649996,
+    "actual_mujoco_clearance": 0.0804556513482369,
+    "physical_pos": [
+      -0.14171534341395667,
+      0.0922420752202174,
+      -3.8681883969665694
+    ]
+  },
+  {
+    "tick": 112,
+    "lateral_offset": 0.09591547201022078,
+    "predicted_hull_clearance": 0.007279105018824339,
+    "actual_mujoco_clearance": 0.07685134720760589,
+    "physical_pos": [
+      -0.14152849436099035,
+      0.09591547201022078,
+      -3.812211279472567
+    ]
+  },
+  {
+    "tick": 113,
+    "lateral_offset": 0.09850337955462653,
+    "predicted_hull_clearance": 0.00849938951432705,
+    "actual_mujoco_clearance": 0.07484457805168526,
+    "physical_pos": [
+      -0.1458126370047574,
+      0.09850337955462653,
+      -3.7589549286651285
+    ]
+  },
+  {
+    "tick": 114,
+    "lateral_offset": 0.1004843013348003,
+    "predicted_hull_clearance": 0.009373662993311882,
+    "actual_mujoco_clearance": 0.07398227594802054,
+    "physical_pos": [
+      -0.1522028146441401,
+      0.1004843013348003,
+      -3.7042433274306745
+    ]
+  },
+  {
+    "tick": 115,
+    "lateral_offset": 0.09632636016361291,
+    "predicted_hull_clearance": 0.00494976295158267,
+    "actual_mujoco_clearance": 0.07801836940288187,
+    "physical_pos": [
+      -0.15114945867117677,
+      0.09632636016361291,
+      -3.7091509651542083
+    ]
+  },
+  {
+    "tick": 116,
+    "lateral_offset": 0.09093600819818089,
+    "predicted_hull_clearance": 0.004611088428646326,
+    "actual_mujoco_clearance": 0.08387050662240664,
+    "physical_pos": [
+      -0.1449053677802789,
+      0.09093600819818089,
+      -3.6913614850243293
+    ]
+  },
+  {
+    "tick": 117,
+    "lateral_offset": 0.08792870171777546,
+    "predicted_hull_clearance": 0.007904727011919022,
+    "actual_mujoco_clearance": 0.08769739351489081,
+    "physical_pos": [
+      -0.13833258984445235,
+      0.08792870171777546,
+      -3.663963951067238
+    ]
+  },
+  {
+    "tick": 118,
+    "lateral_offset": 0.08698012703424991,
+    "predicted_hull_clearance": 0.009917568415403366,
+    "actual_mujoco_clearance": 0.08970242744537527,
+    "physical_pos": [
+      -0.1328960572462567,
+      0.08698012703424991,
+      -3.6337260224426573
+    ]
+  },
+  {
+    "tick": 119,
+    "lateral_offset": 0.0862856019489164,
+    "predicted_hull_clearance": 0.01525703351944685,
+    "actual_mujoco_clearance": 0.09345246515267769,
+    "physical_pos": [
+      -0.1246132812317417,
+      0.0862856019489164,
+      -3.56365108896246
+    ]
+  },
+  {
+    "tick": 120,
+    "lateral_offset": 0.0851791338948655,
+    "predicted_hull_clearance": 0.022846590727567673,
+    "actual_mujoco_clearance": 0.09958084513949589,
+    "physical_pos": [
+      -0.11454215512965807,
+      0.0851791338948655,
+      -3.4756001180024185
+    ]
+  },
+  {
+    "tick": 121,
+    "lateral_offset": 0.08212552304457285,
+    "predicted_hull_clearance": 0.03280407935380936,
+    "actual_mujoco_clearance": 0.11020031199918887,
+    "physical_pos": [
+      -0.11621808980653896,
+      0.08212552304457285,
+      -3.3717378365883306
+    ]
+  },
+  {
+    "tick": 122,
+    "lateral_offset": 0.07878354254925643,
+    "predicted_hull_clearance": 0.04087161272764206,
+    "actual_mujoco_clearance": 0.12264269481595455,
+    "physical_pos": [
+      -0.11745948099421073,
+      0.07878354254925643,
+      -3.269575468493197
+    ]
+  },
+  {
+    "tick": 123,
+    "lateral_offset": 0.07388333461755517,
+    "predicted_hull_clearance": 0.05192707106471062,
+    "actual_mujoco_clearance": 0.13624713269484928,
+    "physical_pos": [
+      -0.12087071379862155,
+      0.07388333461755517,
+      -3.1850588711278753
+    ]
+  },
+  {
+    "tick": 124,
+    "lateral_offset": 0.06847946831695008,
+    "predicted_hull_clearance": 0.07257077097892761,
+    "actual_mujoco_clearance": 0.13811183584863396,
+    "physical_pos": [
+      -0.1333605792773329,
+      0.06847946831695008,
+      -3.0649526403477907
+    ]
+  },
+  {
+    "tick": 125,
+    "lateral_offset": 0.06329717533519334,
+    "predicted_hull_clearance": 0.0999138206243515,
+    "actual_mujoco_clearance": 0.13183192034114477,
+    "physical_pos": [
+      -0.14578327941426072,
+      0.06329717533519334,
+      -2.9449017316224264
+    ]
+  },
+  {
+    "tick": 126,
+    "lateral_offset": 0.056976887675380526,
+    "predicted_hull_clearance": 0.08983353525400162,
+    "actual_mujoco_clearance": 0.1457132768786703,
+    "physical_pos": [
+      -0.1635919828029282,
+      0.056976887675380526,
+      -3.0265352291415764
+    ]
+  },
+  {
+    "tick": 127,
+    "lateral_offset": 0.052135638169766865,
+    "predicted_hull_clearance": 0.0830671489238739,
+    "actual_mujoco_clearance": 0.1584991063843086,
+    "physical_pos": [
+      -0.17876735420441153,
+      0.052135638169766865,
+      -3.1027381336839657
+    ]
+  },
+  {
+    "tick": 128,
+    "lateral_offset": 0.04984543801365983,
+    "predicted_hull_clearance": 0.0783504843711853,
+    "actual_mujoco_clearance": 0.16315494533373637,
+    "physical_pos": [
+      -0.19044147417801086,
+      0.04984543801365983,
+      -3.1591627215643836
+    ]
+  },
+  {
+    "tick": 129,
+    "lateral_offset": 0.04956678103036168,
+    "predicted_hull_clearance": 0.07463549822568893,
+    "actual_mujoco_clearance": 0.1592925138241923,
+    "physical_pos": [
+      -0.19926204492658137,
+      0.04956678103036168,
+      -3.1968071019640503
+    ]
+  },
+  {
+    "tick": 130,
+    "lateral_offset": 0.04972616471061029,
+    "predicted_hull_clearance": 0.07774384319782257,
+    "actual_mujoco_clearance": 0.16138159849615016,
+    "physical_pos": [
+      -0.20898340120741138,
+      0.04972616471061029,
+      -3.176145774442591
+    ]
+  },
+  {
+    "tick": 131,
+    "lateral_offset": 0.04733488909409874,
+    "predicted_hull_clearance": 0.09307628870010376,
+    "actual_mujoco_clearance": 0.16065402970064058,
+    "physical_pos": [
+      -0.22525253294187705,
+      0.04733488909409874,
+      -3.0782284846441175
+    ]
+  },
+  {
+    "tick": 132,
+    "lateral_offset": 0.04377991322892216,
+    "predicted_hull_clearance": 0.11415690928697586,
+    "actual_mujoco_clearance": 0.15471461978679057,
+    "physical_pos": [
+      -0.24319462484351714,
+      0.04377991322892216,
+      -2.982589518981523
+    ]
+  },
+  {
+    "tick": 133,
+    "lateral_offset": 0.037545639959570186,
+    "predicted_hull_clearance": 0.128609761595726,
+    "actual_mujoco_clearance": 0.1563330978856865,
+    "physical_pos": [
+      -0.26150212485253654,
+      0.037545639959570186,
+      -2.9302367703752012
+    ]
+  },
+  {
+    "tick": 134,
+    "lateral_offset": 0.03106285198877412,
+    "predicted_hull_clearance": 0.1275816261768341,
+    "actual_mujoco_clearance": 0.1675977886131208,
+    "physical_pos": [
+      -0.27911985461165484,
+      0.03106285198877412,
+      -2.9843889627278175
+    ]
+  },
+  {
+    "tick": 135,
+    "lateral_offset": 0.025583988800485413,
+    "predicted_hull_clearance": 0.12278831005096436,
+    "actual_mujoco_clearance": 0.17834654435331965,
+    "physical_pos": [
+      -0.2912170590708731,
+      0.025583988800485413,
+      -3.038981814883494
+    ]
+  },
+  {
+    "tick": 136,
+    "lateral_offset": 0.02244010456801695,
+    "predicted_hull_clearance": 0.11615310609340668,
+    "actual_mujoco_clearance": 0.18751592941404963,
+    "physical_pos": [
+      -0.3031799942758767,
+      0.02244010456801695,
+      -3.0965248554266713
+    ]
+  },
+  {
+    "tick": 137,
+    "lateral_offset": 0.02292128846818752,
+    "predicted_hull_clearance": 0.10575936734676361,
+    "actual_mujoco_clearance": 0.18925513455100396,
+    "physical_pos": [
+      -0.31462388796991075,
+      0.02292128846818752,
+      -3.166512558139685
+    ]
+  },
+  {
+    "tick": 138,
+    "lateral_offset": 0.02566690543799638,
+    "predicted_hull_clearance": 0.09292855113744736,
+    "actual_mujoco_clearance": 0.17667017495498147,
+    "physical_pos": [
+      -0.3292749808188746,
+      0.02566690543799638,
+      -3.260235531823
+    ]
+  },
+  {
+    "tick": 139,
+    "lateral_offset": 0.030426399268237682,
+    "predicted_hull_clearance": 0.08146988600492477,
+    "actual_mujoco_clearance": 0.16352818402735847,
+    "physical_pos": [
+      -0.3422411831490741,
+      0.030426399268237682,
+      -3.3520476543740534
+    ]
+  },
+  {
+    "tick": 140,
+    "lateral_offset": 0.03791132747266513,
+    "predicted_hull_clearance": 0.07261272519826889,
+    "actual_mujoco_clearance": 0.15226172886767353,
+    "physical_pos": [
+      -0.35759388237052164,
+      0.03791132747266513,
+      -3.398983403088926
+    ]
+  },
+  {
+    "tick": 141,
+    "lateral_offset": 0.04648818568311288,
+    "predicted_hull_clearance": 0.06389676779508591,
+    "actual_mujoco_clearance": 0.143133235739878,
+    "physical_pos": [
+      -0.37269433401781604,
+      0.04648818568311288,
+      -3.4062162908425364
+    ]
+  },
+  {
+    "tick": 142,
+    "lateral_offset": 0.05507445909764891,
+    "predicted_hull_clearance": 0.055271048098802567,
+    "actual_mujoco_clearance": 0.13402352984379776,
+    "physical_pos": [
+      -0.3877379931212034,
+      0.05507445909764891,
+      -3.413183411443828
+    ]
+  },
+  {
+    "tick": 143,
+    "lateral_offset": 0.06122920792428994,
+    "predicted_hull_clearance": 0.048693619668483734,
+    "actual_mujoco_clearance": 0.12672845754346693,
+    "physical_pos": [
+      -0.39756900949443214,
+      0.06122920792428994,
+      -3.4287372191910803
+    ]
+  },
+  {
+    "tick": 144,
+    "lateral_offset": 0.06557291848465091,
+    "predicted_hull_clearance": 0.046025004237890244,
+    "actual_mujoco_clearance": 0.12523338406089907,
+    "physical_pos": [
+      -0.4055856371092793,
+      0.06557291848465091,
+      -3.3908123139290867
+    ]
+  },
+  {
+    "tick": 145,
+    "lateral_offset": 0.06993619166140884,
+    "predicted_hull_clearance": 0.04224264621734619,
+    "actual_mujoco_clearance": 0.12177690345334011,
+    "physical_pos": [
+      -0.412913181479331,
+      0.06993619166140884,
+      -3.3793427628322585
+    ]
+  },
+  {
+    "tick": 146,
+    "lateral_offset": 0.07258094540324395,
+    "predicted_hull_clearance": 0.0402197390794754,
+    "actual_mujoco_clearance": 0.12013563909079655,
+    "physical_pos": [
+      -0.4135220064214286,
+      0.07258094540324395,
+      -3.366946258665475
+    ]
+  },
+  {
+    "tick": 147,
+    "lateral_offset": 0.07490593088746735,
+    "predicted_hull_clearance": 0.041951149702072144,
+    "actual_mujoco_clearance": 0.12184387209853037,
+    "physical_pos": [
+      -0.4141698987106443,
+      0.07490593088746735,
+      -3.319829601217201
+    ]
+  },
+  {
+    "tick": 148,
+    "lateral_offset": 0.07729282554131744,
+    "predicted_hull_clearance": 0.04768899083137512,
+    "actual_mujoco_clearance": 0.1309922350525034,
+    "physical_pos": [
+      -0.41827501888066876,
+      0.07729282554131744,
+      -3.2021740117860693
+    ]
+  },
+  {
+    "tick": 149,
+    "lateral_offset": 0.07463518491845894,
+    "predicted_hull_clearance": 0.060809481889009476,
+    "actual_mujoco_clearance": 0.13605328825779112,
+    "physical_pos": [
+      -0.423931684421444,
+      0.07463518491845894,
+      -3.103227896782764
+    ]
+  },
+  {
+    "tick": 150,
+    "lateral_offset": 0.0688325645343464,
+    "predicted_hull_clearance": 0.10485485941171646,
+    "actual_mujoco_clearance": 0.12956984992600298,
+    "physical_pos": [
+      -0.43389156791467653,
+      0.0688325645343464,
+      -2.9815893009110908
+    ]
+  },
+  {
+    "tick": 151,
+    "lateral_offset": 0.06306171628171121,
+    "predicted_hull_clearance": 0.11053401231765747,
+    "actual_mujoco_clearance": 0.12528330728058185,
+    "physical_pos": [
+      -0.44393177495716857,
+      0.06306171628171121,
+      -2.8597916886366175
+    ]
+  },
+  {
+    "tick": 152,
+    "lateral_offset": 0.06075256605774252,
+    "predicted_hull_clearance": 0.10740859061479568,
+    "actual_mujoco_clearance": 0.13321006283466302,
+    "physical_pos": [
+      -0.46531119262222564,
+      0.06075256605774252,
+      -2.931233129189083
+    ]
+  },
+  {
+    "tick": 153,
+    "lateral_offset": 0.060204083771130366,
+    "predicted_hull_clearance": 0.11150257289409637,
+    "actual_mujoco_clearance": 0.13826480555845952,
+    "physical_pos": [
+      -0.4823537040321573,
+      0.060204083771130366,
+      -2.982311246571056
+    ]
+  },
+  {
+    "tick": 154,
+    "lateral_offset": 0.06012695843180812,
+    "predicted_hull_clearance": 0.1130414679646492,
+    "actual_mujoco_clearance": 0.1333407870884419,
+    "physical_pos": [
+      -0.49615112352754837,
+      0.06012695843180812,
+      -2.9253286018451243
+    ]
+  },
+  {
+    "tick": 155,
+    "lateral_offset": 0.06006323561055059,
+    "predicted_hull_clearance": 0.11344265937805176,
+    "actual_mujoco_clearance": 0.1289069209482726,
+    "physical_pos": [
+      -0.5099638460321718,
+      0.06006323561055059,
+      -2.8682844304442434
+    ]
+  },
+  {
+    "tick": 156,
+    "lateral_offset": 0.060016538131028335,
+    "predicted_hull_clearance": 0.11476773768663406,
+    "actual_mujoco_clearance": 0.1249763310559723,
+    "physical_pos": [
+      -0.523709941444893,
+      0.060016538131028335,
+      -2.8111855786653113
+    ]
+  },
+  {
+    "tick": 157,
+    "lateral_offset": 0.05717786917180005,
+    "predicted_hull_clearance": 0.11840366572141647,
+    "actual_mujoco_clearance": 0.12345717784778468,
+    "physical_pos": [
+      -0.5301844621590285,
+      0.05717786917180005,
+      -2.7370879906974626
+    ]
+  },
+  {
+    "tick": 158,
+    "lateral_offset": 0.053503026194015924,
+    "predicted_hull_clearance": 0.12079839408397675,
+    "actual_mujoco_clearance": 0.12407857778068082,
+    "physical_pos": [
+      -0.535338411951415,
+      0.053503026194015924,
+      -2.6722018170782253
+    ]
+  },
+  {
+    "tick": 159,
+    "lateral_offset": 0.04860241970632487,
+    "predicted_hull_clearance": 0.12558536231517792,
+    "actual_mujoco_clearance": 0.12873300624839082,
+    "physical_pos": [
+      -0.5408434945359104,
+      0.04860241970632487,
+      -2.666194190357818
+    ]
+  },
+  {
+    "tick": 160,
+    "lateral_offset": 0.04315944142296901,
+    "predicted_hull_clearance": 0.13226397335529327,
+    "actual_mujoco_clearance": 0.13662235151159918,
+    "physical_pos": [
+      -0.5556441652278646,
+      0.04315944142296901,
+      -2.720414330321033
+    ]
+  }
+]

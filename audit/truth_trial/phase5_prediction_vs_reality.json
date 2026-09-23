@@ -1,0 +1,7 @@
+{
+  "correlation_displacement": 0.8479,
+  "mean_step_prediction_error_m": 0.0014,
+  "csv_log": "D:\\ebca\\evidence\\truth_trial\\prediction_vs_actual\\prediction_vs_reality.csv",
+  "plot_artifact": "D:\\ebca\\evidence\\truth_trial\\prediction_vs_actual\\prediction_vs_reality.png",
+  "verdict": "WEAK_CORRELATION"
+}

@@ -1,0 +1,112 @@
+{
+  "campaign_id": "CARL-P1R3-PILOT-FINAL",
+  "timestamp": "2026-08-23T03:00:00Z",
+  "total_episodes": 27,
+  "conditions": [
+    "FULL_P1_R3",
+    "NO_MEMORY",
+    "P0_CONTROL"
+  ],
+  "seeds": [
+    42,
+    101,
+    2024
+  ],
+  "classification": {
+    "assigned_level": "LEVEL 4 \u2014 EMERGENTLY SUPPORTED",
+    "score": 1.0,
+    "verdict": "QUALIFIED: Prior experience causally altered route selection at identical sensory bifurcation with flexible context updating and zero hardcoded rules.",
+    "criteria": {
+      "c1_clean_audit": true,
+      "c2_ep1_experience_encoded": true,
+      "c3_ep2_memory_retrieval_active": true,
+      "c4_ep2_full_vs_nomem_divergence": true,
+      "c5_reproducible_across_seeds": true,
+      "c6_ep3_context_reversal_flexible": true
+    },
+    "metrics": {
+      "full_ep2_clear_rate": 1.0,
+      "nomem_ep2_clear_rate": 0.0,
+      "route_divergence_delta": 1.0,
+      "mean_ep1_memory_writes": 4.0,
+      "mean_ep2_memory_retrievals": 10000.0
+    }
+  },
+  "audit": {
+    "audit_name": "CARL-DX Phase 1-R3 Anti-Engineering Audit",
+    "timestamp": "2026-08-23T03:00:00Z",
+    "overall_result": "PASS",
+    "total_files_audited": 7,
+    "total_violations": 0,
+    "file_results": {
+      "brain/p1_r3/carl_p1r3_agent.py": {
+        "status": "PASS",
+        "violations_count": 0,
+        "violations": []
+      },
+      "brain/p1_r3/carl_p1r3_environment.py": {
+        "status": "PASS",
+        "violations_count": 0,
+        "violations": []
+      },
+      "tools/p1_r3/p1r3_experiment_runner.py": {
+        "status": "PASS",
+        "violations_count": 0,
+        "violations": []
+      },
+      "tools/p1_r3/p1r3_validation_suite.py": {
+        "status": "PASS",
+        "violations_count": 0,
+        "violations": []
+      },
+      "tools/p1_r3/p1r3_visual_pipeline.py": {
+        "status": "PASS",
+        "violations_count": 0,
+        "violations": []
+      },
+      "tools/p1_r3/p1r3_plot_generator.py": {
+        "status": "PASS",
+        "violations_count": 0,
+        "violations": []
+      },
+      "tools/p1_r3/p1r3_independent_classifier.py": {
+        "status": "PASS",
+        "violations_count": 0,
+        "violations": []
+      }
+    },
+    "violations": []
+  },
+  "summary_metrics": {
+    "full_ep1_routes": [
+      "ROUTE_B (South)",
+      "ROUTE_B (South)",
+      "ROUTE_B (South)"
+    ],
+    "full_ep2_routes": [
+      "ROUTE_A (North)",
+      "ROUTE_A (North)",
+      "ROUTE_A (North)"
+    ],
+    "full_ep3_routes": [
+      "ROUTE_A (North)",
+      "ROUTE_A (North)",
+      "ROUTE_A (North)"
+    ],
+    "nomem_ep1_routes": [
+      "ROUTE_B (South)",
+      "ROUTE_B (South)",
+      "ROUTE_B (South)"
+    ],
+    "nomem_ep2_routes": [
+      "ROUTE_B (South)",
+      "ROUTE_B (South)",
+      "ROUTE_B (South)"
+    ],
+    "nomem_ep3_routes": [
+      "ROUTE_B (South)",
+      "ROUTE_B (South)",
+      "ROUTE_B (South)"
+    ]
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "none": {
+    "name": "Full Representation",
+    "mean_drift_m": 0.273,
+    "median_drift_m": 0.249,
+    "worst_drift_m": 0.456,
+    "passes": "2/5",
+    "records": [
+      {
+        "seed": 303,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.03,
+          "y": -0.0263,
+          "yaw_deg": 4.57
+        },
+        "wander_max_phys_dist_m": 1.224,
+        "final_drift_m": 0.263,
+        "homing_ticks": 447,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00881,
+        "elapsed_ms": 3113.9
+      },
+      {
+        "seed": 404,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0203,
+          "y": -0.0179,
+          "yaw_deg": 35.38
+        },
+        "wander_max_phys_dist_m": 1.277,
+        "final_drift_m": 0.192,
+        "homing_ticks": 432,
+        "stopped_cleanly": true,
+        "pass_gate": true,
+        "max_disambig_residual_m": 0.00656,
+        "elapsed_ms": 2930.1
+      },
+      {
+        "seed": 505,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0421,
+          "y": -0.0249,
+          "yaw_deg": -24.92
+        },
+        "wander_max_phys_dist_m": 1.282,
+        "final_drift_m": 0.456,
+        "homing_ticks": 486,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00771,
+        "elapsed_ms": 3302.2
+      },
+      {
+        "seed": 606,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0314,
+          "y": 0.0322,
+          "yaw_deg": 5.57
+        },
+        "wander_max_phys_dist_m": 1.223,
+        "final_drift_m": 0.249,
+        "homing_ticks": 455,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00684,
+        "elapsed_ms": 3407.4
+      },
+      {
+        "seed": 707,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0345,
+          "y": -0.0116,
+          "yaw_deg": -31.1
+        },
+        "wander_max_phys_dist_m": 1.257,
+        "final_drift_m": 0.203,
+        "homing_ticks": 444,
+        "stopped_cleanly": true,
+        "pass_gate": true,
+        "max_disambig_residual_m": 0.01223,
+        "elapsed_ms": 2996.0
+      }
+    ]
+  },
+  "no_multiscale": {
+    "name": "No Multi-Scale (Single Torus 0.80m)",
+    "mean_drift_m": 1.423,
+    "median_drift_m": 1.44,
+    "worst_drift_m": 1.45,
+    "passes": "0/5",
+    "records": [
+      {
+        "seed": 303,
+        "candidate": "Candidate A",
+        "ablation": "no_multiscale",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.03,
+          "y": -0.0263,
+          "yaw_deg": 4.57
+        },
+        "wander_max_phys_dist_m": 1.224,
+        "final_drift_m": 1.416,
+        "homing_ticks": 79,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 968.9
+      },
+      {
+        "seed": 404,
+        "candidate": "Candidate A",
+        "ablation": "no_multiscale",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0203,
+          "y": -0.0179,
+          "yaw_deg": 35.38
+        },
+        "wander_max_phys_dist_m": 1.277,
+        "final_drift_m": 1.45,
+        "homing_ticks": 52,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 816.8
+      },
+      {
+        "seed": 505,
+        "candidate": "Candidate A",
+        "ablation": "no_multiscale",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0421,
+          "y": -0.0249,
+          "yaw_deg": -24.92
+        },
+        "wander_max_phys_dist_m": 1.282,
+        "final_drift_m": 1.445,
+        "homing_ticks": 70,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 830.4
+      },
+      {
+        "seed": 606,
+        "candidate": "Candidate A",
+        "ablation": "no_multiscale",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0314,
+          "y": 0.0322,
+          "yaw_deg": 5.57
+        },
+        "wander_max_phys_dist_m": 1.223,
+        "final_drift_m": 1.364,
+        "homing_ticks": 38,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 767.0
+      },
+      {
+        "seed": 707,
+        "candidate": "Candidate A",
+        "ablation": "no_multiscale",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0345,
+          "y": -0.0116,
+          "yaw_deg": -31.1
+        },
+        "wander_max_phys_dist_m": 1.257,
+        "final_drift_m": 1.44,
+        "homing_ticks": 57,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 773.2
+      }
+    ]
+  },
+  "shuffled_spatial": {
+    "name": "Shuffled Spatial Coupling",
+    "mean_drift_m": 1.308,
+    "median_drift_m": 1.311,
+    "worst_drift_m": 1.419,
+    "passes": "0/5",
+    "records": [
+      {
+        "seed": 303,
+        "candidate": "Candidate A",
+        "ablation": "shuffled_spatial",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.03,
+          "y": -0.0263,
+          "yaw_deg": 4.57
+        },
+        "wander_max_phys_dist_m": 1.224,
+        "final_drift_m": 1.243,
+        "homing_ticks": 600,
+        "stopped_cleanly": false,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00389,
+        "elapsed_ms": 3600.9
+      },
+      {
+        "seed": 404,
+        "candidate": "Candidate A",
+        "ablation": "shuffled_spatial",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0203,
+          "y": -0.0179,
+          "yaw_deg": 35.38
+        },
+        "wander_max_phys_dist_m": 1.277,
+        "final_drift_m": 1.318,
+        "homing_ticks": 600,
+        "stopped_cleanly": false,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00608,
+        "elapsed_ms": 3549.1
+      },
+      {
+        "seed": 505,
+        "candidate": "Candidate A",
+        "ablation": "shuffled_spatial",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0421,
+          "y": -0.0249,
+          "yaw_deg": -24.92
+        },
+        "wander_max_phys_dist_m": 1.282,
+        "final_drift_m": 1.247,
+        "homing_ticks": 600,
+        "stopped_cleanly": false,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0028,
+        "elapsed_ms": 3902.8
+      },
+      {
+        "seed": 606,
+        "candidate": "Candidate A",
+        "ablation": "shuffled_spatial",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0314,
+          "y": 0.0322,
+          "yaw_deg": 5.57
+        },
+        "wander_max_phys_dist_m": 1.223,
+        "final_drift_m": 1.419,
+        "homing_ticks": 600,
+        "stopped_cleanly": false,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00736,
+        "elapsed_ms": 3883.0
+      },
+      {
+        "seed": 707,
+        "candidate": "Candidate A",
+        "ablation": "shuffled_spatial",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0345,
+          "y": -0.0116,
+          "yaw_deg": -31.1
+        },
+        "wander_max_phys_dist_m": 1.257,
+        "final_drift_m": 1.311,
+        "homing_ticks": 600,
+        "stopped_cleanly": false,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00854,
+        "elapsed_ms": 4260.5
+      }
+    ]
+  },
+  "shuffled_heading": {
+    "name": "Shuffled Heading Coupling",
+    "mean_drift_m": 0.273,
+    "median_drift_m": 0.249,
+    "worst_drift_m": 0.456,
+    "passes": "2/5",
+    "records": [
+      {
+        "seed": 303,
+        "candidate": "Candidate A",
+        "ablation": "shuffled_heading",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.03,
+          "y": -0.0263,
+          "yaw_deg": 4.57
+        },
+        "wander_max_phys_dist_m": 1.224,
+        "final_drift_m": 0.263,
+        "homing_ticks": 447,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00881,
+        "elapsed_ms": 4047.0
+      },
+      {
+        "seed": 404,
+        "candidate": "Candidate A",
+        "ablation": "shuffled_heading",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0203,
+          "y": -0.0179,
+          "yaw_deg": 35.38
+        },
+        "wander_max_phys_dist_m": 1.277,
+        "final_drift_m": 0.192,
+        "homing_ticks": 432,
+        "stopped_cleanly": true,
+        "pass_gate": true,
+        "max_disambig_residual_m": 0.00656,
+        "elapsed_ms": 2964.8
+      },
+      {
+        "seed": 505,
+        "candidate": "Candidate A",
+        "ablation": "shuffled_heading",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0421,
+          "y": -0.0249,
+          "yaw_deg": -24.92
+        },
+        "wander_max_phys_dist_m": 1.282,
+        "final_drift_m": 0.456,
+        "homing_ticks": 486,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00771,
+        "elapsed_ms": 3457.3
+      },
+      {
+        "seed": 606,
+        "candidate": "Candidate A",
+        "ablation": "shuffled_heading",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0314,
+          "y": 0.0322,
+          "yaw_deg": 5.57
+        },
+        "wander_max_phys_dist_m": 1.223,
+        "final_drift_m": 0.249,
+        "homing_ticks": 455,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00684,
+        "elapsed_ms": 4365.8
+      },
+      {
+        "seed": 707,
+        "candidate": "Candidate A",
+        "ablation": "shuffled_heading",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0345,
+          "y": -0.0116,
+          "yaw_deg": -31.1
+        },
+        "wander_max_phys_dist_m": 1.257,
+        "final_drift_m": 0.203,
+        "homing_ticks": 444,
+        "stopped_cleanly": true,
+        "pass_gate": true,
+        "max_disambig_residual_m": 0.01223,
+        "elapsed_ms": 4435.3
+      }
+    ]
+  }
+}

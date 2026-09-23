@@ -1,0 +1,10 @@
+{
+  "episode_id": "val_0046",
+  "seed": 2047,
+  "goal_pos": [
+    2.314,
+    -0.83
+  ],
+  "friction": 1.365,
+  "max_ticks": 200
+}

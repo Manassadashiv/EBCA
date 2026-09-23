@@ -1,0 +1,79 @@
+{
+  "status": "BATTERY_COMPLETE",
+  "dead_reckoning_drift": {
+    "T_50": {
+      "horizon_ticks": 50,
+      "mean_drift_meters": 1.2123542127489784,
+      "drift_rate_m_per_tick": 0.024247084254979567,
+      "trials": [
+        1.1774612171860188,
+        1.2072916745795956,
+        1.1287527497797598,
+        1.0683479026786926,
+        1.4799175195208245
+      ]
+    },
+    "T_100": {
+      "horizon_ticks": 100,
+      "mean_drift_meters": 2.431555254819199,
+      "drift_rate_m_per_tick": 0.02431555254819199,
+      "trials": [
+        2.2082805858041583,
+        2.2990422309441234,
+        2.3527235041831083,
+        2.2090796696843826,
+        3.088650283480219
+      ]
+    },
+    "T_200": {
+      "horizon_ticks": 200,
+      "mean_drift_meters": 4.88461859977018,
+      "drift_rate_m_per_tick": 0.024423092998850898,
+      "trials": [
+        4.741009694061457,
+        4.370857623425368,
+        4.636259411339881,
+        4.46565448197637,
+        6.2093117880478195
+      ]
+    }
+  },
+  "sensor_perturbation_tests": {
+    "clean": {
+      "sigma": 0.0,
+      "dropout_prob": 0.0,
+      "mean_abs_error_m": 0.0,
+      "max_abs_error_m": 0.0,
+      "graceful_degradation": true
+    },
+    "mild_gaussian": {
+      "sigma": 0.02,
+      "dropout_prob": 0.0,
+      "mean_abs_error_m": 0.0008354409364983439,
+      "max_abs_error_m": 0.06265807151794434,
+      "graceful_degradation": true
+    },
+    "heavy_gaussian": {
+      "sigma": 0.05,
+      "dropout_prob": 0.0,
+      "mean_abs_error_m": 0.04594936594367027,
+      "max_abs_error_m": 3.383544445037842,
+      "graceful_degradation": true
+    },
+    "dropout_5pct": {
+      "sigma": 0.0,
+      "dropout_prob": 0.05,
+      "mean_abs_error_m": 0.04093670845031738,
+      "max_abs_error_m": 2.0677216053009033,
+      "graceful_degradation": true
+    },
+    "combined_harsh": {
+      "sigma": 0.05,
+      "dropout_prob": 0.05,
+      "mean_abs_error_m": 0.16541771590709686,
+      "max_abs_error_m": 4.574050426483154,
+      "graceful_degradation": true
+    }
+  },
+  "all_tests_passed": true
+}

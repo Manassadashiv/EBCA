@@ -1,0 +1,2 @@
+Slide 7 cell (1,4): ['Stage 21A'] in "Supports CARL Stage 21A/21B ; HD/grid continuous attractors, spatial representation and path integration"
+Slide 9 cell (2,4): ['Stage 23'] in "Forms the algorithmic basis for the transition from Stage 23 discrete deliberation to Stage 3 continuous action synthesis"

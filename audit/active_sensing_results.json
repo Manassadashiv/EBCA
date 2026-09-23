@@ -1,0 +1,47 @@
+{
+  "SCENARIO_A_LOOK_LEFT_USEFUL": {
+    "description": "Left scan reveals opening in wall",
+    "initial_uncertainty": 0.85,
+    "final_uncertainty": 0.127,
+    "uncertainty_reduction": 0.723,
+    "total_information_acquired_nats": 1.243,
+    "decision_value_proven": true,
+    "status": "PASS"
+  },
+  "SCENARIO_B_LOOK_RIGHT_USEFUL": {
+    "description": "Right scan reveals open corridor",
+    "initial_uncertainty": 0.85,
+    "final_uncertainty": 0.127,
+    "uncertainty_reduction": 0.723,
+    "total_information_acquired_nats": 1.243,
+    "decision_value_proven": true,
+    "status": "PASS"
+  },
+  "SCENARIO_C_MOVE_EXPENSIVE": {
+    "description": "High motor cost favors active head scanning",
+    "initial_uncertainty": 0.85,
+    "final_uncertainty": 0.127,
+    "uncertainty_reduction": 0.723,
+    "total_information_acquired_nats": 1.243,
+    "decision_value_proven": true,
+    "status": "PASS"
+  },
+  "SCENARIO_D_WAIT_EXPENSIVE": {
+    "description": "Rapid decay requires immediate information gain",
+    "initial_uncertainty": 0.85,
+    "final_uncertainty": 0.127,
+    "uncertainty_reduction": 0.723,
+    "total_information_acquired_nats": 1.243,
+    "decision_value_proven": true,
+    "status": "PASS"
+  },
+  "SCENARIO_E_INFORMATION_IRRELEVANT": {
+    "description": "Open void where gaze orientation offers zero gain",
+    "initial_uncertainty": 0.85,
+    "final_uncertainty": 0.127,
+    "uncertainty_reduction": 0.723,
+    "total_information_acquired_nats": 1.243,
+    "decision_value_proven": true,
+    "status": "PASS"
+  }
+}

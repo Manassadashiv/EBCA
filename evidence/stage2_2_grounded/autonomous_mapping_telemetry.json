@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETED",
+  "total_ticks": 1899,
+  "grid_size": 128,
+  "resolution": 0.1,
+  "occupied_cells": 1013,
+  "visited_cells": 7568,
+  "final_pose_hat": [
+    -1.5059384432612624,
+    -1.918446005892195,
+    1.5229765851298904
+  ],
+  "qpos_teleportation_used": false,
+  "origin_reference": "CARL_NATURAL_SPAWN_ORIGIN"
+}

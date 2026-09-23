@@ -1,0 +1,21 @@
+{
+  "condition": "NO_MEMORY",
+  "seed": 101,
+  "episode": 5,
+  "acquired": true,
+  "acquisition_tick": 335,
+  "acquisition_time_s": 11.155500000000002,
+  "total_ticks": 336,
+  "total_collisions": 0,
+  "route_chosen": "NORTH_CORRIDOR_ROUTE1",
+  "switch_latency_ticks": null,
+  "switch_latency_s": null,
+  "memory_writes": 0,
+  "memory_retrievals": 0,
+  "episodes_in_memory": 0,
+  "final_dist_food": 0.2976,
+  "final_pos": [
+    1.641,
+    0.251
+  ]
+}

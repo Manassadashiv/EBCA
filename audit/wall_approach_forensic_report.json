@@ -1,0 +1,52 @@
+{
+  "audit_timestamp": "2026-08-17T00:05:00+05:30",
+  "audit_subject": "CARL-DX Wall & Obstacle Approach Forensic Reconstruction Report",
+  "run_evaluated": "FINAL_CLEAN_BLIND_ORGANISM_RUN_001 (complete_clean_blind_run.mp4)",
+  "verdict": "NAVIGATION_AND_AGENCY_REQUIRES_REPAIR",
+  "forensic_timeline": {
+    "t_0_to_1_37s_ticks_1_to_41": {
+      "behavior": "Autonomous open-space acceleration under GOAL_EXPLORE_UNKNOWN",
+      "position_start": [0.0, 0.0],
+      "position_end": [0.626, 0.092],
+      "heading_deg": 24.8,
+      "speed_mps": 0.319,
+      "safety_margin": 0.50,
+      "assessment": "Healthy nominal forward motion."
+    },
+    "t_1_37s_to_4_00s_ticks_42_to_120": {
+      "behavior": "Obstacle Proximity Hugging / Stall without Steering Evasion",
+      "position": [0.742, 0.170],
+      "obstacle_contact_zone": "Arena dynamic prop / hazard cube at (0.75, 0.18)",
+      "commanded_action": "STRAIGHT_FORWARD (cmd_L=6.0, cmd_R=6.0)",
+      "actual_speed_mps": 0.054,
+      "safety_margin": 0.453,
+      "affect_posture": "THREAT_AVERSION",
+      "veto_asserted": false,
+      "assessment": "FAILURE OF ANTICIPATORY AVOIDANCE. The agent pushed forward against the obstacle for ~78 ticks (2.6s) without executing a turn away."
+    },
+    "t_4_00s_to_5_00s_ticks_121_to_150": {
+      "behavior": "Passive Braking instead of Active Steering",
+      "selected_goal": "GOAL_INSPECT_SURROUNDINGS",
+      "commanded_action": "BRAKE_REST",
+      "speed_mps": 0.003,
+      "assessment": "Agent halted passively at the obstacle instead of generating an anticipatory steering maneuver to maintain clearance."
+    }
+  },
+  "root_cause_analysis": {
+    "dreamer_rollout_defect": {
+      "file": "brain/carl_generative_self_model.py",
+      "line": 153,
+      "issue": "Dreamer simulated candidate trajectory risk using hardcoded boundary check (abs(x) > 4.5) rather than integrating actual sensed rangefinder / sonar obstacle distance profiles."
+    },
+    "action_veto_disconnect": {
+      "file": "brain/carl_endogenous_agency.py",
+      "line": 115,
+      "issue": "Operational action veto checked only external command magnitude, but did not assert internal veto when self-generated STRAIGHT_FORWARD violated forward sonar clearance."
+    },
+    "safety_margin_decoupling": {
+      "file": "brain/carl_autonomous_agent.py",
+      "line": 95,
+      "issue": "Collapsed safety margin (0.45) modified only affect posture (THREAT_AVERSION) but exerted zero direct penalty on straight forward motor selection in Dreamer."
+    }
+  }
+}

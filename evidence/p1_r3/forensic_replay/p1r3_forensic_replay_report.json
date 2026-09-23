@@ -1,0 +1,29 @@
+{
+  "validation_timestamp": "2026-08-23T22:25:00Z",
+  "seed": 42,
+  "total_evaluated_ticks": 700,
+  "overall_min_clearance_m": 2e-05,
+  "overall_max_clearance_m": 0.48492,
+  "overall_mean_clearance_m": 0.15011344285714284,
+  "overall_max_penetration_m": 0.0,
+  "wall_penetration_events": 0,
+  "physical_intersection_detected": false,
+  "representative_ticks": {
+    "ep1_tick_90": 0.04888,
+    "ep1_tick_120": 0.02544,
+    "ep1_tick_180": 0.06877,
+    "ep1_tick_210": 0.06211,
+    "ep2_tick_90": 0.09677,
+    "ep2_tick_120": 0.09617,
+    "ep2_tick_180": 0.08732,
+    "ep2_tick_210": 0.11681
+  },
+  "conclusions": {
+    "1_physically_intersects_wall": false,
+    "2_follows_valid_route": true,
+    "3_video_agrees_with_telemetry": true,
+    "4_min_clearance_positive_and_credible": true,
+    "5_clipping_trajectory_eliminated": true
+  },
+  "status": "P1-R3 PHYSICAL GEOMETRY STATUS: VALIDATED"
+}

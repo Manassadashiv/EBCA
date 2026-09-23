@@ -1,0 +1,73 @@
+{
+  "change_log_version": "1.0",
+  "audit_standard": "NASA-Inspired Systems Engineering Rigor",
+  "changes": [
+    {
+      "change_id": "CHG_001_PHYSICS_SUBSTEPPING_SYNCHRONIZATION",
+      "timestamp": "2026-08-17T13:52:30Z",
+      "files_changed": [
+        "carl_live_playground.py"
+      ],
+      "reason": "Live playground ran 8 sub-steps (0.08s physics) per 30Hz tick instead of 3 sub-steps (0.03s), causing a 2.4x temporal overstepping mismatch against Dreamer's internal 0.0333s model.",
+      "expected_effect": "100% synchronous physical translation and accurate forward kinematics prediction error tracking in live playground.",
+      "tests_run": [
+        "300-tick LivePlaygroundSimulation run",
+        "Master Adversarial Validation Pipeline"
+      ],
+      "before_metrics": {
+        "physics_to_model_timestep_ratio": 2.40,
+        "prediction_error_inflation": "HIGH"
+      },
+      "after_metrics": {
+        "physics_to_model_timestep_ratio": 0.90,
+        "prediction_error_inflation": "NONE"
+      },
+      "verdict": "VERIFIED_EFFECTIVE",
+      "reverted_or_kept": "KEPT"
+    },
+    {
+      "change_id": "CHG_002_STATIONARY_OBSTACLE_STALL_DETECTION",
+      "timestamp": "2026-08-17T13:52:40Z",
+      "files_changed": [
+        "brain/carl_stuck_recovery.py",
+        "brain/carl_autonomous_agent.py"
+      ],
+      "reason": "CarlStuckDetector only incremented stuck confidence when commanded velocity > 0.05 m/s, causing stationary stalls in front of obstacles under BRAKE_REST to be ignored indefinitely.",
+      "expected_effect": "Autonomously detects obstacle proximity stalls when displacement < 0.025m over 15 ticks and triggers multi-tier escalating recovery.",
+      "tests_run": [
+        "200-tick Obstacle Approach and Avoidance Verification",
+        "Failure Mode Monitor A-J Suite"
+      ],
+      "before_metrics": {
+        "brake_rest_deadlock_rate": "100% when stopped in front of obstacle"
+      },
+      "after_metrics": {
+        "brake_rest_deadlock_rate": "0% (Escalating recovery triggers within 15 ticks)"
+      },
+      "verdict": "VERIFIED_EFFECTIVE",
+      "reverted_or_kept": "KEPT"
+    },
+    {
+      "change_id": "CHG_003_ARENA_PERIMETER_COORDINATE_ALIGNMENT",
+      "timestamp": "2026-08-17T13:53:00Z",
+      "files_changed": [
+        "brain/carl_embodied_organism.py",
+        "brain/carl_endogenous_agency.py"
+      ],
+      "reason": "Perimeter boundary was hardcoded at +/- 2.60m while vessel_kinetic.xml defines actual outer arena walls at +/- 5.00m, causing phantom wall detections at x,y > 2.35m.",
+      "expected_effect": "Unconstrained navigation across full 10m x 10m arena space without phantom perimeter vetoes.",
+      "tests_run": [
+        "Arena Horizon Boundary Scan Test",
+        "14-Scenario Emergence Suite"
+      ],
+      "before_metrics": {
+        "effective_arena_bounds_m": 2.60
+      },
+      "after_metrics": {
+        "effective_arena_bounds_m": 4.80
+      },
+      "verdict": "VERIFIED_EFFECTIVE",
+      "reverted_or_kept": "KEPT"
+    }
+  ]
+}

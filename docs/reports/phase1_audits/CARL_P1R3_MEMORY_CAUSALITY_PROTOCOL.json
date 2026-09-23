@@ -1,0 +1,34 @@
+{
+  "protocol_id": "CARL-P1R3-MEMORY-CAUSALITY-PROTOCOL-V1",
+  "title": "P1-R3 Memory-Causal Behavioural Validation Protocol",
+  "timestamp": "2026-08-23T23:10:00Z",
+  "hypotheses": {
+    "H0": "Episodic memory does not materially change route selection at matched sensory bifurcation.",
+    "H1": "Stored autobiographical experience causally changes route preference before the downstream hazard becomes observable."
+  },
+  "conditions": ["FULL_P1_R3", "NO_MEMORY"],
+  "seeds": [42, 101, 2024],
+  "episodes": [1, 2, 3],
+  "total_physical_episodes": 18,
+  "matching_tolerances": {
+    "max_abs_sonar_diff_m": 0.02,
+    "mean_abs_sonar_diff_m": 0.005,
+    "pos_diff_m": 0.001,
+    "yaw_diff_deg": 0.1
+  },
+  "route_measurement": {
+    "commitment_line_x_m": 0.35,
+    "hazard_line_of_sight_x_m": 0.45,
+    "route_A_north_y_threshold": 0.0,
+    "route_B_south_y_threshold": 0.0
+  },
+  "deliverables": [
+    "CARL_P1R3_MEMORY_CAUSALITY_PROTOCOL.md",
+    "CARL_P1R3_MEMORY_CAUSALITY_PROTOCOL.json",
+    "P1R3_MEMORY_CAUSALITY_RAW_RUN_LEDGER.csv",
+    "P1R3_MEMORY_CAUSALITY_DECISION_TRACE.json",
+    "P1R3_MEMORY_CAUSALITY_AUDIT.json",
+    "CARL_P1R3_MEMORY_CAUSALITY_REPORT.md",
+    "CARL_P1R3_MEMORY_CAUSALITY_REPORT.json"
+  ]
+}

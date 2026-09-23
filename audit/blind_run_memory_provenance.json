@@ -1,0 +1,32 @@
+{
+  "audit_timestamp": "2026-08-16T23:30:00+05:30",
+  "audit_subject": "CARL-DX Final Blind Run Memory Provenance Forensic Audit",
+  "provenance_reconciliation": {
+    "question_1_source_of_120_memories": "Created at runtime in memory during the 120 simulation ticks due to a false-positive collision flag condition (sensory.ncon > 4).",
+    "question_2_loaded_before_blind_run": false,
+    "question_3_created_during_blind_run": true,
+    "question_4_relevant_to_test_environment": false,
+    "question_5_was_blind_run_memory_clean_at_start": true,
+    "question_6_zero_memory_emergence_verdict": "VERIFIED_WITH_LIMITATIONS (Agent began with 0 pre-seeded memories, but accumulated 120 false-positive negative collision episodes during runtime due to floor contact counting)."
+  },
+  "technical_root_cause": {
+    "file": "brain/carl_autonomous_agent.py",
+    "line": 83,
+    "buggy_code": "collision_occurred = (sensory.ncon > 4 or sensory.min_obstacle_dist < 0.15)",
+    "physics_reality": "In MuJoCo, data.ncon counts ALL contacts in the entire world (including floor contact of all cubes, spheres, and hazards in the arena, totaling 19 contacts). Thus sensory.ncon > 4 was True on every tick.",
+    "serialization_artifact": "In scratch/run_final_integrated_blind_test.py, len(agent.memory.episodes) was evaluated post-simulation when serializing decision_trace.jsonl, stamping 120 on every row instead of recording the cumulative runtime count at each tick."
+  },
+  "initial_memory_state_at_tick_0": {
+    "pre_seeded_episodes": 0,
+    "pre_loaded_files": "None",
+    "hdc_matrix_initialized_to": "zeros(2048)"
+  },
+  "runtime_accumulation": {
+    "tick_1_episodes": 1,
+    "tick_2_episodes": 2,
+    "tick_48_episodes": 48,
+    "tick_120_episodes": 120,
+    "false_negative_hazard_episodes": 118,
+    "food_reward_episodes": 2
+  }
+}

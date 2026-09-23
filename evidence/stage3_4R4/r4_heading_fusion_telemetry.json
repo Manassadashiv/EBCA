@@ -1,0 +1,1451 @@
+[
+  {
+    "tick": 0,
+    "evaluator_true_yaw": 0.0056036842179841145,
+    "gyro_only_heading": 0.0056036842179841145,
+    "fused_heading": 0.0026877351123334677,
+    "heading_error_gyro": 0.0,
+    "heading_error_fused": -0.002915949105650647,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 1,
+    "evaluator_true_yaw": -0.44313230272041404,
+    "gyro_only_heading": -0.44299000995678534,
+    "fused_heading": -0.445905959062436,
+    "heading_error_gyro": 0.00014229276362870413,
+    "heading_error_fused": -0.0027736563420219795,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 2,
+    "evaluator_true_yaw": -0.8917169622917026,
+    "gyro_only_heading": -0.8915737735341798,
+    "fused_heading": -0.8944897226398305,
+    "heading_error_gyro": 0.00014318875752283855,
+    "heading_error_fused": -0.0027727603481279006,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 3,
+    "evaluator_true_yaw": -1.3403021348596154,
+    "gyro_only_heading": -1.3401579282560012,
+    "fused_heading": -1.3425526198250821,
+    "heading_error_gyro": 0.0001442066036141387,
+    "heading_error_fused": -0.002250484965466759,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 4,
+    "evaluator_true_yaw": -1.7888878408507405,
+    "gyro_only_heading": -1.7887422636667052,
+    "fused_heading": -1.7323024940615719,
+    "heading_error_gyro": 0.00014557718403529485,
+    "heading_error_fused": 0.05658534678916861,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 5,
+    "evaluator_true_yaw": -2.2375379134507836,
+    "gyro_only_heading": -2.2373202929256935,
+    "fused_heading": -2.1808805233205604,
+    "heading_error_gyro": 0.00021762052509011198,
+    "heading_error_fused": 0.056657390130223195,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 6,
+    "evaluator_true_yaw": -2.5904727072844973,
+    "gyro_only_heading": -2.3985749642592724,
+    "fused_heading": -2.3421351946541393,
+    "heading_error_gyro": 0.1918977430252249,
+    "heading_error_fused": 0.24833751263035794,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 7,
+    "evaluator_true_yaw": -2.6803446414658376,
+    "gyro_only_heading": -2.4871530212234645,
+    "fused_heading": -2.4307132516183314,
+    "heading_error_gyro": 0.19319162024237313,
+    "heading_error_fused": 0.2496313898475062,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 8,
+    "evaluator_true_yaw": -2.7691252686067362,
+    "gyro_only_heading": -2.574062798825733,
+    "fused_heading": -2.5176230292206,
+    "heading_error_gyro": 0.19506246978100308,
+    "heading_error_fused": 0.25150223938613614,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 9,
+    "evaluator_true_yaw": -2.8570416500216176,
+    "gyro_only_heading": -2.659170815875474,
+    "fused_heading": -2.602731046270341,
+    "heading_error_gyro": 0.1978708341461437,
+    "heading_error_fused": 0.2543106037512768,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 10,
+    "evaluator_true_yaw": -2.9352355135727053,
+    "gyro_only_heading": -2.709899522397287,
+    "fused_heading": -2.6534597527921537,
+    "heading_error_gyro": 0.22533599117541847,
+    "heading_error_fused": 0.28177576078055155,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 11,
+    "evaluator_true_yaw": -2.989055934026797,
+    "gyro_only_heading": -2.7512890234461813,
+    "fused_heading": -2.6948492538410482,
+    "heading_error_gyro": 0.2377669105806155,
+    "heading_error_fused": 0.2942066801857485,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 12,
+    "evaluator_true_yaw": -3.0384304838477636,
+    "gyro_only_heading": -2.785557327427324,
+    "fused_heading": -2.729117557822191,
+    "heading_error_gyro": 0.2528731564204394,
+    "heading_error_fused": 0.3093129260255725,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 13,
+    "evaluator_true_yaw": -3.1163687413003074,
+    "gyro_only_heading": -2.8599214923662375,
+    "fused_heading": -2.8526069382351174,
+    "heading_error_gyro": 0.2564472489340699,
+    "heading_error_fused": 0.26376180306519004,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 14,
+    "evaluator_true_yaw": -3.192584367166763,
+    "gyro_only_heading": -2.937595713565434,
+    "fused_heading": -2.927804532353456,
+    "heading_error_gyro": 0.25498865360132905,
+    "heading_error_fused": 0.2647798348133068,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 15,
+    "evaluator_true_yaw": -3.2477646335301893,
+    "gyro_only_heading": -2.9767331467399876,
+    "fused_heading": -2.9486299976224952,
+    "heading_error_gyro": 0.2710314867902017,
+    "heading_error_fused": 0.29913463590769407,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 16,
+    "evaluator_true_yaw": -3.2886150323196754,
+    "gyro_only_heading": -2.94889595012767,
+    "fused_heading": -2.912229474693767,
+    "heading_error_gyro": 0.3397190821920053,
+    "heading_error_fused": 0.37638555762590853,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 17,
+    "evaluator_true_yaw": -3.2525190220333444,
+    "gyro_only_heading": -2.9279529943902163,
+    "fused_heading": -2.897274888979649,
+    "heading_error_gyro": 0.32456602764312814,
+    "heading_error_fused": 0.35524413305369557,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 18,
+    "evaluator_true_yaw": -3.228459320656463,
+    "gyro_only_heading": -2.899638776726611,
+    "fused_heading": -2.88414486221077,
+    "heading_error_gyro": 0.32882054392985216,
+    "heading_error_fused": 0.34431445844569314,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 19,
+    "evaluator_true_yaw": -3.199810490458527,
+    "gyro_only_heading": -2.872265401956248,
+    "fused_heading": -2.880124850261469,
+    "heading_error_gyro": 0.32754508850227904,
+    "heading_error_fused": 0.31968564019705786,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 20,
+    "evaluator_true_yaw": -3.171970896250659,
+    "gyro_only_heading": -2.8460671757749125,
+    "fused_heading": -2.8839644332387047,
+    "heading_error_gyro": 0.32590372047574645,
+    "heading_error_fused": 0.2880064630119543,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 21,
+    "evaluator_true_yaw": -3.1454368836545603,
+    "gyro_only_heading": -2.821773337854704,
+    "fused_heading": -2.8973296513468036,
+    "heading_error_gyro": 0.32366354579985623,
+    "heading_error_fused": 0.24810723230775666,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 22,
+    "evaluator_true_yaw": -3.1212010994850354,
+    "gyro_only_heading": -2.800022952838028,
+    "fused_heading": -2.9179475827038766,
+    "heading_error_gyro": 0.3211781466470076,
+    "heading_error_fused": 0.20325351678115888,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 23,
+    "evaluator_true_yaw": -3.0990358189060108,
+    "gyro_only_heading": -2.780784602656189,
+    "fused_heading": -2.9450209164688017,
+    "heading_error_gyro": 0.31825121624982167,
+    "heading_error_fused": 0.15401490243720906,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 24,
+    "evaluator_true_yaw": -3.053455470994763,
+    "gyro_only_heading": -2.686359888209712,
+    "fused_heading": -2.8505962020223246,
+    "heading_error_gyro": 0.3670955827850513,
+    "heading_error_fused": 0.20285926897243867,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 25,
+    "evaluator_true_yaw": -2.968450087003668,
+    "gyro_only_heading": -2.6220227725638887,
+    "fused_heading": -2.7862590863765013,
+    "heading_error_gyro": 0.34642731443977937,
+    "heading_error_fused": 0.18219100062716675,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 26,
+    "evaluator_true_yaw": -3.002748073929294,
+    "gyro_only_heading": -2.701382435040686,
+    "fused_heading": -2.8656187488532985,
+    "heading_error_gyro": 0.30136563888860834,
+    "heading_error_fused": 0.13712932507599573,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 27,
+    "evaluator_true_yaw": -3.080203147130404,
+    "gyro_only_heading": -2.7796446340354874,
+    "fused_heading": -2.9438809478481,
+    "heading_error_gyro": 0.30055851309491644,
+    "heading_error_fused": 0.13632219928230385,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 28,
+    "evaluator_true_yaw": -3.1776326813736904,
+    "gyro_only_heading": -2.89762616639925,
+    "fused_heading": -3.059998094766625,
+    "heading_error_gyro": 0.2800065149744402,
+    "heading_error_fused": 0.11763458660706538,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 29,
+    "evaluator_true_yaw": -3.2961444973575773,
+    "gyro_only_heading": -3.015546348795738,
+    "fused_heading": -3.1296477535065805,
+    "heading_error_gyro": 0.2805981485618392,
+    "heading_error_fused": 0.16649674385099678,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 30,
+    "evaluator_true_yaw": -3.4238843596306494,
+    "gyro_only_heading": 3.121834062905105,
+    "fused_heading": 3.0676230492909604,
+    "heading_error_gyro": 0.2625331153561683,
+    "heading_error_fused": 0.20832210174202334,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 31,
+    "evaluator_true_yaw": -3.569855256160292,
+    "gyro_only_heading": 2.9762752853170555,
+    "fused_heading": 2.9220642717029115,
+    "heading_error_gyro": 0.26294523429776157,
+    "heading_error_fused": 0.20873422068361666,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 32,
+    "evaluator_true_yaw": -3.602272363908983,
+    "gyro_only_heading": 2.978714050515632,
+    "fused_heading": 2.924503036901488,
+    "heading_error_gyro": 0.2978011072450284,
+    "heading_error_fused": 0.2435900936308852,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 33,
+    "evaluator_true_yaw": -3.5897417644368788,
+    "gyro_only_heading": 2.9974533814949273,
+    "fused_heading": 2.9432423678807833,
+    "heading_error_gyro": 0.3040098387522201,
+    "heading_error_fused": 0.24979882513807514,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 34,
+    "evaluator_true_yaw": -3.5771793795509668,
+    "gyro_only_heading": 3.005449371337386,
+    "fused_heading": 2.951238357723242,
+    "heading_error_gyro": 0.2994434437087665,
+    "heading_error_fused": 0.24523243009462245,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 35,
+    "evaluator_true_yaw": -3.569826248729127,
+    "gyro_only_heading": 3.011510053822073,
+    "fused_heading": 2.957299040207929,
+    "heading_error_gyro": 0.29815099537161394,
+    "heading_error_fused": 0.24393998175746898,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 36,
+    "evaluator_true_yaw": -3.4919730710819135,
+    "gyro_only_heading": 3.089162392611338,
+    "fused_heading": 3.0727125324155007,
+    "heading_error_gyro": 0.2979501565136651,
+    "heading_error_fused": 0.28150029631782814,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 37,
+    "evaluator_true_yaw": -3.5622198742819835,
+    "gyro_only_heading": 3.018322875204407,
+    "fused_heading": 3.016646773693232,
+    "heading_error_gyro": 0.29735744230680416,
+    "heading_error_fused": 0.2956813407956289,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 38,
+    "evaluator_true_yaw": -3.6318797815960404,
+    "gyro_only_heading": 2.948228523380127,
+    "fused_heading": 2.9278290838386014,
+    "heading_error_gyro": 0.29692299779658143,
+    "heading_error_fused": 0.27652355825505537,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 39,
+    "evaluator_true_yaw": -3.7070747066024943,
+    "gyro_only_heading": 2.8704900069961408,
+    "fused_heading": 2.844359195750174,
+    "heading_error_gyro": 0.29437940641904853,
+    "heading_error_fused": 0.26824859517308197,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 40,
+    "evaluator_true_yaw": -3.754326534733959,
+    "gyro_only_heading": 2.8279673188092938,
+    "fused_heading": 2.8032908025312637,
+    "heading_error_gyro": 0.2991085463636664,
+    "heading_error_fused": 0.27443203008563594,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 41,
+    "evaluator_true_yaw": -3.77992318083325,
+    "gyro_only_heading": 2.8234269234563647,
+    "fused_heading": 2.7973690356693366,
+    "heading_error_gyro": 0.3201647971100276,
+    "heading_error_fused": 0.29410690932299993,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 42,
+    "evaluator_true_yaw": -3.7897236259251255,
+    "gyro_only_heading": 2.8125528091828698,
+    "fused_heading": 2.7837339935456282,
+    "heading_error_gyro": 0.31909112792840916,
+    "heading_error_fused": 0.29027231229116673,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 43,
+    "evaluator_true_yaw": -3.7820843858117503,
+    "gyro_only_heading": 2.8571542588841767,
+    "fused_heading": 2.8152604573803557,
+    "heading_error_gyro": 0.35605333751634105,
+    "heading_error_fused": 0.3141595360125195,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 44,
+    "evaluator_true_yaw": -3.739190793993076,
+    "gyro_only_heading": 2.8921674125910144,
+    "fused_heading": 2.825250338096828,
+    "heading_error_gyro": 0.3481728994045043,
+    "heading_error_fused": 0.2812558249103174,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 45,
+    "evaluator_true_yaw": -3.7586248260951796,
+    "gyro_only_heading": 2.8454347412076273,
+    "fused_heading": 2.7594928073022613,
+    "heading_error_gyro": 0.3208742601232204,
+    "heading_error_fused": 0.23493232621785484,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 46,
+    "evaluator_true_yaw": -3.8109352909342338,
+    "gyro_only_heading": 2.7817036308916667,
+    "fused_heading": 2.6867134853466244,
+    "heading_error_gyro": 0.3094536146463136,
+    "heading_error_fused": 0.21446346910127165,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 47,
+    "evaluator_true_yaw": -3.8682677528093565,
+    "gyro_only_heading": 2.7394467280970076,
+    "fused_heading": 2.642430783514846,
+    "heading_error_gyro": 0.3245291737267777,
+    "heading_error_fused": 0.22751322914461602,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 48,
+    "evaluator_true_yaw": -3.906286640008322,
+    "gyro_only_heading": 2.7072671737491674,
+    "fused_heading": 2.654822694052961,
+    "heading_error_gyro": 0.33036850657790295,
+    "heading_error_fused": 0.2779240268816971,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 49,
+    "evaluator_true_yaw": -3.9401419164313207,
+    "gyro_only_heading": 2.674771286206879,
+    "fused_heading": 2.6707319085304295,
+    "heading_error_gyro": 0.3317278954586127,
+    "heading_error_fused": 0.3276885177821638,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 50,
+    "evaluator_true_yaw": -4.04472185619468,
+    "gyro_only_heading": 2.5674945648718346,
+    "fused_heading": 2.5634551871953852,
+    "heading_error_gyro": 0.32903111388692774,
+    "heading_error_fused": 0.3249917362104779,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 51,
+    "evaluator_true_yaw": -4.1064485075106125,
+    "gyro_only_heading": 2.510435948337216,
+    "fused_heading": 2.5063965706607667,
+    "heading_error_gyro": 0.3336991486682421,
+    "heading_error_fused": 0.32965977099179233,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 52,
+    "evaluator_true_yaw": -4.166564398849952,
+    "gyro_only_heading": 2.4180820114655863,
+    "fused_heading": 2.4558392988919127,
+    "heading_error_gyro": 0.3014611031359526,
+    "heading_error_fused": 0.3392183905622781,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 53,
+    "evaluator_true_yaw": -4.159285101746024,
+    "gyro_only_heading": 2.474593237723579,
+    "fused_heading": 2.5408871053422746,
+    "heading_error_gyro": 0.35069303229001636,
+    "heading_error_fused": 0.41698689990871224,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 54,
+    "evaluator_true_yaw": -4.102539935827935,
+    "gyro_only_heading": 2.5311864361803162,
+    "fused_heading": 2.6348352873075958,
+    "heading_error_gyro": 0.3505410648286646,
+    "heading_error_fused": 0.454189915955945,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 55,
+    "evaluator_true_yaw": -4.045745238107356,
+    "gyro_only_heading": 2.58779441411157,
+    "fused_heading": 2.734222830887861,
+    "heading_error_gyro": 0.3503543450393402,
+    "heading_error_fused": 0.49678276181563036,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 56,
+    "evaluator_true_yaw": -3.989558580832948,
+    "gyro_only_heading": 2.6423815710389427,
+    "fused_heading": 2.834986795125728,
+    "heading_error_gyro": 0.3487548446923047,
+    "heading_error_fused": 0.5413600687790898,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 57,
+    "evaluator_true_yaw": -3.936271436036822,
+    "gyro_only_heading": 2.6935020612598732,
+    "fused_heading": 2.8722004833193786,
+    "heading_error_gyro": 0.3465881901171082,
+    "heading_error_fused": 0.5252866121766144,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 58,
+    "evaluator_true_yaw": -3.8852557868221744,
+    "gyro_only_heading": 2.743769360155255,
+    "fused_heading": 2.9005405232154904,
+    "heading_error_gyro": 0.3458398397978432,
+    "heading_error_fused": 0.5026110028580779,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 59,
+    "evaluator_true_yaw": -3.7300813846654717,
+    "gyro_only_heading": 2.917865737044264,
+    "fused_heading": 3.019353530233008,
+    "heading_error_gyro": 0.3647618145301494,
+    "heading_error_fused": 0.4662496077188931,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 60,
+    "evaluator_true_yaw": -3.5823958086462344,
+    "gyro_only_heading": 3.051864794142908,
+    "fused_heading": -3.129832719847935,
+    "heading_error_gyro": 0.35107529560955597,
+    "heading_error_fused": 0.45256308879829943,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 61,
+    "evaluator_true_yaw": -3.529601309451548,
+    "gyro_only_heading": 2.9909445091002165,
+    "fused_heading": 3.09243230228896,
+    "heading_error_gyro": 0.2373605113721779,
+    "heading_error_fused": 0.3388483045609216,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 62,
+    "evaluator_true_yaw": -3.582605298875696,
+    "gyro_only_heading": 2.951812307394275,
+    "fused_heading": 2.9968203924447128,
+    "heading_error_gyro": 0.25123229909038414,
+    "heading_error_fused": 0.29624038414082204,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 63,
+    "evaluator_true_yaw": -3.577804571424052,
+    "gyro_only_heading": 3.0371553627960037,
+    "fused_heading": 3.0821634478464417,
+    "heading_error_gyro": 0.3317746270404693,
+    "heading_error_fused": 0.37678271209090725,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 64,
+    "evaluator_true_yaw": -3.4922671954398146,
+    "gyro_only_heading": 3.122414734130524,
+    "fused_heading": -3.1157624879986248,
+    "heading_error_gyro": 0.33149662239075156,
+    "heading_error_fused": 0.37650470744118986,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 65,
+    "evaluator_true_yaw": -3.4067670492757327,
+    "gyro_only_heading": -3.07554079592825,
+    "fused_heading": -3.030532710877812,
+    "heading_error_gyro": 0.33122625334748257,
+    "heading_error_fused": 0.37623433839792053,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 66,
+    "evaluator_true_yaw": -3.2801406316774004,
+    "gyro_only_heading": -2.9480712880976876,
+    "fused_heading": -2.9030632030472496,
+    "heading_error_gyro": 0.33206934357971285,
+    "heading_error_fused": 0.3770774286301508,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 67,
+    "evaluator_true_yaw": -3.1947995336327852,
+    "gyro_only_heading": -2.8879678990312776,
+    "fused_heading": -2.892959585702402,
+    "heading_error_gyro": 0.30683163460150764,
+    "heading_error_fused": 0.30183994793038327,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 68,
+    "evaluator_true_yaw": -3.0900408524605467,
+    "gyro_only_heading": -2.760595690897813,
+    "fused_heading": -2.7465793543268955,
+    "heading_error_gyro": 0.3294451615627336,
+    "heading_error_fused": 0.34346149813365123,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 69,
+    "evaluator_true_yaw": -3.0030836378861365,
+    "gyro_only_heading": -2.754920940470663,
+    "fused_heading": -2.7135339060412713,
+    "heading_error_gyro": 0.2481626974154736,
+    "heading_error_fused": 0.2895497318448652,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 70,
+    "evaluator_true_yaw": -2.998124635586906,
+    "gyro_only_heading": -2.750936437185958,
+    "fused_heading": -2.6852711957605733,
+    "heading_error_gyro": 0.24718819840094808,
+    "heading_error_fused": 0.31285343982633274,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 71,
+    "evaluator_true_yaw": -2.989910907361848,
+    "gyro_only_heading": -2.7354418183052394,
+    "fused_heading": -2.649227648196677,
+    "heading_error_gyro": 0.2544690890566086,
+    "heading_error_fused": 0.34068325916517095,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 72,
+    "evaluator_true_yaw": -2.9263819902902948,
+    "gyro_only_heading": -2.6529359153605565,
+    "fused_heading": -2.551450440864182,
+    "heading_error_gyro": 0.27344607492973827,
+    "heading_error_fused": 0.37493154942611273,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 73,
+    "evaluator_true_yaw": -2.8392495381918854,
+    "gyro_only_heading": -2.558300280240466,
+    "fused_heading": -2.4461391619466446,
+    "heading_error_gyro": 0.28094925795141945,
+    "heading_error_fused": 0.3931103762452408,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 74,
+    "evaluator_true_yaw": -2.839516348304838,
+    "gyro_only_heading": -2.656971491142079,
+    "fused_heading": -2.523578845363234,
+    "heading_error_gyro": 0.18254485716275903,
+    "heading_error_fused": 0.31593750294160383,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 75,
+    "evaluator_true_yaw": -2.937520506253703,
+    "gyro_only_heading": -2.7544878291981494,
+    "fused_heading": -2.600236804148429,
+    "heading_error_gyro": 0.18303267705555368,
+    "heading_error_fused": 0.33728370210527414,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 76,
+    "evaluator_true_yaw": -3.0348306102373863,
+    "gyro_only_heading": -2.8507280846226957,
+    "fused_heading": -2.729184753774504,
+    "heading_error_gyro": 0.18410252561469065,
+    "heading_error_fused": 0.3056458564628821,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 77,
+    "evaluator_true_yaw": -3.106510434560888,
+    "gyro_only_heading": -2.897365478715149,
+    "fused_heading": -2.812569176630866,
+    "heading_error_gyro": 0.20914495584573878,
+    "heading_error_fused": 0.293941257930022,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 78,
+    "evaluator_true_yaw": -3.1907884564642948,
+    "gyro_only_heading": -2.999247733626936,
+    "fused_heading": -2.950684280764848,
+    "heading_error_gyro": 0.1915407228373587,
+    "heading_error_fused": 0.24010417569944664,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 79,
+    "evaluator_true_yaw": -3.279898856885183,
+    "gyro_only_heading": -3.115520670266472,
+    "fused_heading": -3.1016138178186323,
+    "heading_error_gyro": 0.16437818661871087,
+    "heading_error_fused": 0.1782850390665507,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 80,
+    "evaluator_true_yaw": -3.358933584859458,
+    "gyro_only_heading": -3.120145571471928,
+    "fused_heading": 3.132856169046657,
+    "heading_error_gyro": 0.23878801338753022,
+    "heading_error_fused": 0.20860444672652864,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 81,
+    "evaluator_true_yaw": -3.3458388903734524,
+    "gyro_only_heading": -3.107000195046337,
+    "fused_heading": 3.1079229276606344,
+    "heading_error_gyro": 0.23883869532711532,
+    "heading_error_fused": 0.1705765108545003,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 82,
+    "evaluator_true_yaw": -3.332702347942196,
+    "gyro_only_heading": -3.0938284307731254,
+    "fused_heading": 3.088343502655221,
+    "heading_error_gyro": 0.2388739171690708,
+    "heading_error_fused": 0.13786054341783124,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 83,
+    "evaluator_true_yaw": -3.351106186597639,
+    "gyro_only_heading": -3.1135528509599886,
+    "fused_heading": 3.0388883652863763,
+    "heading_error_gyro": 0.23755333563765021,
+    "heading_error_fused": 0.10680924470442907,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 84,
+    "evaluator_true_yaw": -3.3582639860784713,
+    "gyro_only_heading": -3.1143974426837993,
+    "fused_heading": 3.0107141019794947,
+    "heading_error_gyro": 0.24386654339467204,
+    "heading_error_fused": 0.08579278087838002,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 85,
+    "evaluator_true_yaw": -3.3588711700102545,
+    "gyro_only_heading": -3.1155573375989714,
+    "fused_heading": 2.9855347747075376,
+    "heading_error_gyro": 0.24331383241128315,
+    "heading_error_fused": 0.061220637538205586,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 86,
+    "evaluator_true_yaw": -3.359640045883808,
+    "gyro_only_heading": -3.11742709410761,
+    "fused_heading": 2.962617402724826,
+    "heading_error_gyro": 0.24221295177619817,
+    "heading_error_fused": 0.039072141429047774,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 87,
+    "evaluator_true_yaw": -3.3613680998952042,
+    "gyro_only_heading": -3.1215231649438038,
+    "fused_heading": 2.9401919446784133,
+    "heading_error_gyro": 0.23984493495140047,
+    "heading_error_fused": 0.018374737394031483,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 88,
+    "evaluator_true_yaw": -3.3645381564436714,
+    "gyro_only_heading": -3.127993586257108,
+    "fused_heading": 2.9178220610470404,
+    "heading_error_gyro": 0.23654457018656316,
+    "heading_error_fused": -0.0008250896888742039,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 89,
+    "evaluator_true_yaw": -3.367898611122148,
+    "gyro_only_heading": -3.136757421893025,
+    "fused_heading": 2.8955426910705238,
+    "heading_error_gyro": 0.23114118922912263,
+    "heading_error_fused": -0.019744004986915333,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 90,
+    "evaluator_true_yaw": -3.3739960578786934,
+    "gyro_only_heading": 3.1338823807375222,
+    "fused_heading": 2.871567439436782,
+    "heading_error_gyro": 0.2246931314366287,
+    "heading_error_fused": -0.0376218098641117,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 91,
+    "evaluator_true_yaw": -3.3804372698858836,
+    "gyro_only_heading": 3.119969259760602,
+    "fused_heading": 2.8481732579823897,
+    "heading_error_gyro": 0.21722122246689923,
+    "heading_error_fused": -0.05457477931131318,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 92,
+    "evaluator_true_yaw": -3.430205706975021,
+    "gyro_only_heading": 3.0425143883684362,
+    "fused_heading": 2.763394781527358,
+    "heading_error_gyro": 0.18953478816387093,
+    "heading_error_fused": -0.0895848186772075,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 93,
+    "evaluator_true_yaw": -3.508977554871342,
+    "gyro_only_heading": 2.9454818083464516,
+    "fused_heading": 2.6593650592209506,
+    "heading_error_gyro": 0.17127405603820708,
+    "heading_error_fused": -0.1148426930872939,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 94,
+    "evaluator_true_yaw": -3.5546754982530078,
+    "gyro_only_heading": 2.8964311759841066,
+    "fused_heading": 2.6033471451232577,
+    "heading_error_gyro": 0.1679213670575279,
+    "heading_error_fused": -0.12516266380332144,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 95,
+    "evaluator_true_yaw": -3.5168269596831507,
+    "gyro_only_heading": 2.972726841289482,
+    "fused_heading": 2.6695183795427804,
+    "heading_error_gyro": 0.20636849379304653,
+    "heading_error_fused": -0.09683996795365538,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 96,
+    "evaluator_true_yaw": -3.431938801251082,
+    "gyro_only_heading": 3.0709868757829684,
+    "fused_heading": 2.76003119512987,
+    "heading_error_gyro": 0.21974036985446396,
+    "heading_error_fused": -0.09121531079863424,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 97,
+    "evaluator_true_yaw": -3.3352256429362495,
+    "gyro_only_heading": -3.114340473834649,
+    "fused_heading": 2.856035571123098,
+    "heading_error_gyro": 0.22088516910160028,
+    "heading_error_fused": -0.09192409312023944,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 98,
+    "evaluator_true_yaw": -3.2522232393757484,
+    "gyro_only_heading": -3.0521824542484426,
+    "fused_heading": 2.9249113744077984,
+    "heading_error_gyro": 0.20004078512730583,
+    "heading_error_fused": -0.10605069339603926,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 99,
+    "evaluator_true_yaw": -3.1931288656578225,
+    "gyro_only_heading": -2.9971124997668337,
+    "fused_heading": 2.990942117548546,
+    "heading_error_gyro": 0.1960163658909888,
+    "heading_error_fused": -0.09911432397321841,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 100,
+    "evaluator_true_yaw": -3.098022018450407,
+    "gyro_only_heading": -2.9235397155716587,
+    "fused_heading": 3.0840325636088384,
+    "heading_error_gyro": 0.1744823028787481,
+    "heading_error_fused": -0.10113072512034128,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 101,
+    "evaluator_true_yaw": -3.0388964463812846,
+    "gyro_only_heading": -2.8926384862495045,
+    "fused_heading": 3.1395220599982947,
+    "heading_error_gyro": 0.14625796013178016,
+    "heading_error_fused": -0.10476680080000757,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 102,
+    "evaluator_true_yaw": -3.2462705973256103,
+    "gyro_only_heading": -3.0995428436838393,
+    "fused_heading": 2.9387172057155295,
+    "heading_error_gyro": 0.14672775364177104,
+    "heading_error_fused": -0.09819750413844666,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 103,
+    "evaluator_true_yaw": -3.453546978428801,
+    "gyro_only_heading": 2.9775994201915603,
+    "fused_heading": 2.725537170754534,
+    "heading_error_gyro": 0.14796109144077518,
+    "heading_error_fused": -0.10410115799625098,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 104,
+    "evaluator_true_yaw": -3.660895272622667,
+    "gyro_only_heading": 2.7726017972494716,
+    "fused_heading": 2.5045720862968657,
+    "heading_error_gyro": 0.15031176269255273,
+    "heading_error_fused": -0.11771794826005368,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 105,
+    "evaluator_true_yaw": -3.868462877416047,
+    "gyro_only_heading": 2.5687457508337364,
+    "fused_heading": 2.30071603988113,
+    "heading_error_gyro": 0.15402332107019642,
+    "heading_error_fused": -0.1140063898824091,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 106,
+    "evaluator_true_yaw": -4.010083822210967,
+    "gyro_only_heading": 2.466994847833265,
+    "fused_heading": 2.1989651368806586,
+    "heading_error_gyro": 0.19389336286464573,
+    "heading_error_fused": -0.07413634808796157,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 107,
+    "evaluator_true_yaw": -4.1078867581988785,
+    "gyro_only_heading": 2.3983612093747726,
+    "fused_heading": 2.130331498422166,
+    "heading_error_gyro": 0.22306266039406508,
+    "heading_error_fused": -0.04496705055854224,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 108,
+    "evaluator_true_yaw": -4.0221922692931065,
+    "gyro_only_heading": 2.457926487879214,
+    "fused_heading": 2.1898967769266076,
+    "heading_error_gyro": 0.196933449992734,
+    "heading_error_fused": -0.07109626095987245,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 109,
+    "evaluator_true_yaw": -3.970020068557405,
+    "gyro_only_heading": 2.512350865416365,
+    "fused_heading": 2.2443211544637585,
+    "heading_error_gyro": 0.19918562679418336,
+    "heading_error_fused": -0.06884408415842304,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 110,
+    "evaluator_true_yaw": -3.918518262721516,
+    "gyro_only_heading": 2.566725199719925,
+    "fused_heading": 2.2986954887673186,
+    "heading_error_gyro": 0.20205815526185386,
+    "heading_error_fused": -0.06597155569075167,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 111,
+    "evaluator_true_yaw": -3.8681883969665694,
+    "gyro_only_heading": 2.6211015770763555,
+    "fused_heading": 2.353071866123749,
+    "heading_error_gyro": 0.2061046668633384,
+    "heading_error_fused": -0.06192504408926804,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 112,
+    "evaluator_true_yaw": -3.812211279472567,
+    "gyro_only_heading": 2.6830271474935063,
+    "fused_heading": 2.389967095028435,
+    "heading_error_gyro": 0.2120531197864872,
+    "heading_error_fused": -0.08100693267858475,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 113,
+    "evaluator_true_yaw": -3.7589549286651285,
+    "gyro_only_heading": 2.7371403986996112,
+    "fused_heading": 2.4201535433938774,
+    "heading_error_gyro": 0.2129100201851537,
+    "heading_error_fused": -0.1040768351205801,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 114,
+    "evaluator_true_yaw": -3.7042433274306745,
+    "gyro_only_heading": 2.8018819594084543,
+    "fused_heading": 2.4614219116998926,
+    "heading_error_gyro": 0.2229399796595428,
+    "heading_error_fused": -0.11752006804901985,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 115,
+    "evaluator_true_yaw": -3.7091509651542083,
+    "gyro_only_heading": 2.8198874882411102,
+    "fused_heading": 2.4568991652825707,
+    "heading_error_gyro": 0.24585314621573204,
+    "heading_error_fused": -0.11713517674280752,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 116,
+    "evaluator_true_yaw": -3.6913614850243293,
+    "gyro_only_heading": 2.839667240706916,
+    "fused_heading": 2.457527477878372,
+    "heading_error_gyro": 0.24784341855165848,
+    "heading_error_fused": -0.13429634427688544,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 117,
+    "evaluator_true_yaw": -3.663963951067238,
+    "gyro_only_heading": 2.8694247825788683,
+    "fused_heading": 2.4707017222654235,
+    "heading_error_gyro": 0.25020342646651955,
+    "heading_error_fused": -0.14851963384692482,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 118,
+    "evaluator_true_yaw": -3.6337260224426573,
+    "gyro_only_heading": 2.899169054633992,
+    "fused_heading": 2.4863158915710417,
+    "heading_error_gyro": 0.24970976989706248,
+    "heading_error_fused": -0.16314339316588744,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 119,
+    "evaluator_true_yaw": -3.56365108896246,
+    "gyro_only_heading": 2.9876897815657686,
+    "fused_heading": 2.5688223788540276,
+    "heading_error_gyro": 0.26815556334864227,
+    "heading_error_fused": -0.15071183936309865,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 120,
+    "evaluator_true_yaw": -3.4756001180024185,
+    "gyro_only_heading": 3.074869379582647,
+    "fused_heading": 2.6533504575791067,
+    "heading_error_gyro": 0.2672841904054796,
+    "heading_error_fused": -0.15423473159806125,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 121,
+    "evaluator_true_yaw": -3.3717378365883306,
+    "gyro_only_heading": -3.1063717901640855,
+    "fused_heading": 2.7585830402519953,
+    "heading_error_gyro": 0.2653660464242451,
+    "heading_error_fused": -0.15286443033926056,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 122,
+    "evaluator_true_yaw": -3.269575468493197,
+    "gyro_only_heading": -3.004466214703999,
+    "fused_heading": 2.8707076126776974,
+    "heading_error_gyro": 0.2651092537891979,
+    "heading_error_fused": -0.14290222600869232,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 123,
+    "evaluator_true_yaw": -3.1850588711278753,
+    "gyro_only_heading": -2.931595806347984,
+    "fused_heading": 2.960706006020884,
+    "heading_error_gyro": 0.2534630647798912,
+    "heading_error_fused": -0.13742043003082774,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 124,
+    "evaluator_true_yaw": -3.0649526403477907,
+    "gyro_only_heading": -2.811175454308623,
+    "fused_heading": 3.1053276973749564,
+    "heading_error_gyro": 0.25377718603916755,
+    "heading_error_fused": -0.11290496945683895,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 125,
+    "evaluator_true_yaw": -2.9449017316224264,
+    "gyro_only_heading": -2.6908051153969628,
+    "fused_heading": -3.028927012143442,
+    "heading_error_gyro": 0.25409661622546365,
+    "heading_error_fused": -0.08402528052101575,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 126,
+    "evaluator_true_yaw": -3.0265352291415764,
+    "gyro_only_heading": -2.7661460957237107,
+    "fused_heading": -3.0850931884009927,
+    "heading_error_gyro": 0.2603891334178656,
+    "heading_error_fused": -0.058557959259416315,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 127,
+    "evaluator_true_yaw": -3.1027381336839657,
+    "gyro_only_heading": -2.843780158792282,
+    "fused_heading": 3.131950225268716,
+    "heading_error_gyro": 0.2589579748916835,
+    "heading_error_fused": -0.04849694822690534,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 128,
+    "evaluator_true_yaw": -3.1591627215643836,
+    "gyro_only_heading": -2.89120210381887,
+    "fused_heading": 3.0892675942261056,
+    "heading_error_gyro": 0.2679606177455134,
+    "heading_error_fused": -0.034754991389096795,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 129,
+    "evaluator_true_yaw": -3.1968071019640503,
+    "gyro_only_heading": -2.9159171136423834,
+    "fused_heading": 3.0643265489200346,
+    "heading_error_gyro": 0.2808899883216669,
+    "heading_error_fused": -0.022051656295501123,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 130,
+    "evaluator_true_yaw": -3.176145774442591,
+    "gyro_only_heading": -2.8201386312042835,
+    "fused_heading": -3.130733734511846,
+    "heading_error_gyro": 0.3560071432383074,
+    "heading_error_fused": 0.04541203993074516,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 131,
+    "evaluator_true_yaw": -3.0782284846441175,
+    "gyro_only_heading": -2.7247047125918447,
+    "fused_heading": -3.0345614627094957,
+    "heading_error_gyro": 0.3535237720522728,
+    "heading_error_fused": 0.04366702193462179,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 132,
+    "evaluator_true_yaw": -2.982589518981523,
+    "gyro_only_heading": -2.633453105936,
+    "fused_heading": -2.9360155839268076,
+    "heading_error_gyro": 0.34913641304552323,
+    "heading_error_fused": 0.04657393505471541,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 133,
+    "evaluator_true_yaw": -2.9302367703752012,
+    "gyro_only_heading": -2.640259414550965,
+    "fused_heading": -2.926683743144146,
+    "heading_error_gyro": 0.2899773558242362,
+    "heading_error_fused": 0.0035530272310553284,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 134,
+    "evaluator_true_yaw": -2.9843889627278175,
+    "gyro_only_heading": -2.694397435096271,
+    "fused_heading": -2.969819916087506,
+    "heading_error_gyro": 0.28999152763154656,
+    "heading_error_fused": 0.014569046640311445,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 135,
+    "evaluator_true_yaw": -3.038981814883494,
+    "gyro_only_heading": -2.7477312817024853,
+    "fused_heading": -3.0172246464306594,
+    "heading_error_gyro": 0.2912505331810089,
+    "heading_error_fused": 0.02175716845283482,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 136,
+    "evaluator_true_yaw": -3.0965248554266713,
+    "gyro_only_heading": -2.8369136242618143,
+    "fused_heading": -3.101428862217454,
+    "heading_error_gyro": 0.25961123116485707,
+    "heading_error_fused": -0.004904006790782844,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 137,
+    "evaluator_true_yaw": -3.166512558139685,
+    "gyro_only_heading": -2.9044869887320104,
+    "fused_heading": 3.113266994540509,
+    "heading_error_gyro": 0.26202556940767474,
+    "heading_error_fused": -0.0034057544993919783,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 138,
+    "evaluator_true_yaw": -3.260235531823,
+    "gyro_only_heading": -2.9781931840166807,
+    "fused_heading": 3.0298190454734533,
+    "heading_error_gyro": 0.2820423478063194,
+    "heading_error_fused": 0.0068692701168673095,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 139,
+    "evaluator_true_yaw": -3.3520476543740534,
+    "gyro_only_heading": -3.1041310969345064,
+    "fused_heading": 2.893765555644515,
+    "heading_error_gyro": 0.247916557439547,
+    "heading_error_fused": -0.037372097161018546,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 140,
+    "evaluator_true_yaw": -3.398983403088926,
+    "gyro_only_heading": -3.1114072636185837,
+    "fused_heading": 2.839981833312803,
+    "heading_error_gyro": 0.28757613947034244,
+    "heading_error_fused": -0.044220070777857744,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 141,
+    "evaluator_true_yaw": -3.4062162908425364,
+    "gyro_only_heading": -3.1184389033968434,
+    "fused_heading": 2.788170215688711,
+    "heading_error_gyro": 0.28777738744569303,
+    "heading_error_fused": -0.08879880064833959,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 142,
+    "evaluator_true_yaw": -3.413183411443828,
+    "gyro_only_heading": -3.1252055270429344,
+    "fused_heading": 2.739247908747711,
+    "heading_error_gyro": 0.28797788440089356,
+    "heading_error_fused": -0.13075398698804744,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 143,
+    "evaluator_true_yaw": -3.4287372191910803,
+    "gyro_only_heading": 3.136299714316788,
+    "fused_heading": 2.7145798304671986,
+    "heading_error_gyro": 0.2818516263282819,
+    "heading_error_fused": -0.1398682575213075,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 144,
+    "evaluator_true_yaw": -3.3908123139290867,
+    "gyro_only_heading": -3.1351825879292683,
+    "fused_heading": 2.693433033061202,
+    "heading_error_gyro": 0.25562972599981837,
+    "heading_error_fused": -0.1989399601892983,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 145,
+    "evaluator_true_yaw": -3.3793427628322585,
+    "gyro_only_heading": -3.123436747826982,
+    "fused_heading": 2.676469618618882,
+    "heading_error_gyro": 0.2559060150052766,
+    "heading_error_fused": -0.22737292572844606,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 146,
+    "evaluator_true_yaw": -3.366946258665475,
+    "gyro_only_heading": -3.1102162898356074,
+    "fused_heading": 2.6653262903049115,
+    "heading_error_gyro": 0.2567299688298675,
+    "heading_error_fused": -0.2509127582092001,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 147,
+    "evaluator_true_yaw": -3.319829601217201,
+    "gyro_only_heading": -2.9912141025533128,
+    "fused_heading": 2.7597872414731417,
+    "heading_error_gyro": 0.32861549866388806,
+    "heading_error_fused": -0.2035684644892444,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 148,
+    "evaluator_true_yaw": -3.2021740117860693,
+    "gyro_only_heading": -2.8708861579350518,
+    "fused_heading": 2.865526400165205,
+    "heading_error_gyro": 0.33128785385101756,
+    "heading_error_fused": -0.21548489522831218,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 149,
+    "evaluator_true_yaw": -3.103227896782764,
+    "gyro_only_heading": -2.7490189079235177,
+    "fused_heading": 3.0156705096894605,
+    "heading_error_gyro": 0.35420898885924634,
+    "heading_error_fused": -0.16428690070736196,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 150,
+    "evaluator_true_yaw": -2.9815893009110908,
+    "gyro_only_heading": -2.6270667933422254,
+    "fused_heading": 3.137622624270753,
+    "heading_error_gyro": 0.3545225075688654,
+    "heading_error_fused": -0.1639733819977425,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 151,
+    "evaluator_true_yaw": -2.8597916886366175,
+    "gyro_only_heading": -2.5049319185948455,
+    "fused_heading": -3.023427808161454,
+    "heading_error_gyro": 0.35485977004177194,
+    "heading_error_fused": -0.1636361195248366,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 152,
+    "evaluator_true_yaw": -2.931233129189083,
+    "gyro_only_heading": -2.611454042219206,
+    "fused_heading": -3.1299499317858146,
+    "heading_error_gyro": 0.3197790869698771,
+    "heading_error_fused": -0.1987168025967314,
+    "sonar_heading_confidence": 0.0
+  },
+  {
+    "tick": 153,
+    "evaluator_true_yaw": -2.982311246571056,
+    "gyro_only_heading": -2.5545129977219934,
+    "fused_heading": -3.0136290042261535,
+    "heading_error_gyro": 0.4277982488490628,
+    "heading_error_fused": -0.03131775765509737,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 154,
+    "evaluator_true_yaw": -2.9253286018451243,
+    "gyro_only_heading": -2.4977275317090513,
+    "fused_heading": -2.899922525726057,
+    "heading_error_gyro": 0.42760107013607307,
+    "heading_error_fused": 0.025406076119067308,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 155,
+    "evaluator_true_yaw": -2.8682844304442434,
+    "gyro_only_heading": -2.4409401765857486,
+    "fused_heading": -2.790977119049498,
+    "heading_error_gyro": 0.42734425385849484,
+    "heading_error_fused": 0.07730731139474534,
+    "sonar_heading_confidence": 1.0
+  },
+  {
+    "tick": 156,
+    "evaluator_true_yaw": -2.8111855786653113,
+    "gyro_only_heading": -2.384159361908429,
+    "fused_heading": -2.730452940822604,
+    "heading_error_gyro": 0.42702621675688235,
+    "heading_error_fused": 0.08073263784270734,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 157,
+    "evaluator_true_yaw": -2.7370879906974626,
+    "gyro_only_heading": -2.3071344027602407,
+    "fused_heading": -2.6479641047348506,
+    "heading_error_gyro": 0.42995358793722177,
+    "heading_error_fused": 0.08912388596261199,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 158,
+    "evaluator_true_yaw": -2.6722018170782253,
+    "gyro_only_heading": -2.266032423075593,
+    "fused_heading": -2.597576812403118,
+    "heading_error_gyro": 0.4061693940026325,
+    "heading_error_fused": 0.07462500467510713,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 159,
+    "evaluator_true_yaw": -2.666194190357818,
+    "gyro_only_heading": -2.320367625976647,
+    "fused_heading": -2.636118762615471,
+    "heading_error_gyro": 0.3458265643811709,
+    "heading_error_fused": 0.03007542774234695,
+    "sonar_heading_confidence": 0.7
+  },
+  {
+    "tick": 160,
+    "evaluator_true_yaw": -2.720414330321033,
+    "gyro_only_heading": -2.3746582861361447,
+    "fused_heading": -2.677303015961534,
+    "heading_error_gyro": 0.34575604418488837,
+    "heading_error_fused": 0.043111314359499,
+    "sonar_heading_confidence": 0.7
+  }
+]

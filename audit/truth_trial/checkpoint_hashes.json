@@ -1,0 +1,34 @@
+{
+  "checkpoints\\developmental_stage_1.npz": {
+    "sha256": "de29c1f72a592e59c9b2d920b00be519b620cb465d59578b5e27c79decee19ef",
+    "size_bytes": 2006684
+  },
+  "checkpoints\\developmental_stage_2.npz": {
+    "sha256": "e80a3b7fff8a46120f71708450a4b4d799cc0502a38939cedf9806a1947182e2",
+    "size_bytes": 2006687
+  },
+  "checkpoints\\initial_untrained_C7.npz": {
+    "sha256": "73d3cbe17a50e1f65c8eaaa95ad413a1b67f9be7af24f4722e0bee99e483c78a",
+    "size_bytes": 2009257
+  },
+  "checkpoints\\pre_transactional_repair_20260817\\carl_autonomous_agent.py": {
+    "sha256": "41c217e9a7de8b034cdc6ad0cefd50e0e11552ef5203e0bd069d2c2cb653955e",
+    "size_bytes": 14921
+  },
+  "checkpoints\\pre_transactional_repair_20260817\\carl_embodied_organism.py": {
+    "sha256": "2ea0bef4b117d7c5f20b9d494c795a804fb34a3eb429fe955c346490b1b1763f",
+    "size_bytes": 22220
+  },
+  "checkpoints\\pre_transactional_repair_20260817\\carl_endogenous_agency.py": {
+    "sha256": "6feb6691ae07f85c00489377a91ca5e1d4e6fca18957f06e83d7d440c8a5a7a3",
+    "size_bytes": 11378
+  },
+  "checkpoints\\pre_transactional_repair_20260817\\carl_live_playground.py": {
+    "sha256": "4dee7a5275b88008508874620d70a1a0b8c48eb6521548824e66479b2c2ddfd0",
+    "size_bytes": 8740
+  },
+  "checkpoints\\pre_transactional_repair_20260817\\carl_stuck_recovery.py": {
+    "sha256": "6f76a415bcd5f3d4a888ed3bc5d54ccbc1369628e50f383cd6bf51374a9259bb",
+    "size_bytes": 11242
+  }
+}

@@ -1,0 +1,297 @@
+[
+  {
+    "source": "chassis_main_plate",
+    "target": "mount_lidar",
+    "label": "M3 bolts",
+    "delta": {
+      "x": 0,
+      "y": 62,
+      "z": 0
+    },
+    "description": "Main Chassis Frame ↔ LiDAR Mast — M3 bolts; LiDAR Mast sits 62mm up from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "motor_mount_fl",
+    "label": "M3 bolts",
+    "delta": {
+      "x": -242.5,
+      "y": 17,
+      "z": 92.5
+    },
+    "description": "Main Chassis Frame ↔ FL Hip Motor Mount — M3 bolts; FL Hip Motor Mount sits 242.5mm left, 17mm up, 92.5mm forward from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "mcu_can_node_1_mount",
+    "label": "M3 bolts",
+    "delta": {
+      "x": 245,
+      "y": 8,
+      "z": 105
+    },
+    "description": "Main Chassis Frame ↔ Front Right Limb Controller Mount — M3 bolts; Front Right Limb Controller Mount sits 245mm right, 8mm up, 105mm forward from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "mcu_can_node_2_mount",
+    "label": "M3 bolts",
+    "delta": {
+      "x": -245,
+      "y": -8,
+      "z": 105
+    },
+    "description": "Main Chassis Frame ↔ Front Left Limb Controller Mount — M3 bolts; Front Left Limb Controller Mount sits 245mm left, 8mm down, 105mm forward from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "mcu_can_node_3_mount",
+    "label": "M3 bolts",
+    "delta": {
+      "x": 245,
+      "y": -8,
+      "z": -105
+    },
+    "description": "Main Chassis Frame ↔ Rear Right Limb Controller Mount — M3 bolts; Rear Right Limb Controller Mount sits 245mm right, 8mm down, 105mm back from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "mcu_can_node_4_mount",
+    "label": "M3 bolts",
+    "delta": {
+      "x": -245,
+      "y": -8,
+      "z": -105
+    },
+    "description": "Main Chassis Frame ↔ Rear Left Limb Controller Mount — M3 bolts; Rear Left Limb Controller Mount sits 245mm left, 8mm down, 105mm back from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "imu_sensor_mount",
+    "label": "M3 bolts",
+    "delta": {
+      "x": 0,
+      "y": -9.5,
+      "z": 0
+    },
+    "description": "Main Chassis Frame ↔ 9-Axis IMU Mount — M3 bolts; 9-Axis IMU Mount sits 9.5mm down from Main Chassis Frame"
+  },
+  {
+    "source": "motor_mount_fl",
+    "target": "leg_fl_upper",
+    "label": "M3 bolts and heat set inserts",
+    "delta": {
+      "x": 0,
+      "y": -25,
+      "z": 0
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 90
+    },
+    "description": "FL Hip Motor Mount ↔ FL Upper Leg — M3 bolts and heat set inserts; FL Upper Leg sits 25mm down from FL Hip Motor Mount; FL Upper Leg rotated 90° about Z"
+  },
+  {
+    "source": "mount_lidar",
+    "target": "lidar_sensor",
+    "label": "mount",
+    "delta": {
+      "x": 0,
+      "y": 81,
+      "z": 0
+    },
+    "description": "LiDAR Mast ↔ 360 Degree LiDAR — mount; 360 Degree LiDAR sits 81mm up from LiDAR Mast"
+  },
+  {
+    "source": "motor_mount_fl",
+    "target": "actuator_joint_fl1",
+    "label": "mount",
+    "delta": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "description": "FL Hip Motor Mount ↔ Front Left Hip Joint — mount; Front Left Hip Joint centered on FL Hip Motor Mount"
+  },
+  {
+    "source": "mcu_can_node_1_mount",
+    "target": "mcu_can_node_1",
+    "label": "mount",
+    "delta": {
+      "x": 0,
+      "y": 7,
+      "z": 0
+    },
+    "description": "Front Right Limb Controller Mount ↔ Front Right Limb Controller — mount; Front Right Limb Controller sits 7mm up from Front Right Limb Controller Mount"
+  },
+  {
+    "source": "mcu_can_node_2_mount",
+    "target": "mcu_can_node_2",
+    "label": "mount",
+    "delta": {
+      "x": 0,
+      "y": 7,
+      "z": 0
+    },
+    "description": "Front Left Limb Controller Mount ↔ Front Left Limb Controller — mount; Front Left Limb Controller sits 7mm up from Front Left Limb Controller Mount"
+  },
+  {
+    "source": "mcu_can_node_3_mount",
+    "target": "mcu_can_node_3",
+    "label": "mount",
+    "delta": {
+      "x": 0,
+      "y": 7,
+      "z": 0
+    },
+    "description": "Rear Right Limb Controller Mount ↔ Rear Right Limb Controller — mount; Rear Right Limb Controller sits 7mm up from Rear Right Limb Controller Mount"
+  },
+  {
+    "source": "mcu_can_node_4_mount",
+    "target": "mcu_can_node_4",
+    "label": "mount",
+    "delta": {
+      "x": 0,
+      "y": 7,
+      "z": 0
+    },
+    "description": "Rear Left Limb Controller Mount ↔ Rear Left Limb Controller — mount; Rear Left Limb Controller sits 7mm up from Rear Left Limb Controller Mount"
+  },
+  {
+    "source": "imu_sensor_mount",
+    "target": "imu_sensor",
+    "label": "mount",
+    "delta": {
+      "x": 0,
+      "y": 10,
+      "z": 0
+    },
+    "description": "9-Axis IMU Mount ↔ 9-Axis IMU — mount; 9-Axis IMU sits 10mm up from 9-Axis IMU Mount"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "power_module",
+    "label": "attached",
+    "delta": {
+      "x": 0,
+      "y": 12,
+      "z": 0
+    },
+    "description": "Main Chassis Frame ↔ 24V Power Distribution — attached; 24V Power Distribution sits 12mm up from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "rpi_4_node",
+    "label": "M3 standoff and bolts",
+    "delta": {
+      "x": 0,
+      "y": 5,
+      "z": 0
+    },
+    "description": "Main Chassis Frame ↔ Raspberry Pi 4 — M3 standoff and bolts; Raspberry Pi 4 sits 5mm up from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "buck_converter_module",
+    "label": "Double-sided mounting tape",
+    "delta": {
+      "x": 40,
+      "y": 3,
+      "z": 0
+    },
+    "description": "Main Chassis Frame ↔ Step Down Converter — Double-sided mounting tape; Step Down Converter sits 40mm right, 3mm up from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "depth_sensor_2_mount",
+    "label": "attached",
+    "delta": {
+      "x": 580,
+      "y": -100.5,
+      "z": -110
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "description": "Main Chassis Frame ↔ Navigation Vision Sensor Mount — attached; Navigation Vision Sensor Mount sits 580mm right, 100.5mm down, 110mm back from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "mount_d455",
+    "label": "attached",
+    "delta": {
+      "x": 485,
+      "y": -93,
+      "z": -105
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "description": "Main Chassis Frame ↔ Depth Sensor Mount — attached; Depth Sensor Mount sits 485mm right, 93mm down, 105mm back from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "mount_jetson_orin",
+    "label": "attached",
+    "delta": {
+      "x": 355,
+      "y": -88,
+      "z": -85
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "description": "Main Chassis Frame ↔ Orin NX Mount — attached; Orin NX Mount sits 355mm right, 88mm down, 85mm back from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "cad_assembly_model",
+    "label": "digital link",
+    "delta": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "description": "Main Chassis Frame ↔ Project Assembly CAD Model — digital link; Project Assembly CAD Model centered on Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "depth_sensor_2_mount",
+    "label": "attached",
+    "delta": {
+      "x": 0,
+      "y": 9.5,
+      "z": 125
+    },
+    "description": "Main Chassis Frame ↔ Navigation Vision Sensor Mount — attached; Navigation Vision Sensor Mount sits 9.5mm up, 125mm forward from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "mount_d455",
+    "label": "attached",
+    "delta": {
+      "x": 0,
+      "y": 17,
+      "z": 105
+    },
+    "description": "Main Chassis Frame ↔ Depth Sensor Mount — attached; Depth Sensor Mount sits 17mm up, 105mm forward from Main Chassis Frame"
+  },
+  {
+    "source": "chassis_main_plate",
+    "target": "mount_jetson_orin",
+    "label": "attached",
+    "delta": {
+      "x": 0,
+      "y": 22,
+      "z": 0
+    },
+    "description": "Main Chassis Frame ↔ Orin NX Mount — attached; Orin NX Mount sits 22mm up from Main Chassis Frame"
+  }
+]

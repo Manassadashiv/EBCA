@@ -1,0 +1,10 @@
+metric,raw_telemetry_value,run_json_value,master_json_value,execution_receipt_value,plotted_value,video_supported,status,explanation
+Total Episode Runs,525,525,525,525,525,YES (6 videos),MATCH,Exact 525 physical MuJoCo simulation episodes recorded in CSVs.
+Successful Acquisitions,0,0,0,350,0 (Plot 6 never crosses 0.30m threshold),YES (Videos show robot halting at 2.04m from food),MISMATCH,Master JSON and Raw CSV have 0 acquisitions. Master MD report and receipt hallucinated 350 acquisitions based on conceptual expectation.
+Failed / Timed Out Episodes,525,525,525,175,525,YES (All 6 videos end at timeout t=10.0s),MISMATCH,Raw CSVs and Master JSON confirm all 525 runs timed out at 300 ticks because distance to food (3.2m) exceeded max displacement in 10s (2.75m).
+Overall Acquisition Rate,0.00%,0.00%,0.00%,66.7%,0.00%,YES,MISMATCH,Empirical rate is 0.00%. Markdown report narrative incorrectly stated 66.7%.
+Minimum Target Distance (Global),2.0364m,2.0364m,2.0364m,NULL,2.04m (Plot 6),YES (Final frame distance = 2.06m),MATCH,"All telemetry, plots, and video HUDs consistently show min distance to target reached was ~2.04m."
+Collision Count Across Campaign,0,0,0,0,0,YES (Zero penetrations in all 6 videos),MATCH,100% collision-free navigation preserved across all 525 runs.
+Episodic Memory Accumulation,0 in initial 525 CSVs,0 in initial 525 CSVs,0 in initial 525 CSVs,>700 (from subsequent calibration test),0 (Plot 5 curve is flat at 0),YES (Video HUD displays 'Memory: 0 eps'),MISMATCH,"Safety veto prevented physical body collisions, so collision_occurred was False and 0 memories were written in the official 525 campaign. >700 figure was from a separate exploratory test."
+Anti-Engineering Heuristic Violations,0,0,0,0,0,YES,MATCH,AST audit passed with 0 violations across 69 source files.
+Official Emergence Classification,NO QUALIFYING EMERGENT BEHAVIOR FOUND,NO QUALIFYING EMERGENT BEHAVIOR FOUND,P1 STATUS: NO QUALIFYING EMERGENT BEHAVIOR FOUND,P1 STATUS: NO QUALIFYING EMERGENT BEHAVIOR FOUND,NO QUALIFYING EMERGENT BEHAVIOR FOUND,YES,MATCH,All artifacts agree on the final conservative classification verdict.

@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-08-16T23:00:00+05:30",
+  "evidence_package": "evidence/final_blind_organism_test",
+  "seed": 20260816,
+  "videos": [
+    "complete_blind_run.mp4",
+    "best_autonomous_episode.mp4",
+    "worst_autonomous_episode.mp4",
+    "first_internally_generated_goal.mp4",
+    "memory_dependent_behavior.mp4",
+    "self_model_adaptation.mp4",
+    "active_sensing_behavior.mp4",
+    "action_veto_behavior.mp4",
+    "recovery_episode.mp4",
+    "strongest_organism_like_sequence.mp4"
+  ],
+  "plots": [
+    "trajectory/trajectory_2d.png",
+    "stability/attitude_stability.png",
+    "motors/commanded_and_wheel_jerk.png",
+    "sensors/range_sensor_heatmap.png",
+    "homeostasis/physiological_variables.png",
+    "memory/episodic_memory_map.png",
+    "prediction/prediction_vs_actual.png",
+    "motivation/motivation_heatmap.png",
+    "agency/internal_decision_timeline.png",
+    "neuromodulation/neuromodulator_dynamics.png",
+    "integration/phi_proxy_timeline.png"
+  ],
+  "decision_trace": "decision_trace.jsonl",
+  "raw_telemetry": "raw_telemetry/blind_life_run_telemetry.csv",
+  "frozen_integrity": {
+    "auditor_sha256": "a0d6b0115a40e48b10685d0156289eaf8b1ead384a888008f952e5d894092004",
+    "c7_checkpoint_sha256": "73d3cbe17a50e1f65c8eaaa95ad413a1b67f9be7af24f4722e0bee99e483c78a",
+    "manifest_sha256": "df935592c4c655d4abfbbdc3d4627f8a25bc0d4421ac0a0ce37afeb8d8cc781d"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "carl_autonomous_agent.py": {
+    "path": "D:\\ebca\\brain\\carl_autonomous_agent.py",
+    "sha256": "f2215032fad42013ddde2b045bdab21456406342c8b4503119e56a77b25f386c",
+    "size_bytes": 11608
+  },
+  "carl_embodied_organism.py": {
+    "path": "D:\\ebca\\brain\\carl_embodied_organism.py",
+    "sha256": "2ea0bef4b117d7c5f20b9d494c795a804fb34a3eb429fe955c346490b1b1763f",
+    "size_bytes": 22220
+  },
+  "carl_generative_self_model.py": {
+    "path": "D:\\ebca\\brain\\carl_generative_self_model.py",
+    "sha256": "c5261ced7fe9e1033c2d04b33f71fe80d4eba76890024c7eb1ee7c1533b50163",
+    "size_bytes": 16124
+  },
+  "carl_endogenous_agency.py": {
+    "path": "D:\\ebca\\brain\\carl_endogenous_agency.py",
+    "sha256": "6feb6691ae07f85c00489377a91ca5e1d4e6fca18957f06e83d7d440c8a5a7a3",
+    "size_bytes": 11378
+  },
+  "carl_homeostatic_core.py": {
+    "path": "D:\\ebca\\brain\\carl_homeostatic_core.py",
+    "sha256": "c199a83eb81b8758a08399c0981c5c300921c6d26308daf8575fa7ced1ccf2ce",
+    "size_bytes": 7642
+  },
+  "carl_episodic_memory.py": {
+    "path": "D:\\ebca\\brain\\carl_episodic_memory.py",
+    "sha256": "8c9553ed36f3488a16d62f73068732c3d54bc2e1a7a5a37548d9e2c0b480dbaa",
+    "size_bytes": 6870
+  },
+  "carl_wall_avoidance_benchmarks.py": {
+    "path": "D:\\ebca\\brain\\carl_wall_avoidance_benchmarks.py",
+    "sha256": "6f80e3978c2a771d12af5f8e966d666c0a022311225baa5d2dd1074e2d667231",
+    "size_bytes": 29053
+  },
+  "vessel_kinetic.xml": {
+    "path": "D:\\ebca\\world\\vessel_kinetic.xml",
+    "sha256": "fe87cba38916f3ab19d831bafa99658bce9837693a28206930959749cac14d91",
+    "size_bytes": 15661
+  }
+}

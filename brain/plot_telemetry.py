@@ -44,11 +44,12 @@ def generate_proof():
     # Convert tick to time
     time_s = data['wall_time_s'] - data['wall_time_s'][0]
 
-    # Set up matplotlib style for a premium modern look
+    # Set up matplotlib style for a clean crisp white look
+    plt.style.use('default')
     plt.rcParams['font.family'] = 'sans-serif'
     plt.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Helvetica']
     
-    fig = plt.figure(figsize=(16, 10))
+    fig = plt.figure(figsize=(16, 10), facecolor='#ffffff')
     fig.suptitle("EBCA Emergent Autonomy Proof: CARL Simulation Run", fontsize=20, fontweight='bold', color='#1e293b')
 
     # ── Plot 1: 2D Trajectory (Top Left) ──────────────────────────────────

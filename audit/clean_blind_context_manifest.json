@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-08-17T00:00:00+05:30",
+  "experiment_seed": 20260817,
+  "clean_blind_run_id": "FINAL_CLEAN_BLIND_ORGANISM_RUN_001",
+  "code_hashes": {
+    "carl_autonomous_agent.py": "11529132d58c9cf4e152ab43046f04d711619817e237f6efb637b5904b5ef8e0",
+    "carl_embodied_organism.py": "727ad5de452a17802dfacc9d051a534c753a471507ac0534495461ea5f498b5d",
+    "carl_endogenous_agency.py": "510a22edf7b284042a359726c474e772acf1382c9f9c027f0da6fb0720f6f269",
+    "carl_experiment_auditor.py": "a0d6b0115a40e48b10685d0156289eaf8b1ead384a888008f952e5d894092004"
+  },
+  "checkpoint_hashes": {
+    "initial_untrained_C7.npz": "73d3cbe17a50e1f65c8eaaa95ad413a1b67f9be7af24f4722e0bee99e483c78a"
+  },
+  "hidden_environment_hash": "63b9c0ae7b66abd346043aff6d2e8adead04294eca12c382f1b3c828339cd748",
+  "telemetry_hash": "0ab01e38410985ca199227825842a08fd16bf4c65660c9852ebaac6ed7f25202",
+  "decision_trace_hash": "00c6336143ac6b0cdaed628eb2bf69d74b0dfd8f26bc36f23a5403516977b977",
+  "mp4_hash": "ba826999dbcade263db5ba22a50a28b810f572376e92e4ebc7551503181b0a0a",
+  "agent_forbidden_files": [
+    "audit/hidden_environment.json",
+    "evidence/final_blind_organism_test/*",
+    "audit/*"
+  ],
+  "isolation_verified": true
+}

@@ -1,0 +1,21 @@
+{
+  "condition": "P0_CONTROL",
+  "seed": 42,
+  "episode": 3,
+  "acquired": false,
+  "acquisition_tick": null,
+  "acquisition_time_s": null,
+  "total_ticks": 500,
+  "total_collisions": 360,
+  "route_chosen": "NORTH_CORRIDOR_ROUTE1",
+  "switch_latency_ticks": null,
+  "switch_latency_s": null,
+  "memory_writes": 0,
+  "memory_retrievals": 0,
+  "episodes_in_memory": 0,
+  "final_dist_food": 0.9803,
+  "final_pos": [
+    0.849,
+    0.238
+  ]
+}

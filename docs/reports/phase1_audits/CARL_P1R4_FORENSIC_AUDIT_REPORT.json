@@ -1,0 +1,46 @@
+{
+  "report_id": "CARL-P1R4-FORENSIC-ISOLATION-AUDIT-2026",
+  "timestamp": "2026-08-24T01:40:00Z",
+  "audit_subject": "Episode 1 Route Selection & STDP Causal Attribution in P1-R4 Isolation",
+  "forensic_verdict": "NOT CAUSAL (FOR DOWNSTREAM HAZARD DETOUR) — LEVEL 1 CLASSIFICATION",
+  "forensic_answers": {
+    "1_exact_episode1_route_choice_tick_and_cause": {
+      "commitment_tick": 84,
+      "commitment_pose": {"x": 0.3529, "y": 0.1560},
+      "root_cause": "Startup physical acceleration lag at Tick 1 created a motor prediction error surge (PE = 0.2141 m/s > 0.18 m/s), triggering an immediate negative STDP weight update on SWERVE_RIGHT at x=0.0001m. At Tick 2, this broken symmetry caused Active Inference to select SWERVE_LEFT, steering North before ever reaching the downstream obstacle."
+    },
+    "2_initial_w_matrix_statistics": {
+      "shape": [22, 7],
+      "norm_at_tick_0": 0.000000,
+      "mean_at_tick_0": 0.000000,
+      "variance_at_tick_0": 0.000000,
+      "all_zeros": true
+    },
+    "3_initial_q_stdp_values": {
+      "tick_0_q_values": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "symmetric_ranking": true
+    },
+    "4_first_tick_stdp_changes_w": {
+      "tick": 1,
+      "pose": {"x": 0.0001, "y": 0.0000},
+      "dw_norm": 0.000090,
+      "weight_norm": 0.000100
+    },
+    "5_first_tick_stdp_changes_policy": {
+      "tick": 2,
+      "no_stdp_action": "SWERVE_RIGHT",
+      "stdp_action": "SWERVE_LEFT",
+      "efe_difference": 0.01
+    },
+    "6_did_episode1_north_exist_before_learning": {
+      "answer": "NO at Tick 0 (W=0), but YES at Tick 2 (due to startup acceleration lag rather than obstacle encounter)."
+    },
+    "7_genuine_later_stdp_caused_transition": {
+      "answer": "NO. Because the robot turned North in Episode 1 from startup inertia, it never encountered the downstream obstacle at (1.45, -0.55m). Episodes 2-5 simply persisted this initial Northward path."
+    },
+    "8_final_classification_verdict": {
+      "verdict": "NOT CAUSAL (FOR DOWNSTREAM HAZARD DETOUR)",
+      "emergence_level": "LEVEL 1: STDP ACTIVE AND WEIGHTS CHANGE (STARTUP INERTIA ARTIFACT)"
+    }
+  }
+}

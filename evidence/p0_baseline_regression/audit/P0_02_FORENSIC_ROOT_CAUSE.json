@@ -1,0 +1,48 @@
+{
+  "audit_version": "P0-02-FORENSIC-ROOT-CAUSE-v1.0",
+  "timestamp": "2026-08-18T00:54:00Z",
+  "status": "COMPLETED",
+  "hardened_gates_applied": 12,
+  "root_causes": {
+    "flaw_1_sonar_clearance_geometry": {
+      "name": "False Corner Clearance Averaging",
+      "symptom": "Organism failed to detect straight forward wall obstacles when peripheral rays grazed open edges",
+      "flawed_logic": "front_cone_clear = float(max(sonar[7], np.mean(sonar[6:9])))",
+      "repaired_logic": "front_direct_clear = float(sonar[7])",
+      "impact": "Eliminated premature breakout into perpendicular obstacles"
+    },
+    "flaw_2_s_curve_motor_kinetics": {
+      "name": "Motor Rate Limit vs Recovery Phase Timing Discrepancy",
+      "symptom": "Wheel actuators require ~15 ticks under jerk filter (j_max=30 rad/s^3) to reach commanded velocity, but recovery phase timers expired in 10-14 ticks",
+      "repaired_logic": "Matched phase timing and dynamic breakout displacement to physical motor acceleration kinetics",
+      "impact": "Allowed sufficient time for physical robot mass to achieve escape velocity"
+    },
+    "flaw_3_directional_spin_alignment": {
+      "name": "Spin Azimuth Premature Exit & Directional Alignment",
+      "symptom": "Tier 2 spin terminated before aligning direct front ray with true open avenue (>1.0m), causing breakout into sidewalls in 0.75m corridors and dead ends",
+      "repaired_logic": "Increased spin velocity to 7.0 rad/s and enforced ray alignment (best_ray_idx in [6,7,8]) with true open exit avenue",
+      "impact": "Ensured clean single-cycle 180-deg turnaround within 18 ticks"
+    },
+    "flaw_4_stuck_detector_latency_and_frame": {
+      "name": "Stuck Detector Latency, Speed Gating & Breakout Reference Frame",
+      "symptom": "20-tick rolling window delayed stuck confirmation by ~32 ticks; measuring breakout displacement from pre-reverse origin caused zero-crossing aborts; lack of speed gate caused false candidate triggers during active turns",
+      "repaired_logic": "Implemented dynamic 10-tick window, speed gating (speed < 0.05m/s for candidate accumulation), and tracked breakout_origin separately",
+      "impact": "Prompt stuck detection (0.26s) and zero false stuck triggers during active turns"
+    }
+  },
+  "targeted_verification": {
+    "total_tested": 7,
+    "total_passed": 7,
+    "total_failed": 0,
+    "pass_rate_pct": 100.0,
+    "runs": {
+      "P0_D1_S42_HISTORICAL_TURN_TRAP_300T": "PASS",
+      "P0_G2_S42_CORRIDOR_NARROW_250T": "PASS",
+      "P0_K3_S42_CORRIDOR_NARROW_250T": "PASS",
+      "P0_F2_S42_DEAD_END_300T": "PASS",
+      "P0_L4_S42_DEAD_END_150T": "PASS",
+      "P0_N2_S42_CORRIDOR_WIDE_900T": "PASS",
+      "P0_N3_S42_BIFURCATION_1800T": "PASS"
+    }
+  }
+}

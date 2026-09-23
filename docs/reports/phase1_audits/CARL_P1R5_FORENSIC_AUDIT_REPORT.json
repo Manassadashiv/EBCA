@@ -1,0 +1,30 @@
+{
+  "report_id": "CARL-P1R5-FORENSIC-AUDIT-2026",
+  "total_runs_audited": 96,
+  "startup_transient_status": {
+    "startup_ticks_dw_sum": 0.0,
+    "startup_max_pe_m_s": 0.1626,
+    "startup_artifact_eliminated": true
+  },
+  "hazard_interaction_status": {
+    "first_dw_tick": 33,
+    "first_dw_pos": [
+      0.1368,
+      -0.0
+    ],
+    "first_dw_pe": 0.1807,
+    "first_dw_magnitude": 4e-05
+  },
+  "causal_criteria_eval": {
+    "C1_no_initial_learning_bias": true,
+    "C2_hazard_specific_learning_event": true,
+    "C3_temporal_precedence": true,
+    "C4_counterfactual_control_validated": true,
+    "C5_shuffled_control_validated": true,
+    "C6_multi_seed_reproducibility": true,
+    "C7_ablation_validated": true,
+    "C8_behavioural_relevance": true
+  },
+  "forensic_verdict": "VERIFIED CAUSAL LEARNING",
+  "classification_level": "LEVEL 4: REPEATABLE ADAPTIVE BEHAVIORAL IMPROVEMENT ACROSS SEEDS/EPISODES"
+}

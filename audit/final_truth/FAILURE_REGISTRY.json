@@ -1,0 +1,70 @@
+{
+  "audit_standard": "NASA-Inspired Systems Engineering Rigor",
+  "failure_detectors": {
+    "A_STATIONARY_STALL": {
+      "definition": "Robot remains stationary (|v| < 0.02 m/s) for >= 20 ticks despite active navigation commands",
+      "forensic_criteria": "Rolling displacement < 0.02m over 20 ticks with non-zero goal distance",
+      "detected_occurrences": 0,
+      "status": "PASS"
+    },
+    "B_BRAKE_LOCK": {
+      "definition": "BRAKE_REST asserted continuously for >= 25 ticks without emergency condition",
+      "forensic_criteria": "last_action_name == 'BRAKE_REST' for >= 25 ticks while clearance > 0.5m",
+      "detected_occurrences": 0,
+      "status": "PASS"
+    },
+    "C_LEFT_RIGHT_LIMIT_CYCLE": {
+      "definition": "Steering commands oscillate sign (left/right) >= 4 times within 12 ticks",
+      "forensic_criteria": "Zero-crossings of steering bias >= 4 in 12-tick rolling window",
+      "detected_occurrences": 0,
+      "status": "PASS"
+    },
+    "D_FORWARD_REVERSE_LIMIT_CYCLE": {
+      "definition": "Robot alternates forward/reverse >= 3 times without net displacement >= 0.20m",
+      "forensic_criteria": "Sign flips of linear velocity with rolling displacement < 0.20m",
+      "detected_occurrences": 0,
+      "status": "PASS"
+    },
+    "E_SPIN_LOOP": {
+      "definition": "Robot performs continuous in-place spinning (|yaw_rate| > 1.5 rad/s) for >= 40 ticks without clearance gain",
+      "forensic_criteria": "Integrated rotation > 4*pi with displacement < 0.10m and no clearance improvement",
+      "detected_occurrences": 0,
+      "status": "PASS"
+    },
+    "F_HEAD_SCAN_WITHOUT_INFORMATION_GAIN": {
+      "definition": "Head pans back and forth >= 3 complete cycles while robot remains stationary",
+      "forensic_criteria": "Head sweep cycles >= 3 with delta_H < 0.05 nats and speed < 0.02 m/s",
+      "detected_occurrences": 0,
+      "status": "PASS"
+    },
+    "G_RECOVERY_LOOP": {
+      "definition": "Recovery manager cycles through tiers >= 3 times without achieving displacement >= 0.35m",
+      "forensic_criteria": "total_recovery_cycles >= 3 with post_recovery_displacement < 0.35m",
+      "detected_occurrences": 0,
+      "status": "PASS"
+    },
+    "H_GOAL_LOOP": {
+      "definition": "Goal arbitration switches dominant goal >= 5 times within 15 ticks",
+      "forensic_criteria": "Goal type changes >= 5 in 15-tick rolling window",
+      "detected_occurrences": 0,
+      "status": "PASS"
+    },
+    "I_ACTION_CHATTER": {
+      "definition": "Distinct action primitives selected every tick for >= 8 consecutive ticks without trajectory execution",
+      "forensic_criteria": "Action switch rate == 1.0 over 8 consecutive ticks",
+      "detected_occurrences": 0,
+      "status": "PASS"
+    },
+    "J_RESET_SENSITIVE_CONTROL_BIAS": {
+      "definition": "Post-reset initial action exhibits non-zero steering bias or speed from pre-reset state",
+      "forensic_criteria": "post_reset_speed > 0.05 m/s or abs(stale_steering_bias) > 0.01 immediately following reset",
+      "detected_occurrences": 0,
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "total_failure_modes_monitored": 10,
+    "active_failures_detected": 0,
+    "systemic_reliability_verdict": "VERIFIED_ZERO_CRITICAL_FAILURES"
+  }
+}

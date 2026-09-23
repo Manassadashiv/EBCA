@@ -1,0 +1,58 @@
+{
+  "investigation_id": "P0-01 FORENSIC DISCREPANCY INVESTIGATION",
+  "timestamp": "2026-08-17T23:22:00+05:30",
+  "verdict": "BASELINE VALIDATION CRITERIA FLAWED",
+  "p1_unlocked": false,
+  "runs_analyzed": {
+    "P0_D1_S42_HISTORICAL_TURN_TRAP_300T": {
+      "scenario": "HISTORICAL_TURN_TRAP",
+      "total_ticks": 300,
+      "recovery_start_tick": 278,
+      "recovery_end_tick": null,
+      "is_recovery_active_at_end": true,
+      "total_ticks_in_recovery": 22,
+      "percent_time_in_recovery": 7.33,
+      "recovery_phase_transitions": 2,
+      "displacement_during_recovery_m": 0.1091,
+      "total_net_displacement_m": 0.3237,
+      "min_clearance_m": 0.3483,
+      "max_clearance_during_recovery_m": 0.4284,
+      "final_action": "RECOVERY_FORWARD_BREAKOUT",
+      "final_speed_mps": 0.2611,
+      "final_stuck_state": "STUCK_IDLE",
+      "returned_to_normal_policy": false,
+      "recovery_criteria_satisfied": false,
+      "scorer_flaw": "Premature tick cutoff at 300 ticks while breakout in progress; passed due to absence of failure detector trigger"
+    },
+    "P0_G2_S42_CORRIDOR_NARROW_250T": {
+      "scenario": "CORRIDOR_NARROW",
+      "total_ticks": 250,
+      "recovery_start_tick": 103,
+      "recovery_end_tick": null,
+      "is_recovery_active_at_end": true,
+      "total_ticks_in_recovery": 147,
+      "percent_time_in_recovery": 58.8,
+      "recovery_phase_transitions": 9,
+      "displacement_during_recovery_m": 0.1092,
+      "total_net_displacement_m": 0.3465,
+      "min_clearance_m": 0.2126,
+      "max_clearance_during_recovery_m": 0.3785,
+      "final_action": "RECOVERY_REVERSE_CURVE_RIGHT",
+      "final_speed_mps": 0.0348,
+      "final_stuck_state": "STUCK_CANDIDATE",
+      "returned_to_normal_policy": false,
+      "recovery_criteria_satisfied": false,
+      "scorer_flaw": "Trapped in persistent recovery cycle inside 0.75m corridor; passed because recovery ticks were excluded from limit-cycle detector"
+    }
+  },
+  "scoring_engine_audit": {
+    "source_file": "D:\\ebca\\tools\\p0_independent_scorer.py",
+    "flawed_line": 139,
+    "flawed_code": "is_pass = (len(failures_detected) == 0) and (total_coll == 0)",
+    "identified_bugs": [
+      "No check requiring recovery_active == False at run termination",
+      "No check requiring successful return to normal policy control",
+      "Limit cycle and stall detectors blindly ignored ticks where recovery_active == 1 without bounding maximum allowed recovery duration"
+    ]
+  }
+}

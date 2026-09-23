@@ -1,0 +1,425 @@
+Total small text runs: 424
+Slide 02 (11.0 pt): 2
+Slide 03 (11.0 pt): 3
+Slide 04 (11.0 pt): 4
+Slide 05 (11.0 pt): 5
+Slide 06 (11.0 pt): 6
+Slide 07 (11.0 pt): 7
+Slide 08 (11.0 pt): 8
+Slide 09 (11.0 pt): 9
+Slide 10 (11.0 pt): 10
+Slide 11 (11.0 pt): 11
+Slide 12 (11.0 pt): 12
+Slide 14 (10.0 pt): Two phase execution: Boot & In
+Slide 14 (10.0 pt): 14
+Slide 14 (12.0 pt): PHASE 1: BOOT & INIT
+Slide 14 (12.0 pt): PHASE 2: 30 Hz CONTROL LOOP
+Slide 14 (11.0 pt): 1 Load HAL & XML
+Slide 14 (11.0 pt): (
+Slide 14 (11.0 pt): vessel_kineticxml
+Slide 14 (11.0 pt): )
+Slide 14 (11.0 pt): 2 Allocate Memory
+Slide 14 (11.0 pt): (
+Slide 14 (11.0 pt): S_unified
+Slide 14 (11.0 pt): array)
+Slide 14 (11.0 pt): 3 Load Brain Weights
+Slide 14 (11.0 pt): (LSM, Vision, SNN)
+Slide 14 (11.0 pt): Step A: Sensory Acquisition
+Slide 14 (11.0 pt): (LiDAR & battery)
+Slide 14 (11.0 pt): Step B: Offscreen Camera
+Slide 14 (11.0 pt): Render (Eye stream)
+Slide 14 (11.0 pt): Step C: SSD
+Slide 14 (11.0 pt): 
+Slide 14 (11.0 pt): Lite Vision
+Slide 14 (11.0 pt): Inference
+Slide 14 (11.0 pt): Step D: Coordinate Sensor
+Slide 14 (11.0 pt): Fusion
+Slide 14 (11.0 pt): Step E: Endocrine Update
+Slide 14 (11.0 pt): (DA, NE, 5
+Slide 14 (11.0 pt): 
+Slide 14 (11.0 pt): HT,
+Slide 14 (11.0 pt): ACh
+Slide 14 (11.0 pt): )
+Slide 14 (11.0 pt): Step F: Appetitive
+Slide 14 (11.0 pt): Foraging Drive
+Slide 14 (11.0 pt): Step G: SNN Obstacle
+Slide 14 (11.0 pt): Avoidance
+Slide 14 (11.0 pt): Step H: LSM Reservoir
+Slide 14 (11.0 pt): Step
+Slide 14 (11.0 pt): Step I: Motor Command
+Slide 14 (11.0 pt): Mixing
+Slide 14 (11.0 pt): Step J: Vestibular
+Slide 14 (11.0 pt): Stabilization
+Slide 14 (11.0 pt): Step K: HAL Actuator
+Slide 14 (11.0 pt): Output
+Slide 14 (11.0 pt): RLS Readout Learning (throttle
+Slide 14 (12.0 pt): Closed
+Slide 14 (12.0 pt): 
+Slide 14 (12.0 pt): Loop Feedback Tick Iteration (
+Slide 14 (10.0 pt): COLOR LEGEND
+Slide 14 (10.0 pt): Raw sensory / hardware input
+Slide 14 (10.0 pt): Signal preprocessing & fusion
+Slide 14 (10.0 pt): Endocrine / neuromodulation (g
+Slide 14 (10.0 pt): Cognitive processing (LSM rese
+Slide 14 (10.0 pt): Reflex path (safety
+Slide 14 (10.0 pt): 
+Slide 14 (10.0 pt): critical, can override cogniti
+Slide 14 (10.0 pt): Motor output / actuation
+Slide 14 (10.0 pt): Auxiliary / logging block (RLS
+Slide 15 (13.0 pt): Full pathway view showing 5 HT
+Slide 15 (11.0 pt): 15
+Slide 15 (10.0 pt): Closed
+Slide 15 (10.0 pt): 
+Slide 15 (10.0 pt): Loop State Feedback (Pose, bat
+Slide 15 (10.0 pt): HEAD CAMERA
+Slide 15 (10.0 pt): (SSD
+Slide 15 (10.0 pt): 
+Slide 15 (10.0 pt): Lite Retina)
+Slide 15 (10.0 pt): SENSOR FUSION
+Slide 15 (10.0 pt): (Body
+Slide 15 (10.0 pt): 
+Slide 15 (10.0 pt): Frame Align)
+Slide 15 (10.0 pt): angle_body
+Slide 15 (10.0 pt): =
+Slide 15 (10.0 pt): angle_cam
+Slide 15 (10.0 pt): +
+Slide 15 (10.0 pt): head_pan
+Slide 15 (10.0 pt): APPETITIVE TAXIS
+Slide 15 (10.0 pt): (Food Attraction)
+Slide 15 (10.0 pt): Hunger * Satiety (1/DA)
+Slide 15 (10.0 pt): 12 ULTRASONIC SONARS
+Slide 15 (10.0 pt): (30 deg Physical Cone)
+Slide 15 (10.0 pt): SONAR INTERPOLATOR
+Slide 15 (10.0 pt): (12
+Slide 15 (10.0 pt): 
+Slide 15 (10.0 pt): > 24 channels)
+Slide 15 (10.0 pt): SPIKING SNN REFLEX
+Slide 15 (10.0 pt): (LIF Avoidance Layer)
+Slide 15 (10.0 pt): + Emergency Backup
+Slide 15 (10.0 pt): MOTOR MIXER
+Slide 15 (10.0 pt): Reflex (Aversive)
+Slide 15 (10.0 pt): + Taxis + LSM (Cognitive)
+Slide 15 (10.0 pt): MUJOCO PHYSICS
+Slide 15 (10.0 pt): (
+Slide 15 (10.0 pt): vessel_kineticxml
+Slide 15 (10.0 pt): Simulation Step)
+Slide 15 (10.0 pt): BATTERY MONITOR
+Slide 15 (10.0 pt): (Energy Level [0, 1])
+Slide 15 (10.0 pt): ENDOCRINE SYSTEM
+Slide 15 (10.0 pt): (DA, NE, 5
+Slide 15 (10.0 pt): 
+Slide 15 (10.0 pt): HT,
+Slide 15 (10.0 pt): ACh
+Slide 15 (10.0 pt): Chemical Kinetics)
+Slide 15 (10.0 pt): LSM RESERVOIR
+Slide 15 (10.0 pt): (500 Neurons, sigma=10)
+Slide 15 (10.0 pt): + Online RLS Readouts
+Slide 15 (10.0 pt): Reflex Override
+Slide 15 (10.0 pt): NE Noise Scale
+Slide 15 (10.0 pt): 5
+Slide 15 (10.0 pt): 
+Slide 15 (10.0 pt): HT Precision
+Slide 15 (10.0 pt): DA Gated Satiation
+Slide 15 (10.0 pt): Recurrence (
+Slide 15 (10.0 pt): x_t
+Slide 15 (10.0 pt): 
+Slide 15 (10.0 pt): 
+Slide 15 (10.0 pt): > x_t+1)
+Slide 15 (11.0 pt): COLOR LEGEND
+Slide 15 (10.5 pt): Raw sensory / hardware input
+Slide 15 (10.5 pt): Signal preprocessing & fusion
+Slide 15 (10.5 pt): Endocrine / neuromodulation (g
+Slide 15 (10.5 pt): Cognitive processing (LSM rese
+Slide 15 (10.5 pt): Reflex path (safety
+Slide 15 (10.5 pt): 
+Slide 15 (10.5 pt): critical, can override cogniti
+Slide 15 (10.5 pt): Motor output / actuation
+Slide 15 (10.5 pt): Inactive in this control mode
+Slide 16 (11.0 pt): TARGET / FULL CARL ARCHITECTUR
+Slide 16 (11.0 pt): 16
+Slide 16 (11.0 pt): Closed
+Slide 16 (11.0 pt): 
+Slide 16 (11.0 pt): Loop State Feedback (Pose, bat
+Slide 16 (10.0 pt): HEAD CAMERA
+Slide 16 (10.0 pt): (SSD
+Slide 16 (10.0 pt): 
+Slide 16 (10.0 pt): Lite Retina)
+Slide 16 (10.0 pt): SENSOR FUSION
+Slide 16 (10.0 pt): (Body
+Slide 16 (10.0 pt): 
+Slide 16 (10.0 pt): Frame Align)
+Slide 16 (10.0 pt): angle_body
+Slide 16 (10.0 pt): =
+Slide 16 (10.0 pt): angle_cam
+Slide 16 (10.0 pt): +
+Slide 16 (10.0 pt): head_pan
+Slide 16 (10.0 pt): APPETITIVE TAXIS
+Slide 16 (10.0 pt): (Food Attraction)
+Slide 16 (10.0 pt): Hunger * Satiety (1/DA)
+Slide 16 (10.0 pt): 12 ULTRASONIC SONARS
+Slide 16 (10.0 pt): (30 deg Physical Cone)
+Slide 16 (10.0 pt): SONAR INTERPOLATOR
+Slide 16 (10.0 pt): (12
+Slide 16 (10.0 pt): 
+Slide 16 (10.0 pt): > 24 channels)
+Slide 16 (10.0 pt): SPIKING SNN REFLEX
+Slide 16 (10.0 pt): (LIF Avoidance Layer)
+Slide 16 (10.0 pt): + Emergency Backup
+Slide 16 (10.0 pt): MOTOR MIXER
+Slide 16 (10.0 pt): Reflex (Aversive)
+Slide 16 (10.0 pt): + Taxis + LSM (Cognitive)
+Slide 16 (10.0 pt): MUJOCO PHYSICS
+Slide 16 (10.0 pt): (
+Slide 16 (10.0 pt): vessel_kineticxml
+Slide 16 (10.0 pt): Simulation Step)
+Slide 16 (10.0 pt): BATTERY MONITOR
+Slide 16 (10.0 pt): (Energy Level [0, 1])
+Slide 16 (10.0 pt): ENDOCRINE SYSTEM
+Slide 16 (10.0 pt): (DA, NE, 5
+Slide 16 (10.0 pt): 
+Slide 16 (10.0 pt): HT,
+Slide 16 (10.0 pt): ACh
+Slide 16 (10.0 pt): Chemical Kinetics)
+Slide 16 (10.0 pt): LSM RESERVOIR
+Slide 16 (10.0 pt): (500 Neurons, sigma=10)
+Slide 16 (10.0 pt): + Online RLS Readouts
+Slide 16 (10.0 pt): NE Noise Scale
+Slide 16 (10.0 pt): 5
+Slide 16 (10.0 pt): 
+Slide 16 (10.0 pt): HT Precision
+Slide 16 (10.0 pt): DA Gated Satiation
+Slide 16 (10.0 pt): Recurrence
+Slide 16 (10.0 pt): COLOR LEGEND
+Slide 16 (10.0 pt): Raw sensory / hardware input
+Slide 16 (10.0 pt): Signal preprocessing & fusion
+Slide 16 (10.0 pt): Endocrine / neuromodulation (g
+Slide 16 (10.0 pt): Cognitive processing (LSM rese
+Slide 16 (10.0 pt): Reflex path (safety
+Slide 16 (10.0 pt): 
+Slide 16 (10.0 pt): critical, can override cogniti
+Slide 16 (10.0 pt): Motor output / actuation
+Slide 16 (10.0 pt): Inactive in this control mode
+Slide 17 (15.0 pt): Under an imminent collision/ha
+Slide 17 (11.0 pt): 17
+Slide 17 (10.0 pt): Closed
+Slide 17 (10.0 pt): 
+Slide 17 (10.0 pt): Loop State Feedback (Pose, bat
+Slide 17 (10.0 pt): HEAD CAMERA
+Slide 17 (10.0 pt): (SSD
+Slide 17 (10.0 pt): 
+Slide 17 (10.0 pt): Lite Retina)
+Slide 17 (10.0 pt): SENSOR FUSION
+Slide 17 (10.0 pt): (Body
+Slide 17 (10.0 pt): 
+Slide 17 (10.0 pt): Frame Align)
+Slide 17 (10.0 pt): angle_body
+Slide 17 (10.0 pt): =
+Slide 17 (10.0 pt): angle_cam
+Slide 17 (10.0 pt): +
+Slide 17 (10.0 pt): head_pan
+Slide 17 (10.0 pt): APPETITIVE TAXIS
+Slide 17 (10.0 pt): (Food Attraction)
+Slide 17 (10.0 pt): Hunger * Satiety (1/DA)
+Slide 17 (10.0 pt): 12 ULTRASONIC SONARS
+Slide 17 (10.0 pt): (30 deg Physical Cone)
+Slide 17 (10.0 pt): SONAR INTERPOLATOR
+Slide 17 (10.0 pt): (12
+Slide 17 (10.0 pt): 
+Slide 17 (10.0 pt): > 24 channels)
+Slide 17 (10.0 pt): SPIKING SNN REFLEX
+Slide 17 (10.0 pt): (LIF Avoidance Layer)
+Slide 17 (10.0 pt): + Emergency Backup
+Slide 17 (10.0 pt): MOTOR MIXER
+Slide 17 (10.0 pt): Reflex (Aversive)
+Slide 17 (10.0 pt): + Taxis + LSM (Cognitive)
+Slide 17 (10.0 pt): MUJOCO PHYSICS
+Slide 17 (10.0 pt): (
+Slide 17 (10.0 pt): vessel_kineticxml
+Slide 17 (10.0 pt): Simulation Step)
+Slide 17 (10.0 pt): BATTERY MONITOR
+Slide 17 (10.0 pt): (Energy Level [0, 1])
+Slide 17 (10.0 pt): ENDOCRINE SYSTEM
+Slide 17 (10.0 pt): (DA, NE, 5
+Slide 17 (10.0 pt): 
+Slide 17 (10.0 pt): HT,
+Slide 17 (10.0 pt): ACh
+Slide 17 (10.0 pt): Chemical Kinetics)
+Slide 17 (10.0 pt): LSM RESERVOIR
+Slide 17 (10.0 pt): (500 Neurons, sigma=10)
+Slide 17 (10.0 pt): + Online RLS Readouts
+Slide 17 (10.0 pt): Reflex Override
+Slide 17 (10.0 pt): COLOR LEGEND
+Slide 17 (10.0 pt): Raw sensory / hardware input
+Slide 17 (10.0 pt): Signal preprocessing & fusion
+Slide 17 (10.0 pt): Endocrine / neuromodulation (g
+Slide 17 (10.0 pt): Cognitive processing (LSM rese
+Slide 17 (10.0 pt): Reflex path (safety
+Slide 17 (10.0 pt): 
+Slide 17 (10.0 pt): critical, can override cogniti
+Slide 17 (10.0 pt): Motor output / actuation
+Slide 17 (10.0 pt): Inactive in this control mode
+Slide 18 (15.0 pt): Stage 1 — Sensorimotor Groundi
+Slide 18 (15.0 pt): [COMPLETE & VALIDATED]
+Slide 18 (15.0 pt): Stage 2 — Generative World & S
+Slide 18 (15.0 pt): [COMPLETE & VALIDATED]
+Slide 18 (15.0 pt): Stage 3 — Continuous Action Sy
+Slide 18 (14.0 pt): [CURRENT ACTIVE MILESTONE]
+Slide 18 (15.0 pt): Stage 4 — Autopoietic / Lifelo
+Slide 18 (15.0 pt): Stage 5 — Metacognition & Perm
+Slide 20 (11.0 pt): 20
+Slide 21 (11.0 pt): 21
+Slide 23 (11.0 pt): EMBODIED SENSORIMOTOR GROUNDIN
+Slide 23 (17.0 pt): Dynamical Stability Envelope (
+Slide 23 (17.0 pt): •  Swept linear velocity (0.1–
+Slide 23 (17.0 pt): •  Zero chassis tip over or si
+Slide 23 (17.0 pt): •  Proves robust mechanical gr
+Slide 23 (17.0 pt): MuJoCo
+Slide 23 (17.0 pt): physics engine
+Slide 24 (17.0 pt): Empirical Parameter Discovery 
+Slide 24 (17.0 pt): Unsupervised parameter identif
+Slide 24 (17.0 pt): •  Critical friction boundary 
+Slide 24 (17.0 pt): μ = 0.35
+Slide 24 (17.0 pt): where slip exceeds 40%
+Slide 24 (17.0 pt): •  Validates need for higher o
+Slide 25 (17.0 pt): •  Low Friction Regimes (
+Slide 25 (17.0 pt): μ = 0.05–0.25):
+Slide 25 (17.0 pt): Longitudinal slip
+Slide 25 (17.0 pt): σ
+Slide 25 (17.0 pt): reaches 98.2%, chassis halts
+Slide 25 (17.0 pt): •  High Friction Regimes (
+Slide 25 (17.0 pt): μ = 0.50–1.0):
+Slide 25 (17.0 pt): Traction recovers, slip stabil
+Slide 25 (17.0 pt): •  Proves dead reckoning alone
+Slide 25 (17.0 pt): Friction Gradient Sweep (
+Slide 25 (17.0 pt): μ ∈ [005, 10])
+Slide 27 (17.0 pt): Physical Reality vs Internal C
+Slide 27 (17.0 pt): 
+Slide 27 (17.0 pt): Model
+Slide 27 (17.0 pt): •
+Slide 27 (16.0 pt): Dev Seed 101: Final homing ret
+Slide 27 (16.0 pt): •  Unseen Seed 505: Final retu
+Slide 27 (16.0 pt): •  Demonstrates unprivileged s
+Slide 28 (14.0 pt): •  Topology: 1D Continuous Att
+Slide 28 (14.0 pt): •  Inhibition Kernel: Mexican 
+Slide 28 (14.0 pt): •  Multi Seed Verification (5 
+Slide 28 (14.0 pt): • Seed 101: Mean homing error 
+Slide 28 (14.0 pt): • Seed 202: Mean homing error 
+Slide 28 (14.0 pt): • Seed 303: Mean homing error 
+Slide 28 (14.0 pt): • Seed 404: Mean homing error 
+Slide 28 (14.0 pt): • Seed 505: Mean homing error 
+Slide 28 (14.0 pt): •  Blackout Resilience: Direct
+Slide 28 (14.0 pt): •  Conclusion: Provides valida
+Slide 28 (14.0 pt): Stage 21 Spatial Architecture 
+Slide 28 (14.0 pt): •  Maintains stable unimodal G
+Slide 28 (14.0 pt): •  Angular velocity inputs smo
+Slide 28 (14.0 pt): •  Sustains orientation repres
+Slide 28 (16.0 pt): CANN Ring Attractor Bump Dynam
+Slide 30 (17.0 pt): Causal Action Discrimination M
+Slide 30 (17.0 pt): •  Tests whether different mot
+Slide 30 (17.0 pt): •  All 20 branches exceed the 
+Slide 30 (17.0 pt): .
+Slide 30 (17.0 pt): 30 m)
+Slide 30 (17.0 pt): •  Confirms predictive model i
+Slide 30 (17.0 pt): 
+Slide 30 (17.0 pt): collapsed)
+Slide 30 (14.0 pt): Individual Branch Fidelity (20
+Slide 30 (16.0 pt): •  Evaluates predictive fideli
+Slide 30 (16.0 pt): •  Every single branch exceeds
+Slide 30 (16.0 pt): •  Demonstrates unrolled forwa
+Slide 30 (11.0 pt): 30
+Slide 31 (12.0 pt): Figure 5(a):
+Slide 31 (12.0 pt): Causal Prediction Alignment Be
+Slide 31 (12.0 pt): Figure 5(b):
+Slide 31 (12.0 pt): Asymmetric Evasion: Reactive R
+Slide 31 (16.0 pt): Causal Prediction Calibration 
+Slide 31 (16.0 pt): •
+Slide 31 (16.0 pt): Demonstrates close agreement b
+Slide 31 (16.0 pt): •  97.9% of predictions fall w
+Slide 31 (16.0 pt): •  Confirms mental simulation 
+Slide 31 (16.0 pt): Asymmetric Evasion Showdown: R
+Slide 31 (16.0 pt): •
+Slide 31 (17.0 pt): Deliberative CARL evaluates pr
+Slide 31 (17.0 pt): • The selected trajectory avoi
+Slide 31 (11.0 pt): 31
+Slide 32 (11.0 pt): 32
+Slide 33 (11.0 pt): 33
+Slide 34 (11.0 pt): 34
+Slide 35 (16.0 pt): Figure
+Slide 35 (16.0 pt): 8(a):
+Slide 35 (16.0 pt): Task Family Success Rate Acros
+Slide 35 (16.0 pt): Figure
+Slide 35 (16.0 pt): 8(b)
+Slide 35 (16.0 pt): :
+Slide 35 (16.0 pt): Decision Divergence Under Iden
+Slide 35 (11.0 pt): 35
+Slide 36 (11.0 pt): 36
+Slide 37 (16.0 pt): Figure
+Slide 37 (16.0 pt): 9(a):
+Slide 37 (16.0 pt): Vectorized Latency Distributio
+Slide 37 (16.0 pt): ms
+Slide 37 (16.0 pt): )
+Slide 37 (16.0 pt): Figure
+Slide 37 (16.0 pt): 9(b):
+Slide 37 (16.0 pt): Mean Minimum Hull Clearance Ma
+Slide 37 (11.0 pt): 37
+Slide 38 (11.0 pt): 38
+Slide 39 (11.0 pt): 39
+Slide 41 (14.5 pt): Stage
+Slide 41 (14.5 pt): Architectural Component
+Slide 41 (14.5 pt): Verification Metric
+Slide 41 (14.5 pt): Empirical Finding
+Slide 41 (14.5 pt): Viva Status
+Slide 41 (14.5 pt): Stage 1
+Slide 41 (14.5 pt): MuJoCo 30 Hz Kinematics Twin
+Slide 41 (14.5 pt): Dynamical Stability
+Slide 41 (14.5 pt): Zero tip-over in 150 trials
+Slide 41 (14.5 pt): VALIDATED ✅
+Slide 41 (14.5 pt): Stage 1.1
+Slide 41 (14.5 pt): Traction & Slip Observer
+Slide 41 (14.5 pt): Slip vs Friction
+Slide 41 (14.5 pt): σ reaches 98.2% on ice
+Slide 41 (14.5 pt): VALIDATED ✅
+Slide 41 (14.5 pt): Stage 2A/B
+Slide 41 (14.5 pt): 2,114-Unit CANN Attractor
+Slide 41 (14.5 pt): Homing Drift Gate
+Slide 41 (14.5 pt): Mean drift = 0.062 m
+Slide 41 (14.5 pt): VALIDATED ✅
+Slide 41 (14.5 pt): Stage 2.1
+Slide 41 (14.5 pt): 7-Gate Predictive World Model
+Slide 41 (14.5 pt): Multi-Step Prediction
+Slide 41 (14.5 pt): 7/7 Gates Passed (R²=0.96)
+Slide 41 (14.5 pt): VALIDATED ✅
+Slide 41 (14.5 pt): Stage 2.3
+Slide 41 (14.5 pt): Prospective Trajectory Veto
+Slide 41 (14.5 pt): 40 Challenge Mazes
+Slide 41 (14.5 pt): 40/40 Cleared, 0.0% Coll.
+Slide 41 (14.5 pt): CERTIFIED ✅
+Slide 41 (14.5 pt): Stage 3.0
+Slide 41 (14.5 pt): Decision-Pipeline Hygiene
+Slide 41 (14.5 pt): AST Anti-Cheat Scan
+Slide 41 (14.5 pt): 7/7 Clean (0 Leaks)
+Slide 41 (14.5 pt): VALIDATED ✅
+Slide 41 (14.5 pt): Stage 3.1
+Slide 41 (14.5 pt): 4-Arm CANN Ablation Battery
+Slide 41 (14.5 pt): Action Divergence Δu
+Slide 41 (14.5 pt): Δu = 0.56, p < 10⁻¹⁶
+Slide 41 (14.5 pt): VALIDATED ✅
+Slide 41 (14.5 pt): Stage 3.2
+Slide 41 (14.5 pt): 5 Non-LOS Task Families
+Slide 41 (14.5 pt): Spatial Memory Necessity
+Slide 41 (14.5 pt): Δu = 0.47 Divergence Proven
+Slide 41 (14.5 pt): VALIDATED ✅
+Slide 41 (14.5 pt): Stage 3.3
+Slide 41 (14.5 pt): Continuous MPPI Trajectory
+Slide 41 (14.5 pt): Smoothness & Latency
+Slide 41 (14.5 pt): Δu = 0.060, p95 2.14 ms
+Slide 41 (14.5 pt): VALIDATED
+Slide 41 (14.5 pt): ✅
+Slide 41 (14.5 pt): Stage 3.4
+Slide 41 (14.5 pt): Active Inference Discovery
+Slide 41 (14.5 pt): 200-Episode Battery
+Slide 41 (14.5 pt): 100% Env 1, Heading -59%
+Slide 41 (14.5 pt): ACTIVE ⏳
+Slide 43 (11.0 pt): 43
+Slide 44 (11.0 pt): 44
+Slide 45 (11.0 pt): 45

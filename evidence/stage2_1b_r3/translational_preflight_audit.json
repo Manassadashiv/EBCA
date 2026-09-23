@@ -1,0 +1,70 @@
+{
+  "verified_distinct": true,
+  "seed_count": 8,
+  "profiles": {
+    "42": {
+      "seed": 42,
+      "partition": "DEV",
+      "pos_x": -0.01506,
+      "pos_y": 0.05408,
+      "yaw_deg": 20.88,
+      "hash": "d68b363bdbc94125"
+    },
+    "101": {
+      "seed": 101,
+      "partition": "DEV",
+      "pos_x": 0.00197,
+      "pos_y": 0.00848,
+      "yaw_deg": -42.44,
+      "hash": "a78f6fa08622b93d"
+    },
+    "202": {
+      "seed": 202,
+      "partition": "DEV",
+      "pos_x": -0.0331,
+      "pos_y": -0.02832,
+      "yaw_deg": 42.96,
+      "hash": "944c62589b31a376"
+    },
+    "303": {
+      "seed": 303,
+      "partition": "UNSEEN",
+      "pos_x": 0.03001,
+      "pos_y": -0.02628,
+      "yaw_deg": 4.57,
+      "hash": "2e29441eb5bbc985"
+    },
+    "404": {
+      "seed": 404,
+      "partition": "UNSEEN",
+      "pos_x": 0.02026,
+      "pos_y": -0.01792,
+      "yaw_deg": 35.38,
+      "hash": "90cd8e074e225259"
+    },
+    "505": {
+      "seed": 505,
+      "partition": "UNSEEN",
+      "pos_x": 0.04207,
+      "pos_y": -0.02489,
+      "yaw_deg": -24.92,
+      "hash": "8d97a51f7fbd558b"
+    },
+    "606": {
+      "seed": 606,
+      "partition": "UNSEEN",
+      "pos_x": -0.0314,
+      "pos_y": 0.03222,
+      "yaw_deg": 5.57,
+      "hash": "76922486ab4c3b69"
+    },
+    "707": {
+      "seed": 707,
+      "partition": "UNSEEN",
+      "pos_x": -0.03454,
+      "pos_y": -0.0116,
+      "yaw_deg": -31.1,
+      "hash": "22eea30fc60a5e9b"
+    }
+  }
+}

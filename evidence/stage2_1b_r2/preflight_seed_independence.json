@@ -1,0 +1,237 @@
+{
+  "metadata": {
+    "timestamp": "2026-09-04 16:50:53 UTC",
+    "stage": "Stage 2.1B-R.2",
+    "phase": "Phase 0: Preflight Stochastic Independence",
+    "unseen_test_seeds": [
+      303,
+      404,
+      505,
+      606,
+      707
+    ]
+  },
+  "preflight_records": [
+    {
+      "seed": 303,
+      "target_jitter": {
+        "x_m": 0.03,
+        "y_m": -0.0263,
+        "yaw_deg": 4.57
+      },
+      "carl_actual_pose": {
+        "pos_x": 0.03,
+        "pos_y": -0.0263,
+        "pos_z": 0.0529,
+        "yaw_deg": 4.57,
+        "carl_qpos_slice": [
+          0.03001,
+          -0.02628,
+          0.05292,
+          0.9992,
+          -0.0,
+          4e-05,
+          0.03988
+        ]
+      },
+      "background_toy_cube_qpos": [
+        2.0,
+        1.2,
+        0.03945,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0
+      ],
+      "motor_trajectory": {
+        "base_L": 0.13,
+        "base_R": -0.0688,
+        "expected_delta_u": -0.1988,
+        "trajectory_hash": "e1d67e2e84098ad7"
+      },
+      "neural_initialization": {
+        "decoded_heading_deg": 5.5,
+        "bump_amplitude": 4.7703,
+        "firing_rate_hash": "bb6093f865035398"
+      },
+      "sensor_noise_norm": 0.04205
+    },
+    {
+      "seed": 404,
+      "target_jitter": {
+        "x_m": 0.0203,
+        "y_m": -0.0179,
+        "yaw_deg": 35.38
+      },
+      "carl_actual_pose": {
+        "pos_x": 0.0203,
+        "pos_y": -0.0179,
+        "pos_z": 0.0529,
+        "yaw_deg": 35.38,
+        "carl_qpos_slice": [
+          0.02026,
+          -0.01792,
+          0.05292,
+          0.95272,
+          -1e-05,
+          4e-05,
+          0.30386
+        ]
+      },
+      "background_toy_cube_qpos": [
+        2.0,
+        1.2,
+        0.03945,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0
+      ],
+      "motor_trajectory": {
+        "base_L": 0.1268,
+        "base_R": -0.066,
+        "expected_delta_u": -0.1927,
+        "trajectory_hash": "28800046ba22c9d4"
+      },
+      "neural_initialization": {
+        "decoded_heading_deg": 33.74,
+        "bump_amplitude": 4.7703,
+        "firing_rate_hash": "85564d8faa2a5e82"
+      },
+      "sensor_noise_norm": 0.03389
+    },
+    {
+      "seed": 505,
+      "target_jitter": {
+        "x_m": 0.0421,
+        "y_m": -0.0249,
+        "yaw_deg": -24.92
+      },
+      "carl_actual_pose": {
+        "pos_x": 0.0421,
+        "pos_y": -0.0249,
+        "pos_z": 0.0529,
+        "yaw_deg": -24.92,
+        "carl_qpos_slice": [
+          0.04207,
+          -0.02489,
+          0.05292,
+          0.97644,
+          1e-05,
+          4e-05,
+          -0.21578
+        ]
+      },
+      "background_toy_cube_qpos": [
+        2.0,
+        1.2,
+        0.03945,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0
+      ],
+      "motor_trajectory": {
+        "base_L": 0.134,
+        "base_R": -0.0683,
+        "expected_delta_u": -0.2023,
+        "trajectory_hash": "21c2b6ccdff66af9"
+      },
+      "neural_initialization": {
+        "decoded_heading_deg": -22.62,
+        "bump_amplitude": 4.7703,
+        "firing_rate_hash": "65fbeb71aefc7abb"
+      },
+      "sensor_noise_norm": 0.04565
+    },
+    {
+      "seed": 606,
+      "target_jitter": {
+        "x_m": -0.0314,
+        "y_m": 0.0322,
+        "yaw_deg": 5.57
+      },
+      "carl_actual_pose": {
+        "pos_x": -0.0314,
+        "pos_y": 0.0322,
+        "pos_z": 0.0529,
+        "yaw_deg": 5.57,
+        "carl_qpos_slice": [
+          -0.0314,
+          0.03222,
+          0.05292,
+          0.99882,
+          -0.0,
+          4e-05,
+          0.0486
+        ]
+      },
+      "background_toy_cube_qpos": [
+        2.0,
+        1.2,
+        0.03945,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0
+      ],
+      "motor_trajectory": {
+        "base_L": 0.1095,
+        "base_R": -0.0493,
+        "expected_delta_u": -0.1588,
+        "trajectory_hash": "bafb5ee245db18ef"
+      },
+      "neural_initialization": {
+        "decoded_heading_deg": 5.68,
+        "bump_amplitude": 4.7703,
+        "firing_rate_hash": "e988f45b2db7736d"
+      },
+      "sensor_noise_norm": 0.04248
+    },
+    {
+      "seed": 707,
+      "target_jitter": {
+        "x_m": -0.0345,
+        "y_m": -0.0116,
+        "yaw_deg": -31.1
+      },
+      "carl_actual_pose": {
+        "pos_x": -0.0345,
+        "pos_y": -0.0116,
+        "pos_z": 0.0529,
+        "yaw_deg": -31.1,
+        "carl_qpos_slice": [
+          -0.03454,
+          -0.0116,
+          0.05292,
+          0.9634,
+          1e-05,
+          4e-05,
+          -0.26807
+        ]
+      },
+      "background_toy_cube_qpos": [
+        2.0,
+        1.2,
+        0.03945,
+        1.0,
+        -0.0,
+        -0.0,
+        0.0
+      ],
+      "motor_trajectory": {
+        "base_L": 0.1085,
+        "base_R": -0.0639,
+        "expected_delta_u": -0.1724,
+        "trajectory_hash": "0e08a73587ce56f4"
+      },
+      "neural_initialization": {
+        "decoded_heading_deg": -33.72,
+        "bump_amplitude": 4.7703,
+        "firing_rate_hash": "dd7167d57a6ea7d5"
+      },
+      "sensor_noise_norm": 0.03904
+    }
+  ],
+  "stochastic_independence_status": "VERIFIED_PASS"
+}

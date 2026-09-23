@@ -1,0 +1,33 @@
+{
+  "config_id": 10,
+  "seed": 5003,
+  "tick": 165,
+  "robot_world_pose": [
+    -0.03709650541976461,
+    0.011747140213221543,
+    -71.83756982324803
+  ],
+  "robot_odom_pose": [
+    0.31263225665881206,
+    0.019359629832148707,
+    -71.20299561175356
+  ],
+  "odometry_drift_m": 0.34981160218496465,
+  "total_candidates": 128,
+  "confusion_matrix_all": {
+    "true_positives": 0,
+    "false_positives": 0,
+    "false_negatives": 13,
+    "true_negatives": 115
+  },
+  "confusion_matrix_corridor_entering": {
+    "total_corridor_entering": 128,
+    "true_positives": 0,
+    "false_positives": 0,
+    "false_negatives": 13,
+    "true_negatives": 115
+  },
+  "bottleneck_classification": "C",
+  "bottleneck_description": "(C) ACTION SAMPLING / DYNAMICS MISMATCH: No feasible corridor-entering candidates exist in candidate ensemble.",
+  "sample_false_positives": []
+}

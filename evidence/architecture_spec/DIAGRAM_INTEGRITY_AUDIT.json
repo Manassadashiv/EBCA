@@ -1,0 +1,175 @@
+{
+  "project": "CARL-DX / GENESIS Embodied Organism",
+  "audit_reference": "DIAGRAM_INTEGRITY_AUDIT",
+  "canonical_spec_reference": "D:\\ebca\\CARL_CONTROL_COGNITIVE_SPEC.md",
+  "audit_timestamp": "2026-08-17T22:26:00+05:30",
+  "summary": {
+    "total_diagrams": 18,
+    "total_claims_audited": 68,
+    "supported_claims": 52,
+    "corrected_claims": 7,
+    "future_roadmap_claims": 5,
+    "theoretical_estimated_claims": 4,
+    "contradictory_claims": 0
+  },
+  "diagram_audits": [
+    {
+      "diagram_number": "01",
+      "filename": "01_master_system_architecture.png",
+      "spec_section": "Section 1 & 2",
+      "status": "SOURCE VERIFIED",
+      "claims_audited": 5,
+      "corrections": []
+    },
+    {
+      "diagram_number": "02",
+      "filename": "02_cognitive_tick.png",
+      "spec_section": "Section 2 & 23",
+      "status": "CORRECTED & LABELED",
+      "claims_audited": 4,
+      "corrections": [
+        "Relabeled Orange Pi 5 performance from guarantee to [THEORETICAL ESTIMATE / UNVERIFIED ON PHYSICAL HARDWARE]"
+      ]
+    },
+    {
+      "diagram_number": "03",
+      "filename": "03_command_hierarchy.png",
+      "spec_section": "Section 5",
+      "status": "SOURCE VERIFIED",
+      "claims_audited": 4,
+      "corrections": []
+    },
+    {
+      "diagram_number": "04",
+      "filename": "04_goal_arbitration.png",
+      "spec_section": "Section 6",
+      "status": "SOURCE VERIFIED",
+      "claims_audited": 4,
+      "corrections": []
+    },
+    {
+      "diagram_number": "05",
+      "filename": "05_action_selection_policy.png",
+      "spec_section": "Section 7 & 8",
+      "status": "SOURCE VERIFIED",
+      "claims_audited": 4,
+      "corrections": []
+    },
+    {
+      "diagram_number": "06",
+      "filename": "06_reward_penalty_map.png",
+      "spec_section": "Section 9",
+      "status": "CORRECTED & LABELED",
+      "claims_audited": 4,
+      "corrections": [
+        "Removed -beta*H(S'|a) from active EFE; replaced with Open Space Clearance Bonus; noted empowerment EFE coupling as Roadmap P1"
+      ]
+    },
+    {
+      "diagram_number": "07",
+      "filename": "07_safety_veto.png",
+      "spec_section": "Section 10",
+      "status": "SOURCE VERIFIED",
+      "claims_audited": 4,
+      "corrections": []
+    },
+    {
+      "diagram_number": "08",
+      "filename": "08_stuck_recovery_state_machine.png",
+      "spec_section": "Section 11",
+      "status": "SOURCE VERIFIED",
+      "claims_audited": 4,
+      "corrections": []
+    },
+    {
+      "diagram_number": "09",
+      "filename": "09_memory_flow.png",
+      "spec_section": "Section 12",
+      "status": "SOURCE VERIFIED & CAUSALLY SUPPORTED",
+      "claims_audited": 4,
+      "corrections": []
+    },
+    {
+      "diagram_number": "10",
+      "filename": "10_self_model_adaptation.png",
+      "spec_section": "Section 13",
+      "status": "CORRECTED & LABELED",
+      "claims_audited": 4,
+      "corrections": [
+        "Relabeled Emergent Phenotype to Behavioral Consequence of Online Adaptation [ADAPTATION DEMONSTRATED / EMERGENCE CANDIDATE]"
+      ]
+    },
+    {
+      "diagram_number": "11",
+      "filename": "11_curiosity_active_sensing.png",
+      "spec_section": "Section 14",
+      "status": "CORRECTED & LABELED",
+      "claims_audited": 4,
+      "corrections": [
+        "Distinguished observed active head panning [OBSERVED] from theoretical entropy reduction [THEORETICAL METRIC]"
+      ]
+    },
+    {
+      "diagram_number": "12",
+      "filename": "12_reset_lifecycle.png",
+      "spec_section": "Section 17",
+      "status": "SOURCE VERIFIED",
+      "claims_audited": 4,
+      "corrections": []
+    },
+    {
+      "diagram_number": "13",
+      "filename": "13_data_flow.png",
+      "spec_section": "Section 22",
+      "status": "SOURCE VERIFIED",
+      "claims_audited": 4,
+      "corrections": []
+    },
+    {
+      "diagram_number": "14",
+      "filename": "14_realtime_timing.png",
+      "spec_section": "Section 23",
+      "status": "BENCHMARKED",
+      "claims_audited": 4,
+      "corrections": []
+    },
+    {
+      "diagram_number": "15",
+      "filename": "15_failure_mode_tree.png",
+      "spec_section": "Section 18",
+      "status": "CORRECTED & LABELED",
+      "claims_audited": 3,
+      "corrections": [
+        "Explicitly labeled as Primary Subset: 5 of 12 Forensic Failures with cross-reference to FAIL-06 through FAIL-12 in Spec"
+      ]
+    },
+    {
+      "diagram_number": "16",
+      "filename": "16_emergence_boundary.png",
+      "spec_section": "Section 24 & 25",
+      "status": "SCIENTIFIC STANDARD",
+      "claims_audited": 4,
+      "corrections": []
+    },
+    {
+      "diagram_number": "17",
+      "filename": "17_multi_carl_future_architecture.png",
+      "spec_section": "Section 11 (Master)",
+      "status": "FUTURE / ROADMAP",
+      "claims_audited": 4,
+      "corrections": [
+        "Prominently watermarked and tagged every component as [FUTURE / ROADMAP - NOT YET IMPLEMENTED]"
+      ]
+    },
+    {
+      "diagram_number": "Composite",
+      "filename": "CARL_MASTER_ARCHITECTURE_OVERVIEW.png",
+      "spec_section": "Master Synthesis",
+      "status": "SYNTHESIS & VERIFIED",
+      "claims_audited": 6,
+      "corrections": [
+        "Synchronized all audited status tags across master composite"
+      ]
+    }
+  ]
+}

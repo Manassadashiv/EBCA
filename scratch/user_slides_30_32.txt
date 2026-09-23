@@ -1,0 +1,70 @@
+=== SLIDE 30 ===
+--- TEXT FRAME ---
+PREDICTIVE WORLD MODEL EVIDENCE
+STAGE 2.2 ACTION BRANCHING AND FUTURE PREDICTION
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+31
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+Causal Action Discrimination Margin (20/20 PASS)
+•  Tests whether different motor actions produce statistically distinct mental rollouts
+•  All 20 branches exceed the causal discrimination margin threshold (Δ ≥ +0.30 m)
+•  Confirms predictive model is causally sensitive to steering interventions (not mode collapsed)
+--- TEXT FRAME ---
+Figure 4: Individual Counterfactual Branch Fidelity (20/20 Pass)
+--- TEXT FRAME ---
+Individual Branch Fidelity (20/20 Branches PASS)
+--- TEXT FRAME ---
+•  Evaluates predictive fidelity across 20 distinct counterfactual action rollouts
+•  Every single branch exceeds the strict R² ≥ 0.50 threshold (mean R² = 0.772)
+•  Demonstrates unrolled forward dynamics closely track actual physical reality
+--- TEXT FRAME ---
+30
+=== SLIDE 31 ===
+--- TEXT FRAME ---
+ACTION DELIBERATION MVE BENCHMARK
+STAGE 2.3: ACTION SELECTION AND OBSTACLE AVOIDANCE
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+28
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+
+
+--- TEXT FRAME ---
+Figure 5(a): Causal Prediction Alignment Between Measured and Prospective Sonar
+--- TEXT FRAME ---
+Figure 5(b): Asymmetric Evasion: Reactive Reflex versus Prospective Deliberation
+--- TEXT FRAME ---
+Causal Prediction Calibration (97.9% Within Band)
+--- TEXT FRAME ---
+• Demonstrates close agreement between prospective sensory predictions and subsequent physical observations within the defined acceptance band 
+•  97.9% of predictions fall within the tight ±0.25 m physical acceptance window
+•  Confirms mental simulation does not suffer from compounding hallucinatory drift
+--- TEXT FRAME ---
+Asymmetric Evasion Showdown: Reflex vs Deliberation
+--- TEXT FRAME ---
+• Deliberative CARL evaluates prospective outcomes before action execution• The selected trajectory avoids the dead end corner, while the scripted reflex enters the blocked direction
+--- TEXT FRAME ---
+31
+=== SLIDE 32 ===
+--- TEXT FRAME ---
+STAGE 3 : CONTINUOUS ACTION SYNTHESIS & BEHAVIORAL DISCOVERY
+Autonomous Deliberation, Continuous Trajectory Optimization & Active Inference
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+Core Technical Capabilities Constructed in Stage 3:
+•  CANN Causal Verification (Stage 3.1): 4-arm ablation battery proving 2,114-unit network causally drives actions.
+•  Trajectory Fidelity (Stage 3.2): Air-gapped world model rollouts validated against MuJoCo physics steps (≤ 0.08 m error).
+•  Memory Necessity (Stage 3.2): Proven strictly necessary across 5 non-line-of-sight task families (Δu = 0.47 divergence).
+•  Continuous MPPI (Stage 3.3): 128 candidates evaluated across 15-step horizon at 30 Hz (Mean 1.36 ms latency).
+•  Active Inference (Stage 3.4): Expected Free Energy (Pragmatic + Epistemic) driving autonomous behavioral discovery.
+•  Scientific Integrity: Zero-tolerance governance, permanent fail-closed records, and unprivileged forensic remediation.
+--- TEXT FRAME ---
+32

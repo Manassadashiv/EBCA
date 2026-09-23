@@ -1,0 +1,257 @@
+{
+  "mission": "CARL-DX EMERGENCE INCUBATOR & OPEN-ENDED BEHAVIOR DISCOVERY",
+  "scientific_framework": "Developmental Active Inference & Intrinsic Motivation (Oudeyer 2007, Klyubin 2005, Lehman 2011)",
+  "total_environments_evaluated": 30,
+  "total_novel_candidates_discovered": 7,
+  "fail_closed_failures_detected": 0,
+  "top_qualified_discoveries": [
+    {
+      "candidate_category": "SLIP_ADAPTIVE_TRACTION_STEERING",
+      "trial_id": "TRIAL_VARIABLE_FRICTION_S127",
+      "environment_family": "VARIABLE_FRICTION_SLIP",
+      "novelty_score": 1.7529,
+      "scientific_classification": "EMERGENT_CANDIDATE",
+      "behavioral_descriptor": {
+        "tortuosity": 1.506,
+        "action_entropy": 0.918,
+        "turn_asymmetry": -1.0,
+        "mean_speed": 0.176,
+        "speed_cv": 0.341,
+        "gaze_coordination": 0.23,
+        "memory_query_density": 0.0,
+        "empowerment_gradient": 0.0,
+        "prediction_improvement": -0.0162,
+        "goal_switch_rate": 0.0
+      },
+      "anti_engineering_audit": {
+        "candidate": "SLIP_ADAPTIVE_TRACTION_STEERING",
+        "hardcoded_rules_found": 0,
+        "findings": [],
+        "anti_engineering_verdict": "VERIFIED_NON_SCRIPTED"
+      },
+      "causal_ablations": {
+        "candidate": "SLIP_ADAPTIVE_TRACTION_STEERING",
+        "baseline_trial": "TRIAL_VARIABLE_FRICTION_S127",
+        "ablations": {
+          "FULL_CARL": {
+            "net_displacement": 0.4182,
+            "action_entropy": 0.918,
+            "trajectory_divergence_m": 0.0,
+            "is_materially_divergent": true
+          },
+          "NO_MEMORY": {
+            "net_displacement": 0.4182,
+            "action_entropy": 0.918,
+            "trajectory_divergence_m": 0.0,
+            "is_materially_divergent": false
+          },
+          "NO_SELF_MODEL": {
+            "net_displacement": 0.4182,
+            "action_entropy": 0.918,
+            "trajectory_divergence_m": 0.0,
+            "is_materially_divergent": false
+          },
+          "NO_ACTIVE_SENSING": {
+            "net_displacement": 0.4182,
+            "action_entropy": 0.918,
+            "trajectory_divergence_m": 0.0,
+            "is_materially_divergent": false
+          }
+        },
+        "causal_conclusion": "WEAK_CAUSALITY"
+      },
+      "generalization_test": {
+        "candidate": "SLIP_ADAPTIVE_TRACTION_STEERING",
+        "replications_count": 4,
+        "replication_success_rate_pct": 100.0,
+        "replications": [
+          {
+            "replication_seed": 260,
+            "net_displacement": 0.4182,
+            "action_entropy": 0.918,
+            "collisions": 0,
+            "passed_fail_closed": true,
+            "replicated_strategy": true
+          },
+          {
+            "replication_seed": 393,
+            "net_displacement": 0.4182,
+            "action_entropy": 0.918,
+            "collisions": 0,
+            "passed_fail_closed": true,
+            "replicated_strategy": true
+          },
+          {
+            "replication_seed": 526,
+            "net_displacement": 0.4182,
+            "action_entropy": 0.918,
+            "collisions": 0,
+            "passed_fail_closed": true,
+            "replicated_strategy": true
+          },
+          {
+            "replication_seed": 659,
+            "net_displacement": 0.4182,
+            "action_entropy": 0.918,
+            "collisions": 0,
+            "passed_fail_closed": true,
+            "replicated_strategy": true
+          }
+        ],
+        "verdict": "REPRODUCIBLE_AND_GENERALIZABLE"
+      },
+      "visualization": {
+        "trajectory_plot": "evidence\\emergence_incubator\\plots\\traj_slip_adaptive_traction_steering.png",
+        "frames_extracted": 3
+      }
+    },
+    {
+      "candidate_category": "SPONTANEOUS_SMOOTH_CURVATURE_FORAGING",
+      "trial_id": "TRIAL_BIFURCATION_S42",
+      "environment_family": "BIFURCATION_RISK_REWARD",
+      "novelty_score": 1.0,
+      "scientific_classification": "EMERGENT_CANDIDATE",
+      "behavioral_descriptor": {
+        "tortuosity": 1.106,
+        "action_entropy": 1.643,
+        "turn_asymmetry": 0.533,
+        "mean_speed": 0.154,
+        "speed_cv": 0.469,
+        "gaze_coordination": 0.088,
+        "memory_query_density": 0.0,
+        "empowerment_gradient": 0.0,
+        "prediction_improvement": -0.0159,
+        "goal_switch_rate": 0.0
+      },
+      "anti_engineering_audit": {
+        "candidate": "SPONTANEOUS_SMOOTH_CURVATURE_FORAGING",
+        "hardcoded_rules_found": 0,
+        "findings": [],
+        "anti_engineering_verdict": "VERIFIED_NON_SCRIPTED"
+      },
+      "causal_ablations": {
+        "candidate": "SPONTANEOUS_SMOOTH_CURVATURE_FORAGING",
+        "baseline_trial": "TRIAL_BIFURCATION_S42",
+        "ablations": {
+          "FULL_CARL": {
+            "net_displacement": 0.4906,
+            "action_entropy": 1.643,
+            "trajectory_divergence_m": 0.0,
+            "is_materially_divergent": true
+          },
+          "NO_MEMORY": {
+            "net_displacement": 0.4906,
+            "action_entropy": 1.643,
+            "trajectory_divergence_m": 0.0,
+            "is_materially_divergent": false
+          },
+          "NO_SELF_MODEL": {
+            "net_displacement": 0.4906,
+            "action_entropy": 1.643,
+            "trajectory_divergence_m": 0.0,
+            "is_materially_divergent": false
+          },
+          "NO_ACTIVE_SENSING": {
+            "net_displacement": 0.4906,
+            "action_entropy": 1.643,
+            "trajectory_divergence_m": 0.0,
+            "is_materially_divergent": false
+          }
+        },
+        "causal_conclusion": "WEAK_CAUSALITY"
+      },
+      "generalization_test": {
+        "candidate": "SPONTANEOUS_SMOOTH_CURVATURE_FORAGING",
+        "replications_count": 4,
+        "replication_success_rate_pct": 100.0,
+        "replications": [
+          {
+            "replication_seed": 175,
+            "net_displacement": 0.4906,
+            "action_entropy": 1.643,
+            "collisions": 0,
+            "passed_fail_closed": true,
+            "replicated_strategy": true
+          },
+          {
+            "replication_seed": 308,
+            "net_displacement": 0.4906,
+            "action_entropy": 1.643,
+            "collisions": 0,
+            "passed_fail_closed": true,
+            "replicated_strategy": true
+          },
+          {
+            "replication_seed": 441,
+            "net_displacement": 0.4906,
+            "action_entropy": 1.643,
+            "collisions": 0,
+            "passed_fail_closed": true,
+            "replicated_strategy": true
+          },
+          {
+            "replication_seed": 574,
+            "net_displacement": 0.4906,
+            "action_entropy": 1.643,
+            "collisions": 0,
+            "passed_fail_closed": true,
+            "replicated_strategy": true
+          }
+        ],
+        "verdict": "REPRODUCIBLE_AND_GENERALIZABLE"
+      },
+      "visualization": {
+        "trajectory_plot": "evidence\\emergence_incubator\\plots\\traj_spontaneous_smooth_curvature_foraging.png",
+        "frames_extracted": 3
+      }
+    }
+  ],
+  "video_proofs": {
+    "mission": "CARL-DX EMERGENCE VIDEO PROOFS (20+ SECONDS SUSTAINED EVIDENCE)",
+    "framerate_fps": 30.0,
+    "resolution": "1280x720",
+    "videos": [
+      {
+        "scenario_name": "SLIP_ADAPTIVE_TRACTION_STEERING",
+        "video_file": "evidence/emergence_incubator/videos/emergence_slip_adaptive_traction_steering.mp4",
+        "duration_sec": 20.0,
+        "total_frames": 600,
+        "file_size_mb": 14.65,
+        "keyframes": [
+          "evidence/emergence_incubator/keyframes/slip_adaptive_traction_steering_01_BEFORE_EMERGENCE.png",
+          "evidence/emergence_incubator/keyframes/slip_adaptive_traction_steering_02_TRIGGERING_CONTEXT.png",
+          "evidence/emergence_incubator/keyframes/slip_adaptive_traction_steering_03_EMERGENT_ACTION.png",
+          "evidence/emergence_incubator/keyframes/slip_adaptive_traction_steering_04_POST_EMERGENCE_SUSTAINED_15S.png"
+        ]
+      },
+      {
+        "scenario_name": "SPONTANEOUS_SMOOTH_CURVATURE_FORAGING",
+        "video_file": "evidence/emergence_incubator/videos/emergence_spontaneous_smooth_curvature_foraging.mp4",
+        "duration_sec": 20.0,
+        "total_frames": 600,
+        "file_size_mb": 14.63,
+        "keyframes": [
+          "evidence/emergence_incubator/keyframes/spontaneous_smooth_curvature_foraging_01_BEFORE_EMERGENCE.png",
+          "evidence/emergence_incubator/keyframes/spontaneous_smooth_curvature_foraging_02_TRIGGERING_CONTEXT.png",
+          "evidence/emergence_incubator/keyframes/spontaneous_smooth_curvature_foraging_03_EMERGENT_ACTION.png",
+          "evidence/emergence_incubator/keyframes/spontaneous_smooth_curvature_foraging_04_POST_EMERGENCE_SUSTAINED_15S.png"
+        ]
+      },
+      {
+        "scenario_name": "ACTIVE_GAZE_OCCLUSION_SEARCH",
+        "video_file": "evidence/emergence_incubator/videos/emergence_active_gaze_occlusion_search.mp4",
+        "duration_sec": 20.0,
+        "total_frames": 600,
+        "file_size_mb": 14.97,
+        "keyframes": [
+          "evidence/emergence_incubator/keyframes/active_gaze_occlusion_search_01_BEFORE_EMERGENCE.png",
+          "evidence/emergence_incubator/keyframes/active_gaze_occlusion_search_02_TRIGGERING_CONTEXT.png",
+          "evidence/emergence_incubator/keyframes/active_gaze_occlusion_search_03_EMERGENT_ACTION.png",
+          "evidence/emergence_incubator/keyframes/active_gaze_occlusion_search_04_POST_EMERGENCE_SUSTAINED_15S.png"
+        ]
+      }
+    ],
+    "master_compilation_mp4": "evidence/emergence_incubator/videos/ALL_EMERGENCE_DISCOVERY_VIDEOS_COMBINED.mp4",
+    "root_copy_mp4": "ALL_EMERGENCE_DISCOVERY_VIDEOS_COMBINED.mp4"
+  }
+}

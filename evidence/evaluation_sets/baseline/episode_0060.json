@@ -1,0 +1,10 @@
+{
+  "episode_id": "baseline_0060",
+  "seed": 1061,
+  "goal_pos": [
+    2.826,
+    0.704
+  ],
+  "friction": 0.92,
+  "max_ticks": 150
+}

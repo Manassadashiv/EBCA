@@ -1,0 +1,73 @@
+{
+  "benchmark_mission": "P0-01 FROZEN BASELINE REGRESSION & BREAK-TEST",
+  "baseline_version": "CARL-DX 1.1.0-FROZEN-BASELINE",
+  "repository_path": "D:\\ebca",
+  "timestamp": "2026-08-18T08:59:20+05:30",
+  "mujoco_version": "3.9.0",
+  "control_frequency_hz": 30.0,
+  "cognitive_timestep_s": 0.0333,
+  "physics_timestep_s": 0.01,
+  "physics_substeps_per_tick": 3,
+  "active_action_set_size": 14,
+  "active_recovery_system": "3-Tier Escalating CarlRecoveryManager (Reverse -> Spin -> Breakout)",
+  "active_memory_system": "2048-D HDC Associative Matrix M with Offline Consolidation",
+  "official_seeds": [
+    42,
+    101,
+    2024,
+    31415,
+    8675309
+  ],
+  "source_manifest": {
+    "brain/carl_autonomous_agent.py": {
+      "sha256": "70298654927942eb1e7a962989cba7bd8a41a5f416f6b83920e832c853f7dcdc",
+      "size_bytes": 15093,
+      "modified_time": "2026-08-18T01:02:50"
+    },
+    "brain/carl_embodied_organism.py": {
+      "sha256": "ba9609857946555d0a397e776cc8d84dc24f71034469f6bd0c84185629838cab",
+      "size_bytes": 22155,
+      "modified_time": "2026-08-17T13:52:57"
+    },
+    "brain/carl_generative_self_model.py": {
+      "sha256": "d1c376cce9c55ffa60d66be111eee879a2a4cc2f049ac0a6b6c15b1bd747b7bf",
+      "size_bytes": 17014,
+      "modified_time": "2026-08-18T08:58:51"
+    },
+    "brain/carl_endogenous_agency.py": {
+      "sha256": "df8a5eb164ac47286f1e34814c297488440b8448f40d46fe1ea377a6e14751b8",
+      "size_bytes": 11946,
+      "modified_time": "2026-08-18T08:49:47"
+    },
+    "brain/carl_homeostatic_core.py": {
+      "sha256": "c199a83eb81b8758a08399c0981c5c300921c6d26308daf8575fa7ced1ccf2ce",
+      "size_bytes": 7642,
+      "modified_time": "2026-08-16T21:58:09"
+    },
+    "brain/carl_episodic_memory.py": {
+      "sha256": "7dfae138336d4888ad068889201000cbb4546a0977de6e243bd3dcffc18c967f",
+      "size_bytes": 8169,
+      "modified_time": "2026-08-17T12:25:59"
+    },
+    "brain/carl_empowerment.py": {
+      "sha256": "88dcac9219b432573380778d42958199e9562a234c59f99315742df6d55c61b6",
+      "size_bytes": 5709,
+      "modified_time": "2026-08-17T12:20:50"
+    },
+    "brain/carl_stuck_recovery.py": {
+      "sha256": "45fdea9b752b5827072ba34f95b9e20cef9e7f47c6b1edea005b6a87091efd96",
+      "size_bytes": 13742,
+      "modified_time": "2026-08-18T01:02:44"
+    },
+    "brain/carl_expressive_visor.py": {
+      "sha256": "ac46130f5cba2d87b0da22dddba6e7cfe8f7d72b6c142a2a6b8ce545a95bf307",
+      "size_bytes": 2033,
+      "modified_time": "2026-08-16T13:45:55"
+    },
+    "brain/carl_reflex_laboratory.py": {
+      "sha256": "69414d809c75a4806d0ac8eeebe04859e8c81c4851659859732dc69c86339125",
+      "size_bytes": 18296,
+      "modified_time": "2026-08-17T12:23:02"
+    }
+  }
+}

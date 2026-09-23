@@ -1,0 +1,3045 @@
+{
+  "subgate": "3.2A",
+  "title": "Counterfactual Trajectory Rollout Fidelity",
+  "total_rollouts_evaluated": 120,
+  "metrics": {
+    "mean_terminal_pos_error_m": 0.052680557217244364,
+    "p95_terminal_pos_error_m": 0.1768799979070564,
+    "mean_trajectory_rmse_m": 0.03514169295832164,
+    "mean_terminal_heading_error_rad": 0.3353519742997984,
+    "mean_terminal_heading_error_deg": 19.214252778758098,
+    "coasting_r2_v": -0.10845830105927834,
+    "mean_pearson_r": 0.8253525182640385,
+    "mean_cosine_similarity": 0.8734643296387428
+  },
+  "gates": {
+    "G1_mean_terminal_error": {
+      "metric": 0.052680557217244364,
+      "threshold": "<= 0.080 m",
+      "passed": true
+    },
+    "G2_p95_terminal_error": {
+      "metric": 0.1768799979070564,
+      "threshold": "<= 0.120 m",
+      "passed": false
+    },
+    "G3_mean_trajectory_rmse": {
+      "metric": 0.03514169295832164,
+      "threshold": "<= 0.050 m",
+      "passed": true
+    },
+    "G4_mean_heading_error": {
+      "metric": 0.3353519742997984,
+      "threshold": "<= 0.100 rad",
+      "passed": false
+    },
+    "G5_coasting_r2_v": {
+      "metric": -0.10845830105927834,
+      "threshold": ">= 0.80",
+      "passed": false
+    }
+  },
+  "verdict": "FAILED_CLOSED",
+  "rollout_records": [
+    {
+      "profile_id": "P01",
+      "profile_name": "straight_full",
+      "family": "Straight",
+      "seed": 3001,
+      "command": [
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.006901334503313084,
+      "rmse_xy": 0.009404769160758893,
+      "e_theta": 0.004939489066600799,
+      "pearson_r": 0.9934053966020567,
+      "cosine_similarity": 0.9929701551336757,
+      "terminal_pred_pos": [
+        0.06530217365137303,
+        -0.008730803230394836
+      ],
+      "terminal_phys_pos": [
+        0.07218851951152228,
+        -0.009185400437848863
+      ],
+      "terminal_pred_yaw": 0.007393949199467897,
+      "terminal_phys_yaw": 0.002454460403158559
+    },
+    {
+      "profile_id": "P01",
+      "profile_name": "straight_full",
+      "family": "Straight",
+      "seed": 3002,
+      "command": [
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.006884282303835495,
+      "rmse_xy": 0.009399202518835767,
+      "e_theta": 0.0013123417738825083,
+      "pearson_r": 0.9876607422653202,
+      "cosine_similarity": 0.9918620090573383,
+      "terminal_pred_pos": [
+        0.0626382770620482,
+        0.001469249330141542
+      ],
+      "terminal_phys_pos": [
+        0.06952147019138703,
+        0.0013467945093898828
+      ],
+      "terminal_pred_yaw": 0.001992202363908291,
+      "terminal_phys_yaw": 0.0006798606199658721
+    },
+    {
+      "profile_id": "P01",
+      "profile_name": "straight_full",
+      "family": "Straight",
+      "seed": 3003,
+      "command": [
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.006895754242542473,
+      "rmse_xy": 0.009402984806715342,
+      "e_theta": 0.004114540293812752,
+      "pearson_r": 0.9890824766573695,
+      "cosine_similarity": 0.9938745178613294,
+      "terminal_pred_pos": [
+        0.06694754772909525,
+        0.0036711137825173133
+      ],
+      "terminal_phys_pos": [
+        0.07383300928143574,
+        0.004047737978213008
+      ],
+      "terminal_pred_yaw": -0.0062067522667348385,
+      "terminal_phys_yaw": -0.0020922118566953545
+    },
+    {
+      "profile_id": "P01",
+      "profile_name": "straight_full",
+      "family": "Straight",
+      "seed": 3004,
+      "command": [
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.006888285891927517,
+      "rmse_xy": 0.009400504189246933,
+      "e_theta": 0.0026274998672306538,
+      "pearson_r": 0.9937442961630134,
+      "cosine_similarity": 0.9948755031000702,
+      "terminal_pred_pos": [
+        0.07007872388811498,
+        -0.005075350663179919
+      ],
+      "terminal_phys_pos": [
+        0.07696268989121874,
+        -0.005319265806291887
+      ],
+      "terminal_pred_yaw": 0.004003811161965132,
+      "terminal_phys_yaw": 0.001376311333884665
+    },
+    {
+      "profile_id": "P01",
+      "profile_name": "straight_full",
+      "family": "Straight",
+      "seed": 3005,
+      "command": [
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.00688519268366469,
+      "rmse_xy": 0.00939949795247845,
+      "e_theta": 0.0017034246120601892,
+      "pearson_r": 0.9793104048370741,
+      "cosine_similarity": 0.9906611625665966,
+      "terminal_pred_pos": [
+        0.061639253087336,
+        0.009649503668494151
+      ],
+      "terminal_phys_pos": [
+        0.06852261948328747,
+        0.00949093081370566
+      ],
+      "terminal_pred_yaw": 0.002590380609035492,
+      "terminal_phys_yaw": 0.0008869559282784552
+    },
+    {
+      "profile_id": "P02",
+      "profile_name": "straight_cruise",
+      "family": "Straight",
+      "seed": 3001,
+      "command": [
+        0.6000000238418579,
+        0.6000000238418579
+      ],
+      "e_term": 0.024228614060339014,
+      "rmse_xy": 0.015103902116724766,
+      "e_theta": 0.004841331858187914,
+      "pearson_r": 0.9949594975459156,
+      "cosine_similarity": 0.986793633592263,
+      "terminal_pred_pos": [
+        0.04788264427109623,
+        -0.008859604693173774
+      ],
+      "terminal_phys_pos": [
+        0.0721089501568718,
+        -0.009194033181334379
+      ],
+      "terminal_pred_yaw": 0.007393949199467897,
+      "terminal_phys_yaw": 0.0025526173513933325
+    },
+    {
+      "profile_id": "P02",
+      "profile_name": "straight_cruise",
+      "family": "Straight",
+      "seed": 3002,
+      "command": [
+        0.6000000238418579,
+        0.6000000238418579
+      ],
+      "e_term": 0.024224083113180948,
+      "rmse_xy": 0.015101006003968005,
+      "e_theta": 0.0012550707906484604,
+      "pearson_r": 0.9808815578325203,
+      "cosine_similarity": 0.9869090052985833,
+      "terminal_pred_pos": [
+        0.04521830739902426,
+        0.0014345451791930141
+      ],
+      "terminal_phys_pos": [
+        0.06944222556446109,
+        0.001345150612702286
+      ],
+      "terminal_pred_yaw": 0.001992202363908291,
+      "terminal_phys_yaw": 0.000737131571345664
+    },
+    {
+      "profile_id": "P02",
+      "profile_name": "straight_cruise",
+      "family": "Straight",
+      "seed": 3003,
+      "command": [
+        0.6000000238418579,
+        0.6000000238418579
+      ],
+      "e_term": 0.019283156255005988,
+      "rmse_xy": 0.013865497359607187,
+      "e_theta": 0.3162386417388916,
+      "pearson_r": 0.9792577881380434,
+      "cosine_similarity": 0.9871695237464473,
+      "terminal_pred_pos": [
+        0.04952787748627905,
+        0.0037792347454947226
+      ],
+      "terminal_phys_pos": [
+        0.06528105066988937,
+        0.014900280101132706
+      ],
+      "terminal_pred_yaw": -0.0062067522667348385,
+      "terminal_phys_yaw": 0.31003190555328614
+    },
+    {
+      "profile_id": "P02",
+      "profile_name": "straight_cruise",
+      "family": "Straight",
+      "seed": 3004,
+      "command": [
+        0.6000000238418579,
+        0.6000000238418579
+      ],
+      "e_term": 0.019216138362314714,
+      "rmse_xy": 0.013847137602232688,
+      "e_theta": 0.3147714138031006,
+      "pearson_r": 0.9879117496055703,
+      "cosine_similarity": 0.9906011739319692,
+      "terminal_pred_pos": [
+        0.05265885736906616,
+        -0.005145096886923924
+      ],
+      "terminal_phys_pos": [
+        0.06840099180921713,
+        -0.01616531361926798
+      ],
+      "terminal_pred_yaw": 0.004003811161965132,
+      "terminal_phys_yaw": -0.310767603677823
+    },
+    {
+      "profile_id": "P02",
+      "profile_name": "straight_cruise",
+      "family": "Straight",
+      "seed": 3005,
+      "command": [
+        0.6000000238418579,
+        0.6000000238418579
+      ],
+      "e_term": 0.024224350184043522,
+      "rmse_xy": 0.015101165383921119,
+      "e_theta": 0.0016268778126686811,
+      "pearson_r": 0.9479636438161455,
+      "cosine_similarity": 0.9786558231893965,
+      "terminal_pred_pos": [
+        0.044219305543223196,
+        0.009604379271674122
+      ],
+      "terminal_phys_pos": [
+        0.06844337989444764,
+        0.009488777950230676
+      ],
+      "terminal_pred_yaw": 0.002590380609035492,
+      "terminal_phys_yaw": 0.0009635027938656226
+    },
+    {
+      "profile_id": "P03",
+      "profile_name": "straight_trim_L",
+      "family": "Straight",
+      "seed": 3001,
+      "command": [
+        0.75,
+        0.800000011920929
+      ],
+      "e_term": 0.008981093641827035,
+      "rmse_xy": 0.010311439480302633,
+      "e_theta": 0.10862234234809874,
+      "pearson_r": 0.9910097249112512,
+      "cosine_similarity": 0.9923403454266885,
+      "terminal_pred_pos": [
+        0.06296145128793085,
+        -0.004993462050736875
+      ],
+      "terminal_phys_pos": [
+        0.07084108825592017,
+        -0.009302912625457745
+      ],
+      "terminal_pred_yaw": 0.11489906907081604,
+      "terminal_phys_yaw": 0.006276727534062168
+    },
+    {
+      "profile_id": "P03",
+      "profile_name": "straight_trim_L",
+      "family": "Straight",
+      "seed": 3002,
+      "command": [
+        0.75,
+        0.800000011920929
+      ],
+      "e_term": 0.008804616416424153,
+      "rmse_xy": 0.010261300244314002,
+      "e_theta": 0.10512915253639221,
+      "pearson_r": 0.9819650425678916,
+      "cosine_similarity": 0.9892547763402103,
+      "terminal_pred_pos": [
+        0.0603177746430235,
+        0.005219179887347059
+      ],
+      "terminal_phys_pos": [
+        0.06817264023227938,
+        0.0012414472649741669
+      ],
+      "terminal_pred_yaw": 0.1094973236322403,
+      "terminal_phys_yaw": 0.004368168746929861
+    },
+    {
+      "profile_id": "P03",
+      "profile_name": "straight_trim_L",
+      "family": "Straight",
+      "seed": 3003,
+      "command": [
+        0.75,
+        0.800000011920929
+      ],
+      "e_term": 0.008561919260401361,
+      "rmse_xy": 0.010196858581455718,
+      "e_theta": 0.09999116510152817,
+      "pearson_r": 0.9844470156233478,
+      "cosine_similarity": 0.9918461451081383,
+      "terminal_pred_pos": [
+        0.06465786882766131,
+        0.007439943706018784
+      ],
+      "terminal_phys_pos": [
+        0.07248345522481205,
+        0.003966234022933407
+      ],
+      "terminal_pred_yaw": 0.10129836201667786,
+      "terminal_phys_yaw": 0.0013071969074923478
+    },
+    {
+      "profile_id": "P03",
+      "profile_name": "straight_trim_L",
+      "family": "Straight",
+      "seed": 3004,
+      "command": [
+        0.75,
+        0.800000011920929
+      ],
+      "e_term": 0.0088687618115211,
+      "rmse_xy": 0.010279113177571698,
+      "e_theta": 0.10636529326438904,
+      "pearson_r": 0.9915798822777188,
+      "cosine_similarity": 0.9941259754246325,
+      "terminal_pred_pos": [
+        0.06775068194718747,
+        -0.0013300958937242776
+      ],
+      "terminal_phys_pos": [
+        0.07561429895650677,
+        -0.0054311279102097895
+      ],
+      "terminal_pred_yaw": 0.11150892078876495,
+      "terminal_phys_yaw": 0.005143630781785327
+    },
+    {
+      "profile_id": "P03",
+      "profile_name": "straight_trim_L",
+      "family": "Straight",
+      "seed": 3005,
+      "command": [
+        0.75,
+        0.800000011920929
+      ],
+      "e_term": 0.00882350708590306,
+      "rmse_xy": 0.01026651234383946,
+      "e_theta": 0.10549646615982056,
+      "pearson_r": 0.9681010766168888,
+      "cosine_similarity": 0.9861532704556926,
+      "terminal_pred_pos": [
+        0.05931650757789033,
+        0.013398045397276735
+      ],
+      "terminal_phys_pos": [
+        0.06717391153492261,
+        0.009383636306140778
+      ],
+      "terminal_pred_yaw": 0.11009550094604492,
+      "terminal_phys_yaw": 0.00459903116408958
+    },
+    {
+      "profile_id": "P04",
+      "profile_name": "straight_trim_R",
+      "family": "Straight",
+      "seed": 3001,
+      "command": [
+        0.800000011920929,
+        0.75
+      ],
+      "e_term": 0.008528207342805877,
+      "rmse_xy": 0.010188249166698131,
+      "e_theta": 0.09918366372585297,
+      "pearson_r": 0.9937444052106098,
+      "cosine_similarity": 0.9898970017382471,
+      "terminal_pred_pos": [
+        0.06301697254887784,
+        -0.012502348737728776
+      ],
+      "terminal_phys_pos": [
+        0.07083910970436523,
+        -0.009104630267544456
+      ],
+      "terminal_pred_yaw": -0.10011117160320282,
+      "terminal_phys_yaw": -0.0009275110617525519
+    },
+    {
+      "profile_id": "P04",
+      "profile_name": "straight_trim_R",
+      "family": "Straight",
+      "seed": 3002,
+      "command": [
+        0.800000011920929,
+        0.75
+      ],
+      "e_term": 0.00868160040064822,
+      "rmse_xy": 0.010228052091985969,
+      "e_theta": 0.10265029221773149,
+      "pearson_r": 0.9884098027601035,
+      "cosine_similarity": 0.9900605509427925,
+      "terminal_pred_pos": [
+        0.06033273447753955,
+        -0.002289897298767096
+      ],
+      "terminal_phys_pos": [
+        0.06817206667185889,
+        0.0014403917334184294
+      ],
+      "terminal_pred_yaw": -0.10551291704177856,
+      "terminal_phys_yaw": -0.0028626253664116
+    },
+    {
+      "profile_id": "P04",
+      "profile_name": "straight_trim_R",
+      "family": "Straight",
+      "seed": 3003,
+      "command": [
+        0.800000011920929,
+        0.75
+      ],
+      "e_term": 0.008939901323252427,
+      "rmse_xy": 0.010299536724056289,
+      "e_theta": 0.10780774056911469,
+      "pearson_r": 0.9894507331206694,
+      "cosine_similarity": 0.9926568569629626,
+      "terminal_pred_pos": [
+        0.06461126218639854,
+        -6.900360061397846e-05
+      ],
+      "terminal_phys_pos": [
+        0.07248518904234852,
+        0.004164565996858131
+      ],
+      "terminal_pred_yaw": -0.11371186375617981,
+      "terminal_phys_yaw": -0.005904126273176423
+    },
+    {
+      "profile_id": "P04",
+      "profile_name": "straight_trim_R",
+      "family": "Straight",
+      "seed": 3004,
+      "command": [
+        0.800000011920929,
+        0.75
+      ],
+      "e_term": 0.00862289524541649,
+      "rmse_xy": 0.01021266060833051,
+      "e_theta": 0.10142112523317336,
+      "pearson_r": 0.993982539242069,
+      "cosine_similarity": 0.9929504397168407,
+      "terminal_pred_pos": [
+        0.06778074643687992,
+        -0.008839127532343768
+      ],
+      "terminal_phys_pos": [
+        0.07561312111462568,
+        -0.005232435235954538
+      ],
+      "terminal_pred_yaw": -0.10350130498409271,
+      "terminal_phys_yaw": -0.002080181803798163
+    },
+    {
+      "profile_id": "P04",
+      "profile_name": "straight_trim_R",
+      "family": "Straight",
+      "seed": 3005,
+      "command": [
+        0.800000011920929,
+        0.75
+      ],
+      "e_term": 0.008663946457714523,
+      "rmse_xy": 0.010223389214888311,
+      "e_theta": 0.1022845208644867,
+      "pearson_r": 0.9807863711879728,
+      "cosine_similarity": 0.9902622458871071,
+      "terminal_pred_pos": [
+        0.05933595918118375,
+        0.005888978382951325
+      ],
+      "terminal_phys_pos": [
+        0.06717315818404386,
+        0.009582524106468567
+      ],
+      "terminal_pred_yaw": -0.10491473972797394,
+      "terminal_phys_yaw": -0.002630220573511594
+    },
+    {
+      "profile_id": "P05",
+      "profile_name": "gentle_left",
+      "family": "Curved Left",
+      "seed": 3001,
+      "command": [
+        0.6499999761581421,
+        0.75
+      ],
+      "e_term": 0.026937495579249814,
+      "rmse_xy": 0.012919075019527495,
+      "e_theta": 0.17825745046138763,
+      "pearson_r": 0.9879658360409905,
+      "cosine_similarity": 0.9901050146815528,
+      "terminal_pred_pos": [
+        0.056053594264751316,
+        -0.002035967434170184
+      ],
+      "terminal_phys_pos": [
+        0.08272092103083295,
+        -0.005841535884892017
+      ],
+      "terminal_pred_yaw": 0.22240418195724487,
+      "terminal_phys_yaw": 0.0441467330885282
+    },
+    {
+      "profile_id": "P05",
+      "profile_name": "gentle_left",
+      "family": "Curved Left",
+      "seed": 3002,
+      "command": [
+        0.6499999761581421,
+        0.75
+      ],
+      "e_term": 0.026880415984226767,
+      "rmse_xy": 0.012871899344653026,
+      "e_theta": 0.17487259209156034,
+      "pearson_r": 0.9733883896453528,
+      "cosine_similarity": 0.984261979965645,
+      "terminal_pred_pos": [
+        0.053425993644465694,
+        0.008213945401251043
+      ],
+      "terminal_phys_pos": [
+        0.08006713169009397,
+        0.004635324560920015
+      ],
+      "terminal_pred_yaw": 0.21700242161750793,
+      "terminal_phys_yaw": 0.042129834530651736
+    },
+    {
+      "profile_id": "P05",
+      "profile_name": "gentle_left",
+      "family": "Curved Left",
+      "seed": 3003,
+      "command": [
+        0.6499999761581421,
+        0.75
+      ],
+      "e_term": 0.02680465028073521,
+      "rmse_xy": 0.012808786260988421,
+      "e_theta": 0.16986438632011414,
+      "pearson_r": 0.977192436376434,
+      "cosine_similarity": 0.9876828829801659,
+      "terminal_pred_pos": [
+        0.05779087311678175,
+        0.01049111346471047
+      ],
+      "terminal_phys_pos": [
+        0.0843983042904666,
+        0.007245519064582561
+      ],
+      "terminal_pred_yaw": 0.2088034749031067,
+      "terminal_phys_yaw": 0.0389390821235598
+    },
+    {
+      "profile_id": "P05",
+      "profile_name": "gentle_left",
+      "family": "Curved Left",
+      "seed": 3004,
+      "command": [
+        0.6499999761581421,
+        0.75
+      ],
+      "e_term": 0.026899836500117246,
+      "rmse_xy": 0.012888366118096017,
+      "e_theta": 0.17608451843261722,
+      "pearson_r": 0.9887119113948564,
+      "cosine_similarity": 0.9922987058456029,
+      "terminal_pred_pos": [
+        0.06085289019273309,
+        0.0016508004380676048
+      ],
+      "terminal_phys_pos": [
+        0.08750296333008935,
+        -0.002006357680827811
+      ],
+      "terminal_pred_yaw": 0.21901404857635498,
+      "terminal_phys_yaw": 0.042929525666227805
+    },
+    {
+      "profile_id": "P05",
+      "profile_name": "gentle_left",
+      "family": "Curved Left",
+      "seed": 3005,
+      "command": [
+        0.6499999761581421,
+        0.75
+      ],
+      "e_term": 0.02688611332572038,
+      "rmse_xy": 0.012876739369559801,
+      "e_theta": 0.17523293197155,
+      "pearson_r": 0.9480421862004769,
+      "cosine_similarity": 0.9774079799236952,
+      "terminal_pred_pos": [
+        0.052422936111682826,
+        0.016388688424537112
+      ],
+      "terminal_phys_pos": [
+        0.07906667606952884,
+        0.012786715239995266
+      ],
+      "terminal_pred_yaw": 0.21760061383247375,
+      "terminal_phys_yaw": 0.04236768218943634
+    },
+    {
+      "profile_id": "P06",
+      "profile_name": "soft_left_mod",
+      "family": "Curved Left",
+      "seed": 3001,
+      "command": [
+        0.4000000059604645,
+        0.550000011920929
+      ],
+      "e_term": 0.030427200900728472,
+      "rmse_xy": 0.020797841879943685,
+      "e_theta": 0.31491750478744507,
+      "pearson_r": 0.98463925076469,
+      "cosine_similarity": 0.9785797589570947,
+      "terminal_pred_pos": [
+        0.0362005436770525,
+        -0.0020947554163680115
+      ],
+      "terminal_phys_pos": [
+        0.06573149533433528,
+        -0.009425338535637507
+      ],
+      "terminal_pred_yaw": 0.32990923523902893,
+      "terminal_phys_yaw": 0.01499172189289302
+    },
+    {
+      "profile_id": "P06",
+      "profile_name": "soft_left_mod",
+      "family": "Curved Left",
+      "seed": 3002,
+      "command": [
+        0.4000000059604645,
+        0.550000011920929
+      ],
+      "e_term": 0.02156618382662467,
+      "rmse_xy": 0.019633308660656542,
+      "e_theta": 0.18266505002975464,
+      "pearson_r": 0.9166388742833019,
+      "cosine_similarity": 0.9539933157943762,
+      "terminal_pred_pos": [
+        0.03357291604841221,
+        0.008262399318566826
+      ],
+      "terminal_phys_pos": [
+        0.054854568633680434,
+        0.004770759577168245
+      ],
+      "terminal_pred_yaw": 0.3245075047016144,
+      "terminal_phys_yaw": 0.14184246078597035
+    },
+    {
+      "profile_id": "P06",
+      "profile_name": "soft_left_mod",
+      "family": "Curved Left",
+      "seed": 3003,
+      "command": [
+        0.4000000059604645,
+        0.550000011920929
+      ],
+      "e_term": 0.013256802060446483,
+      "rmse_xy": 0.015679792852578315,
+      "e_theta": 0.08890795707702637,
+      "pearson_r": 0.9149565071781064,
+      "cosine_similarity": 0.9636384606832905,
+      "terminal_pred_pos": [
+        0.03793885909110848,
+        0.010702338244997481
+      ],
+      "terminal_phys_pos": [
+        0.051060013317712864,
+        0.00881074827052626
+      ],
+      "terminal_pred_yaw": 0.31630855798721313,
+      "terminal_phys_yaw": 0.4052165068059661
+    },
+    {
+      "profile_id": "P06",
+      "profile_name": "soft_left_mod",
+      "family": "Curved Left",
+      "seed": 3004,
+      "command": [
+        0.4000000059604645,
+        0.550000011920929
+      ],
+      "e_term": 0.03602683279729085,
+      "rmse_xy": 0.02334003378626572,
+      "e_theta": 0.8086962699890137,
+      "pearson_r": 0.9695055847177975,
+      "cosine_similarity": 0.9773573574498435,
+      "terminal_pred_pos": [
+        0.040999754854679986,
+        0.0016593170655988124
+      ],
+      "terminal_phys_pos": [
+        0.07188850724501149,
+        -0.016883003640632697
+      ],
+      "terminal_pred_yaw": 0.32651910185813904,
+      "terminal_phys_yaw": -0.482177125492513
+    },
+    {
+      "profile_id": "P06",
+      "profile_name": "soft_left_mod",
+      "family": "Curved Left",
+      "seed": 3005,
+      "command": [
+        0.4000000059604645,
+        0.550000011920929
+      ],
+      "e_term": 0.021575161365237964,
+      "rmse_xy": 0.01963695847132436,
+      "e_theta": 0.18310171365737915,
+      "pearson_r": 0.7630317994339398,
+      "cosine_similarity": 0.917141142859994,
+      "terminal_pred_pos": [
+        0.0325698326714279,
+        0.016425266252350856
+      ],
+      "terminal_phys_pos": [
+        0.053857572300952804,
+        0.012915319044541075
+      ],
+      "terminal_pred_yaw": 0.3251056969165802,
+      "terminal_phys_yaw": 0.14200398496388802
+    },
+    {
+      "profile_id": "P07",
+      "profile_name": "soft_left_fast",
+      "family": "Curved Left",
+      "seed": 3001,
+      "command": [
+        0.550000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.04375815494238477,
+      "rmse_xy": 0.022609645267250233,
+      "e_theta": 0.016053378582000732,
+      "pearson_r": 0.9366130712061043,
+      "cosine_similarity": 0.9449777980225418,
+      "terminal_pred_pos": [
+        0.051384865350639464,
+        0.007146443633570575
+      ],
+      "terminal_phys_pos": [
+        0.07839554896419616,
+        -0.027280277016094742
+      ],
+      "terminal_pred_yaw": 0.5449194312095642,
+      "terminal_phys_yaw": 0.5288660428678821
+    },
+    {
+      "profile_id": "P07",
+      "profile_name": "soft_left_fast",
+      "family": "Curved Left",
+      "seed": 3002,
+      "command": [
+        0.550000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.04347594054368177,
+      "rmse_xy": 0.022479195724555586,
+      "e_theta": 0.012282192707061766,
+      "pearson_r": 0.872487575899627,
+      "cosine_similarity": 0.9096151154350989,
+      "terminal_pred_pos": [
+        0.048806935422887096,
+        0.01742144175258793
+      ],
+      "terminal_phys_pos": [
+        0.07568891797016532,
+        -0.01674749765860219
+      ],
+      "terminal_pred_yaw": 0.5395176410675049,
+      "terminal_phys_yaw": 0.5272354287594903
+    },
+    {
+      "profile_id": "P07",
+      "profile_name": "soft_left_fast",
+      "family": "Curved Left",
+      "seed": 3003,
+      "command": [
+        0.550000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.04304018487829156,
+      "rmse_xy": 0.02228409911350821,
+      "e_theta": 0.006544172763824463,
+      "pearson_r": 0.887615596159232,
+      "cosine_similarity": 0.9246871191020425,
+      "terminal_pred_pos": [
+        0.053247461571326295,
+        0.019736171873561505
+      ],
+      "terminal_phys_pos": [
+        0.07980251486451473,
+        -0.014135448385195521
+      ],
+      "terminal_pred_yaw": 0.531318724155426,
+      "terminal_phys_yaw": 0.5247745292111572
+    },
+    {
+      "profile_id": "P07",
+      "profile_name": "soft_left_fast",
+      "family": "Curved Left",
+      "seed": 3004,
+      "command": [
+        0.550000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.043579509442036105,
+      "rmse_xy": 0.02252693811844795,
+      "e_theta": 0.013656795024871826,
+      "pearson_r": 0.9400693749864782,
+      "cosine_similarity": 0.9491838469240286,
+      "terminal_pred_pos": [
+        0.056215319606677576,
+        0.010848985674595538
+      ],
+      "terminal_phys_pos": [
+        0.08314472043617226,
+        -0.023414420667636774
+      ],
+      "terminal_pred_yaw": 0.5415292382240295,
+      "terminal_phys_yaw": 0.5278724503425616
+    },
+    {
+      "profile_id": "P07",
+      "profile_name": "soft_left_fast",
+      "family": "Curved Left",
+      "seed": 3005,
+      "command": [
+        0.550000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.04350670988002766,
+      "rmse_xy": 0.02249335998515405,
+      "e_theta": 0.012690901756286621,
+      "pearson_r": 0.7774891689078367,
+      "cosine_similarity": 0.8884118670992376,
+      "terminal_pred_pos": [
+        0.04779837004839795,
+        0.02559341966277906
+      ],
+      "terminal_phys_pos": [
+        0.07469440180797828,
+        -0.008603616468624824
+      ],
+      "terminal_pred_yaw": 0.5401158332824707,
+      "terminal_phys_yaw": 0.5274249359654769
+    },
+    {
+      "profile_id": "P08",
+      "profile_name": "med_left_mod",
+      "family": "Curved Left",
+      "seed": 3001,
+      "command": [
+        0.25,
+        0.5
+      ],
+      "e_term": 0.019912511328385205,
+      "rmse_xy": 0.016118657476210146,
+      "e_theta": 0.8164299726486206,
+      "pearson_r": 0.7639931192069253,
+      "cosine_similarity": 0.7856687772013478,
+      "terminal_pred_pos": [
+        0.026602282233154417,
+        -0.0001390913290773687
+      ],
+      "terminal_phys_pos": [
+        0.006811829267878756,
+        -0.002340472448347935
+      ],
+      "terminal_pred_yaw": 0.5449194312095642,
+      "terminal_phys_yaw": -0.2715104987401969
+    },
+    {
+      "profile_id": "P08",
+      "profile_name": "med_left_mod",
+      "family": "Curved Left",
+      "seed": 3002,
+      "command": [
+        0.25,
+        0.5
+      ],
+      "e_term": 0.019835033140067845,
+      "rmse_xy": 0.01607793057498125,
+      "e_theta": 0.8147833943367004,
+      "pearson_r": 0.36618276206848377,
+      "cosine_similarity": 0.6732005458359023,
+      "terminal_pred_pos": [
+        0.023985358760525474,
+        0.010269881494962396
+      ],
+      "terminal_phys_pos": [
+        0.0042360411322298515,
+        0.008427873654511817
+      ],
+      "terminal_pred_yaw": 0.5395176410675049,
+      "terminal_phys_yaw": -0.27526576603230124
+    },
+    {
+      "profile_id": "P08",
+      "profile_name": "med_left_mod",
+      "family": "Curved Left",
+      "seed": 3003,
+      "command": [
+        0.25,
+        0.5
+      ],
+      "e_term": 0.016071141212792517,
+      "rmse_xy": 0.015581885267784428,
+      "e_theta": 0.7863942384719849,
+      "pearson_r": 0.4945981885474922,
+      "cosine_similarity": 0.816246131757864,
+      "terminal_pred_pos": [
+        0.02836808353752438,
+        0.012788360759956522
+      ],
+      "terminal_phys_pos": [
+        0.012299634783926702,
+        0.012494193231967272
+      ],
+      "terminal_pred_yaw": 0.531318724155426,
+      "terminal_phys_yaw": -0.25507551084640573
+    },
+    {
+      "profile_id": "P08",
+      "profile_name": "med_left_mod",
+      "family": "Curved Left",
+      "seed": 3004,
+      "command": [
+        0.25,
+        0.5
+      ],
+      "e_term": 0.019863673318652738,
+      "rmse_xy": 0.016092799481544223,
+      "e_theta": 0.8153964877128601,
+      "pearson_r": 0.7789132512690012,
+      "cosine_similarity": 0.8435549819023712,
+      "terminal_pred_pos": [
+        0.031408179142714425,
+        0.0036475089398600594
+      ],
+      "terminal_phys_pos": [
+        0.011642986485914882,
+        0.0016719895272107855
+      ],
+      "terminal_pred_yaw": 0.5415292382240295,
+      "terminal_phys_yaw": -0.27386724515492517
+    },
+    {
+      "profile_id": "P08",
+      "profile_name": "med_left_mod",
+      "family": "Curved Left",
+      "seed": 3005,
+      "command": [
+        0.25,
+        0.5
+      ],
+      "e_term": 0.019843539708812388,
+      "rmse_xy": 0.01608231715192359,
+      "e_theta": 0.8149657249450684,
+      "pearson_r": 0.0022671815331930367,
+      "cosine_similarity": 0.7219163327409007,
+      "terminal_pred_pos": [
+        0.022981075607234412,
+        0.0184270130855807
+      ],
+      "terminal_phys_pos": [
+        0.0032269533081490756,
+        0.016545332887461604
+      ],
+      "terminal_pred_yaw": 0.5401158332824707,
+      "terminal_phys_yaw": -0.2748499284855003
+    },
+    {
+      "profile_id": "P09",
+      "profile_name": "med_left_fast",
+      "family": "Curved Left",
+      "seed": 3001,
+      "command": [
+        0.3499999940395355,
+        0.800000011920929
+      ],
+      "e_term": 0.06127505799262633,
+      "rmse_xy": 0.03077635253809118,
+      "e_theta": 0.35022586584091187,
+      "pearson_r": 0.8306630158760593,
+      "cosine_similarity": 0.8534847185114139,
+      "terminal_pred_pos": [
+        0.03774168160519564,
+        0.014279893114104757
+      ],
+      "terminal_phys_pos": [
+        0.07718917158306483,
+        -0.03260857312702569
+      ],
+      "terminal_pred_yaw": 0.9749398231506348,
+      "terminal_phys_yaw": 0.624713985289579
+    },
+    {
+      "profile_id": "P09",
+      "profile_name": "med_left_fast",
+      "family": "Curved Left",
+      "seed": 3002,
+      "command": [
+        0.3499999940395355,
+        0.800000011920929
+      ],
+      "e_term": 0.06102506731112422,
+      "rmse_xy": 0.030649587268547114,
+      "e_theta": 0.34644854068756104,
+      "pearson_r": 0.6255545703562895,
+      "cosine_similarity": 0.7597949651602682,
+      "terminal_pred_pos": [
+        0.03520248189086188,
+        0.02462848365902821
+      ],
+      "terminal_phys_pos": [
+        0.0744791302910463,
+        -0.022077016346597807
+      ],
+      "terminal_pred_yaw": 0.9695380926132202,
+      "terminal_phys_yaw": 0.623089553997109
+    },
+    {
+      "profile_id": "P09",
+      "profile_name": "med_left_fast",
+      "family": "Curved Left",
+      "seed": 3003,
+      "command": [
+        0.3499999940395355,
+        0.800000011920929
+      ],
+      "e_term": 0.06065218251720268,
+      "rmse_xy": 0.030461893726356666,
+      "e_theta": 0.3407810330390931,
+      "pearson_r": 0.6693467090344007,
+      "cosine_similarity": 0.8054677647204704,
+      "terminal_pred_pos": [
+        0.03970255494207684,
+        0.027054510818531087
+      ],
+      "terminal_phys_pos": [
+        0.07872593342113766,
+        -0.019376762868285203
+      ],
+      "terminal_pred_yaw": 0.9613391160964966,
+      "terminal_phys_yaw": 0.6205580985934899
+    },
+    {
+      "profile_id": "P09",
+      "profile_name": "med_left_fast",
+      "family": "Curved Left",
+      "seed": 3004,
+      "command": [
+        0.3499999940395355,
+        0.800000011920929
+      ],
+      "e_term": 0.06111660288358544,
+      "rmse_xy": 0.030695907725341004,
+      "e_theta": 0.347818672657013,
+      "pearson_r": 0.8405153706801309,
+      "cosine_similarity": 0.8678534159989371,
+      "terminal_pred_pos": [
+        0.04259639611581056,
+        0.018028646749183322
+      ],
+      "terminal_phys_pos": [
+        0.0819365136304068,
+        -0.028743078705065664
+      ],
+      "terminal_pred_yaw": 0.9715496897697449,
+      "terminal_phys_yaw": 0.6237310299613509
+    },
+    {
+      "profile_id": "P09",
+      "profile_name": "med_left_fast",
+      "family": "Curved Left",
+      "seed": 3005,
+      "command": [
+        0.3499999940395355,
+        0.800000011920929
+      ],
+      "e_term": 0.06105225952720582,
+      "rmse_xy": 0.030663337011732923,
+      "e_theta": 0.3468560576438904,
+      "pearson_r": 0.38192978282900114,
+      "cosine_similarity": 0.7266509810311532,
+      "terminal_pred_pos": [
+        0.03418960868380385,
+        0.03279232307866231
+      ],
+      "terminal_phys_pos": [
+        0.07348508027281676,
+        -0.013932876824327646
+      ],
+      "terminal_pred_yaw": 0.970136284828186,
+      "terminal_phys_yaw": 0.6232802069712762
+    },
+    {
+      "profile_id": "P10",
+      "profile_name": "hard_left_fast",
+      "family": "Curved Left",
+      "seed": 3001,
+      "command": [
+        0.15000000596046448,
+        0.800000011920929
+      ],
+      "e_term": 0.06476546768994154,
+      "rmse_xy": 0.03412119574774909,
+      "e_theta": 0.7003869414329529,
+      "pearson_r": 0.8665429656504209,
+      "cosine_similarity": 0.909422812431293,
+      "terminal_pred_pos": [
+        0.02401750632337296,
+        0.016372571770586195
+      ],
+      "terminal_phys_pos": [
+        0.08875167389605809,
+        0.014359277512812806
+      ],
+      "terminal_pred_yaw": 1.4049601554870605,
+      "terminal_phys_yaw": 0.7045732007881914
+    },
+    {
+      "profile_id": "P10",
+      "profile_name": "hard_left_fast",
+      "family": "Curved Left",
+      "seed": 3002,
+      "command": [
+        0.15000000596046448,
+        0.800000011920929
+      ],
+      "e_term": 0.0665220590598007,
+      "rmse_xy": 0.03450220492000142,
+      "e_theta": 0.6832532286643982,
+      "pearson_r": 0.6150165682077217,
+      "cosine_similarity": 0.8198566768400988,
+      "terminal_pred_pos": [
+        0.021489811469634065,
+        0.02679526646906445
+      ],
+      "terminal_phys_pos": [
+        0.08801091029284532,
+        0.02643784108080119
+      ],
+      "terminal_pred_yaw": 1.399558424949646,
+      "terminal_phys_yaw": 0.7163052223643006
+    },
+    {
+      "profile_id": "P10",
+      "profile_name": "hard_left_fast",
+      "family": "Curved Left",
+      "seed": 3003,
+      "command": [
+        0.15000000596046448,
+        0.800000011920929
+      ],
+      "e_term": 0.05917164622391524,
+      "rmse_xy": 0.032134352397439336,
+      "e_theta": 0.7138607501983643,
+      "pearson_r": 0.6281640207275032,
+      "cosine_similarity": 0.8492328842949072,
+      "terminal_pred_pos": [
+        0.026008110037972966,
+        0.029333650324375883
+      ],
+      "terminal_phys_pos": [
+        0.08453302184631035,
+        0.020609063533328757
+      ],
+      "terminal_pred_yaw": 1.3913594484329224,
+      "terminal_phys_yaw": 0.6774986841015924
+    },
+    {
+      "profile_id": "P10",
+      "profile_name": "hard_left_fast",
+      "family": "Curved Left",
+      "seed": 3004,
+      "command": [
+        0.15000000596046448,
+        0.800000011920929
+      ],
+      "e_term": 0.06645994850592266,
+      "rmse_xy": 0.03447271958925939,
+      "e_theta": 0.6828873753547668,
+      "pearson_r": 0.8769667167391156,
+      "cosine_similarity": 0.9263102424636904,
+      "terminal_pred_pos": [
+        0.028879395743102713,
+        0.02016783906564619
+      ],
+      "terminal_phys_pos": [
+        0.09533898005442651,
+        0.01994781957574498
+      ],
+      "terminal_pred_yaw": 1.4015699625015259,
+      "terminal_phys_yaw": 0.7186825838670355
+    },
+    {
+      "profile_id": "P10",
+      "profile_name": "hard_left_fast",
+      "family": "Curved Left",
+      "seed": 3005,
+      "command": [
+        0.15000000596046448,
+        0.800000011920929
+      ],
+      "e_term": 0.06650244174388974,
+      "rmse_xy": 0.03449305332942163,
+      "e_theta": 0.6831446290016174,
+      "pearson_r": 0.3855640204312812,
+      "cosine_similarity": 0.779907070921035,
+      "terminal_pred_pos": [
+        0.020475643957027966,
+        0.03495090185767957
+      ],
+      "terminal_phys_pos": [
+        0.08697733365199378,
+        0.034634633595083314
+      ],
+      "terminal_pred_yaw": 1.4001566171646118,
+      "terminal_phys_yaw": 0.7170119822996379
+    },
+    {
+      "profile_id": "P11",
+      "profile_name": "gentle_right",
+      "family": "Curved Right",
+      "seed": 3001,
+      "command": [
+        0.75,
+        0.6499999761581421
+      ],
+      "e_term": 0.0267934375455277,
+      "rmse_xy": 0.012799586526338858,
+      "e_theta": 0.16909818351268768,
+      "pearson_r": 0.9917448456045118,
+      "cosine_similarity": 0.9835818930518423,
+      "terminal_pred_pos": [
+        0.05615360294244254,
+        -0.015561669260608492
+      ],
+      "terminal_phys_pos": [
+        0.08275664371623437,
+        -0.012373171637265678
+      ],
+      "terminal_pred_yaw": -0.20761629939079285,
+      "terminal_phys_yaw": -0.0385181191688585
+    },
+    {
+      "profile_id": "P11",
+      "profile_name": "gentle_right",
+      "family": "Curved Right",
+      "seed": 3002,
+      "command": [
+        0.75,
+        0.6499999761581421
+      ],
+      "e_term": 0.0268433437535451,
+      "rmse_xy": 0.012840351339807916,
+      "e_theta": 0.17245551943778994,
+      "pearson_r": 0.9851802912486928,
+      "cosine_similarity": 0.9860605986901607,
+      "terminal_pred_pos": [
+        0.053452940997500906,
+        -0.005312098991823655
+      ],
+      "terminal_phys_pos": [
+        0.0800779271505023,
+        -0.0018951974387389234
+      ],
+      "terminal_pred_yaw": -0.2130180299282074,
+      "terminal_phys_yaw": -0.040562508026724654
+    },
+    {
+      "profile_id": "P11",
+      "profile_name": "gentle_right",
+      "family": "Curved Right",
+      "seed": 3003,
+      "command": [
+        0.75,
+        0.6499999761581421
+      ],
+      "e_term": 0.026316786146236986,
+      "rmse_xy": 0.012885975049646208,
+      "e_theta": 0.20173312723636627,
+      "pearson_r": 0.9867346533891234,
+      "cosine_similarity": 0.9903620727861502,
+      "terminal_pred_pos": [
+        0.0577069204402769,
+        -0.0030346971663980007
+      ],
+      "terminal_phys_pos": [
+        0.08373646284657464,
+        0.0008429509849327238
+      ],
+      "terminal_pred_yaw": -0.22121697664260864,
+      "terminal_phys_yaw": -0.019483853406881753
+    },
+    {
+      "profile_id": "P11",
+      "profile_name": "gentle_right",
+      "family": "Curved Right",
+      "seed": 3004,
+      "command": [
+        0.75,
+        0.6499999761581421
+      ],
+      "e_term": 0.026825551750489996,
+      "rmse_xy": 0.0128253779395176,
+      "e_theta": 0.17125220596790314,
+      "pearson_r": 0.9919717429594137,
+      "cosine_similarity": 0.9891983533483953,
+      "terminal_pred_pos": [
+        0.06090704566912441,
+        -0.011875162478833731
+      ],
+      "terminal_phys_pos": [
+        0.08752410952708362,
+        -0.00853717831177441
+      ],
+      "terminal_pred_yaw": -0.21100643277168274,
+      "terminal_phys_yaw": -0.039754227038349355
+    },
+    {
+      "profile_id": "P11",
+      "profile_name": "gentle_right",
+      "family": "Curved Right",
+      "seed": 3005,
+      "command": [
+        0.75,
+        0.6499999761581421
+      ],
+      "e_term": 0.026837973832309594,
+      "rmse_xy": 0.01283584157540743,
+      "e_theta": 0.17209768295288086,
+      "pearson_r": 0.9747121890668458,
+      "cosine_similarity": 0.987163909003257,
+      "terminal_pred_pos": [
+        0.052457973398262435,
+        0.0028626619303181427
+      ],
+      "terminal_phys_pos": [
+        0.07908054776458853,
+        0.00625609286864165
+      ],
+      "terminal_pred_yaw": -0.21241986751556396,
+      "terminal_phys_yaw": -0.040322179836616144
+    },
+    {
+      "profile_id": "P12",
+      "profile_name": "soft_right_mod",
+      "family": "Curved Right",
+      "seed": 3001,
+      "command": [
+        0.550000011920929,
+        0.4000000059604645
+      ],
+      "e_term": 0.02143380526477551,
+      "rmse_xy": 0.019578991299646582,
+      "e_theta": 0.1757296323776245,
+      "pearson_r": 0.9929835262007007,
+      "cosine_similarity": 0.9459270475657616,
+      "terminal_pred_pos": [
+        0.03630185527502561,
+        -0.01579646176982659
+      ],
+      "terminal_phys_pos": [
+        0.057496090459294436,
+        -0.012600776697385987
+      ],
+      "terminal_pred_yaw": -0.3151213526725769,
+      "terminal_phys_yaw": -0.13939171313914211
+    },
+    {
+      "profile_id": "P12",
+      "profile_name": "soft_right_mod",
+      "family": "Curved Right",
+      "seed": 3002,
+      "command": [
+        0.550000011920929,
+        0.4000000059604645
+      ],
+      "e_term": 0.0215074862022644,
+      "rmse_xy": 0.019609427370561483,
+      "e_theta": 0.17976392805576324,
+      "pearson_r": 0.9701505010500011,
+      "cosine_similarity": 0.9621343277120062,
+      "terminal_pred_pos": [
+        0.033600212647412905,
+        -0.005439654825665707
+      ],
+      "terminal_phys_pos": [
+        0.05484251872175557,
+        -0.002072698427887714
+      ],
+      "terminal_pred_yaw": -0.32052311301231384,
+      "terminal_phys_yaw": -0.14075919195561237
+    },
+    {
+      "profile_id": "P12",
+      "profile_name": "soft_right_mod",
+      "family": "Curved Right",
+      "seed": 3003,
+      "command": [
+        0.550000011920929,
+        0.4000000059604645
+      ],
+      "e_term": 0.036099218449566456,
+      "rmse_xy": 0.023367840380979103,
+      "e_theta": 0.8099519014358519,
+      "pearson_r": 0.9572572730246655,
+      "cosine_similarity": 0.9678233847250934,
+      "terminal_pred_pos": [
+        0.03785381537020747,
+        -0.002999478863087898
+      ],
+      "terminal_phys_pos": [
+        0.0687803450983145,
+        0.015620492448544968
+      ],
+      "terminal_pred_yaw": -0.3287220597267151,
+      "terminal_phys_yaw": 0.4812298692788081
+    },
+    {
+      "profile_id": "P12",
+      "profile_name": "soft_right_mod",
+      "family": "Curved Right",
+      "seed": 3004,
+      "command": [
+        0.550000011920929,
+        0.4000000059604645
+      ],
+      "e_term": 0.013289364840327018,
+      "rmse_xy": 0.015692493980052794,
+      "e_theta": 0.08718237280845642,
+      "pearson_r": 0.9878832807268131,
+      "cosine_similarity": 0.971958469604129,
+      "terminal_pred_pos": [
+        0.041054615342260285,
+        -0.012042653579744142
+      ],
+      "terminal_phys_pos": [
+        0.05419745687169533,
+        -0.010074676346268773
+      ],
+      "terminal_pred_yaw": -0.3185114860534668,
+      "terminal_phys_yaw": -0.4056938485591321
+    },
+    {
+      "profile_id": "P12",
+      "profile_name": "soft_right_mod",
+      "family": "Curved Right",
+      "seed": 3005,
+      "command": [
+        0.550000011920929,
+        0.4000000059604645
+      ],
+      "e_term": 0.021498685809429707,
+      "rmse_xy": 0.01960598085548347,
+      "e_theta": 0.17932422459125516,
+      "pearson_r": 0.9029322364220501,
+      "cosine_similarity": 0.9574939842220019,
+      "terminal_pred_pos": [
+        0.03260532584040778,
+        0.0027232310692638633
+      ],
+      "terminal_phys_pos": [
+        0.053841599548241685,
+        0.006071987635295021
+      ],
+      "terminal_pred_yaw": -0.319924920797348,
+      "terminal_phys_yaw": -0.14060069156752214
+    },
+    {
+      "profile_id": "P13",
+      "profile_name": "soft_right_fast",
+      "family": "Curved Right",
+      "seed": 3001,
+      "command": [
+        0.800000011920929,
+        0.550000011920929
+      ],
+      "e_term": 0.04298769639086059,
+      "rmse_xy": 0.022257296576731422,
+      "e_theta": 0.005797743797302246,
+      "pearson_r": 0.9536737621260344,
+      "cosine_similarity": 0.9108219705429642,
+      "terminal_pred_pos": [
+        0.05162116982749665,
+        -0.02481211408998514
+      ],
+      "terminal_phys_pos": [
+        0.07828678176835835,
+        0.008905643558058167
+      ],
+      "terminal_pred_yaw": -0.5301315188407898,
+      "terminal_phys_yaw": -0.5243337508607429
+    },
+    {
+      "profile_id": "P13",
+      "profile_name": "soft_right_fast",
+      "family": "Curved Right",
+      "seed": 3002,
+      "command": [
+        0.800000011920929,
+        0.550000011920929
+      ],
+      "e_term": 0.04326645538079055,
+      "rmse_xy": 0.02238377943796774,
+      "e_theta": 0.009559690952301025,
+      "pearson_r": 0.9301087404679627,
+      "cosine_similarity": 0.9183533837718713,
+      "terminal_pred_pos": [
+        0.04887060389371682,
+        -0.0145379262216077
+      ],
+      "terminal_phys_pos": [
+        0.07565879567162889,
+        0.019438226334085592
+      ],
+      "terminal_pred_yaw": -0.5355332493782043,
+      "terminal_phys_yaw": -0.5259735639008879
+    },
+    {
+      "profile_id": "P13",
+      "profile_name": "soft_right_fast",
+      "family": "Curved Right",
+      "seed": 3003,
+      "command": [
+        0.800000011920929,
+        0.550000011920929
+      ],
+      "e_term": 0.04369060950002831,
+      "rmse_xy": 0.02257893848381465,
+      "e_theta": 0.015218496322631836,
+      "pearson_r": 0.93210188028182,
+      "cosine_similarity": 0.9382075043504572,
+      "terminal_pred_pos": [
+        0.053049097313513795,
+        -0.012222644321112494
+      ],
+      "terminal_phys_pos": [
+        0.08002993000740322,
+        0.02214163983596419
+      ],
+      "terminal_pred_yaw": -0.543732225894928,
+      "terminal_phys_yaw": -0.5285137525133873
+    },
+    {
+      "profile_id": "P13",
+      "profile_name": "soft_right_fast",
+      "family": "Curved Right",
+      "seed": 3004,
+      "command": [
+        0.800000011920929,
+        0.550000011920929
+      ],
+      "e_term": 0.04316370007744006,
+      "rmse_xy": 0.022336968353833205,
+      "e_theta": 0.008187294006347656,
+      "pearson_r": 0.954427153147744,
+      "cosine_similarity": 0.9328341481097644,
+      "terminal_pred_pos": [
+        0.05634327820615558,
+        -0.02111018838077776
+      ],
+      "terminal_phys_pos": [
+        0.08308549663920012,
+        0.012771351691281133
+      ],
+      "terminal_pred_yaw": -0.5335216522216797,
+      "terminal_phys_yaw": -0.5253343624119539
+    },
+    {
+      "profile_id": "P13",
+      "profile_name": "soft_right_fast",
+      "family": "Curved Right",
+      "seed": 3005,
+      "command": [
+        0.800000011920929,
+        0.550000011920929
+      ],
+      "e_term": 0.0432358703537863,
+      "rmse_xy": 0.022369826319848823,
+      "e_theta": 0.00915151834487915,
+      "pearson_r": 0.905906669468514,
+      "cosine_similarity": 0.9377025411873615,
+      "terminal_pred_pos": [
+        0.0478811562433781,
+        -0.0063659039862827855
+      ],
+      "terminal_phys_pos": [
+        0.07465562623748209,
+        0.02758211866282362
+      ],
+      "terminal_pred_yaw": -0.5349350571632385,
+      "terminal_phys_yaw": -0.5257835671812923
+    },
+    {
+      "profile_id": "P14",
+      "profile_name": "med_right_mod",
+      "family": "Curved Right",
+      "seed": 3001,
+      "command": [
+        0.5,
+        0.25
+      ],
+      "e_term": 0.016062991780759737,
+      "rmse_xy": 0.015576266278785212,
+      "e_theta": 0.7860448360443115,
+      "pearson_r": 0.8561051176266762,
+      "cosine_similarity": 0.8121325447360709,
+      "terminal_pred_pos": [
+        0.02673356239459479,
+        -0.017893844682151563
+      ],
+      "terminal_phys_pos": [
+        0.010671949713154629,
+        -0.017683361855879532
+      ],
+      "terminal_pred_yaw": -0.5301315188407898,
+      "terminal_phys_yaw": 0.25591331547878227
+    },
+    {
+      "profile_id": "P14",
+      "profile_name": "med_right_mod",
+      "family": "Curved Right",
+      "seed": 3002,
+      "command": [
+        0.5,
+        0.25
+      ],
+      "e_term": 0.01610796157894096,
+      "rmse_xy": 0.015603779100900803,
+      "e_theta": 0.7875586748123169,
+      "pearson_r": 0.6461771338776539,
+      "cosine_similarity": 0.7094299561866649,
+      "terminal_pred_pos": [
+        0.02402073039190937,
+        -0.007485321905194064
+      ],
+      "terminal_phys_pos": [
+        0.007922908189980407,
+        -0.006913879358894714
+      ],
+      "terminal_pred_yaw": -0.5355332493782043,
+      "terminal_phys_yaw": 0.2520254449477561
+    },
+    {
+      "profile_id": "P14",
+      "profile_name": "med_right_mod",
+      "family": "Curved Right",
+      "seed": 3003,
+      "command": [
+        0.5,
+        0.25
+      ],
+      "e_term": 0.019897027161198493,
+      "rmse_xy": 0.016109663733625976,
+      "e_theta": 0.8160483241081238,
+      "pearson_r": 0.6375988648271064,
+      "cosine_similarity": 0.7901280862091178,
+      "terminal_pred_pos": [
+        0.028257881534253994,
+        -0.004966536497007365
+      ],
+      "terminal_phys_pos": [
+        0.008473814366964,
+        -0.0028493742043078432
+      ],
+      "terminal_pred_yaw": -0.543732225894928,
+      "terminal_phys_yaw": 0.27231611180456433
+    },
+    {
+      "profile_id": "P14",
+      "profile_name": "med_right_mod",
+      "family": "Curved Right",
+      "seed": 3004,
+      "command": [
+        0.5,
+        0.25
+      ],
+      "e_term": 0.01609068076082542,
+      "rmse_xy": 0.01559321596229258,
+      "e_theta": 0.7869943380355835,
+      "pearson_r": 0.8632216063542727,
+      "cosine_similarity": 0.859581607919079,
+      "terminal_pred_pos": [
+        0.03147926722766547,
+        -0.014107586528741153
+      ],
+      "terminal_phys_pos": [
+        0.015394517247869714,
+        -0.01367075082248791
+      ],
+      "terminal_pred_yaw": -0.5335216522216797,
+      "terminal_phys_yaw": 0.2534727263743174
+    },
+    {
+      "profile_id": "P14",
+      "profile_name": "med_right_mod",
+      "family": "Curved Right",
+      "seed": 3005,
+      "command": [
+        0.5,
+        0.25
+      ],
+      "e_term": 0.01610275631582406,
+      "rmse_xy": 0.015600598671192484,
+      "e_theta": 0.7873908281326294,
+      "pearson_r": 0.32035433173949984,
+      "cosine_similarity": 0.7326568062604152,
+      "terminal_pred_pos": [
+        0.023027068274089867,
+        0.000671834161745653
+      ],
+      "terminal_phys_pos": [
+        0.006933082347010353,
+        0.0012032266210242337
+      ],
+      "terminal_pred_yaw": -0.5349350571632385,
+      "terminal_phys_yaw": 0.252455744422882
+    },
+    {
+      "profile_id": "P15",
+      "profile_name": "med_right_fast",
+      "family": "Curved Right",
+      "seed": 3001,
+      "command": [
+        0.800000011920929,
+        0.3499999940395355
+      ],
+      "e_term": 0.060592650673118836,
+      "rmse_xy": 0.030432663029706424,
+      "e_theta": 0.3399226665496826,
+      "pearson_r": 0.8938981447432455,
+      "cosine_similarity": 0.7778298476708116,
+      "terminal_pred_pos": [
+        0.03808496268241668,
+        -0.03214652983810391
+      ],
+      "terminal_phys_pos": [
+        0.07707102687805636,
+        0.014238339614424136
+      ],
+      "terminal_pred_yaw": -0.9601519107818604,
+      "terminal_phys_yaw": -0.6202292478968838
+    },
+    {
+      "profile_id": "P15",
+      "profile_name": "med_right_fast",
+      "family": "Curved Right",
+      "seed": 3002,
+      "command": [
+        0.800000011920929,
+        0.3499999940395355
+      ],
+      "e_term": 0.06083936110820839,
+      "rmse_xy": 0.030556535459282927,
+      "e_theta": 0.3437121510505676,
+      "pearson_r": 0.8341509033952071,
+      "cosine_similarity": 0.7773334779122916,
+      "terminal_pred_pos": [
+        0.03529497712368239,
+        -0.021799114913307927
+      ],
+      "terminal_phys_pos": [
+        0.07444602092507108,
+        0.024769368305675322
+      ],
+      "terminal_pred_yaw": -0.9655536413192749,
+      "terminal_phys_yaw": -0.6218415169115689
+    },
+    {
+      "profile_id": "P15",
+      "profile_name": "med_right_fast",
+      "family": "Curved Right",
+      "seed": 3003,
+      "command": [
+        0.800000011920929,
+        0.3499999940395355
+      ],
+      "e_term": 0.06121459678390408,
+      "rmse_xy": 0.030746289332253957,
+      "e_theta": 0.34937119483947754,
+      "pearson_r": 0.8409822576564138,
+      "cosine_similarity": 0.8367462868848558,
+      "terminal_pred_pos": [
+        0.03941439093180541,
+        -0.01937228553582234
+      ],
+      "terminal_phys_pos": [
+        0.07882287803203301,
+        0.027469981743710084
+      ],
+      "terminal_pred_yaw": -0.9737526178359985,
+      "terminal_phys_yaw": -0.6243814212305208
+    },
+    {
+      "profile_id": "P15",
+      "profile_name": "med_right_fast",
+      "family": "Curved Right",
+      "seed": 3004,
+      "command": [
+        0.800000011920929,
+        0.3499999940395355
+      ],
+      "e_term": 0.06074859654995128,
+      "rmse_xy": 0.030510896892885768,
+      "e_theta": 0.34233927726745605,
+      "pearson_r": 0.8962443298166836,
+      "cosine_similarity": 0.8301652886838247,
+      "terminal_pred_pos": [
+        0.04278228391075222,
+        -0.028398672833834057
+      ],
+      "terminal_phys_pos": [
+        0.08187125098989068,
+        0.01810341997363841
+      ],
+      "terminal_pred_yaw": -0.9635420441627502,
+      "terminal_phys_yaw": -0.6212027800213279
+    },
+    {
+      "profile_id": "P15",
+      "profile_name": "med_right_fast",
+      "family": "Curved Right",
+      "seed": 3005,
+      "command": [
+        0.800000011920929,
+        0.3499999940395355
+      ],
+      "e_term": 0.060812345383512656,
+      "rmse_xy": 0.030542940904806398,
+      "e_theta": 0.3433040380477905,
+      "pearson_r": 0.7702682163103455,
+      "cosine_similarity": 0.826761515615771,
+      "terminal_pred_pos": [
+        0.03430987362749296,
+        -0.013635214201006886
+      ],
+      "terminal_phys_pos": [
+        0.07344241005705987,
+        0.03291353383406116
+      ],
+      "terminal_pred_yaw": -0.9649555087089539,
+      "terminal_phys_yaw": -0.6216514833415053
+    },
+    {
+      "profile_id": "P16",
+      "profile_name": "hard_right_fast",
+      "family": "Curved Right",
+      "seed": 3001,
+      "command": [
+        0.800000011920929,
+        0.15000000596046448
+      ],
+      "e_term": 0.0591953029796281,
+      "rmse_xy": 0.03215049325469268,
+      "e_theta": 0.7138983607292175,
+      "pearson_r": 0.9357588236414851,
+      "cosine_similarity": 0.8169557692709606,
+      "terminal_pred_pos": [
+        0.024393232932863773,
+        -0.034441923709567515
+      ],
+      "terminal_phys_pos": [
+        0.0829230973507522,
+        -0.025590999120940355
+      ],
+      "terminal_pred_yaw": -1.3901722431182861,
+      "terminal_phys_yaw": -0.676273894650148
+    },
+    {
+      "profile_id": "P16",
+      "profile_name": "hard_right_fast",
+      "family": "Curved Right",
+      "seed": 3002,
+      "command": [
+        0.800000011920929,
+        0.15000000596046448
+      ],
+      "e_term": 0.06675009229293809,
+      "rmse_xy": 0.03458650701955674,
+      "e_theta": 0.6823312640190125,
+      "pearson_r": 0.9082338490614327,
+      "cosine_similarity": 0.8366203070757392,
+      "terminal_pred_pos": [
+        0.021591047281232664,
+        -0.024020517146625276
+      ],
+      "terminal_phys_pos": [
+        0.08833704280881767,
+        -0.023280988819003423
+      ],
+      "terminal_pred_yaw": -1.3955739736557007,
+      "terminal_phys_yaw": -0.713242736378991
+    },
+    {
+      "profile_id": "P16",
+      "profile_name": "hard_right_fast",
+      "family": "Curved Right",
+      "seed": 3003,
+      "command": [
+        0.800000011920929,
+        0.15000000596046448
+      ],
+      "e_term": 0.06646805740593997,
+      "rmse_xy": 0.034457313453800195,
+      "e_theta": 0.6807053089141846,
+      "pearson_r": 0.914409094758108,
+      "cosine_similarity": 0.9016778291870348,
+      "terminal_pred_pos": [
+        0.025692710663160125,
+        -0.02148125627648686
+      ],
+      "terminal_phys_pos": [
+        0.09216060872745316,
+        -0.02133571509990024
+      ],
+      "terminal_pred_yaw": -1.4037729501724243,
+      "terminal_phys_yaw": -0.7230676197633962
+    },
+    {
+      "profile_id": "P16",
+      "profile_name": "hard_right_fast",
+      "family": "Curved Right",
+      "seed": 3004,
+      "command": [
+        0.800000011920929,
+        0.15000000596046448
+      ],
+      "e_term": 0.0668211499941,
+      "rmse_xy": 0.034620293679997936,
+      "e_theta": 0.6828423738479614,
+      "pearson_r": 0.9376536222822404,
+      "cosine_similarity": 0.8805657833104976,
+      "terminal_pred_pos": [
+        0.029082850260862096,
+        -0.030647637330009234
+      ],
+      "terminal_phys_pos": [
+        0.09589848312190673,
+        -0.029788980290148547
+      ],
+      "terminal_pred_yaw": -1.3935624361038208,
+      "terminal_phys_yaw": -0.7107200609888941
+    },
+    {
+      "profile_id": "P16",
+      "profile_name": "hard_right_fast",
+      "family": "Curved Right",
+      "seed": 3005,
+      "command": [
+        0.800000011920929,
+        0.15000000596046448
+      ],
+      "e_term": 0.06678194628606914,
+      "rmse_xy": 0.034599340754623994,
+      "e_theta": 0.6824881434440613,
+      "pearson_r": 0.8522141937924459,
+      "cosine_similarity": 0.8726864484825418,
+      "terminal_pred_pos": [
+        0.02060727790463137,
+        -0.015864811792401734
+      ],
+      "terminal_phys_pos": [
+        0.0873845140787041,
+        -0.015071666971112768
+      ],
+      "terminal_pred_yaw": -1.3949757814407349,
+      "terminal_phys_yaw": -0.712487654326558
+    },
+    {
+      "profile_id": "P17",
+      "profile_name": "pivot_left_hard",
+      "family": "In-Place Pivot",
+      "seed": 3001,
+      "command": [
+        -0.6000000238418579,
+        0.6000000238418579
+      ],
+      "e_term": 0.03131106124730322,
+      "rmse_xy": 0.02893799703686194,
+      "e_theta": 0.4959876537322998,
+      "pearson_r": 0.15732872290295533,
+      "cosine_similarity": 0.9210967887272218,
+      "terminal_pred_pos": [
+        -0.004375943404072878,
+        -0.009246009081510588
+      ],
+      "terminal_phys_pos": [
+        -0.029795206777868292,
+        -0.027528339511901465
+      ],
+      "terminal_pred_yaw": 2.5875163078308105,
+      "terminal_phys_yaw": 3.0835040629263974
+    },
+    {
+      "profile_id": "P17",
+      "profile_name": "pivot_left_hard",
+      "family": "In-Place Pivot",
+      "seed": 3002,
+      "command": [
+        -0.6000000238418579,
+        0.6000000238418579
+      ],
+      "e_term": 0.030934652019284904,
+      "rmse_xy": 0.028677352365966823,
+      "e_theta": 0.4964869022369385,
+      "pearson_r": 0.6204281330895868,
+      "cosine_similarity": 0.7174919608684823,
+      "terminal_pred_pos": [
+        -0.007041608109305609,
+        0.001330432720890462
+      ],
+      "terminal_phys_pos": [
+        -0.03237985657148535,
+        -0.016415717859533836
+      ],
+      "terminal_pred_yaw": 2.5821146965026855,
+      "terminal_phys_yaw": 3.0786016991079213
+    },
+    {
+      "profile_id": "P17",
+      "profile_name": "pivot_left_hard",
+      "family": "In-Place Pivot",
+      "seed": 3003,
+      "command": [
+        -0.6000000238418579,
+        0.6000000238418579
+      ],
+      "e_term": 0.030364732842414897,
+      "rmse_xy": 0.02828016368143797,
+      "e_theta": 0.4972150325775147,
+      "pearson_r": 0.5852765301867403,
+      "cosine_similarity": 0.07435116261415554,
+      "terminal_pred_pos": [
+        -0.002731133707830866,
+        0.004103597634426951
+      ],
+      "terminal_phys_pos": [
+        -0.027935483031613785,
+        -0.01283032618009263
+      ],
+      "terminal_pred_yaw": 2.573915719985962,
+      "terminal_phys_yaw": 3.0711308467883622
+    },
+    {
+      "profile_id": "P17",
+      "profile_name": "pivot_left_hard",
+      "family": "In-Place Pivot",
+      "seed": 3004,
+      "command": [
+        -0.6000000238418579,
+        0.6000000238418579
+      ],
+      "e_term": 0.031075054378666193,
+      "rmse_xy": 0.028774606587741194,
+      "e_theta": 0.496304988861084,
+      "pearson_r": 0.20299172811016045,
+      "cosine_similarity": 0.6673618581076838,
+      "terminal_pred_pos": [
+        0.0003992573462584456,
+        -0.005354335570888865
+      ],
+      "terminal_phys_pos": [
+        -0.02497001156282376,
+        -0.02330034347392223
+      ],
+      "terminal_pred_yaw": 2.5841262340545654,
+      "terminal_phys_yaw": 3.080431135561107
+    },
+    {
+      "profile_id": "P17",
+      "profile_name": "pivot_left_hard",
+      "family": "In-Place Pivot",
+      "seed": 3005,
+      "command": [
+        -0.6000000238418579,
+        0.6000000238418579
+      ],
+      "e_term": 0.03097640515944566,
+      "rmse_xy": 0.02870628810214149,
+      "e_theta": 0.4964330196380616,
+      "pearson_r": 0.8192208755671181,
+      "cosine_similarity": 0.39305196010442894,
+      "terminal_pred_pos": [
+        -0.008040538020437782,
+        0.009469006081214036
+      ],
+      "terminal_phys_pos": [
+        -0.03338810154040242,
+        -0.00833657451037268
+      ],
+      "terminal_pred_yaw": 2.5827128887176514,
+      "terminal_phys_yaw": 3.0791460156570976
+    },
+    {
+      "profile_id": "P18",
+      "profile_name": "pivot_right_hard",
+      "family": "In-Place Pivot",
+      "seed": 3001,
+      "command": [
+        0.6000000238418579,
+        -0.6000000238418579
+      ],
+      "e_term": 0.030287532006393312,
+      "rmse_xy": 0.02822393961923172,
+      "e_theta": 0.4974241256713867,
+      "pearson_r": -0.9157954232178296,
+      "cosine_similarity": 0.13327747361849754,
+      "terminal_pred_pos": [
+        -0.004375943404072878,
+        -0.009246009081510588
+      ],
+      "terminal_phys_pos": [
+        -0.02956705206273871,
+        0.0075689437755625056
+      ],
+      "terminal_pred_yaw": -2.572728395462036,
+      "terminal_phys_yaw": -3.0701524769435937
+    },
+    {
+      "profile_id": "P18",
+      "profile_name": "pivot_right_hard",
+      "family": "In-Place Pivot",
+      "seed": 3002,
+      "command": [
+        0.6000000238418579,
+        -0.6000000238418579
+      ],
+      "e_term": 0.030661890698043506,
+      "rmse_xy": 0.02848577418540885,
+      "e_theta": 0.4969470500946045,
+      "pearson_r": 0.9552651435462208,
+      "cosine_similarity": 0.8782081641200327,
+      "terminal_pred_pos": [
+        -0.007041608109305609,
+        0.001330432720890462
+      ],
+      "terminal_phys_pos": [
+        -0.03232324047532827,
+        0.018679513563633753
+      ],
+      "terminal_pred_yaw": -2.5781302452087402,
+      "terminal_phys_yaw": -3.075077340308898
+    },
+    {
+      "profile_id": "P18",
+      "profile_name": "pivot_right_hard",
+      "family": "In-Place Pivot",
+      "seed": 3003,
+      "command": [
+        0.6000000238418579,
+        -0.6000000238418579
+      ],
+      "e_term": 0.031233776370350363,
+      "rmse_xy": 0.028882301765351035,
+      "e_theta": 0.49620747566223145,
+      "pearson_r": 0.9529486054726567,
+      "cosine_similarity": 0.9285686503206982,
+      "terminal_pred_pos": [
+        -0.002731133707830866,
+        0.004103597634426951
+      ],
+      "terminal_phys_pos": [
+        -0.028140548246500398,
+        0.022267034510610545
+      ],
+      "terminal_pred_yaw": -2.586329221725464,
+      "terminal_phys_yaw": -3.0825366274586252
+    },
+    {
+      "profile_id": "P18",
+      "profile_name": "pivot_right_hard",
+      "family": "In-Place Pivot",
+      "seed": 3004,
+      "command": [
+        0.6000000238418579,
+        -0.6000000238418579
+      ],
+      "e_term": 0.03052248009765878,
+      "rmse_xy": 0.02838838674321551,
+      "e_theta": 0.49712705612182617,
+      "pearson_r": -0.9124337789340983,
+      "cosine_similarity": -0.5222145926712525,
+      "terminal_pred_pos": [
+        0.0003992573462584456,
+        -0.005354335570888865
+      ],
+      "terminal_phys_pos": [
+        -0.02484938650535808,
+        0.011795818217523747
+      ],
+      "terminal_pred_yaw": -2.5761187076568604,
+      "terminal_phys_yaw": -3.0732458018998514
+    },
+    {
+      "profile_id": "P18",
+      "profile_name": "pivot_right_hard",
+      "family": "In-Place Pivot",
+      "seed": 3005,
+      "command": [
+        0.6000000238418579,
+        -0.6000000238418579
+      ],
+      "e_term": 0.030620435817417024,
+      "rmse_xy": 0.028456829871873562,
+      "e_theta": 0.49700093269348145,
+      "pearson_r": 0.9682185015256686,
+      "cosine_similarity": 0.9620352628200386,
+      "terminal_pred_pos": [
+        -0.008040538020437782,
+        0.009469006081214036
+      ],
+      "terminal_phys_pos": [
+        -0.033312450582754935,
+        0.02675893161868099
+      ],
+      "terminal_pred_yaw": -2.5775320529937744,
+      "terminal_phys_yaw": -3.0745330162988003
+    },
+    {
+      "profile_id": "P19",
+      "profile_name": "pivot_left_mod",
+      "family": "In-Place Pivot",
+      "seed": 3001,
+      "command": [
+        -0.3499999940395355,
+        0.3499999940395355
+      ],
+      "e_term": 0.03147606163880602,
+      "rmse_xy": 0.02895589167149209,
+      "e_theta": 1.5692239999771118,
+      "pearson_r": 0.15569763488600064,
+      "cosine_similarity": 0.9209284231804584,
+      "terminal_pred_pos": [
+        -0.004375943404072878,
+        -0.009246009081510588
+      ],
+      "terminal_phys_pos": [
+        -0.030004897785203936,
+        -0.027518916721506446
+      ],
+      "terminal_pred_yaw": 1.5124653577804565,
+      "terminal_phys_yaw": 3.0816894623020397
+    },
+    {
+      "profile_id": "P19",
+      "profile_name": "pivot_left_mod",
+      "family": "In-Place Pivot",
+      "seed": 3002,
+      "command": [
+        -0.3499999940395355,
+        0.3499999940395355
+      ],
+      "e_term": 0.031100513119095955,
+      "rmse_xy": 0.02869528638633015,
+      "e_theta": 1.5697120428085327,
+      "pearson_r": 0.6207764648813977,
+      "cosine_similarity": 0.717687628107851,
+      "terminal_pred_pos": [
+        -0.007041608109305609,
+        0.001330432720890462
+      ],
+      "terminal_phys_pos": [
+        -0.03258944796184736,
+        -0.01640511900833238
+      ],
+      "terminal_pred_yaw": 1.5070635080337524,
+      "terminal_phys_yaw": 3.076775462066865
+    },
+    {
+      "profile_id": "P19",
+      "profile_name": "pivot_left_mod",
+      "family": "In-Place Pivot",
+      "seed": 3003,
+      "command": [
+        -0.3499999940395355,
+        0.3499999940395355
+      ],
+      "e_term": 0.030531937660913448,
+      "rmse_xy": 0.028298160355803886,
+      "e_theta": 1.570421814918518,
+      "pearson_r": 0.5857109315948882,
+      "cosine_similarity": 0.07474536504899425,
+      "terminal_pred_pos": [
+        -0.002731133707830866,
+        0.004103597634426951
+      ],
+      "terminal_phys_pos": [
+        -0.028144928906420518,
+        -0.012817933943241972
+      ],
+      "terminal_pred_yaw": 1.4988645315170288,
+      "terminal_phys_yaw": 3.0692862612024863
+    },
+    {
+      "profile_id": "P19",
+      "profile_name": "pivot_left_mod",
+      "family": "In-Place Pivot",
+      "seed": 3004,
+      "command": [
+        -0.3499999940395355,
+        0.3499999940395355
+      ],
+      "e_term": 0.03124059339032531,
+      "rmse_xy": 0.028792525963408224,
+      "e_theta": 1.569534182548523,
+      "pearson_r": 0.20134645847998417,
+      "cosine_similarity": 0.6669564157342711,
+      "terminal_pred_pos": [
+        0.0003992573462584456,
+        -0.005354335570888865
+      ],
+      "terminal_phys_pos": [
+        -0.025179640675063345,
+        -0.02329018379154622
+      ],
+      "terminal_pred_yaw": 1.5090750455856323,
+      "terminal_phys_yaw": 3.0786092664409366
+    },
+    {
+      "profile_id": "P19",
+      "profile_name": "pivot_left_mod",
+      "family": "In-Place Pivot",
+      "seed": 3005,
+      "command": [
+        -0.3499999940395355,
+        0.3499999940395355
+      ],
+      "e_term": 0.031142170229374537,
+      "rmse_xy": 0.028724217754404924,
+      "e_theta": 1.5696593523025513,
+      "pearson_r": 0.8192323056514372,
+      "cosine_similarity": 0.3932324645867943,
+      "terminal_pred_pos": [
+        -0.008040538020437782,
+        0.009469006081214036
+      ],
+      "terminal_phys_pos": [
+        -0.03359770414580511,
+        -0.00832610634427287
+      ],
+      "terminal_pred_yaw": 1.5076617002487183,
+      "terminal_phys_yaw": 3.0773210823707116
+    },
+    {
+      "profile_id": "P20",
+      "profile_name": "reverse_straight",
+      "family": "Reverse",
+      "seed": 3001,
+      "command": [
+        -0.3499999940395355,
+        -0.3499999940395355
+      ],
+      "e_term": 0.2679809422960937,
+      "rmse_xy": 0.1741376664391174,
+      "e_theta": 0.00357064139097929,
+      "pearson_r": 0.9764946181465245,
+      "cosine_similarity": 0.9384987815705903,
+      "terminal_pred_pos": [
+        -0.034860116385305284,
+        -0.009471411612724646
+      ],
+      "terminal_phys_pos": [
+        -0.302840466219762,
+        -0.00890790783768065
+      ],
+      "terminal_pred_yaw": 0.007393949199467897,
+      "terminal_phys_yaw": 0.0038233077686755925
+    },
+    {
+      "profile_id": "P20",
+      "profile_name": "reverse_straight",
+      "family": "Reverse",
+      "seed": 3002,
+      "command": [
+        -0.3499999940395355,
+        -0.3499999940395355
+      ],
+      "e_term": 0.267986670791635,
+      "rmse_xy": 0.17413993531842495,
+      "e_theta": 0.0007118450012058021,
+      "pearson_r": 0.9923948503583921,
+      "cosine_similarity": 0.9953069136882282,
+      "terminal_pred_pos": [
+        -0.03752655478676688,
+        0.001269700460936951
+      ],
+      "terminal_phys_pos": [
+        -0.3055131889868991,
+        0.0014097435567766517
+      ],
+      "terminal_pred_yaw": 0.001992202363908291,
+      "terminal_phys_yaw": 0.0012803573200725496
+    },
+    {
+      "profile_id": "P20",
+      "profile_name": "reverse_straight",
+      "family": "Reverse",
+      "seed": 3003,
+      "command": [
+        -0.3499999940395355,
+        -0.3499999940395355
+      ],
+      "e_term": 0.2679823867689838,
+      "rmse_xy": 0.1741383166547101,
+      "e_theta": 0.0025753979571163654,
+      "pearson_r": 0.9945518943976478,
+      "cosine_similarity": 0.983818197466189,
+      "terminal_pred_pos": [
+        -0.03321555395520683,
+        0.004292809299628534
+      ],
+      "terminal_phys_pos": [
+        -0.30119756755297095,
+        0.00384558844928946
+      ],
+      "terminal_pred_yaw": -0.0062067522667348385,
+      "terminal_phys_yaw": -0.0036313543939765413
+    },
+    {
+      "profile_id": "P20",
+      "profile_name": "reverse_straight",
+      "family": "Reverse",
+      "seed": 3004,
+      "command": [
+        -0.3499999940395355,
+        -0.3499999940395355
+      ],
+      "e_term": 0.267985163203334,
+      "rmse_xy": 0.1741393647505666,
+      "e_theta": 0.0014883759431540966,
+      "pearson_r": 0.9684788712089571,
+      "cosine_similarity": 0.964479899349432,
+      "terminal_pred_pos": [
+        -0.030085506559147553,
+        -0.005476391455164916
+      ],
+      "terminal_phys_pos": [
+        -0.2980705238289864,
+        -0.005196720216501953
+      ],
+      "terminal_pred_yaw": 0.004003811161965132,
+      "terminal_phys_yaw": 0.0025154351052468367
+    },
+    {
+      "profile_id": "P20",
+      "profile_name": "reverse_straight",
+      "family": "Reverse",
+      "seed": 3005,
+      "command": [
+        -0.3499999940395355,
+        -0.3499999940395355
+      ],
+      "e_term": 0.26798632982419457,
+      "rmse_xy": 0.17413980648941604,
+      "e_theta": 0.0009425664320588112,
+      "pearson_r": 0.9766786595733148,
+      "cosine_similarity": 0.9504886300100394,
+      "terminal_pred_pos": [
+        -0.03852544255555255,
+        0.009390038396556053
+      ],
+      "terminal_phys_pos": [
+        -0.306511710878957,
+        0.009571594829313858
+      ],
+      "terminal_pred_yaw": 0.002590380609035492,
+      "terminal_phys_yaw": 0.0016478141539375808
+    },
+    {
+      "profile_id": "P21",
+      "profile_name": "reverse_hook_left",
+      "family": "Reverse-Hook",
+      "seed": 3001,
+      "command": [
+        -0.4000000059604645,
+        -0.15000000596046448
+      ],
+      "e_term": 0.17155510638432583,
+      "rmse_xy": 0.12121188631697519,
+      "e_theta": 0.1980056166648865,
+      "pearson_r": 0.8467436603603236,
+      "cosine_similarity": 0.8638310803836209,
+      "terminal_pred_pos": [
+        -0.02709330776930785,
+        -0.015924415254306393
+      ],
+      "terminal_phys_pos": [
+        -0.19864498708080439,
+        -0.01700878232444574
+      ],
+      "terminal_pred_yaw": 0.5449194312095642,
+      "terminal_phys_yaw": 0.7429250206695247
+    },
+    {
+      "profile_id": "P21",
+      "profile_name": "reverse_hook_left",
+      "family": "Reverse-Hook",
+      "seed": 3002,
+      "command": [
+        -0.4000000059604645,
+        -0.15000000596046448
+      ],
+      "e_term": 0.17025904923305024,
+      "rmse_xy": 0.12087480505128882,
+      "e_theta": 0.20401424169540405,
+      "pearson_r": 0.9872433393974674,
+      "cosine_similarity": 0.9892631718521784,
+      "terminal_pred_pos": [
+        -0.029794716867784968,
+        -0.005225162959420482
+      ],
+      "terminal_phys_pos": [
+        -0.20002874008697086,
+        -0.00814426973237367
+      ],
+      "terminal_pred_yaw": 0.5395176410675049,
+      "terminal_phys_yaw": 0.7435319062571027
+    },
+    {
+      "profile_id": "P21",
+      "profile_name": "reverse_hook_left",
+      "family": "Reverse-Hook",
+      "seed": 3003,
+      "command": [
+        -0.4000000059604645,
+        -0.15000000596046448
+      ],
+      "e_term": 0.17412733492989688,
+      "rmse_xy": 0.1205028440779395,
+      "e_theta": 0.2870655059814453,
+      "pearson_r": 0.9885101936520597,
+      "cosine_similarity": 0.9901906471998605,
+      "terminal_pred_pos": [
+        -0.025537225873241386,
+        -0.002265228364406976
+      ],
+      "terminal_phys_pos": [
+        -0.19955944203215534,
+        -0.008314778176476795
+      ],
+      "terminal_pred_yaw": 0.531318724155426,
+      "terminal_phys_yaw": 0.8183842081347061
+    },
+    {
+      "profile_id": "P21",
+      "profile_name": "reverse_hook_left",
+      "family": "Reverse-Hook",
+      "seed": 3004,
+      "command": [
+        -0.4000000059604645,
+        -0.15000000596046448
+      ],
+      "e_term": 0.1717036943163043,
+      "rmse_xy": 0.12126146618352822,
+      "e_theta": 0.1958947777748108,
+      "pearson_r": 0.8129945875454264,
+      "cosine_similarity": 0.874625775421964,
+      "terminal_pred_pos": [
+        -0.022340618016927556,
+        -0.011955688104723736
+      ],
+      "terminal_phys_pos": [
+        -0.19403533369292014,
+        -0.013711606897531384
+      ],
+      "terminal_pred_yaw": 0.5415292382240295,
+      "terminal_phys_yaw": 0.7374239993946812
+    },
+    {
+      "profile_id": "P21",
+      "profile_name": "reverse_hook_left",
+      "family": "Reverse-Hook",
+      "seed": 3005,
+      "command": [
+        -0.4000000059604645,
+        -0.15000000596046448
+      ],
+      "e_term": 0.1702384517151094,
+      "rmse_xy": 0.12086966838173822,
+      "e_theta": 0.20402407646179196,
+      "pearson_r": 0.9771915679246046,
+      "cosine_similarity": 0.9617530318435039,
+      "terminal_pred_pos": [
+        -0.030789720555773205,
+        0.002899801069612738
+      ],
+      "terminal_phys_pos": [
+        -0.2010054089305269,
+        0.00011594161440190874
+      ],
+      "terminal_pred_yaw": 0.5401158332824707,
+      "terminal_phys_yaw": 0.74413993547744
+    },
+    {
+      "profile_id": "P22",
+      "profile_name": "reverse_hook_right",
+      "family": "Reverse-Hook",
+      "seed": 3001,
+      "command": [
+        -0.15000000596046448,
+        -0.4000000059604645
+      ],
+      "e_term": 0.17392252453365828,
+      "rmse_xy": 0.12045077583682211,
+      "e_theta": 0.2904772162437439,
+      "pearson_r": 0.9660355560768737,
+      "cosine_similarity": 0.9508338106070051,
+      "terminal_pred_pos": [
+        -0.027189579980829715,
+        -0.002904263173735112
+      ],
+      "terminal_phys_pos": [
+        -0.20100082091174923,
+        0.003316433428319989
+      ],
+      "terminal_pred_yaw": -0.5301315188407898,
+      "terminal_phys_yaw": -0.8206087570030215
+    },
+    {
+      "profile_id": "P22",
+      "profile_name": "reverse_hook_right",
+      "family": "Reverse-Hook",
+      "seed": 3002,
+      "command": [
+        -0.15000000596046448,
+        -0.4000000059604645
+      ],
+      "e_term": 0.17688401290316275,
+      "rmse_xy": 0.12200994889692966,
+      "e_theta": 0.17280864715576172,
+      "pearson_r": 0.9781540813253415,
+      "cosine_similarity": 0.9751725078956832,
+      "terminal_pred_pos": [
+        -0.0298206562969638,
+        0.007795319129484346
+      ],
+      "terminal_phys_pos": [
+        -0.20670463361446798,
+        0.007683118118256125
+      ],
+      "terminal_pred_yaw": -0.5355332493782043,
+      "terminal_phys_yaw": -0.7083418920489563
+    },
+    {
+      "profile_id": "P22",
+      "profile_name": "reverse_hook_right",
+      "family": "Reverse-Hook",
+      "seed": 3003,
+      "command": [
+        -0.15000000596046448,
+        -0.4000000059604645
+      ],
+      "e_term": 0.17161872949528537,
+      "rmse_xy": 0.12123197975896682,
+      "e_theta": 0.1974756121635437,
+      "pearson_r": 0.980838533666779,
+      "cosine_similarity": 0.9300502082149176,
+      "terminal_pred_pos": [
+        -0.02545641105532106,
+        0.010755029202997793
+      ],
+      "terminal_phys_pos": [
+        -0.19707027768003832,
+        0.012046964065785398
+      ],
+      "terminal_pred_yaw": -0.543732225894928,
+      "terminal_phys_yaw": -0.7412078574999966
+    },
+    {
+      "profile_id": "P22",
+      "profile_name": "reverse_hook_right",
+      "family": "Reverse-Hook",
+      "seed": 3004,
+      "command": [
+        -0.15000000596046448,
+        -0.4000000059604645
+      ],
+      "e_term": 0.17687906460558128,
+      "rmse_xy": 0.12199668308541826,
+      "e_theta": 0.17190980911254883,
+      "pearson_r": 0.9562998618112956,
+      "cosine_similarity": 0.9733096742824795,
+      "terminal_pred_pos": [
+        -0.022392749263702945,
+        0.0010647150109371487
+      ],
+      "terminal_phys_pos": [
+        -0.19927167131985032,
+        0.0012892768080918966
+      ],
+      "terminal_pred_yaw": -0.5335216522216797,
+      "terminal_phys_yaw": -0.7054314474446267
+    },
+    {
+      "profile_id": "P22",
+      "profile_name": "reverse_hook_right",
+      "family": "Reverse-Hook",
+      "seed": 3005,
+      "command": [
+        -0.15000000596046448,
+        -0.4000000059604645
+      ],
+      "e_term": 0.17687978659147188,
+      "rmse_xy": 0.12200427424290984,
+      "e_theta": 0.1724560260772705,
+      "pearson_r": 0.9662407749043875,
+      "cosine_similarity": 0.8943056477408386,
+      "terminal_pred_pos": [
+        -0.030823448635643548,
+        0.01592026515779843
+      ],
+      "terminal_phys_pos": [
+        -0.20770323239184965,
+        0.015888594944679427
+      ],
+      "terminal_pred_yaw": -0.5349350571632385,
+      "terminal_phys_yaw": -0.7073911108293585
+    },
+    {
+      "profile_id": "P23",
+      "profile_name": "throttle_step",
+      "family": "Accel/Decel Ramp",
+      "seed": 3001,
+      "command": [
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "e_term": 0.019815542342173306,
+      "rmse_xy": 0.014850422469956768,
+      "e_theta": 0.017886605113744736,
+      "pearson_r": 0.991462264694212,
+      "cosine_similarity": 0.9497982464230846,
+      "terminal_pred_pos": [
+        0.038008591437330486,
+        -0.008932614273947715
+      ],
+      "terminal_phys_pos": [
+        0.0576063215973199,
+        -0.006002649958345143
+      ],
+      "terminal_pred_yaw": 0.007393949199467897,
+      "terminal_phys_yaw": -0.010492656041703555
+    },
+    {
+      "profile_id": "P23",
+      "profile_name": "throttle_step",
+      "family": "Accel/Decel Ramp",
+      "seed": 3002,
+      "command": [
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "e_term": 0.0198250369683329,
+      "rmse_xy": 0.014853048890528122,
+      "e_theta": 0.014884351752698421,
+      "pearson_r": 0.948217214955925,
+      "cosine_similarity": 0.9463107655351193,
+      "terminal_pred_pos": [
+        0.03534400206042547,
+        0.0014148735423011427
+      ],
+      "terminal_phys_pos": [
+        0.054936609872813645,
+        0.0044417217224568565
+      ],
+      "terminal_pred_yaw": 0.001992202363908291,
+      "terminal_phys_yaw": -0.012892148924273877
+    },
+    {
+      "profile_id": "P23",
+      "profile_name": "throttle_step",
+      "family": "Accel/Decel Ramp",
+      "seed": 3003,
+      "command": [
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "e_term": 0.019820318320016017,
+      "rmse_xy": 0.014851707723713137,
+      "e_theta": 0.017238093540072445,
+      "pearson_r": 0.9492743910115663,
+      "cosine_similarity": 0.9697082112234003,
+      "terminal_pred_pos": [
+        0.03965374455877189,
+        0.0038405218317771137
+      ],
+      "terminal_phys_pos": [
+        0.05925149090925407,
+        0.0008785366378700368
+      ],
+      "terminal_pred_yaw": -0.0062067522667348385,
+      "terminal_phys_yaw": 0.011031341079825584
+    },
+    {
+      "profile_id": "P23",
+      "profile_name": "throttle_step",
+      "family": "Accel/Decel Ramp",
+      "seed": 3004,
+      "command": [
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "e_term": 0.019821869871846785,
+      "rmse_xy": 0.014852108743389889,
+      "e_theta": 0.015994848683476445,
+      "pearson_r": 0.9924531562932382,
+      "cosine_similarity": 0.9793799914114327,
+      "terminal_pred_pos": [
+        0.042784613148511334,
+        -0.005184631711205797
+      ],
+      "terminal_phys_pos": [
+        0.06237905917738839,
+        -0.0021906026469094273
+      ],
+      "terminal_pred_yaw": 0.004003811161965132,
+      "terminal_phys_yaw": -0.011991037246723575
+    },
+    {
+      "profile_id": "P23",
+      "profile_name": "throttle_step",
+      "family": "Accel/Decel Ramp",
+      "seed": 3005,
+      "command": [
+        0.20000000298023224,
+        0.20000000298023224
+      ],
+      "e_term": 0.0198241130232594,
+      "rmse_xy": 0.014852766270027008,
+      "e_theta": 0.015211944468319418,
+      "pearson_r": 0.8688516518698591,
+      "cosine_similarity": 0.9299467594988077,
+      "terminal_pred_pos": [
+        0.03434501475653964,
+        0.009578801043768624
+      ],
+      "terminal_phys_pos": [
+        0.05393814611547829,
+        0.01259619407589712
+      ],
+      "terminal_pred_yaw": 0.002590380609035492,
+      "terminal_phys_yaw": -0.012621563731879228
+    },
+    {
+      "profile_id": "P24",
+      "profile_name": "inertial_coast",
+      "family": "Coasting / Decay",
+      "seed": 3001,
+      "command": [
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.015012401839658207,
+      "rmse_xy": 0.010690220526652635,
+      "e_theta": 0.06213165447115898,
+      "pearson_r": 0.9925855271141437,
+      "cosine_similarity": 0.9909437674417096,
+      "terminal_pred_pos": [
+        0.04300772123745644,
+        -0.00889565028468804
+      ],
+      "terminal_phys_pos": [
+        0.05799555804078285,
+        -0.009754112253692793
+      ],
+      "terminal_pred_yaw": 0.007393949199467897,
+      "terminal_phys_yaw": -0.05473770397390499
+    },
+    {
+      "profile_id": "P24",
+      "profile_name": "inertial_coast",
+      "family": "Coasting / Decay",
+      "seed": 3002,
+      "command": [
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.01499749217346117,
+      "rmse_xy": 0.010684984236696804,
+      "e_theta": 0.058502547442913055,
+      "pearson_r": 0.9835170766433993,
+      "cosine_similarity": 0.990276910660486,
+      "terminal_pred_pos": [
+        0.040343259218913505,
+        0.0014248330854504498
+      ],
+      "terminal_phys_pos": [
+        0.055326501188231784,
+        0.0007712035406099902
+      ],
+      "terminal_pred_yaw": 0.001992202363908291,
+      "terminal_phys_yaw": -0.05651034361323814
+    },
+    {
+      "profile_id": "P24",
+      "profile_name": "inertial_coast",
+      "family": "Coasting / Decay",
+      "seed": 3003,
+      "command": [
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.015007722617166227,
+      "rmse_xy": 0.010688570173181818,
+      "e_theta": 0.061300307512283325,
+      "pearson_r": 0.9858291495444339,
+      "cosine_similarity": 0.9930372655908664,
+      "terminal_pred_pos": [
+        0.04465291475501452,
+        0.0038094928211344446
+      ],
+      "terminal_phys_pos": [
+        0.05963894241413292,
+        0.004616160754016915
+      ],
+      "terminal_pred_yaw": -0.0062067522667348385,
+      "terminal_phys_yaw": 0.055093558094430624
+    },
+    {
+      "profile_id": "P24",
+      "profile_name": "inertial_coast",
+      "family": "Coasting / Decay",
+      "seed": 3004,
+      "command": [
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.015002082714883153,
+      "rmse_xy": 0.010686364984777562,
+      "e_theta": 0.05979537591338158,
+      "pearson_r": 0.9929632309036247,
+      "cosine_similarity": 0.994241596333313,
+      "terminal_pred_pos": [
+        0.04778383992260037,
+        -0.0051646156441228904
+      ],
+      "terminal_phys_pos": [
+        0.06276827734299219,
+        -0.005892022668117943
+      ],
+      "terminal_pred_yaw": 0.004003811161965132,
+      "terminal_phys_yaw": -0.055791565340458094
+    },
+    {
+      "profile_id": "P24",
+      "profile_name": "inertial_coast",
+      "family": "Coasting / Decay",
+      "seed": 3005,
+      "command": [
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "e_term": 0.014998774521841451,
+      "rmse_xy": 0.010685331479386145,
+      "e_theta": 0.058886777609586716,
+      "pearson_r": 0.9648254561604421,
+      "cosine_similarity": 0.986643172622287,
+      "terminal_pred_pos": [
+        0.03934426469727772,
+        0.00959175103210008
+      ],
+      "terminal_phys_pos": [
+        0.05432781714095297,
+        0.008916182142442176
+      ],
+      "terminal_pred_yaw": 0.002590380609035492,
+      "terminal_phys_yaw": -0.056296397405992786
+    }
+  ]
+}

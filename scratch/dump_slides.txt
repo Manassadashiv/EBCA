@@ -1,0 +1,101 @@
+=== SLIDE 15 ===
+  [20.0pt] COMPLETE CONTROL LOOP & ENDOCRINE MODULATION PATHWAYS
+  [20.0pt] Endocrine System & Neuromodulatory Dynamics (Stage 1.4 & Stage 3.5):
+  [18.0pt] •  Chemical Kinetics: Four circulating virtual hormones regulate global computational gain and behavioral modes:
+  [18.0pt] • Dopamine (DA): Encodes appetitive reward expectation and drives forward goal-seeking persistence.
+  [18.0pt] • Norepinephrine (NE): Modulates exploration noise scale and vigilance during sensory uncertainty.
+  [18.0pt] • Serotonin (5-HT): Sets deliberation temporal discounting and motor behavioral inhibition.
+  [18.0pt] • Cortisol / Emergency Stress: Triggers immediate risk aversion and contracts safe obstacle margins.
+  [20.0pt] Hierarchical Integration with Continuous Deliberation:
+  [18.0pt] •  • Online Gain Adaptation: Dynamic hormone concentrations directly scale MPPI exploration temperature λ.
+  [18.0pt] •  • Stress-Gated Precision: High Cortisol dynamically tightens the swept-cone safety veto margin.
+  [18.0pt] •  • Biological Grounding: Sensorimotor coupling within recurrent topological inductive biases.
+  [18.0pt] 15
+=== SLIDE 16 ===
+  [24.0pt] CONTROL LOGIC FLOW: REFLEX MODE
+  [20.0pt] 1. Hazard Detection
+  [18.0pt] Near-field ultrasonic sensors detect imminent obstacle violation (distance d ≤ 0.15 m).
+  [20.0pt] 2. SNN Spiking Reflex
+  [18.0pt] Sub-millisecond Leaky Integrate-and-Fire (LIF) reflex layer fires emergency burst (< 1.0 ms).
+  [20.0pt] 3. Motor Pre-emption
+  [18.0pt] Direct motor mixer pre-empts cognitive deliberation and executes decisive aversive repulsion.
+  [20.0pt] Key Safety Properties of the Spiking Reflex Architecture:
+  [18.0pt] •  • Zero Cognitive Delay: Bypasses MPPI optimization and world model rollouts when safety margins are breached.
+  [18.0pt] •  • Asymmetric Repulsion: SNN generates maximum angular velocity away from the closest detected obstacle vector.
+  [18.0pt] •  • Verified Invariant: Over 150 physical challenge trials executed with 0.00% uncontrolled collisions.
+  [18.0pt] 16
+=== SLIDE 18 ===
+  [18.5pt] PHASE 0 :- EMBODIED FOUNDATION & QUALIFICATION
+  [18.5pt] Phase 0 establishes a stable, testable embodied CARL DX foundation capable of sensing, predicting, deciding, acting, adapting and recovering within a real time MuJoCo digital twin
+  [18.5pt] What was constructed
+  [18.5pt] Embodied system
+  [18.5pt] MuJoCo digital twin
+  [18.5pt] 30 Hz cognitive control loop
+  [18.5pt] sensor/state estimation
+  [18.5pt] Cognitive system
+  [18.5pt] homeostatic/internal state
+  [18.5pt] generative self model
+  [18.5pt] Active Inference / Expected Free Energy
+  [18.5pt] HDC episodic memory
+  [18.5pt] Adaptive/safety system
+  [18.5pt] online friction/self model adaptation
+  [18.5pt] operational safety veto
+  [18.5pt] 3 tier stuck recovery
+  [18.5pt] Validation system
+  [18.5pt] adversarial regression scenarios
+  [18.5pt] fail closed scoring
+  [18.5pt] telemetry + video + forensic audits
+  [18.0pt] 18
+=== SLIDE 19 ===
+  [28.0pt] CARL DX P0 ; LIVE DEMONSTRATION
+  [18.0pt] Same CARL controller • Different environment • Autonomous route selection • Target acquired
+  [18.0pt] 19
+=== SLIDE 20 ===
+  [24.0pt] CARL DX P0 VALIDATION EVIDENCE
+  [18.0pt] Figure 1: Goal Directed Navigation Trajectories Under Environmental Constraint
+  [18.0pt] 81/81 runs passed • 0 collisions • 0 uncontrolled recovery failures • P0 COMPLETE
+  [18.0pt] 20
+=== SLIDE 21 ===
+  [20.0pt] PHASE 1 :- INDIVIDUAL EMERGENCE & ADAPTIVE SENSORIMOTOR LEARNING
+  [20.0pt] Phase 1 establishes CARL’s ability to adapt its internal sensorimotor representation from physical experience rather than relying entirely on fixed predefined behaviour
+  [20.0pt] What was constructed
+  [20.0pt] Adaptive sensorimotor system
+  [20.0pt] memory driven sensor adaptation
+  [20.0pt] empirical friction gradient mapping
+  [20.0pt] dynamical stability envelope evaluation
+  [20.0pt] Learning / self model system
+  [20.0pt] experience based sensorimotor adaptation
+  [20.0pt] internal representation of changing physical conditions
+  [20.0pt] progressive refinement of embodied behaviour
+  [20.0pt] Validation system
+  [20.0pt] controlled physical perturbations
+  [20.0pt] friction and stability experiments
+  [20.0pt] quantitative behavioural evaluation
+  [20.0pt] Phase 1 Outcome
+  [20.0pt] CARL progressed from a physically grounded controller toward an adaptive individual agent capable of modifying its internal sensorimotor behaviour from experience
+  [18.0pt] 21
+=== SLIDE 25 ===
+  [18.5pt] PHASE 2 :- SPATIAL COGNITION & WORLD MODELLING
+  [18.5pt] Phase 2 establishes CARL’s internal representation of direction, space and future physical consequences, enabling the transition from reactive behaviour toward prospective cognition
+  [18.5pt] What was constructed
+  [18.5pt] Spatial cognition system
+  [18.5pt] continuous attractor head direction representation
+  [18.5pt] grid based spatial representation
+  [18.5pt] translational self model / path integration
+  [18.5pt] Predictive world model system
+  [18.5pt] action conditioned body dynamics
+  [18.5pt] environmental spatial memory
+  [18.5pt] prospective sensory prediction
+  [18.5pt] counterfactual future rollouts
+  [18.5pt] Deliberation system
+  [18.5pt] prospective action evaluation
+  [18.5pt] spatial memory based action selection
+  [18.5pt] collision aware future assessment
+  [18.5pt] Validation system
+  [18.5pt] multi seed spatial evaluation
+  [18.5pt] adversarial causal interventions
+  [18.5pt] air gapped counterfactual testing
+  [18.5pt] physical deliberation benchmark
+  [18.5pt] Phase 2 Outcome
+  [18.5pt] CARL progressed from representing its current state to predicting possible future states and using those predictions for prospective action selection
+  [18.0pt] 25

@@ -1,0 +1,89 @@
+{
+  "milestone": "Stage 3.4 \u2014 Autonomous Behavioral Discovery under Active Inference",
+  "protocol_id": "CARL-STAGE3-4-ACTIVE-INF-PROTO-2026-09-14-v4",
+  "adjudication_status": "FAILED CLOSED",
+  "all_gates_pass": false,
+  "total_matched_configurations": 40,
+  "total_experimental_arms": 4,
+  "total_episodes_executed": 160,
+  "execution_time_seconds": 432.0543167591095,
+  "seeds_evaluated": [
+    4001,
+    4002,
+    4003,
+    4004,
+    4005
+  ],
+  "gates": {
+    "gate_1": {
+      "name": "Autonomous Cul-de-Sac Escape Rate",
+      "metric": "Escape Rate & Collision Ceiling",
+      "observed_escape_rate": 0.0,
+      "observed_escapes": 0,
+      "observed_collision_rate": 0.65,
+      "observed_collisions": 26,
+      "threshold_escape_rate": 0.8,
+      "threshold_collision_ceiling": 0.1,
+      "passed": false
+    },
+    "gate_2": {
+      "name": "Emergent Maneuver Verification",
+      "metric": "Authentic Reversal + Pivot via Evaluator Telemetry",
+      "observed_emergence_rate": 0.775,
+      "observed_emergence_count": 31,
+      "threshold_emergence_rate": 0.75,
+      "passed": true
+    },
+    "gate_3": {
+      "name": "Information-Gain Causal Necessity",
+      "metric": "Paired McNemar Test (ARM-A vs ARM-B)",
+      "delta_escape": 0.0,
+      "threshold_delta_escape": 0.35,
+      "mcnemar_p_value": 1.0,
+      "threshold_p_value": 0.001,
+      "contingency_table": {
+        "n11_both_escape": 0,
+        "n10_arma_esc_armb_fail": 0,
+        "n01_arma_fail_armb_esc": 0,
+        "n00_both_fail": 40,
+        "total_discordant": 0
+      },
+      "passed": false
+    },
+    "gate_4": {
+      "name": "Real-Time Cognitive Cycle Latency",
+      "metric": "p95 and Mean Execution Latency",
+      "observed_p95_ms": 23.220185000172933,
+      "observed_mean_ms": 13.524796893234338,
+      "threshold_p95_ms": 45.0,
+      "threshold_mean_ms": 20.0,
+      "total_cycles_measured": 27070,
+      "passed": true
+    },
+    "gate_5": {
+      "name": "Decision-Pipeline AST Anti-Cheat",
+      "metric": "Zero Simulator Coordinates & Zero Scripted Macros",
+      "static_scan_clean": true,
+      "passed": true
+    }
+  },
+  "comparative_summary": {
+    "ARM-A (Full Active Inference)": {
+      "escape_rate": 0.0,
+      "collision_rate": 0.65,
+      "gate2_emergence_rate": 0.775
+    },
+    "ARM-B (Pragmatic-Only Baseline)": {
+      "escape_rate": 0.0,
+      "collision_rate": 0.625
+    },
+    "ARM-C (Stage 2 Discrete Baseline)": {
+      "escape_rate": 0.05,
+      "collision_rate": 0.05
+    },
+    "ARM-D (Random MPPI)": {
+      "escape_rate": 0.0,
+      "collision_rate": 0.525
+    }
+  }
+}

@@ -1,0 +1,98 @@
+=== SLIDE 24 ===
+--- TEXT FRAME ---
+EMBODIED SENSORIMOTOR GROUNDING
+STAGE 1.1 EMPIRICAL EVIDENCE: STABILITY ENVELOPES & PARAMETER DISCOVERY
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+24
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+Empirical Parameter Discovery & Regime Mapping
+--- TEXT FRAME ---
+Unsupervised parameter identification mapped safe operating boundary vs slip hazard
+•  Critical friction boundary identified at μ = 0.35 where slip exceeds 40%
+•  Validates need for higher order continuous attractor spatial representations
+--- TEXT FRAME ---
+Figure 2(b): Empirical Sensorimotor Contingency Matrix
+=== SLIDE 25 ===
+--- TEXT FRAME ---
+SENSORIMOTOR GROUNDING & ODOMETRY
+STAGE 1.1 EMPIRICAL EVIDENCE: KINEMATIC FRICTION & UNPRIVILEGED ODOMETRIC DRIFT
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+25
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+•  Low Friction Regimes (μ = 0.05–0.25): Longitudinal slip σ reaches 98.2%, chassis halts
+•  High Friction Regimes (μ = 0.50–1.0): Traction recovers, slip stabilizes at 24.1%
+•  Proves dead reckoning alone diverges rapidly without continuous neural attractors
+--- TEXT FRAME ---
+Friction Gradient Sweep (μ ∈ [005, 10])
+--- TEXT FRAME ---
+Figure 3: Friction Gradient Response and Slip Monotonicity
+=== SLIDE 27 ===
+--- TEXT FRAME ---
+CONTINUOUS ATTRACTOR DYNAMICS
+STAGE 2: CONTINUOUS ATTRACTOR HEAD DIRECTION & SPATIAL REPRESENTATION
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+27
+--- TEXT FRAME ---
+Physical Reality vs Internal CANN Self Model
+•  Dev Seed 101: Final homing return drift = 0.0650 m (within 0.22 m target gate) [PASS]
+•  Unseen Seed 505: Final return drift = 0.0570 m (within 0.22 m target gate) [PASS]
+•  Demonstrates unprivileged spatial grounding across both seen and unseen seeds
+=== SLIDE 28 ===
+--- TEXT FRAME ---
+CONTINUOUS ATTRACTOR DYNAMICS
+STAGE 2: CONTINUOUS ATTRACTOR HEAD DIRECTION & SPATIAL REPRESENTATION
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+28
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+•  Topology: 1D Continuous Attractor Neural Network (CANN) with periodic boundary
+•  Inhibition Kernel: Mexican hat recurrent connectivity profile (local excitation, global inhibition)
+•  Multi Seed Verification (5 Seeds Evaluated):
+ • Seed 101: Mean homing error = 0.065 m (Target < 022 m) [PASS]
+ • Seed 202: Mean homing error = 0.071 m (Target < 022 m) [PASS]
+ • Seed 303: Mean homing error = 0.062 m (Target < 022 m) [PASS]
+ • Seed 404: Mean homing error = 0.059 m (Target < 022 m) [PASS]
+ • Seed 505: Mean homing error = 0.057 m (Target < 022 m) [PASS]
+•  Blackout Resilience: Directional drift < 0.02 rad/s during complete sensor dropouts
+•  Conclusion: Provides validated spatial foundation for Stage 2.2 predictive world model
+--- TEXT FRAME ---
+Stage 21 Spatial Architecture & Multi Seed Scorecard
+--- TEXT FRAME ---
+•  Maintains stable unimodal Gaussian activity packet across 360° angular space
+•  Angular velocity inputs smoothly shift activity bump without phase dispersion
+•  Sustains orientation representation across sensory blackout and wheel slip conditions
+--- TEXT FRAME ---
+CANN Ring Attractor Bump Dynamics
+=== SLIDE 29 ===
+--- TEXT FRAME ---
+STAGE 2.2 :-PREDICTIVE WORLD MODEL 7 GATE VALIDATION
+--- TEXT FRAME ---
+
+--- TEXT FRAME ---
+29
+--- TABLE ---
+Verification Gate | Target Metric | Threshold | Achieved Score | Result
+Gate 1: Body Proprioception | Forward Velocity (v) R² | ≥ 0.90 | R² = 0.9613 | PASS
+Gate 2: Angular Gyroscope | Rotational Velocity (ω) R² | ≥ 0.80 | R² = 0.8466 | PASS
+Gate 3: Dynamic Sonar Range | Virtual Rays Range R² | ≥ 0.50 | R² = 0.5377 | PASS
+Gate 4: Collision Prediction | Imminent Contact ROC AUC | ≥ 0.90 | ROC AUC = 0.995 | PASS
+Gate 5: Multi Step Stability | 5 Step Rollout Drift | < 15.0% | Drift = 8.18% | PASS
+Gate 6: Causal Sensitivity | Action Intervention Δ | > 0.35 | Δ = 0.442 | PASS
+Gate 7: Compute Latency | Inference Cycle Time | ≤ 10.0 ms | 2.12 ms | PASS
+--- TEXT FRAME ---
+Table 2: Stage 2.2 Predictive World Model : Seven Gate Validation Results

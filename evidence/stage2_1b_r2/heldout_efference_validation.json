@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "timestamp": "2026-09-04 16:51:01 UTC",
+    "stage": "Stage 2.1B-R.2",
+    "task": "Phase A: Held-Out Development Validation",
+    "dev_seeds": [
+      42,
+      101,
+      202
+    ]
+  },
+  "dev_records": [
+    {
+      "seed": 42,
+      "w_rot_channel": 20,
+      "w_rot_sign": 1.0,
+      "k_eff": 4.1308,
+      "held_out_r2": 0.9376,
+      "held_out_corr": 0.97,
+      "r2_ge_085_passed": true
+    },
+    {
+      "seed": 101,
+      "w_rot_channel": 20,
+      "w_rot_sign": 1.0,
+      "k_eff": 3.9996,
+      "held_out_r2": 0.945,
+      "held_out_corr": 0.9748,
+      "r2_ge_085_passed": true
+    },
+    {
+      "seed": 202,
+      "w_rot_channel": 20,
+      "w_rot_sign": 1.0,
+      "k_eff": 4.128,
+      "held_out_r2": 0.9467,
+      "held_out_corr": 0.9751,
+      "r2_ge_085_passed": true
+    }
+  ],
+  "mean_held_out_r2": 0.9431,
+  "phase_a_passed": true,
+  "frozen_k_eff": 4.0862
+}

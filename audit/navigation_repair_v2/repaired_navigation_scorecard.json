@@ -1,0 +1,258 @@
+[
+  {
+    "scenario_id": "SCENARIO_A_WALL_DIRECTLY_AHEAD",
+    "scenario_name": "Scenario A: Wall Directly Ahead (Head-on Approach)",
+    "env_hash": "c9968ffc0f912749",
+    "overall_verdict": "FAIL",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": false,
+      "gate_3_forward_progress_avoidance": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": false,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_consistency": true
+    },
+    "metrics": {
+      "min_clearance_m": 0.166,
+      "avoidance_initiated_tick": 63,
+      "action_switches": 3,
+      "curvature_flips": 0,
+      "spin_ticks": 0,
+      "net_displacement_m": 1.074,
+      "decoded_frames": 100,
+      "peak_commanded_jerk_rad_s3": 30.21,
+      "peak_roll_deg": 0.0,
+      "peak_pitch_deg": 0.0
+    },
+    "video_file": "scenario_a_wall_directly_ahead.mp4",
+    "plot_file": "scenario_a_wall_directly_ahead_diagnostics.png"
+  },
+  {
+    "scenario_id": "SCENARIO_B_WALL_AT_45_DEG",
+    "scenario_name": "Scenario B: Wall at 45 Degrees (Angled Approach)",
+    "env_hash": "db8f6ef612f34aae",
+    "overall_verdict": "FAIL",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": false,
+      "gate_3_forward_progress_avoidance": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": false,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_consistency": true
+    },
+    "metrics": {
+      "min_clearance_m": 0.163,
+      "avoidance_initiated_tick": 66,
+      "action_switches": 3,
+      "curvature_flips": 0,
+      "spin_ticks": 0,
+      "net_displacement_m": 0.99,
+      "decoded_frames": 100,
+      "peak_commanded_jerk_rad_s3": 30.21,
+      "peak_roll_deg": 0.0,
+      "peak_pitch_deg": 0.0
+    },
+    "video_file": "scenario_b_wall_at_45_deg.mp4",
+    "plot_file": "scenario_b_wall_at_45_deg_diagnostics.png"
+  },
+  {
+    "scenario_id": "SCENARIO_C_CORRIDOR_WITH_OPENING",
+    "scenario_name": "Scenario C: Corridor with Lateral Opening",
+    "env_hash": "0364c8a507c5da2c",
+    "overall_verdict": "FAIL",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": false,
+      "gate_3_forward_progress_avoidance": true,
+      "gate_4_spin_limit": false,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": false,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_consistency": true
+    },
+    "metrics": {
+      "min_clearance_m": 0.182,
+      "avoidance_initiated_tick": 52,
+      "action_switches": 5,
+      "curvature_flips": 0,
+      "spin_ticks": 2,
+      "net_displacement_m": 1.067,
+      "decoded_frames": 100,
+      "peak_commanded_jerk_rad_s3": 30.21,
+      "peak_roll_deg": 0.0,
+      "peak_pitch_deg": 0.0
+    },
+    "video_file": "scenario_c_corridor_with_opening.mp4",
+    "plot_file": "scenario_c_corridor_with_opening_diagnostics.png"
+  },
+  {
+    "scenario_id": "SCENARIO_D_DEAD_END_CORRIDOR",
+    "scenario_name": "Scenario D: Dead-End Corridor (180\u00b0 Reversal)",
+    "env_hash": "373246c7bc055edc",
+    "overall_verdict": "FAIL",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": false,
+      "gate_3_forward_progress_avoidance": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_consistency": true
+    },
+    "metrics": {
+      "min_clearance_m": 0.602,
+      "avoidance_initiated_tick": null,
+      "action_switches": 2,
+      "curvature_flips": 0,
+      "spin_ticks": 0,
+      "net_displacement_m": 0.767,
+      "decoded_frames": 100,
+      "peak_commanded_jerk_rad_s3": 30.21,
+      "peak_roll_deg": 0.0,
+      "peak_pitch_deg": 0.0
+    },
+    "video_file": "scenario_d_dead_end_corridor.mp4",
+    "plot_file": "scenario_d_dead_end_corridor_diagnostics.png"
+  },
+  {
+    "scenario_id": "SCENARIO_E_BIFURCATION_OBSTACLE",
+    "scenario_name": "Scenario E: T-Junction Obstacle Bifurcation",
+    "env_hash": "76edc325225c3760",
+    "overall_verdict": "FAIL",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": false,
+      "gate_3_forward_progress_avoidance": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": false,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_consistency": true
+    },
+    "metrics": {
+      "min_clearance_m": 0.077,
+      "avoidance_initiated_tick": 60,
+      "action_switches": 3,
+      "curvature_flips": 0,
+      "spin_ticks": 0,
+      "net_displacement_m": 1.027,
+      "decoded_frames": 100,
+      "peak_commanded_jerk_rad_s3": 30.21,
+      "peak_roll_deg": 0.0,
+      "peak_pitch_deg": 0.0
+    },
+    "video_file": "scenario_e_bifurcation_obstacle.mp4",
+    "plot_file": "scenario_e_bifurcation_obstacle_diagnostics.png"
+  },
+  {
+    "scenario_id": "SCENARIO_F_MOVING_OBSTACLE",
+    "scenario_name": "Scenario F: Dynamic Crossing Hazard",
+    "env_hash": "2adab07204fdbd7d",
+    "overall_verdict": "PASS",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress_avoidance": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_consistency": true
+    },
+    "metrics": {
+      "min_clearance_m": 0.444,
+      "avoidance_initiated_tick": 48,
+      "action_switches": 4,
+      "curvature_flips": 0,
+      "spin_ticks": 0,
+      "net_displacement_m": 1.234,
+      "decoded_frames": 100,
+      "peak_commanded_jerk_rad_s3": 30.21,
+      "peak_roll_deg": 0.0,
+      "peak_pitch_deg": 0.0
+    },
+    "video_file": "scenario_f_moving_obstacle.mp4",
+    "plot_file": "scenario_f_moving_obstacle_diagnostics.png"
+  },
+  {
+    "scenario_id": "SCENARIO_G_NARROW_PASSAGE",
+    "scenario_name": "Scenario G: Narrow Passage Lateral Centering",
+    "env_hash": "897b5d772852598a",
+    "overall_verdict": "PASS",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress_avoidance": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_consistency": true
+    },
+    "metrics": {
+      "min_clearance_m": 0.451,
+      "avoidance_initiated_tick": 67,
+      "action_switches": 2,
+      "curvature_flips": 0,
+      "spin_ticks": 0,
+      "net_displacement_m": 1.412,
+      "decoded_frames": 100,
+      "peak_commanded_jerk_rad_s3": 30.21,
+      "peak_roll_deg": 0.0,
+      "peak_pitch_deg": 0.0
+    },
+    "video_file": "scenario_g_narrow_passage.mp4",
+    "plot_file": "scenario_g_narrow_passage_diagnostics.png"
+  },
+  {
+    "scenario_id": "SCENARIO_H_UNEXPECTED_DROP",
+    "scenario_name": "Scenario H: Unexpected Sudden Hazard Drop",
+    "env_hash": "0048d545da095c5a",
+    "overall_verdict": "FAIL",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": false,
+      "gate_3_forward_progress_avoidance": false,
+      "gate_4_spin_limit": false,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": false,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_consistency": true
+    },
+    "metrics": {
+      "min_clearance_m": 0.121,
+      "avoidance_initiated_tick": 52,
+      "action_switches": 4,
+      "curvature_flips": 0,
+      "spin_ticks": 1,
+      "net_displacement_m": 1.236,
+      "decoded_frames": 100,
+      "peak_commanded_jerk_rad_s3": 30.21,
+      "peak_roll_deg": 0.0,
+      "peak_pitch_deg": 0.0
+    },
+    "video_file": "scenario_h_unexpected_drop.mp4",
+    "plot_file": "scenario_h_unexpected_drop_diagnostics.png"
+  }
+]

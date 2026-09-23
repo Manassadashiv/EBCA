@@ -1,0 +1,14 @@
+{
+  "entry_point": "carl_live_playground.py:run_live_interactive_playground",
+  "simulation_class": "LivePlaygroundSimulation",
+  "agent_class": "CarlAutonomousOrganismAgent",
+  "world_xml": "world/vessel_kinetic.xml",
+  "physics_timestep_s": 0.01,
+  "cognitive_cycle_dt_s": 0.0333,
+  "physics_substeps_per_cognitive_tick": 8,
+  "simulated_physics_time_per_tick_s": 0.08,
+  "physics_to_model_timestep_ratio": 2.40,
+  "arena_modification": "setup_fun_playground modifies 6 wall positions and 3 pushable toys",
+  "viewer_type": "mujoco.viewer.launch_passive",
+  "rendering_sync": "viewer.sync() at 30Hz wallclock throttle"
+}

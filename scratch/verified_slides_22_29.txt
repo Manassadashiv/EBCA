@@ -1,0 +1,79 @@
+=== SLIDE 22 ===
+  [text] EMBODIED SENSORIMOTOR GROUNDING
+  [text] STAGE 1 EMPIRICAL EVIDENCE: STABILITY ENVELOPES & PARAMETER DISCOVERY
+  [text] Dynamical Stability Envelope (30 Hz Closed Loop)
+  [text] •  Swept linear velocity (0.1–0.5 m/s) and angular rate (0.2–1.5 rad/s) across 150 trials
+  [text] •  Zero chassis tip over or simulation divergence observed across full envelope
+  [text] •  Proves robust mechanical grounding in contact rich MuJoCo physics engine
+  [text] Figure 2(a): 10,000 Tick Dynamical Stability Phase layout
+  [text] 22
+=== SLIDE 23 ===
+  [text] EMBODIED SENSORIMOTOR GROUNDING
+  [text] STAGE 1 EMPIRICAL EVIDENCE: STABILITY ENVELOPES & PARAMETER DISCOVERY
+  [text] Empirical Parameter Discovery & Regime Mapping
+  [text] •  Unsupervised parameter identification mapped safe operating boundary vs slip hazard
+  [text] •  Critical friction boundary identified at μ = 0.35 where slip exceeds 40%
+  [text] •  Validates need for higher order continuous attractor spatial representations
+  [text] Figure 2(b): Empirical Sensorimotor Contingency Matrix
+  [text] 23
+=== SLIDE 24 ===
+  [text] SENSORIMOTOR GROUNDING & ODOMETRY
+  [text] STAGE 1.1 EMPIRICAL EVIDENCE: KINEMATIC FRICTION & UNPRIVILEGED ODOMETRIC DRIFT
+  [text] •  Low Friction Regimes (μ = 0.05–0.25): Longitudinal slip σ reaches 98.2%, chassis halts
+  [text] •  High Friction Regimes (μ = 0.50–1.0): Traction recovers, slip stabilizes at 24.1%
+  [text] •  Proves dead reckoning alone diverges rapidly without continuous neural attractors
+  [text] Friction Gradient Sweep (μ ∈ [0.05, 1.0])
+  [text] Figure 3: Friction Gradient Response and Slip Monotonicity
+  [text] 24
+=== SLIDE 26 ===
+  [text] CONTINUOUS ATTRACTOR DYNAMICS
+  [text] STAGE 2: CONTINUOUS ATTRACTOR HEAD DIRECTION & SPATIAL REPRESENTATION
+  [text] Physical Reality vs Internal CANN Self Model
+  [text] •  Dev Seed 101: Final homing return drift = 0.0650 m (within 0.22 m target gate) [PASS]
+  [text] •  Unseen Seed 505: Final return drift = 0.0570 m (within 0.22 m target gate) [PASS]
+  [text] •  Demonstrates unprivileged spatial grounding across both seen and unseen seeds
+  [text] 26
+=== SLIDE 27 ===
+  [text] CONTINUOUS ATTRACTOR DYNAMICS
+  [text] STAGE 2: CONTINUOUS ATTRACTOR HEAD DIRECTION & SPATIAL REPRESENTATION
+  [text] •  Topology: 1D Continuous Attractor Neural Network (CANN) with periodic boundary
+  [text] •  Inhibition Kernel: Mexican hat recurrent connectivity profile (local excitation, global inhibition)
+  [text] •  Multi Seed Verification (5 Seeds Evaluated):
+  [text] • Seed 101: Mean homing error = 0.065 m (Target < 0.22 m) [PASS]
+  [text] • Seed 202: Mean homing error = 0.071 m (Target < 0.22 m) [PASS]
+  [text] • Seed 303: Mean homing error = 0.062 m (Target < 0.22 m) [PASS]
+  [text] • Seed 404: Mean homing error = 0.059 m (Target < 0.22 m) [PASS]
+  [text] • Seed 505: Mean homing error = 0.057 m (Target < 0.22 m) [PASS]
+  [text] •  Blackout Resilience: Directional drift < 0.02 rad/s during complete sensor dropouts
+  [text] •  Conclusion: Provides validated spatial foundation for Stage 2.2 predictive world model
+  [text] Stage 2.1 Spatial Architecture & Multi-Seed Scorecard
+  [text] •  Maintains stable unimodal Gaussian activity packet across 360° angular space
+  [text] •  Angular velocity inputs smoothly shift activity bump without phase dispersion
+  [text] •  Sustains orientation representation across sensory blackout and wheel slip conditions
+  [text] CANN Ring Attractor Bump Dynamics
+  [text] 27
+=== SLIDE 28 ===
+  [text] STAGE 2.2 :-PREDICTIVE WORLD MODEL 7 GATE VALIDATION
+  [table row 0] Verification Gate | Target Metric | Threshold | Achieved Score | Result
+  [table row 1] Gate 1: Body Proprioception | Forward Velocity (v) R² | ≥ 0.90 | R² = 0.9613 | PASS
+  [table row 2] Gate 2: Angular Gyroscope | Rotational Velocity (ω) R² | ≥ 0.80 | R² = 0.8466 | PASS
+  [table row 3] Gate 3: Dynamic Sonar Range | Virtual Rays Range R² | ≥ 0.50 | R² = 0.5377 | PASS
+  [table row 4] Gate 4: Collision Prediction | Imminent Contact ROC-AUC | ≥ 0.90 | ROC-AUC = 0.995 | PASS
+  [table row 5] Gate 5: Multi-Step Stability | 5-Step Rollout Drift | < 15.0% | Drift = 8.18% | PASS
+  [table row 6] Gate 6: Causal Sensitivity | Action Intervention Δ | > 0.35 | Δ = 0.442 | PASS
+  [table row 7] Gate 7: Compute Latency | Inference Cycle Time | ≤ 10.0 ms | 2.12 ms | PASS
+  [text] Table 2: Stage 2.2 Predictive World Model : Seven Gate Validation Results
+  [text] 28
+=== SLIDE 29 ===
+  [text] PREDICTIVE WORLD MODEL EVIDENCE
+  [text] STAGE 2.2 ACTION BRANCHING AND FUTURE PREDICTION
+  [text] Causal Action Discrimination Margin (20/20 PASS)
+  [text] •  Tests whether different motor actions produce statistically distinct mental rollouts
+  [text] •  All 20 branches exceed the causal discrimination margin threshold (Δ ≥ +0.30 m)
+  [text] •  Confirms predictive model is causally sensitive to steering interventions (not mode collapsed)
+  [text] Figure 4(a): Individual Counterfactual Branch Fidelity (20/20 Pass)
+  [text] Individual Branch Fidelity (20/20 Branches PASS)
+  [text] •  Evaluates predictive fidelity across 20 distinct counterfactual action rollouts
+  [text] •  Every single branch exceeds the strict R² ≥ 0.50 threshold (mean R² = 0.772)
+  [text] •  Demonstrates unrolled forward dynamics closely track actual physical reality
+  [text] 29

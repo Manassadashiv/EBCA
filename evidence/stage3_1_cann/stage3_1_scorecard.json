@@ -1,0 +1,76 @@
+{
+  "n_trials": 100,
+  "arms": {
+    "ARM-A_Intact": {
+      "collision_rate_pct": 9.0,
+      "mean_hull_clearance_m": 0.12848997622061958,
+      "std_hull_clearance_m": 0.10504361545246013
+    },
+    "ARM-B_Frozen": {
+      "collision_rate_pct": 17.0,
+      "mean_hull_clearance_m": 0.13360373026123062,
+      "std_hull_clearance_m": 0.11341089529566797
+    },
+    "ARM-C_Zeroed": {
+      "collision_rate_pct": 7.000000000000001,
+      "mean_hull_clearance_m": 0.1472044341800313,
+      "std_hull_clearance_m": 0.10274971729587486
+    },
+    "ARM-D_Shuffled": {
+      "collision_rate_pct": 13.0,
+      "mean_hull_clearance_m": 0.13759454343009758,
+      "std_hull_clearance_m": 0.10767099503150639
+    }
+  },
+  "comparisons": {
+    "ARM-B_Frozen": {
+      "mean_delta_u": 0.5335826924646053,
+      "std_delta_u": 0.20292565119455933,
+      "delta_hull_clearance_m": -0.0051137540406110404,
+      "wilcoxon_p_value": 0.48518973727290204,
+      "cohens_d": -0.04654875168427392,
+      "mean_spearman_rho": 0.6566052753497233,
+      "collision_increase_pct": 8.0,
+      "gate_passed": false,
+      "gate_checks": {
+        "delta_u_gt_0_15": true,
+        "delta_clearance_gte_0_05": false,
+        "p_lt_0_01": false,
+        "spearman_rho_lte_0_70": true
+      }
+    },
+    "ARM-C_Zeroed": {
+      "mean_delta_u": 0.5319114013744759,
+      "std_delta_u": 0.12898507582645408,
+      "delta_hull_clearance_m": -0.018714457959411707,
+      "wilcoxon_p_value": 0.2565231689671972,
+      "cohens_d": -0.17921185456401484,
+      "mean_spearman_rho": 0.6080695652173912,
+      "collision_increase_pct": -1.9999999999999991,
+      "gate_passed": false,
+      "gate_checks": {
+        "delta_u_gt_0_15": true,
+        "delta_clearance_gte_0_05": false,
+        "p_lt_0_01": false,
+        "spearman_rho_lte_0_70": true
+      }
+    },
+    "ARM-D_Shuffled": {
+      "mean_delta_u": 0.5481294889328275,
+      "std_delta_u": 0.15505284458942775,
+      "delta_hull_clearance_m": -0.009104567209477998,
+      "wilcoxon_p_value": 0.6698511676891292,
+      "cohens_d": -0.0851679926755345,
+      "mean_spearman_rho": 0.6240347826086956,
+      "collision_increase_pct": 4.0,
+      "gate_passed": false,
+      "gate_checks": {
+        "delta_u_gt_0_15": true,
+        "delta_clearance_gte_0_05": false,
+        "p_lt_0_01": false,
+        "spearman_rho_lte_0_70": true
+      }
+    }
+  },
+  "overall_stage3_1_certified": false
+}

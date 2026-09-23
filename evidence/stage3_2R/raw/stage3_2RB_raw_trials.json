@@ -1,0 +1,5380 @@
+{
+  "summary": {
+    "subgate": "3.2-RB",
+    "title": "Spatial Memory Necessity under Non-Line-of-Sight Conditions (Class B)",
+    "total_episodes_evaluated": 500,
+    "total_matched_pairs": 100,
+    "sample_counts": {
+      "episodes_per_arm": 100,
+      "arms_evaluated": [
+        "ARM-I",
+        "ARM-A",
+        "ARM-S",
+        "ARM-PF",
+        "ARM-R"
+      ],
+      "pairs_per_family": 20,
+      "total_families": 5
+    },
+    "success_rates": {
+      "ARM-I": "11.0% (11/100)",
+      "ARM-A": "16.0% (16/100)",
+      "ARM-S": "11.0% (11/100)",
+      "ARM-PF": "4.0% (4/100)",
+      "ARM-R": "14.0% (14/100)"
+    },
+    "collision_rates": {
+      "ARM-I": "15.0% (15/100)",
+      "ARM-A": "13.0% (13/100)",
+      "ARM-S": "15.0% (15/100)",
+      "ARM-PF": "16.0% (16/100)",
+      "ARM-R": "23.0% (23/100)"
+    },
+    "contingency_table_I_vs_A": {
+      "n11": 11,
+      "n10": 0,
+      "n01": 5,
+      "n00": 84
+    },
+    "contingency_table_I_vs_S": {
+      "n11": 11,
+      "n10": 0,
+      "n01": 0,
+      "n00": 89
+    },
+    "effect_sizes": {
+      "delta_success_I_A": -0.05,
+      "exact_mcnemar_p_I_A": 1.0,
+      "delta_success_I_S": 0.0,
+      "exact_mcnemar_p_I_S": 1.0,
+      "mean_delta_u_I_A": 0.46636900354118344,
+      "p95_latency_ms": 7.410055500031376
+    },
+    "gates": {
+      "G6_primary_effect": {
+        "metric": -0.05,
+        "threshold": ">= 35.0%",
+        "passed": false
+      },
+      "G7_exact_mcnemar_significance": {
+        "metric": 1.0,
+        "threshold": "< 0.001",
+        "passed": false
+      },
+      "G8_topographic_specificity": {
+        "metric_delta": 0.0,
+        "metric_p": 1.0,
+        "threshold": "Delta >= 25.0%, p < 0.010",
+        "passed": false
+      },
+      "G9_intact_collision_rate": {
+        "metric": 0.15,
+        "threshold": "<= 5.0%",
+        "passed": false
+      }
+    },
+    "class_b_certification": "FAILED_CLOSED"
+  },
+  "trials": [
+    {
+      "pair_idx": 1,
+      "family": "family_1",
+      "condition": "A",
+      "seed": 3001,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8611922275250371,
+          -0.46539583365249537
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7024173428062881,
+          0.007694642087373498
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8611922275274595,
+          -0.4653958336387508
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5279252688377185,
+          0.22418249098211115
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7024173428062881,
+          0.007694642087373498
+        ]
+      }
+    },
+    {
+      "pair_idx": 2,
+      "family": "family_1",
+      "condition": "B",
+      "seed": 3001,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": true,
+        "collision": false,
+        "ticks": 58,
+        "final_pos": [
+          0.6992245959070269,
+          -0.5006295492858849
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 64,
+        "final_pos": [
+          0.7762957915741069,
+          -0.5023842764803931
+        ]
+      },
+      "ARM-S": {
+        "success": true,
+        "collision": false,
+        "ticks": 58,
+        "final_pos": [
+          0.6992245959070269,
+          -0.5006295492858849
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.544769977506733,
+          -0.060201517842583444
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7381317775652592,
+          -0.4396137569457077
+        ]
+      }
+    },
+    {
+      "pair_idx": 3,
+      "family": "family_1",
+      "condition": "A",
+      "seed": 3001,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9627415015025511,
+          -0.5638937720131547
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7387465838265836,
+          -0.3438466138305076
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9627415015025511,
+          -0.5638937720131547
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.2915657096085879,
+          -0.01831747171986591
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7387465838265836,
+          -0.3438466138305076
+        ]
+      }
+    },
+    {
+      "pair_idx": 4,
+      "family": "family_1",
+      "condition": "B",
+      "seed": 3001,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9128359379468146,
+          -0.304364230202455
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.1172701019007272,
+          0.5494585420193361
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9128359379468146,
+          -0.304364230202455
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5771683826332747,
+          0.03352503925045749
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0868297435151406,
+          0.5491587511492961
+        ]
+      }
+    },
+    {
+      "pair_idx": 5,
+      "family": "family_1",
+      "condition": "A",
+      "seed": 3002,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8374756584413647,
+          0.2659826679115808
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9129925358081091,
+          -0.5292038996222521
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8374756584413647,
+          0.2659826679115808
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5551438539550165,
+          0.3843548721822425
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9129925358081091,
+          -0.5292038996222521
+        ]
+      }
+    },
+    {
+      "pair_idx": 6,
+      "family": "family_1",
+      "condition": "B",
+      "seed": 3002,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6879323942348047,
+          0.6111913642578303
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7693986827930197,
+          0.32880488521413065
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6879323942348047,
+          0.6111913642578303
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6948498825098912,
+          0.011349802229463937
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7693986827930197,
+          0.32880488521413065
+        ]
+      }
+    },
+    {
+      "pair_idx": 7,
+      "family": "family_1",
+      "condition": "A",
+      "seed": 3002,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.970473426323514,
+          -0.6374414602475261
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8305796869251653,
+          -0.61634152446171
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.970473426323514,
+          -0.6374414602475261
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6967345341150138,
+          0.126445281011937
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8305796869251653,
+          -0.61634152446171
+        ]
+      }
+    },
+    {
+      "pair_idx": 8,
+      "family": "family_1",
+      "condition": "B",
+      "seed": 3002,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7754580538968843,
+          0.5484281754697742
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0138991365102912,
+          0.665026996721309
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7754580539255074,
+          0.5484281755474145
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7327045084061989,
+          0.09506209183304003
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9891662252062587,
+          0.6314576945294991
+        ]
+      }
+    },
+    {
+      "pair_idx": 9,
+      "family": "family_1",
+      "condition": "A",
+      "seed": 3003,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6724977948784892,
+          -0.1369868210198126
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8874103752911784,
+          -0.47731510993134746
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6724977948784892,
+          -0.1369868210198126
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7040320316405748,
+          -0.21588152881886738
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8874103752911784,
+          -0.47731510993134746
+        ]
+      }
+    },
+    {
+      "pair_idx": 10,
+      "family": "family_1",
+      "condition": "B",
+      "seed": 3003,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9322497255899094,
+          0.031397231515533294
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9412888932575353,
+          0.5413934366828598
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9322497255899094,
+          0.031397231515533294
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6666665851551792,
+          0.18940285243093843
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9412888932575353,
+          0.5413934366828598
+        ]
+      }
+    },
+    {
+      "pair_idx": 11,
+      "family": "family_1",
+      "condition": "A",
+      "seed": 3003,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8793835783199722,
+          0.4836440301911197
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8645570795314532,
+          -0.30621187505787417
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.879383578321066,
+          0.48364403019053387
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7437330661229258,
+          -0.18152464982136085
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8645570795316978,
+          -0.3062118750578351
+        ]
+      }
+    },
+    {
+      "pair_idx": 12,
+      "family": "family_1",
+      "condition": "B",
+      "seed": 3003,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6975395679454971,
+          0.6789071604481433
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 61,
+        "final_pos": [
+          0.8454886653173432,
+          -0.5020607178468274
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6975395679455321,
+          0.6789071604481052
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5143423261370056,
+          -0.07961345573700924
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 61,
+        "final_pos": [
+          0.8454886653165846,
+          -0.502060717845545
+        ]
+      }
+    },
+    {
+      "pair_idx": 13,
+      "family": "family_1",
+      "condition": "A",
+      "seed": 3004,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8147515848199213,
+          0.27674017909284665
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9484997406377348,
+          -0.22024703929801231
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8147515848199213,
+          0.27674017909284665
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.4665903326419796,
+          0.041600369409879774
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9480897114326774,
+          -0.2193644803760906
+        ]
+      }
+    },
+    {
+      "pair_idx": 14,
+      "family": "family_1",
+      "condition": "B",
+      "seed": 3004,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5750711788816307,
+          -0.31960801026857766
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 67,
+        "final_pos": [
+          1.0160328557256058,
+          -0.5092907657492215
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5750711788816307,
+          -0.31960801026857766
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7255069660466409,
+          0.3123132584371239
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 67,
+        "final_pos": [
+          1.0117396870175694,
+          -0.5059380761817872
+        ]
+      }
+    },
+    {
+      "pair_idx": 15,
+      "family": "family_1",
+      "condition": "A",
+      "seed": 3004,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.48854832995952197,
+          -0.10417365372413227
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 61,
+        "final_pos": [
+          0.8282921743827998,
+          0.5111724035948254
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.4885483299593644,
+          -0.10417365372192972
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5650744609855225,
+          0.0505071119869483
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 61,
+        "final_pos": [
+          0.8282921743900433,
+          0.5111724035954741
+        ]
+      }
+    },
+    {
+      "pair_idx": 16,
+      "family": "family_1",
+      "condition": "B",
+      "seed": 3004,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9202970196640383,
+          0.21339070534091825
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9242299850287593,
+          0.27935186542699914
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9202970196640383,
+          0.21339070534091825
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6682820718386802,
+          0.023043616173086163
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9242299850287593,
+          0.27935186542699914
+        ]
+      }
+    },
+    {
+      "pair_idx": 17,
+      "family": "family_1",
+      "condition": "A",
+      "seed": 3005,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9595062209136882,
+          -0.26951912497349834
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 54,
+        "final_pos": [
+          0.804186924044251,
+          0.5010383853648058
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9595062209136882,
+          -0.26951912497349834
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5382709020991511,
+          -0.05880289697094059
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 54,
+        "final_pos": [
+          0.804186924044251,
+          0.5010383853648058
+        ]
+      }
+    },
+    {
+      "pair_idx": 18,
+      "family": "family_1",
+      "condition": "B",
+      "seed": 3005,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9431053159128168,
+          0.37069045957295294
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0427274290995598,
+          0.5527348437949293
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9431053159127307,
+          0.3706904595728501
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.45368593275168845,
+          -0.12140194717673519
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0219760607592159,
+          0.544338201790466
+        ]
+      }
+    },
+    {
+      "pair_idx": 19,
+      "family": "family_1",
+      "condition": "A",
+      "seed": 3005,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9001265242070339,
+          0.3993403144415549
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7225570346891597,
+          -0.40342538164125863
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9001265242070339,
+          0.3993403144415549
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7030079858581522,
+          -0.25901251892312266
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7225570346980954,
+          -0.4034253816338472
+        ]
+      }
+    },
+    {
+      "pair_idx": 20,
+      "family": "family_1",
+      "condition": "B",
+      "seed": 3005,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.25,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0792756664194227,
+          0.5049320593038636
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 52,
+        "final_pos": [
+          0.797045288243442,
+          -0.5067497422995636
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0792756664194227,
+          0.5049320593038636
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7708244958119698,
+          0.04303050651048293
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 52,
+        "final_pos": [
+          0.797045288243442,
+          -0.5067497422995636
+        ]
+      }
+    },
+    {
+      "pair_idx": 21,
+      "family": "family_2",
+      "condition": "A",
+      "seed": 3001,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.31726434539398557,
+          0.20453941732841982
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.2243498804945103,
+          -0.20210152232861264
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.31726434539398557,
+          0.20453941732841982
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.2617852862964292,
+          -0.19790907974316888
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.27142846193474185,
+          0.210245436731794
+        ]
+      }
+    },
+    {
+      "pair_idx": 22,
+      "family": "family_2",
+      "condition": "B",
+      "seed": 3001,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.32809343121977735,
+          0.07279965580718371
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3341861803347871,
+          0.06393388772697794
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.32809343121977735,
+          0.07279965580718371
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.22848419878272802,
+          0.006386592185226785
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.07710909739470072,
+          0.03320193759498222
+        ]
+      }
+    },
+    {
+      "pair_idx": 23,
+      "family": "family_2",
+      "condition": "A",
+      "seed": 3001,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.982344160096557,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.4127102306943036,
+          -0.09510907853466748
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3094854464840921,
+          -0.13395849007726576
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.41271023071095586,
+          -0.09510907853814443
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.23426770028424357,
+          0.03757547617469066
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3958167307895061,
+          0.14840564191440306
+        ]
+      }
+    },
+    {
+      "pair_idx": 24,
+      "family": "family_2",
+      "condition": "B",
+      "seed": 3001,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.982344160096557,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.17835535184731377,
+          -0.08417051968659214
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.25619617902219677,
+          -0.10625363731841463
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.17835535184731377,
+          -0.08417051968659214
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.4026557842826592,
+          -0.1999531287211116
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3396240567860532,
+          -0.02109972125457253
+        ]
+      }
+    },
+    {
+      "pair_idx": 25,
+      "family": "family_2",
+      "condition": "A",
+      "seed": 3002,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.34536383414488503,
+          0.11919569303711186
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.27609427095693334,
+          0.007993854934985268
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.34536383414488503,
+          0.11919569303711186
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.20403581280919314,
+          0.006495771746290618
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3493203175876611,
+          0.11708100528457194
+        ]
+      }
+    },
+    {
+      "pair_idx": 26,
+      "family": "family_2",
+      "condition": "B",
+      "seed": 3002,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.24893956705880582,
+          0.07470028594299075
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.4130438372081318,
+          -0.019311771744664037
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.24893956705911024,
+          0.07470028594169997
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.421013630392532,
+          0.0007520371163118673
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.42837121519072036,
+          -0.10643264533347205
+        ]
+      }
+    },
+    {
+      "pair_idx": 27,
+      "family": "family_2",
+      "condition": "A",
+      "seed": 3002,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.25680997527426613,
+          -0.08892817039263406
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.34396421661877014,
+          0.03422553624143767
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.25680997527426613,
+          -0.08892817039263406
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3241116079574444,
+          0.014321799719484798
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.38733198823054116,
+          0.1662609153080435
+        ]
+      }
+    },
+    {
+      "pair_idx": 28,
+      "family": "family_2",
+      "condition": "B",
+      "seed": 3002,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.982344160096557,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.23764080018849548,
+          0.024927059109340812
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.27001832065080295,
+          0.038550472517751025
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.23764080019409292,
+          0.024927059090298968
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2086656688086454,
+          0.16457057863763663
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3883527869083018,
+          0.027608648423584927
+        ]
+      }
+    },
+    {
+      "pair_idx": 29,
+      "family": "family_2",
+      "condition": "A",
+      "seed": 3003,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2333136702595132,
+          0.17701357741213417
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.4011398924149342,
+          0.02041964836322722
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2333136702595132,
+          0.17701357741213417
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2120398566328694,
+          0.02152889733866678
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.16893797595534912,
+          0.21087677938047986
+        ]
+      }
+    },
+    {
+      "pair_idx": 30,
+      "family": "family_2",
+      "condition": "B",
+      "seed": 3003,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.1971759993253688,
+          0.07601396331862943
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.4081231433694569,
+          -0.059967952322445076
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.1971759993253688,
+          0.07601396331862943
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.44164994106811994,
+          0.21043610083678976
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2884937432870432,
+          0.07878040390700176
+        ]
+      }
+    },
+    {
+      "pair_idx": 31,
+      "family": "family_2",
+      "condition": "A",
+      "seed": 3003,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3363198474343852,
+          -0.052149359992055014
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3307809369766302,
+          0.03824797870509925
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3363198474343852,
+          -0.052149359992055014
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.13440170142681465,
+          0.050625396548691845
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.28454264046683186,
+          0.05371644362932636
+        ]
+      }
+    },
+    {
+      "pair_idx": 32,
+      "family": "family_2",
+      "condition": "B",
+      "seed": 3003,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.16754279006649433,
+          -0.0960814346624804
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.20633206457062184,
+          -0.1067399949658999
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.16754279006649433,
+          -0.0960814346624804
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.29352229565061866,
+          -0.15117253967231978
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2271899794408127,
+          0.005476633481350914
+        ]
+      }
+    },
+    {
+      "pair_idx": 33,
+      "family": "family_2",
+      "condition": "A",
+      "seed": 3004,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2196869285748544,
+          -0.1776999595738197
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2693423622067852,
+          0.06276790138269879
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2196869285748544,
+          -0.1776999595738197
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.39234240341852555,
+          0.13034330172331549
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.300294984555352,
+          0.014214602216732916
+        ]
+      }
+    },
+    {
+      "pair_idx": 34,
+      "family": "family_2",
+      "condition": "B",
+      "seed": 3004,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.42552571822907975,
+          0.09192465764925335
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3433975204271113,
+          0.053268831091045014
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.42552571822907975,
+          0.09192465764925335
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.28255689116444666,
+          -0.2027438422846037
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.5787435186992581,
+          0.015361504269815555
+        ]
+      }
+    },
+    {
+      "pair_idx": 35,
+      "family": "family_2",
+      "condition": "A",
+      "seed": 3004,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2058563796784975,
+          -0.1104746921881459
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.3703740173118503,
+          0.03613775056840804
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2058563796784975,
+          -0.1104746921881459
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.05068716416640959,
+          0.16728453034667234
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.05550805481163468,
+          0.11000794444671043
+        ]
+      }
+    },
+    {
+      "pair_idx": 36,
+      "family": "family_2",
+      "condition": "B",
+      "seed": 3004,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.230719225008528,
+          0.16555580648242044
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.29485429008783,
+          0.05376618801288425
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.230719225008528,
+          0.16555580648242044
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.28005307535464036,
+          -0.019421462574810394
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.23938820847035677,
+          0.10750994466641954
+        ]
+      }
+    },
+    {
+      "pair_idx": 37,
+      "family": "family_2",
+      "condition": "A",
+      "seed": 3005,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.982344160096557,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.17967419151347674,
+          0.027520094651565696
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.32216965862869407,
+          0.08016474677749011
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.17967419151347674,
+          0.027520094651565696
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.16315263787884382,
+          -0.0351232651161118
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.11733183423323916,
+          -0.035447546122172435
+        ]
+      }
+    },
+    {
+      "pair_idx": 38,
+      "family": "family_2",
+      "condition": "B",
+      "seed": 3005,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.30900578051352284,
+          -0.013660246268494953
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.4067817493518087,
+          -0.037337575801654796
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.30900578051352284,
+          -0.013660246268494953
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.18259047875461687,
+          -0.1311502842248255
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.18282721660224016,
+          0.1186253919360201
+        ]
+      }
+    },
+    {
+      "pair_idx": 39,
+      "family": "family_2",
+      "condition": "A",
+      "seed": 3005,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.29231469405008315,
+          0.018016419182722565
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.43669761928787193,
+          -0.043183240939219686
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.292314740720612,
+          0.018016409062028647
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.1367514376027414,
+          0.17953634610877311
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.6280844398314404,
+          -0.07575013343941416
+        ]
+      }
+    },
+    {
+      "pair_idx": 40,
+      "family": "family_2",
+      "condition": "B",
+      "seed": 3005,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 1.626345605158429,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.296969264746137,
+          0.022939002240003243
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.43929535510795287,
+          0.01540686737938855
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.296969264746137,
+          0.022939002240003243
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.16809296321755451,
+          0.08716032064213969
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.2145751234655028,
+          0.05603175251010413
+        ]
+      }
+    },
+    {
+      "pair_idx": 41,
+      "family": "family_3",
+      "condition": "A",
+      "seed": 3001,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.847781483945321,
+          1.4538224982258936
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.6864692191306224,
+          1.2851187127394685
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.847781483945321,
+          1.4538224982258936
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -1.3122807806777421,
+          1.0838476081626849
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.8430795714780827,
+          1.5341978107374044
+        ]
+      }
+    },
+    {
+      "pair_idx": 42,
+      "family": "family_3",
+      "condition": "B",
+      "seed": 3001,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": true,
+        "collision": false,
+        "ticks": 28,
+        "final_pos": [
+          2.0572230885744247,
+          -1.8566248255066071
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 24,
+        "final_pos": [
+          2.0510096671839437,
+          -1.9412630205171124
+        ]
+      },
+      "ARM-S": {
+        "success": true,
+        "collision": false,
+        "ticks": 28,
+        "final_pos": [
+          2.057223088574434,
+          -1.8566248255066033
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.9077848614779849,
+          -1.9234248997955312
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 24,
+        "final_pos": [
+          2.051009667183959,
+          -1.9412630205171122
+        ]
+      }
+    },
+    {
+      "pair_idx": 43,
+      "family": "family_3",
+      "condition": "A",
+      "seed": 3001,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -1.1100889158230325,
+          1.091943002770255
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.6874208637590498,
+          1.1397824525544786
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -1.1100889158230325,
+          1.091943002770255
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -1.1801767133066237,
+          1.115058309622228
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.6275266309600727,
+          0.824385621161431
+        ]
+      }
+    },
+    {
+      "pair_idx": 44,
+      "family": "family_3",
+      "condition": "B",
+      "seed": 3001,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": true,
+        "collision": false,
+        "ticks": 28,
+        "final_pos": [
+          2.0561006847353087,
+          -1.646775394743508
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 41,
+        "final_pos": [
+          2.062107838868287,
+          -1.822124888582097
+        ]
+      },
+      "ARM-S": {
+        "success": true,
+        "collision": false,
+        "ticks": 28,
+        "final_pos": [
+          2.0561006847353087,
+          -1.646775394743508
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.8791940751069534,
+          -1.8126380107342182
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.4343599773453046,
+          -1.5822278783471215
+        ]
+      }
+    },
+    {
+      "pair_idx": 45,
+      "family": "family_3",
+      "condition": "A",
+      "seed": 3002,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.805223419193855,
+          1.0754149335862697
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.6453021206136087,
+          0.9405680574752553
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.805223419193855,
+          1.0754149335862697
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.9652002062252624,
+          1.290081373826708
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7145996612652439,
+          1.084284612532275
+        ]
+      }
+    },
+    {
+      "pair_idx": 46,
+      "family": "family_3",
+      "condition": "B",
+      "seed": 3002,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": true,
+        "collision": false,
+        "ticks": 30,
+        "final_pos": [
+          2.05652966678016,
+          -1.681504850050559
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 40,
+        "final_pos": [
+          2.0643171588397555,
+          -1.526342606697403
+        ]
+      },
+      "ARM-S": {
+        "success": true,
+        "collision": false,
+        "ticks": 30,
+        "final_pos": [
+          2.05652966678016,
+          -1.681504850050559
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.8941255183437176,
+          -1.7263013402775982
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.8989944447942864,
+          -1.4746135530358464
+        ]
+      }
+    },
+    {
+      "pair_idx": 47,
+      "family": "family_3",
+      "condition": "A",
+      "seed": 3002,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.8904090428874419,
+          0.8778326561556183
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.6492479339179024,
+          1.0192019875097926
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.8904090428874333,
+          0.8778326561556126
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -1.0344885486677795,
+          1.150176983931799
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.9593636865013353,
+          1.1971735337253675
+        ]
+      }
+    },
+    {
+      "pair_idx": 48,
+      "family": "family_3",
+      "condition": "B",
+      "seed": 3002,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": true,
+        "collision": false,
+        "ticks": 26,
+        "final_pos": [
+          2.053854456883087,
+          -1.7080053555646268
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 25,
+        "final_pos": [
+          2.0595761684864127,
+          -1.7150361351322712
+        ]
+      },
+      "ARM-S": {
+        "success": true,
+        "collision": false,
+        "ticks": 26,
+        "final_pos": [
+          2.0538544568831236,
+          -1.708005355564674
+        ]
+      },
+      "ARM-PF": {
+        "success": true,
+        "collision": false,
+        "ticks": 66,
+        "final_pos": [
+          2.061542159399938,
+          -1.743783404837794
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 24,
+        "final_pos": [
+          2.0502375392322563,
+          -1.7217698769316148
+        ]
+      }
+    },
+    {
+      "pair_idx": 49,
+      "family": "family_3",
+      "condition": "A",
+      "seed": 3003,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.8379929455167492,
+          0.8314933545085067
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.6917427986622768,
+          1.087186681431554
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          -0.8379929455167492,
+          0.8314933545085067
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.9746179508743383,
+          1.153363866987498
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7942930311640495,
+          1.258181999737455
+        ]
+      }
+    },
+    {
+      "pair_idx": 50,
+      "family": "family_3",
+      "condition": "B",
+      "seed": 3003,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": true,
+        "collision": false,
+        "ticks": 28,
+        "final_pos": [
+          2.060879963127531,
+          -1.9210733581423407
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 39,
+        "final_pos": [
+          2.0676029586418503,
+          -1.9803721885195449
+        ]
+      },
+      "ARM-S": {
+        "success": true,
+        "collision": false,
+        "ticks": 28,
+        "final_pos": [
+          2.060879963127531,
+          -1.9210733581423407
+        ]
+      },
+      "ARM-PF": {
+        "success": true,
+        "collision": false,
+        "ticks": 45,
+        "final_pos": [
+          2.06597485785336,
+          -1.8360495571063769
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 38,
+        "final_pos": [
+          2.0502756687012194,
+          -2.1130360858733312
+        ]
+      }
+    },
+    {
+      "pair_idx": 51,
+      "family": "family_3",
+      "condition": "A",
+      "seed": 3003,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7760582029062364,
+          1.10872955324608
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7591417975415649,
+          0.9849496165120757
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7760582028267122,
+          1.1087295532329766
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -1.2729575332250265,
+          1.159753650169526
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7787940796565419,
+          0.9907870403213073
+        ]
+      }
+    },
+    {
+      "pair_idx": 52,
+      "family": "family_3",
+      "condition": "B",
+      "seed": 3003,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": true,
+        "collision": false,
+        "ticks": 31,
+        "final_pos": [
+          2.0523584575027125,
+          -1.7027385910459447
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 41,
+        "final_pos": [
+          2.0638335934231002,
+          -1.7940273906932127
+        ]
+      },
+      "ARM-S": {
+        "success": true,
+        "collision": false,
+        "ticks": 31,
+        "final_pos": [
+          2.0523584575027125,
+          -1.7027385910459447
+        ]
+      },
+      "ARM-PF": {
+        "success": true,
+        "collision": false,
+        "ticks": 64,
+        "final_pos": [
+          2.065952637821901,
+          -1.7892646820660993
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.5497636701505657,
+          -1.691231923975197
+        ]
+      }
+    },
+    {
+      "pair_idx": 53,
+      "family": "family_3",
+      "condition": "A",
+      "seed": 3004,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7019781147709713,
+          1.1574552428654397
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7036412018566008,
+          1.2336254462802871
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7019781147679414,
+          1.1574552428664375
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.8696912300471417,
+          1.2754274306714974
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -1.0205921308071433,
+          1.2736374275888638
+        ]
+      }
+    },
+    {
+      "pair_idx": 54,
+      "family": "family_3",
+      "condition": "B",
+      "seed": 3004,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": true,
+        "collision": false,
+        "ticks": 32,
+        "final_pos": [
+          2.0601409078677557,
+          -1.580882466735237
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 31,
+        "final_pos": [
+          2.0588016069827493,
+          -1.8606091879804614
+        ]
+      },
+      "ARM-S": {
+        "success": true,
+        "collision": false,
+        "ticks": 32,
+        "final_pos": [
+          2.0601409078677557,
+          -1.580882466735237
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.888268998423423,
+          -1.84796228740835
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 41,
+        "final_pos": [
+          2.0532944418286383,
+          -1.886717141993598
+        ]
+      }
+    },
+    {
+      "pair_idx": 55,
+      "family": "family_3",
+      "condition": "A",
+      "seed": 3004,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.762177652031381,
+          1.3692512001204369
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.724147788076993,
+          1.304843034533608
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7621776520300239,
+          1.3692512001207089
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.9259849221273428,
+          1.1664791032006652
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7765149658842468,
+          1.2992479417125318
+        ]
+      }
+    },
+    {
+      "pair_idx": 56,
+      "family": "family_3",
+      "condition": "B",
+      "seed": 3004,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": true,
+        "collision": false,
+        "ticks": 45,
+        "final_pos": [
+          2.055688938051203,
+          -2.0045248560121247
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 37,
+        "final_pos": [
+          2.0539801048131423,
+          -2.0253411190997697
+        ]
+      },
+      "ARM-S": {
+        "success": true,
+        "collision": false,
+        "ticks": 45,
+        "final_pos": [
+          2.0556889380517394,
+          -2.004524856012105
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.951383744108103,
+          -1.8241111733913624
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 38,
+        "final_pos": [
+          2.0548818349503084,
+          -2.017365817206429
+        ]
+      }
+    },
+    {
+      "pair_idx": 57,
+      "family": "family_3",
+      "condition": "A",
+      "seed": 3005,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7921386221984292,
+          1.5121907703033024
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.6517398055312791,
+          1.161347592709538
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7921386221984292,
+          1.5121907703033024
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -1.0188994516614749,
+          1.3054301219071744
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -1.1828632107043147,
+          1.3686147283052428
+        ]
+      }
+    },
+    {
+      "pair_idx": 58,
+      "family": "family_3",
+      "condition": "B",
+      "seed": 3005,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": true,
+        "collision": false,
+        "ticks": 26,
+        "final_pos": [
+          2.0548355433092254,
+          -1.8950185938639121
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 30,
+        "final_pos": [
+          2.060621865849114,
+          -1.9015781879694325
+        ]
+      },
+      "ARM-S": {
+        "success": true,
+        "collision": false,
+        "ticks": 26,
+        "final_pos": [
+          2.0548355433092373,
+          -1.8950185938640405
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.8720132267889475,
+          -1.8761470480876516
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 30,
+        "final_pos": [
+          2.060621865849506,
+          -1.9015781879695761
+        ]
+      }
+    },
+    {
+      "pair_idx": 59,
+      "family": "family_3",
+      "condition": "A",
+      "seed": 3005,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7734406556992259,
+          1.3664764609627313
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.6878251295336129,
+          1.2668775648966948
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.7734406556992259,
+          1.3664764609627313
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.9785208455636195,
+          0.9390536577054689
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -1.4614821150079078,
+          1.2068065500292142
+        ]
+      }
+    },
+    {
+      "pair_idx": 60,
+      "family": "family_3",
+      "condition": "B",
+      "seed": 3005,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": true,
+        "collision": false,
+        "ticks": 18,
+        "final_pos": [
+          2.050427408498853,
+          -2.0330873000789107
+        ]
+      },
+      "ARM-A": {
+        "success": true,
+        "collision": false,
+        "ticks": 18,
+        "final_pos": [
+          2.0549135914137215,
+          -2.040034537078458
+        ]
+      },
+      "ARM-S": {
+        "success": true,
+        "collision": false,
+        "ticks": 18,
+        "final_pos": [
+          2.050427408498853,
+          -2.0330873000789107
+        ]
+      },
+      "ARM-PF": {
+        "success": true,
+        "collision": false,
+        "ticks": 44,
+        "final_pos": [
+          2.0542548108589176,
+          -1.8307908564781288
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 16,
+        "final_pos": [
+          2.0547742916492466,
+          -2.03715011385798
+        ]
+      }
+    },
+    {
+      "pair_idx": 61,
+      "family": "family_4",
+      "condition": "A",
+      "seed": 3001,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 1.414213596090574,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.07150027921017679,
+          0.01842375994113343
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.23023123026381836,
+          -0.026076938382322987
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.07150027921017679,
+          0.01842375994113343
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.28299300825591345,
+          0.14249219147009187
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.3078812494233445,
+          0.3561201245962398
+        ]
+      }
+    },
+    {
+      "pair_idx": 62,
+      "family": "family_4",
+      "condition": "B",
+      "seed": 3001,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2701930399543049,
+          0.08029300767854738
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.07830090637566625,
+          -0.29817216709429895
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2701930399543049,
+          0.08029300767854738
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.23332369255031807,
+          -0.006237558113199021
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.25990436197010375,
+          0.2614076793459343
+        ]
+      }
+    },
+    {
+      "pair_idx": 63,
+      "family": "family_4",
+      "condition": "A",
+      "seed": 3001,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.07989509624263676,
+          -0.12470721208649573
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.26465586126339224,
+          -0.05700818302687222
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.07989509624263676,
+          -0.12470721208649573
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.17910138026512495,
+          -0.17710052520877226
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.22472386044916268,
+          -0.09437158200054402
+        ]
+      }
+    },
+    {
+      "pair_idx": 64,
+      "family": "family_4",
+      "condition": "B",
+      "seed": 3001,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.008367071115025625,
+          0.07065219176356886
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.022287849586848308,
+          0.2477244793780444
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.008367071115025625,
+          0.07065219176356886
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.31375251960648387,
+          0.330759530451452
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.25663146497170364,
+          0.059078096414607026
+        ]
+      }
+    },
+    {
+      "pair_idx": 65,
+      "family": "family_4",
+      "condition": "A",
+      "seed": 3002,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.3685461243567111,
+          0.18658813639128644
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.3685461243567111,
+          0.18658813639128644
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.3685461243567111,
+          0.18658813639128644
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.24907517024379816,
+          0.06103334907692262
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.23174538155380814,
+          0.31837334455672583
+        ]
+      }
+    },
+    {
+      "pair_idx": 66,
+      "family": "family_4",
+      "condition": "B",
+      "seed": 3002,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.06809522356389278,
+          0.09573501730721264
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.09236238795139473,
+          0.19189999461456406
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.06809522356389278,
+          0.09573501730721264
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.14062837619257934,
+          0.16174056722023378
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.45691453870847404,
+          0.2030514714614134
+        ]
+      }
+    },
+    {
+      "pair_idx": 67,
+      "family": "family_4",
+      "condition": "A",
+      "seed": 3002,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.24912285955744468,
+          -0.06736715127107694
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.24912285955744468,
+          -0.06736715127107694
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.24912285955744468,
+          -0.06736715127107694
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.24912285936325074,
+          -0.0673671515252201
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.24864840425642348,
+          -0.06469358164792262
+        ]
+      }
+    },
+    {
+      "pair_idx": 68,
+      "family": "family_4",
+      "condition": "B",
+      "seed": 3002,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 1.414213596090574,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.21658578040209348,
+          -0.03659731096738479
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2735507910787439,
+          -0.041835128644912276
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.21658578040209248,
+          -0.0365973109673845
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.12988635826305292,
+          0.11994935365089508
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.25806068280258226,
+          -0.061191527285079705
+        ]
+      }
+    },
+    {
+      "pair_idx": 69,
+      "family": "family_4",
+      "condition": "A",
+      "seed": 3003,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 1.414213596090574,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.42091623720414806,
+          0.1904440545910379
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.23297224961357701,
+          -0.0071133418996322485
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.42091623720414806,
+          0.1904440545910379
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.10476104418973171,
+          0.1810978566520765
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.34694417073668066,
+          0.13502837488290076
+        ]
+      }
+    },
+    {
+      "pair_idx": 70,
+      "family": "family_4",
+      "condition": "B",
+      "seed": 3003,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.23429205178486695,
+          -0.06479466030344663
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.23429205178486695,
+          -0.06479466030344663
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.23429205178486695,
+          -0.06479466030344663
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.23429205168088577,
+          -0.06479466043717808
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2753869470029576,
+          -0.0770385356166295
+        ]
+      }
+    },
+    {
+      "pair_idx": 71,
+      "family": "family_4",
+      "condition": "A",
+      "seed": 3003,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 1.414213596090574,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.19030456760153938,
+          -0.03943116613056656
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.25204079609708263,
+          -0.02771241076028521
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.19030456760153938,
+          -0.03943116613056656
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.23007300947568773,
+          -0.009868116948998567
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.27115393239338326,
+          -0.022014324485497762
+        ]
+      }
+    },
+    {
+      "pair_idx": 72,
+      "family": "family_4",
+      "condition": "B",
+      "seed": 3003,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 1.2349089155894546,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.24161235752779187,
+          -0.03755936342759026
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.14884603493496285,
+          0.16467183588286613
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.24161235753376797,
+          -0.0375593634287131
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.05326570174408277,
+          0.10069002203483543
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6202869265371669,
+          0.48834975521296714
+        ]
+      }
+    },
+    {
+      "pair_idx": 73,
+      "family": "family_4",
+      "condition": "A",
+      "seed": 3004,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.21689672632241944,
+          -0.044195905976175266
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.21689672632241944,
+          -0.044195905976175266
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.21689672632241944,
+          -0.044195905976175266
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2168967246734893,
+          -0.04419590456723181
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.23352029524057985,
+          -0.04077129849842639
+        ]
+      }
+    },
+    {
+      "pair_idx": 74,
+      "family": "family_4",
+      "condition": "B",
+      "seed": 3004,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 1.414213596090574,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2392452531704384,
+          -0.014866383820809539
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.014633751275822976,
+          0.3093240143565273
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2392452531704384,
+          -0.014866383820809539
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.00013095826715888597,
+          -0.03735838573992159
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.3939037633605847,
+          0.36893508735088093
+        ]
+      }
+    },
+    {
+      "pair_idx": 75,
+      "family": "family_4",
+      "condition": "A",
+      "seed": 3004,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 1.414213596090574,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.06128551906005569,
+          0.03215437379529499
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.017725635331257133,
+          -0.12184226192082075
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.06128551906005569,
+          0.03215437379529499
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.26513954527375233,
+          0.0827938317929152
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.24454416075037938,
+          0.021924652421305747
+        ]
+      }
+    },
+    {
+      "pair_idx": 76,
+      "family": "family_4",
+      "condition": "B",
+      "seed": 3004,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 1.414213596090574,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2590883306085195,
+          0.008842287776442333
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.27139908068618834,
+          0.0010033470611251062
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2590883306085172,
+          0.008842287776449836
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.23535944332605033,
+          -0.0026416667890351575
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.27128689691752295,
+          0.009744841148729845
+        ]
+      }
+    },
+    {
+      "pair_idx": 77,
+      "family": "family_4",
+      "condition": "A",
+      "seed": 3005,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2553857338011956,
+          0.04041002013921915
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.1773606056220095,
+          0.12032541134611226
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.25538573380119983,
+          0.04041002013921938
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.3446602804343194,
+          0.16665414905564657
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 35,
+        "final_pos": [
+          0.560326013402942,
+          0.45314593007115556
+        ]
+      }
+    },
+    {
+      "pair_idx": 78,
+      "family": "family_4",
+      "condition": "B",
+      "seed": 3005,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 1.414213596090574,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.11914779148517404,
+          0.06261541918979595
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2657060702468922,
+          0.01435940556657568
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.11914779148757125,
+          0.06261541918752864
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2639954393571128,
+          0.042946448890561845
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.24681961365459593,
+          -0.018603522471981427
+        ]
+      }
+    },
+    {
+      "pair_idx": 79,
+      "family": "family_4",
+      "condition": "A",
+      "seed": 3005,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 1.414213596090574,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.17844588697227107,
+          0.19875037272214377
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.25831514889095847,
+          0.03910771350233588
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.17844588697227107,
+          0.19875037272214377
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.13092636635682156,
+          0.2588588776579316
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.17969002579439217,
+          0.15686781502111843
+        ]
+      }
+    },
+    {
+      "pair_idx": 80,
+      "family": "family_4",
+      "condition": "B",
+      "seed": 3005,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.2333876109028267,
+          0.0658110480902789
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.12734444874255432,
+          -0.11556673987884247
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.2333876108976424,
+          0.06581104810256315
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.26554855329352306,
+          -0.09364303660904573
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.2790140748864899,
+          -0.0933948456955644
+        ]
+      }
+    },
+    {
+      "pair_idx": 81,
+      "family": "family_5",
+      "condition": "A",
+      "seed": 3001,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.8251186686826748,
+          0.3233434349515693
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0914570443145188,
+          -0.22146338858199213
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.8251186686826748,
+          0.3233434349515693
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.48826823025702326,
+          -0.09412714779579429
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          -0.04519169515082,
+          0.0072636858134041814
+        ]
+      }
+    },
+    {
+      "pair_idx": 82,
+      "family": "family_5",
+      "condition": "B",
+      "seed": 3001,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.706197613222389,
+          0.05004114769675509
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7823760116734217,
+          -0.22573148993936204
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.706197613222389,
+          0.05004114769675509
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.577848449762025,
+          -0.06306952699384319
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": true,
+        "ticks": null,
+        "final_pos": [
+          0.8137547274015371,
+          -0.32452264867482117
+        ]
+      }
+    },
+    {
+      "pair_idx": 83,
+      "family": "family_5",
+      "condition": "A",
+      "seed": 3001,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9584465334001204,
+          -0.1449910401985021
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0005330587514023,
+          -0.2014166475438764
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9584465334001204,
+          -0.1449910401985021
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.29886166333999414,
+          -0.008418776057213745
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8628945752621373,
+          -0.12255557241042268
+        ]
+      }
+    },
+    {
+      "pair_idx": 84,
+      "family": "family_5",
+      "condition": "B",
+      "seed": 3001,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.1581139207057063,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9661880827649282,
+          -0.12855516480025192
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9198892513358058,
+          -0.2982198205054078
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9661880827649282,
+          -0.12855516480025192
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.37970696981637125,
+          0.14696842098785173
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.05472120752863047,
+          0.02564935646794062
+        ]
+      }
+    },
+    {
+      "pair_idx": 85,
+      "family": "family_5",
+      "condition": "A",
+      "seed": 3002,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0490229188537665,
+          -0.20285648003594414
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9291685516218615,
+          -0.24149962478083203
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.049022918854005,
+          -0.20285648003540535
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8795936983414389,
+          -0.0909469143005173
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.168675782514379,
+          -0.3881657448058838
+        ]
+      }
+    },
+    {
+      "pair_idx": 86,
+      "family": "family_5",
+      "condition": "B",
+      "seed": 3002,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9355362474210597,
+          -0.2688807235817264
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0537915337876715,
+          -0.08602583298256056
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9355362474211543,
+          -0.26888072358180914
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7110771870711511,
+          -0.06435029368510413
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.002981503203039,
+          0.1511778058374911
+        ]
+      }
+    },
+    {
+      "pair_idx": 87,
+      "family": "family_5",
+      "condition": "A",
+      "seed": 3002,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.1581139207057063,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7941565777201515,
+          -0.13964206369816115
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6698652060219247,
+          -0.014764430867174782
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7941565777712701,
+          -0.1396420636442581
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6588577077119276,
+          -0.044879468650539746
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8051634479254849,
+          -0.1055481290178327
+        ]
+      }
+    },
+    {
+      "pair_idx": 88,
+      "family": "family_5",
+      "condition": "B",
+      "seed": 3002,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0364820512852826,
+          0.4056442345477867
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8473063544288071,
+          0.25522049189675833
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0364820512852826,
+          0.4056442345477867
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.701679531378767,
+          -0.09131610980313122
+        ]
+      },
+      "ARM-R": {
+        "success": true,
+        "collision": false,
+        "ticks": 60,
+        "final_pos": [
+          0.9889025180052499,
+          0.4110788215474233
+        ]
+      }
+    },
+    {
+      "pair_idx": 89,
+      "family": "family_5",
+      "condition": "A",
+      "seed": 3003,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8922302002330618,
+          -0.2451335198081346
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0844783867412557,
+          -0.051199069089619506
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8922302002358997,
+          -0.24513351980568535
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5419617243033619,
+          -0.024330537354104852
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8863187531793919,
+          0.10164059548177867
+        ]
+      }
+    },
+    {
+      "pair_idx": 90,
+      "family": "family_5",
+      "condition": "B",
+      "seed": 3003,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.1581139207057063,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0033093886896494,
+          -0.3287618088736488
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0579972059223886,
+          0.0015281634034310277
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0033093886896494,
+          -0.3287618088736488
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6258989583528687,
+          -0.22709203666920746
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.868209101491064,
+          -0.23821486605281308
+        ]
+      }
+    },
+    {
+      "pair_idx": 91,
+      "family": "family_5",
+      "condition": "A",
+      "seed": 3003,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.47169906165729397,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0713716034444711,
+          -0.1574155399163373
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.1556715151370462,
+          -0.39047142234296306
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0713716034444711,
+          -0.1574155399163373
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6479620071564914,
+          -0.05951367441310675
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5759453285074912,
+          0.0714875682894634
+        ]
+      }
+    },
+    {
+      "pair_idx": 92,
+      "family": "family_5",
+      "condition": "B",
+      "seed": 3003,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9129064264379755,
+          -0.0958663404515861
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.022712781255806,
+          0.2853014179375164
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9129064264379755,
+          -0.0958663404515861
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7658799370218021,
+          -0.05000885581692778
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.24183708960816164,
+          -0.022799969823608233
+        ]
+      }
+    },
+    {
+      "pair_idx": 93,
+      "family": "family_5",
+      "condition": "A",
+      "seed": 3004,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9009126361435604,
+          -0.03701999439104006
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8659444762360186,
+          0.04456052757462399
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9009126361435604,
+          -0.03701999439104006
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.606272531128349,
+          -0.06519499266060652
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8670980661016952,
+          0.038085782591047536
+        ]
+      }
+    },
+    {
+      "pair_idx": 94,
+      "family": "family_5",
+      "condition": "B",
+      "seed": 3004,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9773281794556825,
+          0.3625131738651791
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.068700894121647,
+          0.16234603144504878
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9773281794558292,
+          0.36251317386496895
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8903269090628901,
+          -0.0183874856586771
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0447032680537673,
+          0.37349202993643527
+        ]
+      }
+    },
+    {
+      "pair_idx": 95,
+      "family": "family_5",
+      "condition": "A",
+      "seed": 3004,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.1581139207057063,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9595331562027735,
+          -0.2920130726028541
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.118311154740911,
+          -0.08941426304274544
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9595331562027735,
+          -0.2920130726028541
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.7917821070314857,
+          0.004722934936910851
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0709262857967272,
+          0.21105360177448165
+        ]
+      }
+    },
+    {
+      "pair_idx": 96,
+      "family": "family_5",
+      "condition": "B",
+      "seed": 3004,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9898724170263037,
+          -0.32631871426133036
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8239748124816633,
+          -0.11724076853475154
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9898724170785738,
+          -0.3263187141360423
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5754442594259997,
+          -0.043850986839437216
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.924165598984357,
+          0.1692861632542889
+        ]
+      }
+    },
+    {
+      "pair_idx": 97,
+      "family": "family_5",
+      "condition": "A",
+      "seed": 3005,
+      "trial_in_seed": 0,
+      "delta_u_I_A": 0.47169906165729397,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.901554434852536,
+          0.03145040439123473
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.0385122080177065,
+          0.24779643711834523
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.901554434852536,
+          0.03145040439123473
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6671928497761032,
+          0.1561117399334518
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.06563990856750089,
+          -0.051726738486461324
+        ]
+      }
+    },
+    {
+      "pair_idx": 98,
+      "family": "family_5",
+      "condition": "B",
+      "seed": 3005,
+      "trial_in_seed": 1,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9267558064328411,
+          -0.0692964185447997
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9340719576842802,
+          -0.23894987157019534
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9267558064241069,
+          -0.06929641854453913
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5434026396250924,
+          -0.026729678833887497
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.5823591506478383,
+          0.07068976646587721
+        ]
+      }
+    },
+    {
+      "pair_idx": 99,
+      "family": "family_5",
+      "condition": "A",
+      "seed": 3005,
+      "trial_in_seed": 2,
+      "delta_u_I_A": 0.0,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9876376514450205,
+          0.29808873417657844
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.6720563076821648,
+          0.29164003213174444
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.9876376514450205,
+          0.29808873417657844
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.697859556963149,
+          -0.05044653737374812
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.48717380677185923,
+          0.22000175687464038
+        ]
+      }
+    },
+    {
+      "pair_idx": 100,
+      "family": "family_5",
+      "condition": "B",
+      "seed": 3005,
+      "trial_in_seed": 3,
+      "delta_u_I_A": 0.050000011920928955,
+      "ARM-I": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.2462584176915024,
+          -0.46363569032956803
+        ]
+      },
+      "ARM-A": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.8044971854568864,
+          0.039060997284837314
+        ]
+      },
+      "ARM-S": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          1.2462584176743414,
+          -0.4636356902935814
+        ]
+      },
+      "ARM-PF": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.4680369141378738,
+          -0.016774836952840745
+        ]
+      },
+      "ARM-R": {
+        "success": false,
+        "collision": false,
+        "ticks": null,
+        "final_pos": [
+          0.4606534717217732,
+          0.13814928527916476
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-16T21:06:00+05:30",
+  "phase": "Phase 0 Verification Gate Passed",
+  "codebase_frozen": true,
+  "auditor_sha256": "a0d6b0115a40e48b10685d0156289eaf8b1ead384a888008f952e5d894092004",
+  "c7_untrained_checkpoint_sha256": "73d3cbe17a50e1f65c8eaaa95ad413a1b67f9be7af24f4722e0bee99e483c78a",
+  "eval_manifest_sha256": "df935592c4c655d4abfbbdc3d4627f8a25bc0d4421ac0a0ce37afeb8d8cc781d",
+  "source_hashes": {
+    "carl_local_cortex_py": "665f9031a6d57b12982e57a93520b5311ef58c2cca11424111cd13febcca0ff2",
+    "carl_motor_filter_py": "dc5308186abca5cff3c5a25e34d82461edab1bb03d5d1e2068d02c3d6f04afd2",
+    "carl_simulation_py": "d5510217772f3ae91fabb137057688248c78c0484f1deb9547cf9ddec53770a3",
+    "vessel_kinetic_xml": "fe87cba38916f3ab19d831bafa99658bce9837693a28206930959749cac14d91"
+  },
+  "total_baseline_episodes": 100,
+  "total_validation_episodes": 100,
+  "total_hidden_ood_episodes": 100
+}

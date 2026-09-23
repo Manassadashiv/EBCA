@@ -1,0 +1,14 @@
+{
+  "partition": "PRIMARY_UNSEEN_TEST",
+  "seeds": [
+    303,
+    404,
+    505,
+    606,
+    707
+  ],
+  "episodes_per_seed": 5,
+  "total_episodes": 25,
+  "file_path": "evidence\\stage2_2\\datasets\\unseen_test.npz",
+  "sha256": "0952ca999991a0e44202df50e5ede07b48db14ada3347f63b794330e192c26b0"
+}

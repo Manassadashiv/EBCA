@@ -1,0 +1,33 @@
+{
+  "stage": "Stage 3.4-R4.1 Baseline",
+  "files": {
+    "brain/carl_active_inference.py": {
+      "sha256": "7089463097dd097c8aedfe8df385049abeea4b2cffd55d628467650a0357a0d1",
+      "size_bytes": 49612
+    },
+    "brain/carl_stage1_hal.py": {
+      "sha256": "3a37fd1569980880310f96b21b006ada74cfdf20f1e13a84ff9671c3fdf8f89f",
+      "size_bytes": 14275
+    },
+    "tests/test_stage3_4R4_unit_deterministic.py": {
+      "sha256": "2f2e2c2d879063aea5a6ab4a807d3340113ade17abba685d5c935451af9f300c",
+      "size_bytes": 10703
+    },
+    "tests/test_stage3_4R4_screening.py": {
+      "sha256": "602a8979d7e669876a550f87061f6997cae88e38067f4115c9f8b93cfc5928a0",
+      "size_bytes": 13559
+    },
+    "tests/run_stage3_4R4_single_trace.py": {
+      "sha256": "8ba92acc4112b54ba8c9be005816a033499ef4390e1052ae88cf9d3ced2967b9",
+      "size_bytes": 8213
+    },
+    "world/stage3_4_environments/cul_de_sac_turning_bay.xml": {
+      "sha256": "7b8eb854cf722169cd102db5891c32b758b0dc8f65f04b573efe3b602936ba87",
+      "size_bytes": 13715
+    },
+    "world/stage3_4_environments/asymmetric_t_junction.xml": {
+      "sha256": "5282a67dddf4152b5e6f9ed2e800eb26e309db1136a1b8e2c65045750a532b11",
+      "size_bytes": 11786
+    }
+  }
+}

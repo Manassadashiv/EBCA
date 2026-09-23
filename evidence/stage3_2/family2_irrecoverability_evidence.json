@@ -1,0 +1,896 @@
+{
+  "conditions": {
+    "Condition_A": {
+      "analytical_bound": {
+        "start_pos": [
+          0.7,
+          0.65,
+          0.05291
+        ],
+        "exit_pos": [
+          2.0,
+          -1.8,
+          0.05
+        ],
+        "d_reverse_to_fork_m": 0.9192388155425117,
+        "d_forward_to_exit_m": 2.65377090194312,
+        "l_geodesic_min_m": 3.1730097174856318,
+        "t_budget_seconds": 3.0,
+        "max_dist_theoretical_m": 3.5999999999999996,
+        "max_dist_empirical_m": 1.9500000000000002,
+        "t_geodesic_required_seconds": 6.115436887999541,
+        "ticks_geodesic_required": 204,
+        "theoretically_reachable_unconstrained": true,
+        "empirically_reachable_in_100_ticks": false
+      },
+      "in_situ_turns": {
+        "depth_entrance": {
+          "pos": [
+            0.45,
+            0.4
+          ],
+          "maneuvers": {
+            "pivot_left_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.02251068999757343
+            },
+            "pivot_right_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.0225104148777429
+            },
+            "pivot_left_mod": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.02251068999757343
+            },
+            "reverse_hook_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013548423749220528
+            },
+            "reverse_hook_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.01354875633348794
+            },
+            "sharp_turn_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013361923453868564
+            },
+            "sharp_turn_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013364164945303006
+            }
+          },
+          "all_collided": true
+        },
+        "depth_mid": {
+          "pos": [
+            0.7,
+            0.65
+          ],
+          "maneuvers": {
+            "pivot_left_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.02251044236361038
+            },
+            "pivot_right_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.022510662284316016
+            },
+            "pivot_left_mod": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.02251044236361038
+            },
+            "reverse_hook_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013547772262864709
+            },
+            "reverse_hook_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013549407819992355
+            },
+            "sharp_turn_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013362574300793609
+            },
+            "sharp_turn_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013363514098407752
+            }
+          },
+          "all_collided": true
+        },
+        "depth_deep": {
+          "pos": [
+            0.95,
+            0.9
+          ],
+          "maneuvers": {
+            "pivot_left_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.02251019414473302
+            },
+            "pivot_right_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.022510909102972564
+            },
+            "pivot_left_mod": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.02251019414473302
+            },
+            "reverse_hook_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013547120776508064
+            },
+            "reverse_hook_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013550059306497374
+            },
+            "sharp_turn_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.01336322514771694
+            },
+            "sharp_turn_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.011923836917295472
+            }
+          },
+          "all_collided": true
+        }
+      },
+      "dense_search": {
+        "total_control_sequences_tested": 30,
+        "reached_exit_count": 0,
+        "collided_branches": 25,
+        "min_dist_achieved_to_exit_m": 2.656897785148193,
+        "sampled_results": [
+          {
+            "u": [
+              -1.0,
+              -1.0
+            ],
+            "collided": true,
+            "collision_tick": 44,
+            "min_dist_to_exit_m": 2.6604962075122547
+          },
+          {
+            "u": [
+              -0.8,
+              -0.8
+            ],
+            "collided": true,
+            "collision_tick": 48,
+            "min_dist_to_exit_m": 2.66026192079273
+          },
+          {
+            "u": [
+              -0.6,
+              -0.6
+            ],
+            "collided": true,
+            "collision_tick": 68,
+            "min_dist_to_exit_m": 2.6605845030281947
+          },
+          {
+            "u": [
+              -0.4,
+              -0.4
+            ],
+            "collided": true,
+            "collision_tick": 75,
+            "min_dist_to_exit_m": 2.661460491889551
+          },
+          {
+            "u": [
+              -0.8,
+              -0.6
+            ],
+            "collided": true,
+            "collision_tick": 12,
+            "min_dist_to_exit_m": 2.712531396658157
+          },
+          {
+            "u": [
+              -0.6,
+              -0.8
+            ],
+            "collided": true,
+            "collision_tick": 12,
+            "min_dist_to_exit_m": 2.7273601214421097
+          },
+          {
+            "u": [
+              -0.6,
+              -0.4
+            ],
+            "collided": true,
+            "collision_tick": 15,
+            "min_dist_to_exit_m": 2.7532849431248376
+          },
+          {
+            "u": [
+              -0.4,
+              -0.6
+            ],
+            "collided": true,
+            "collision_tick": 15,
+            "min_dist_to_exit_m": 2.7539508165288202
+          },
+          {
+            "u": [
+              -0.5,
+              -0.2
+            ],
+            "collided": true,
+            "collision_tick": 4,
+            "min_dist_to_exit_m": 2.752591843526708
+          },
+          {
+            "u": [
+              -0.2,
+              -0.5
+            ],
+            "collided": true,
+            "collision_tick": 4,
+            "min_dist_to_exit_m": 2.769846527315091
+          },
+          {
+            "u": [
+              -0.4,
+              -0.15
+            ],
+            "collided": true,
+            "collision_tick": 3,
+            "min_dist_to_exit_m": 2.7568726013460148
+          },
+          {
+            "u": [
+              -0.15,
+              -0.4
+            ],
+            "collided": true,
+            "collision_tick": 3,
+            "min_dist_to_exit_m": 2.7719362895167157
+          },
+          {
+            "u": [
+              -0.8,
+              0.8
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.773509578157021
+          },
+          {
+            "u": [
+              0.8,
+              -0.8
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.7735118886525862
+          },
+          {
+            "u": [
+              -0.6,
+              0.6
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.773509578157021
+          },
+          {
+            "u": [
+              0.6,
+              -0.6
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.7735118886525862
+          },
+          {
+            "u": [
+              -0.35,
+              0.35
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.773509578157021
+          },
+          {
+            "u": [
+              0.35,
+              -0.35
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.7735118886525862
+          },
+          {
+            "u": [
+              0.4,
+              0.4
+            ],
+            "collided": true,
+            "collision_tick": 99,
+            "min_dist_to_exit_m": 2.7800301846566904
+          },
+          {
+            "u": [
+              0.6,
+              0.6
+            ],
+            "collided": false,
+            "collision_tick": null,
+            "min_dist_to_exit_m": 2.7800301846566904
+          },
+          {
+            "u": [
+              0.8,
+              0.8
+            ],
+            "collided": true,
+            "collision_tick": 69,
+            "min_dist_to_exit_m": 2.7800301846566904
+          },
+          {
+            "u": [
+              1.0,
+              1.0
+            ],
+            "collided": true,
+            "collision_tick": 84,
+            "min_dist_to_exit_m": 2.7800301846566904
+          },
+          {
+            "u": [
+              0.8,
+              0.6
+            ],
+            "collided": true,
+            "collision_tick": 8,
+            "min_dist_to_exit_m": 2.7800301846566904
+          },
+          {
+            "u": [
+              0.6,
+              0.8
+            ],
+            "collided": true,
+            "collision_tick": 8,
+            "min_dist_to_exit_m": 2.7800301846566904
+          },
+          {
+            "u": [
+              0.8,
+              0.4
+            ],
+            "collided": true,
+            "collision_tick": 7,
+            "min_dist_to_exit_m": 2.7800301846566904
+          },
+          {
+            "u": [
+              0.4,
+              0.8
+            ],
+            "collided": true,
+            "collision_tick": 7,
+            "min_dist_to_exit_m": 2.7800301846566904
+          }
+        ],
+        "multistage_results": [
+          {
+            "split": [
+              40,
+              20,
+              40
+            ],
+            "collided": true,
+            "collision_tick": 60,
+            "min_dist_to_exit_m": 2.656897785148193
+          },
+          {
+            "split": [
+              60,
+              20,
+              20
+            ],
+            "collided": true,
+            "collision_tick": 64,
+            "min_dist_to_exit_m": 2.6608577908360145
+          },
+          {
+            "split": [
+              70,
+              15,
+              15
+            ],
+            "collided": true,
+            "collision_tick": 65,
+            "min_dist_to_exit_m": 2.6602861745420934
+          },
+          {
+            "split": [
+              80,
+              10,
+              10
+            ],
+            "collided": true,
+            "collision_tick": 65,
+            "min_dist_to_exit_m": 2.6602861745420934
+          }
+        ],
+        "outcome_A_confirmed": true
+      },
+      "passed": true
+    },
+    "Condition_B": {
+      "analytical_bound": {
+        "start_pos": [
+          0.7,
+          -0.65,
+          0.05291
+        ],
+        "exit_pos": [
+          2.0,
+          1.8,
+          0.05
+        ],
+        "d_reverse_to_fork_m": 0.9192388155425117,
+        "d_forward_to_exit_m": 2.65377090194312,
+        "l_geodesic_min_m": 3.1730097174856318,
+        "t_budget_seconds": 3.0,
+        "max_dist_theoretical_m": 3.5999999999999996,
+        "max_dist_empirical_m": 1.9500000000000002,
+        "t_geodesic_required_seconds": 6.115436887999541,
+        "ticks_geodesic_required": 204,
+        "theoretically_reachable_unconstrained": true,
+        "empirically_reachable_in_100_ticks": false
+      },
+      "in_situ_turns": {
+        "depth_entrance": {
+          "pos": [
+            0.45,
+            -0.4
+          ],
+          "maneuvers": {
+            "pivot_left_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.022510414383661935
+            },
+            "pivot_right_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.022510690443761163
+            },
+            "pivot_left_mod": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.022510414383661935
+            },
+            "reverse_hook_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013547242732530617
+            },
+            "reverse_hook_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013549937355114238
+            },
+            "sharp_turn_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013362911291517832
+            },
+            "sharp_turn_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.01336317711036857
+            }
+          },
+          "all_collided": true
+        },
+        "depth_mid": {
+          "pos": [
+            0.7,
+            -0.65
+          ],
+          "maneuvers": {
+            "pivot_left_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.022510661836743797
+            },
+            "pivot_right_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.02251044285605625
+            },
+            "pivot_left_mod": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.022510661836743797
+            },
+            "reverse_hook_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013547894218691367
+            },
+            "reverse_hook_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013549285868413379
+            },
+            "sharp_turn_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013362260444431001
+            },
+            "sharp_turn_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013363827957100071
+            }
+          },
+          "all_collided": true
+        },
+        "depth_deep": {
+          "pos": [
+            0.95,
+            -0.9
+          ],
+          "maneuvers": {
+            "pivot_left_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.022510908701894285
+            },
+            "pivot_right_hard": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.022510194683452136
+            },
+            "pivot_left_mod": {
+              "collided": true,
+              "collision_tick": 1,
+              "min_sonar_m": 0.022510908701894285
+            },
+            "reverse_hook_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013548545704853985
+            },
+            "reverse_hook_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013548634381714575
+            },
+            "sharp_turn_left": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.011922719155489012
+            },
+            "sharp_turn_right": {
+              "collided": true,
+              "collision_tick": 3,
+              "min_sonar_m": 0.013364478803832581
+            }
+          },
+          "all_collided": true
+        }
+      },
+      "dense_search": {
+        "total_control_sequences_tested": 30,
+        "reached_exit_count": 0,
+        "collided_branches": 25,
+        "min_dist_achieved_to_exit_m": 2.656979244495005,
+        "sampled_results": [
+          {
+            "u": [
+              -1.0,
+              -1.0
+            ],
+            "collided": true,
+            "collision_tick": 44,
+            "min_dist_to_exit_m": 2.6605813761927335
+          },
+          {
+            "u": [
+              -0.8,
+              -0.8
+            ],
+            "collided": true,
+            "collision_tick": 48,
+            "min_dist_to_exit_m": 2.6603000801412677
+          },
+          {
+            "u": [
+              -0.6,
+              -0.6
+            ],
+            "collided": true,
+            "collision_tick": 68,
+            "min_dist_to_exit_m": 2.6609635255467476
+          },
+          {
+            "u": [
+              -0.4,
+              -0.4
+            ],
+            "collided": true,
+            "collision_tick": 74,
+            "min_dist_to_exit_m": 2.6587875886021557
+          },
+          {
+            "u": [
+              -0.8,
+              -0.6
+            ],
+            "collided": true,
+            "collision_tick": 12,
+            "min_dist_to_exit_m": 2.727369273558133
+          },
+          {
+            "u": [
+              -0.6,
+              -0.8
+            ],
+            "collided": true,
+            "collision_tick": 12,
+            "min_dist_to_exit_m": 2.7125415935175785
+          },
+          {
+            "u": [
+              -0.6,
+              -0.4
+            ],
+            "collided": true,
+            "collision_tick": 15,
+            "min_dist_to_exit_m": 2.7539539448461974
+          },
+          {
+            "u": [
+              -0.4,
+              -0.6
+            ],
+            "collided": true,
+            "collision_tick": 15,
+            "min_dist_to_exit_m": 2.7532939037038986
+          },
+          {
+            "u": [
+              -0.5,
+              -0.2
+            ],
+            "collided": true,
+            "collision_tick": 4,
+            "min_dist_to_exit_m": 2.769847844560739
+          },
+          {
+            "u": [
+              -0.2,
+              -0.5
+            ],
+            "collided": true,
+            "collision_tick": 4,
+            "min_dist_to_exit_m": 2.7525940175927337
+          },
+          {
+            "u": [
+              -0.4,
+              -0.15
+            ],
+            "collided": true,
+            "collision_tick": 3,
+            "min_dist_to_exit_m": 2.7719369692857248
+          },
+          {
+            "u": [
+              -0.15,
+              -0.4
+            ],
+            "collided": true,
+            "collision_tick": 3,
+            "min_dist_to_exit_m": 2.756873123448601
+          },
+          {
+            "u": [
+              -0.8,
+              0.8
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.7735118909332988
+          },
+          {
+            "u": [
+              0.8,
+              -0.8
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.7735095769148748
+          },
+          {
+            "u": [
+              -0.6,
+              0.6
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.7735118909332988
+          },
+          {
+            "u": [
+              0.6,
+              -0.6
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.7735095769148748
+          },
+          {
+            "u": [
+              -0.35,
+              0.35
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.7735118909332988
+          },
+          {
+            "u": [
+              0.35,
+              -0.35
+            ],
+            "collided": true,
+            "collision_tick": 1,
+            "min_dist_to_exit_m": 2.7735095769148748
+          },
+          {
+            "u": [
+              0.4,
+              0.4
+            ],
+            "collided": true,
+            "collision_tick": 99,
+            "min_dist_to_exit_m": 2.7800292845682044
+          },
+          {
+            "u": [
+              0.6,
+              0.6
+            ],
+            "collided": false,
+            "collision_tick": null,
+            "min_dist_to_exit_m": 2.7800292845682044
+          },
+          {
+            "u": [
+              0.8,
+              0.8
+            ],
+            "collided": true,
+            "collision_tick": 69,
+            "min_dist_to_exit_m": 2.7800292845682044
+          },
+          {
+            "u": [
+              1.0,
+              1.0
+            ],
+            "collided": true,
+            "collision_tick": 76,
+            "min_dist_to_exit_m": 2.7800292845682044
+          },
+          {
+            "u": [
+              0.8,
+              0.6
+            ],
+            "collided": true,
+            "collision_tick": 8,
+            "min_dist_to_exit_m": 2.7800292845682044
+          },
+          {
+            "u": [
+              0.6,
+              0.8
+            ],
+            "collided": true,
+            "collision_tick": 8,
+            "min_dist_to_exit_m": 2.7800292845682044
+          },
+          {
+            "u": [
+              0.8,
+              0.4
+            ],
+            "collided": true,
+            "collision_tick": 7,
+            "min_dist_to_exit_m": 2.7800292845682044
+          },
+          {
+            "u": [
+              0.4,
+              0.8
+            ],
+            "collided": true,
+            "collision_tick": 7,
+            "min_dist_to_exit_m": 2.7800292845682044
+          }
+        ],
+        "multistage_results": [
+          {
+            "split": [
+              40,
+              20,
+              40
+            ],
+            "collided": true,
+            "collision_tick": 60,
+            "min_dist_to_exit_m": 2.656979244495005
+          },
+          {
+            "split": [
+              60,
+              20,
+              20
+            ],
+            "collided": true,
+            "collision_tick": 64,
+            "min_dist_to_exit_m": 2.660919331608353
+          },
+          {
+            "split": [
+              70,
+              15,
+              15
+            ],
+            "collided": true,
+            "collision_tick": 65,
+            "min_dist_to_exit_m": 2.660348770324963
+          },
+          {
+            "split": [
+              80,
+              10,
+              10
+            ],
+            "collided": true,
+            "collision_tick": 65,
+            "min_dist_to_exit_m": 2.660348770324963
+          }
+        ],
+        "outcome_A_confirmed": true
+      },
+      "passed": true
+    }
+  },
+  "analytical_bound_impossible": true,
+  "dense_search_outcome_A": true,
+  "all_in_situ_turns_fail": true,
+  "fixture_valid": true
+}

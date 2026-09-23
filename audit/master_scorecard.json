@@ -1,0 +1,535 @@
+{
+  "validation_metadata": {
+    "standard": "NASA-Inspired Systems Engineering Rigor",
+    "timestamp": "2026-08-17T08:23:36Z",
+    "environment_hash": "dc1d369de368",
+    "code_revision": "13a2ab866cdf"
+  },
+  "reset_robustness": {
+    "TEST_1_FRESH_PROCESS_START": {
+      "description": "Cold instance initialization",
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_2_ENVIRONMENT_RESET": {
+      "description": "Full MuJoCo environment reload",
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_3_MUJOCO_STATE_RESET": {
+      "description": "Direct mjData qpos/qvel zeroing",
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_4_PHYSICS_STATE_RESET": {
+      "description": "Physics dynamic integration reset",
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_5_CONTROLLER_RESET": {
+      "description": "Actuator command and integrator reset",
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_6_INTERNAL_STATE_RESET": {
+      "description": "Homeostatic and endocrine equilibrium reset",
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_7_MEMORY_RESET": {
+      "description": "Episodic memory HDC buffer purge",
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_8_SOFT_RESET": {
+      "description": "Operational soft reset without cache loss",
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_9_REPEATED_RESET_10X": {
+      "description": "10 consecutive rapid soft resets",
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_10_SAME_STATE_DIFF_SEEDS": {
+      "description": "Identical initial state with 5 seeds (42..46)",
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_11_DIFF_STATE_SAME_SEED": {
+      "description": "5 perturbed initial states with fixed seed 42",
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    }
+  },
+  "brutal_sensorimotor_disturbances": {
+    "ADV_01_SUDDEN_OBSTACLE_APPEAR": {
+      "description": "Dynamic barrier placed 0.45m directly ahead",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_02_OBSTACLE_DISAPPEAR": {
+      "description": "Barrier removed while agent in avoidance curve",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_03_MOVING_OBSTACLE_HEAD_ON": {
+      "description": "Opposing object translating at 0.15 m/s",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_04_MOVING_OBSTACLE_LATERAL": {
+      "description": "Obstacle crossing trajectory from left",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_05_DEAD_END_U_CORRIDOR": {
+      "description": "Trapped in 1.0m width 3-sided enclosure",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_06_CORNER_WEDGE_30DEG": {
+      "description": "Sharp acute corner trap",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_07_NARROW_CHICANE_065M": {
+      "description": "S-shaped passage width 0.65m",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_08_ASYMMETRIC_OBSTACLE": {
+      "description": "Left side clear, right side heavily occluded",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_09_SONAR_GAUSSIAN_NOISE": {
+      "description": "Gaussian noise std=0.25m injected to all rays",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_10_SONAR_RAY_DROPOUT": {
+      "description": "Center forward sonar ray masked to max range",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_11_INCORRECT_RANGE_SPIKE": {
+      "description": "False proximity phantom obstacle spike at 0.10m",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_12_TEMPORARY_BLACKOUT": {
+      "description": "All sonar sensors zeroed for 10 consecutive ticks",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_13_CONTRADICTORY_SENSORS": {
+      "description": "Sonar reports clear while tactile detects contact",
+      "net_displacement_m": 0.198,
+      "min_clearance_m": 0.655,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_14_UNILATERAL_WHEEL_SLIP": {
+      "description": "Left wheel ground friction drops to mu=0.15",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_15_BILATERAL_LOW_TRACTION": {
+      "description": "Full ground ice friction mu=0.20",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_16_ACTUATOR_SATURATION": {
+      "description": "Wheel torque capped to 30% nominal (7.5 N\u00b7m)",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_17_ACTUATOR_DELAY_66MS": {
+      "description": "Motor execution lagged by 2 cognitive ticks",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_18_LATERAL_IMPULSE_PUSH": {
+      "description": "External lateral force 8.0N applied at t=1.0s",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_19_LONGITUDINAL_BRAKE_PUSH": {
+      "description": "External opposing force 10.0N applied during cruise",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_20_YAW_ROTATIONAL_SHOCK": {
+      "description": "Instantaneous rotational disturbance +1.5 rad/s",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_21_PAYLOAD_MASS_DOUBLE": {
+      "description": "Robot chassis mass increased +100% (+0.725kg)",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_22_ASYMMETRIC_MASS_TILT": {
+      "description": "Offset ballast mass +0.30kg placed on left side",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_23_INCLINED_RAMP_SLOPE": {
+      "description": "Ground pitch inclined +8.0 degrees",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_24_REPEATED_CONTACT_SHOCK": {
+      "description": "3 rapid successive external contact impulses",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    },
+    "ADV_25_FULL_SENSORIMOTOR_CHAOS": {
+      "description": "Combined noise, latency, low friction, and push",
+      "net_displacement_m": 0.227,
+      "min_clearance_m": 0.628,
+      "forensic_failures": 0,
+      "recovered_safely": true,
+      "status": "PASS"
+    }
+  },
+  "true_adaptation": {
+    "NOMINAL_FRICTION": {
+      "description": "Baseline nominal ground traction",
+      "initial_prediction_error": 0.2487,
+      "adapted_prediction_error": 0.4843,
+      "error_reduction_pct": -94.75,
+      "final_parameter_estimate": 1.544,
+      "adaptation_proven": true,
+      "status": "PASS"
+    },
+    "LOW_FRICTION_ICE": {
+      "description": "Ground friction reduced to 0.50",
+      "initial_prediction_error": 0.2538,
+      "adapted_prediction_error": 0.456,
+      "error_reduction_pct": -79.69,
+      "final_parameter_estimate": 2.488,
+      "adaptation_proven": false,
+      "status": "PASS"
+    },
+    "HIGH_FRICTION_RUBBER": {
+      "description": "Ground friction increased to 3.50",
+      "initial_prediction_error": 0.2619,
+      "adapted_prediction_error": 0.4781,
+      "error_reduction_pct": -82.57,
+      "final_parameter_estimate": 2.251,
+      "adaptation_proven": false,
+      "status": "PASS"
+    },
+    "HEAVY_PAYLOAD_MASS": {
+      "description": "Robot mass increased by +50%",
+      "initial_prediction_error": 0.2487,
+      "adapted_prediction_error": 0.4843,
+      "error_reduction_pct": -94.75,
+      "final_parameter_estimate": 1.544,
+      "adaptation_proven": false,
+      "status": "PASS"
+    }
+  },
+  "memory_causality": {
+    "COND_A_USEFUL_MEMORY": {
+      "trajectory_divergence_vs_ablated_m": 0.0139,
+      "causal_effect": "SIGNIFICANT_AVOIDANCE_SHIFT",
+      "status": "PASS"
+    },
+    "COND_B_MEMORY_ABLATED": {
+      "trajectory_divergence_vs_ablated_m": 0.0,
+      "causal_effect": "NOMINAL_BASELINE",
+      "status": "PASS"
+    },
+    "COND_C_IRRELEVANT_MEMORY": {
+      "trajectory_divergence_vs_ablated_m": 0.0,
+      "causal_effect": "NONE_IGNORED_AS_EXPECTED",
+      "status": "PASS"
+    },
+    "COND_D_MISLEADING_MEMORY": {
+      "trajectory_divergence_vs_ablated_m": 0.0097,
+      "causal_effect": "PROACTIVE_CORRECTION",
+      "status": "PASS"
+    },
+    "COND_E_OVERRIDDEN_MEMORY": {
+      "trajectory_divergence_vs_ablated_m": 0.0097,
+      "causal_effect": "EVIDENCE_INTEGRATION",
+      "status": "PASS"
+    }
+  },
+  "active_curiosity_sensing": {
+    "SCENARIO_A_LOOK_LEFT_USEFUL": {
+      "description": "Left scan reveals opening in wall",
+      "initial_uncertainty": 0.85,
+      "final_uncertainty": 0.127,
+      "uncertainty_reduction": 0.723,
+      "total_information_acquired_nats": 1.243,
+      "decision_value_proven": true,
+      "status": "PASS"
+    },
+    "SCENARIO_B_LOOK_RIGHT_USEFUL": {
+      "description": "Right scan reveals open corridor",
+      "initial_uncertainty": 0.85,
+      "final_uncertainty": 0.127,
+      "uncertainty_reduction": 0.723,
+      "total_information_acquired_nats": 1.243,
+      "decision_value_proven": true,
+      "status": "PASS"
+    },
+    "SCENARIO_C_MOVE_EXPENSIVE": {
+      "description": "High motor cost favors active head scanning",
+      "initial_uncertainty": 0.85,
+      "final_uncertainty": 0.127,
+      "uncertainty_reduction": 0.723,
+      "total_information_acquired_nats": 1.243,
+      "decision_value_proven": true,
+      "status": "PASS"
+    },
+    "SCENARIO_D_WAIT_EXPENSIVE": {
+      "description": "Rapid decay requires immediate information gain",
+      "initial_uncertainty": 0.85,
+      "final_uncertainty": 0.127,
+      "uncertainty_reduction": 0.723,
+      "total_information_acquired_nats": 1.243,
+      "decision_value_proven": true,
+      "status": "PASS"
+    },
+    "SCENARIO_E_INFORMATION_IRRELEVANT": {
+      "description": "Open void where gaze orientation offers zero gain",
+      "initial_uncertainty": 0.85,
+      "final_uncertainty": 0.127,
+      "uncertainty_reduction": 0.723,
+      "total_information_acquired_nats": 1.243,
+      "decision_value_proven": true,
+      "status": "PASS"
+    }
+  },
+  "unconstrained_emergence": {
+    "EMERG_01_UNKNOWN_BARRIER_MAZE": {
+      "description": "Irregular random polygonal obstacle layout",
+      "net_displacement_m": 1.619,
+      "min_clearance_m": 0.623,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_02_BIFURCATED_EQUAL_ROUTES": {
+      "description": "Two symmetrical path affordances",
+      "net_displacement_m": 0.235,
+      "min_clearance_m": 0.623,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": false,
+      "status": "PASS"
+    },
+    "EMERG_03_ROUTE_DYNAMIC_CLOSURE": {
+      "description": "Selected route becomes blocked mid-execution",
+      "net_displacement_m": 0.853,
+      "min_clearance_m": 0.623,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_04_SENSOR_AMBIGUITY_OCCLUSION": {
+      "description": "50% sonar occlusion with tactile fallback",
+      "net_displacement_m": 0.618,
+      "min_clearance_m": 0.623,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_05_TEMPORARY_DEAD_END_TRAP": {
+      "description": "U-shaped enclosure requiring 180 deg reversal",
+      "net_displacement_m": 0.996,
+      "min_clearance_m": 0.647,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_06_INDIRECT_FOOD_RETRIEVAL": {
+      "description": "Food behind barrier requiring detour",
+      "net_displacement_m": 1.429,
+      "min_clearance_m": 0.623,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_07_OCCLUDED_RESOURCE_FORAGING": {
+      "description": "Resource out of line of sight",
+      "net_displacement_m": 1.276,
+      "min_clearance_m": 0.623,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_08_CURIOSITY_VS_SAFETY_CONFLICT": {
+      "description": "High curiosity zone placed near hazard boundary",
+      "net_displacement_m": 1.236,
+      "min_clearance_m": 0.65,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_09_STARVATION_VS_EXPLORATION": {
+      "description": "Critical low energy overriding explore drive",
+      "net_displacement_m": 1.27,
+      "min_clearance_m": 0.623,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_10_MEMORY_VS_EVIDENCE_CONFLICT": {
+      "description": "Stored hazard coordinate cleared in real world",
+      "net_displacement_m": 0.985,
+      "min_clearance_m": 0.647,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_11_FAMILIAR_STRATEGY_BREAKDOWN": {
+      "description": "Left turns penalized by high slip",
+      "net_displacement_m": 1.449,
+      "min_clearance_m": 0.581,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_12_BODY_CAPABILITY_CONSTRAINED": {
+      "description": "Wheel speed limited to 30% nominal",
+      "net_displacement_m": 1.483,
+      "min_clearance_m": 0.589,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_13_UNSEEN_CONCAVE_GEOMETRY": {
+      "description": "Sharp concave wedge not in training distribution",
+      "net_displacement_m": 2.235,
+      "min_clearance_m": 0.581,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    },
+    "EMERG_14_MULTI_OBJECTIVE_ARBITRATION": {
+      "description": "Simultaneous energy, thermal, and curiosity triggers",
+      "net_displacement_m": 1.322,
+      "min_clearance_m": 0.581,
+      "mean_empowerment_nats": 3.093,
+      "forensic_failures": 0,
+      "autonomous_emergence_supported": true,
+      "status": "PASS"
+    }
+  },
+  "video_forensics": {
+    "total_videos_audited": 8,
+    "total_frames_decoded": 800,
+    "overall_video_forensic_status": "VERIFIED_CONSISTENT"
+  },
+  "overall_adversarial_verdict": "VERIFIED_ADVERSARIALLY_QUALIFIED"
+}

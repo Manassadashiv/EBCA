@@ -1,0 +1,112 @@
+[
+  {
+    "timestamp_s": 0.333,
+    "video_frame": 10,
+    "telemetry_tick": 10,
+    "action_name": "STRAIGHT_FORWARD",
+    "speed_mps": 0.0939,
+    "clearance_m": 1.2368,
+    "best_efe": -52.97,
+    "prediction_error": 0.007,
+    "match": true
+  },
+  {
+    "timestamp_s": 3.064,
+    "video_frame": 92,
+    "telemetry_tick": 92,
+    "action_name": "CURVE_LEFT_MODERATE",
+    "speed_mps": 0.0711,
+    "clearance_m": 0.8348,
+    "best_efe": -6.61,
+    "prediction_error": 0.0713,
+    "match": true
+  },
+  {
+    "timestamp_s": 5.794,
+    "video_frame": 174,
+    "telemetry_tick": 174,
+    "action_name": "CURVE_LEFT_MODERATE",
+    "speed_mps": 0.2482,
+    "clearance_m": 0.39,
+    "best_efe": -49.12,
+    "prediction_error": 0.0319,
+    "match": true
+  },
+  {
+    "timestamp_s": 8.525,
+    "video_frame": 256,
+    "telemetry_tick": 256,
+    "action_name": "STRAIGHT_FORWARD",
+    "speed_mps": 0.2188,
+    "clearance_m": 1.584,
+    "best_efe": -50.91,
+    "prediction_error": 0.0354,
+    "match": true
+  },
+  {
+    "timestamp_s": 11.255,
+    "video_frame": 338,
+    "telemetry_tick": 338,
+    "action_name": "STRAIGHT_FORWARD",
+    "speed_mps": 0.2614,
+    "clearance_m": 1.0572,
+    "best_efe": -50.88,
+    "prediction_error": 0.0241,
+    "match": true
+  },
+  {
+    "timestamp_s": 13.986,
+    "video_frame": 420,
+    "telemetry_tick": 420,
+    "action_name": "STRAIGHT_FORWARD",
+    "speed_mps": 0.2617,
+    "clearance_m": 0.5041,
+    "best_efe": -50.85,
+    "prediction_error": 0.0158,
+    "match": true
+  },
+  {
+    "timestamp_s": 16.717,
+    "video_frame": 502,
+    "telemetry_tick": 502,
+    "action_name": "STRAIGHT_FORWARD",
+    "speed_mps": 0.0464,
+    "clearance_m": 1.9103,
+    "best_efe": -51.54,
+    "prediction_error": 0.0195,
+    "match": true
+  },
+  {
+    "timestamp_s": 19.447,
+    "video_frame": 584,
+    "telemetry_tick": 584,
+    "action_name": "STRAIGHT_FORWARD",
+    "speed_mps": 0.1007,
+    "clearance_m": 1.85,
+    "best_efe": -51.62,
+    "prediction_error": 0.1376,
+    "match": true
+  },
+  {
+    "timestamp_s": 22.178,
+    "video_frame": 666,
+    "telemetry_tick": 666,
+    "action_name": "STRAIGHT_FORWARD",
+    "speed_mps": 0.1353,
+    "clearance_m": 1.8768,
+    "best_efe": -51.51,
+    "prediction_error": 0.0955,
+    "match": true
+  },
+  {
+    "timestamp_s": 24.942,
+    "video_frame": 749,
+    "telemetry_tick": 749,
+    "action_name": "STRAIGHT_FORWARD",
+    "speed_mps": 0.2525,
+    "clearance_m": 2.0832,
+    "best_efe": -51.42,
+    "prediction_error": 0.0438,
+    "match": true
+  }
+]

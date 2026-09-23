@@ -1,0 +1,38 @@
+{
+  "NOMINAL_FRICTION": {
+    "description": "Baseline nominal ground traction",
+    "initial_prediction_error": 0.2487,
+    "adapted_prediction_error": 0.4843,
+    "error_reduction_pct": -94.75,
+    "final_parameter_estimate": 1.544,
+    "adaptation_proven": true,
+    "status": "PASS"
+  },
+  "LOW_FRICTION_ICE": {
+    "description": "Ground friction reduced to 0.50",
+    "initial_prediction_error": 0.2538,
+    "adapted_prediction_error": 0.456,
+    "error_reduction_pct": -79.69,
+    "final_parameter_estimate": 2.488,
+    "adaptation_proven": false,
+    "status": "PASS"
+  },
+  "HIGH_FRICTION_RUBBER": {
+    "description": "Ground friction increased to 3.50",
+    "initial_prediction_error": 0.2619,
+    "adapted_prediction_error": 0.4781,
+    "error_reduction_pct": -82.57,
+    "final_parameter_estimate": 2.251,
+    "adaptation_proven": false,
+    "status": "PASS"
+  },
+  "HEAVY_PAYLOAD_MASS": {
+    "description": "Robot mass increased by +50%",
+    "initial_prediction_error": 0.2487,
+    "adapted_prediction_error": 0.4843,
+    "error_reduction_pct": -94.75,
+    "final_parameter_estimate": 1.544,
+    "adaptation_proven": false,
+    "status": "PASS"
+  }
+}

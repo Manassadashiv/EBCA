@@ -1,0 +1,21 @@
+{
+  "condition": "FULL_P1_R2",
+  "seed": 42,
+  "episode": 3,
+  "acquired": false,
+  "acquisition_tick": null,
+  "acquisition_time_s": null,
+  "total_ticks": 500,
+  "total_collisions": 0,
+  "route_chosen": "NORTH_CORRIDOR_ROUTE1",
+  "switch_latency_ticks": 494,
+  "switch_latency_s": 16.450200000000002,
+  "memory_writes": 6,
+  "memory_retrievals": 12500,
+  "episodes_in_memory": 20,
+  "final_dist_food": 0.4874,
+  "final_pos": [
+    2.231,
+    -0.228
+  ]
+}

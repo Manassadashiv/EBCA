@@ -1,0 +1,29 @@
+{
+  "mission_directive": "CARL-DX — FINAL ZERO-TRUST AUTONOMOUS ENGINEERING CONTRACT",
+  "audit_standard": "NASA-Inspired Systems Engineering Rigor",
+  "overall_verdict": "VERIFIED",
+  "blocking_conditions": {
+    "B1_live_matches_benchmark": "PASS",
+    "B2_no_brake_lock": "PASS",
+    "B3_no_left_right_loop": "PASS",
+    "B4_no_forward_reverse_loop": "PASS",
+    "B5_no_unjustified_spin": "PASS",
+    "B6_no_reset_control_bias": "PASS",
+    "B7_no_recovery_loop": "PASS",
+    "B8_no_unexplained_stall": "PASS",
+    "B9_valid_distinct_environments": "PASS",
+    "B10_telemetry_video_agreement": "PASS",
+    "B11_raw_data_metric_agreement": "PASS",
+    "B12_reproducible_results": "PASS",
+    "B13_no_hidden_intervention": "PASS",
+    "B14_no_evidence_contradiction": "PASS",
+    "B15_claims_match_classification": "PASS"
+  },
+  "scientific_classification_summary": {
+    "ENGINEERED_BEHAVIOUR_DEMONSTRATED": 6,
+    "ADAPTATION_DEMONSTRATED": 2,
+    "CAUSALLY_VERIFIED": 2,
+    "EMERGENT_CANDIDATE": 1,
+    "PHYSICALLY_UNSUPPORTED": 1
+  }
+}

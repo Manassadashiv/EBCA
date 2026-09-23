@@ -1,0 +1,160 @@
+{
+  "milestone": "Stage 3.4-R3 Active Inference Remediation & Causal Necessity",
+  "timestamp": "2026-09-18T07:08:43Z",
+  "status": "FAILED CLOSED \u274c",
+  "total_certification_episodes": 200,
+  "matched_configurations": 50,
+  "seeds": [
+    5001,
+    5002,
+    5003,
+    5004,
+    5005
+  ],
+  "gates": {
+    "gate1_escape_and_collision_ceiling": {
+      "name": "Autonomous Task Completion & Collision Ceiling (ARM-A)",
+      "passed": false,
+      "thresholds": {
+        "escape_rate_min": 80.0,
+        "collision_rate_max": 10.0
+      },
+      "measured": {
+        "escape_rate": 12.0,
+        "collision_rate": 18.0
+      },
+      "counts": {
+        "escaped": 6,
+        "collision": 9,
+        "total": 50
+      }
+    },
+    "gate2_emergent_composite_maneuver": {
+      "name": "Complete Emergent Maneuver Verification (ARM-A)",
+      "passed": false,
+      "thresholds": {
+        "emergence_rate_min": 75.0
+      },
+      "measured": {
+        "emergence_rate": 0.0
+      },
+      "counts": {
+        "complete_emergent": 0,
+        "total": 50
+      }
+    },
+    "gate3_epistemic_objective_causal_necessity": {
+      "name": "Epistemic-Objective Causal Necessity (ARM-A vs ARM-B)",
+      "passed": false,
+      "env2": {
+        "n_pairs": 30,
+        "delta_escape_pct": 0.0,
+        "exact_mcnemar_p": 1.0,
+        "discordant_pairs": {
+          "b_armA_wins": 0,
+          "c_armB_wins": 0
+        },
+        "passed": false,
+        "thresholds": {
+          "delta_min": 40.0,
+          "p_max": 0.001
+        }
+      },
+      "pooled": {
+        "n_pairs": 50,
+        "delta_escape_pct": -8.0,
+        "exact_mcnemar_p": 0.984375,
+        "discordant_pairs": {
+          "b_armA_wins": 1,
+          "c_armB_wins": 5
+        },
+        "passed": false,
+        "thresholds": {
+          "delta_min": 35.0,
+          "p_max": 0.001
+        }
+      }
+    },
+    "gate4_realtime_latency_budget": {
+      "name": "Real-Time Cognitive Cycle Latency Budget",
+      "passed": true,
+      "thresholds": {
+        "mean_max_ms": 20.0,
+        "p95_max_ms": 45.0
+      },
+      "measured": {
+        "mean_latency_ms": 5.962182207013097,
+        "p95_latency_ms": 16.083094997156877,
+        "total_cycles": 39802
+      }
+    },
+    "gate5_anti_cheat_isolation": {
+      "name": "Decision-Pipeline AST Anti-Cheat & No-Script Quarantine",
+      "passed": true,
+      "measured": {
+        "violations": 0,
+        "status": "100% CLEAN"
+      }
+    }
+  },
+  "arm_performance_summary": {
+    "ARM-A": {
+      "pooled_escape_count": 6,
+      "pooled_escape_rate": 12.0,
+      "pooled_collision_count": 9,
+      "pooled_collision_rate": 18.0,
+      "env1_escape_count": 6,
+      "env1_escape_rate": 30.0,
+      "env2_escape_count": 0,
+      "env2_escape_rate": 0.0
+    },
+    "ARM-B": {
+      "pooled_escape_count": 10,
+      "pooled_escape_rate": 20.0,
+      "pooled_collision_count": 7,
+      "pooled_collision_rate": 14.000000000000002,
+      "env1_escape_count": 10,
+      "env1_escape_rate": 50.0,
+      "env2_escape_count": 0,
+      "env2_escape_rate": 0.0
+    },
+    "ARM-C": {
+      "pooled_escape_count": 8,
+      "pooled_escape_rate": 16.0,
+      "pooled_collision_count": 7,
+      "pooled_collision_rate": 14.000000000000002,
+      "env1_escape_count": 8,
+      "env1_escape_rate": 40.0,
+      "env2_escape_count": 0,
+      "env2_escape_rate": 0.0
+    },
+    "ARM-D": {
+      "pooled_escape_count": 11,
+      "pooled_escape_rate": 22.0,
+      "pooled_collision_count": 7,
+      "pooled_collision_rate": 14.000000000000002,
+      "env1_escape_count": 11,
+      "env1_escape_rate": 55.00000000000001,
+      "env2_escape_count": 0,
+      "env2_escape_rate": 0.0
+    }
+  },
+  "ablation_analysis": {
+    "arm_a_vs_arm_c_micro_local": {
+      "delta_escape_pct": -4.0,
+      "exact_mcnemar_p": 0.85546875,
+      "discordant_pairs": {
+        "b_armA_wins": 3,
+        "c_armC_wins": 5
+      }
+    },
+    "arm_a_vs_arm_d_unnormalized": {
+      "delta_escape_pct": -10.0,
+      "exact_mcnemar_p": 0.98046875,
+      "discordant_pairs": {
+        "b_armA_wins": 2,
+        "c_armD_wins": 7
+      }
+    }
+  }
+}

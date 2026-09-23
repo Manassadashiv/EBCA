@@ -1,0 +1,17 @@
+{
+  "contract_standard": "NASA-Inspired Systems Engineering Rigor",
+  "live_entry_point": "carl_live_playground.py:run_live_interactive_playground",
+  "benchmark_entry_point": "brain/carl_adversarial_emergence_harness.py:execute_full_adversarial_validation_directive",
+  "physics_timestep_s": 0.01,
+  "cognitive_cycle_dt_s": 0.0333,
+  "physics_substeps": 3,
+  "reconciliation_verdict": "SYNCHRONIZED_AND_RECONCILED",
+  "verified_subsystems": {
+    "physics_integration": "MATCH",
+    "kinematic_model_dt": "MATCH",
+    "stuck_recovery": "MATCH",
+    "boundary_handling": "MATCH",
+    "sensory_channels": "MATCH",
+    "decision_logic": "MATCH"
+  }
+}

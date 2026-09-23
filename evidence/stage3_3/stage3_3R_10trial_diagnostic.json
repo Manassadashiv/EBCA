@@ -1,0 +1,391 @@
+{
+  "diagnostic_id": "STAGE3_3R_10TRIAL_DIAGNOSTIC_2026-09-13",
+  "total_trials": 10,
+  "floor_effect_broken": false,
+  "discrete_metrics": {
+    "collisions": 0,
+    "collision_rate_pct": 0.0,
+    "progress_qualified_successes": 0,
+    "progress_qualified_success_rate_pct": 0.0,
+    "mean_min_clearance_m": 0.20767652500209252,
+    "absolute_min_clearance_m": 0.010094384403041608,
+    "mean_net_displacement_m": 0.44571899477386384,
+    "stall_count": 1
+  },
+  "mppi_metrics": {
+    "collisions": 0,
+    "collision_rate_pct": 0.0,
+    "progress_qualified_successes": 0,
+    "progress_qualified_success_rate_pct": 0.0,
+    "mean_min_clearance_m": 0.30173501008689674,
+    "absolute_min_clearance_m": 0.23585692093084004,
+    "mean_net_displacement_m": 0.18047934443641536,
+    "stall_count": 5
+  },
+  "trials": {
+    "discrete": [
+      {
+        "trial_id": "T01",
+        "controller": "discrete",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.20208393205133218,
+        "net_displacement": 0.5539507086977988,
+        "mean_forward_velocity": 0.21082207974294062,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          0.42662383826311445,
+          -0.3533461309996778
+        ]
+      },
+      {
+        "trial_id": "T02",
+        "controller": "discrete",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.15138659082662384,
+        "net_displacement": 0.8316162303671523,
+        "mean_forward_velocity": 0.21338994043994858,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          0.6533077430196477,
+          0.5145624816488726
+        ]
+      },
+      {
+        "trial_id": "T03",
+        "controller": "discrete",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.010094384403041608,
+        "net_displacement": 0.20897612419315018,
+        "mean_forward_velocity": 0.07017350382468211,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -0.20796932014987365,
+          -0.08243323649529473
+        ]
+      },
+      {
+        "trial_id": "T04",
+        "controller": "discrete",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.17981316297640018,
+        "net_displacement": 0.07051440049216716,
+        "mean_forward_velocity": 0.06141646251222609,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": true,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -0.35424630247389466,
+          -0.05365519396535067
+        ]
+      },
+      {
+        "trial_id": "T05",
+        "controller": "discrete",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.30041752005076006,
+        "net_displacement": 0.5477887963399373,
+        "mean_forward_velocity": 0.22713096303097138,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -0.9549337558485601,
+          1.2545468136759623
+        ]
+      },
+      {
+        "trial_id": "T06",
+        "controller": "discrete",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.29741234736578337,
+        "net_displacement": 0.3053842781839138,
+        "mean_forward_velocity": 0.19684089767006868,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          1.8046300286600563,
+          -1.7785499883337255
+        ]
+      },
+      {
+        "trial_id": "T07",
+        "controller": "discrete",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.24815862857200163,
+        "net_displacement": 0.4601051980525492,
+        "mean_forward_velocity": 0.16412605145153134,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -0.4563145988360891,
+          -0.05893878319099046
+        ]
+      },
+      {
+        "trial_id": "T08",
+        "controller": "discrete",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.21456487975806737,
+        "net_displacement": 0.47476194997746357,
+        "mean_forward_velocity": 0.16047868440255542,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -0.467100694593434,
+          -0.08494616092993906
+        ]
+      },
+      {
+        "trial_id": "T09",
+        "controller": "discrete",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.3241927131993967,
+        "net_displacement": 0.4771407816390956,
+        "mean_forward_velocity": 0.21996390559784607,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          0.47433067174596844,
+          -0.05170821350796663
+        ]
+      },
+      {
+        "trial_id": "T10",
+        "controller": "discrete",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.14864109081751822,
+        "net_displacement": 0.5269514797954107,
+        "mean_forward_velocity": 0.2110387378475285,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -0.5269483736864811,
+          -0.0018092892930182273
+        ]
+      }
+    ],
+    "mppi": [
+      {
+        "trial_id": "T01",
+        "controller": "mppi",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.3932065444063368,
+        "net_displacement": 0.23782156961270418,
+        "mean_forward_velocity": 0.18729798948030535,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          0.22330844118715087,
+          0.08180732893582997
+        ]
+      },
+      {
+        "trial_id": "T02",
+        "controller": "mppi",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.39321149188394144,
+        "net_displacement": 0.23781626640168288,
+        "mean_forward_velocity": 0.18729796486588474,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          0.22330529985140266,
+          0.08180048669483177
+        ]
+      },
+      {
+        "trial_id": "T03",
+        "controller": "mppi",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.23585692861447838,
+        "net_displacement": 0.12521008977171136,
+        "mean_forward_velocity": -0.033561748429174525,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": true,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -0.5252100799931063,
+          -4.94849465957194e-05
+        ]
+      },
+      {
+        "trial_id": "T04",
+        "controller": "mppi",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.23585692093084004,
+        "net_displacement": 0.125210230007923,
+        "mean_forward_velocity": -0.033561720058832414,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": true,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -0.5252102202309157,
+          -4.9480931487873916e-05
+        ]
+      },
+      {
+        "trial_id": "T05",
+        "controller": "mppi",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.2853990318165177,
+        "net_displacement": 0.2352515840224344,
+        "mean_forward_velocity": 0.18580605692002733,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -1.2789787140534101,
+          1.2805785265662029
+        ]
+      },
+      {
+        "trial_id": "T06",
+        "controller": "mppi",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.2854012985058841,
+        "net_displacement": 0.23525136214202633,
+        "mean_forward_velocity": 0.18580629482894268,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          1.7210220023681884,
+          -1.71942408636053
+        ]
+      },
+      {
+        "trial_id": "T07",
+        "controller": "mppi",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.2875559666974288,
+        "net_displacement": 0.14952722505517146,
+        "mean_forward_velocity": -0.05700623192898481,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": true,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -0.1493574101191067,
+          0.007124259625593962
+        ]
+      },
+      {
+        "trial_id": "T08",
+        "controller": "mppi",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.2875559657291956,
+        "net_displacement": 0.1495264677268475,
+        "mean_forward_velocity": -0.057006467523273506,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": true,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -0.14935657902250238,
+          0.007125787925764552
+        ]
+      },
+      {
+        "trial_id": "T09",
+        "controller": "mppi",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.33494184333074656,
+        "net_displacement": 0.23768676256405064,
+        "mean_forward_velocity": 0.18705132365069935,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": false,
+        "progress_qualified_success": false,
+        "final_pos": [
+          0.22319649072436223,
+          0.08172101092441937
+        ]
+      },
+      {
+        "trial_id": "T10",
+        "controller": "mppi",
+        "had_collision": false,
+        "collision_tick": null,
+        "min_hull_clearance": 0.27836410895359787,
+        "net_displacement": 0.07149188705960184,
+        "mean_forward_velocity": 0.14283546986279355,
+        "ticks_completed": 60,
+        "completed_without_collision": true,
+        "achieved_1m_progress": false,
+        "is_stalled": true,
+        "progress_qualified_success": false,
+        "final_pos": [
+          -0.06956089205096942,
+          -0.016503702991033375
+        ]
+      }
+    ]
+  }
+}

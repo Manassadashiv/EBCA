@@ -1,0 +1,187 @@
+{
+  "total_torture_scenarios": 18,
+  "passed": 18,
+  "pass_rate_pct": 100.0,
+  "scenarios": {
+    "TORTURE_01_STRAIGHT_WALL": {
+      "obstacle_position": [
+        1.0,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_02_WALL_SLIGHTLY_LEFT": {
+      "obstacle_position": [
+        1.0,
+        0.35,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_03_WALL_SLIGHTLY_RIGHT": {
+      "obstacle_position": [
+        1.0,
+        -0.35,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_04_SYMMETRIC_WALL": {
+      "obstacle_position": [
+        0.85,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_05_DEAD_END_CORRIDOR": {
+      "obstacle_position": [
+        0.9,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_06_LEFT_ONLY_OPENING": {
+      "obstacle_position": [
+        0.85,
+        -0.4,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_07_RIGHT_ONLY_OPENING": {
+      "obstacle_position": [
+        0.85,
+        0.4,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_08_NARROW_CORRIDOR": {
+      "obstacle_position": [
+        1.2,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_09_WEDGE_TRAP": {
+      "obstacle_position": [
+        0.75,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_10_FORWARD_OBSTACLE_REVERSAL": {
+      "obstacle_position": [
+        0.6,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_11_LATE_APPEARING_OBSTACLE": {
+      "obstacle_position": [
+        0.9,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_12_DYNAMIC_MOVING_OBSTACLE": {
+      "obstacle_position": [
+        1.1,
+        0.2,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_13_DISAPPEARING_OBSTACLE": {
+      "obstacle_position": [
+        1.0,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_14_SENSOR_DISAGREEMENT": {
+      "obstacle_position": [
+        0.95,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_15_SENSOR_BLACKOUT": {
+      "obstacle_position": [
+        1.5,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_16_ONE_SIDED_SENSOR_FAILURE": {
+      "obstacle_position": [
+        1.0,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_17_RESET_WHILE_MOVING": {
+      "obstacle_position": [
+        0.0,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.2362,
+      "collisions": 0,
+      "status": "PASS"
+    },
+    "TORTURE_18_RESET_AFTER_RECOVERY_BEGINS": {
+      "obstacle_position": [
+        0.7,
+        0.0,
+        0.04
+      ],
+      "displacement_m": 0.5091,
+      "collisions": 0,
+      "status": "PASS"
+    }
+  }
+}

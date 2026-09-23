@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-08-17T00:30:00+05:30",
+  "files": {
+    "brain/carl_autonomous_agent.py": {
+      "sha256": "c7f50fceff372d2ece8008dedcf075a0b4aee3e5db4c0e9f5a4f298673429095",
+      "size_bytes": 11106
+    },
+    "brain/carl_embodied_organism.py": {
+      "sha256": "6de0a8af49082fc5fc07e07214333fab8b05ec45b0ae89afb319f3d0cc15ab95",
+      "size_bytes": 21410
+    },
+    "brain/carl_generative_self_model.py": {
+      "sha256": "7abcd1d8e4bbf1cd3d5fa61f7dbb79343c4f3f7d1773961146cf003111e158e8",
+      "size_bytes": 11457
+    },
+    "brain/carl_endogenous_agency.py": {
+      "sha256": "2bf58da9b426598a0906ff07c03a4ae188d530cbc805e0c8c48610e30c4ea52a",
+      "size_bytes": 10141
+    },
+    "brain/carl_homeostatic_core.py": {
+      "sha256": "c199a83eb81b8758a08399c0981c5c300921c6d26308daf8575fa7ced1ccf2ce",
+      "size_bytes": 7642
+    },
+    "brain/carl_episodic_memory.py": {
+      "sha256": "8c9553ed36f3488a16d62f73068732c3d54bc2e1a7a5a37548d9e2c0b480dbaa",
+      "size_bytes": 6870
+    },
+    "brain/carl_experiment_auditor.py": {
+      "sha256": "a0d6b0115a40e48b10685d0156289eaf8b1ead384a888008f952e5d894092004",
+      "size_bytes": 11037
+    },
+    "brain/carl_locomotion_quality_evaluator.py": {
+      "sha256": "960f8235a85671c6f37aa11af7d51cd652faece542c7f6ed66a37cb4873cbdc4",
+      "size_bytes": 14143
+    },
+    "brain/carl_wall_avoidance_benchmarks.py": {
+      "sha256": "df291e9f5263fca02e764decc7a3452ec55350f6f8121f781e371fb88ea2a0e0",
+      "size_bytes": 24104
+    },
+    "world/vessel_kinetic.xml": {
+      "sha256": "fe87cba38916f3ab19d831bafa99658bce9837693a28206930959749cac14d91",
+      "size_bytes": 15661
+    },
+    "checkpoints/initial_untrained_C7.npz": {
+      "sha256": "73d3cbe17a50e1f65c8eaaa95ad413a1b67f9be7af24f4722e0bee99e483c78a",
+      "size_bytes": 2009257
+    }
+  }
+}

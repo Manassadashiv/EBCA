@@ -1,0 +1,14 @@
+{
+  "entry_point": "brain/carl_adversarial_emergence_harness.py:execute_full_adversarial_validation_directive",
+  "simulation_class": "MuJoCoHardwareAbstractionLayer",
+  "agent_class": "CarlAutonomousOrganismAgent",
+  "world_xml": "world/vessel_kinetic.xml",
+  "physics_timestep_s": 0.01,
+  "cognitive_cycle_dt_s": 0.0333,
+  "physics_substeps_per_cognitive_tick": 3,
+  "simulated_physics_time_per_tick_s": 0.03,
+  "physics_to_model_timestep_ratio": 0.90,
+  "arena_modification": "Default XML layout with programmatically added scenario obstacles",
+  "viewer_type": "None (Headless off-screen mujoco.Renderer)",
+  "rendering_sync": "Frame captured every tick and written directly to MP4 stream"
+}

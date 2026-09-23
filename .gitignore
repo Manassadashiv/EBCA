@@ -63,5 +63,15 @@ memory/*.npz.tmp
 # Project planning files
 ebca_project_gantt.csv
 
+# Large Media & Presentations (Keep remote repository lightweight)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.pptx
+*.ppt
+
 # Generated PDF walkthroughs
 textbook/*.pdf
+

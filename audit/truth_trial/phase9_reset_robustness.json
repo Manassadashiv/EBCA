@@ -1,0 +1,72 @@
+{
+  "total_protocols": 11,
+  "all_passed": true,
+  "protocols": {
+    "TEST_1_FRESH_PROCESS_START": {
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_2_ENVIRONMENT_RESET": {
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_3_MUJOCO_STATE_RESET": {
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_4_PHYSICS_STATE_RESET": {
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_5_CONTROLLER_RESET": {
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_6_INTERNAL_STATE_RESET": {
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_7_MEMORY_RESET": {
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_8_SOFT_RESET": {
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_9_REPEATED_RESET_10X": {
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_10_SAME_STATE_DIFF_SEEDS": {
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "TEST_11_DIFF_STATE_SAME_SEED": {
+      "post_reset_speed": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "milestone": "Stage 2.3-MVE",
+  "verdict": "VALIDATED",
+  "n_trials_per_condition": 50,
+  "max_ticks_per_trial": 60,
+  "real_time_budget_ms": 50.0,
+  "deliberation_p95_latency_ms": 37.728500011144206,
+  "conditions": {
+    "deliberative": {
+      "n_trials": 50,
+      "collision_rate_percent": 2.0,
+      "mean_distance_m": 0.4089440674661511,
+      "std_distance_m": 0.0999752425869184,
+      "mean_ticks_survived": 59.36,
+      "mean_latency_ms": 21.830303132691864,
+      "p95_latency_ms": 37.728500011144206,
+      "max_latency_ms": 235.19230005331337,
+      "real_time_passed": true
+    },
+    "reflex": {
+      "n_trials": 50,
+      "collision_rate_percent": 68.0,
+      "mean_distance_m": 0.17354004857283226,
+      "std_distance_m": 0.07115688925061178,
+      "mean_ticks_survived": 41.82,
+      "mean_latency_ms": 0.04782109135616658,
+      "p95_latency_ms": 0.06639998173341155,
+      "max_latency_ms": 0.2983000595122576,
+      "real_time_passed": true
+    },
+    "amnesic": {
+      "n_trials": 50,
+      "collision_rate_percent": 68.0,
+      "mean_distance_m": 0.17354004857283226,
+      "std_distance_m": 0.07115688925061178,
+      "mean_ticks_survived": 41.82,
+      "mean_latency_ms": 0.04852242992290294,
+      "p95_latency_ms": 0.06974994903430343,
+      "max_latency_ms": 0.97360007930547,
+      "real_time_passed": true
+    },
+    "random": {
+      "n_trials": 50,
+      "collision_rate_percent": 48.0,
+      "mean_distance_m": 0.29569021215659447,
+      "std_distance_m": 0.14686745361526582,
+      "mean_ticks_survived": 47.74,
+      "mean_latency_ms": 0.12185115180480453,
+      "p95_latency_ms": 0.2041399595327675,
+      "max_latency_ms": 4.539199988357723,
+      "real_time_passed": true
+    }
+  },
+  "statistical_tests": {
+    "deliberative_vs_reflex": {
+      "t_statistic": 8.140270516337692,
+      "p_value": 6.362321120898725e-13,
+      "cohens_d": 1.6280541017563865,
+      "significant_at_05": true
+    },
+    "deliberative_vs_amnesic": {
+      "t_statistic": 8.140270516337692,
+      "p_value": 6.362321120898725e-13,
+      "cohens_d": 1.6280541017563865,
+      "significant_at_05": true
+    },
+    "deliberative_vs_random": {
+      "t_statistic": 5.091085652762194,
+      "p_value": 8.612301250798802e-07,
+      "cohens_d": 1.0182171296602134,
+      "significant_at_05": true
+    },
+    "collision_reductions": {
+      "vs_random_percent": 95.83333331336806,
+      "vs_reflex_percent": 97.05882351513841
+    },
+    "causal_prediction_alignment_percent": 97.87735849056604
+  },
+  "acceptance_criteria": {
+    "collision_reduction_vs_random_ge_60": true,
+    "collision_reduction_vs_reflex_ge_25": true,
+    "causal_prediction_alignment_ge_85": true,
+    "real_time_latency_under_50ms": true,
+    "statistically_significant_survival_p_05": true,
+    "mve_certified": true
+  }
+}

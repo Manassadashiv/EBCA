@@ -1,0 +1,16 @@
+{
+  "manifest_name": "CARL-DX P1-R3 BASELINE CRYPTOGRAPHIC INTEGRITY MANIFEST",
+  "timestamp": "2026-08-23T02:05:00Z",
+  "hashes": {
+    "world/vessel_kinetic.xml": "46877757dbd21e2af712bc08a8d1d247316290e80724dc6fe8066f8042ca6ede",
+    "brain/p1_r2/carl_p1r2_developmental_agent.py": "41d45c7ba60682e3eb149c08d0f47a980f84380007ebe9af453ab42ec0a86a97",
+    "brain/p1_r2/carl_p1r2_developmental_lab.py": "3e4e9c9dc88f46e09084442ace70699a5621ed90edc91d7bb75da7b940d37dbf",
+    "tools/p1_r2/p1r2_experiment_runner.py": "60c844d1d2885887a6e0c1d0fb31cb7eedda69432398c9b96b4d0a7f25da347f",
+    "tools/p1_r2/p1r2_visual_pipeline.py": "eac1e168148fbf2997dce37b5f7ad6d3764a8e6dac06645d17515f6c94090380",
+    "tools/p1_r2/p1r2_plot_generator.py": "c98e4cd2874728f59c808ef98b8ed3a6cb581079deb441c97389b5804d94cd09",
+    "tools/p1_r2/p1r2_independent_classifier.py": "3ac9531eeedd939b8f2f7f67eb1d6782ccad8e58791b8c396a127952deeceaac",
+    "tools/p1_r2/p1r2_anti_engineering_auditor.py": "9fd3d2ac389d7bd4b898f6d9745940e507b6aeb765054edb31bfcf011b5feb6a",
+    "CARL_P1R2_PILOT_REPORT.md": "c6c30e5a44ec5ec03dfb33a5087d7e9a06917fe9a319b12950c6ed6dfecb8b82",
+    "CARL_P1R2_PILOT_REPORT.json": "32b5a9d8ee768d1419581693fc49d57e5fee00c2a7b98d26d2b831ece8128b79"
+  }
+}

@@ -1,0 +1,382 @@
+[
+  {
+    "scenario_id": "SCENARIO_1_OPEN_SPACE_LOCOMOTION",
+    "scenario_title": "Scenario 1: Open Space Locomotion",
+    "seed": 42,
+    "overall_verdict": "PASS",
+    "env_hash": "622b5aa3611ea2a5",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_sync": true,
+      "gate_11_stuck_detection": true,
+      "gate_12_recovery_efficacy": true
+    },
+    "metrics": {
+      "total_physical_contacts": 0,
+      "min_clearance_m": 1.232,
+      "avoidance_tick_onset": -1,
+      "effective_displacement_m": 1.372,
+      "spin_ticks": 0,
+      "action_switches": 0,
+      "curvature_flips": 0,
+      "stuck_confirmed_ticks": 0,
+      "recovery_events": 0,
+      "frames_decoded": 100
+    },
+    "artifacts": {
+      "video_mp4": "scenario_1_open_space_locomotion_s42.mp4",
+      "telemetry_csv": "scenario_1_open_space_locomotion_s42_telemetry.csv",
+      "diagnostics_png": "scenario_1_open_space_locomotion_s42_diagnostics.png"
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_2_HEAD_ON_WALL",
+    "scenario_title": "Scenario 2: Wall Directly Ahead",
+    "seed": 42,
+    "overall_verdict": "PASS",
+    "env_hash": "225982d503b05119",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_sync": true,
+      "gate_11_stuck_detection": true,
+      "gate_12_recovery_efficacy": true
+    },
+    "metrics": {
+      "total_physical_contacts": 0,
+      "min_clearance_m": 0.418,
+      "avoidance_tick_onset": 22,
+      "effective_displacement_m": 1.009,
+      "spin_ticks": 0,
+      "action_switches": 4,
+      "curvature_flips": 2,
+      "stuck_confirmed_ticks": 0,
+      "recovery_events": 0,
+      "frames_decoded": 100
+    },
+    "artifacts": {
+      "video_mp4": "scenario_2_head_on_wall_s42.mp4",
+      "telemetry_csv": "scenario_2_head_on_wall_s42_telemetry.csv",
+      "diagnostics_png": "scenario_2_head_on_wall_s42_diagnostics.png"
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_3_ANGLED_45_WALL",
+    "scenario_title": "Scenario 3: 45\u00b0 Angled Wall",
+    "seed": 42,
+    "overall_verdict": "PASS",
+    "env_hash": "28883b0fa2d1b4e3",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_sync": true,
+      "gate_11_stuck_detection": true,
+      "gate_12_recovery_efficacy": true
+    },
+    "metrics": {
+      "total_physical_contacts": 0,
+      "min_clearance_m": 0.432,
+      "avoidance_tick_onset": 14,
+      "effective_displacement_m": 1.026,
+      "spin_ticks": 0,
+      "action_switches": 2,
+      "curvature_flips": 0,
+      "stuck_confirmed_ticks": 0,
+      "recovery_events": 0,
+      "frames_decoded": 100
+    },
+    "artifacts": {
+      "video_mp4": "scenario_3_angled_45_wall_s42.mp4",
+      "telemetry_csv": "scenario_3_angled_45_wall_s42_telemetry.csv",
+      "diagnostics_png": "scenario_3_angled_45_wall_s42_diagnostics.png"
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_4_CORRIDOR_WITH_OPENING",
+    "scenario_title": "Scenario 4: Corridor with Lateral Opening",
+    "seed": 42,
+    "overall_verdict": "PASS",
+    "env_hash": "f7d7c1c824d47b01",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_sync": true,
+      "gate_11_stuck_detection": true,
+      "gate_12_recovery_efficacy": true
+    },
+    "metrics": {
+      "total_physical_contacts": 0,
+      "min_clearance_m": 0.346,
+      "avoidance_tick_onset": 31,
+      "effective_displacement_m": 1.18,
+      "spin_ticks": 0,
+      "action_switches": 5,
+      "curvature_flips": 0,
+      "stuck_confirmed_ticks": 0,
+      "recovery_events": 0,
+      "frames_decoded": 100
+    },
+    "artifacts": {
+      "video_mp4": "scenario_4_corridor_with_opening_s42.mp4",
+      "telemetry_csv": "scenario_4_corridor_with_opening_s42_telemetry.csv",
+      "diagnostics_png": "scenario_4_corridor_with_opening_s42_diagnostics.png"
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_5_DEAD_END_ENCLOSURE",
+    "scenario_title": "Scenario 5: Dead-End U-Enclosure",
+    "seed": 42,
+    "overall_verdict": "PASS",
+    "env_hash": "61f53c307cf96ab6",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_sync": true,
+      "gate_11_stuck_detection": true,
+      "gate_12_recovery_efficacy": true
+    },
+    "metrics": {
+      "total_physical_contacts": 0,
+      "min_clearance_m": 0.452,
+      "avoidance_tick_onset": 39,
+      "effective_displacement_m": 0.824,
+      "spin_ticks": 25,
+      "action_switches": 5,
+      "curvature_flips": 1,
+      "stuck_confirmed_ticks": 0,
+      "recovery_events": 0,
+      "frames_decoded": 100
+    },
+    "artifacts": {
+      "video_mp4": "scenario_5_dead_end_enclosure_s42.mp4",
+      "telemetry_csv": "scenario_5_dead_end_enclosure_s42_telemetry.csv",
+      "diagnostics_png": "scenario_5_dead_end_enclosure_s42_diagnostics.png"
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_6_NARROW_PASSAGE",
+    "scenario_title": "Scenario 6: Narrow Passage Centering",
+    "seed": 42,
+    "overall_verdict": "PASS",
+    "env_hash": "781315d1e5e23129",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_sync": true,
+      "gate_11_stuck_detection": true,
+      "gate_12_recovery_efficacy": true
+    },
+    "metrics": {
+      "total_physical_contacts": 0,
+      "min_clearance_m": 0.307,
+      "avoidance_tick_onset": 78,
+      "effective_displacement_m": 1.349,
+      "spin_ticks": 0,
+      "action_switches": 1,
+      "curvature_flips": 0,
+      "stuck_confirmed_ticks": 0,
+      "recovery_events": 0,
+      "frames_decoded": 100
+    },
+    "artifacts": {
+      "video_mp4": "scenario_6_narrow_passage_s42.mp4",
+      "telemetry_csv": "scenario_6_narrow_passage_s42_telemetry.csv",
+      "diagnostics_png": "scenario_6_narrow_passage_s42_diagnostics.png"
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_7_DYNAMIC_CROSSING_HAZARD",
+    "scenario_title": "Scenario 7: Dynamic Crossing Hazard",
+    "seed": 42,
+    "overall_verdict": "PASS",
+    "env_hash": "124ce28ea8b3cbf0",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_sync": true,
+      "gate_11_stuck_detection": true,
+      "gate_12_recovery_efficacy": true
+    },
+    "metrics": {
+      "total_physical_contacts": 0,
+      "min_clearance_m": 0.406,
+      "avoidance_tick_onset": 39,
+      "effective_displacement_m": 1.162,
+      "spin_ticks": 0,
+      "action_switches": 2,
+      "curvature_flips": 0,
+      "stuck_confirmed_ticks": 0,
+      "recovery_events": 0,
+      "frames_decoded": 100
+    },
+    "artifacts": {
+      "video_mp4": "scenario_7_dynamic_crossing_hazard_s42.mp4",
+      "telemetry_csv": "scenario_7_dynamic_crossing_hazard_s42_telemetry.csv",
+      "diagnostics_png": "scenario_7_dynamic_crossing_hazard_s42_diagnostics.png"
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_8_UNEXPECTED_DROP_HAZARD",
+    "scenario_title": "Scenario 8: Sudden Unexpected Drop Hazard",
+    "seed": 42,
+    "overall_verdict": "PASS",
+    "env_hash": "622b5aa3611ea2a5",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_sync": true,
+      "gate_11_stuck_detection": true,
+      "gate_12_recovery_efficacy": true
+    },
+    "metrics": {
+      "total_physical_contacts": 0,
+      "min_clearance_m": 0.286,
+      "avoidance_tick_onset": 36,
+      "effective_displacement_m": 1.091,
+      "spin_ticks": 0,
+      "action_switches": 2,
+      "curvature_flips": 0,
+      "stuck_confirmed_ticks": 0,
+      "recovery_events": 0,
+      "frames_decoded": 100
+    },
+    "artifacts": {
+      "video_mp4": "scenario_8_unexpected_drop_hazard_s42.mp4",
+      "telemetry_csv": "scenario_8_unexpected_drop_hazard_s42_telemetry.csv",
+      "diagnostics_png": "scenario_8_unexpected_drop_hazard_s42_diagnostics.png"
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_9_ADVERSARIAL_RANDOM_CLUTTER",
+    "scenario_title": "Scenario 9: Adversarial Random Clutter Field",
+    "seed": 42,
+    "overall_verdict": "PASS",
+    "env_hash": "f7e0cec5d2bc9c5b",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_sync": true,
+      "gate_11_stuck_detection": true,
+      "gate_12_recovery_efficacy": true
+    },
+    "metrics": {
+      "total_physical_contacts": 0,
+      "min_clearance_m": 0.398,
+      "avoidance_tick_onset": 86,
+      "effective_displacement_m": 1.362,
+      "spin_ticks": 0,
+      "action_switches": 2,
+      "curvature_flips": 2,
+      "stuck_confirmed_ticks": 0,
+      "recovery_events": 0,
+      "frames_decoded": 100
+    },
+    "artifacts": {
+      "video_mp4": "scenario_9_adversarial_random_clutter_s42.mp4",
+      "telemetry_csv": "scenario_9_adversarial_random_clutter_s42_telemetry.csv",
+      "diagnostics_png": "scenario_9_adversarial_random_clutter_s42_diagnostics.png"
+    }
+  },
+  {
+    "scenario_id": "SCENARIO_10_CORNER_WEDGE_TRAP",
+    "scenario_title": "Scenario 10: Corner Wedge Trap (Stuck & Recovery)",
+    "seed": 42,
+    "overall_verdict": "PASS",
+    "env_hash": "0d5d9b2a407a8555",
+    "gates": {
+      "gate_1_zero_collision": true,
+      "gate_2_anticipatory_avoidance": true,
+      "gate_3_forward_progress": true,
+      "gate_4_spin_limit": true,
+      "gate_5_action_chatter": true,
+      "gate_6_steering_continuity": true,
+      "gate_7_min_clearance": true,
+      "gate_8_goal_progress": true,
+      "gate_9_distinct_env": true,
+      "gate_10_video_sync": true,
+      "gate_11_stuck_detection": true,
+      "gate_12_recovery_efficacy": true
+    },
+    "metrics": {
+      "total_physical_contacts": 0,
+      "min_clearance_m": 0.27,
+      "avoidance_tick_onset": 17,
+      "effective_displacement_m": 0.577,
+      "spin_ticks": 0,
+      "action_switches": 7,
+      "curvature_flips": 0,
+      "stuck_confirmed_ticks": 0,
+      "recovery_events": 0,
+      "frames_decoded": 100
+    },
+    "artifacts": {
+      "video_mp4": "scenario_10_corner_wedge_trap_s42.mp4",
+      "telemetry_csv": "scenario_10_corner_wedge_trap_s42_telemetry.csv",
+      "diagnostics_png": "scenario_10_corner_wedge_trap_s42_diagnostics.png"
+    }
+  }
+]

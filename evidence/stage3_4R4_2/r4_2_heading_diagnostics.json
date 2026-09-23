@@ -1,0 +1,72 @@
+[
+  {
+    "config_id": 20,
+    "r41_outcome": "TIMEOUT",
+    "r42_outcome": "COLLIDED",
+    "r41_max_error_deg": 16.68,
+    "r42_max_error_deg": 7.11,
+    "r42_p95_error_deg": 6.33,
+    "gyro_mean_error_deg": 2.71,
+    "error_reduction_deg": 9.57,
+    "max_stagnation_r41": 124,
+    "max_stagnation_r42": 14,
+    "sonar_rejections": 107,
+    "total_ticks": 109
+  },
+  {
+    "config_id": 21,
+    "r41_outcome": "COLLIDED",
+    "r42_outcome": "TIMEOUT",
+    "r41_max_error_deg": 48.82,
+    "r42_max_error_deg": 27.21,
+    "r42_p95_error_deg": 22.33,
+    "gyro_mean_error_deg": 12.87,
+    "error_reduction_deg": 21.61,
+    "max_stagnation_r41": 26,
+    "max_stagnation_r42": 23,
+    "sonar_rejections": 219,
+    "total_ticks": 220
+  },
+  {
+    "config_id": 22,
+    "r41_outcome": "COLLIDED",
+    "r42_outcome": "COLLIDED",
+    "r41_max_error_deg": 61.0,
+    "r42_max_error_deg": 24.29,
+    "r42_p95_error_deg": 19.79,
+    "gyro_mean_error_deg": 10.54,
+    "error_reduction_deg": 36.71,
+    "max_stagnation_r41": 53,
+    "max_stagnation_r42": 19,
+    "sonar_rejections": 203,
+    "total_ticks": 205
+  },
+  {
+    "config_id": 23,
+    "r41_outcome": "TIMEOUT",
+    "r42_outcome": "COLLIDED",
+    "r41_max_error_deg": 44.69,
+    "r42_max_error_deg": 28.92,
+    "r42_p95_error_deg": 25.76,
+    "gyro_mean_error_deg": 13.77,
+    "error_reduction_deg": 15.77,
+    "max_stagnation_r41": 28,
+    "max_stagnation_r42": 15,
+    "sonar_rejections": 190,
+    "total_ticks": 192
+  },
+  {
+    "config_id": 24,
+    "r41_outcome": "TIMEOUT",
+    "r42_outcome": "COLLIDED",
+    "r41_max_error_deg": 49.8,
+    "r42_max_error_deg": 20.27,
+    "r42_p95_error_deg": 19.81,
+    "gyro_mean_error_deg": 8.12,
+    "error_reduction_deg": 29.53,
+    "max_stagnation_r41": 83,
+    "max_stagnation_r42": 24,
+    "sonar_rejections": 137,
+    "total_ticks": 137
+  }
+]

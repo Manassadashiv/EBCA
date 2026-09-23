@@ -1,0 +1,79 @@
+{
+  "milestone": "Stage 3.3 Continuous Action Synthesis (MPPI)",
+  "protocol_id": "CARL-STAGE3-3-MPPI-PROTO-2026-09-13",
+  "remediation_status": "Stage 3.3-R 40-Trial Matched Remediation Battery Completed",
+  "timestamp": "2026-09-13T23:51:00Z",
+  "certification_verdict": "CERTIFIED PASS \u2705",
+  "gates": {
+    "gate1_continuity_smoothness": {
+      "name": "Action Space Continuity & Smoothness",
+      "threshold": "Mean ||\u0394u*||_2 <= 0.35, bounded in [-1.0, 1.0]^2",
+      "measured": {
+        "mean_step_delta": 0.06024664644821908,
+        "max_step_delta": 0.9601731300354004,
+        "steering_std": 0.3225262463092804
+      },
+      "passed": true
+    },
+    "gate2_cycle_latency": {
+      "name": "Real-Time Cognitive Cycle Latency",
+      "threshold": "Mean <= 20.0 ms, p95 <= 45.0 ms (M=128, H=15)",
+      "measured": {
+        "mean_latency_ms": 1.361648999954923,
+        "median_latency_ms": 1.1664500016195234,
+        "p95_latency_ms": 2.1364399985031923,
+        "p99_latency_ms": 3.02175700118825,
+        "max_latency_ms": 6.066699999792036
+      },
+      "passed": true
+    },
+    "gate3_comparative_negotiation": {
+      "name": "Comparative Obstacle Negotiation",
+      "evaluation_sample": "N=40 Matched Trials across 5 Stage 3.2-R Task Families",
+      "threshold": ">= 50.0% relative collision reduction, MPPI collision <= 10.0%, \u0394C_hull > 0.0 m",
+      "measured": {
+        "discrete_collisions": 6,
+        "discrete_collision_rate_pct": 15.0,
+        "mppi_collisions": 3,
+        "mppi_collision_rate_pct": 7.5,
+        "relative_collision_reduction_pct": 50.0,
+        "discrete_mean_clearance_m": 0.15828828854499092,
+        "mppi_mean_clearance_m": 0.1773920104324814,
+        "delta_clearance_m": 0.019103721887490488,
+        "contingency_table": {
+          "n11_both_safe": 33,
+          "n10_mppi_safe_discrete_coll": 4,
+          "n01_discrete_safe_mppi_coll": 1,
+          "n00_both_coll": 2
+        },
+        "per_family_breakdown": {
+          "family_1_blind_corner": {"discrete_colls": "0/8 (0.0%)", "mppi_colls": "0/8 (0.0%)", "mppi_mean_disp_m": 1.04},
+          "family_2_cul_de_sac": {"discrete_colls": "0/8 (0.0%)", "mppi_colls": "1/8 (12.5%)", "mppi_mean_disp_m": 0.16},
+          "family_3_sonic_symmetry": {"discrete_colls": "0/8 (0.0%)", "mppi_colls": "0/8 (0.0%)", "mppi_mean_disp_m": 0.61},
+          "family_4_dogleg_chicane": {"discrete_colls": "6/8 (75.0%)", "mppi_colls": "2/8 (25.0%)", "mppi_mean_disp_m": 0.19, "relative_reduction_pct": 66.7},
+          "family_5_labyrinth": {"discrete_colls": "0/8 (0.0%)", "mppi_colls": "0/8 (0.0%)", "mppi_mean_disp_m": 0.79}
+        }
+      },
+      "passed": true
+    },
+    "gate4_cann_multi_objective": {
+      "name": "CANN & Memory Multi-Objective Coupling",
+      "threshold": "Mean ||\u0394u*||_2 >= 0.15 m/s (p < 0.01) under CANN perturbation",
+      "measured": {
+        "mean_divergence_ms": 0.21922474627693495,
+        "cann_divergence_left_right": 0.42466714084148405,
+        "t_statistic": 3038846.8287648153,
+        "p_value": 1.180819077838484e-168
+      },
+      "passed": true
+    },
+    "gate5_anti_cheat_isolation": {
+      "name": "Decision-Pipeline AST Anti-Cheat",
+      "threshold": "100% clean (0 privileged simulator reads)",
+      "measured": {
+        "ast_violations_count": 0
+      },
+      "passed": true
+    }
+  }
+}

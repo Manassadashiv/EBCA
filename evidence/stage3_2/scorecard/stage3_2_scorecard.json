@@ -1,0 +1,93 @@
+{
+  "subgate": "3.2B",
+  "title": "Spatial Memory Necessity under Non-Line-of-Sight Conditions",
+  "total_episodes_evaluated": 500,
+  "total_matched_pairs": 100,
+  "sample_counts": {
+    "episodes_per_arm": 100,
+    "arms_evaluated": [
+      "ARM-I",
+      "ARM-A",
+      "ARM-S",
+      "ARM-PF",
+      "ARM-R"
+    ],
+    "pairs_per_family": 20,
+    "total_families": 5
+  },
+  "success_rates": {
+    "ARM-I": "5.0% (5/100)",
+    "ARM-A": "9.0% (9/100)",
+    "ARM-S": "5.0% (5/100)",
+    "ARM-PF": "0.0% (0/100)",
+    "ARM-R": "4.0% (4/100)"
+  },
+  "collision_rates": {
+    "ARM-I": "22.0% (22/100)",
+    "ARM-A": "25.0% (25/100)",
+    "ARM-S": "22.0% (22/100)",
+    "ARM-PF": "21.0% (21/100)",
+    "ARM-R": "24.0% (24/100)"
+  },
+  "contingency_table_I_vs_A": {
+    "n11_both_succeed": 5,
+    "n10_intact_wins": 0,
+    "n01_amnesic_wins": 4,
+    "n00_both_fail": 91,
+    "discordant_pairs": 4
+  },
+  "contingency_table_I_vs_S": {
+    "n11_both_succeed": 5,
+    "n10_intact_wins": 0,
+    "n01_scrambled_wins": 0,
+    "n00_both_fail": 95,
+    "discordant_pairs": 0
+  },
+  "effect_sizes": {
+    "delta_success_I_A": -0.04,
+    "exact_mcnemar_p_I_A": 1.0,
+    "delta_success_I_S": 0.0,
+    "exact_mcnemar_p_I_S": 1.0,
+    "mean_delta_u_I_A": 0.40846358023359264,
+    "p95_latency_ms": 7.091357251069893
+  },
+  "gates": {
+    "G6_primary_effect": {
+      "metric": -0.04,
+      "threshold": ">= 35.0%",
+      "passed": false
+    },
+    "G7_exact_mcnemar_significance": {
+      "metric": 1.0,
+      "threshold": "< 0.001",
+      "passed": false
+    },
+    "G8_topographic_specificity": {
+      "metric_delta": 0.0,
+      "metric_p": 1.0,
+      "threshold": "Delta >= 25.0%, p < 0.010",
+      "passed": false
+    },
+    "G9_intact_collision_rate": {
+      "metric": 0.22,
+      "threshold": "<= 5.0%",
+      "passed": false
+    },
+    "G10_observational_equivalence": {
+      "status": "100% PASSED",
+      "threshold": "D_s <= 0.150 m",
+      "passed": true
+    },
+    "G11_ast_anti_cheat": {
+      "status": "0 LEAKS",
+      "threshold": "Zero simulator coordinates",
+      "passed": true
+    },
+    "G12_optimal_action_firewall": {
+      "status": "0 LEAKS",
+      "threshold": "u* strictly isolated in evaluator",
+      "passed": true
+    }
+  },
+  "verdict": "FAILED_CLOSED"
+}

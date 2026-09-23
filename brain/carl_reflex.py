@@ -44,8 +44,8 @@ class SpikingReflexLayer:
                     self.w[1, j] = 3.0 * (1.0 - a / (np.pi/2))
                 # Directly in front (a == 0) excites both equally to trigger reverse
                 else:
-                    self.w[0, j] = 1.8
-                    self.w[1, j] = 2.2
+                    self.w[0, j] = 2.0
+                    self.w[1, j] = 2.0
 
         # R-STDP variables
         self.trace_pre = np.zeros(self.num_sensors)
@@ -75,13 +75,9 @@ class SpikingReflexLayer:
         spikes_pre = np.zeros(self.num_sensors)
         nu_max = 100.0
         
-        # Lower SNN warning and backup thresholds globally to fit narrow 1.0m-1.2m corridors
-        # Physical wall contact occurs at ~0.23m, so we must trigger backups above that boundary.
-        d_trigger = 0.45
-        collision_limit = 0.28
-        if food_dist < 1.0:
-            d_trigger = 0.32      # even lower near food to allow close-range targeting
-            collision_limit = 0.20
+        # Proactive wall evasion trigger (1.20m) and proactive emergency backup (0.55m)
+        d_trigger = 1.20
+        collision_limit = 0.55
 
         # Check if direct frontal collision is imminent (wider sector check)
         min_front_dist = np.min(sensor_dists[9:15])
@@ -89,15 +85,20 @@ class SpikingReflexLayer:
 
         # Check if rear collision is imminent
         min_rear_dist = min(sensor_dists[0], sensor_dists[1], sensor_dists[23])
-        imminent_rear_collision = min_rear_dist < 0.25
+        imminent_rear_collision = min_rear_dist < 0.30
 
         # Trigger backup timer and select clear path on new frontal collision
         if imminent_collision and self.backup_timer == 0:
-            self.backup_timer = 20  # Back up for 20 ticks (~0.6 seconds)
+            self.backup_timer = 25  # Back up for 25 ticks (~0.8 seconds)
             # Check average clearance of front-left (6:12) vs front-right (12:18)
             left_clear = np.mean(sensor_dists[6:12])
             right_clear = np.mean(sensor_dists[12:18])
             self.backup_spin_dir = 1.0 if left_clear > right_clear else -1.0
+
+        # Potential-field continuous repelling force for smooth proactive 1.2m evasion
+        left_sector = np.mean(sensor_dists[6:12])   # Front-Left
+        right_sector = np.mean(sensor_dists[12:18]) # Front-Right
+        front_min = np.min(sensor_dists[9:15])       # Direct Front
 
         for j in range(self.num_sensors):
             d = sensor_dists[j]
@@ -106,7 +107,8 @@ class SpikingReflexLayer:
                 if np.random.rand() < min(1.0, p):
                     spikes_pre[j] = 1.0
 
-        # LIF integration
+        # LIF integration (membrane tau = 0.1s for smoother integration)
+        self.mem_decay = math.exp(-self.dt / 0.1)
         current_inputs = np.dot(self.w, spikes_pre) + reservoir_bias
         self.V = self.V * self.mem_decay + current_inputs
 
@@ -119,19 +121,26 @@ class SpikingReflexLayer:
         # Decaying old outputs
         self.reflex_outputs *= self.motor_decay
 
-        # Dynamic reflex strength: highly aggressive during exploration, suppressed close to food
-        reflex_strength = 5.0
-        clamp_limit = 6.0
-        if food_dist < 1.2:
-            reflex_strength = 1.0
-            clamp_limit = 1.5
+        # Proactive potential field calculation:
+        if front_min < 1.20:
+            turn_intensity = (1.20 - front_min) / 1.20 * 12.0
+            if left_sector < right_sector:
+                # Wall is more to the left, steer right
+                self.reflex_outputs[0] += turn_intensity
+                self.reflex_outputs[1] -= turn_intensity
+            else:
+                # Wall is more to the right, steer left
+                self.reflex_outputs[0] -= turn_intensity
+                self.reflex_outputs[1] += turn_intensity
 
-        # Apply differential speeds based on post-synaptic firing:
+        # Apply differential1.2m SNN spikes if active
+        reflex_strength = 6.0
+        clamp_limit = 18.0
+
         if spikes_post[0] > 0:
             self.reflex_outputs[0] -= reflex_strength
             self.reflex_outputs[1] += reflex_strength
 
-        # Motor 1 fires (Turn Right) -> accelerate left wheel, reverse/slow right wheel
         if spikes_post[1] > 0:
             self.reflex_outputs[0] += reflex_strength
             self.reflex_outputs[1] -= reflex_strength
@@ -140,23 +149,22 @@ class SpikingReflexLayer:
         if self.backup_timer > 0:
             self.backup_timer -= 1
             if imminent_rear_collision:
-                # Blocked both front and back: Spin in place to escape in clear direction
-                self.reflex_outputs[0] = 3.5 * self.backup_spin_dir
-                self.reflex_outputs[1] = -3.5 * self.backup_spin_dir
+                # Blocked both front and back: Spin in place
+                self.reflex_outputs[0] = 10.0 * self.backup_spin_dir
+                self.reflex_outputs[1] = -10.0 * self.backup_spin_dir
             else:
-                # Gentle backup and swing front in the clear direction
+                # Gentle backup and swing
                 if self.backup_spin_dir > 0:
-                    self.reflex_outputs[0] = -4.5
-                    self.reflex_outputs[1] = -1.5
+                    self.reflex_outputs[0] = -12.0
+                    self.reflex_outputs[1] = -4.0
                 else:
-                    self.reflex_outputs[0] = -1.5
-                    self.reflex_outputs[1] = -4.5
+                    self.reflex_outputs[0] = -4.0
+                    self.reflex_outputs[1] = -12.0
         elif imminent_rear_collision:
-            # Blocked only from behind: Push forward
-            self.reflex_outputs[0] = 3.0
-            self.reflex_outputs[1] = 3.0
+            self.reflex_outputs[0] = 8.0
+            self.reflex_outputs[1] = 8.0
 
-        # Clamp accumulated reflex output dynamically
+        # Clamp accumulated reflex output
         self.reflex_outputs = np.clip(self.reflex_outputs, -clamp_limit, clamp_limit)
 
         # R-STDP traces

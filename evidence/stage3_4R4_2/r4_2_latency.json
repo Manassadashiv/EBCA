@@ -1,0 +1,23 @@
+{
+  "num_cycles": 1000,
+  "mean_latency_ms": 3.497,
+  "p50_latency_ms": 2.749,
+  "p95_latency_ms": 8.118,
+  "p99_latency_ms": 8.818,
+  "max_latency_ms": 9.841,
+  "min_latency_ms": 2.233,
+  "target_mean_le_20ms": true,
+  "target_p95_le_45ms": true,
+  "stage_breakdown_mean_ms": {
+    "sensor_preprocessing": 0.16,
+    "occupancy_update": 0.14,
+    "frontier_extraction": 0.764,
+    "candidate_sampling": 0.252,
+    "trajectory_propagation": 0.26,
+    "hull_feasibility": 0.975,
+    "efe_cost_calculation": 2.536,
+    "softmax_action_synthesis": 0.073,
+    "telemetry_logging": 0.008,
+    "total_cycle_time": 3.487
+  }
+}

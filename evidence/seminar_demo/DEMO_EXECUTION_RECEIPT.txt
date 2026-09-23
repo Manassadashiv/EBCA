@@ -1,0 +1,20 @@
+
+========================================================================================
+                      CARL-DX P0 SEMINAR DEMO EXECUTION RECEIPT
+========================================================================================
+Start Time:                 2026-08-19 01:45:41
+End Time:                   2026-08-19 01:46:57
+Total Execution Time:       76.09 seconds
+Commands Executed:          python tools/generate_seminar_demo.py
+Seeds Evaluated:            Trial A: [42, 101, 2024] | Trial B: [42, 101, 2024]
+Trial A Route Selection:    100% LEFT (+Y) across all 3 seeds
+Trial B Route Selection:    100% RIGHT (-Y) across all 3 seeds
+Total Collisions:           0 across all 6 runs
+Primary Video:              D:\ebca\evidence\seminar_demo\video\CARL_P0_SEMINAR_DEMO.mp4 (750 frames, 25.0s, 1280x720, 30 FPS)
+Plot Artifacts Generated:   5 / 5 publication-quality PNGs
+Telemetry Logged:           6 / 6 CSV files (30Hz, 23 columns)
+Spot-Checks Performed:      10 / 10 exact tick-to-frame matches (100.0%)
+Anti-Hardcoding Audit:      PASS (Zero hardcoded branching found)
+Core Source Modifications:  0 (All SHA-256 hashes strictly verified identical)
+Final Verification Status:  DEMO_VALID
+========================================================================================

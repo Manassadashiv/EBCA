@@ -1,0 +1,10 @@
+{
+  "world\\carl_mujoco.xml": {
+    "sha256": "1b10380d06787a0e16f7a374548e0209c2ad31444e958968604200277f5f5250",
+    "size_bytes": 11599
+  },
+  "world\\vessel_kinetic.xml": {
+    "sha256": "fe87cba38916f3ab19d831bafa99658bce9837693a28206930959749cac14d91",
+    "size_bytes": 15661
+  }
+}

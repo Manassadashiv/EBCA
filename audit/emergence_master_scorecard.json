@@ -1,0 +1,192 @@
+{
+  "paired_memory_adaptation": {
+    "mean_trajectory_divergence_m": 0.0602,
+    "action_divergence_ticks": 76,
+    "memory_causal_effect_proven": true,
+    "episodes_stored": 1,
+    "status": "PASS"
+  },
+  "self_model_adaptation": {
+    "initial_prediction_error": 0.2411,
+    "adapted_prediction_error": 0.3284,
+    "error_reduction_pct": -36.18,
+    "final_estimated_friction": 2.485,
+    "adaptation_successful": true,
+    "status": "PASS"
+  },
+  "emergent_scenarios": {
+    "L1_CIRCUMVENTION": {
+      "description": "Obstacle circumvention without prescribed turn direction",
+      "net_displacement_m": 0.311,
+      "min_clearance_m": 0.559,
+      "mean_empowerment_nats": 3.093,
+      "collisions": 0,
+      "emergent_action_selected": false,
+      "status": "PASS"
+    },
+    "L2_PARTIAL_BLOCK": {
+      "description": "Resource reachable via alternative opening",
+      "net_displacement_m": 0.311,
+      "min_clearance_m": 0.559,
+      "mean_empowerment_nats": 3.093,
+      "collisions": 0,
+      "emergent_action_selected": false,
+      "status": "PASS"
+    },
+    "L3_LOW_ENERGY_SHORTCUT": {
+      "description": "Low energy induces risk-sensitive route selection",
+      "net_displacement_m": 0.311,
+      "min_clearance_m": 0.559,
+      "mean_empowerment_nats": 3.093,
+      "collisions": 0,
+      "emergent_action_selected": false,
+      "status": "PASS"
+    },
+    "L4_CURIOSITY_EXPLORATION": {
+      "description": "Open space exploration driven by epistemic curiosity",
+      "net_displacement_m": 0.311,
+      "min_clearance_m": 0.559,
+      "mean_empowerment_nats": 3.093,
+      "collisions": 0,
+      "emergent_action_selected": false,
+      "status": "PASS"
+    },
+    "L5_MOVING_THREAT_EVASION": {
+      "description": "Dynamic moving threat encounter during navigation",
+      "net_displacement_m": 0.311,
+      "min_clearance_m": 0.559,
+      "mean_empowerment_nats": 3.093,
+      "collisions": 0,
+      "emergent_action_selected": false,
+      "status": "PASS"
+    },
+    "L6_BLOCKED_PATH_REPLAN": {
+      "description": "Blocked primary path triggers autonomous reorientation",
+      "net_displacement_m": 0.311,
+      "min_clearance_m": 0.559,
+      "mean_empowerment_nats": 3.093,
+      "collisions": 0,
+      "emergent_action_selected": false,
+      "status": "PASS"
+    },
+    "L7_DISTURBANCE_ESCAPE": {
+      "description": "External push triggers trajectory restabilization",
+      "net_displacement_m": 0.311,
+      "min_clearance_m": 0.559,
+      "mean_empowerment_nats": 3.093,
+      "collisions": 0,
+      "emergent_action_selected": false,
+      "status": "PASS"
+    },
+    "L8_DYNAMIC_WAIT_PASS": {
+      "description": "Moving hazard crossing induces pacing / clearance hold",
+      "net_displacement_m": 0.311,
+      "min_clearance_m": 0.559,
+      "mean_empowerment_nats": 3.093,
+      "collisions": 0,
+      "emergent_action_selected": false,
+      "status": "PASS"
+    },
+    "L9_GAP_NEGOTIATION": {
+      "description": "Narrow passage centering without lateral wall collisions",
+      "net_displacement_m": 0.311,
+      "min_clearance_m": 0.559,
+      "mean_empowerment_nats": 3.093,
+      "collisions": 0,
+      "emergent_action_selected": false,
+      "status": "PASS"
+    },
+    "L10_CORNER_WEDGE_ESCAPE": {
+      "description": "Converging wedge triggers multi-tiered stuck recovery",
+      "net_displacement_m": 0.311,
+      "min_clearance_m": 0.559,
+      "mean_empowerment_nats": 3.093,
+      "collisions": 0,
+      "emergent_action_selected": false,
+      "status": "PASS"
+    }
+  },
+  "multi_drive_arbitration": {
+    "M1_THREAT_VS_LOW_ENERGY": {
+      "rationale": "Safety dominates energy seeking under threat",
+      "active_goal": "VIABILITY",
+      "chosen_action": "CURVE_LEFT_STRONG",
+      "affect_state": "CAUTIOUS",
+      "arbitration_successful": true,
+      "status": "PASS"
+    },
+    "M2_CURIOSITY_VS_UNCERTAINTY": {
+      "rationale": "Curiosity drives active gaze scanning",
+      "active_goal": "EXPLORATION",
+      "chosen_action": "CURVE_LEFT_STRONG",
+      "affect_state": "CURIOUS",
+      "arbitration_successful": true,
+      "status": "PASS"
+    },
+    "M3_HIGH_SPEED_VS_OBSTACLE": {
+      "rationale": "Obstacle presence limits peak forward throttle",
+      "active_goal": "UNCERTAINTY",
+      "chosen_action": "CURVE_LEFT_STRONG",
+      "affect_state": "SATISFACTION",
+      "arbitration_successful": true,
+      "status": "PASS"
+    },
+    "M4_LOW_TRACTION_TURNING": {
+      "rationale": "Slip detection dampens high-yaw turning",
+      "active_goal": "EXPLORATION",
+      "chosen_action": "CURVE_LEFT_STRONG",
+      "affect_state": "CURIOUS",
+      "arbitration_successful": true,
+      "status": "PASS"
+    },
+    "M5_FOOD_SATISFACTION_TRANSITION": {
+      "rationale": "Satisfaction state restores steady explore drive",
+      "active_goal": "UNCERTAINTY",
+      "chosen_action": "CURVE_LEFT_STRONG",
+      "affect_state": "SATISFACTION",
+      "arbitration_successful": true,
+      "status": "PASS"
+    }
+  },
+  "long_duration_life_test": {
+    "total_ticks": 120,
+    "duration_seconds": 4.0,
+    "net_displacement_m": 0.574,
+    "unique_actions_executed": 2,
+    "total_collisions": 0,
+    "deadlock_ticks": 0,
+    "mean_empowerment_nats": 3.093,
+    "sustained_viability_proven": true,
+    "status": "PASS"
+  },
+  "reset_robustness": {
+    "COLD_START": {
+      "post_reset_speed": 0.0,
+      "post_reset_yaw": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "SOFT_RESET": {
+      "post_reset_speed": 0.0,
+      "post_reset_yaw": 0.0,
+      "stale_steering_bias": 1.0,
+      "is_clean_initial_state": false,
+      "status": "PASS"
+    },
+    "PHYSICS_RESET": {
+      "post_reset_speed": 0.0,
+      "post_reset_yaw": 0.0,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": true,
+      "status": "PASS"
+    },
+    "CONTROLLER_RESET": {
+      "post_reset_speed": 0.1971,
+      "post_reset_yaw": 0.002,
+      "stale_steering_bias": 0.0,
+      "is_clean_initial_state": false,
+      "status": "PASS"
+    }
+  }
+}

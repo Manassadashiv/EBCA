@@ -1,0 +1,47 @@
+{
+  "audit_mission": "P0-01 SCORER HARDENING & BASELINE RE-QUALIFICATION",
+  "timestamp": "2026-08-17T23:43:00+05:30",
+  "scorer_file": "D:\\ebca\\tools\\p0_independent_scorer.py",
+  "unit_tests_file": "D:\\ebca\\tools\\tests\\test_p0_independent_scorer.py",
+  "unit_tests_passed": 12,
+  "unit_tests_total": 12,
+  "rescoring_summary": {
+    "total_runs": 81,
+    "old_pass_count": 81,
+    "old_fail_count": 0,
+    "new_pass_count": 60,
+    "new_fail_count": 21,
+    "new_pass_rate_percent": 74.07,
+    "d1_verdict": "FAIL",
+    "g2_verdict": "FAIL"
+  },
+  "governance_status": {
+    "carl_source_modified": false,
+    "p0_status": "LOCKED",
+    "p1_unlocked": false
+  },
+  "newly_failed_runs_count": 21,
+  "newly_failed_run_ids": [
+    "P0_D1_S42_HISTORICAL_TURN_TRAP_300T",
+    "P0_F2_S42_DEAD_END_300T",
+    "P0_G2_S42_CORRIDOR_NARROW_250T",
+    "P0_H2_S42_DEAD_END_350T",
+    "P0_I2_S42_DEAD_END_300T",
+    "P0_J1_S42_DEAD_END_350T",
+    "P0_J2_S42_DEAD_END_350T",
+    "P0_J3_S42_DEAD_END_350T",
+    "P0_K3_S42_CORRIDOR_NARROW_250T",
+    "P0_K5_S42_DEAD_END_300T",
+    "P0_L4_S42_DEAD_END_150T",
+    "P0_N2_S101_CORRIDOR_WIDE_900T",
+    "P0_N2_S2024_CORRIDOR_WIDE_900T",
+    "P0_N2_S31415_CORRIDOR_WIDE_900T",
+    "P0_N2_S42_CORRIDOR_WIDE_900T",
+    "P0_N2_S8675309_CORRIDOR_WIDE_900T",
+    "P0_N3_S101_BIFURCATION_1800T",
+    "P0_N3_S2024_BIFURCATION_1800T",
+    "P0_N3_S31415_BIFURCATION_1800T",
+    "P0_N3_S42_BIFURCATION_1800T",
+    "P0_N3_S8675309_BIFURCATION_1800T"
+  ]
+}

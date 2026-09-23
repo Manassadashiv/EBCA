@@ -1,0 +1,1218 @@
+[
+  {
+    "slide_number": 1,
+    "texts": [
+      "Design and Development of a Digital Twin Framework for Biologically Inspired Cognitive Robotic Systems",
+      "Department Of Mechanical Engineering\n JNTUH University College Of Engineering Science And Technology Hyderabad \nKukatpally, Hyderabad-500085, Telangana, India",
+      "A Mini Project On",
+      "Presented By \nManas Sadashiv (22011P0310)",
+      "V   B Tech I Semester B Tech+ M Tech (IDP - AMS)"
+    ],
+    "tables": [],
+    "images_count": 1,
+    "images": [
+      {
+        "name": "Google Shape;93;p13",
+        "left": 5.82794728783902,
+        "top": 3.0621850393700787,
+        "width": 1.9569936570428696,
+        "height": 2.013642825896763
+      }
+    ]
+  },
+  {
+    "slide_number": 2,
+    "texts": [
+      "INTRODUCTION",
+      "Autonomous robotics demands real time adaptive behaviour under noisy, dynamic physical environments ; a challenge that rigid hand coded controllers fail to meet\nBiological organisms solve this through tightly coupled neural, chemical, and bodily feedback loops operating across multiple temporal and spatial scales\nCognitive Autonomous Recurrent Lifeform (CARL) is proposed as a biologically inspired digital organism, simulated within the MuJoCo physics engine, to replicate these multi scale biological control principles\nCARL is a biologically inspired digital organism architecture designed to progressively integrate seven biological and computational mechanisms through staged development: an LSM reservoir brain, 4 factor endocrine neuromodulation (Dopamine, Serotonin, Norepinephrine, Acetylcholine), Spike Timing Dependent Plasticity (STDP), hippocampal grid/place cell navigation, a Free Energy active inference engine, Physarum style adaptive route reinforcement, and a mirror neuron based social learning layer\nTraditional autonomous systems treat perception, navigation, memory, and motor control as isolated software modules ; leading to brittle integration and failure under environmental perturbation\nBiological brains maintain robustness through continuous prediction error minimisation (Free Energy Principle), neuromodulatory gain control, and activity dependent synaptic reorganisation",
+      "2"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 3,
+    "texts": [
+      "LITERATURE REVIEW  MODULE 1: PHYSICS & EMBODIMENT",
+      "3"
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Finding",
+          "Role in CARL"
+        ],
+        [
+          "1 A Mazumder, M F Sahed, Z Tasneem, P Das, F R Badal, M F Ali, M H Ahamed, S H Abhi, S K Sarker, S K Das, M M Hasan, M M Islam, M R Islam (2023)",
+          "Towards Next Generation Digital Twin in Robotics: Trends, Scopes, Challenges, and Future",
+          "Systematic review of digital twin technologies and their integration with robotics, cyber physical systems, IoT and smart manufacturing",
+          "Digital twins couple physical robotic systems with computational models for monitoring, simulation, prediction and optimization",
+          "Provides the digital twin and physical simulation foundation for CARL's embodied development and MuJoCo based experimental environment"
+        ],
+        [
+          "2 Viktor Makoviychuk, Lukasz Wawrzyniak, Yunrong Guo, Michelle Lu, Kier Storey, Miles Macklin, David Hoeller, Nikita Rudin, Arthur Allshire, Ankur Handa, Gavriel State (2021)",
+          "Isaac Gym: High Performance GPU Based Physics Simulation for Robot Learning",
+          "GPU accelerated parallel physics simulation across large numbers of simultaneous robot learning environments",
+          "Large numbers of simulated robot environments run efficiently in parallel, accelerating robot learning experimentation by a substantial margin",
+          "Supports the simulation infrastructure and scalable embodied experimentation underlying CARL's Stage 1 and later learning stages"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 4,
+    "texts": [
+      "LITERATURE REVIEW  MODULE 2: RESERVOIR BRAIN (LSM)",
+      "4"
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Finding",
+          "Role in CARL"
+        ],
+        [
+          "3 Ramin M Hasani, Mathias Lechner, Alexander Amini, Daniela Rus, Radu Grosu(2021)",
+          "Liquid Time Constant Networks",
+          "Continuous time recurrent neural networks with hidden state dependent, dynamically varying time constants, evaluated on time series prediction tasks",
+          "Liquid time constant networks produce stable, bounded and expressive temporal dynamics, and perform strongly on temporal prediction benchmarks",
+          "Provides a modern foundation for CARL's continuous time reservoir and liquid neural dynamics, and its temporal processing substrate"
+        ],
+        [
+          "4 P Baldini (2022)",
+          "Reservoir Computing in Robotics: A Review",
+          "Review of reservoir computing architectures applied to robotic tasks, examining fixed recurrent dynamics paired with trained readouts",
+          "Reservoir computing supports strong temporal computation while reducing trainable parameters, enabling real time robotic applications",
+          "Motivates Module 2 ; Reservoir Brain, particularly CARL's use of recurrent temporal dynamics for embodied processing"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 5,
+    "texts": [
+      "LITERATURE REVIEW  MODULE 3: SPIKING NEURONS & STDP",
+      "5"
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Finding",
+          "Role in CARL"
+        ],
+        [
+          "5 Alejandro Juarez Lora, Victor H Ponce Ponce, Humberto Sossa, Elsa Rubio Espino(2022)",
+          "R STDP Spiking Neural Network Architecture for Motion Control on a Changing Friction Joint Robotic Arm",
+          "Reward modulated spike timing dependent plasticity (R STDP) implemented in a spiking neural controller, evaluated on robotic motion control under changing friction conditions",
+          "R STDP based spiking control learns robotic motion behaviour under changing mechanical conditions",
+          "Provides a direct precedent for combining spiking neural computation, STDP and adaptive robotic motor control"
+        ],
+        [
+          "6 Y Liu & W Pan (2023)",
+          "Spiking Neural Networks Based Data Driven Control",
+          "Spiking neural networks investigated as data driven controllers for dynamical systems",
+          "SNNs represent temporal dynamics useful for control while offering a biologically inspired computational formulation",
+          "Supports future integration of spike based temporal learning and motor control into CARL"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 6,
+    "texts": [
+      "LITERATURE REVIEW  MODULE 4: ENDOCRINE / NEUROMODULATION",
+      "6"
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Finding",
+          "Role in CARL"
+        ],
+        [
+          "7 Roshan Cools, Amy F T Arnsten (2022)",
+          "Neuromodulation of Prefrontal Cortex Cognitive Function in Primates: The Powerful Roles of Monoamines and Acetylcholine",
+          "Review of experimental neuroscience evidence on dopamine, noradrenaline, serotonin and acetylcholine modulation of cognitive processing",
+          "Neuromodulators regulate cognitive state, network gain, learning and adaptive behaviour",
+          "Provides the biological basis for CARL's endocrine and neuromodulatory control layer, where internal state modulates learning and behaviour"
+        ],
+        [
+          "8 C D Grossman & J Y Cohen (2022)",
+          "Neuromodulation and Neurophysiology on the Timescale of Learning and Decision Making",
+          "Examination of neuromodulatory system interaction with neural processing over timescales relevant to learning and decision making",
+          "Neuromodulation alters neural computation and behavioural decisions dynamically, beyond a fixed reward signal",
+          "Motivates an internal state dependent learning and gain mechanism for later CARL developmental stages"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 7,
+    "texts": [
+      "LITERATURE REVIEW  MODULE 5: SPATIAL NAVIGATION (HIPPOCAMPUS)",
+      "7"
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Finding",
+          "Role in CARL"
+        ],
+        [
+          "9 Jose A Fernandez Leon, Ahmet Kerim Uysal, Daoyun Ji (2022)",
+          "Place Cells Dynamically Refine Grid Cell Activities to Reduce Error Accumulation During Path Integration in a Continuous Attractor Model",
+          "Continuous attractor grid cell model coupled with place cell representations during simulated exploration, measuring path integration error with and without place cell input",
+          "Emerging place fields reduce accumulated grid cell path integration error, anchoring continuous attractor representations to spatial sensory information",
+          "Supports CARL Stage 21A/21B ; HD/grid continuous attractors, spatial representation and path integration"
+        ],
+        [
+          "10 Jinsheng Yuan, Wei Guo, Fusheng Zha, Pengfei Wang, Mantian Li, Lining Sun (2022)",
+          "A Bionic Spatial Cognition Model and Method for Robots Based on the Hippocampus Mechanism",
+          "Robot spatial cognition framework built from head direction, stripe, grid, place and boundary cell models, inspired by hippocampal mechanisms for environmental representation and navigation",
+          "Hippocampal inspired representations translate into computational spatial navigation mechanisms usable on physical robots",
+          "Provides the biological computational bridge for CARL's hippocampal spatial navigation module"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 8,
+    "texts": [
+      "LITERATURE REVIEW  MODULE 6: PATH PLANNING & PHYSARUM NETWORK DIFFUSION",
+      "8"
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Finding",
+          "Role in CARL"
+        ],
+        [
+          "11 Laihao Jiang, Hongwei Mo, Lifang Xu (2020)",
+          "A Physarum Inspired Decision Making Strategy for Multisource Task Searching of Mobile Robots",
+          "Mobile robot search algorithms developed from the foraging and gradient following behaviour of Physarum polycephalum",
+          "Physarum inspired decision rules allow a robot to traverse multiple distributed sources while reducing repeated source trapping and inefficient search",
+          "Provides the foundation for biological network based route discovery and adaptive path planning in Module 6"
+        ],
+        [
+          "12 Yixuan Liu, Chen Jiang, Xiaoge Zhang, Zissimos P Mourelatos, Dakota Barthlow, David Gorsich, Amandeep Singh, Zhen Hu(2022)",
+          "Reliability Based Multivehicle Path Planning Under Uncertainty Using a Bio Inspired Approach",
+          "Physarum based path planning algorithm applied over a navigation mesh, combined with physics based vehicle mobility reliability analysis under uncertain terrain conditions",
+          "Bio inspired network adaptation constructs paths satisfying mobility reliability constraints under uncertainty",
+          "Supports future adaptive routing and Physarum inspired path optimization under uncertain environmental conditions"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 9,
+    "texts": [
+      "LITERATURE REVIEW  MODULE 7: MOTOR CONTROL & LEARNING ALGORITHMS",
+      "9"
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Finding",
+          "Role in CARL"
+        ],
+        [
+          "13 Ji Yin, Zhiyuan Zhang, Panagiotis Tsiotras (2023)",
+          "Risk Aware Model Predictive Path Integral Control Using Conditional Value at Risk",
+          "Model Predictive Path Integral control extended with Conditional Value at Risk, evaluated on autonomous vehicle trajectory optimization in simulation and experiment",
+          "Risk aware MPPI maintains competitive trajectory performance while reducing collision risk, with online GPU execution reported up to 80 Hz",
+          "Motivates continuous trajectory optimization and risk aware MPPI for CARL Stage 3"
+        ],
+        [
+          "14 Grady Williams, Andrew Aldrich, Evangelos A Theodorou (2017)",
+          "Model Predictive Path Integral Control: From Theory to Parallel Computation",
+          "Stochastic trajectory sampling with generalized importance sampling, parallelized on a GPU for real time control",
+          "MPPI performs nonlinear, sampling based trajectory optimization without requiring linearized dynamics",
+          "Forms the algorithmic basis for the transition from Stage 23 discrete deliberation to Stage 3 continuous action synthesis"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 10,
+    "texts": [
+      "LITERATURE REVIEW  MODULE 8: THEORETICAL FOUNDATIONS",
+      "10"
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Finding",
+          "Role in CARL"
+        ],
+        [
+          "15 Pablo Lanillos, Cristian Meo, Corrado Pezzato, Ajith Anil Meera, Mohamed Baioumy, Wataru Ohata, Alexander Tschantz, Beren Millidge, Martijn Wisse, Christopher L Buckley, Jun Tani (2021)",
+          "Active Inference in Robotics and Artificial Agents: Survey and Challenges",
+          "Review of active inference theory and implementations covering state estimation, control, planning, learning and adaptation in robotics",
+          "Active inference unifies perception, state estimation, action, learning and goal directed behaviour within one probabilistic framework",
+          "Provides the theoretical framework connecting CARL's predictive modelling, action selection, uncertainty handling, and future behavioural discovery"
+        ],
+        [
+          "16 Ozan Catal, Tim Verbelen, Toon Van de Maele, Bart Dhoedt, Adam Safron (2021)",
+          "Robot Navigation as Hierarchical Active Inference",
+          "Robot navigation modelled as inference and action selection under a hierarchical generative model, demonstrated in simulation and on a physical robot",
+          "Localization, mapping and path integration emerge within a hierarchical active inference formulation",
+          "Connects CARL's predictive world model and spatial navigation to active inference, supporting the shift toward autonomous deliberation"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 11,
+    "texts": [
+      "LITERATURE SUMMARY",
+      "High fidelity simulation, contact dynamics, friction and scalable digital twin environments are essential for testing embodied robotic behaviour before physical deployment\nReservoir and liquid time constant architectures show that recurrent systems can represent evolving sensorimotor dynamics while maintaining computational efficiency\nSpiking networks and STDP demonstrate that temporal neural representations can support fast, event driven motor control and adaptation to changing dynamics\nBiological neuromodulators indicate that learning and behaviour are not governed by a fixed gain; internal state can regulate attention, plasticity, exploration and behavioural response\nGrid cell, place cell and head direction mechanisms provide a biologically grounded framework for path integration, spatial representation and correction of accumulated navigation error\nPhysarum inspired approaches show that network reinforcement can produce efficient, adaptive routes under changing or uncertain conditions\nModel Predictive Path Integral control (MPPI) and related sampling based methods demonstrate that future action trajectories can be evaluated online rather than relying only on instantaneous reactive control\nActive inference frameworks provide a common perspective linking perception, prediction, action and uncertainty driven behaviour\nThe literature supports the feasibility of combining these mechanisms into a staged biologically inspired robotic architecture; however, existing studies generally investigate these mechanisms independently rather than as one progressively validated embodied cognitive system",
+      "11"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 12,
+    "texts": [
+      "RESEARCH GAP",
+      "No single reviewed architecture combines a liquid/reservoir temporal controller with a risk aware, sampling based trajectory optimizer inside one real time embodied control loop\nLimited work couples multi factor endocrine neuromodulation (DA/NE/5 HT/ACh) with liquid time constant or reservoir based brains for continuous autonomous control\nNo reviewed work directly couples hippocampal continuous attractor grid cells with a real time MuJoCo physics based motor controller under Physarum style adaptive route reinforcement\nReviewed active inference frameworks operate independently from endocrine neuromodulation and Physarum style route reinforcement; no architecture unifies all three within one digital twin control loop",
+      "12"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 13,
+    "texts": [
+      "OBJECTIVE",
+      "To develop and progressively validate CARL, a physics grounded biologically inspired cognitive robotic architecture integrating sensorimotor, temporal, spatial, predictive and adaptive behavioural mechanisms within a real time digital twin environment",
+      "13",
+      "PROBLEM STATEMENT",
+      "Existing robotic systems commonly employ independently designed perception, navigation, prediction, and control modules, limiting adaptive behaviour under changing physical conditions. The fragmented integration of embodied sensorimotor dynamics, temporal and spatial cognition, predictive modelling, and prospective action selection remains a challenge within unified real-time physics-based environments."
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 14,
+    "texts": [
+      "DIGITAL TWIN / SYSTEM ARCHITECTURE",
+      "Two phase execution: Boot & Initialization (Phase 1) feeding a closed loop 30 Hz sensorimotor control cycle (Phase 2)",
+      "14",
+      "PHASE 1: BOOT & INIT",
+      "PHASE 2: 30 Hz CONTROL LOOP",
+      "1 Load HAL & XML\n(vessel_kineticxml)",
+      "2 Allocate Memory\n(S_unified array)",
+      "3 Load Brain Weights\n(LSM, Vision, SNN)",
+      "Step A: Sensory Acquisition\n(LiDAR & battery)",
+      "Step B: Offscreen Camera\nRender (Eye stream)",
+      "Step C: SSD Lite Vision\nInference",
+      "Step D: Coordinate Sensor\nFusion",
+      "Step E: Endocrine Update\n(DA, NE, 5 HT, ACh)",
+      "Step F: Appetitive\nForaging Drive",
+      "Step G: SNN Obstacle\nAvoidance",
+      "Step H: LSM Reservoir\nStep",
+      "Step I: Motor Command\nMixing",
+      "Step J: Vestibular\nStabilization",
+      "Step K: HAL Actuator\nOutput",
+      "RLS Readout Learning (throttled <= 5 Hz)",
+      "Closed Loop Feedback Tick Iteration (30 Hz)",
+      "COLOR LEGEND",
+      "Raw sensory / hardware input",
+      "Signal preprocessing & fusion",
+      "Endocrine / neuromodulation (global gain control)",
+      "Cognitive processing (LSM reservoir, associative drive)",
+      "Reflex path (safety critical, can override cognition)",
+      "Motor output / actuation",
+      "Auxiliary / logging block (RLS readout)"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 15,
+    "texts": [
+      "COMPLETE CONTROL LOOP & ENDOCRINE MODULATION PATHWAYS",
+      "Full pathway view showing 5 HT precision gating, DA gated satiation, NE noise scale modulation, and LSM recurrence feeding the Motor Mixer",
+      "15",
+      "Closed Loop State Feedback (Pose, battery, touch sensors)",
+      "HEAD CAMERA\n(SSD Lite Retina)",
+      "SENSOR FUSION\n(Body Frame Align)\nangle_body =\nangle_cam + head_pan",
+      "APPETITIVE TAXIS\n(Food Attraction)\nHunger * Satiety (1/DA)",
+      "12 ULTRASONIC SONARS\n(30 deg Physical Cone)",
+      "SONAR INTERPOLATOR\n(12  > 24 channels)",
+      "SPIKING SNN REFLEX\n(LIF Avoidance Layer)\n+ Emergency Backup",
+      "MOTOR MIXER\nReflex (Aversive)\n+ Taxis + LSM (Cognitive)",
+      "MUJOCO PHYSICS\n(vessel_kineticxml\nSimulation Step)",
+      "BATTERY MONITOR\n(Energy Level [0, 1])",
+      "ENDOCRINE SYSTEM\n(DA, NE, 5 HT, ACh\nChemical Kinetics)",
+      "LSM RESERVOIR\n(500 Neurons, sigma=10)\n+ Online RLS Readouts",
+      "Reflex Override",
+      "NE Noise Scale",
+      "5 HT Precision",
+      "DA Gated Satiation",
+      "Recurrence (x_t  > x_t+1)",
+      "COLOR LEGEND",
+      "Raw sensory / hardware input",
+      "Signal preprocessing & fusion",
+      "Endocrine / neuromodulation (global gain control)",
+      "Cognitive processing (LSM reservoir, associative drive)",
+      "Reflex path (safety critical, can override cognition)",
+      "Motor output / actuation",
+      "Inactive in this control mode"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 16,
+    "texts": [
+      "CONTROL LOGIC FLOW: NORMAL MODE\nTARGET / FULL CARL ARCHITECTURE ; IMPLEMENTED PROGRESSIVELY",
+      "16",
+      "Closed Loop State Feedback (Pose, battery, touch sensors)",
+      "HEAD CAMERA\n(SSD Lite Retina)",
+      "SENSOR FUSION\n(Body Frame Align)\nangle_body =\nangle_cam + head_pan",
+      "APPETITIVE TAXIS\n(Food Attraction)\nHunger * Satiety (1/DA)",
+      "12 ULTRASONIC SONARS\n(30 deg Physical Cone)",
+      "SONAR INTERPOLATOR\n(12  > 24 channels)",
+      "SPIKING SNN REFLEX\n(LIF Avoidance Layer)\n+ Emergency Backup",
+      "MOTOR MIXER\nReflex (Aversive)\n+ Taxis + LSM (Cognitive)",
+      "MUJOCO PHYSICS\n(vessel_kineticxml\nSimulation Step)",
+      "BATTERY MONITOR\n(Energy Level [0, 1])",
+      "ENDOCRINE SYSTEM\n(DA, NE, 5 HT, ACh\nChemical Kinetics)",
+      "LSM RESERVOIR\n(500 Neurons, sigma=10)\n+ Online RLS Readouts",
+      "NE Noise Scale",
+      "5 HT Precision",
+      "DA Gated Satiation",
+      "Recurrence",
+      "COLOR LEGEND",
+      "Raw sensory / hardware input",
+      "Signal preprocessing & fusion",
+      "Endocrine / neuromodulation (global gain control)",
+      "Cognitive processing (LSM reservoir, associative drive)",
+      "Reflex path (safety critical, can override cognition)",
+      "Motor output / actuation",
+      "Inactive in this control mode"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 17,
+    "texts": [
+      "CONTROL LOGIC FLOW: REFLEX MODE",
+      "Under an imminent collision/hazard signal, the Spiking SNN reflex layer overrides cognitive (LSM) output directly at the Motor Mixer",
+      "17",
+      "Closed Loop State Feedback (Pose, battery, touch sensors)",
+      "HEAD CAMERA\n(SSD Lite Retina)",
+      "SENSOR FUSION\n(Body Frame Align)\nangle_body =\nangle_cam + head_pan",
+      "APPETITIVE TAXIS\n(Food Attraction)\nHunger * Satiety (1/DA)",
+      "12 ULTRASONIC SONARS\n(30 deg Physical Cone)",
+      "SONAR INTERPOLATOR\n(12  > 24 channels)",
+      "SPIKING SNN REFLEX\n(LIF Avoidance Layer)\n+ Emergency Backup",
+      "MOTOR MIXER\nReflex (Aversive)\n+ Taxis + LSM (Cognitive)",
+      "MUJOCO PHYSICS\n(vessel_kineticxml\nSimulation Step)",
+      "BATTERY MONITOR\n(Energy Level [0, 1])",
+      "ENDOCRINE SYSTEM\n(DA, NE, 5 HT, ACh\nChemical Kinetics)",
+      "LSM RESERVOIR\n(500 Neurons, sigma=10)\n+ Online RLS Readouts",
+      "Reflex Override",
+      "COLOR LEGEND",
+      "Raw sensory / hardware input",
+      "Signal preprocessing & fusion",
+      "Endocrine / neuromodulation (global gain control)",
+      "Cognitive processing (LSM reservoir, associative drive)",
+      "Reflex path (safety critical, can override cognition)",
+      "Motor output / actuation",
+      "Inactive in this control mode"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 18,
+    "texts": [
+      "CARL DEVELOPMENT & IMPLEMENTATION ROADMAP (Stages 1-5)",
+      "18",
+      "Stage 1 — Sensorimotor Grounding & Body Babbling\u000b[COMPLETE & VALIDATED]",
+      "Stage 2 — Generative World & Self Modeling\u000b[COMPLETE & VALIDATED]",
+      "Stage 3 — Continuous Action Synthesis & Behavioral Discovery\n[CURRENT ACTIVE MILESTONE]",
+      "Stage 4 — Autopoietic / Lifelong Memory & Persistence",
+      "Stage 5 — Metacognition & Permission-Gated Self-Modification"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 19,
+    "texts": [
+      "STAGE 1 — SENSORIMOTOR GROUNDING & BODY BABBLING",
+      "Stage-1 establishes a stable, testable embodied CARL foundation capable of sensing, predicting, deciding, acting, adapting and recovering within a real time MuJoCo digital twin",
+      "What was constructed\n\nEmbodied system\nMuJoCo digital twin \n30 Hz cognitive control loop \nsensor/state estimation \nCognitive system\nhomeostatic/internal state \ngenerative self model \nActive Inference / Expected Free Energy \nHDC episodic memory \nAdaptive/safety system\nonline friction/self model adaptation \noperational safety veto \n3 tier stuck recovery \nValidation system\nadversarial regression scenarios \nfail closed scoring \ntelemetry + video + forensic audits"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 20,
+    "texts": [
+      "STAGE 1 LIVE DEMONSTRATION",
+      "Same CARL controller • Different environment • Autonomous route selection • Target acquired",
+      "20"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 21,
+    "texts": [
+      "STAGE 1 VALIDATION EVIDENCE",
+      "21",
+      "Figure 1: Goal Directed Navigation Trajectories Under Environmental Constraint"
+    ],
+    "tables": [],
+    "images_count": 1,
+    "images": [
+      {
+        "name": "Picture 3",
+        "left": 0.8638287401574803,
+        "top": 0.8491557305336833,
+        "width": 10.114895013123359,
+        "height": 5.6183552055993005
+      }
+    ]
+  },
+  {
+    "slide_number": 22,
+    "texts": [
+      "STAGE 1.1 :- INDIVIDUAL EMERGENCE & ADAPTIVE SENSORIMOTOR LEARNING",
+      "Stage 1 establishes CARL’s ability to adapt its internal sensorimotor representation from physical experience rather than relying entirely on fixed predefined behaviour",
+      "What was constructed\nAdaptive sensorimotor system\nmemory driven sensor adaptation \nempirical friction gradient mapping \ndynamical stability envelope evaluation \nLearning / self model system\nexperience based sensorimotor adaptation \ninternal representation of changing physical conditions \nprogressive refinement of embodied behaviour \nValidation system\ncontrolled physical perturbations \nfriction and stability experiments \nquantitative behavioural evaluation \nStage 1 Outcome\nCARL progressed from a physically grounded controller toward an adaptive individual agent capable of modifying its internal sensorimotor behaviour from experience",
+      "22"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 23,
+    "texts": [
+      "EMBODIED SENSORIMOTOR GROUNDING\nSTAGE 1.1 EMPIRICAL EVIDENCE: STABILITY ENVELOPES & PARAMETER DISCOVERY",
+      "23",
+      "Dynamical Stability Envelope (30 Hz Closed Loop)\n•  Swept linear velocity (0.1–0.5 m/s) and angular rate (0.2–1.5 rad/s) across 150 trials\n•  Zero chassis tip over or simulation divergence observed across full envelope\n•  Proves robust mechanical grounding in contact rich MuJoCo physics engine",
+      "Figure 2(a): 10,000 Tick Dynamical Stability Phase layout"
+    ],
+    "tables": [],
+    "images_count": 1,
+    "images": [
+      {
+        "name": "Picture 4",
+        "left": 0.0,
+        "top": 1.5934022309711287,
+        "width": 9.280570866141732,
+        "height": 4.848298337707787
+      }
+    ]
+  },
+  {
+    "slide_number": 24,
+    "texts": [
+      "EMBODIED SENSORIMOTOR GROUNDING\nSTAGE 1.1 EMPIRICAL EVIDENCE: STABILITY ENVELOPES & PARAMETER DISCOVERY",
+      "24",
+      "Empirical Parameter Discovery & Regime Mapping",
+      "Unsupervised parameter identification mapped safe operating boundary vs slip hazard\n•  Critical friction boundary identified at μ = 0.35 where slip exceeds 40%\n•  Validates need for higher order continuous attractor spatial representations",
+      "Figure 2(b): Empirical Sensorimotor Contingency Matrix"
+    ],
+    "tables": [],
+    "images_count": 1,
+    "images": [
+      {
+        "name": "Picture 5",
+        "left": 0.0,
+        "top": 1.368086176727909,
+        "width": 8.604255249343833,
+        "height": 5.043873578302712
+      }
+    ]
+  },
+  {
+    "slide_number": 25,
+    "texts": [
+      "SENSORIMOTOR GROUNDING & ODOMETRY\nSTAGE 1.1 EMPIRICAL EVIDENCE: KINEMATIC FRICTION & UNPRIVILEGED ODOMETRIC DRIFT",
+      "25",
+      "•  Low Friction Regimes (μ = 0.05–0.25): Longitudinal slip σ reaches 98.2%, chassis halts\n•  High Friction Regimes (μ = 0.50–1.0): Traction recovers, slip stabilizes at 24.1%\n•  Proves dead reckoning alone diverges rapidly without continuous neural attractors",
+      "Friction Gradient Sweep (μ ∈ [0.05, 1.0])",
+      "Figure 3: Friction Gradient Response and Slip Monotonicity"
+    ],
+    "tables": [],
+    "images_count": 1,
+    "images": [
+      {
+        "name": "Picture 4",
+        "left": 0.07872265966754156,
+        "top": 1.6521270778652668,
+        "width": 8.070214348206473,
+        "height": 4.37648731408574
+      }
+    ]
+  },
+  {
+    "slide_number": 26,
+    "texts": [
+      "STAGE 2 :- GENERATIVE WORLD & SELF MODELING",
+      "Stage 2 establishes CARL’s internal representation of direction, space and future physical consequences, enabling the transition from reactive behaviour toward prospective cognition",
+      "What was constructed\nSpatial cognition system\ncontinuous attractor head direction representation \ngrid based spatial representation \ntranslational self model / path integration \nPredictive world model system\naction conditioned body dynamics \nenvironmental spatial memory \nprospective sensory prediction \ncounterfactual future rollouts \nDeliberation system\nprospective action evaluation \nspatial memory based action selection \ncollision aware future assessment \nValidation system\nmulti seed spatial evaluation \nadversarial causal interventions \nair gapped counterfactual testing \nphysical deliberation benchmark",
+      "Stage 2 Outcome\nCARL progressed from representing its current state to predicting possible future states and using those predictions for prospective action selection",
+      "26"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 27,
+    "texts": [
+      "CONTINUOUS ATTRACTOR DYNAMICS\nSTAGE 2: CONTINUOUS ATTRACTOR HEAD DIRECTION & SPATIAL REPRESENTATION",
+      "27",
+      "Physical Reality vs Internal CANN Self Model\n•  Dev Seed 101: Final homing return drift = 0.0650 m (within 0.22 m target gate) [PASS]\n•  Unseen Seed 505: Final return drift = 0.0570 m (within 0.22 m target gate) [PASS]\n•  Demonstrates unprivileged spatial grounding across both seen and unseen seeds"
+    ],
+    "tables": [],
+    "images_count": 2,
+    "images": [
+      {
+        "name": "Picture 8",
+        "left": 0.20425415573053368,
+        "top": 2.059149168853893,
+        "width": 8.423404418197725,
+        "height": 4.565941601049869
+      },
+      {
+        "name": "Picture 5",
+        "left": 0.43404418197725286,
+        "top": 6.625090769903762,
+        "width": 8.256737751531059,
+        "height": 0.38014326334208226
+      }
+    ]
+  },
+  {
+    "slide_number": 28,
+    "texts": [
+      "CONTINUOUS ATTRACTOR DYNAMICS\nSTAGE 2.1: CONTINUOUS ATTRACTOR HEAD DIRECTION & SPATIAL REPRESENTATION",
+      "28",
+      "•  Topology: 1D Continuous Attractor Neural Network (CANN) with periodic boundary\n•  Inhibition Kernel: Mexican hat recurrent connectivity profile (local excitation, global inhibition)\n•  Multi Seed Verification (5 Seeds Evaluated):\n • Seed 101: Mean homing error = 0.065 m (Target < 022 m) [PASS]\n • Seed 202: Mean homing error = 0.071 m (Target < 022 m) [PASS]\n • Seed 303: Mean homing error = 0.062 m (Target < 022 m) [PASS]\n • Seed 404: Mean homing error = 0.059 m (Target < 022 m) [PASS]\n • Seed 505: Mean homing error = 0.057 m (Target < 022 m) [PASS]\n•  Blackout Resilience: Directional drift < 0.02 rad/s during complete sensor dropouts\n•  Conclusion: Provides validated spatial foundation for Stage 2.2 predictive world model",
+      "Stage 2.1 Spatial Architecture & Multi Seed Scorecard",
+      "•  Maintains stable unimodal Gaussian activity packet across 360° angular space\n•  Angular velocity inputs smoothly shift activity bump without phase dispersion\n•  Sustains orientation representation across sensory blackout and wheel slip conditions",
+      "CANN Ring Attractor Bump Dynamics"
+    ],
+    "tables": [],
+    "images_count": 1,
+    "images": [
+      {
+        "name": "Picture 4",
+        "left": 0.3384678477690289,
+        "top": 1.3521281714785651,
+        "width": 6.594867672790901,
+        "height": 3.8659569116360455
+      }
+    ]
+  },
+  {
+    "slide_number": 29,
+    "texts": [
+      "STAGE 2.2 :-PREDICTIVE WORLD MODEL 7 GATE VALIDATION",
+      "29",
+      "Table 2: Stage 2.2 Predictive World Model : Seven Gate Validation Results"
+    ],
+    "tables": [
+      [
+        [
+          "Verification Gate",
+          "Target Metric",
+          "Threshold",
+          "Achieved Score",
+          "Result"
+        ],
+        [
+          "Gate 1: Body Proprioception",
+          "Forward Velocity (v) R²",
+          "≥ 0.90",
+          "R² = 0.9613",
+          "PASS"
+        ],
+        [
+          "Gate 2: Angular Gyroscope",
+          "Rotational Velocity (ω) R²",
+          "≥ 0.80",
+          "R² = 0.8466",
+          "PASS"
+        ],
+        [
+          "Gate 3: Dynamic Sonar Range",
+          "Virtual Rays Range R²",
+          "≥ 0.50",
+          "R² = 0.5377",
+          "PASS"
+        ],
+        [
+          "Gate 4: Collision Prediction",
+          "Imminent Contact ROC AUC",
+          "≥ 0.90",
+          "ROC AUC = 0.995",
+          "PASS"
+        ],
+        [
+          "Gate 5: Multi Step Stability",
+          "5 Step Rollout Drift",
+          "< 15.0%",
+          "Drift = 8.18%",
+          "PASS"
+        ],
+        [
+          "Gate 6: Causal Sensitivity",
+          "Action Intervention Δ",
+          "> 0.35",
+          "Δ = 0.442",
+          "PASS"
+        ],
+        [
+          "Gate 7: Compute Latency",
+          "Inference Cycle Time",
+          "≤ 10.0 ms",
+          "2.12 ms",
+          "PASS"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 30,
+    "texts": [
+      "PREDICTIVE WORLD MODEL EVIDENCE\nSTAGE 2.2 ACTION BRANCHING AND FUTURE PREDICTION",
+      "31",
+      "Causal Action Discrimination Margin (20/20 PASS)\n•  Tests whether different motor actions produce statistically distinct mental rollouts\n•  All 20 branches exceed the causal discrimination margin threshold (Δ ≥ +0.30 m)\n•  Confirms predictive model is causally sensitive to steering interventions (not mode collapsed)",
+      "Figure 4: Individual Counterfactual Branch Fidelity (20/20 Pass)",
+      "Individual Branch Fidelity (20/20 Branches PASS)",
+      "•  Evaluates predictive fidelity across 20 distinct counterfactual action rollouts\n•  Every single branch exceeds the strict R² ≥ 0.50 threshold (mean R² = 0.772)\n•  Demonstrates unrolled forward dynamics closely track actual physical reality",
+      "30"
+    ],
+    "tables": [],
+    "images_count": 1,
+    "images": [
+      {
+        "name": "Picture 4",
+        "left": 0.15701771653543306,
+        "top": 1.8845483377077865,
+        "width": 7.8175240594925635,
+        "height": 4.293615485564304
+      }
+    ]
+  },
+  {
+    "slide_number": 31,
+    "texts": [
+      "ACTION DELIBERATION MVE BENCHMARK\nSTAGE 2.3: ACTION SELECTION AND OBSTACLE AVOIDANCE",
+      "28",
+      "Figure 5(a): Causal Prediction Alignment Between Measured and Prospective Sonar",
+      "Figure 5(b): Asymmetric Evasion: Reactive Reflex versus Prospective Deliberation",
+      "Causal Prediction Calibration (97.9% Within Band)",
+      "• Demonstrates close agreement between prospective sensory predictions and subsequent physical observations within the defined acceptance band \n•  97.9% of predictions fall within the tight ±0.25 m physical acceptance window\n•  Confirms mental simulation does not suffer from compounding hallucinatory drift",
+      "Asymmetric Evasion Showdown: Reflex vs Deliberation",
+      "• Deliberative CARL evaluates prospective outcomes before action execution\u000b• The selected trajectory avoids the dead end corner, while the scripted reflex enters the blocked direction",
+      "31"
+    ],
+    "tables": [],
+    "images_count": 2,
+    "images": [
+      {
+        "name": "Picture 5",
+        "left": 0.6,
+        "top": 1.4618821084864393,
+        "width": 5.8,
+        "height": 3.1217016622922134
+      },
+      {
+        "name": "Picture 6",
+        "left": 6.8,
+        "top": 1.4391491688538933,
+        "width": 5.8,
+        "height": 3.1668088363954507
+      }
+    ]
+  },
+  {
+    "slide_number": 32,
+    "texts": [
+      "STAGE 3 : CONTINUOUS ACTION SYNTHESIS & BEHAVIORAL DISCOVERY\nAutonomous Deliberation, Continuous Trajectory Optimization & Active Inference",
+      "Core Technical Capabilities Constructed in Stage 3:\n•  CANN Causal Verification (Stage 3.1): 4-arm ablation battery proving 2,114-unit network causally drives actions.\n•  Trajectory Fidelity (Stage 3.2): Air-gapped world model rollouts validated against MuJoCo physics steps (≤ 0.08 m error).\n•  Memory Necessity (Stage 3.2): Proven strictly necessary across 5 non-line-of-sight task families (Δu = 0.47 divergence).\n•  Continuous MPPI (Stage 3.3): 128 candidates evaluated across 15-step horizon at 30 Hz (Mean 1.36 ms latency).\n•  Active Inference (Stage 3.4): Expected Free Energy (Pragmatic + Epistemic) driving autonomous behavioral discovery.\n•  Scientific Integrity: Zero-tolerance governance, permanent fail-closed records, and unprivileged forensic remediation.",
+      "32"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 33,
+    "texts": [
+      "STAGE 3.1 CANN CAUSAL ABLATION: ACTION DIVERGENCE & SAFETY\n(Proving Neural Spatial System Causally Dictates Action)",
+      "Figure 6(a): Action Divergence ||Δu|| Across Ablation Arms",
+      "Figure 6(b). Collision Rates: Intact vs Ablated Conditions",
+      "•  Action Divergence: Zeroed CANN Δu = 0.563, Shuffled CANN Δu = 0.582 (Wilcoxon p < 10⁻¹⁶, d = 1.12).\n•  Collision Increase: Intact baseline 4.0% vs Zeroed 31.0% (7.75× worse) and Shuffled 32.0% (8.0× worse).",
+      "33"
+    ],
+    "tables": [],
+    "images_count": 2,
+    "images": [
+      {
+        "name": "Picture 3",
+        "left": 0.6,
+        "top": 1.4,
+        "width": 5.8,
+        "height": 3.2
+      },
+      {
+        "name": "Picture 4",
+        "left": 6.8,
+        "top": 1.4,
+        "width": 5.8,
+        "height": 3.2
+      }
+    ]
+  },
+  {
+    "slide_number": 34,
+    "texts": [
+      "STAGE 3.2 COUNTERFACTUAL TRAJECTORY FIDELITY VALIDATION\n(Validating World Model Rollouts Against Physical MuJoCo Steps)",
+      "Figure 7(a): Terminal Error by Profile (Threshold ≤ 0.080 m)",
+      "Figure 7(b): Path RMSE by Profile (Threshold ≤ 0.050 m)",
+      "•  Fidelity Certification: Rollouts closely match physical MuJoCo steps across 100% of tested profiles.\n•  High Dynamic Precision: Mean terminal error = 0.048 m, Path RMSE = 0.024 m (both well below ceilings).",
+      "34"
+    ],
+    "tables": [],
+    "images_count": 2,
+    "images": [
+      {
+        "name": "Picture 3",
+        "left": 0.6,
+        "top": 1.4,
+        "width": 5.8,
+        "height": 3.2
+      },
+      {
+        "name": "Picture 4",
+        "left": 6.8,
+        "top": 1.4,
+        "width": 5.8,
+        "height": 3.2
+      }
+    ]
+  },
+  {
+    "slide_number": 35,
+    "texts": [
+      "STAGE 3.2 SPATIAL MEMORY NECESSITY ACROSS 5 NON-LOS TASKS\n(Proving Occupancy Memory Provides Information Unrecoverable from Sonar Alone)",
+      "Figure 8(a): Task Family Success Rate Across Experimental Arms",
+      "Figure 8(b): Decision Divergence Under Identical Local Sonar",
+      "•  Memory Necessity Proven: Intact Arm achieves 96% success vs 69% in Amnesic Arm (Δ = 27%, p < 10⁻¹²).\n•  Action Divergence at T_crit: Mean ||Δu|| = 0.47 m/s under identical local sensor views.",
+      "35"
+    ],
+    "tables": [],
+    "images_count": 2,
+    "images": [
+      {
+        "name": "Picture 3",
+        "left": 0.6,
+        "top": 1.4,
+        "width": 5.8,
+        "height": 3.2
+      },
+      {
+        "name": "Picture 4",
+        "left": 6.8,
+        "top": 1.4,
+        "width": 5.8,
+        "height": 3.2
+      }
+    ]
+  },
+  {
+    "slide_number": 36,
+    "texts": [
+      "STAGE 3.3 MPPI CONTINUOUS TRAJECTORY SYNTHESIS CERTIFICATION\nStage 3.3 Certified: Model Predictive Path Integral 5-Gate Acceptance Battery",
+      "Table 2. Stage 3.3 MPPI Trajectory Synthesis 5-Gate Certification Results",
+      "• Evaluates 128 rollouts over 15-step horizon (0.45 s) at 30 Hz with zero-copy shared memory.",
+      "36"
+    ],
+    "tables": [
+      [
+        [
+          "Gate",
+          "Evaluation Metric",
+          "Acceptance Threshold",
+          "Measured Value",
+          "Verdict"
+        ],
+        [
+          "Gate 1",
+          "Action Smoothness",
+          "Mean ‖Δu‖ ≤ 0.35",
+          "0.060",
+          "PASS ✅"
+        ],
+        [
+          "Gate 2",
+          "Cycle Latency",
+          "Mean ≤ 20 ms, p95 ≤ 45 ms",
+          "Mean 1.36 ms, p95 2.14 ms",
+          "PASS ✅"
+        ],
+        [
+          "Gate 3",
+          "Collision Reduction",
+          "≥ 50% vs Discrete Stage 2",
+          "50.0% (15.0% → 7.5%)",
+          "PASS ✅"
+        ],
+        [
+          "Gate 4",
+          "CANN Multi-Objective",
+          "Spearman rank correlation ρ ≥ 0.30",
+          "ρ = 0.34",
+          "PASS ✅"
+        ],
+        [
+          "Gate 5",
+          "AST Anti-Cheat Scan",
+          "100% clean isolation scan",
+          "100% Clean (0 Leaks)",
+          "PASS ✅"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 37,
+    "texts": [
+      "STAGE 3.3 MPPI PERFORMANCE: CYCLE LATENCY & HULL CLEARANCE\n(Real-Time Vectorized Trajectory Optimization & Physical Margin Gain)",
+      "Figure 9(a): Vectorized Latency Distribution (p95 = 2.14 ms)",
+      "Figure 9(b): Mean Minimum Hull Clearance Margin Gain",
+      "•  Real-Time Vectorized Execution: p95 latency of 2.14 ms consumes only 6.4% of the 33.3 ms budget.\n•  Hull Margin Gain: +18.7% physical clearance gain (ΔC_hull = +0.0273 m) vs discrete action baseline.",
+      "37"
+    ],
+    "tables": [],
+    "images_count": 2,
+    "images": [
+      {
+        "name": "Picture 3",
+        "left": 0.6,
+        "top": 1.4,
+        "width": 5.8,
+        "height": 3.2
+      },
+      {
+        "name": "Picture 4",
+        "left": 6.8,
+        "top": 1.4,
+        "width": 5.8,
+        "height": 3.2
+      }
+    ]
+  },
+  {
+    "slide_number": 38,
+    "texts": [
+      "AUTONOMOUS BEHAVIORAL DISCOVERY UNDER ACTIVE INFERENCE\nStage 3.4: Expected Free Energy Minimization (G = G_pragmatic + G_epistemic)",
+      "Figure 10: Action Continuity & Step Delta Distribution",
+      "Expected Free Energy Formulation:\nG(π) = G_pragmatic(π) + G_epistemic(π)\nPragmatic Term: Maximizes wall clearance, enforces forward progress, and penalizes motor acceleration jerk.\nEpistemic Term: Information gain driving autonomous exploration into novel unvisited occupancy cells.\nEmergent Maneuvers: Multi-step reversals and pivot turns emerge naturally without handcoded rule tables.",
+      "38"
+    ],
+    "tables": [],
+    "images_count": 1,
+    "images": [
+      {
+        "name": "Picture 3",
+        "left": 0.6,
+        "top": 1.4,
+        "width": 5.8,
+        "height": 3.2
+      }
+    ]
+  },
+  {
+    "slide_number": 39,
+    "texts": [
+      "STAGE 3.4: 200-EPISODE CERTIFICATION (FAIL-CLOSED RECORD)\nScientific Integrity: Pre-Registered Adjudication & Permanent Fail-Closed Documentation",
+      "Table 3. Stage 3.4- Pre-Registered 200-Episode Certification Battery Adjudication",
+      "39"
+    ],
+    "tables": [
+      [
+        [
+          "Gate",
+          "Evaluation Metric",
+          "Acceptance Threshold",
+          "Measured R3",
+          "Verdict"
+        ],
+        [
+          "Gate 1",
+          "Autonomous Escape Rate",
+          "ARM-A ≥ 80%, Collision ≤ 10%",
+          "Escape 0%, Collision 18%",
+          "FAIL ❌"
+        ],
+        [
+          "Gate 2",
+          "Composite Sequence Rate",
+          "≥ 75% complete sequence",
+          "2.0% (1 of 50 trials)",
+          "FAIL ❌"
+        ],
+        [
+          "Gate 3",
+          "Epistemic Necessity",
+          "Δ ≥ 40% (Env 2), p < 0.001",
+          "Δ = 0.0%, p = 1.0",
+          "FAIL ❌"
+        ],
+        [
+          "Gate 4",
+          "Latency Budget",
+          "Mean ≤ 20 ms, p95 ≤ 45 ms",
+          "Mean 12.18 ms, p95 22.3 ms",
+          "PASS ✅"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 40,
+    "texts": [
+      "STAGE 3.4: SCREENING BENCHMARK & PROGRESS",
+      "Table 4. Stage 3.4 Diagnostic Screening Benchmark Across Test Mazes",
+      "•  Progression Narrative: Slashed collision from 18% to 0.0%, achieved 100% escape in Env 1 and 60% in Env 2.\n•  Active Subproblem: Rotational hull clearance at narrow (0.65 m) channel entries under geodesic repair.\n•  Next Milestone: Geodesic gradient projection fix to achieve 100% escape across all configurations.",
+      "40"
+    ],
+    "tables": [
+      [
+        [
+          "Environment",
+          "Maze Geometry",
+          "Configs Tested",
+          "Escape Rate",
+          "Collision Rate",
+          "Timeouts"
+        ],
+        [
+          "Env 1",
+          "L-Shaped Dead-End Corridor",
+          "5 Configs (0–4)",
+          "5/5 (100.0%)",
+          "0/5 (0.0%)",
+          "0/5 (0.0%)"
+        ],
+        [
+          "Env 2",
+          "Asymmetric T-Junction Maze",
+          "5 Configs (20–24)",
+          "3/5 (60.0%)",
+          "0/5 (0.0%)",
+          "2/5 (40.0%)"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 41,
+    "texts": [
+      "CARL MASTER STATUS LEDGER & VIVA COMPLIANCE\nComprehensive Verification Audit Across All Developmental Stages",
+      "Table 5. Master Architecture Verification Status Across Stages 1 to 3",
+      "41"
+    ],
+    "tables": [
+      [
+        [
+          "Stage",
+          "Architectural Component",
+          "Verification Metric",
+          "Empirical Finding",
+          "Viva Status"
+        ],
+        [
+          "Stage 1",
+          "MuJoCo 30 Hz Kinematics Twin",
+          "Dynamical Stability",
+          "Zero tip-over in 150 trials",
+          "VALIDATED ✅"
+        ],
+        [
+          "Stage 1.1",
+          "Traction & Slip Observer",
+          "Slip vs Friction",
+          "σ reaches 98.2% on ice",
+          "VALIDATED ✅"
+        ],
+        [
+          "Stage 2A/B",
+          "2,114-Unit CANN Attractor",
+          "Homing Drift Gate",
+          "Mean drift = 0.062 m",
+          "VALIDATED ✅"
+        ],
+        [
+          "Stage 2.1",
+          "7-Gate Predictive World Model",
+          "Multi-Step Prediction",
+          "7/7 Gates Passed (R²=0.96)",
+          "VALIDATED ✅"
+        ],
+        [
+          "Stage 2.3",
+          "Prospective Trajectory Veto",
+          "40 Challenge Mazes",
+          "40/40 Cleared, 0.0% Coll.",
+          "CERTIFIED ✅"
+        ],
+        [
+          "Stage 3.0",
+          "Decision-Pipeline Hygiene",
+          "AST Anti-Cheat Scan",
+          "7/7 Clean (0 Leaks)",
+          "VALIDATED ✅"
+        ],
+        [
+          "Stage 3.1",
+          "4-Arm CANN Ablation Battery",
+          "Action Divergence Δu",
+          "Δu = 0.56, p < 10⁻¹⁶",
+          "VALIDATED ✅"
+        ],
+        [
+          "Stage 3.2",
+          "5 Non-LOS Task Families",
+          "Spatial Memory Necessity",
+          "Δu = 0.47 Divergence Proven",
+          "VALIDATED ✅"
+        ],
+        [
+          "Stage 3.3",
+          "Continuous MPPI Trajectory",
+          "Smoothness & Latency",
+          "Δu = 0.060, p95 2.14 ms",
+          "VALIDATED ✅"
+        ],
+        [
+          "Stage 3.4",
+          "Active Inference Discovery",
+          "200-Episode Battery",
+          "100% Env 1, Heading -59%",
+          "ACTIVE ⏳"
+        ]
+      ]
+    ],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 42,
+    "texts": [
+      "WORK TO BE DONE",
+      "Stage 3.4 Active: Resolve rotational hull clearance at narrow (0.65 m) channel entries for 100% escape.\nStage 3.5: Physical perturbation adaptation (friction drops μ=0.2, torque loss, and wheel slip recovery).\nStage 3.6: Behavioral synergy formation & Physarum plasmodial flow routing to prune dead-ends.\nStage 4: Autopoietic lifelong memory via online R-STDP synaptic plasticity & Holographic HDC vectors.\nStage 5: Metacognitive self-reflection via \"The Witness\" (causal attribution & permission-gated self-modification).",
+      "42"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 43,
+    "texts": [
+      "REFERENCES",
+      "[1] A Mazumder, M F Sahed, Z Tasneem, P Das et al, “Towards next generation digital twin in robotics: Trends, scopes, challenges, and future,” Heliyon, vol 9, no 2, e13359, 2023\n[2] V Makoviychuk et al, “Isaac Gym: High performance GPU based physics simulation for robot learning,” in Proc NeurIPS Datasets and Benchmarks Track, 2021\n[3] R Hasani, M Lechner, A Amini, D Rus, and R Grosu, “Liquid time constant networks,” in Proc AAAI Conf Artificial Intelligence, vol 35, no 9, 2021, pp 7657–7666\n[4] P Baldini, “Reservoir computing in robotics: A review,” arXiv:220611222, 2022\n[5] A J Juarez Lora, V H Ponce Ponce, H Sossa, and E Rubio Espino, “R STDP spiking neural network architecture for motion control on a changing friction joint robotic arm,” Frontiers in Neurorobotics, vol 16, 2022\n[6] Y Liu and W Pan, “Spiking neural networks based data driven control,” Electronics, vol 12, no 2, p 310, 2023\n[7] R Cools and A F T Arnsten, “Neuromodulation of prefrontal cortex cognitive function in primates: The powerful roles of monoamines and acetylcholine,” Neuropsychopharmacology, vol 47, 2022, pp 309–328\n[8] C D Grossman and J Y Cohen, “Neuromodulation and neurophysiology on the timescale of learning and decision making,” Annual Review of Neuroscience, vol 45, 2022, pp 317–337\n[9] J A Fernandez Leon, A K Uysal, and D Ji, “Place cells dynamically refine grid cell activities to reduce error accumulation during path integration in a continuous attractor model,” Scientific Reports, vol 12, 2022",
+      "43"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 44,
+    "texts": [
+      "REFERENCES (CONTINUED)",
+      "[10] J Yuan, W Guo, F Zha, P Wang, M Li, and L Sun, “A bionic spatial cognition model and method for robots based on the hippocampus mechanism,” Frontiers in Neurorobotics, vol 15, 2022\n[11] L Jiang, H Mo, and L Xu, “A Physarum inspired decision making strategy for multisource task searching of mobile robots,” Complexity, vol 2020, 2020\n[12] Y Liu, C Jiang, X Zhang, Z P Mourelatos, D Barthlow, D Gorsich, and Z Hu, “Reliability based multivehicle path planning under uncertainty using a bio inspired approach,” Journal of Mechanical Design, vol 144, no 9, 2022\n[13] J Yin, Z Zhang, and P Tsiotras, “Risk aware model predictive path integral control using conditional value at risk,” in Proc IEEE Int Conf Robotics and Automation (ICRA), 2023, pp 7937–7943\n[14] G Williams, A Aldrich, and E A Theodorou, “Model predictive path integral control: From theory to parallel computation,” Journal of Guidance, Control, and Dynamics, vol 40, no 2, 2017, pp 344–357\n[15] P Lanillos et al, “Active inference in robotics and artificial agents: Survey and challenges,” arXiv:211201871, 2021\n[16] O Çatal, T Verbelen, T Van de Maele, B Dhoedt, and A Safron, “Robot navigation as hierarchical active inference,” Neural Networks, vol 142, 2021, pp 192–204",
+      "44"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  },
+  {
+    "slide_number": 45,
+    "texts": [
+      "THANK YOU",
+      "45"
+    ],
+    "tables": [],
+    "images_count": 0,
+    "images": []
+  }
+]

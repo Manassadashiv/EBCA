@@ -1,0 +1,221 @@
+{
+  "milestone": "Stage 2.2-R2",
+  "status": "EVALUATION_COMPLETE",
+  "gates": {
+    "gate_6_counterfactual_branch_alignment": {
+      "all_20_branches_passed": true,
+      "mean_branch_r2": 0.6747174915807703,
+      "mean_diagonal_dominance_margin": 0.7475671386303684,
+      "individual_branches": [
+        {
+          "branch_id": 0,
+          "name": "Canonical_Forward",
+          "r2": 0.7149742959607727,
+          "rmse": 0.9070420075397699,
+          "diagonal_dominance_margin": 0.46074427742312973,
+          "passed": true
+        },
+        {
+          "branch_id": 1,
+          "name": "Canonical_Left",
+          "r2": 0.6885552176599921,
+          "rmse": 0.8749741140260162,
+          "diagonal_dominance_margin": 1.046877672126222,
+          "passed": true
+        },
+        {
+          "branch_id": 2,
+          "name": "Canonical_Right",
+          "r2": 0.6812555913872973,
+          "rmse": 0.7727490651277991,
+          "diagonal_dominance_margin": 1.111431109795191,
+          "passed": true
+        },
+        {
+          "branch_id": 3,
+          "name": "Canonical_Reverse",
+          "r2": 0.7762996569649776,
+          "rmse": 0.7879843797360081,
+          "diagonal_dominance_margin": 0.3202639393025771,
+          "passed": true
+        },
+        {
+          "branch_id": 4,
+          "name": "Random_Sequence_1",
+          "r2": 0.6716222003865924,
+          "rmse": 0.928775388658174,
+          "diagonal_dominance_margin": 0.6734237708174384,
+          "passed": true
+        },
+        {
+          "branch_id": 5,
+          "name": "Random_Sequence_2",
+          "r2": 0.550780966257373,
+          "rmse": 0.9430545094853985,
+          "diagonal_dominance_margin": 0.9589403447485835,
+          "passed": true
+        },
+        {
+          "branch_id": 6,
+          "name": "Random_Sequence_3",
+          "r2": 0.6424933476636698,
+          "rmse": 0.9154772461692834,
+          "diagonal_dominance_margin": 0.9268047985305811,
+          "passed": true
+        },
+        {
+          "branch_id": 7,
+          "name": "Random_Sequence_4",
+          "r2": 0.6883263720421207,
+          "rmse": 0.9453810452234157,
+          "diagonal_dominance_margin": 0.3238966106236585,
+          "passed": true
+        },
+        {
+          "branch_id": 8,
+          "name": "Random_Sequence_5",
+          "r2": 0.5141270929550608,
+          "rmse": 1.060235032389921,
+          "diagonal_dominance_margin": 1.2308684002945371,
+          "passed": true
+        },
+        {
+          "branch_id": 9,
+          "name": "Random_Sequence_6",
+          "r2": 0.6966992405969321,
+          "rmse": 0.9201182983384812,
+          "diagonal_dominance_margin": 0.612221192968039,
+          "passed": true
+        },
+        {
+          "branch_id": 10,
+          "name": "Random_Sequence_7",
+          "r2": 0.7478062922115901,
+          "rmse": 0.8284886013879935,
+          "diagonal_dominance_margin": 0.5089416009238743,
+          "passed": true
+        },
+        {
+          "branch_id": 11,
+          "name": "Random_Sequence_8",
+          "r2": 0.6213470633961669,
+          "rmse": 1.0534697101935204,
+          "diagonal_dominance_margin": 1.0374347822203844,
+          "passed": true
+        },
+        {
+          "branch_id": 12,
+          "name": "Random_Sequence_9",
+          "r2": 0.6386227177604185,
+          "rmse": 0.9811579110232157,
+          "diagonal_dominance_margin": 0.5789292063978319,
+          "passed": true
+        },
+        {
+          "branch_id": 13,
+          "name": "Random_Sequence_10",
+          "r2": 0.6871668421554595,
+          "rmse": 0.8764720419972282,
+          "diagonal_dominance_margin": 0.9945483321031882,
+          "passed": true
+        },
+        {
+          "branch_id": 14,
+          "name": "Random_Sequence_11",
+          "r2": 0.6926660282108799,
+          "rmse": 0.8518387004882707,
+          "diagonal_dominance_margin": 1.0556548242131485,
+          "passed": true
+        },
+        {
+          "branch_id": 15,
+          "name": "Random_Sequence_12",
+          "r2": 0.6407351946096116,
+          "rmse": 1.0421533618454577,
+          "diagonal_dominance_margin": 1.020440736832487,
+          "passed": true
+        },
+        {
+          "branch_id": 16,
+          "name": "Random_Sequence_13",
+          "r2": 0.6296122556606937,
+          "rmse": 0.8375334602343572,
+          "diagonal_dominance_margin": 0.9706825308021225,
+          "passed": true
+        },
+        {
+          "branch_id": 17,
+          "name": "Random_Sequence_14",
+          "r2": 0.7055409337727223,
+          "rmse": 0.9226506803603747,
+          "diagonal_dominance_margin": 0.42397478685256584,
+          "passed": true
+        },
+        {
+          "branch_id": 18,
+          "name": "Random_Sequence_15",
+          "r2": 0.7428999795458934,
+          "rmse": 0.8556828105992194,
+          "diagonal_dominance_margin": 0.3460889541671148,
+          "passed": true
+        },
+        {
+          "branch_id": 19,
+          "name": "Random_Sequence_16",
+          "r2": 0.7628185424171832,
+          "rmse": 0.8172346848156186,
+          "diagonal_dominance_margin": 0.3491749014646933,
+          "passed": true
+        }
+      ],
+      "threshold": "ALL 20 branches R\u00b2 >= 0.50 and Margin >= +0.30m individually",
+      "passed": true,
+      "subprocess_air_gap_enforced": true
+    },
+    "gate_1_body_kinematics": {
+      "gyro_yaw_r2": 0.8466339265637528,
+      "proprioception_r2": 0.9628346963357184,
+      "threshold": "Gyro >= 0.75, Proprio >= 0.85",
+      "passed": true,
+      "zero_compensatory_rule_active": true
+    },
+    "gate_2_dynamic_sonar": {
+      "sonar_r2_dynamic": 0.5581029498269776,
+      "sonar_r2_all": 0.6823484175395776,
+      "threshold": "Dynamic R\u00b2 >= 0.50, All R\u00b2 >= 0.60",
+      "passed": true
+    },
+    "gate_3_physical_action_intervention": {
+      "surge_zero_on_active_percent": 133.04530460820786,
+      "r2_coasting_halt": 0.708951140023501,
+      "rmse_active_baseline": 0.8749741140260162,
+      "threshold": "Surge >= +25.0%, Coasting R\u00b2 >= 0.60",
+      "passed": true
+    },
+    "gate_4_memory_necessity_ablation": {
+      "surge_erased_percent": 204.8244943572075,
+      "surge_scrambled_percent": 109.7673255613043,
+      "threshold": "Erased >= +25.0%, Scrambled >= +20.0%",
+      "passed": true,
+      "mandatory_status": "HARD_GATED"
+    },
+    "gate_5_tripartite_ambiguity_swap": {
+      "attraction_rate_percent": 100.0,
+      "wilcoxon_p_value": 8.881784197001252e-16,
+      "pre_registered_n": 50,
+      "threshold": "Attraction >= 85.0%, p < 0.01",
+      "passed": true
+    },
+    "gate_7_collision_oracle": {
+      "roc_auc": 0.9949748743718593,
+      "threshold": "ROC-AUC >= 0.85",
+      "passed": true
+    }
+  },
+  "overall_certification": {
+    "verdict": "PASSED",
+    "all_seven_gates_passed": true,
+    "lexical_hierarchy_enforced": true,
+    "reality_principle_verified": true
+  }
+}

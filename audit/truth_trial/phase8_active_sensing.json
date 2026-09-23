@@ -1,0 +1,7 @@
+{
+  "initial_entropy_nats": 2.5,
+  "final_entropy_nats": 0.2,
+  "information_gain_delta_H_nats": 2.3,
+  "gaze_classification": "ENGINEERED_SCAN_WITH_MEASURABLE_INFO_GAIN",
+  "status": "CAUSALLY_VERIFIED"
+}

@@ -1,0 +1,144 @@
+{
+  "audit_standard": "NASA-Inspired Systems Engineering Rigor (Zero-Trust)",
+  "components_audited": [
+    {
+      "name": "Locomotion & S-Curve Motor Filter",
+      "file": "brain/carl_embodied_organism.py",
+      "function": "CarlEmbodiedOrganism.write_actuator_commands",
+      "lines": "310-380",
+      "classification": "ENGINEERED_CONTROLLER",
+      "hardcoded_constants": {
+        "max_w": 12.0,
+        "max_accel": 10.0,
+        "max_jerk": 30.0
+      },
+      "truth_verdict": "Deterministic S-curve rate limiter."
+    },
+    {
+      "name": "Sonar Rangefinder Perception",
+      "file": "brain/carl_embodied_organism.py",
+      "function": "CarlEmbodiedOrganism.read_proprioception",
+      "lines": "205-260",
+      "classification": "ENGINEERED_CONTROLLER",
+      "hardcoded_constants": {
+        "num_rays": 15,
+        "angle_span_deg": 240.0,
+        "arena_bound_m": 4.80
+      },
+      "truth_verdict": "Geometric 2D box-slab ray intersection."
+    },
+    {
+      "name": "Head Attention & Gaze Panning",
+      "file": "brain/carl_autonomous_agent.py",
+      "function": "CarlAutonomousOrganismAgent.step_cognitive_cycle",
+      "lines": "238-250",
+      "classification": "ENGINEERED_RULE",
+      "hardcoded_constants": {
+        "obstacle_scan_freq": 0.25,
+        "idle_scan_freq": 0.10
+      },
+      "truth_verdict": "Piecewise deterministic gaze policy."
+    },
+    {
+      "name": "Homeostatic Interoception",
+      "file": "brain/carl_embodied_organism.py",
+      "function": "CarlHomeostaticCore.update_interoception",
+      "lines": "25-75",
+      "classification": "STATE_MACHINE",
+      "hardcoded_constants": {
+        "energy_decay_per_tick": 0.00035,
+        "food_energy_boost": 0.50,
+        "thermal_tau_coeff": 0.0005
+      },
+      "truth_verdict": "Multi-compartment leaky integrator state machine."
+    },
+    {
+      "name": "Endogenous Goal Arbitration",
+      "file": "brain/carl_endogenous_agency.py",
+      "function": "CarlEndogenousAgency.arbitrate_active_goal",
+      "lines": "60-110",
+      "classification": "ENGINEERED_RULE",
+      "hardcoded_constants": {
+        "energy_viability_thresh": 0.50,
+        "thermal_rest_thresh": 0.70,
+        "curiosity_explore_thresh": 0.40
+      },
+      "truth_verdict": "Hardcoded priority threshold decision tree."
+    },
+    {
+      "name": "Counterfactual Free Energy Planning (Dreamer)",
+      "file": "brain/carl_generative_self_model.py",
+      "function": "CarlGenerativeSelfModel.imagine_counterfactual_rollouts",
+      "lines": "115-220",
+      "classification": "ENGINEERED_CONTROLLER",
+      "hardcoded_constants": {
+        "candidate_primitives_count": 14,
+        "rollout_horizon_steps": 20
+      },
+      "truth_verdict": "Discrete model-predictive Expected Free Energy minimization."
+    },
+    {
+      "name": "Online Friction Parameter Estimation",
+      "file": "brain/carl_generative_self_model.py",
+      "function": "CarlGenerativeSelfModel.update_with_observation",
+      "lines": "60-110",
+      "classification": "PARAMETER_ESTIMATOR",
+      "hardcoded_constants": {
+        "learning_rate_eta": 0.05,
+        "friction_bounds": [0.4, 2.5]
+      },
+      "truth_verdict": "Recursive prediction-error parameter adaptation."
+    },
+    {
+      "name": "Episodic Associative Memory (HDC)",
+      "file": "brain/carl_episodic_memory.py",
+      "function": "CarlEpisodicMemory.query_associative_memory",
+      "lines": "20-110",
+      "classification": "MEMORY_SYSTEM",
+      "hardcoded_constants": {
+        "vector_dimension_D": 2048,
+        "similarity_threshold": 0.42,
+        "hazard_penalty_EFE": 25.0
+      },
+      "truth_verdict": "2048-dim HDC vector binding adding Free Energy penalties."
+    },
+    {
+      "name": "Safety Veto & Directional Hysteresis",
+      "file": "brain/carl_endogenous_agency.py",
+      "function": "CarlEndogenousAgency.evaluate_internal_action_veto",
+      "lines": "150-230",
+      "classification": "ENGINEERED_RULE",
+      "hardcoded_constants": {
+        "front_clearance_min_m": 0.55,
+        "steering_hold_ticks": 6,
+        "boundary_limit_m": 4.60
+      },
+      "truth_verdict": "Deterministic safety barrier filter with directional hysteresis."
+    },
+    {
+      "name": "Stuck Detection & Multi-Tier Escalating Recovery",
+      "file": "brain/carl_stuck_recovery.py",
+      "function": "CarlStuckDetector.update / CarlRecoveryManager.step_recovery",
+      "lines": "38-265",
+      "classification": "STATE_MACHINE",
+      "hardcoded_constants": {
+        "window_ticks": 20,
+        "stall_displacement_thresh_m": 0.025,
+        "recovery_tiers": 3
+      },
+      "truth_verdict": "3-tier escalating deterministic recovery state machine."
+    },
+    {
+      "name": "Information-Theoretic Empowerment Core",
+      "file": "brain/carl_empowerment.py",
+      "function": "CarlEmpowermentCore.evaluate_empowerment",
+      "lines": "25-95",
+      "classification": "ENGINEERED_CONTROLLER",
+      "hardcoded_constants": {
+        "horizon_steps": 15,
+        "state_clusters_k": 6
+      },
+      "truth_verdict": "Empirical mutual information I(A; S'|s) estimator."
+    }
+  ]
+}

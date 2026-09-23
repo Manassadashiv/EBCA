@@ -1,0 +1,33 @@
+{
+  "contract_standard": "NASA-Inspired Systems Engineering Rigor",
+  "root_causes": [
+    {
+      "id": "RC-01",
+      "name": "PHYSICS_SUBSTEPPING_TIMESTEP_MISMATCH",
+      "symptom": "Overshooting, delayed steering, and inflated prediction error in live playground",
+      "first_divergence": "carl_live_playground.py line 177 executing 8 substeps (0.08s) vs model dt (0.0333s)",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "RC-02",
+      "name": "STUCK_DETECTOR_BLIND_SPOT_ON_BRAKE_REST",
+      "symptom": "Permanent BRAKE_REST stall when halted in front of obstacles",
+      "first_divergence": "carl_stuck_recovery.py line 98 dropping stuck confidence when cmd_v was 0.0",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "RC-03",
+      "name": "HARDCODED_PERIMETER_BOUNDARY_MISMATCH",
+      "symptom": "Phantom boundary vetoes and premature turning at +/- 2.35m in a 10m arena",
+      "first_divergence": "carl_embodied_organism.py line 215 checking boundary at 2.60m vs XML wall at 5.0m",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "RC-04",
+      "name": "LEFT_RIGHT_STEERING_CHATTER",
+      "symptom": "Limit cycle oscillations on symmetrical obstacles",
+      "first_divergence": "Instantaneous sign flipping of steering bias on sensor noise",
+      "status": "RESOLVED"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "manifest_id": "CARL-STAGE2_3_R1_R2-FROZEN-MANIFEST-2026-09-07",
+  "status": "LOCKED_PRE_EVALUATION",
+  "timestamp": "2026-09-07T14:45:00Z",
+  "remediation_version": "R2",
+  "remediation_changelog": [
+    "RC-1: Removed shortcircuit bypass (front_sonar >= 0.55 fast-path); deliberation always active",
+    "RC-2: Added graduated side-clearance (min_hull * 3.0 + min_side * 1.5 + wide_margin_bonus 1.5)",
+    "RC-3: Expanded clearance check steps from [2,5,9] to [1,3,5,7,9] (5 dense checks)",
+    "RC-4: Reduced num_samples_per_ray from 80 to 40; inference_mode instead of no_grad",
+    "RC-5: Increased trials_per_layout from 15 to 50 (200 per condition, 1000 total episodes)"
+  ],
+  "deliberation_parameters": {
+    "lookahead_horizon_ticks": 10,
+    "tick_dt_sec": 0.03,
+    "hazard_clearance_threshold_meters": 0.28,
+    "calibrated_k_fwd_gain": 0.0091,
+    "continuous_candidates_count": 24,
+    "candidate_classes": [
+      "14 differential curvature arcs",
+      "4 straight and high-speed trims",
+      "3 in-place pure rotational pivots",
+      "3 reverse-turn recovery trajectories"
+    ],
+    "unprivileged_localization": {
+      "policy_input": "zero_simulator_qpos_allowed",
+      "yaw_tracking": "IMU_gyro_yaw_rate_integration",
+      "speed_tracking": "grounded_kinematic_body_model_speed_integration"
+    },
+    "shortcircuit_bypass": "REMOVED_IN_R2",
+    "full_hull_clearance_veto": true,
+    "clearance_check_steps": [1, 3, 5, 7, 9],
+    "num_samples_per_ray": 40,
+    "utility_function": {
+      "w_front_clearance": 4.0,
+      "w_mean_clearance": 2.0,
+      "w_forward_progress": 2.5,
+      "w_hull_clearance": 3.0,
+      "w_side_clearance": 1.5,
+      "w_wide_margin_bonus": 1.5,
+      "w_collision_penalty": 800.0,
+      "w_reverse_penalty": 15.0,
+      "wide_margin_threshold_m": 0.40
+    }
+  },
+  "evaluation_matrix": {
+    "layouts": [
+      {
+        "layout_id": "layout_1_left_trap",
+        "description": "Asymmetric Left Trap (facing South into horizontal wall, East wall traps left turn)",
+        "nominal_spawn": [-3.0, -0.2],
+        "nominal_yaw": -1.5707963,
+        "trap_mechanism": "East wall at x=-2.70 blocks left evasion; West is open"
+      },
+      {
+        "layout_id": "layout_2_right_trap",
+        "description": "Asymmetric Right Trap (facing East into vertical wall, South wall traps right turn)",
+        "nominal_spawn": [-3.4, -0.65],
+        "nominal_yaw": 0.0,
+        "trap_mechanism": "South wall at y=-0.90 blocks right evasion; North corridor is open"
+      },
+      {
+        "layout_id": "layout_3_t_junction",
+        "description": "T-Junction Dead End (facing West into flat vertical divider)",
+        "nominal_spawn": [-0.2, -2.5],
+        "nominal_yaw": 3.14159265,
+        "trap_mechanism": "Flat wall ahead; both Left and Right evasions are open"
+      },
+      {
+        "layout_id": "layout_4_corridor_slit",
+        "description": "Narrow Corridor Choke (facing East into 0.9m channel with 0.26m clearance)",
+        "nominal_spawn": [-2.5, 2.25],
+        "nominal_yaw": 0.0,
+        "trap_mechanism": "Tight symmetric clearance requires precision centering"
+      }
+    ],
+    "conditions": [
+      "deliberative",
+      "reflex",
+      "amnesic",
+      "random",
+      "potential_field"
+    ],
+    "trials_per_layout": 50,
+    "layouts_count": 4,
+    "trials_per_condition": 200,
+    "total_episodes": 1000,
+    "max_ticks_per_episode": 60,
+    "unseen_evaluation_seed": 20260907
+  },
+  "acceptance_criteria": {
+    "collision_reduction_vs_reflex_ge_percent": 60.0,
+    "collision_reduction_vs_random_ge_percent": 60.0,
+    "collision_reduction_vs_potential_field_ge_percent": 25.0,
+    "causal_prediction_alignment_ge_percent": 85.0,
+    "real_time_p95_latency_le_ms": 50.0,
+    "statistical_significance_alpha": 0.01,
+    "statistical_significance_required_vs": ["reflex", "random", "amnesic"],
+    "zero_privileged_pose_injection": true
+  }
+}

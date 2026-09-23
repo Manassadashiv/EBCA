@@ -1,0 +1,470 @@
+{
+  "Candidate A": {
+    "name": "Candidate A (Multi-Scale Coprime Grid)",
+    "all_seeds_mean_drift_m": 0.289,
+    "all_seeds_passes": "2/8",
+    "unseen_mean_drift_m": 0.273,
+    "unseen_median_drift_m": 0.249,
+    "unseen_worst_drift_m": 0.456,
+    "unseen_passes": "2/5",
+    "dev_mean_drift_m": 0.315,
+    "records": [
+      {
+        "seed": 42,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "DEV",
+        "initial_pose": {
+          "x": -0.0151,
+          "y": 0.0541,
+          "yaw_deg": 20.88
+        },
+        "wander_max_phys_dist_m": 1.257,
+        "final_drift_m": 0.334,
+        "homing_ticks": 455,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00367,
+        "elapsed_ms": 3119.8
+      },
+      {
+        "seed": 101,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "DEV",
+        "initial_pose": {
+          "x": 0.002,
+          "y": 0.0085,
+          "yaw_deg": -42.44
+        },
+        "wander_max_phys_dist_m": 1.259,
+        "final_drift_m": 0.305,
+        "homing_ticks": 464,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00383,
+        "elapsed_ms": 3238.0
+      },
+      {
+        "seed": 202,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "DEV",
+        "initial_pose": {
+          "x": -0.0331,
+          "y": -0.0283,
+          "yaw_deg": 42.96
+        },
+        "wander_max_phys_dist_m": 1.262,
+        "final_drift_m": 0.307,
+        "homing_ticks": 466,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.01118,
+        "elapsed_ms": 3169.1
+      },
+      {
+        "seed": 303,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.03,
+          "y": -0.0263,
+          "yaw_deg": 4.57
+        },
+        "wander_max_phys_dist_m": 1.224,
+        "final_drift_m": 0.263,
+        "homing_ticks": 447,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00881,
+        "elapsed_ms": 3775.5
+      },
+      {
+        "seed": 404,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0203,
+          "y": -0.0179,
+          "yaw_deg": 35.38
+        },
+        "wander_max_phys_dist_m": 1.277,
+        "final_drift_m": 0.192,
+        "homing_ticks": 432,
+        "stopped_cleanly": true,
+        "pass_gate": true,
+        "max_disambig_residual_m": 0.00656,
+        "elapsed_ms": 21183.8
+      },
+      {
+        "seed": 505,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0421,
+          "y": -0.0249,
+          "yaw_deg": -24.92
+        },
+        "wander_max_phys_dist_m": 1.282,
+        "final_drift_m": 0.456,
+        "homing_ticks": 486,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00771,
+        "elapsed_ms": 12479.8
+      },
+      {
+        "seed": 606,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0314,
+          "y": 0.0322,
+          "yaw_deg": 5.57
+        },
+        "wander_max_phys_dist_m": 1.223,
+        "final_drift_m": 0.249,
+        "homing_ticks": 455,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00684,
+        "elapsed_ms": 24933.9
+      },
+      {
+        "seed": 707,
+        "candidate": "Candidate A",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0345,
+          "y": -0.0116,
+          "yaw_deg": -31.1
+        },
+        "wander_max_phys_dist_m": 1.257,
+        "final_drift_m": 0.203,
+        "homing_ticks": 444,
+        "stopped_cleanly": true,
+        "pass_gate": true,
+        "max_disambig_residual_m": 0.01223,
+        "elapsed_ms": 24112.1
+      }
+    ]
+  },
+  "Candidate B": {
+    "name": "Candidate B (Integer Winding Register Control)",
+    "all_seeds_mean_drift_m": 0.718,
+    "all_seeds_passes": "0/8",
+    "unseen_mean_drift_m": 0.703,
+    "unseen_median_drift_m": 0.673,
+    "unseen_worst_drift_m": 1.012,
+    "unseen_passes": "0/5",
+    "dev_mean_drift_m": 0.743,
+    "records": [
+      {
+        "seed": 42,
+        "candidate": "Candidate B",
+        "ablation": "none",
+        "partition": "DEV",
+        "initial_pose": {
+          "x": -0.0151,
+          "y": 0.0541,
+          "yaw_deg": 20.88
+        },
+        "wander_max_phys_dist_m": 1.257,
+        "final_drift_m": 0.813,
+        "homing_ticks": 588,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 14297.4
+      },
+      {
+        "seed": 101,
+        "candidate": "Candidate B",
+        "ablation": "none",
+        "partition": "DEV",
+        "initial_pose": {
+          "x": 0.002,
+          "y": 0.0085,
+          "yaw_deg": -42.44
+        },
+        "wander_max_phys_dist_m": 1.259,
+        "final_drift_m": 0.651,
+        "homing_ticks": 540,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 12157.5
+      },
+      {
+        "seed": 202,
+        "candidate": "Candidate B",
+        "ablation": "none",
+        "partition": "DEV",
+        "initial_pose": {
+          "x": -0.0331,
+          "y": -0.0283,
+          "yaw_deg": 42.96
+        },
+        "wander_max_phys_dist_m": 1.262,
+        "final_drift_m": 0.764,
+        "homing_ticks": 583,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 12113.5
+      },
+      {
+        "seed": 303,
+        "candidate": "Candidate B",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.03,
+          "y": -0.0263,
+          "yaw_deg": 4.57
+        },
+        "wander_max_phys_dist_m": 1.224,
+        "final_drift_m": 0.842,
+        "homing_ticks": 544,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 11312.0
+      },
+      {
+        "seed": 404,
+        "candidate": "Candidate B",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0203,
+          "y": -0.0179,
+          "yaw_deg": 35.38
+        },
+        "wander_max_phys_dist_m": 1.277,
+        "final_drift_m": 0.392,
+        "homing_ticks": 550,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 11099.5
+      },
+      {
+        "seed": 505,
+        "candidate": "Candidate B",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0421,
+          "y": -0.0249,
+          "yaw_deg": -24.92
+        },
+        "wander_max_phys_dist_m": 1.282,
+        "final_drift_m": 0.673,
+        "homing_ticks": 535,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 12330.9
+      },
+      {
+        "seed": 606,
+        "candidate": "Candidate B",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0314,
+          "y": 0.0322,
+          "yaw_deg": 5.57
+        },
+        "wander_max_phys_dist_m": 1.223,
+        "final_drift_m": 1.012,
+        "homing_ticks": 578,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 13547.0
+      },
+      {
+        "seed": 707,
+        "candidate": "Candidate B",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0345,
+          "y": -0.0116,
+          "yaw_deg": -31.1
+        },
+        "wander_max_phys_dist_m": 1.257,
+        "final_drift_m": 0.598,
+        "homing_ticks": 516,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.0,
+        "elapsed_ms": 11608.7
+      }
+    ]
+  },
+  "Candidate C": {
+    "name": "Candidate C (Calibrated Grounded Translation)",
+    "all_seeds_mean_drift_m": 0.278,
+    "all_seeds_passes": "2/8",
+    "unseen_mean_drift_m": 0.244,
+    "unseen_median_drift_m": 0.229,
+    "unseen_worst_drift_m": 0.308,
+    "unseen_passes": "2/5",
+    "dev_mean_drift_m": 0.334,
+    "records": [
+      {
+        "seed": 42,
+        "candidate": "Candidate C",
+        "ablation": "none",
+        "partition": "DEV",
+        "initial_pose": {
+          "x": -0.0151,
+          "y": 0.0541,
+          "yaw_deg": 20.88
+        },
+        "wander_max_phys_dist_m": 1.257,
+        "final_drift_m": 0.367,
+        "homing_ticks": 478,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00787,
+        "elapsed_ms": 20777.7
+      },
+      {
+        "seed": 101,
+        "candidate": "Candidate C",
+        "ablation": "none",
+        "partition": "DEV",
+        "initial_pose": {
+          "x": 0.002,
+          "y": 0.0085,
+          "yaw_deg": -42.44
+        },
+        "wander_max_phys_dist_m": 1.259,
+        "final_drift_m": 0.337,
+        "homing_ticks": 476,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00796,
+        "elapsed_ms": 20788.3
+      },
+      {
+        "seed": 202,
+        "candidate": "Candidate C",
+        "ablation": "none",
+        "partition": "DEV",
+        "initial_pose": {
+          "x": -0.0331,
+          "y": -0.0283,
+          "yaw_deg": 42.96
+        },
+        "wander_max_phys_dist_m": 1.262,
+        "final_drift_m": 0.299,
+        "homing_ticks": 468,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00459,
+        "elapsed_ms": 20318.0
+      },
+      {
+        "seed": 303,
+        "candidate": "Candidate C",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.03,
+          "y": -0.0263,
+          "yaw_deg": 4.57
+        },
+        "wander_max_phys_dist_m": 1.224,
+        "final_drift_m": 0.308,
+        "homing_ticks": 451,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00798,
+        "elapsed_ms": 19782.7
+      },
+      {
+        "seed": 404,
+        "candidate": "Candidate C",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0203,
+          "y": -0.0179,
+          "yaw_deg": 35.38
+        },
+        "wander_max_phys_dist_m": 1.277,
+        "final_drift_m": 0.229,
+        "homing_ticks": 431,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00856,
+        "elapsed_ms": 22195.8
+      },
+      {
+        "seed": 505,
+        "candidate": "Candidate C",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": 0.0421,
+          "y": -0.0249,
+          "yaw_deg": -24.92
+        },
+        "wander_max_phys_dist_m": 1.282,
+        "final_drift_m": 0.179,
+        "homing_ticks": 474,
+        "stopped_cleanly": true,
+        "pass_gate": true,
+        "max_disambig_residual_m": 0.00693,
+        "elapsed_ms": 23345.2
+      },
+      {
+        "seed": 606,
+        "candidate": "Candidate C",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0314,
+          "y": 0.0322,
+          "yaw_deg": 5.57
+        },
+        "wander_max_phys_dist_m": 1.223,
+        "final_drift_m": 0.298,
+        "homing_ticks": 451,
+        "stopped_cleanly": true,
+        "pass_gate": false,
+        "max_disambig_residual_m": 0.00821,
+        "elapsed_ms": 19746.4
+      },
+      {
+        "seed": 707,
+        "candidate": "Candidate C",
+        "ablation": "none",
+        "partition": "UNSEEN",
+        "initial_pose": {
+          "x": -0.0345,
+          "y": -0.0116,
+          "yaw_deg": -31.1
+        },
+        "wander_max_phys_dist_m": 1.257,
+        "final_drift_m": 0.205,
+        "homing_ticks": 446,
+        "stopped_cleanly": true,
+        "pass_gate": true,
+        "max_disambig_residual_m": 0.00868,
+        "elapsed_ms": 3625.9
+      }
+    ]
+  }
+}

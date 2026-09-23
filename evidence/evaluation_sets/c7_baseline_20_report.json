@@ -1,0 +1,567 @@
+{
+  "characterization_title": "Frozen Initial C7 Baseline Characterization (20 Episodes)",
+  "auditor_sha256": "a0d6b0115a40e48b10685d0156289eaf8b1ead384a888008f952e5d894092004",
+  "c7_checkpoint_sha256": "73d3cbe17a50e1f65c8eaaa95ad413a1b67f9be7af24f4722e0bee99e483c78a",
+  "total_episodes": 20,
+  "verified_movement_count": 12,
+  "verified_movement_rate_pct": 60.0,
+  "verified_goal_success_count": 0,
+  "verified_goal_success_rate_pct": 0.0,
+  "collision_count": 1,
+  "collision_rate_pct": 5.0,
+  "navigation_failure_count": 20,
+  "navigation_failure_rate_pct": 100.0,
+  "mean_initial_distance_m": 3.098,
+  "mean_final_distance_to_goal_m": 3.098,
+  "mean_path_length_m": 4.178,
+  "path_efficiency": 0.0,
+  "mean_time_to_goal_ticks": null,
+  "mean_peak_jerk_rad_s3": 0.0,
+  "failure_mode_distribution": {
+    "NO_MOVEMENT": 8,
+    "WALL_COLLISION": 0,
+    "NAVIGATION_TIMEOUT": 12
+  },
+  "episodes": [
+    {
+      "episode_idx": 1,
+      "episode_id": "baseline_0001",
+      "goal_pos": [
+        1.766,
+        -1.41
+      ],
+      "initial_dist_m": 2.26,
+      "final_min_dist_m": 2.26,
+      "path_length_m": 8.821,
+      "has_movement": true,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 142.74 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        4.741,
+        1.873
+      ]
+    },
+    {
+      "episode_idx": 2,
+      "episode_id": "baseline_0002",
+      "goal_pos": [
+        2.076,
+        -2.861
+      ],
+      "initial_dist_m": 3.535,
+      "final_min_dist_m": 3.535,
+      "path_length_m": 0.0,
+      "has_movement": false,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "GOAL_TIMEOUT: Robot failed to reach goal (closest approach 2.613m > 0.250m)",
+      "failure_mode": "NO_MOVEMENT (C7 Untrained Weights Output Near-Zero Actuation)",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        -2.414,
+        0.184
+      ]
+    },
+    {
+      "episode_idx": 3,
+      "episode_id": "baseline_0003",
+      "goal_pos": [
+        1.882,
+        -1.661
+      ],
+      "initial_dist_m": 2.51,
+      "final_min_dist_m": 2.51,
+      "path_length_m": 7.376,
+      "has_movement": true,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 134.39 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        0.148,
+        1.677
+      ]
+    },
+    {
+      "episode_idx": 4,
+      "episode_id": "baseline_0004",
+      "goal_pos": [
+        2.451,
+        2.121
+      ],
+      "initial_dist_m": 3.241,
+      "final_min_dist_m": 3.241,
+      "path_length_m": 0.0,
+      "has_movement": false,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "GOAL_TIMEOUT: Robot failed to reach goal (closest approach 2.954m > 0.250m)",
+      "failure_mode": "NO_MOVEMENT (C7 Untrained Weights Output Near-Zero Actuation)",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        -0.612,
+        0.934
+      ]
+    },
+    {
+      "episode_idx": 5,
+      "episode_id": "baseline_0005",
+      "goal_pos": [
+        2.22,
+        2.525
+      ],
+      "initial_dist_m": 3.362,
+      "final_min_dist_m": 3.362,
+      "path_length_m": 0.0,
+      "has_movement": false,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "GOAL_TIMEOUT: Robot failed to reach goal (closest approach 0.323m > 0.250m)",
+      "failure_mode": "NO_MOVEMENT (C7 Untrained Weights Output Near-Zero Actuation)",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        2.046,
+        3.188
+      ]
+    },
+    {
+      "episode_idx": 6,
+      "episode_id": "baseline_0006",
+      "goal_pos": [
+        2.028,
+        -0.179
+      ],
+      "initial_dist_m": 2.036,
+      "final_min_dist_m": 2.036,
+      "path_length_m": 7.935,
+      "has_movement": true,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 146.91 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        0.55,
+        -1.165
+      ]
+    },
+    {
+      "episode_idx": 7,
+      "episode_id": "baseline_0007",
+      "goal_pos": [
+        3.456,
+        -2.878
+      ],
+      "initial_dist_m": 4.497,
+      "final_min_dist_m": 4.497,
+      "path_length_m": 7.347,
+      "has_movement": true,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 120.94 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        1.485,
+        -1.494
+      ]
+    },
+    {
+      "episode_idx": 8,
+      "episode_id": "baseline_0008",
+      "goal_pos": [
+        3.414,
+        -0.884
+      ],
+      "initial_dist_m": 3.527,
+      "final_min_dist_m": 3.527,
+      "path_length_m": 7.612,
+      "has_movement": true,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 135.80 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        3.901,
+        -0.01
+      ]
+    },
+    {
+      "episode_idx": 9,
+      "episode_id": "baseline_0009",
+      "goal_pos": [
+        1.543,
+        2.952
+      ],
+      "initial_dist_m": 3.331,
+      "final_min_dist_m": 3.331,
+      "path_length_m": 6.242,
+      "has_movement": true,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 147.41 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        1.347,
+        0.568
+      ]
+    },
+    {
+      "episode_idx": 10,
+      "episode_id": "baseline_0010",
+      "goal_pos": [
+        2.733,
+        -1.947
+      ],
+      "initial_dist_m": 3.356,
+      "final_min_dist_m": 3.356,
+      "path_length_m": 7.496,
+      "has_movement": true,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 142.74 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        3.209,
+        -0.229
+      ]
+    },
+    {
+      "episode_idx": 11,
+      "episode_id": "baseline_0011",
+      "goal_pos": [
+        1.615,
+        0.625
+      ],
+      "initial_dist_m": 1.732,
+      "final_min_dist_m": 1.732,
+      "path_length_m": 1.686,
+      "has_movement": true,
+      "reached_goal": true,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 46,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 142.74 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        1.549,
+        0.395
+      ]
+    },
+    {
+      "episode_idx": 12,
+      "episode_id": "baseline_0012",
+      "goal_pos": [
+        2.044,
+        -2.631
+      ],
+      "initial_dist_m": 3.332,
+      "final_min_dist_m": 3.332,
+      "path_length_m": 0.0,
+      "has_movement": false,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "GOAL_TIMEOUT: Robot failed to reach goal (closest approach 3.161m > 0.250m)",
+      "failure_mode": "NO_MOVEMENT (C7 Untrained Weights Output Near-Zero Actuation)",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        2.565,
+        0.686
+      ]
+    },
+    {
+      "episode_idx": 13,
+      "episode_id": "baseline_0013",
+      "goal_pos": [
+        2.835,
+        -0.718
+      ],
+      "initial_dist_m": 2.925,
+      "final_min_dist_m": 2.925,
+      "path_length_m": 0.0,
+      "has_movement": false,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "GOAL_TIMEOUT: Robot failed to reach goal (closest approach 2.193m > 0.250m)",
+      "failure_mode": "NO_MOVEMENT (C7 Untrained Weights Output Near-Zero Actuation)",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        -0.053,
+        -0.331
+      ]
+    },
+    {
+      "episode_idx": 14,
+      "episode_id": "baseline_0014",
+      "goal_pos": [
+        3.197,
+        -2.329
+      ],
+      "initial_dist_m": 3.955,
+      "final_min_dist_m": 3.955,
+      "path_length_m": 8.347,
+      "has_movement": true,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 134.39 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        0.71,
+        2.306
+      ]
+    },
+    {
+      "episode_idx": 15,
+      "episode_id": "baseline_0015",
+      "goal_pos": [
+        2.421,
+        -2.882
+      ],
+      "initial_dist_m": 3.764,
+      "final_min_dist_m": 3.764,
+      "path_length_m": 8.565,
+      "has_movement": true,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 148.40 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        1.249,
+        3.876
+      ]
+    },
+    {
+      "episode_idx": 16,
+      "episode_id": "baseline_0016",
+      "goal_pos": [
+        2.174,
+        -1.528
+      ],
+      "initial_dist_m": 2.657,
+      "final_min_dist_m": 2.657,
+      "path_length_m": 0.0,
+      "has_movement": false,
+      "reached_goal": false,
+      "wall_collisions": 1,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "WALL_COLLISION: Detected 46 physical wall contact events",
+      "failure_mode": "NO_MOVEMENT (C7 Untrained Weights Output Near-Zero Actuation)",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        4.822,
+        0.651
+      ]
+    },
+    {
+      "episode_idx": 17,
+      "episode_id": "baseline_0017",
+      "goal_pos": [
+        2.09,
+        2.591
+      ],
+      "initial_dist_m": 3.329,
+      "final_min_dist_m": 3.329,
+      "path_length_m": 0.0,
+      "has_movement": false,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "GOAL_TIMEOUT: Robot failed to reach goal (closest approach 2.154m > 0.250m)",
+      "failure_mode": "NO_MOVEMENT (C7 Untrained Weights Output Near-Zero Actuation)",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        0.148,
+        1.659
+      ]
+    },
+    {
+      "episode_idx": 18,
+      "episode_id": "baseline_0018",
+      "goal_pos": [
+        2.053,
+        -1.501
+      ],
+      "initial_dist_m": 2.543,
+      "final_min_dist_m": 2.543,
+      "path_length_m": 0.0,
+      "has_movement": false,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "GOAL_TIMEOUT: Robot failed to reach goal (closest approach 1.412m > 0.250m)",
+      "failure_mode": "NO_MOVEMENT (C7 Untrained Weights Output Near-Zero Actuation)",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        0.72,
+        -1.967
+      ]
+    },
+    {
+      "episode_idx": 19,
+      "episode_id": "baseline_0019",
+      "goal_pos": [
+        2.458,
+        1.561
+      ],
+      "initial_dist_m": 2.912,
+      "final_min_dist_m": 2.912,
+      "path_length_m": 6.815,
+      "has_movement": true,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 142.74 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        2.984,
+        2.114
+      ]
+    },
+    {
+      "episode_idx": 20,
+      "episode_id": "baseline_0020",
+      "goal_pos": [
+        2.805,
+        1.431
+      ],
+      "initial_dist_m": 3.149,
+      "final_min_dist_m": 3.149,
+      "path_length_m": 5.317,
+      "has_movement": true,
+      "reached_goal": false,
+      "wall_collisions": 0,
+      "peak_jerk_rad_s3": 0.0,
+      "ticks": 150,
+      "audit_verdict": "VERIFIED_FAIL",
+      "audit_reason": "EXCESSIVE_JERK: Peak jerk 142.74 rad/s\u00b3 exceeds threshold 120.0 rad/s\u00b3",
+      "failure_mode": "NAVIGATION_TIMEOUT / TARGET_MISSED",
+      "start_coords": [
+        0.0,
+        0.0
+      ],
+      "end_coords": [
+        0.839,
+        1.38
+      ]
+    }
+  ]
+}

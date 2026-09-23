@@ -1,0 +1,79 @@
+{
+  "total_failure_modes_monitored": 18,
+  "total_failures_detected": 0,
+  "systemic_verdict": "VERIFIED_ZERO_CRITICAL_FAILURES",
+  "failure_details": {
+    "A_BRAKE_LOCK": {
+      "description": "Persistent BRAKE_REST > 25 ticks without emergency",
+      "detected": 0
+    },
+    "B_STATIONARY_STALL": {
+      "description": "Stationary (|v| < 0.02) for > 20 ticks despite goal",
+      "detected": 0
+    },
+    "C_LEFT_RIGHT_LOOP": {
+      "description": "Steering reversals >= 4 times in 12 ticks",
+      "detected": 0
+    },
+    "D_FORWARD_REVERSE_LOOP": {
+      "description": "Alternating fwd/rev >= 3 times without net disp >= 0.2m",
+      "detected": 0
+    },
+    "E_SPIN_LOOP": {
+      "description": "Continuous spin for > 40 ticks without clearance gain",
+      "detected": 0
+    },
+    "F_CURVATURE_LOOP": {
+      "description": "Periodic circular trajectory without displacement gain",
+      "detected": 0
+    },
+    "G_GOAL_LOOP": {
+      "description": "Goal switching >= 5 times in 15 ticks",
+      "detected": 0
+    },
+    "H_HEAD_SCAN_LOOP": {
+      "description": "Gaze oscillation >= 3 cycles while robot stationary",
+      "detected": 0
+    },
+    "I_RECOVERY_LOOP": {
+      "description": "Recovery cycling >= 3 times without disp >= 0.35m",
+      "detected": 0
+    },
+    "J_RESET_DEPENDENT_BIAS": {
+      "description": "Stale speed > 0.05 or stale steering bias > 0.01 post-reset",
+      "detected": 0
+    },
+    "K_ACTION_CHATTER": {
+      "description": "Action primitive switches every tick for >= 8 ticks",
+      "detected": 0
+    },
+    "L_OSCILLATORY_STEERING": {
+      "description": "High-frequency steering chatter > 5 Hz",
+      "detected": 0
+    },
+    "M_FALSE_CURIOUS_STATE": {
+      "description": "Curiosity drive asserted with delta_H == 0.0",
+      "detected": 0
+    },
+    "N_FALSE_RECOVERY_SUCCESS": {
+      "description": "Recovery marked done with disp < 0.20m",
+      "detected": 0
+    },
+    "O_NEAR_ZERO_NET_PROGRESS": {
+      "description": "Moving with high wheel speed but disp < 0.05m",
+      "detected": 0
+    },
+    "P_REPEATED_TRAJECTORY_AFTER_RESET": {
+      "description": "Different seeds producing byte-identical trajectories",
+      "detected": 0
+    },
+    "Q_SENSOR_ACTUATOR_DESYNC": {
+      "description": "Actuator delay > 3 cognitive cycles",
+      "detected": 0
+    },
+    "R_TELEMETRY_VIDEO_DESYNC": {
+      "description": "Frame timestamps mismatch telemetry ticks",
+      "detected": 0
+    }
+  }
+}

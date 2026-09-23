@@ -1,0 +1,135 @@
+{
+  "milestone": "Stage 3.1-R",
+  "date": "2026-09-13",
+  "verdict": "PASS",
+  "verdict_summary": "Stage 3.1-R CERTIFIED: 2,114-unit neuromorphic computational architecture demonstrated causal necessity.",
+  "total_architecture_units": 2114,
+  "architecture_breakdown": {
+    "head_direction_ring": 64,
+    "toroidal_grid_sheet": 1024,
+    "cann_subsystem": 1088,
+    "liquid_state_reservoir": 1026,
+    "total_units": 2114
+  },
+  "sample_size_per_arm": 100,
+  "seeds": [
+    3001,
+    3002,
+    3003,
+    3004,
+    3005
+  ],
+  "layouts": [
+    "layout_1_left_trap",
+    "layout_2_right_trap",
+    "layout_3_t_junction",
+    "layout_4_corridor_slit"
+  ],
+  "wall_time_seconds": 247.69458293914795,
+  "intact_baseline": {
+    "mean_clearance": 0.30470518322237655,
+    "collision_rate": 0.04,
+    "total_collisions": 4
+  },
+  "arms_evaluation": {
+    "ARM-C_Zeroed": {
+      "g1_delta_u": {
+        "value": 0.5633317532158374,
+        "threshold": "> 0.150",
+        "pass": true
+      },
+      "g2_spearman_rho_midpoint": {
+        "value": 0.23658260869565217,
+        "threshold": "<= 0.700",
+        "pass": true,
+        "samples": 100
+      },
+      "g3_delta_c_hull": {
+        "value": 0.114471767421995,
+        "threshold": ">= +0.050m",
+        "pass": true
+      },
+      "g4_wilcoxon_p": {
+        "value": 8.998385137455785e-17,
+        "alpha_corrected": 0.005,
+        "pass": true
+      },
+      "g5_delta_coll": {
+        "value": 0.27,
+        "intact_coll": 0.04,
+        "abl_coll": 0.31,
+        "pass": true
+      },
+      "cohens_d": 1.1188306451104924,
+      "mcnemar_p": 4.628673195838928e-07,
+      "gates_passed_count": 5,
+      "all_gates_pass": true
+    },
+    "ARM-D_FullShuffled": {
+      "g1_delta_u": {
+        "value": 0.5817810307533018,
+        "threshold": "> 0.150",
+        "pass": true
+      },
+      "g2_spearman_rho_midpoint": {
+        "value": 0.2789043478260869,
+        "threshold": "<= 0.700",
+        "pass": true,
+        "samples": 100
+      },
+      "g3_delta_c_hull": {
+        "value": 0.09175052182795047,
+        "threshold": ">= +0.050m",
+        "pass": true
+      },
+      "g4_wilcoxon_p": {
+        "value": 5.180356160650201e-13,
+        "alpha_corrected": 0.005,
+        "pass": true
+      },
+      "g5_delta_coll": {
+        "value": 0.21,
+        "intact_coll": 0.04,
+        "abl_coll": 0.25,
+        "pass": true
+      },
+      "cohens_d": 0.8227633090416917,
+      "mcnemar_p": 0.00010371580719947815,
+      "gates_passed_count": 5,
+      "all_gates_pass": true
+    },
+    "ARM-B_Frozen": {
+      "g1_delta_u": {
+        "value": 0.42007128458598225,
+        "threshold": "> 0.150",
+        "pass": true
+      },
+      "g2_spearman_rho_midpoint": {
+        "value": 0.561408695652174,
+        "threshold": "<= 0.700",
+        "pass": true,
+        "samples": 100
+      },
+      "g3_delta_c_hull": {
+        "value": -0.011831620115966439,
+        "threshold": ">= +0.050m",
+        "pass": false
+      },
+      "g4_wilcoxon_p": {
+        "value": 0.20823741115716032,
+        "alpha_corrected": 0.005,
+        "pass": false
+      },
+      "g5_delta_coll": {
+        "value": 0.030000000000000006,
+        "intact_coll": 0.04,
+        "abl_coll": 0.07,
+        "pass": true
+      },
+      "cohens_d": -0.08981459281069844,
+      "mcnemar_p": 0.5078125,
+      "gates_passed_count": 3,
+      "all_gates_pass": false
+    }
+  }
+}

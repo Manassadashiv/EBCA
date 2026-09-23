@@ -1,0 +1,44 @@
+{
+  "test_A_rectangular_hull_math": true,
+  "test_B_candidate_collision_geometry": true,
+  "test_C_sonar_heading_estimation": true,
+  "test_D_heading_fusion_continuity": true,
+  "test_E_ast_anti_cheat": true,
+  "details": {
+    "test_A": {
+      "R_diag_m": 0.17734147850968202,
+      "Ry_max_m": 0.17734147850968202,
+      "y_rotational_limit_m": 0.152658521490318,
+      "corridor_clearance_at_center_m": 0.17265852149031796
+    },
+    "test_B": {
+      "num_body_hull_points": 17,
+      "clipping_points_at_y_0_22": 2,
+      "centered_rotation_margin_m": 0.17265852149031796
+    },
+    "test_C": {
+      "test_headings_deg": [
+        -15.0,
+        -8.0,
+        -2.0,
+        0.0,
+        3.5,
+        9.0,
+        14.0
+      ],
+      "max_recovery_error_deg": 1.0658141036401503e-14,
+      "mean_recovery_error_deg": 5.202187886815019e-15
+    },
+    "test_D": {
+      "final_gyro_drift_rad": 0.1500000000000001,
+      "final_fused_error_rad": 0.00944150785169075,
+      "max_single_tick_jump_rad": 0.0015302226724441138,
+      "drift_suppression_ratio": 15.885610301413891
+    },
+    "test_E": {
+      "scanned_file": "D:\\ebca\\brain\\carl_active_inference.py",
+      "total_violations": 0,
+      "verdict": "100% CLEAN"
+    }
+  }
+}

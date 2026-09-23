@@ -1,0 +1,626 @@
+[
+  {
+    "run_id": "P0_C3_S42_WALL_AHEAD_250T",
+    "total_frames_decoded": 250,
+    "sampled_ticks": 10,
+    "ticks_matched": 10,
+    "checks": [
+      {
+        "spot_check_run_id": "P0_C3_S42_WALL_AHEAD_250T",
+        "tick": 29,
+        "timestamp_s": 0.9657,
+        "telemetry_position": [
+          0.1047,
+          -0.0019
+        ],
+        "telemetry_yaw": -0.0701,
+        "telemetry_action": "CURVE_RIGHT_MODERATE",
+        "telemetry_speed": 0.1596,
+        "telemetry_clearance": 0.7471,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C3_S42_WALL_AHEAD_250T",
+        "tick": 67,
+        "timestamp_s": 2.2311,
+        "telemetry_position": [
+          0.2588,
+          -0.088
+        ],
+        "telemetry_yaw": -0.9934,
+        "telemetry_action": "SLOW_CREEP_FORWARD",
+        "telemetry_speed": 0.2197,
+        "telemetry_clearance": 0.594,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C3_S42_WALL_AHEAD_250T",
+        "tick": 79,
+        "timestamp_s": 2.6307,
+        "telemetry_position": [
+          0.2936,
+          -0.1421
+        ],
+        "telemetry_yaw": -1.0379,
+        "telemetry_action": "CURVE_RIGHT_TIGHT",
+        "telemetry_speed": 0.1168,
+        "telemetry_clearance": 0.562,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C3_S42_WALL_AHEAD_250T",
+        "tick": 98,
+        "timestamp_s": 3.2634,
+        "telemetry_position": [
+          0.3187,
+          -0.221
+        ],
+        "telemetry_yaw": -1.6243,
+        "telemetry_action": "CURVE_RIGHT_MODERATE",
+        "telemetry_speed": 0.0517,
+        "telemetry_clearance": 0.5358,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C3_S42_WALL_AHEAD_250T",
+        "tick": 153,
+        "timestamp_s": 5.0949,
+        "telemetry_position": [
+          0.171,
+          -0.4937
+        ],
+        "telemetry_yaw": -2.4271,
+        "telemetry_action": "CURVE_RIGHT_MODERATE",
+        "telemetry_speed": 0.22,
+        "telemetry_clearance": 0.3566,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C3_S42_WALL_AHEAD_250T",
+        "tick": 179,
+        "timestamp_s": 5.9607,
+        "telemetry_position": [
+          0.0904,
+          -0.5579
+        ],
+        "telemetry_yaw": -2.6551,
+        "telemetry_action": "SPIN_RIGHT",
+        "telemetry_speed": 0.0039,
+        "telemetry_clearance": 0.2939,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C3_S42_WALL_AHEAD_250T",
+        "tick": 193,
+        "timestamp_s": 6.4269,
+        "telemetry_position": [
+          0.0931,
+          -0.5573
+        ],
+        "telemetry_yaw": 3.0758,
+        "telemetry_action": "SPIN_RIGHT",
+        "telemetry_speed": 0.0422,
+        "telemetry_clearance": 0.2957,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C3_S42_WALL_AHEAD_250T",
+        "tick": 199,
+        "timestamp_s": 6.6267,
+        "telemetry_position": [
+          0.0929,
+          -0.5579
+        ],
+        "telemetry_yaw": 2.7983,
+        "telemetry_action": "SPIN_RIGHT",
+        "telemetry_speed": 0.0052,
+        "telemetry_clearance": 0.2943,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C3_S42_WALL_AHEAD_250T",
+        "tick": 209,
+        "timestamp_s": 6.9597,
+        "telemetry_position": [
+          0.092,
+          -0.5564
+        ],
+        "telemetry_yaw": 2.4675,
+        "telemetry_action": "SPIN_RIGHT",
+        "telemetry_speed": 0.0422,
+        "telemetry_clearance": 0.2971,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C3_S42_WALL_AHEAD_250T",
+        "tick": 240,
+        "timestamp_s": 7.992,
+        "telemetry_position": [
+          0.094,
+          -0.535
+        ],
+        "telemetry_yaw": 1.3153,
+        "telemetry_action": "STRAIGHT_FORWARD",
+        "telemetry_speed": 0.1384,
+        "telemetry_clearance": 0.4493,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      }
+    ]
+  },
+  {
+    "run_id": "P0_C7_S42_BIFURCATION_300T",
+    "total_frames_decoded": 300,
+    "sampled_ticks": 10,
+    "ticks_matched": 10,
+    "checks": [
+      {
+        "spot_check_run_id": "P0_C7_S42_BIFURCATION_300T",
+        "tick": 2,
+        "timestamp_s": 0.0666,
+        "telemetry_position": [
+          0.0005,
+          0.0
+        ],
+        "telemetry_yaw": 0.0001,
+        "telemetry_action": "STRAIGHT_FORWARD",
+        "telemetry_speed": 0.005,
+        "telemetry_clearance": 0.8525,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C7_S42_BIFURCATION_300T",
+        "tick": 84,
+        "timestamp_s": 2.7972,
+        "telemetry_position": [
+          0.4011,
+          -0.0067
+        ],
+        "telemetry_yaw": -0.0128,
+        "telemetry_action": "STRAIGHT_FORWARD",
+        "telemetry_speed": 0.2667,
+        "telemetry_clearance": 0.845,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C7_S42_BIFURCATION_300T",
+        "tick": 124,
+        "timestamp_s": 4.1292,
+        "telemetry_position": [
+          0.6047,
+          -0.0126
+        ],
+        "telemetry_yaw": -0.0566,
+        "telemetry_action": "CURVE_RIGHT_SLIGHT",
+        "telemetry_speed": 0.2541,
+        "telemetry_clearance": 0.8376,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C7_S42_BIFURCATION_300T",
+        "tick": 128,
+        "timestamp_s": 4.2624,
+        "telemetry_position": [
+          0.6306,
+          -0.015
+        ],
+        "telemetry_yaw": -0.0927,
+        "telemetry_action": "CURVE_RIGHT_SLIGHT",
+        "telemetry_speed": 0.2209,
+        "telemetry_clearance": 0.8351,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C7_S42_BIFURCATION_300T",
+        "tick": 159,
+        "timestamp_s": 5.2947,
+        "telemetry_position": [
+          0.793,
+          -0.0531
+        ],
+        "telemetry_yaw": -0.3994,
+        "telemetry_action": "CURVE_RIGHT_MODERATE",
+        "telemetry_speed": 0.2043,
+        "telemetry_clearance": 0.7608,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C7_S42_BIFURCATION_300T",
+        "tick": 172,
+        "timestamp_s": 5.7276,
+        "telemetry_position": [
+          0.8666,
+          -0.0923
+        ],
+        "telemetry_yaw": -0.5212,
+        "telemetry_action": "CURVE_RIGHT_SLIGHT",
+        "telemetry_speed": 0.2789,
+        "telemetry_clearance": 0.6854,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C7_S42_BIFURCATION_300T",
+        "tick": 201,
+        "timestamp_s": 6.6933,
+        "telemetry_position": [
+          1.0098,
+          -0.2025
+        ],
+        "telemetry_yaw": -0.8401,
+        "telemetry_action": "CURVE_RIGHT_SLIGHT",
+        "telemetry_speed": 0.144,
+        "telemetry_clearance": 0.541,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C7_S42_BIFURCATION_300T",
+        "tick": 202,
+        "timestamp_s": 6.7266,
+        "telemetry_position": [
+          1.0142,
+          -0.2068
+        ],
+        "telemetry_yaw": -0.8408,
+        "telemetry_action": "CURVE_RIGHT_SLIGHT",
+        "telemetry_speed": 0.2567,
+        "telemetry_clearance": 0.5366,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C7_S42_BIFURCATION_300T",
+        "tick": 240,
+        "timestamp_s": 7.992,
+        "telemetry_position": [
+          1.1551,
+          -0.3835
+        ],
+        "telemetry_yaw": -1.1422,
+        "telemetry_action": "CURVE_RIGHT_MODERATE",
+        "telemetry_speed": 0.083,
+        "telemetry_clearance": 0.3955,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_C7_S42_BIFURCATION_300T",
+        "tick": 241,
+        "timestamp_s": 8.0253,
+        "telemetry_position": [
+          1.1571,
+          -0.3866
+        ],
+        "telemetry_yaw": -1.1417,
+        "telemetry_action": "CURVE_RIGHT_MODERATE",
+        "telemetry_speed": 0.1257,
+        "telemetry_clearance": 0.3934,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      }
+    ]
+  },
+  {
+    "run_id": "P0_N3_S42_BIFURCATION_1800T",
+    "total_frames_decoded": 1800,
+    "sampled_ticks": 10,
+    "ticks_matched": 10,
+    "checks": [
+      {
+        "spot_check_run_id": "P0_N3_S42_BIFURCATION_1800T",
+        "tick": 78,
+        "timestamp_s": 2.5974,
+        "telemetry_position": [
+          0.3602,
+          -0.0064
+        ],
+        "telemetry_yaw": -0.0137,
+        "telemetry_action": "STRAIGHT_FORWARD",
+        "telemetry_speed": 0.1066,
+        "telemetry_clearance": 0.8453,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_N3_S42_BIFURCATION_1800T",
+        "tick": 209,
+        "timestamp_s": 6.9597,
+        "telemetry_position": [
+          1.0492,
+          -0.2461
+        ],
+        "telemetry_yaw": -0.8483,
+        "telemetry_action": "CURVE_RIGHT_SLIGHT",
+        "telemetry_speed": 0.293,
+        "telemetry_clearance": 0.5013,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_N3_S42_BIFURCATION_1800T",
+        "tick": 232,
+        "timestamp_s": 7.7256,
+        "telemetry_position": [
+          1.1343,
+          -0.3461
+        ],
+        "telemetry_yaw": -0.9871,
+        "telemetry_action": "CURVE_RIGHT_MODERATE",
+        "telemetry_speed": 0.1827,
+        "telemetry_clearance": 0.4174,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_N3_S42_BIFURCATION_1800T",
+        "tick": 617,
+        "timestamp_s": 20.5461,
+        "telemetry_position": [
+          -0.3342,
+          0.7744
+        ],
+        "telemetry_yaw": 2.3575,
+        "telemetry_action": "STRAIGHT_FORWARD",
+        "telemetry_speed": 0.2632,
+        "telemetry_clearance": 0.5758,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_N3_S42_BIFURCATION_1800T",
+        "tick": 622,
+        "timestamp_s": 20.7126,
+        "telemetry_position": [
+          -0.358,
+          0.7979
+        ],
+        "telemetry_yaw": 2.3536,
+        "telemetry_action": "STRAIGHT_FORWARD",
+        "telemetry_speed": 0.2593,
+        "telemetry_clearance": 0.552,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_N3_S42_BIFURCATION_1800T",
+        "tick": 1013,
+        "timestamp_s": 33.7329,
+        "telemetry_position": [
+          1.1993,
+          1.7772
+        ],
+        "telemetry_yaw": 0.3623,
+        "telemetry_action": "CURVE_LEFT_MODERATE",
+        "telemetry_speed": 0.1636,
+        "telemetry_clearance": 0.3876,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_N3_S42_BIFURCATION_1800T",
+        "tick": 1118,
+        "timestamp_s": 37.2294,
+        "telemetry_position": [
+          1.2338,
+          2.1877
+        ],
+        "telemetry_yaw": 1.8619,
+        "telemetry_action": "STRAIGHT_FORWARD",
+        "telemetry_speed": 0.2922,
+        "telemetry_clearance": 1.7628,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_N3_S42_BIFURCATION_1800T",
+        "tick": 1248,
+        "timestamp_s": 41.5584,
+        "telemetry_position": [
+          0.9916,
+          2.924
+        ],
+        "telemetry_yaw": 1.8905,
+        "telemetry_action": "STRAIGHT_FORWARD",
+        "telemetry_speed": 0.2673,
+        "telemetry_clearance": 1.8764,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_N3_S42_BIFURCATION_1800T",
+        "tick": 1547,
+        "timestamp_s": 51.5151,
+        "telemetry_position": [
+          0.3465,
+          4.2979
+        ],
+        "telemetry_yaw": 2.7235,
+        "telemetry_action": "SLOW_CREEP_FORWARD",
+        "telemetry_speed": 0.134,
+        "telemetry_clearance": 0.5026,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      },
+      {
+        "spot_check_run_id": "P0_N3_S42_BIFURCATION_1800T",
+        "tick": 1770,
+        "timestamp_s": 58.941,
+        "telemetry_position": [
+          0.0346,
+          4.0536
+        ],
+        "telemetry_yaw": -1.2527,
+        "telemetry_action": "STRAIGHT_FORWARD",
+        "telemetry_speed": 0.1722,
+        "telemetry_clearance": 1.0027,
+        "video_frame_decoded": true,
+        "video_frame_resolution": [
+          720,
+          1280,
+          3
+        ],
+        "telemetry_video_match": true
+      }
+    ]
+  }
+]

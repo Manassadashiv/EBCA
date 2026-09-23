@@ -1,0 +1,65 @@
+{
+  "inventory_metadata": {
+    "robot_name": "CARL-DX Cyber-Companion",
+    "evaluation_standard": "NASA-Inspired Systems Engineering Rigor",
+    "physics_engine": "MuJoCo 3.3.0",
+    "xml_source": "world/vessel_kinetic.xml",
+    "timestamp": "2026-08-17T12:20:00Z"
+  },
+  "physical_embodiment": {
+    "total_mass_kg": 1.4676,
+    "track_width_m": 0.230,
+    "wheel_radius_m": 0.048,
+    "ground_clearance_m": 0.035,
+    "com_height_m": 0.052,
+    "actuators_count": 6,
+    "actuators": [
+      {"name": "act_w_left", "joint": "w_left", "type": "velocity", "range": [-35.0, 35.0], "max_torque_nm": 25.0, "status": "FUNCTIONALLY_EXECUTING"},
+      {"name": "act_w_right", "joint": "w_right", "type": "velocity", "range": [-35.0, 35.0], "max_torque_nm": 25.0, "status": "FUNCTIONALLY_EXECUTING"},
+      {"name": "act_hip_pitch", "joint": "hip_pitch", "type": "position", "range": [-0.55, 0.55], "max_torque_nm": 12.0, "status": "FUNCTIONALLY_EXECUTING"},
+      {"name": "act_hip_roll", "joint": "hip_roll", "type": "position", "range": [-0.38, 0.38], "max_torque_nm": 12.0, "status": "FUNCTIONALLY_EXECUTING"},
+      {"name": "act_neck", "joint": "neck_sweep", "type": "position", "range": [-0.60, 0.70], "max_torque_nm": 12.0, "status": "FUNCTIONALLY_EXECUTING"},
+      {"name": "act_head", "joint": "head_pan", "type": "position", "range": [-1.40, 1.40], "max_torque_nm": 12.0, "status": "FUNCTIONALLY_EXECUTING"}
+    ],
+    "sensors_count": 21,
+    "sensors": [
+      {"name": "sens_pos_w_left", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_pos_w_right", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_pos_hip_pitch", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_pos_hip_roll", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_pos_neck", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_pos_head", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_vel_w_left", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_vel_w_right", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_vel_hip_pitch", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_vel_hip_roll", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_vel_neck", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_vel_head", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_frc_w_left", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_frc_w_right", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_frc_hip_pitch", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_frc_hip_roll", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_frc_neck", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_frc_head", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "touch_tire_L", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "touch_tire_R", "dim": 1, "status": "CAUSALLY_VERIFIED"},
+      {"name": "sens_chassis_force", "dim": 3, "status": "CAUSALLY_VERIFIED"},
+      {"name": "eye_cam", "type": "RGB_Camera", "fov_deg": 65, "status": "FUNCTIONALLY_EXECUTING"},
+      {"name": "sonar_15_ray_fan", "type": "Ray_Proximity", "fov_deg": 240, "status": "CAUSALLY_VERIFIED"}
+    ]
+  },
+  "hard_physics_capabilities": {
+    "jump_capability": "PHYSICALLY_UNSUPPORTED",
+    "jump_reason": "No vertical prismatic linear actuators or high-impulse vertical spring mechanisms. Wheel rotary velocity actuators produce horizontal traction only. Maximum torso inertial pulse (<0.80 N) cannot overcome total robot weight (14.4 N).",
+    "controlled_drift_capability": "PHYSICALLY_FEASIBLE",
+    "active_sensing_capability": "FUNCTIONALLY_EXECUTING",
+    "stuck_recovery_capability": "BEHAVIORALLY_DEMONSTRATED"
+  },
+  "cognitive_subsystems": {
+    "homeostatic_core": {"status": "FUNCTIONALLY_EXECUTING", "vars": ["energy", "thermal_load", "motor_fatigue", "safety_margin", "curiosity_drive", "uncertainty"]},
+    "generative_self_model": {"status": "FUNCTIONALLY_EXECUTING", "model": "Active Inference Forward Predictive Model + 20-step Dreamer Rollouts"},
+    "episodic_memory": {"status": "FUNCTIONALLY_EXECUTING", "model": "2048-dim HDC Associative Memory"},
+    "endogenous_agency": {"status": "BEHAVIORALLY_DEMONSTRATED", "features": ["Directional Hysteresis", "Dead-End Spin Veto", "Steering Persistence"]},
+    "stuck_recovery_manager": {"status": "BEHAVIORALLY_DEMONSTRATED", "features": ["Rolling Displacement Window", "3-Tier Escalating Recovery"]}
+  }
+}

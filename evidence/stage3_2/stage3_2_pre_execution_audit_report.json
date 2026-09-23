@@ -1,0 +1,120 @@
+{
+  "all_passed": true,
+  "audits": [
+    {
+      "name": "Audit 1 (AST Anti-Cheat)",
+      "passed": true,
+      "violations": []
+    },
+    {
+      "name": "Audit 2 (State-Cloning Fidelity)",
+      "passed": true,
+      "d_sens": 0.0,
+      "d_body": 0.0,
+      "d_pose": 0.0
+    },
+    {
+      "name": "Audit 3 (Arm Equivalence)",
+      "passed": true,
+      "cand_match": true,
+      "max_cand_diff": 0.0
+    },
+    {
+      "name": "Audit 4 (Observational Equivalence)",
+      "passed": true,
+      "total_trials": 100,
+      "failed_trials": 0
+    },
+    {
+      "name": "Audit 5 (Seed Determinism)",
+      "passed": true,
+      "seed_records": [
+        {
+          "seed": 3001,
+          "run1_hash": "88462d56269f20200b44f6e591d7605cf8f804a6066d2e9925f79912cfd36afb",
+          "run2_hash": "88462d56269f20200b44f6e591d7605cf8f804a6066d2e9925f79912cfd36afb",
+          "max_abs_diff": 0.0,
+          "passed": true
+        },
+        {
+          "seed": 3002,
+          "run1_hash": "6fc237abafa52b164400334879c7924e78e07fb98819b4eb57850aa310d54532",
+          "run2_hash": "6fc237abafa52b164400334879c7924e78e07fb98819b4eb57850aa310d54532",
+          "max_abs_diff": 0.0,
+          "passed": true
+        },
+        {
+          "seed": 3003,
+          "run1_hash": "72b79a8b82d902a33395c07f70f7a3e6493b0cd7062cd19f7652d7873adcda7b",
+          "run2_hash": "72b79a8b82d902a33395c07f70f7a3e6493b0cd7062cd19f7652d7873adcda7b",
+          "max_abs_diff": 0.0,
+          "passed": true
+        },
+        {
+          "seed": 3004,
+          "run1_hash": "5683ddfd27d9d8d1256065fe6a4e7a0e0f00c3fd7d17ed9b26daf402853e15ab",
+          "run2_hash": "5683ddfd27d9d8d1256065fe6a4e7a0e0f00c3fd7d17ed9b26daf402853e15ab",
+          "max_abs_diff": 0.0,
+          "passed": true
+        },
+        {
+          "seed": 3005,
+          "run1_hash": "29a5bd44d118a4fa9e688dd2783122d3190e087ff3e6016286a460594b491b77",
+          "run2_hash": "29a5bd44d118a4fa9e688dd2783122d3190e087ff3e6016286a460594b491b77",
+          "max_abs_diff": 0.0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "Audit 6 (Simulator Coordinate Isolation)",
+      "passed": true,
+      "params": [
+        "curr_sensors",
+        "curr_v",
+        "curr_w",
+        "forced_pose",
+        "cann_state"
+      ]
+    },
+    {
+      "name": "Audit 7 (Actuation Interface)",
+      "passed": true,
+      "shape": [
+        6
+      ],
+      "bounds_ok": true
+    },
+    {
+      "name": "Audit 8 (Optimal Action Firewall)",
+      "passed": true,
+      "violations": []
+    },
+    {
+      "name": "Audit 9 (Amnesic Arm Invariant)",
+      "passed": true,
+      "grid_is_zero": true
+    },
+    {
+      "name": "Audit 10 (Cryptographic Manifest)",
+      "passed": true,
+      "manifest": {
+        "CARL_STAGE3_2_FINAL_PREREGISTERED_PROTOCOL.md": "2a52e04ffb94f2f8e2f80efbc870d2ce0dad75503327e7148fdfd5d5ceb8e37e",
+        "carl_stage2_3_r1_deliberation.py": "651682c3e0950a0bfa03b7841c313e4bd6028a3b29eb5a7af3d4015b35579019",
+        "carl_stage2_2_r2_occupancy_memory.py": "d68d1b6804ac09a2367f54f0a93bbc0aa6a7e5c3b78c545454a0f1c75f6bf904",
+        "carl_stage2_2_r2_body_model.py": "495cf2423c8fcc919d25bc793acc930f479a613df6406f6a86ccb104102e8c95",
+        "carl_stage2_integrated_brain.py": "7ca0d38794de86088eb6b0a678b4b119b934b181573911d4bca8d970c5e1f78c",
+        "carl_stage1_hal.py": "3a37fd1569980880310f96b21b006ada74cfdf20f1e13a84ff9671c3fdf8f89f",
+        "stage3_2_task_fixtures.py": "ab8fb823f3365eb22d18b42fd88e35cc5b5ad34169df3ba37ea15882626fb0c3",
+        "test_stage3_2_observational_equivalence.py": "2609de81b426d48abb632e9171eed0506fd5f700193e13819ca20e2a7d623d79",
+        "validate_family2_irrecoverability.py": "53842db86abd41b3850703aba4a57434455c1b7dcbdcd3a236b989f9ac842b17",
+        "test_stage3_2_integrity_audit.py": "a9aee6bb36b34d49ec7e490f4552e68ed412100bf8962142f046421a1fb0ee79",
+        "clean_arena.xml": "547a084f9d50b729ed449c4959ce9f834716a34f000760b67b0ff58cf668e425",
+        "vessel_kinetic.xml": "95280be72383dd0f7d9790129ed43e5a83f0ded003a5bfc0643828f2e8f8075d"
+      }
+    }
+  ],
+  "total_audits": 10,
+  "passed_count": 10,
+  "failed_count": 0
+}

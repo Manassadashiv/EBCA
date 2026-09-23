@@ -1,0 +1,17 @@
+Non-Times New Roman runs: 0
+Double bullet occurrences: 0
+Suspicious number occurrences: 9
+  Slide 23: Text: Figure 2(a): 10,000 Tick Dynamical Stability Phase layout
+  Slide 25: Text: Friction Gradient Sweep (μ ∈ [005, 10])
+  Slide 28: Text: • Seed 101: Mean homing error = 0.065 m (Target < 022 m) [PASS]
+  Slide 28: Text: • Seed 202: Mean homing error = 0.071 m (Target < 022 m) [PASS]
+  Slide 28: Text: • Seed 303: Mean homing error = 0.062 m (Target < 022 m) [PASS]
+  Slide 28: Text: • Seed 404: Mean homing error = 0.059 m (Target < 022 m) [PASS]
+  Slide 28: Text: • Seed 505: Mean homing error = 0.057 m (Target < 022 m) [PASS]
+  Slide 28: Text: Stage 21 Spatial Architecture & Multi Seed Scorecard
+  Slide 39: Table cell: Δ ≥ 40% (Env 2), p < 0.001
+
+Slides with > 1 table: []
+Slides with > 2 images: []
+
+Slides with text < 18 pt: 37 slides -> [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 20, 21, 23, 24, 25, 27, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 41, 43, 44, 45]

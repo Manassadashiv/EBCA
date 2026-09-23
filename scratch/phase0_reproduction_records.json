@@ -1,0 +1,383 @@
+{
+  "mean_drift_m": 0.183,
+  "passes": "5/8",
+  "matches_previous_report": true,
+  "records": [
+    {
+      "seed": 42,
+      "partition": "DEV",
+      "initial_physical_pose": {
+        "x": -0.0,
+        "y": 0.0,
+        "yaw_deg": 0.0
+      },
+      "initial_neural_sum": {
+        "hd_r": 4.9503,
+        "mod1_r": 19.9935,
+        "mod2_r": 19.9935
+      },
+      "total_trajectory_length_m": 2.599,
+      "max_physical_disp_m": 1.213,
+      "max_decoded_disp_m": 1.393,
+      "mod1_wraps": {
+        "x": 1,
+        "y": 0
+      },
+      "mod2_wraps": {
+        "x": 1,
+        "y": 0
+      },
+      "mean_heading_error_deg": 2.62,
+      "max_heading_error_deg": 6.47,
+      "wander_end_pos_err_m": 0.183,
+      "final_pos_error_m": 0.072,
+      "final_physical_pos": {
+        "x": -0.0041,
+        "y": 0.0568
+      },
+      "final_internal_pos": {
+        "x": 0.0371,
+        "y": -0.0026
+      },
+      "final_homing_cmd": [
+        0.0,
+        0.0
+      ],
+      "final_distance_to_birthplace_m": 0.057,
+      "homing_ticks": 439,
+      "stopped_cleanly": true,
+      "failure_phase": "NONE (PASSED)",
+      "pass_gate": true,
+      "runtime_s": 3.6
+    },
+    {
+      "seed": 101,
+      "partition": "DEV",
+      "initial_physical_pose": {
+        "x": -0.0,
+        "y": 0.0,
+        "yaw_deg": 0.0
+      },
+      "initial_neural_sum": {
+        "hd_r": 4.9503,
+        "mod1_r": 19.9935,
+        "mod2_r": 19.9935
+      },
+      "total_trajectory_length_m": 2.728,
+      "max_physical_disp_m": 1.207,
+      "max_decoded_disp_m": 1.349,
+      "mod1_wraps": {
+        "x": 1,
+        "y": 0
+      },
+      "mod2_wraps": {
+        "x": 1,
+        "y": 1
+      },
+      "mean_heading_error_deg": 3.78,
+      "max_heading_error_deg": 8.61,
+      "wander_end_pos_err_m": 0.147,
+      "final_pos_error_m": 0.278,
+      "final_physical_pos": {
+        "x": -0.1021,
+        "y": -0.2368
+      },
+      "final_internal_pos": {
+        "x": 0.0391,
+        "y": 0.0028
+      },
+      "final_homing_cmd": [
+        0.0,
+        0.0
+      ],
+      "final_distance_to_birthplace_m": 0.258,
+      "homing_ticks": 458,
+      "stopped_cleanly": true,
+      "failure_phase": "REPRESENTATION ALIASING / RESIDUAL DRIFT",
+      "pass_gate": false,
+      "runtime_s": 3.4
+    },
+    {
+      "seed": 202,
+      "partition": "DEV",
+      "initial_physical_pose": {
+        "x": -0.0,
+        "y": 0.0,
+        "yaw_deg": 0.0
+      },
+      "initial_neural_sum": {
+        "hd_r": 4.9503,
+        "mod1_r": 19.9935,
+        "mod2_r": 19.9935
+      },
+      "total_trajectory_length_m": 2.71,
+      "max_physical_disp_m": 1.23,
+      "max_decoded_disp_m": 1.335,
+      "mod1_wraps": {
+        "x": 1,
+        "y": 1
+      },
+      "mod2_wraps": {
+        "x": 1,
+        "y": 1
+      },
+      "mean_heading_error_deg": 5.97,
+      "max_heading_error_deg": 13.17,
+      "wander_end_pos_err_m": 0.107,
+      "final_pos_error_m": 0.337,
+      "final_physical_pos": {
+        "x": -0.0638,
+        "y": 0.3256
+      },
+      "final_internal_pos": {
+        "x": 0.0364,
+        "y": 0.0034
+      },
+      "final_homing_cmd": [
+        0.0,
+        0.0
+      ],
+      "final_distance_to_birthplace_m": 0.332,
+      "homing_ticks": 465,
+      "stopped_cleanly": true,
+      "failure_phase": "REPRESENTATION ALIASING / RESIDUAL DRIFT",
+      "pass_gate": false,
+      "runtime_s": 3.0
+    },
+    {
+      "seed": 303,
+      "partition": "UNSEEN",
+      "initial_physical_pose": {
+        "x": -0.0,
+        "y": 0.0,
+        "yaw_deg": 0.0
+      },
+      "initial_neural_sum": {
+        "hd_r": 4.9503,
+        "mod1_r": 19.9935,
+        "mod2_r": 19.9935
+      },
+      "total_trajectory_length_m": 2.779,
+      "max_physical_disp_m": 1.204,
+      "max_decoded_disp_m": 1.364,
+      "mod1_wraps": {
+        "x": 1,
+        "y": 0
+      },
+      "mod2_wraps": {
+        "x": 1,
+        "y": 0
+      },
+      "mean_heading_error_deg": 8.71,
+      "max_heading_error_deg": 15.8,
+      "wander_end_pos_err_m": 0.172,
+      "final_pos_error_m": 0.337,
+      "final_physical_pos": {
+        "x": -0.2256,
+        "y": -0.2262
+      },
+      "final_internal_pos": {
+        "x": 0.0358,
+        "y": -0.0139
+      },
+      "final_homing_cmd": [
+        0.0,
+        0.0
+      ],
+      "final_distance_to_birthplace_m": 0.32,
+      "homing_ticks": 490,
+      "stopped_cleanly": true,
+      "failure_phase": "REPRESENTATION ALIASING / RESIDUAL DRIFT",
+      "pass_gate": false,
+      "runtime_s": 3.2
+    },
+    {
+      "seed": 404,
+      "partition": "UNSEEN",
+      "initial_physical_pose": {
+        "x": -0.0,
+        "y": 0.0,
+        "yaw_deg": 0.0
+      },
+      "initial_neural_sum": {
+        "hd_r": 4.9503,
+        "mod1_r": 19.9935,
+        "mod2_r": 19.9935
+      },
+      "total_trajectory_length_m": 2.625,
+      "max_physical_disp_m": 1.213,
+      "max_decoded_disp_m": 1.376,
+      "mod1_wraps": {
+        "x": 1,
+        "y": 0
+      },
+      "mod2_wraps": {
+        "x": 1,
+        "y": 1
+      },
+      "mean_heading_error_deg": 3.92,
+      "max_heading_error_deg": 9.51,
+      "wander_end_pos_err_m": 0.168,
+      "final_pos_error_m": 0.15,
+      "final_physical_pos": {
+        "x": -0.0113,
+        "y": 0.1437
+      },
+      "final_internal_pos": {
+        "x": 0.0389,
+        "y": 0.0019
+      },
+      "final_homing_cmd": [
+        0.0,
+        0.0
+      ],
+      "final_distance_to_birthplace_m": 0.144,
+      "homing_ticks": 445,
+      "stopped_cleanly": true,
+      "failure_phase": "NONE (PASSED)",
+      "pass_gate": true,
+      "runtime_s": 3.6
+    },
+    {
+      "seed": 505,
+      "partition": "UNSEEN",
+      "initial_physical_pose": {
+        "x": -0.0,
+        "y": 0.0,
+        "yaw_deg": 0.0
+      },
+      "initial_neural_sum": {
+        "hd_r": 4.9503,
+        "mod1_r": 19.9935,
+        "mod2_r": 19.9935
+      },
+      "total_trajectory_length_m": 2.755,
+      "max_physical_disp_m": 1.248,
+      "max_decoded_disp_m": 1.401,
+      "mod1_wraps": {
+        "x": 1,
+        "y": 1
+      },
+      "mod2_wraps": {
+        "x": 1,
+        "y": 0
+      },
+      "mean_heading_error_deg": 1.39,
+      "max_heading_error_deg": 4.03,
+      "wander_end_pos_err_m": 0.155,
+      "final_pos_error_m": 0.122,
+      "final_physical_pos": {
+        "x": -0.0856,
+        "y": 0.0066
+      },
+      "final_internal_pos": {
+        "x": 0.0366,
+        "y": 0.0064
+      },
+      "final_homing_cmd": [
+        0.0,
+        0.0
+      ],
+      "final_distance_to_birthplace_m": 0.086,
+      "homing_ticks": 458,
+      "stopped_cleanly": true,
+      "failure_phase": "NONE (PASSED)",
+      "pass_gate": true,
+      "runtime_s": 3.0
+    },
+    {
+      "seed": 606,
+      "partition": "UNSEEN",
+      "initial_physical_pose": {
+        "x": -0.0,
+        "y": 0.0,
+        "yaw_deg": 0.0
+      },
+      "initial_neural_sum": {
+        "hd_r": 4.9503,
+        "mod1_r": 19.9935,
+        "mod2_r": 19.9935
+      },
+      "total_trajectory_length_m": 2.639,
+      "max_physical_disp_m": 1.205,
+      "max_decoded_disp_m": 1.393,
+      "mod1_wraps": {
+        "x": 1,
+        "y": 0
+      },
+      "mod2_wraps": {
+        "x": 1,
+        "y": 0
+      },
+      "mean_heading_error_deg": 1.88,
+      "max_heading_error_deg": 4.72,
+      "wander_end_pos_err_m": 0.192,
+      "final_pos_error_m": 0.117,
+      "final_physical_pos": {
+        "x": -0.0711,
+        "y": -0.0426
+      },
+      "final_internal_pos": {
+        "x": 0.0389,
+        "y": -0.0042
+      },
+      "final_homing_cmd": [
+        0.0,
+        0.0
+      ],
+      "final_distance_to_birthplace_m": 0.083,
+      "homing_ticks": 451,
+      "stopped_cleanly": true,
+      "failure_phase": "NONE (PASSED)",
+      "pass_gate": true,
+      "runtime_s": 3.1
+    },
+    {
+      "seed": 707,
+      "partition": "UNSEEN",
+      "initial_physical_pose": {
+        "x": -0.0,
+        "y": 0.0,
+        "yaw_deg": 0.0
+      },
+      "initial_neural_sum": {
+        "hd_r": 4.9503,
+        "mod1_r": 19.9935,
+        "mod2_r": 19.9935
+      },
+      "total_trajectory_length_m": 2.652,
+      "max_physical_disp_m": 1.218,
+      "max_decoded_disp_m": 1.333,
+      "mod1_wraps": {
+        "x": 1,
+        "y": 1
+      },
+      "mod2_wraps": {
+        "x": 1,
+        "y": 0
+      },
+      "mean_heading_error_deg": 5.77,
+      "max_heading_error_deg": 14.17,
+      "wander_end_pos_err_m": 0.119,
+      "final_pos_error_m": 0.188,
+      "final_physical_pos": {
+        "x": -0.013,
+        "y": 0.1801
+      },
+      "final_internal_pos": {
+        "x": 0.0356,
+        "y": -0.0016
+      },
+      "final_homing_cmd": [
+        0.0,
+        0.0
+      ],
+      "final_distance_to_birthplace_m": 0.181,
+      "homing_ticks": 447,
+      "stopped_cleanly": true,
+      "failure_phase": "NONE (PASSED)",
+      "pass_gate": true,
+      "runtime_s": 3.0
+    }
+  ]
+}

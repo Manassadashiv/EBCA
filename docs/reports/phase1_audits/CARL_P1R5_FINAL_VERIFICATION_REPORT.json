@@ -1,0 +1,44 @@
+{
+  "report_id": "CARL-P1R5-FINAL-VERIFICATION-REPORT-2026",
+  "timestamp": "2026-08-26T00:45:00Z",
+  "phase": "PHASE 1-R5: BOUNDED CAUSAL STDP VALIDATION & EXIT GATE",
+  "final_decision": "PARTIAL PASS — SYNAPTIC PLASTICITY VERIFIED, BEHAVIOURAL CAUSALITY NOT DEMONSTRATED",
+  "total_runs_evaluated": 96,
+  "conditions": ["STDP_ACTIVE", "NO_STDP", "SHUFFLED_STDP", "STDP_ABLATION"],
+  "seeds": [42, 101, 2024],
+  "episodes_per_condition": 8,
+  "geometric_route_distribution": {
+    "NORTH_CORRIDOR": {"count": 0, "rate": 0.0},
+    "SOUTH_CORRIDOR": {"count": 0, "rate": 0.0},
+    "CENTER_UNCOMMITTED": {"count": 96, "rate": 1.0}
+  },
+  "condition_breakdown": {
+    "STDP_ACTIVE": {"episodes": 24, "final_w_norm_mean": 0.0010, "ltd_mean": 224, "north_rate": 0.0, "south_rate": 0.0, "center_rate": 1.0},
+    "NO_STDP": {"episodes": 24, "final_w_norm_mean": 0.0000, "ltd_mean": 0, "north_rate": 0.0, "south_rate": 0.0, "center_rate": 1.0},
+    "SHUFFLED_STDP": {"episodes": 24, "final_w_norm_mean": 0.0015, "ltd_mean": 822, "north_rate": 0.0, "south_rate": 0.0, "center_rate": 1.0},
+    "STDP_ABLATION": {"episodes": 24, "final_w_norm_mean": 0.0001, "ltd_mean": 224, "north_rate": 0.0, "south_rate": 0.0, "center_rate": 1.0}
+  },
+  "causal_criteria_eval": {
+    "C1_INITIAL_BASELINE": "PASS",
+    "C2_GEOMETRIC_VALIDITY": "PASS",
+    "C3_HAZARD_EVENT": "PASS",
+    "C4_LEARNING_ATTRIBUTION": "PASS",
+    "C5_TEMPORAL_PRECEDENCE": "PASS",
+    "C6_PHYSICAL_POLICY_EFFECT": "FAIL",
+    "C7_COUNTERFACTUAL_CONTROL": "FAIL",
+    "C8_TEMPORAL_STRUCTURE_CONTROL": "FAIL",
+    "C9_ABLATION": "FAIL",
+    "C10_REPLICATION": "PASS"
+  },
+  "proven_facts": [
+    "Three-Factor STDP is functionally active and changes synaptic matrix W during embodied interaction.",
+    "Physical collisions and kinematic stalls trigger LTD synaptic updates.",
+    "Geometric corridor classification correctly identifies that all conditions follow the centerline path.",
+    "No pre-existing weight bias exists at t=0 (W = 0)."
+  ],
+  "unproven_claims": [
+    "STDP alone without HDC episodic memory does not produce sufficient EFE bias to cause an adaptive physical detour.",
+    "The previously reported 100% vs 0% detour switch was an artifact of a broken centerline sign test (py > 0.00) and reporting error."
+  ],
+  "milestone_status": "FROZEN"
+}

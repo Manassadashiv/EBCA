@@ -1,0 +1,79 @@
+{
+  "TEST_1_FRESH_PROCESS_START": {
+    "description": "Cold instance initialization",
+    "post_reset_speed": 0.0,
+    "stale_steering_bias": 0.0,
+    "is_clean_initial_state": true,
+    "status": "PASS"
+  },
+  "TEST_2_ENVIRONMENT_RESET": {
+    "description": "Full MuJoCo environment reload",
+    "post_reset_speed": 0.0,
+    "stale_steering_bias": 0.0,
+    "is_clean_initial_state": true,
+    "status": "PASS"
+  },
+  "TEST_3_MUJOCO_STATE_RESET": {
+    "description": "Direct mjData qpos/qvel zeroing",
+    "post_reset_speed": 0.0,
+    "stale_steering_bias": 0.0,
+    "is_clean_initial_state": true,
+    "status": "PASS"
+  },
+  "TEST_4_PHYSICS_STATE_RESET": {
+    "description": "Physics dynamic integration reset",
+    "post_reset_speed": 0.0,
+    "stale_steering_bias": 0.0,
+    "is_clean_initial_state": true,
+    "status": "PASS"
+  },
+  "TEST_5_CONTROLLER_RESET": {
+    "description": "Actuator command and integrator reset",
+    "post_reset_speed": 0.0,
+    "stale_steering_bias": 0.0,
+    "is_clean_initial_state": true,
+    "status": "PASS"
+  },
+  "TEST_6_INTERNAL_STATE_RESET": {
+    "description": "Homeostatic and endocrine equilibrium reset",
+    "post_reset_speed": 0.0,
+    "stale_steering_bias": 0.0,
+    "is_clean_initial_state": true,
+    "status": "PASS"
+  },
+  "TEST_7_MEMORY_RESET": {
+    "description": "Episodic memory HDC buffer purge",
+    "post_reset_speed": 0.0,
+    "stale_steering_bias": 0.0,
+    "is_clean_initial_state": true,
+    "status": "PASS"
+  },
+  "TEST_8_SOFT_RESET": {
+    "description": "Operational soft reset without cache loss",
+    "post_reset_speed": 0.0,
+    "stale_steering_bias": 0.0,
+    "is_clean_initial_state": true,
+    "status": "PASS"
+  },
+  "TEST_9_REPEATED_RESET_10X": {
+    "description": "10 consecutive rapid soft resets",
+    "post_reset_speed": 0.0,
+    "stale_steering_bias": 0.0,
+    "is_clean_initial_state": true,
+    "status": "PASS"
+  },
+  "TEST_10_SAME_STATE_DIFF_SEEDS": {
+    "description": "Identical initial state with 5 seeds (42..46)",
+    "post_reset_speed": 0.0,
+    "stale_steering_bias": 0.0,
+    "is_clean_initial_state": true,
+    "status": "PASS"
+  },
+  "TEST_11_DIFF_STATE_SAME_SEED": {
+    "description": "5 perturbed initial states with fixed seed 42",
+    "post_reset_speed": 0.0,
+    "stale_steering_bias": 0.0,
+    "is_clean_initial_state": true,
+    "status": "PASS"
+  }
+}

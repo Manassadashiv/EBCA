@@ -1,0 +1,75 @@
+{
+  "overall_verdict": "REJECTED",
+  "claims": [
+    {
+      "claim": "Body kinematics R2 >= 0.75/0.85",
+      "code": "test_stage2_2_grounded_runner.py:178-242",
+      "artifact": "grounded_benchmark_scorecard.json",
+      "raw_result": "Gyro: 0.8466, Proprio: 0.9613",
+      "verdict": "VERIFIED"
+    },
+    {
+      "claim": "Autonomous map construction",
+      "code": "carl_stage2_2_autonomous_mapper.py",
+      "artifact": "grounded_occupancy_grid.pt",
+      "raw_result": "1899 ticks, subjective poses, scripted waypoints",
+      "verdict": "CONDITIONALLY_VERIFIED"
+    },
+    {
+      "claim": "Mental rollout air-gap",
+      "code": "carl_stage2_2_grounded_air_gap_sim.py",
+      "artifact": "grounded_air_gapped_mental_rollouts.npz",
+      "raw_result": "sys.modules check passes, start pose privileged",
+      "verdict": "CONDITIONALLY_VERIFIED"
+    },
+    {
+      "claim": "Action causality (Gate 3)",
+      "code": "test_stage2_2_grounded_runner.py:276-329",
+      "artifact": "grounded_benchmark_scorecard.json",
+      "raw_result": "Surge: +87.4%, Coasting R2: 0.191",
+      "verdict": "REJECTED"
+    },
+    {
+      "claim": "Memory causality (Gate 4)",
+      "code": "test_stage2_2_grounded_runner.py:334-351",
+      "artifact": "grounded_benchmark_scorecard.json",
+      "raw_result": "Erased +162.7%, Scrambled +59.7%",
+      "verdict": "VERIFIED"
+    },
+    {
+      "claim": "Counterfactual branching (Gate 6)",
+      "code": "test_stage2_2_grounded_runner.py:98-173",
+      "artifact": "grounded_benchmark_scorecard.json",
+      "raw_result": "5/20 branches pass",
+      "verdict": "REJECTED"
+    },
+    {
+      "claim": "Collision prediction (Gate 7)",
+      "code": "test_stage2_2_grounded_runner.py:394-413",
+      "artifact": "grounded_benchmark_scorecard.json",
+      "raw_result": "ROC-AUC: 0.9950",
+      "verdict": "VERIFIED"
+    },
+    {
+      "claim": "Dynamic sonar prediction (Gate 2)",
+      "code": "test_stage2_2_grounded_runner.py:247-271",
+      "artifact": "grounded_benchmark_scorecard.json",
+      "raw_result": "Dynamic R2: 0.151, All R2: 0.350",
+      "verdict": "REJECTED"
+    },
+    {
+      "claim": "Sensor perturbation robustness",
+      "code": "test_stage2_2_robustness_battery.py",
+      "artifact": "grounded_robustness_scorecard.json",
+      "raw_result": "2/5 conditions fail",
+      "verdict": "REJECTED"
+    },
+    {
+      "claim": "Tripartite swap (Gate 5)",
+      "code": "test_stage2_2_grounded_runner.py:356-389",
+      "artifact": "grounded_benchmark_scorecard.json",
+      "raw_result": "100%/p=8.88e-16 (FABRICATED)",
+      "verdict": "REJECTED"
+    }
+  ]
+}

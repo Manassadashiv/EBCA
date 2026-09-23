@@ -1,0 +1,308 @@
+[
+  {
+    "slide_index": 1,
+    "text_elements": [
+      [
+        "Design and Development of a Digital Twin Framework for Biologically Inspired Cognitive Robotic Systems"
+      ],
+      [
+        "Department Of Mechanical Engineering",
+        "JNTUH University College Of Engineering Science And Technology Hyderabad",
+        "Kukatpally, Hyderabad - 500085, Telangana, India"
+      ],
+      [
+        "A Minor Project On"
+      ],
+      [
+        "Presented By",
+        "Manas Sadashiv (22011P0310)"
+      ],
+      [
+        "V B. Tech I Semester B. Tech+ M. Tech (IDP - AMS)"
+      ]
+    ],
+    "tables": []
+  },
+  {
+    "slide_index": 2,
+    "text_elements": [
+      [
+        "INTRODUCTION"
+      ],
+      [
+        "Autonomous robotics demands real-time adaptive behaviour under noisy, dynamic physical environments — a challenge that rigid hand-coded controllers fail to meet.",
+        "Biological organisms solve this through tightly-coupled neural, chemical, and bodily feedback loops operating across multiple temporal and spatial scales.",
+        "Cognitive Autonomous Recurrent Lifeform (CARL) is proposed as a biologically-inspired digital organism, to be simulated within the MuJoCo physics engine, designed to replicate these multi-scale biological control principles.",
+        "CARL will integrate a Liquid State Machine (LSM) reservoir brain, 4-factor endocrine neuromodulation (Dopamine, Serotonin, Norepinephrine, Acetylcholine), Spike-Timing-Dependent Plasticity (STDP), hippocampal grid/place cell spatial navigation, and a Free-Energy active inference engine.",
+        "Traditional autonomous systems treat perception, navigation, memory, and motor control as isolated software modules — leading to brittle integration and failure under environmental perturbation.",
+        "Biological brains maintain robustness through continuous prediction-error minimisation (Free-Energy Principle), neuromodulatory gain control, and activity-dependent synaptic reorganisation.",
+        "This study proposes to design and simulate a Cognitive Autonomous Recurrent Lifeform (CARL) using Embodied Biological Cognitive Architecture to achieve adaptive, brain-like autonomous robotic behaviour."
+      ]
+    ],
+    "tables": []
+  },
+  {
+    "slide_index": 3,
+    "text_elements": [
+      [
+        "OBJECTIVES"
+      ],
+      [
+        "To design and simulate CARL as an integrated cognitive-robotic architecture within the MuJoCo physics engine, replicating multi-scale biological control principles.",
+        "To integrate a Liquid State Machine (LSM) reservoir brain with 4-factor endocrine neuromodulation (Dopamine, Serotonin, Norepinephrine, Acetylcholine) for adaptive gain control.",
+        "To implement Spike-Timing-Dependent Plasticity (STDP) for activity-dependent synaptic reorganisation and continual learning.",
+        "To develop hippocampal grid/place cell-based spatial navigation for embodied wayfinding.",
+        "To incorporate a Free-Energy active inference engine for continuous prediction-error minimisation and action selection.",
+        "To validate the architecture through digital twin experiments measuring adaptive behaviour emergence, energy homeostasis, and spatial navigation accuracy within a real-time (30 Hz) control loop."
+      ]
+    ],
+    "tables": []
+  },
+  {
+    "slide_index": 4,
+    "text_elements": [
+      [
+        "LITERATURE REVIEW"
+      ]
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Findings",
+          "Limitations"
+        ],
+        [
+          "1. Zang et al. (2024)",
+          "Model Predictive Control and Reinforcement Learning Integration for Unstable Robots",
+          "Hybrid architecture combining a learned continuous controller with receding-horizon MPC safety rollouts, tested on unstable robotic platforms.",
+          "Coupling reactive neural control with short-horizon MPC rollouts improves recovery and stability where either method alone fails.",
+          "Computational cost increases with horizon length, and performance depends on the accuracy of the internal rollout model."
+        ],
+        [
+          "2. D. Hafner, J. Pasukonis, J. Ba, and T. Lillicrap (2023)",
+          "Mastering Diverse Domains Through World Models (DreamerV3)",
+          "Learning a latent world model from experience and training a policy purely through imagined rollouts within that model.",
+          "Latent imagination enables sample-efficient learning across diverse domains without task-specific tuning.",
+          "Performance depends on world-model accuracy; errors in the learned model can compound over longer imagined rollouts."
+        ],
+        [
+          "3. Rahimi et al. (2023)",
+          "Hyperdimensional Computing for Efficient Embodied Learning and Memory",
+          "Algebraic analysis and robotic benchmarking of high-dimensional (40,000-D) bipolar vector representations for state and memory encoding.",
+          "Near-orthogonal high-dimensional vectors give constant-time binding, bundling, and associative memory retrieval robust to noise.",
+          "Validated mainly in controlled benchmarks; robustness under highly variable real-world sensor noise is less established."
+        ],
+        [
+          "4. P. Mazzaglia, T. Verbelen, O. Çatal, and B. Dhoedt (2022)",
+          "Free-Energy Minimization and Active Inference in Embodied Agents",
+          "Formal derivation of an expected-free-energy objective for embodied agents, evaluated in simulated robotic control tasks.",
+          "Minimizing expected free energy unifies goal-seeking, risk avoidance, and exploration into a single action-selection objective.",
+          "Requires several simplifying assumptions to remain computationally tractable in real time."
+        ]
+      ]
+    ]
+  },
+  {
+    "slide_index": 5,
+    "text_elements": [
+      [
+        "LITERATURE REVIEW (CONTINUED)"
+      ]
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Findings",
+          "Limitations"
+        ],
+        [
+          "5. C. D. Schuman, S. R. Kulkarni, M. Parsa, J. P. Mitchell, P. Date, and B. Kay (2022)",
+          "Opportunities for Neuromorphic Computing and Spiking Neural Networks",
+          "Review and synthesis of spiking neural network architectures and eligibility-trace learning rules for edge robotics.",
+          "Event-based spiking execution with eligibility traces enables energy-efficient, online synaptic learning without backpropagation.",
+          "Hardware and software tooling for neuromorphic systems remain immature compared to conventional deep learning frameworks."
+        ],
+        [
+          "6. F. Zenke and T. P. Vogels (2021)",
+          "Visualizing and Understanding Plasticity Rules in Spiking Neural Networks",
+          "Surrogate-gradient training of spiking neural networks combined with analysis of homeostatic synaptic scaling mechanisms.",
+          "Homeostatic downscaling of synaptic weights prevents runaway excitation and consolidates memory while restoring signal-to-noise ratio.",
+          "Demonstrated mainly on small benchmark networks; general scaling to large, embodied systems is not established."
+        ],
+        [
+          "7. V. Makoviychuk, L. Wawrzyniak, Y. Guo, M. Lu, K. Storey, M. Macklin, D. Hoeller, N. Rudin, A. Allshire, A. Handa, and G. State (2021)",
+          "GPU-Accelerated Rigid Body Physics Simulation for Robot Learning",
+          "Engineering development and benchmarking of a GPU-parallelized, convex-contact rigid-body physics engine for robot learning.",
+          "High-throughput, contact-rich simulation supports fast domain randomization and real-time model-based control.",
+          "A simulation-to-reality gap remains, since contact and friction models are still approximations of true physical behaviour."
+        ]
+      ]
+    ]
+  },
+  {
+    "slide_index": 6,
+    "text_elements": [
+      [
+        "LITERATURE REVIEW (CONTINUED)"
+      ]
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Findings",
+          "Limitations"
+        ],
+        [
+          "8. R. Hasani, M. Lechner, A. Amini, D. Rus, and R. Grosu (2021)",
+          "Liquid Time-Constant Networks",
+          "Continuous-time neural ODE formulation with input-dependent, learnable time constants, benchmarked on time-series and control tasks.",
+          "Adaptive per-neuron time constants match processing speed to input dynamics, giving expressive control with far fewer parameters than LSTMs.",
+          "Higher computational cost per simulation step than discrete RNNs; behaviour at much larger network scale remains untested."
+        ],
+        [
+          "9. P. Sterling (2020)",
+          "Allostasis and Predictive Energy Allocation in Neural Systems",
+          "Theoretical synthesis of physiological and neuroscientific evidence into a predictive model of biological drive regulation.",
+          "Anticipatory, predictive regulation of internal drives allocates resources more efficiently than reactive homeostasis alone.",
+          "Largely conceptual, with limited guidance on how to implement predictive drive allocation computationally."
+        ],
+        [
+          "10. J. C. R. Whittington, T. H. Muller, S. Mark, G. Chen, C. Barry, N. Burgess, and T. E. J. Behrens (2020)",
+          "The Tolman-Eichenbaum Machine: Unifying Space and Cognition",
+          "Computational modelling of hippocampal place cells and entorhinal grid cells, tested against rodent electrophysiology and generalization tasks.",
+          "A shared entorhinal-hippocampal code generalizes spatial and relational structure, unifying navigation and memory.",
+          "Validated mainly on small simulated environments; translating it to noisy real-world sensor data is non-trivial."
+        ]
+      ]
+    ]
+  },
+  {
+    "slide_index": 7,
+    "text_elements": [
+      [
+        "LITERATURE REVIEW (CONTINUED)"
+      ]
+    ],
+    "tables": [
+      [
+        [
+          "Author(s)",
+          "Title",
+          "Methodology",
+          "Key Findings",
+          "Limitations"
+        ],
+        [
+          "11. A. Howard, M. Sandler, G. Chu, L.-C. Chen, B. Chen, M. Tan, W. Wang, Y. Zhu, R. Pang, V. Vasudevan, Q. V. Le, and H. Adam (2019)",
+          "Searching for MobileNetV3: Lightweight Vision for Edge Devices",
+          "Neural architecture search combined with hardware-aware optimization to design lightweight convolutional networks for edge inference.",
+          "Depthwise-separable convolutions and efficient activations enable real-time visual feature extraction at low latency and memory cost.",
+          "Accuracy is traded off against speed, and performance depends on the target edge hardware's compute constraints."
+        ],
+        [
+          "12. A. A. Rusu, M. Večerík, T. Rothörl, N. Heess, R. Pascanu, and R. Hadsell; J. Tobin, R. Fong, A. Ray, J. Schneider, W. Zaremba, and P. Abbeel (2018)",
+          "Sim-to-Real Transfer and Domain Randomization for Robotic Control",
+          "Systematic training of control policies across randomized physics parameters (friction, mass, delay, sensor noise), then transfer evaluation.",
+          "Domain randomization bridges the sim-to-real gap, producing policies robust to unmodeled friction, mass, and sensor disturbances.",
+          "Needs wide, carefully chosen randomization ranges, and transfer quality still depends on simulator fidelity."
+        ],
+        [
+          "13. J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov (2017)",
+          "Proximal Policy Optimization Algorithms",
+          "Empirical benchmarking of a clipped surrogate policy-gradient objective across continuous-control robotic locomotion tasks.",
+          "The clipped objective gives stable, sample-efficient policy learning and a robust baseline for continuous motor control.",
+          "Requires large numbers of environment samples to converge and remains sensitive to hyperparameter choices."
+        ]
+      ]
+    ]
+  },
+  {
+    "slide_index": 8,
+    "text_elements": [
+      [
+        "LITERATURE SUMMARY"
+      ],
+      [
+        "The 13 core papers span 2017–2024 across reinforcement learning, sim-to-real transfer, edge vision, spatial cognition, predictive homeostasis, and continuous/spiking neural control — covering every subsystem of CARL.",
+        "Schulman's PPO and Rusu & Tobin's domain randomization ground CARL's motor policy training and sim-to-real transfer strategy.",
+        "Howard's MobileNetV3 grounds CARL's real-time edge visual perception pipeline.",
+        "Whittington's Tolman-Eichenbaum Machine and Sterling's allostasis research ground CARL's spatial mapping and predictive drive regulation.",
+        "Hasani's Liquid Time-Constant Networks and Makoviychuk's GPU physics engine ground CARL's continuous motor dynamics and digital twin simulation substrate.",
+        "Zenke's synaptic plasticity research and Schuman's neuromorphic computing review ground CARL's spiking plasticity and sleep-consolidation mechanisms.",
+        "Mazzaglia's active inference work grounds CARL's free-energy-based drive reduction and action selection.",
+        "Rahimi's hyperdimensional computing and Hafner's DreamerV3 ground CARL's holographic memory and latent-imagination planning, with Zang's MPC-RL integration grounding its emergency recovery controller."
+      ]
+    ],
+    "tables": []
+  },
+  {
+    "slide_index": 9,
+    "text_elements": [
+      [
+        "RESEARCH GAP"
+      ],
+      [
+        "Most existing robotic cognitive architectures implement either purely connectionist deep-learning controllers OR simplified spiking neuron simulations — none integrate both within a single real-time control loop.",
+        "Limited research exists on coupling multi-factor endocrine neuromodulation (DA/NE/5-HT/ACh) with Liquid State Machine reservoir brains for continuous autonomous control.",
+        "No prior work has directly coupled hippocampal continuous attractor grid cells with real-time MuJoCo physics-based motor controllers for embodied spatial navigation.",
+        "PROPOSED GAP",
+        "Develop CARL as an integrated architecture combining LSM reservoir computing, STDP spiking plasticity, 4-factor endocrine gain control, hippocampal grid cell navigation, and Free-Energy active inference within a single 30 Hz real-time MuJoCo simulation loop.",
+        "Validate the architecture through systematic digital twin experiments measuring adaptive behaviour emergence, energy homeostasis, and spatial navigation accuracy."
+      ]
+    ],
+    "tables": []
+  },
+  {
+    "slide_index": 10,
+    "text_elements": [
+      [
+        "REFERENCES"
+      ],
+      [
+        "[1] X. Zang et al., “Model predictive control and reinforcement learning integration for unstable robotic systems,” IEEE Trans. Robotics (T-RO), 2024.",
+        "[2] D. Hafner, J. Pasukonis, J. Ba, and T. Lillicrap, “Mastering diverse domains through world models (DreamerV3),” Nature / arXiv:2301.04104, 2023.",
+        "[3] A. Rahimi et al., “Hyperdimensional computing for efficient embodied learning and memory,” IEEE Trans. Neural Networks and Learning Systems (TNNLS), 2023.",
+        "[4] P. Mazzaglia, T. Verbelen, O. Çatal, and B. Dhoedt, “Free-energy minimization and active inference in embodied agents,” IEEE Trans. Cognitive and Developmental Systems, 2022.",
+        "[5] C. Schuman et al., “Opportunities for neuromorphic computing and spiking neural networks,” Nature Computational Science, vol. 2, pp. 10–19, 2022.",
+        "[6] F. Zenke and T. P. Vogels, “Visualizing and understanding plasticity rules in spiking neural networks,” Nature Communications, vol. 12, 2021.",
+        "[7] V. Makoviychuk et al. / E. Todorov, T. Erez, and Y. Tassa, “GPU-accelerated rigid body physics simulation for robot learning,” NeurIPS / IEEE Trans. Robotics, 2021/2024.",
+        "[8] R. Hasani, M. Lechner, A. Amini, D. Rus, and R. Grosu, “Liquid time-constant networks,” Nature Machine Intelligence, vol. 3, no. 2, pp. 148–158, 2021."
+      ]
+    ],
+    "tables": []
+  },
+  {
+    "slide_index": 11,
+    "text_elements": [
+      [
+        "REFERENCES"
+      ],
+      [
+        "[9] P. Sterling, “Allostasis and predictive energy allocation in neural systems,” Trends in Neurosciences, vol. 43, no. 12, 2020.",
+        "[10] J. Whittington, T. Muller, S. Mark, et al., “The Tolman-Eichenbaum machine: Unifying space and relational memory through generalization in the hippocampal formation,” Cell, vol. 183, no. 5, pp. 1249–1263, 2020.",
+        "[11] A. Howard et al., “Searching for MobileNetV3: Lightweight vision for edge devices,” in Proc. IEEE ICCV, 2019.",
+        "[12] A. A. Rusu et al. and J. Tobin et al., “Sim-to-real transfer and domain randomization for robotic control,” IEEE ICRA / CoRL, 2018/2022.",
+        "[13] J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov, “Proximal policy optimization algorithms,” arXiv:1707.06347, 2017."
+      ]
+    ],
+    "tables": []
+  },
+  {
+    "slide_index": 12,
+    "text_elements": [
+      [
+        "THANK YOU"
+      ]
+    ],
+    "tables": []
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "audit_id": "P0_RESCORING_AFTER_HARDENING",
+  "timestamp": "2026-08-19T01:47:28+05:30",
+  "total_runs": 81,
+  "total_passed": 81,
+  "total_failed": 0,
+  "pass_rate_percent": 100.0,
+  "p0_status": "QUALIFIED",
+  "p1_unlocked": true,
+  "failed_runs": []
+}

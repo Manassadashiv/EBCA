@@ -1,0 +1,197 @@
+{
+  "milestone": "CARL Stage 1.6 \u2014 Grounded Kinematic Body-State & Slip Estimation",
+  "timestamp": 1788441765.2933326,
+  "elapsed_seconds": 172.8201026916504,
+  "classification": "Heuristic Multi-Sensor Traction Discrepancy Estimator (Non-Tabula-Rasa)",
+  "sensor_dependencies": {
+    "s_15": "IMU longitudinal accelerometer (chatter proxy)",
+    "s_20": "IMU yaw gyro (rotational tracking concordance)",
+    "s_7": "Front Sonar range rate (closing velocity)"
+  },
+  "friction_gradient": {
+    "3.0": {
+      "friction_mu": 3.0,
+      "mean_slip_ratio": 0.2593086938284773,
+      "mean_v_hat_x": 0.0,
+      "detections": 2,
+      "detection_rate": 0.05714285714285714,
+      "slip_flagged": false
+    },
+    "1.0": {
+      "friction_mu": 1.0,
+      "mean_slip_ratio": 0.24264841042710558,
+      "mean_v_hat_x": 0.07520986213643523,
+      "detections": 2,
+      "detection_rate": 0.05714285714285714,
+      "slip_flagged": false
+    },
+    "0.5": {
+      "friction_mu": 0.5,
+      "mean_slip_ratio": 0.3338474705974139,
+      "mean_v_hat_x": 0.03996915176415517,
+      "detections": 2,
+      "detection_rate": 0.05714285714285714,
+      "slip_flagged": false
+    },
+    "0.1": {
+      "friction_mu": 0.1,
+      "mean_slip_ratio": 0.8239775323263714,
+      "mean_v_hat_x": 0.0,
+      "detections": 35,
+      "detection_rate": 1.0,
+      "slip_flagged": true
+    },
+    "0.05": {
+      "friction_mu": 0.05,
+      "mean_slip_ratio": 0.8847213783462813,
+      "mean_v_hat_x": 0.0,
+      "detections": 35,
+      "detection_rate": 1.0,
+      "slip_flagged": true
+    },
+    "0.01": {
+      "friction_mu": 0.01,
+      "mean_slip_ratio": 0.8796826727521686,
+      "mean_v_hat_x": 0.0,
+      "detections": 35,
+      "detection_rate": 1.0,
+      "slip_flagged": true
+    },
+    "0.005": {
+      "friction_mu": 0.005,
+      "mean_slip_ratio": 0.9815883263899005,
+      "mean_v_hat_x": 0.00044188016664239,
+      "detections": 35,
+      "detection_rate": 1.0,
+      "slip_flagged": true
+    }
+  },
+  "physical_regimes": {
+    "UPRIGHT_DRY": {
+      "regime": "UPRIGHT_DRY",
+      "friction_mu": 3.0,
+      "mean_slip_ratio": 0.2593086938284773,
+      "detections": 2,
+      "detection_rate": 0.05714285714285714,
+      "slip_flagged": false
+    },
+    "WET_FLOOR": {
+      "regime": "WET_FLOOR",
+      "friction_mu": 0.5,
+      "mean_slip_ratio": 0.3338474705974139,
+      "detections": 2,
+      "detection_rate": 0.05714285714285714,
+      "slip_flagged": false
+    },
+    "SLICK_FLOOR": {
+      "regime": "SLICK_FLOOR",
+      "friction_mu": 0.1,
+      "mean_slip_ratio": 0.8239775323263714,
+      "detections": 35,
+      "detection_rate": 1.0,
+      "slip_flagged": true
+    },
+    "ICE_FLOOR": {
+      "regime": "ICE_FLOOR",
+      "friction_mu": 0.005,
+      "mean_slip_ratio": 0.9815883263899005,
+      "detections": 35,
+      "detection_rate": 1.0,
+      "slip_flagged": true
+    },
+    "AIRBORNE": {
+      "regime": "AIRBORNE",
+      "friction_mu": 3.0,
+      "mean_slip_ratio": 0.9959168333593241,
+      "detections": 31,
+      "detection_rate": 0.8857142857142857,
+      "slip_flagged": true
+    },
+    "SIDEWAYS": {
+      "regime": "SIDEWAYS",
+      "friction_mu": 3.0,
+      "mean_slip_ratio": 0.5241617136918431,
+      "detections": 18,
+      "detection_rate": 0.5142857142857142,
+      "slip_flagged": true
+    }
+  },
+  "dynamic_transition": {
+    "phase1_dry_mean_slip": 0.30057383332485865,
+    "phase1_dry_detections": 2,
+    "phase1_dry_fp_rate": 0.08,
+    "phase2_ice_mean_slip": 0.7920117387076825,
+    "phase2_ice_detections": 25,
+    "phase2_ice_detection_rate": 0.7142857142857143,
+    "phase2_ice_steady_detection_rate": 0.8333333333333334,
+    "phase3_recovery_mean_slip": 0.2334360421311859,
+    "phase3_recovery_detections": 3,
+    "phase3_recovery_rate": 0.12,
+    "transition_verified": true
+  },
+  "multiseed_stability": {
+    "seeds_tested": [
+      42,
+      101,
+      202,
+      303,
+      404
+    ],
+    "seed_details": [
+      {
+        "seed": 42,
+        "dry_fp_rate": 0.08,
+        "ice_detection_rate": 0.7142857142857143,
+        "recovery_rate": 0.12,
+        "verified": true
+      },
+      {
+        "seed": 101,
+        "dry_fp_rate": 0.08,
+        "ice_detection_rate": 0.8571428571428571,
+        "recovery_rate": 0.08,
+        "verified": true
+      },
+      {
+        "seed": 202,
+        "dry_fp_rate": 0.0,
+        "ice_detection_rate": 0.14285714285714285,
+        "recovery_rate": 0.0,
+        "verified": false
+      },
+      {
+        "seed": 303,
+        "dry_fp_rate": 0.2,
+        "ice_detection_rate": 0.8857142857142857,
+        "recovery_rate": 0.2,
+        "verified": false
+      },
+      {
+        "seed": 404,
+        "dry_fp_rate": 0.08,
+        "ice_detection_rate": 0.8285714285714286,
+        "recovery_rate": 0.16,
+        "verified": true
+      }
+    ],
+    "passing_seeds_count": 3,
+    "total_seeds_count": 5,
+    "all_seeds_verified": false,
+    "total_dry_ticks": 125,
+    "total_dry_fp_ticks": 11,
+    "aggregate_dry_fp_rate": 0.088,
+    "total_ice_ticks": 175,
+    "total_ice_det_ticks": 120,
+    "aggregate_ice_detection_rate": 0.6857142857142857,
+    "total_recovery_ticks": 125,
+    "total_recovery_ticks_flagged": 14,
+    "aggregate_recovery_rate": 0.112
+  },
+  "status": "CONDITIONALLY_CLOSED_WITH_DOCUMENTED_LIMITATIONS",
+  "known_limitations": [
+    "Sensitivity to turning transients: In-place differential turns cause gyro lag, creating dry false alarms on Seed 303 (20% FP).",
+    "Spinout kinematics: Uncontrolled spinout on ice can deceive rotational tracking unless hardcoded centrifugal thresholds are active (Seed 202).",
+    "Indirect chatter dependency: Relies on accelerometer high-frequency variance as proxy for floor contact; may fail on ultra-smooth surfaces or carpet.",
+    "Non-tabula-rasa: Relies on fixed sensor indices (s15, s20, s7) rather than learned unsupervised abstractions."
+  ]
+}

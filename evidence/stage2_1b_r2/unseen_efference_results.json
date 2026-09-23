@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "timestamp": "2026-09-04 16:51:16 UTC",
+    "stage": "Stage 2.1B-R.2",
+    "task": "Task 2: Stochastic Validation of Learned Motor Efference",
+    "unseen_test_seeds": [
+      303,
+      404,
+      505,
+      606,
+      707
+    ],
+    "frozen_k_eff": 4.0862
+  },
+  "pre_registered_gates": {
+    "primary_acceptance_gate": "Mean heading error across unseen seeds < 30.0 deg",
+    "per_seed_reliability_gate": "All unseen test seeds < 30.0 deg",
+    "causal_isolation_gate": "Substrate C error > 100.0 deg or unwrapped divergence > 140.0 deg"
+  },
+  "summary_statistics": {
+    "mean_error_deg": 5.82,
+    "median_error_deg": 6.44,
+    "std_error_deg": 2.5,
+    "worst_seed_error_deg": 8.52,
+    "seeds_under_30deg": "5/5",
+    "primary_gate_passed": true,
+    "causal_isolation_passed": true,
+    "comparative_means_deg": {
+      "substrate_a_sensory_only": 112.21,
+      "substrate_b_correct_efference": 5.82,
+      "substrate_c_inverted_efference": 132.43,
+      "substrate_d_classical": 4.25
+    }
+  },
+  "per_seed_records": [
+    {
+      "seed": 303,
+      "partition": "UNSEEN_TEST",
+      "initial_pose": {
+        "start_yaw_deg": 4.57,
+        "heading_pre_blackout_deg": -38.77,
+        "gt_yaw_post_blackout_deg": -145.2,
+        "total_physical_rotation_deg": 106.43
+      },
+      "motor_command": {
+        "u_base_L": 0.1308,
+        "u_base_R": -0.0448,
+        "delta_u": -0.1756
+      },
+      "decoded_headings": {
+        "substrate_a_sensory_only_deg": -38.3,
+        "substrate_b_correct_efference_deg": -151.64,
+        "substrate_c_inverted_efference_deg": 76.41,
+        "substrate_d_classical_deg": -148.71
+      },
+      "absolute_heading_errors_deg": {
+        "substrate_a_sensory_only": 106.9,
+        "substrate_b_correct_efference": 6.44,
+        "substrate_c_inverted_efference": 138.39,
+        "substrate_c_unwrapped_divergence": 228.05,
+        "substrate_d_classical": 3.52
+      },
+      "final_bump_amplitude_b": 4.7706,
+      "gate_b_sub30deg_passed": true,
+      "causal_isolation_passed": true
+    },
+    {
+      "seed": 404,
+      "partition": "UNSEEN_TEST",
+      "initial_pose": {
+        "start_yaw_deg": 35.38,
+        "heading_pre_blackout_deg": -2.96,
+        "gt_yaw_post_blackout_deg": -105.7,
+        "total_physical_rotation_deg": 102.74
+      },
+      "motor_command": {
+        "u_base_L": 0.1092,
+        "u_base_R": -0.0438,
+        "delta_u": -0.153
+      },
+      "decoded_headings": {
+        "substrate_a_sensory_only_deg": -5.61,
+        "substrate_b_correct_efference_deg": -104.51,
+        "substrate_c_inverted_efference_deg": 93.41,
+        "substrate_d_classical_deg": -99.33
+      },
+      "absolute_heading_errors_deg": {
+        "substrate_a_sensory_only": 100.09,
+        "substrate_b_correct_efference": 1.19,
+        "substrate_c_inverted_efference": 160.89,
+        "substrate_c_unwrapped_divergence": 197.92,
+        "substrate_d_classical": 6.37
+      },
+      "final_bump_amplitude_b": 4.7705,
+      "gate_b_sub30deg_passed": true,
+      "causal_isolation_passed": true
+    },
+    {
+      "seed": 505,
+      "partition": "UNSEEN_TEST",
+      "initial_pose": {
+        "start_yaw_deg": -24.92,
+        "heading_pre_blackout_deg": -69.2,
+        "gt_yaw_post_blackout_deg": 176.87,
+        "total_physical_rotation_deg": 113.93
+      },
+      "motor_command": {
+        "u_base_L": 0.1075,
+        "u_base_R": -0.0682,
+        "delta_u": -0.1757
+      },
+      "decoded_headings": {
+        "substrate_a_sensory_only_deg": -63.02,
+        "substrate_b_correct_efference_deg": -177.51,
+        "substrate_c_inverted_efference_deg": 50.13,
+        "substrate_d_classical_deg": -175.87
+      },
+      "absolute_heading_errors_deg": {
+        "substrate_a_sensory_only": 120.11,
+        "substrate_b_correct_efference": 5.62,
+        "substrate_c_inverted_efference": 126.74,
+        "substrate_c_unwrapped_divergence": 227.65,
+        "substrate_d_classical": 7.26
+      },
+      "final_bump_amplitude_b": 4.7706,
+      "gate_b_sub30deg_passed": true,
+      "causal_isolation_passed": true
+    },
+    {
+      "seed": 606,
+      "partition": "UNSEEN_TEST",
+      "initial_pose": {
+        "start_yaw_deg": 5.57,
+        "heading_pre_blackout_deg": -38.83,
+        "gt_yaw_post_blackout_deg": -149.4,
+        "total_physical_rotation_deg": 110.57
+      },
+      "motor_command": {
+        "u_base_L": 0.1237,
+        "u_base_R": -0.0588,
+        "delta_u": -0.1825
+      },
+      "decoded_headings": {
+        "substrate_a_sensory_only_deg": -38.71,
+        "substrate_b_correct_efference_deg": -156.71,
+        "substrate_c_inverted_efference_deg": 80.67,
+        "substrate_d_classical_deg": -152.42
+      },
+      "absolute_heading_errors_deg": {
+        "substrate_a_sensory_only": 110.7,
+        "substrate_b_correct_efference": 7.31,
+        "substrate_c_inverted_efference": 129.93,
+        "substrate_c_unwrapped_divergence": 237.38,
+        "substrate_d_classical": 3.02
+      },
+      "final_bump_amplitude_b": 4.7706,
+      "gate_b_sub30deg_passed": true,
+      "causal_isolation_passed": true
+    },
+    {
+      "seed": 707,
+      "partition": "UNSEEN_TEST",
+      "initial_pose": {
+        "start_yaw_deg": -31.1,
+        "heading_pre_blackout_deg": -81.24,
+        "gt_yaw_post_blackout_deg": 156.54,
+        "total_physical_rotation_deg": 122.22
+      },
+      "motor_command": {
+        "u_base_L": 0.1273,
+        "u_base_R": -0.0738,
+        "delta_u": -0.2011
+      },
+      "decoded_headings": {
+        "substrate_a_sensory_only_deg": -80.23,
+        "substrate_b_correct_efference_deg": 148.03,
+        "substrate_c_inverted_efference_deg": 50.36,
+        "substrate_d_classical_deg": 155.45
+      },
+      "absolute_heading_errors_deg": {
+        "substrate_a_sensory_only": 123.23,
+        "substrate_b_correct_efference": 8.52,
+        "substrate_c_inverted_efference": 106.19,
+        "substrate_c_unwrapped_divergence": 97.67,
+        "substrate_d_classical": 1.09
+      },
+      "final_bump_amplitude_b": 4.7707,
+      "gate_b_sub30deg_passed": true,
+      "causal_isolation_passed": true
+    }
+  ]
+}

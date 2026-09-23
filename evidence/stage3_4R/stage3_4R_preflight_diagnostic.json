@@ -1,0 +1,145 @@
+{
+  "milestone": "Stage 3.4-R Pre-Flight Factorial Diagnostic",
+  "timestamp": "2026-09-13T21:21:39Z",
+  "sample_size": 10,
+  "controller": "Stage 3.4 Local EFE (w_info=1.0, lambda_frontier=0.0)",
+  "geometry": "1.30m Turning Bay (cul_de_sac_turning_bay.xml)",
+  "escaped_count": 0,
+  "escape_rate_pct": 0.0,
+  "collision_count": 3,
+  "collision_rate_pct": 30.0,
+  "stall_count": 7,
+  "stall_rate_pct": 70.0,
+  "trials": [
+    {
+      "config_id": 0,
+      "seed": 5001,
+      "escaped": false,
+      "had_collision": false,
+      "ticks": 220,
+      "max_consecutive_reversals": 9,
+      "max_yaw_rotation_deg": 84.69306639432145,
+      "final_pos": [
+        0.5768282777911622,
+        0.00538594332653193
+      ]
+    },
+    {
+      "config_id": 1,
+      "seed": 5001,
+      "escaped": false,
+      "had_collision": false,
+      "ticks": 220,
+      "max_consecutive_reversals": 12,
+      "max_yaw_rotation_deg": 179.4767734970485,
+      "final_pos": [
+        0.474780611306168,
+        -0.029612934091600145
+      ]
+    },
+    {
+      "config_id": 4,
+      "seed": 5002,
+      "escaped": false,
+      "had_collision": false,
+      "ticks": 220,
+      "max_consecutive_reversals": 17,
+      "max_yaw_rotation_deg": 179.9523191582132,
+      "final_pos": [
+        0.6187626916098531,
+        0.05743747958041376
+      ]
+    },
+    {
+      "config_id": 5,
+      "seed": 5002,
+      "escaped": false,
+      "had_collision": true,
+      "ticks": 53,
+      "max_consecutive_reversals": 4,
+      "max_yaw_rotation_deg": 160.13897878912823,
+      "final_pos": [
+        0.41220658235291074,
+        -0.24046399796164844
+      ]
+    },
+    {
+      "config_id": 8,
+      "seed": 5003,
+      "escaped": false,
+      "had_collision": true,
+      "ticks": 211,
+      "max_consecutive_reversals": 6,
+      "max_yaw_rotation_deg": 178.89846773697155,
+      "final_pos": [
+        0.9729377305562074,
+        0.1742960112105015
+      ]
+    },
+    {
+      "config_id": 9,
+      "seed": 5003,
+      "escaped": false,
+      "had_collision": true,
+      "ticks": 173,
+      "max_consecutive_reversals": 8,
+      "max_yaw_rotation_deg": 178.98391882163514,
+      "final_pos": [
+        0.43206879937215287,
+        0.22741089422917637
+      ]
+    },
+    {
+      "config_id": 12,
+      "seed": 5004,
+      "escaped": false,
+      "had_collision": false,
+      "ticks": 220,
+      "max_consecutive_reversals": 9,
+      "max_yaw_rotation_deg": 179.64847169565644,
+      "final_pos": [
+        0.6505953231375138,
+        -0.17732112019677515
+      ]
+    },
+    {
+      "config_id": 13,
+      "seed": 5004,
+      "escaped": false,
+      "had_collision": false,
+      "ticks": 220,
+      "max_consecutive_reversals": 21,
+      "max_yaw_rotation_deg": 177.98209393056277,
+      "final_pos": [
+        0.5187083272821214,
+        0.045221115703321636
+      ]
+    },
+    {
+      "config_id": 16,
+      "seed": 5005,
+      "escaped": false,
+      "had_collision": false,
+      "ticks": 220,
+      "max_consecutive_reversals": 9,
+      "max_yaw_rotation_deg": 177.97845589016998,
+      "final_pos": [
+        0.7396223110289117,
+        0.201472041962419
+      ]
+    },
+    {
+      "config_id": 17,
+      "seed": 5005,
+      "escaped": false,
+      "had_collision": false,
+      "ticks": 220,
+      "max_consecutive_reversals": 23,
+      "max_yaw_rotation_deg": 178.8363510897965,
+      "final_pos": [
+        0.5824182164559111,
+        -0.05530075339439887
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "acceptance_passed": true,
+  "total_episodes": 40,
+  "collision_rate_percent": 0.0,
+  "mean_latency_ms": 13.096037374901547,
+  "p95_latency_ms": 40.58477000216953,
+  "organ_active_counters": {
+    "stage1_slip_observer": 2400,
+    "stage2_1_attractor_brain": 2400,
+    "stage2_2_spatial_memory": 2400,
+    "stage2_3_deliberation": 2400,
+    "embodied_actuation": 2400
+  },
+  "all_organs_active": true,
+  "criteria": {
+    "collision_rate_le_10": true,
+    "p95_latency_le_50ms": true,
+    "all_5_organs_active": true
+  }
+}

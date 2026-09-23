@@ -1,0 +1,12 @@
+{
+  "episode_id": "hidden_ood_0090",
+  "seed": 3091,
+  "goal_pos": [
+    3.495,
+    2.992
+  ],
+  "friction": 1.305,
+  "sensor_noise_std": 0.059,
+  "latency_ms": 46,
+  "max_ticks": 250
+}

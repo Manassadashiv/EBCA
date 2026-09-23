@@ -1,0 +1,351 @@
+{
+  "disturbances": {
+    "A1_SUDDEN_OBSTACLE": {
+      "description": "Sudden obstacle positioned 0.45m directly ahead",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 4.75,
+      "peak_jerk_mps3": 142.67,
+      "recovery_successful": true,
+      "final_speed_mps": 0.23,
+      "status": "PASS"
+    },
+    "A2_OBSTACLE_REMOVED": {
+      "description": "Target obstacle suddenly relocated to open space",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 4.75,
+      "peak_jerk_mps3": 142.67,
+      "recovery_successful": true,
+      "final_speed_mps": 0.23,
+      "status": "PASS"
+    },
+    "A3_LATERAL_PUSH": {
+      "description": "Sudden 8.0N lateral force pulse applied to drive_deck",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 5.65,
+      "peak_jerk_mps3": 169.63,
+      "recovery_successful": true,
+      "final_speed_mps": 0.119,
+      "status": "PASS"
+    },
+    "A4_FORWARD_PUSH": {
+      "description": "Sudden 10.0N forward acceleration pulse",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 5.75,
+      "peak_jerk_mps3": 172.79,
+      "recovery_successful": true,
+      "final_speed_mps": 0.235,
+      "status": "PASS"
+    },
+    "A5_BACKWARD_PUSH": {
+      "description": "Sudden 10.0N backward impulse",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 6.3,
+      "peak_jerk_mps3": 189.29,
+      "recovery_successful": true,
+      "final_speed_mps": 0.271,
+      "status": "PASS"
+    },
+    "A6_TRACTION_DROP": {
+      "description": "Floor friction suddenly reduced by 70%",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 1.44,
+      "peak_jerk_mps3": 43.2,
+      "recovery_successful": true,
+      "final_speed_mps": 0.21,
+      "status": "PASS"
+    },
+    "A7_WHEEL_SLIP": {
+      "description": "Sudden asymmetric wheel friction loss",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 2.69,
+      "peak_jerk_mps3": 80.71,
+      "recovery_successful": true,
+      "final_speed_mps": 0.238,
+      "status": "PASS"
+    },
+    "A8_ASYMMETRIC_TORQUE": {
+      "description": "Sudden 50% motor power asymmetry",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 1.94,
+      "peak_jerk_mps3": 58.26,
+      "recovery_successful": true,
+      "final_speed_mps": 0.244,
+      "status": "PASS"
+    },
+    "A9_CHASSIS_TILT": {
+      "description": "Sudden 0.12 rad chassis tilt disturbance",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 12.84,
+      "peak_jerk_mps3": 385.61,
+      "recovery_successful": true,
+      "final_speed_mps": 0.223,
+      "status": "PASS"
+    },
+    "A10_VISUAL_STIMULUS": {
+      "description": "Sudden high-contrast visual target appearance",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 1.94,
+      "peak_jerk_mps3": 58.26,
+      "recovery_successful": true,
+      "final_speed_mps": 0.244,
+      "status": "PASS"
+    },
+    "A11_PROXIMITY_THREAT": {
+      "description": "Sudden 15-ray proximity distance drop to 0.22m",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 1.94,
+      "peak_jerk_mps3": 58.26,
+      "recovery_successful": true,
+      "final_speed_mps": 0.244,
+      "status": "PASS"
+    },
+    "A12_AUDIO_STIMULUS": {
+      "description": "Auditory attention stimulus trigger",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 1.94,
+      "peak_jerk_mps3": 58.26,
+      "recovery_successful": true,
+      "final_speed_mps": 0.244,
+      "status": "PASS"
+    },
+    "A13_ENERGY_DEFICIT": {
+      "description": "Sudden interoceptive battery drop to 0.15",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 1.94,
+      "peak_jerk_mps3": 58.26,
+      "recovery_successful": true,
+      "final_speed_mps": 0.244,
+      "status": "PASS"
+    },
+    "A14_THERMAL_LOAD": {
+      "description": "Sudden interoceptive thermal spike to 0.85",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 1.94,
+      "peak_jerk_mps3": 58.26,
+      "recovery_successful": true,
+      "final_speed_mps": 0.244,
+      "status": "PASS"
+    },
+    "A15_MULTI_THREAT": {
+      "description": "Simultaneous lateral push and forward proximity threat",
+      "detection_latency_ms": 0.0,
+      "decision_latency_ms": 0.0,
+      "motor_latency_ms": 0.0,
+      "peak_corrective_accel_mps2": 1.68,
+      "peak_jerk_mps3": 50.59,
+      "recovery_successful": true,
+      "final_speed_mps": 0.249,
+      "status": "PASS"
+    }
+  },
+  "body_coordination": {
+    "coordination_matrix": [
+      [
+        1.0,
+        0.5792473974437444,
+        0.0,
+        0.0,
+        0.0,
+        0.09562143594018245
+      ],
+      [
+        0.5792473974437445,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.23259073444627817
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.09562143594018245,
+        -0.2325907344462782,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "mean_speed_mps": 0.22114666666666669,
+    "head_range_rad": [
+      0.19634954084936207,
+      0.7117786061296033
+    ],
+    "hip_pitch_range_rad": [
+      0.0,
+      0.0
+    ],
+    "actuator_sync_score": 0.13374775376834472,
+    "status": "PASS"
+  },
+  "affect_and_vocal": {
+    "LOW_ENERGY": {
+      "affect_state": "CAUTIOUS",
+      "head_yaw_rad": 0.19634954084936207,
+      "neck_pitch_rad": 0.0,
+      "hip_pitch_rad": 0.0,
+      "commanded_w_L": 0.033,
+      "commanded_w_R": 0.033,
+      "audio_pattern": "SILENT"
+    },
+    "HIGH_ENERGY": {
+      "affect_state": "SATISFACTION",
+      "head_yaw_rad": 0.3436116964863836,
+      "neck_pitch_rad": 0.0,
+      "hip_pitch_rad": 0.0,
+      "commanded_w_L": 0.1,
+      "commanded_w_R": 0.1,
+      "audio_pattern": "SILENT"
+    },
+    "THERMAL_OVERLOAD": {
+      "affect_state": "CAUTIOUS",
+      "head_yaw_rad": 0.4540583132141498,
+      "neck_pitch_rad": 0.0,
+      "hip_pitch_rad": 0.0,
+      "commanded_w_L": 0.2,
+      "commanded_w_R": 0.2,
+      "audio_pattern": "SILENT"
+    },
+    "CURIOSITY_PEAK": {
+      "affect_state": "CURIOUS",
+      "head_yaw_rad": 0.5368932757599745,
+      "neck_pitch_rad": 0.0,
+      "hip_pitch_rad": 0.0,
+      "commanded_w_L": 0.333,
+      "commanded_w_R": 0.333,
+      "audio_pattern": "SILENT"
+    },
+    "THREAT_ENCOUNTER": {
+      "affect_state": "CURIOUS",
+      "head_yaw_rad": 0.5990194976693429,
+      "neck_pitch_rad": 0.0,
+      "hip_pitch_rad": 0.0,
+      "commanded_w_L": 0.499,
+      "commanded_w_R": 0.499,
+      "audio_pattern": "SILENT"
+    }
+  },
+  "locomotion_and_drift": {
+    "STRAIGHT": {
+      "mean_speed_mps": 0.122,
+      "mean_yaw_rate_rads": 0.0,
+      "mean_slip_ratio": 0.1774,
+      "mean_lat_velocity_mps": 0.0,
+      "curvature_inv_m": 0.0
+    },
+    "GRADUAL_LEFT": {
+      "mean_speed_mps": 0.421,
+      "mean_yaw_rate_rads": 0.0,
+      "mean_slip_ratio": 0.0645,
+      "mean_lat_velocity_mps": 0.0,
+      "curvature_inv_m": 0.0
+    },
+    "GRADUAL_RIGHT": {
+      "mean_speed_mps": 0.537,
+      "mean_yaw_rate_rads": 0.0,
+      "mean_slip_ratio": 0.057,
+      "mean_lat_velocity_mps": 0.0,
+      "curvature_inv_m": 0.0
+    },
+    "TIGHT_LEFT": {
+      "mean_speed_mps": 0.203,
+      "mean_yaw_rate_rads": -0.0,
+      "mean_slip_ratio": 0.5844,
+      "mean_lat_velocity_mps": 0.0,
+      "curvature_inv_m": -0.0
+    },
+    "TIGHT_RIGHT": {
+      "mean_speed_mps": 0.186,
+      "mean_yaw_rate_rads": -0.0,
+      "mean_slip_ratio": 0.5775,
+      "mean_lat_velocity_mps": 0.0,
+      "curvature_inv_m": -0.0
+    },
+    "CONTROLLED_DRIFT_LEFT": {
+      "mean_speed_mps": 0.156,
+      "mean_yaw_rate_rads": 0.0,
+      "mean_slip_ratio": 0.6437,
+      "mean_lat_velocity_mps": 0.0,
+      "curvature_inv_m": 0.0
+    },
+    "CONTROLLED_DRIFT_RIGHT": {
+      "mean_speed_mps": 0.246,
+      "mean_yaw_rate_rads": 0.0,
+      "mean_slip_ratio": 0.4398,
+      "mean_lat_velocity_mps": 0.0,
+      "curvature_inv_m": 0.0
+    },
+    "REVERSE_ESCAPE": {
+      "mean_speed_mps": 0.11,
+      "mean_yaw_rate_rads": 0.0,
+      "mean_slip_ratio": 0.7088,
+      "mean_lat_velocity_mps": 0.0,
+      "curvature_inv_m": 0.0
+    },
+    "STOP_BRAKE": {
+      "mean_speed_mps": 0.03,
+      "mean_yaw_rate_rads": 0.0,
+      "mean_slip_ratio": 0.7004,
+      "mean_lat_velocity_mps": 0.0,
+      "curvature_inv_m": 0.0
+    }
+  },
+  "active_sensing": {
+    "initial_uncertainty": 0.85,
+    "final_uncertainty": 0.2783,
+    "total_information_gain_nats": 1.4517,
+    "mean_head_sweep_deg": 32.9,
+    "status": "PASS"
+  }
+}

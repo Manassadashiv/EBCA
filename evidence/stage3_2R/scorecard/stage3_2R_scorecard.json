@@ -1,0 +1,76 @@
+{
+  "subgate": "3.2-RB",
+  "title": "Spatial Memory Necessity under Non-Line-of-Sight Conditions (Class B)",
+  "total_episodes_evaluated": 500,
+  "total_matched_pairs": 100,
+  "sample_counts": {
+    "episodes_per_arm": 100,
+    "arms_evaluated": [
+      "ARM-I",
+      "ARM-A",
+      "ARM-S",
+      "ARM-PF",
+      "ARM-R"
+    ],
+    "pairs_per_family": 20,
+    "total_families": 5
+  },
+  "success_rates": {
+    "ARM-I": "11.0% (11/100)",
+    "ARM-A": "16.0% (16/100)",
+    "ARM-S": "11.0% (11/100)",
+    "ARM-PF": "4.0% (4/100)",
+    "ARM-R": "14.0% (14/100)"
+  },
+  "collision_rates": {
+    "ARM-I": "15.0% (15/100)",
+    "ARM-A": "13.0% (13/100)",
+    "ARM-S": "15.0% (15/100)",
+    "ARM-PF": "16.0% (16/100)",
+    "ARM-R": "23.0% (23/100)"
+  },
+  "contingency_table_I_vs_A": {
+    "n11": 11,
+    "n10": 0,
+    "n01": 5,
+    "n00": 84
+  },
+  "contingency_table_I_vs_S": {
+    "n11": 11,
+    "n10": 0,
+    "n01": 0,
+    "n00": 89
+  },
+  "effect_sizes": {
+    "delta_success_I_A": -0.05,
+    "exact_mcnemar_p_I_A": 1.0,
+    "delta_success_I_S": 0.0,
+    "exact_mcnemar_p_I_S": 1.0,
+    "mean_delta_u_I_A": 0.46636900354118344,
+    "p95_latency_ms": 7.410055500031376
+  },
+  "gates": {
+    "G6_primary_effect": {
+      "metric": -0.05,
+      "threshold": ">= 35.0%",
+      "passed": false
+    },
+    "G7_exact_mcnemar_significance": {
+      "metric": 1.0,
+      "threshold": "< 0.001",
+      "passed": false
+    },
+    "G8_topographic_specificity": {
+      "metric_delta": 0.0,
+      "metric_p": 1.0,
+      "threshold": "Delta >= 25.0%, p < 0.010",
+      "passed": false
+    },
+    "G9_intact_collision_rate": {
+      "metric": 0.15,
+      "threshold": "<= 5.0%",
+      "passed": false
+    }
+  },
+  "class_b_certification": "FAILED_CLOSED"
+}

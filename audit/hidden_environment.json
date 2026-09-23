@@ -1,0 +1,19 @@
+{
+  "seed": 20260817,
+  "hidden_food_coordinates": [
+    -2.2411327935805256,
+    0.23799464230004297
+  ],
+  "hidden_hazard_coordinates": [
+    -1.6456568049399949,
+    1.332666471431164
+  ],
+  "capture_radius_m": 0.3,
+  "arena_bounds": [
+    -2.7,
+    2.7,
+    -2.7,
+    2.7
+  ],
+  "isolation_notice": "AUDITOR ONLY \u2014 FORBIDDEN FROM CARL AGENT CONTROLLER"
+}

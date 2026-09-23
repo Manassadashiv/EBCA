@@ -1,0 +1,66 @@
+{
+  "scenario_a_wall_directly_ahead": {
+    "video_file": "scenario_a_wall_directly_ahead.mp4",
+    "frame_count": 100,
+    "resolution": "1280x720",
+    "mean_frame_difference": 1.231,
+    "motion_detected": true,
+    "all_frames_decoded": true
+  },
+  "scenario_b_wall_at_45_deg": {
+    "video_file": "scenario_b_wall_at_45_deg.mp4",
+    "frame_count": 100,
+    "resolution": "1280x720",
+    "mean_frame_difference": 1.163,
+    "motion_detected": true,
+    "all_frames_decoded": true
+  },
+  "scenario_c_corridor_with_opening": {
+    "video_file": "scenario_c_corridor_with_opening.mp4",
+    "frame_count": 100,
+    "resolution": "1280x720",
+    "mean_frame_difference": 1.211,
+    "motion_detected": true,
+    "all_frames_decoded": true
+  },
+  "scenario_d_dead_end_corridor": {
+    "video_file": "scenario_d_dead_end_corridor.mp4",
+    "frame_count": 100,
+    "resolution": "1280x720",
+    "mean_frame_difference": 1.19,
+    "motion_detected": true,
+    "all_frames_decoded": true
+  },
+  "scenario_e_bifurcation_obstacle": {
+    "video_file": "scenario_e_bifurcation_obstacle.mp4",
+    "frame_count": 100,
+    "resolution": "1280x720",
+    "mean_frame_difference": 1.139,
+    "motion_detected": true,
+    "all_frames_decoded": true
+  },
+  "scenario_f_moving_obstacle": {
+    "video_file": "scenario_f_moving_obstacle.mp4",
+    "frame_count": 100,
+    "resolution": "1280x720",
+    "mean_frame_difference": 1.287,
+    "motion_detected": true,
+    "all_frames_decoded": true
+  },
+  "scenario_g_narrow_passage": {
+    "video_file": "scenario_g_narrow_passage.mp4",
+    "frame_count": 100,
+    "resolution": "1280x720",
+    "mean_frame_difference": 1.521,
+    "motion_detected": true,
+    "all_frames_decoded": true
+  },
+  "scenario_h_unexpected_drop": {
+    "video_file": "scenario_h_unexpected_drop.mp4",
+    "frame_count": 100,
+    "resolution": "1280x720",
+    "mean_frame_difference": 1.172,
+    "motion_detected": true,
+    "all_frames_decoded": true
+  }
+}

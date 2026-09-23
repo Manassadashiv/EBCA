@@ -1,0 +1,31 @@
+{
+  "protocol_id": "CARL-P1R4-STDP-ISOLATION-PROTOCOL-V1",
+  "timestamp": "2026-08-24T00:52:00Z",
+  "objective": "Isolate Three-Factor STDP from HDC episodic memory and prove or disprove STDP-caused behavioural adaptation",
+  "conditions": [
+    "NO_HDC_STDP",
+    "NO_HDC_NO_STDP",
+    "NO_HDC_SHUFFLED_STDP"
+  ],
+  "seeds": [42, 101, 2024],
+  "episodes_per_seed": 8,
+  "phases": {
+    "acquisition_episodes": [1, 2, 3],
+    "persistence_episodes": [4, 5],
+    "reversal_episodes": [6, 7, 8]
+  },
+  "parameter_calibration_sweep": {
+    "eta_candidates": [0.015, 0.05, 0.10, 0.15],
+    "lambda_candidates": [45.0, 90.0, 150.0]
+  },
+  "deliverables": [
+    "CARL_P1R4_ISOLATION_PROTOCOL.md",
+    "CARL_P1R4_ISOLATION_PROTOCOL.json",
+    "P1R4_ISOLATION_RAW_RUN_LEDGER.csv",
+    "P1R4_ISOLATION_DECISION_TRACE.json",
+    "P1R4_ISOLATION_AUDIT.json",
+    "P1R4_ISOLATION_PERFORMANCE_PROFILE.json",
+    "CARL_P1R4_ISOLATION_MASTER_REPORT.md",
+    "CARL_P1R4_ISOLATION_MASTER_REPORT.json"
+  ]
+}

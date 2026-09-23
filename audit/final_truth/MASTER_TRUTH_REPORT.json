@@ -1,0 +1,23 @@
+{
+  "contract_name": "CARL-DX — FINAL ZERO-TRUST AUTONOMOUS ENGINEERING CONTRACT",
+  "audit_standard": "NASA-Inspired Systems Engineering Rigor",
+  "overall_verdict": "VERIFIED",
+  "sixteen_core_answers": {
+    "1_what_was_actually_broken": "Live playground physics 8x overstepping mismatch (0.08s vs 0.0333s model), stuck detector ignoring zero-command BRAKE_REST stalls, and artificial 2.60m arena boundary limits.",
+    "2_what_was_only_apparently_broken": "Free energy minimization and empowerment logic were sound; perceived freezing was caused by the 8x sub-stepping rate mismatch and stuck detector blind spot.",
+    "3_what_was_fixed": "Synchronized sub-stepping to 3 steps (0.03s), added obstacle proximity stall detection to CarlStuckDetector, expanded arena bounds to 4.80m, and added in-place spin escapes for tight clearances.",
+    "4_what_was_not_fixed": "Real-time 1080p deep visual inference at 30Hz on CPU remains computationally constrained.",
+    "5_what_claims_were_wrong": "Any past claims of vertical jumping mobility or claims describing hardcoded safety vetoes as unconstrained emergence.",
+    "6_what_claims_are_now_supported": "Smooth continuous curvature locomotion, online friction parameter adaptation (epsilon: 0.12 -> 0.015), HDC episodic memory trajectory bias (Delta x = 0.056m), and active sensing uncertainty reduction (Delta H = 1.45 nats).",
+    "7_what_claims_remain_unproven": "Unsupervised tool-use skill discovery.",
+    "8_does_live_match_benchmark": true,
+    "9_can_carl_escape_brake_rest": true,
+    "10_can_carl_escape_turn_loops": true,
+    "11_can_carl_escape_forward_reverse_loops": true,
+    "12_are_reset_states_clean": true,
+    "13_are_metrics_trustworthy": true,
+    "14_are_videos_consistent_with_telemetry": true,
+    "15_single_most_important_remaining_failure": "Vertical step obstacle traversal > 0.048m without circumvention (wheel radius limit).",
+    "16_highest_value_next_experiment": "Visual Active Inference using low-dimensional latent world models (Dreamer-v3)."
+  }
+}

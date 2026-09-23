@@ -1,0 +1,21 @@
+{
+  "condition": "P0_CONTROL",
+  "seed": 42,
+  "episode": 2,
+  "acquired": false,
+  "acquisition_tick": null,
+  "acquisition_time_s": null,
+  "total_ticks": 500,
+  "total_collisions": 361,
+  "route_chosen": "UNDECIDED",
+  "switch_latency_ticks": null,
+  "switch_latency_s": null,
+  "memory_writes": 0,
+  "memory_retrievals": 0,
+  "episodes_in_memory": 0,
+  "final_dist_food": 0.9877,
+  "final_pos": [
+    0.821,
+    -0.134
+  ]
+}

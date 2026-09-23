@@ -1,0 +1,58 @@
+{
+  "protocol_name": "CARL_P1R1_DEVELOPMENTAL_EMERGENCE_PROTOCOL",
+  "version": "1.0.0",
+  "timestamp": "2026-08-22T23:02:00+05:30",
+  "physics_engine": "MuJoCo 3.3.4",
+  "cognitive_frequency_hz": 30,
+  "episode_max_ticks": 500,
+  "episode_duration_seconds": 16.65,
+  "food_coordinates": [1.60, 0.0, 0.12],
+  "acquisition_radius_m": 0.30,
+  "robot_initial_pose": [0.0, 0.0, 0.0],
+  "cruising_speed_mps": 0.264,
+  "perturbation_barrier_name": "lwall_v_0_2",
+  "perturbation_barrier_pos": [0.80, 0.0, 0.25],
+  "parked_barrier_pos": [10.0, 10.0, 0.25],
+  "developmental_phases": {
+    "baseline": {
+      "episodes": [1, 2, 3, 4, 5],
+      "route_A": "OPEN",
+      "route_B": "OPEN",
+      "route_C": "OPEN"
+    },
+    "perturbed": {
+      "episodes": [6, 7, 8, 9, 10],
+      "route_A": "BLOCKED",
+      "route_B": "OPEN",
+      "route_C": "OPEN"
+    },
+    "revisit": {
+      "episodes": [11, 12, 13, 14, 15],
+      "route_A": "RESTORED_OPEN",
+      "route_B": "OPEN",
+      "route_C": "OPEN"
+    }
+  },
+  "conditions": [
+    "FULL_P1_R1",
+    "P0_CONTROL",
+    "NO_MEMORY",
+    "NO_ADAPTATION",
+    "NO_NEED",
+    "GEN_ENV_2",
+    "GEN_ENV_3"
+  ],
+  "official_seeds": [
+    42,
+    101,
+    2024,
+    31415,
+    8675309
+  ],
+  "memory_encoding_triggers": {
+    "prediction_error_threshold": 0.18,
+    "near_barrier_distance_threshold_m": 0.35,
+    "safety_veto_asserted": true,
+    "food_absorbed": true
+  }
+}

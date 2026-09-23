@@ -1,0 +1,79 @@
+{
+  "demo_id": "CARL_P0_SEMINAR_DEMO_FINAL_v2.0",
+  "timestamp": "2026-08-19T02:08:58Z",
+  "baseline_identifier": "CARL-DX 1.3.0-P0-CERTIFIED",
+  "scenario": "Goal-Directed Adaptive Embodied Navigation with 100% Physical Target Acquisition",
+  "target_coordinates": [
+    1.95,
+    0.0,
+    0.12
+  ],
+  "video_properties": {
+    "file": "D:\\ebca\\evidence\\seminar_demo_final\\video\\CARL_P0_SEMINAR_DEMO_FINAL.mp4",
+    "resolution": "1280x720",
+    "fps": 30.0,
+    "total_frames": 1140,
+    "duration_s": 38.0,
+    "structure": {
+      "00_title_card_s": 3.0,
+      "01_trial_a_s": 15.0,
+      "02_trial_b_s": 15.0,
+      "03_comparison_card_s": 5.0
+    }
+  },
+  "trial_a_summary": {
+    "route_selected_all_seeds": [
+      "LEFT",
+      "LEFT",
+      "LEFT"
+    ],
+    "target_absorbed_all_seeds": [
+      true,
+      true,
+      true
+    ],
+    "collisions_all_seeds": [
+      0,
+      0,
+      0
+    ],
+    "closest_distances": [
+      0.28,
+      0.28,
+      0.28
+    ]
+  },
+  "trial_b_summary": {
+    "route_selected_all_seeds": [
+      "RIGHT",
+      "RIGHT",
+      "RIGHT"
+    ],
+    "target_absorbed_all_seeds": [
+      true,
+      true,
+      true
+    ],
+    "collisions_all_seeds": [
+      0,
+      0,
+      0
+    ],
+    "closest_distances": [
+      0.0433,
+      0.0433,
+      0.0433
+    ]
+  },
+  "plot_artifacts": [
+    "D:\\ebca\\evidence\\seminar_demo_final\\plots\\01_final_trajectory.png",
+    "D:\\ebca\\evidence\\seminar_demo_final\\plots\\02_efe_decision_ranking.png",
+    "D:\\ebca\\evidence\\seminar_demo_final\\plots\\03_closed_loop_performance.png",
+    "D:\\ebca\\evidence\\seminar_demo_final\\plots\\04_distance_to_target.png",
+    "D:\\ebca\\evidence\\seminar_demo_final\\plots\\05_trial_A_vs_B.png"
+  ],
+  "spot_checks_passed": true,
+  "anti_hardcoding_audit_passed": true,
+  "core_hashes_unmodified": true,
+  "overall_demo_status": "VALID"
+}

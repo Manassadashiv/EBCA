@@ -1,0 +1,119 @@
+{
+  "project": "CARL-DX / GENESIS Embodied Organism",
+  "theme": "Professional White Engineering Publication Theme (Audited)",
+  "canonical_spec_reference": "D:\\ebca\\CARL_CONTROL_COGNITIVE_SPEC.md",
+  "audit_reference": "D:\\ebca\\evidence\\architecture_spec\\DIAGRAM_INTEGRITY_AUDIT.md",
+  "generation_timestamp": "2026-08-17T22:27:14+05:30",
+  "total_diagrams": 18,
+  "output_directory": "D:\\ebca\\evidence\\architecture_spec",
+  "diagrams": [
+    {
+      "filename": "01_master_system_architecture.png",
+      "source_section": "Section 1 & 2",
+      "status_tag": "[SOURCE VERIFIED]",
+      "diagram_type": "Pipeline Architecture"
+    },
+    {
+      "filename": "02_cognitive_tick.png",
+      "source_section": "Section 2 & 23",
+      "status_tag": "[BENCHMARKED & THEORETICAL LABELED]",
+      "diagram_type": "Timing & Substep Breakdown"
+    },
+    {
+      "filename": "03_command_hierarchy.png",
+      "source_section": "Section 5",
+      "status_tag": "[SOURCE VERIFIED]",
+      "diagram_type": "Authority Hierarchy"
+    },
+    {
+      "filename": "04_goal_arbitration.png",
+      "source_section": "Section 6",
+      "status_tag": "[SOURCE VERIFIED]",
+      "diagram_type": "Decision Flowchart"
+    },
+    {
+      "filename": "05_action_selection_policy.png",
+      "source_section": "Section 7 & 8",
+      "status_tag": "[SOURCE VERIFIED]",
+      "diagram_type": "Policy Formulation"
+    },
+    {
+      "filename": "06_reward_penalty_map.png",
+      "source_section": "Section 9",
+      "status_tag": "[SOURCE VERIFIED & ROADMAP LABELED]",
+      "diagram_type": "Incentive Matrix"
+    },
+    {
+      "filename": "07_safety_veto.png",
+      "source_section": "Section 10",
+      "status_tag": "[SOURCE VERIFIED]",
+      "diagram_type": "Decision Tree"
+    },
+    {
+      "filename": "08_stuck_recovery_state_machine.png",
+      "source_section": "Section 11",
+      "status_tag": "[SOURCE VERIFIED]",
+      "diagram_type": "State Machine"
+    },
+    {
+      "filename": "09_memory_flow.png",
+      "source_section": "Section 12",
+      "status_tag": "[SOURCE VERIFIED & CAUSALLY SUPPORTED]",
+      "diagram_type": "HDC Data Flow"
+    },
+    {
+      "filename": "10_self_model_adaptation.png",
+      "source_section": "Section 13",
+      "status_tag": "[ADAPTATION DEMONSTRATED / EMERGENCE CANDIDATE]",
+      "diagram_type": "Adaptive Loop"
+    },
+    {
+      "filename": "11_curiosity_active_sensing.png",
+      "source_section": "Section 14",
+      "status_tag": "[OBSERVED & THEORETICAL LABELED]",
+      "diagram_type": "Epistemic Flow"
+    },
+    {
+      "filename": "12_reset_lifecycle.png",
+      "source_section": "Section 17",
+      "status_tag": "[SOURCE VERIFIED]",
+      "diagram_type": "Lifecycle Management"
+    },
+    {
+      "filename": "13_data_flow.png",
+      "source_section": "Section 22",
+      "status_tag": "[SOURCE VERIFIED]",
+      "diagram_type": "Signal Flow"
+    },
+    {
+      "filename": "14_realtime_timing.png",
+      "source_section": "Section 23",
+      "status_tag": "[BENCHMARKED IN SIMULATION]",
+      "diagram_type": "Execution Budget"
+    },
+    {
+      "filename": "15_failure_mode_tree.png",
+      "source_section": "Section 18",
+      "status_tag": "[PRIMARY SUBSET LABELED]",
+      "diagram_type": "Failure Mitigation"
+    },
+    {
+      "filename": "16_emergence_boundary.png",
+      "source_section": "Section 24 & 25",
+      "status_tag": "[SCIENTIFIC STANDARD]",
+      "diagram_type": "Scientific Taxonomy"
+    },
+    {
+      "filename": "17_multi_carl_future_architecture.png",
+      "source_section": "Section 11 (Master State)",
+      "status_tag": "[FUTURE / ROADMAP]",
+      "diagram_type": "Multi-Agent Roadmap"
+    },
+    {
+      "filename": "CARL_MASTER_ARCHITECTURE_OVERVIEW.png",
+      "source_section": "Master Synthesis",
+      "status_tag": "[COMPOSITE SYNTHESIS]",
+      "diagram_type": "Composite Synthesis"
+    }
+  ]
+}

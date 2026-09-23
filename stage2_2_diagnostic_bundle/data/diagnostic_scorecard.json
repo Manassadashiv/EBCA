@@ -1,0 +1,947 @@
+{
+  "meta": {
+    "timestamp": "2026-09-05T21:15:53Z",
+    "epochs": 25,
+    "device": "cpu",
+    "train_episodes": 60,
+    "val_episodes": 20
+  },
+  "models": {
+    "M1-A-DIR": {
+      "model_id": "M1-A-DIR",
+      "is_residual": false,
+      "parameter_count": 88355,
+      "elapsed_seconds": 27.02,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.6596109867095947,
+            "dynamic_sonar_r2_high_change": 0.44910985231399536,
+            "gyro_r2": 0.48878586292266846,
+            "proprio_r2": 0.6983988881111145,
+            "composite_rmse": 3.5813238620758057
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.38759946823120117,
+            "dynamic_sonar_r2_high_change": 0.08329439163208008,
+            "gyro_r2": 0.24903517961502075,
+            "proprio_r2": 0.5337401032447815,
+            "composite_rmse": 3.438547134399414
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.07585477828979492,
+            "dynamic_sonar_r2_high_change": -0.3225860595703125,
+            "gyro_r2": 0.1345372200012207,
+            "proprio_r2": -0.1724492311477661,
+            "composite_rmse": 3.5610339641571045
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": -0.16279876232147217,
+            "dynamic_sonar_r2_high_change": -0.6136941909790039,
+            "gyro_r2": 0.036782920360565186,
+            "proprio_r2": -1.6709885597229004,
+            "composite_rmse": 3.5213844776153564
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": -0.7477774620056152,
+            "dynamic_sonar_r2_high_change": -1.0942821502685547,
+            "gyro_r2": -0.08260643482208252,
+            "proprio_r2": -14.454565048217773,
+            "composite_rmse": 3.6355743408203125
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -19.27427442540231,
+          "action_permute_error_surge_pct": -19.27427442540231,
+          "action_sign_invert_surge_pct": -19.27427442540231,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": -8.796814525842787,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 3.72254341840744,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 0.0,
+          "gate_counterfactual_pass": false
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.6481481481481481,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M1-A-RES": {
+      "model_id": "M1-A-RES",
+      "is_residual": true,
+      "parameter_count": 88355,
+      "elapsed_seconds": 27.08,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.7001897096633911,
+            "dynamic_sonar_r2_high_change": 0.43071913719177246,
+            "gyro_r2": 0.523970365524292,
+            "proprio_r2": 0.972784161567688,
+            "composite_rmse": 3.6190273761749268
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.34783053398132324,
+            "dynamic_sonar_r2_high_change": 0.03085404634475708,
+            "gyro_r2": 0.24007976055145264,
+            "proprio_r2": 0.851527214050293,
+            "composite_rmse": 3.45650053024292
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.1963709592819214,
+            "dynamic_sonar_r2_high_change": -0.10703575611114502,
+            "gyro_r2": 0.15863114595413208,
+            "proprio_r2": 0.6404072046279907,
+            "composite_rmse": 3.5564377307891846
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": 0.1280931830406189,
+            "dynamic_sonar_r2_high_change": -0.16434121131896973,
+            "gyro_r2": 0.08532154560089111,
+            "proprio_r2": 0.41978204250335693,
+            "composite_rmse": 3.5043089389801025
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": 0.011081397533416748,
+            "dynamic_sonar_r2_high_change": -0.20642566680908203,
+            "gyro_r2": 0.001947164535522461,
+            "proprio_r2": -0.13724398612976074,
+            "composite_rmse": 3.5621418952941895
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -18.03458132153311,
+          "action_permute_error_surge_pct": -18.03458132153311,
+          "action_sign_invert_surge_pct": -18.03458132153311,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": 3.046522434955432,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 1.918405956029892,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 0.0,
+          "gate_counterfactual_pass": false
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.666005291005291,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M2-B-DIR": {
+      "model_id": "M2-B-DIR",
+      "is_residual": false,
+      "parameter_count": 88729,
+      "elapsed_seconds": 26.17,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.6614418029785156,
+            "dynamic_sonar_r2_high_change": 0.4507041573524475,
+            "gyro_r2": 0.5700129866600037,
+            "proprio_r2": 0.7030909061431885,
+            "composite_rmse": 3.592852830886841
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.41203659772872925,
+            "dynamic_sonar_r2_high_change": 0.14674240350723267,
+            "gyro_r2": 0.5149776339530945,
+            "proprio_r2": 0.5403207540512085,
+            "composite_rmse": 3.4203262329101562
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.172357439994812,
+            "dynamic_sonar_r2_high_change": -0.0988466739654541,
+            "gyro_r2": 0.5609749555587769,
+            "proprio_r2": -0.13663947582244873,
+            "composite_rmse": 3.533756732940674
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": -0.03135192394256592,
+            "dynamic_sonar_r2_high_change": -0.317718505859375,
+            "gyro_r2": 0.49428266286849976,
+            "proprio_r2": -1.4155492782592773,
+            "composite_rmse": 3.48325514793396
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": -0.47316551208496094,
+            "dynamic_sonar_r2_high_change": -0.714643120765686,
+            "gyro_r2": 0.5221023559570312,
+            "proprio_r2": -9.014853477478027,
+            "composite_rmse": 3.5783486366271973
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -18.015834944152644,
+          "action_permute_error_surge_pct": -18.14047693745298,
+          "action_sign_invert_surge_pct": -14.399044640778861,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": -3.606706126405032,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 2.7255429148674013,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 4.694439014882752,
+          "gate_counterfactual_pass": true
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.6845238095238096,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M2-B-RES": {
+      "model_id": "M2-B-RES",
+      "is_residual": true,
+      "parameter_count": 88729,
+      "elapsed_seconds": 26.59,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.700269341468811,
+            "dynamic_sonar_r2_high_change": 0.4341214895248413,
+            "gyro_r2": 0.5886739492416382,
+            "proprio_r2": 0.9745751619338989,
+            "composite_rmse": 3.6260128021240234
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.3526890277862549,
+            "dynamic_sonar_r2_high_change": 0.035145580768585205,
+            "gyro_r2": 0.5098825097084045,
+            "proprio_r2": 0.9013232588768005,
+            "composite_rmse": 3.4513967037200928
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.20381617546081543,
+            "dynamic_sonar_r2_high_change": -0.10317480564117432,
+            "gyro_r2": 0.5692034959793091,
+            "proprio_r2": 0.7901939749717712,
+            "composite_rmse": 3.5458478927612305
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": 0.12610572576522827,
+            "dynamic_sonar_r2_high_change": -0.17857897281646729,
+            "gyro_r2": 0.4983859062194824,
+            "proprio_r2": 0.6359008550643921,
+            "composite_rmse": 3.4887373447418213
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": -0.021725893020629883,
+            "dynamic_sonar_r2_high_change": -0.291772723197937,
+            "gyro_r2": 0.5645596385002136,
+            "proprio_r2": 0.09299558401107788,
+            "composite_rmse": 3.5485944747924805
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -17.004593217325773,
+          "action_permute_error_surge_pct": -16.230069409274815,
+          "action_sign_invert_surge_pct": -15.446838175827327,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": 3.1448591919717503,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 1.8610948324203491,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 2.4564290404319764,
+          "gate_counterfactual_pass": true
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.6671075837742505,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M2-B-MATCHED": {
+      "model_id": "M2-B-MATCHED",
+      "is_residual": true,
+      "parameter_count": 122833,
+      "elapsed_seconds": 28.22,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.6985405683517456,
+            "dynamic_sonar_r2_high_change": 0.43285155296325684,
+            "gyro_r2": 0.5973600149154663,
+            "proprio_r2": 0.9785891771316528,
+            "composite_rmse": 3.6373980045318604
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.3523542284965515,
+            "dynamic_sonar_r2_high_change": 0.05040377378463745,
+            "gyro_r2": 0.5098763704299927,
+            "proprio_r2": 0.8897134065628052,
+            "composite_rmse": 3.4554603099823
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.18712365627288818,
+            "dynamic_sonar_r2_high_change": -0.11432087421417236,
+            "gyro_r2": 0.5782654285430908,
+            "proprio_r2": 0.7579311728477478,
+            "composite_rmse": 3.5454845428466797
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": 0.09261751174926758,
+            "dynamic_sonar_r2_high_change": -0.21017730236053467,
+            "gyro_r2": 0.5071443915367126,
+            "proprio_r2": 0.5713189840316772,
+            "composite_rmse": 3.489361524581909
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": -0.09626615047454834,
+            "dynamic_sonar_r2_high_change": -0.34899771213531494,
+            "gyro_r2": 0.5711210370063782,
+            "proprio_r2": -0.10827195644378662,
+            "composite_rmse": 3.5520260334014893
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -17.697823391281194,
+          "action_permute_error_surge_pct": -17.67062923143548,
+          "action_sign_invert_surge_pct": -15.555792409843693,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": 2.560459331628777,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 1.9040476322174071,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 2.8495130134351325,
+          "gate_counterfactual_pass": true
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.6536596119929453,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M3-C-DIR": {
+      "model_id": "M3-C-DIR",
+      "is_residual": false,
+      "parameter_count": 87355,
+      "elapsed_seconds": 26.04,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.6635147333145142,
+            "dynamic_sonar_r2_high_change": 0.4437856674194336,
+            "gyro_r2": 0.5645383596420288,
+            "proprio_r2": 0.725849986076355,
+            "composite_rmse": 3.583838701248169
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.41656291484832764,
+            "dynamic_sonar_r2_high_change": 0.1527424454689026,
+            "gyro_r2": 0.5168823599815369,
+            "proprio_r2": 0.6191172003746033,
+            "composite_rmse": 3.4234111309051514
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.16412878036499023,
+            "dynamic_sonar_r2_high_change": -0.10979104042053223,
+            "gyro_r2": 0.5642348527908325,
+            "proprio_r2": -0.24442386627197266,
+            "composite_rmse": 3.532806396484375
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": -0.044947266578674316,
+            "dynamic_sonar_r2_high_change": -0.318928599357605,
+            "gyro_r2": 0.49486637115478516,
+            "proprio_r2": -2.111628532409668,
+            "composite_rmse": 3.482830286026001
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": -0.526870846748352,
+            "dynamic_sonar_r2_high_change": -0.7653851509094238,
+            "gyro_r2": 0.5060241222381592,
+            "proprio_r2": -14.972185134887695,
+            "composite_rmse": 3.5779247283935547
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -17.678110395808677,
+          "action_permute_error_surge_pct": -17.69069672520581,
+          "action_sign_invert_surge_pct": -14.004015747691403,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": -3.0301096726440444,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 2.867378091812134,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 4.6234937978513315,
+          "gate_counterfactual_pass": true
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.6571869488536154,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M3-C-RES": {
+      "model_id": "M3-C-RES",
+      "is_residual": true,
+      "parameter_count": 87355,
+      "elapsed_seconds": 26.01,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.6981431245803833,
+            "dynamic_sonar_r2_high_change": 0.4288722276687622,
+            "gyro_r2": 0.5919589996337891,
+            "proprio_r2": 0.9769484996795654,
+            "composite_rmse": 3.627136468887329
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.346538245677948,
+            "dynamic_sonar_r2_high_change": 0.023897767066955566,
+            "gyro_r2": 0.49947959184646606,
+            "proprio_r2": 0.887674868106842,
+            "composite_rmse": 3.4503769874572754
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.20355993509292603,
+            "dynamic_sonar_r2_high_change": -0.11356186866760254,
+            "gyro_r2": 0.570572018623352,
+            "proprio_r2": 0.7470872402191162,
+            "composite_rmse": 3.546696901321411
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": 0.13870692253112793,
+            "dynamic_sonar_r2_high_change": -0.17233896255493164,
+            "gyro_r2": 0.5005915760993958,
+            "proprio_r2": 0.5889676213264465,
+            "composite_rmse": 3.493114948272705
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": 0.031209290027618408,
+            "dynamic_sonar_r2_high_change": -0.22527790069580078,
+            "gyro_r2": 0.5623100996017456,
+            "proprio_r2": -0.015572309494018555,
+            "composite_rmse": 3.5492568016052246
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -17.30650699032161,
+          "action_permute_error_surge_pct": -16.96432994923005,
+          "action_sign_invert_surge_pct": -15.544861916149753,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": 2.753256050469976,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 1.9758305251598358,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 2.3340102116266883,
+          "gate_counterfactual_pass": true
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.6697530864197531,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M4-D-DIR": {
+      "model_id": "M4-D-DIR",
+      "is_residual": false,
+      "parameter_count": 87355,
+      "elapsed_seconds": 25.81,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.66798996925354,
+            "dynamic_sonar_r2_high_change": 0.4523950219154358,
+            "gyro_r2": 0.5660037994384766,
+            "proprio_r2": 0.6871019601821899,
+            "composite_rmse": 3.5803301334381104
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.4246196150779724,
+            "dynamic_sonar_r2_high_change": 0.1603880524635315,
+            "gyro_r2": 0.5117066502571106,
+            "proprio_r2": 0.5446889996528625,
+            "composite_rmse": 3.4229397773742676
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.1799442172050476,
+            "dynamic_sonar_r2_high_change": -0.09142565727233887,
+            "gyro_r2": 0.5630552768707275,
+            "proprio_r2": -0.36532866954803467,
+            "composite_rmse": 3.530320405960083
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": -0.02433931827545166,
+            "dynamic_sonar_r2_high_change": -0.3048665523529053,
+            "gyro_r2": 0.4864335060119629,
+            "proprio_r2": -2.033290386199951,
+            "composite_rmse": 3.4867208003997803
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": -0.5380069017410278,
+            "dynamic_sonar_r2_high_change": -0.7530999183654785,
+            "gyro_r2": 0.5294784307479858,
+            "proprio_r2": -13.214776039123535,
+            "composite_rmse": 3.5855939388275146
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -17.480756200498444,
+          "action_permute_error_surge_pct": -17.277247605343252,
+          "action_sign_invert_surge_pct": -13.698841991925976,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": -6.363125042473175,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 2.8700008034706115,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 5.056168804385444,
+          "gate_counterfactual_pass": true
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.6832010582010583,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M4-D-RES": {
+      "model_id": "M4-D-RES",
+      "is_residual": true,
+      "parameter_count": 87355,
+      "elapsed_seconds": 25.75,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.6970902681350708,
+            "dynamic_sonar_r2_high_change": 0.4241645336151123,
+            "gyro_r2": 0.5882381200790405,
+            "proprio_r2": 0.9731123447418213,
+            "composite_rmse": 3.6435256004333496
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.34278857707977295,
+            "dynamic_sonar_r2_high_change": 0.01311039924621582,
+            "gyro_r2": 0.5049750804901123,
+            "proprio_r2": 0.8670673370361328,
+            "composite_rmse": 3.454267740249634
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.18748319149017334,
+            "dynamic_sonar_r2_high_change": -0.13241660594940186,
+            "gyro_r2": 0.5700540542602539,
+            "proprio_r2": 0.7008976340293884,
+            "composite_rmse": 3.546142339706421
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": 0.09657961130142212,
+            "dynamic_sonar_r2_high_change": -0.22089195251464844,
+            "gyro_r2": 0.5013396739959717,
+            "proprio_r2": 0.5144265294075012,
+            "composite_rmse": 3.4975879192352295
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": -0.0748741626739502,
+            "dynamic_sonar_r2_high_change": -0.3319348096847534,
+            "gyro_r2": 0.5606359243392944,
+            "proprio_r2": -0.17519545555114746,
+            "composite_rmse": 3.5453834533691406
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -16.679271775445876,
+          "action_permute_error_surge_pct": -15.7371258966979,
+          "action_sign_invert_surge_pct": -15.089737191381857,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": 3.3967692112859043,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 1.9359265327453614,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 2.5215471769824176,
+          "gate_counterfactual_pass": true
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.6629188712522046,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M5-E-DIR": {
+      "model_id": "M5-E-DIR",
+      "is_residual": false,
+      "parameter_count": 85985,
+      "elapsed_seconds": 25.84,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.6745680570602417,
+            "dynamic_sonar_r2_high_change": 0.45427626371383667,
+            "gyro_r2": 0.5643800497055054,
+            "proprio_r2": 0.6419381499290466,
+            "composite_rmse": 3.5808260440826416
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.4098550081253052,
+            "dynamic_sonar_r2_high_change": 0.13393813371658325,
+            "gyro_r2": 0.5119290351867676,
+            "proprio_r2": 0.4541431665420532,
+            "composite_rmse": 3.427469491958618
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.16979694366455078,
+            "dynamic_sonar_r2_high_change": -0.11044883728027344,
+            "gyro_r2": 0.5575125813484192,
+            "proprio_r2": -0.6483763456344604,
+            "composite_rmse": 3.5340943336486816
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": -0.029533863067626953,
+            "dynamic_sonar_r2_high_change": -0.3291255235671997,
+            "gyro_r2": 0.4754020571708679,
+            "proprio_r2": -3.264923572540283,
+            "composite_rmse": 3.492124319076538
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": -0.5000133514404297,
+            "dynamic_sonar_r2_high_change": -0.7600150108337402,
+            "gyro_r2": 0.5171163082122803,
+            "proprio_r2": -23.129220962524414,
+            "composite_rmse": 3.5891871452331543
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -17.448002997490534,
+          "action_permute_error_surge_pct": -17.416187717169983,
+          "action_sign_invert_surge_pct": -13.625838271245637,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": -4.990869575898332,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 2.834523606300354,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 4.972388753024014,
+          "gate_counterfactual_pass": true
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.6847442680776014,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M5-E-RES": {
+      "model_id": "M5-E-RES",
+      "is_residual": true,
+      "parameter_count": 85985,
+      "elapsed_seconds": 25.78,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.6972160339355469,
+            "dynamic_sonar_r2_high_change": 0.4262586832046509,
+            "gyro_r2": 0.5972629189491272,
+            "proprio_r2": 0.9717669486999512,
+            "composite_rmse": 3.6396210193634033
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.33948224782943726,
+            "dynamic_sonar_r2_high_change": 0.007553815841674805,
+            "gyro_r2": 0.49527478218078613,
+            "proprio_r2": 0.8624844551086426,
+            "composite_rmse": 3.4611425399780273
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.17251169681549072,
+            "dynamic_sonar_r2_high_change": -0.15738821029663086,
+            "gyro_r2": 0.5612757802009583,
+            "proprio_r2": 0.7023763656616211,
+            "composite_rmse": 3.5475728511810303
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": 0.0825190544128418,
+            "dynamic_sonar_r2_high_change": -0.2502317428588867,
+            "gyro_r2": 0.48976922035217285,
+            "proprio_r2": 0.5015297532081604,
+            "composite_rmse": 3.4999959468841553
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": -0.07702147960662842,
+            "dynamic_sonar_r2_high_change": -0.37257254123687744,
+            "gyro_r2": 0.5632202625274658,
+            "proprio_r2": -0.4032001495361328,
+            "composite_rmse": 3.5484886169433594
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -16.578296229622854,
+          "action_permute_error_surge_pct": -17.092396105567094,
+          "action_sign_invert_surge_pct": -14.261520085319503,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": 4.928904732814577,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 1.95965695977211,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 2.3567569385875355,
+          "gate_counterfactual_pass": true
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.685405643738977,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M6-F-DIR": {
+      "model_id": "M6-F-DIR",
+      "is_residual": false,
+      "parameter_count": 122448,
+      "elapsed_seconds": 327.1,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.6998741626739502,
+            "dynamic_sonar_r2_high_change": 0.46135610342025757,
+            "gyro_r2": 0.5972294807434082,
+            "proprio_r2": 0.8257474899291992,
+            "composite_rmse": 3.5741937160491943
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.4202369451522827,
+            "dynamic_sonar_r2_high_change": 0.14064526557922363,
+            "gyro_r2": 0.5112408399581909,
+            "proprio_r2": 0.5689432621002197,
+            "composite_rmse": 3.4285624027252197
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.1705424189567566,
+            "dynamic_sonar_r2_high_change": -0.13071131706237793,
+            "gyro_r2": 0.5537471771240234,
+            "proprio_r2": -0.038881659507751465,
+            "composite_rmse": 3.5351548194885254
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": -0.027588844299316406,
+            "dynamic_sonar_r2_high_change": -0.36142194271087646,
+            "gyro_r2": 0.4900292158126831,
+            "proprio_r2": -1.1268014907836914,
+            "composite_rmse": 3.489650011062622
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": -0.45828378200531006,
+            "dynamic_sonar_r2_high_change": -0.737166166305542,
+            "gyro_r2": 0.5197851061820984,
+            "proprio_r2": -7.699718475341797,
+            "composite_rmse": 3.5746731758117676
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -17.16700452955229,
+          "action_permute_error_surge_pct": -17.133755530428093,
+          "action_sign_invert_surge_pct": -13.751873712612916,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": -2.5368954726702144,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 3.0592793226242065,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 5.063304699550976,
+          "gate_counterfactual_pass": true
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.6538800705467371,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    },
+    "M6-F-RES": {
+      "model_id": "M6-F-RES",
+      "is_residual": true,
+      "parameter_count": 122448,
+      "elapsed_seconds": 153.07,
+      "batteries": {
+        "Battery_1_Predictive_Fidelity": {
+          "H_1": {
+            "dynamic_sonar_r2_all": 0.7038534879684448,
+            "dynamic_sonar_r2_high_change": 0.4422839879989624,
+            "gyro_r2": 0.604660153388977,
+            "proprio_r2": 0.9777907729148865,
+            "composite_rmse": 3.6039915084838867
+          },
+          "H_5": {
+            "dynamic_sonar_r2_all": 0.34758657217025757,
+            "dynamic_sonar_r2_high_change": 0.034660160541534424,
+            "gyro_r2": 0.5042316913604736,
+            "proprio_r2": 0.8812490701675415,
+            "composite_rmse": 3.4538166522979736
+          },
+          "H_10": {
+            "dynamic_sonar_r2_all": 0.19197428226470947,
+            "dynamic_sonar_r2_high_change": -0.11319863796234131,
+            "gyro_r2": 0.5706932544708252,
+            "proprio_r2": 0.6558343172073364,
+            "composite_rmse": 3.552250385284424
+          },
+          "H_15": {
+            "dynamic_sonar_r2_all": 0.10998642444610596,
+            "dynamic_sonar_r2_high_change": -0.19073057174682617,
+            "gyro_r2": 0.4955868124961853,
+            "proprio_r2": 0.37897390127182007,
+            "composite_rmse": 3.4998764991760254
+          },
+          "H_30": {
+            "dynamic_sonar_r2_all": -0.05066382884979248,
+            "dynamic_sonar_r2_high_change": -0.32013940811157227,
+            "gyro_r2": 0.5698729753494263,
+            "proprio_r2": -0.5701806545257568,
+            "composite_rmse": 3.555283784866333
+          }
+        },
+        "Battery_2_Action_Causality": {
+          "action_zero_error_surge_pct": -16.93013687027064,
+          "action_permute_error_surge_pct": -16.31332597455786,
+          "action_sign_invert_surge_pct": -15.435414127103853,
+          "gate_action_zero_pass": false,
+          "gate_action_permute_pass": false,
+          "gate_action_invert_pass": false
+        },
+        "Battery_3_Spatial_Causality": {
+          "spatial_scramble_sonar_surge_pct": 6.727499330573651,
+          "gate_spatial_causality_pass": false
+        },
+        "Battery_4_Spatial_Disambiguation": {
+          "matched_pairs_evaluated": 10,
+          "mean_divergence_meters": 2.16607329249382,
+          "gate_spatial_disambiguation_pass": true
+        },
+        "Battery_5_Counterfactual_Branching": {
+          "mean_pairwise_divergence_meters": 2.5855835101821207,
+          "gate_counterfactual_pass": true
+        },
+        "Battery_6_Collision_Anticipation": {
+          "collision_events_evaluated": 12,
+          "non_collision_events_evaluated": 378,
+          "collision_roc_auc": 0.6587301587301588,
+          "gate_collision_anticipation_pass": false
+        }
+      }
+    }
+  }
+}

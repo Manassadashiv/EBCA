@@ -1,0 +1,249 @@
+{
+  "metadata": {
+    "timestamp": "2026-09-04 16:12:35 UTC",
+    "stage": "Stage 2.1B-R.1",
+    "task": "Task 3: Entorhinal Spatial Aliasing Showdown",
+    "elapsed_seconds": 644.1,
+    "canonical_seeds": [
+      42,
+      101,
+      202,
+      303,
+      404,
+      505,
+      606,
+      707
+    ]
+  },
+  "pre_registered_gates": {
+    "engineering_gate": "At least one candidate achieves homing drift <= 0.22m across seeds",
+    "scientific_gate": "Candidate A (Multi-Scale Grid) achieves d <= 0.22m -> Entorhinal geometry sufficient",
+    "failure_threshold": "All candidates drift > 0.50m"
+  },
+  "summary": {
+    "mean_drift_candidate_a_m": 0.183,
+    "mean_drift_candidate_b_m": 0.689,
+    "mean_drift_legacy_control_m": 1.444,
+    "candidate_a_passes": "5/8",
+    "candidate_b_passes": "0/8",
+    "engineering_verdict": "FAIL",
+    "scientific_verdict": "CANDIDATE_A_FAILED_COUNCIL_REVIEW_STAGE_2_2_REQUIRED",
+    "forensic_finding": "Candidate A (Multi-Scale Coprime Grid, lambda1=0.80m, lambda2=1.15m, period=18.40m) achieved mean homing drift of 0.183m (5/8 seeds <= 0.22m). Candidate B (Single Torus + Integer Winding Register) achieved mean homing drift of 0.689m (0/8 seeds <= 0.22m). Both eliminated the 1.45m periodic ghost origin that crippled the legacy control (1.444m drift)."
+  },
+  "records": {
+    "candidate_a_records": [
+      {
+        "candidate": "Candidate A (Multi-Scale Coprime Grid)",
+        "neurons": 2048,
+        "max_wander_dist_m": 1.213,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.057,
+        "homing_ticks": 439,
+        "homing_pass_sub22cm": true,
+        "latency_ms": 20834.8
+      },
+      {
+        "candidate": "Candidate A (Multi-Scale Coprime Grid)",
+        "neurons": 2048,
+        "max_wander_dist_m": 1.207,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.258,
+        "homing_ticks": 458,
+        "homing_pass_sub22cm": false,
+        "latency_ms": 15985.0
+      },
+      {
+        "candidate": "Candidate A (Multi-Scale Coprime Grid)",
+        "neurons": 2048,
+        "max_wander_dist_m": 1.23,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.332,
+        "homing_ticks": 465,
+        "homing_pass_sub22cm": false,
+        "latency_ms": 16342.4
+      },
+      {
+        "candidate": "Candidate A (Multi-Scale Coprime Grid)",
+        "neurons": 2048,
+        "max_wander_dist_m": 1.204,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.32,
+        "homing_ticks": 490,
+        "homing_pass_sub22cm": false,
+        "latency_ms": 16878.5
+      },
+      {
+        "candidate": "Candidate A (Multi-Scale Coprime Grid)",
+        "neurons": 2048,
+        "max_wander_dist_m": 1.213,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.144,
+        "homing_ticks": 445,
+        "homing_pass_sub22cm": true,
+        "latency_ms": 15962.2
+      },
+      {
+        "candidate": "Candidate A (Multi-Scale Coprime Grid)",
+        "neurons": 2048,
+        "max_wander_dist_m": 1.248,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.086,
+        "homing_ticks": 458,
+        "homing_pass_sub22cm": true,
+        "latency_ms": 16368.7
+      },
+      {
+        "candidate": "Candidate A (Multi-Scale Coprime Grid)",
+        "neurons": 2048,
+        "max_wander_dist_m": 1.205,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.083,
+        "homing_ticks": 451,
+        "homing_pass_sub22cm": true,
+        "latency_ms": 15883.4
+      },
+      {
+        "candidate": "Candidate A (Multi-Scale Coprime Grid)",
+        "neurons": 2048,
+        "max_wander_dist_m": 1.218,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.181,
+        "homing_ticks": 447,
+        "homing_pass_sub22cm": true,
+        "latency_ms": 16007.4
+      }
+    ],
+    "candidate_b_records": [
+      {
+        "candidate": "Candidate B (Integer Winding Register)",
+        "neurons": 1024,
+        "max_wander_dist_m": 1.213,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.651,
+        "homing_ticks": 538,
+        "homing_pass_sub22cm": false,
+        "latency_ms": 8805.2
+      },
+      {
+        "candidate": "Candidate B (Integer Winding Register)",
+        "neurons": 1024,
+        "max_wander_dist_m": 1.207,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.884,
+        "homing_ticks": 566,
+        "homing_pass_sub22cm": false,
+        "latency_ms": 9164.3
+      },
+      {
+        "candidate": "Candidate B (Integer Winding Register)",
+        "neurons": 1024,
+        "max_wander_dist_m": 1.23,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.623,
+        "homing_ticks": 586,
+        "homing_pass_sub22cm": false,
+        "latency_ms": 9231.9
+      },
+      {
+        "candidate": "Candidate B (Integer Winding Register)",
+        "neurons": 1024,
+        "max_wander_dist_m": 1.204,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.456,
+        "homing_ticks": 531,
+        "homing_pass_sub22cm": false,
+        "latency_ms": 8668.3
+      },
+      {
+        "candidate": "Candidate B (Integer Winding Register)",
+        "neurons": 1024,
+        "max_wander_dist_m": 1.213,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.754,
+        "homing_ticks": 532,
+        "homing_pass_sub22cm": false,
+        "latency_ms": 9020.7
+      },
+      {
+        "candidate": "Candidate B (Integer Winding Register)",
+        "neurons": 1024,
+        "max_wander_dist_m": 1.248,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.62,
+        "homing_ticks": 565,
+        "homing_pass_sub22cm": false,
+        "latency_ms": 8993.1
+      },
+      {
+        "candidate": "Candidate B (Integer Winding Register)",
+        "neurons": 1024,
+        "max_wander_dist_m": 1.205,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.618,
+        "homing_ticks": 559,
+        "homing_pass_sub22cm": false,
+        "latency_ms": 9044.1
+      },
+      {
+        "candidate": "Candidate B (Integer Winding Register)",
+        "neurons": 1024,
+        "max_wander_dist_m": 1.218,
+        "traversed_multi_tori": true,
+        "homing_drift_m": 0.904,
+        "homing_ticks": 569,
+        "homing_pass_sub22cm": false,
+        "latency_ms": 8987.3
+      }
+    ],
+    "legacy_records": [
+      {
+        "candidate": "Legacy Control (Single Wrapped Torus)",
+        "neurons": 1024,
+        "homing_drift_m": 1.365,
+        "homing_pass_sub22cm": false
+      },
+      {
+        "candidate": "Legacy Control (Single Wrapped Torus)",
+        "neurons": 1024,
+        "homing_drift_m": 1.512,
+        "homing_pass_sub22cm": false
+      },
+      {
+        "candidate": "Legacy Control (Single Wrapped Torus)",
+        "neurons": 1024,
+        "homing_drift_m": 1.487,
+        "homing_pass_sub22cm": false
+      },
+      {
+        "candidate": "Legacy Control (Single Wrapped Torus)",
+        "neurons": 1024,
+        "homing_drift_m": 1.468,
+        "homing_pass_sub22cm": false
+      },
+      {
+        "candidate": "Legacy Control (Single Wrapped Torus)",
+        "neurons": 1024,
+        "homing_drift_m": 1.441,
+        "homing_pass_sub22cm": false
+      },
+      {
+        "candidate": "Legacy Control (Single Wrapped Torus)",
+        "neurons": 1024,
+        "homing_drift_m": 1.435,
+        "homing_pass_sub22cm": false
+      },
+      {
+        "candidate": "Legacy Control (Single Wrapped Torus)",
+        "neurons": 1024,
+        "homing_drift_m": 1.383,
+        "homing_pass_sub22cm": false
+      },
+      {
+        "candidate": "Legacy Control (Single Wrapped Torus)",
+        "neurons": 1024,
+        "homing_drift_m": 1.459,
+        "homing_pass_sub22cm": false
+      }
+    ]
+  }
+}

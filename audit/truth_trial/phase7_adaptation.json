@@ -1,0 +1,8 @@
+{
+  "initial_mean_prediction_error": 0.0168,
+  "final_converged_prediction_error": 0.0192,
+  "error_reduction_pct": -13.84,
+  "final_estimated_friction_mu": 2.423,
+  "adaptation_proven": false,
+  "status": "ADAPTATION_FAILED"
+}

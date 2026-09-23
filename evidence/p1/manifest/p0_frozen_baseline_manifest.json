@@ -1,0 +1,73 @@
+{
+  "manifest_name": "P0_FROZEN_BASELINE_QUALIFIED_MANIFEST",
+  "timestamp": "2026-08-22T21:17:17+05:30",
+  "mission": "CARL-DX Phase 0 Frozen Baseline Certification",
+  "p0_qualification_status": "QUALIFIED (81/81 Passed, 0 Collisions, 0 Recovery Failures)",
+  "p1_entry_unlocked": true,
+  "files": {
+    "brain/carl_autonomous_agent.py": {
+      "sha256": "70298654927942eb1e7a962989cba7bd8a41a5f416f6b83920e832c853f7dcdc",
+      "size_bytes": 15093
+    },
+    "brain/carl_embodied_organism.py": {
+      "sha256": "ba9609857946555d0a397e776cc8d84dc24f71034469f6bd0c84185629838cab",
+      "size_bytes": 22155
+    },
+    "brain/carl_generative_self_model.py": {
+      "sha256": "d1c376cce9c55ffa60d66be111eee879a2a4cc2f049ac0a6b6c15b1bd747b7bf",
+      "size_bytes": 17014
+    },
+    "brain/carl_endogenous_agency.py": {
+      "sha256": "df8a5eb164ac47286f1e34814c297488440b8448f40d46fe1ea377a6e14751b8",
+      "size_bytes": 11946
+    },
+    "brain/carl_homeostatic_core.py": {
+      "sha256": "c199a83eb81b8758a08399c0981c5c300921c6d26308daf8575fa7ced1ccf2ce",
+      "size_bytes": 7642
+    },
+    "brain/carl_episodic_memory.py": {
+      "sha256": "7dfae138336d4888ad068889201000cbb4546a0977de6e243bd3dcffc18c967f",
+      "size_bytes": 8169
+    },
+    "brain/carl_stuck_recovery.py": {
+      "sha256": "45fdea9b752b5827072ba34f95b9e20cef9e7f47c6b1edea005b6a87091efd96",
+      "size_bytes": 13742
+    },
+    "brain/carl_empowerment.py": {
+      "sha256": "88dcac9219b432573380778d42958199e9562a234c59f99315742df6d55c61b6",
+      "size_bytes": 5709
+    },
+    "brain/carl_reflex_laboratory.py": {
+      "sha256": "69414d809c75a4806d0ac8eeebe04859e8c81c4851659859732dc69c86339125",
+      "size_bytes": 18296
+    },
+    "brain/carl_motor_filter.py": {
+      "sha256": "dc5308186abca5cff3c5a25e34d82461edab1bb03d5d1e2068d02c3d6f04afd2",
+      "size_bytes": 8046
+    },
+    "brain/carl_expressive_visor.py": {
+      "sha256": "ac46130f5cba2d87b0da22dddba6e7cfe8f7d72b6c142a2a6b8ce545a95bf307",
+      "size_bytes": 2033
+    },
+    "tools/p0_independent_scorer.py": {
+      "sha256": "198a45c84f18b65f25fb4494c00396cacaa4fa211808c90f416b3237717b6c56",
+      "size_bytes": 26585
+    },
+    "tools/p0_regression_runner.py": {
+      "sha256": "ab994cb73b17db8cb697173f0037e4e83c305dc83474aa771243622e0f733f94",
+      "size_bytes": 25495
+    },
+    "world/vessel_kinetic.xml": {
+      "sha256": "fe87cba38916f3ab19d831bafa99658bce9837693a28206930959749cac14d91",
+      "size_bytes": 15661
+    },
+    "CARL_PROJECT_MASTER_STATE.md": {
+      "sha256": "e1d816c99a51d475fbb2384414d3ed4da005c4ea2173744af929c3fe107b8b87",
+      "size_bytes": 48768
+    },
+    "CARL_CONTROL_COGNITIVE_SPEC.md": {
+      "sha256": "2b16fcc47f657f2652e2442957f49aabc590e4208849c85b07b4e5f5b1328902",
+      "size_bytes": 90898
+    }
+  }
+}

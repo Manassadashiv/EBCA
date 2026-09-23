@@ -1,0 +1,82 @@
+[
+  {
+    "id": "BASE_00",
+    "name": "Straight S-Curve 2.0m",
+    "seed": 1000,
+    "target_dist_m": 1.5,
+    "corridor_width": 1.2,
+    "friction": 1.2
+  },
+  {
+    "id": "BASE_01",
+    "name": "Reverse Deceleration",
+    "seed": 1001,
+    "target_dist_m": 1.7,
+    "corridor_width": 1.2,
+    "friction": 1.2
+  },
+  {
+    "id": "BASE_02",
+    "name": "Circular Orbit 1.0m",
+    "seed": 1002,
+    "target_dist_m": 1.9,
+    "corridor_width": 1.2,
+    "friction": 1.2
+  },
+  {
+    "id": "BASE_03",
+    "name": "Circular Orbit 2.0m",
+    "seed": 1003,
+    "target_dist_m": 2.1,
+    "corridor_width": 1.2,
+    "friction": 1.2
+  },
+  {
+    "id": "BASE_04",
+    "name": "90-Deg Corner Evasion",
+    "seed": 1004,
+    "target_dist_m": 2.3,
+    "corridor_width": 1.2,
+    "friction": 1.2
+  },
+  {
+    "id": "BASE_05",
+    "name": "Narrow 0.9m Hallway",
+    "seed": 1005,
+    "target_dist_m": 2.5,
+    "corridor_width": 1.2,
+    "friction": 1.2
+  },
+  {
+    "id": "BASE_06",
+    "name": "Single Pillar Slalom",
+    "seed": 1006,
+    "target_dist_m": 2.7,
+    "corridor_width": 1.2,
+    "friction": 1.2
+  },
+  {
+    "id": "BASE_07",
+    "name": "Dual Obstacle Gate",
+    "seed": 1007,
+    "target_dist_m": 2.9000000000000004,
+    "corridor_width": 1.2,
+    "friction": 1.2
+  },
+  {
+    "id": "BASE_08",
+    "name": "Food Visual Taxis 1.5m",
+    "seed": 1008,
+    "target_dist_m": 3.1,
+    "corridor_width": 1.2,
+    "friction": 1.2
+  },
+  {
+    "id": "BASE_09",
+    "name": "Full Homeostatic Recovery",
+    "seed": 1009,
+    "target_dist_m": 3.3,
+    "corridor_width": 1.2,
+    "friction": 1.2
+  }
+]

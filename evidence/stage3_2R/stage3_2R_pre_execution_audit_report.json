@@ -1,0 +1,1133 @@
+{
+  "all_passed": true,
+  "audits": [
+    {
+      "name": "Audit 1 (AST Anti-Cheat)",
+      "passed": true,
+      "violations": []
+    },
+    {
+      "name": "Audit 2 (State Cloning)",
+      "passed": true,
+      "d_qpos": 0.0,
+      "d_qvel": 0.0
+    },
+    {
+      "name": "Audit 3 (Arm Equivalence)",
+      "passed": true,
+      "candidate_count": 24
+    },
+    {
+      "name": "Audit 4 (Observational Equivalence)",
+      "passed": true,
+      "details": {
+        "families": {
+          "family_1": {
+            "name": "Blind-Corner Connectivity Ambiguity",
+            "trials": [
+              {
+                "seed": 3001,
+                "trial_idx": 0,
+                "d_sensory": 0.02587419096789345,
+                "max_ray_diff": 0.02587419096789345,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 1,
+                "d_sensory": 0.02514295328120042,
+                "max_ray_diff": 0.02514295328120042,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 2,
+                "d_sensory": 0.015777062605484282,
+                "max_ray_diff": 0.015777062605484282,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 3,
+                "d_sensory": 0.012889817383941349,
+                "max_ray_diff": 0.012889817383941349,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 0,
+                "d_sensory": 0.015860985056190824,
+                "max_ray_diff": 0.015860985056190824,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 1,
+                "d_sensory": 0.01596398235815988,
+                "max_ray_diff": 0.01596398235815988,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 2,
+                "d_sensory": 0.006609520098234789,
+                "max_ray_diff": 0.006609520098234789,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 3,
+                "d_sensory": 0.020843433759394348,
+                "max_ray_diff": 0.020843433759394348,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 0,
+                "d_sensory": 0.02363692375557358,
+                "max_ray_diff": 0.02363692375557358,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 1,
+                "d_sensory": 0.023599147544151045,
+                "max_ray_diff": 0.023599147544151045,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 2,
+                "d_sensory": 0.00584916693885118,
+                "max_ray_diff": 0.00584916693885118,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 3,
+                "d_sensory": 0.02997039669270496,
+                "max_ray_diff": 0.02997039669270496,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 0,
+                "d_sensory": 0.005670831562542666,
+                "max_ray_diff": 0.005670831562542666,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 1,
+                "d_sensory": 0.025752582126974843,
+                "max_ray_diff": 0.025752582126974843,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 3,
+                "d_sensory": 0.015350733477560219,
+                "max_ray_diff": 0.015350733477560219,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 0,
+                "d_sensory": 0.030925485821412302,
+                "max_ray_diff": 0.030925485821412302,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 1,
+                "d_sensory": 0.011468185807917752,
+                "max_ray_diff": 0.011468185807917752,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 2,
+                "d_sensory": 0.0056635874697770205,
+                "max_ray_diff": 0.0056635874697770205,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 3,
+                "d_sensory": 0.0014031819978415072,
+                "max_ray_diff": 0.0014031819978415072,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              }
+            ],
+            "max_d_sensory": 0.030925485821412302,
+            "max_single_ray_diff": 0.030925485821412302,
+            "max_d_body": 0.0,
+            "max_d_yaw": 0.0,
+            "max_d_pose": 0.0,
+            "action_divergence": 0.9192388155425119,
+            "family_passed": true
+          },
+          "family_2": {
+            "name": "Symmetrical Y-Fork Funnel Trap",
+            "trials": [
+              {
+                "seed": 3001,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 3,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 3,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 3,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 3,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 3,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              }
+            ],
+            "max_d_sensory": 0.0,
+            "max_single_ray_diff": 0.0,
+            "max_d_body": 0.0,
+            "max_d_yaw": 0.0,
+            "max_d_pose": 0.0,
+            "action_divergence": 0.42426406871192857,
+            "family_passed": true
+          },
+          "family_3": {
+            "name": "Sonically Symmetric Locations (P1 vs P2)",
+            "trials": [
+              {
+                "seed": 3001,
+                "trial_idx": 0,
+                "d_sensory": 6.866350197783356e-16,
+                "max_ray_diff": 4.440892098500626e-16,
+                "d_body": 1.8318679906315083e-15,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 1,
+                "d_sensory": 5.688200336284365e-16,
+                "max_ray_diff": 2.220446049250313e-16,
+                "d_body": 1.3877787807814457e-17,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 2,
+                "d_sensory": 5.551115123125783e-16,
+                "max_ray_diff": 2.220446049250313e-16,
+                "d_body": 1.734723475976807e-16,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 3,
+                "d_sensory": 5.822058658345461e-16,
+                "max_ray_diff": 2.220446049250313e-16,
+                "d_body": 4.371503159461554e-16,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 0,
+                "d_sensory": 5.874748045952207e-16,
+                "max_ray_diff": 2.220446049250313e-16,
+                "d_body": 3.0531133177191805e-16,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 1,
+                "d_sensory": 6.866350197783356e-16,
+                "max_ray_diff": 4.440892098500626e-16,
+                "d_body": 9.228728892196614e-16,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 2,
+                "d_sensory": 6.866350197783356e-16,
+                "max_ray_diff": 4.440892098500626e-16,
+                "d_body": 9.853229343548264e-16,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 3,
+                "d_sensory": 5.551115123125783e-16,
+                "max_ray_diff": 2.220446049250313e-16,
+                "d_body": 1.096345236817342e-15,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 0,
+                "d_sensory": 6.753223014464259e-16,
+                "max_ray_diff": 4.440892098500626e-16,
+                "d_body": 2.1163626406917047e-15,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 1,
+                "d_sensory": 5.551115123125783e-16,
+                "max_ray_diff": 2.220446049250313e-16,
+                "d_body": 1.3461454173580023e-15,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 2,
+                "d_sensory": 6.866350197783356e-16,
+                "max_ray_diff": 4.440892098500626e-16,
+                "d_body": 3.0531133177191805e-16,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 3,
+                "d_sensory": 6.977643512971218e-16,
+                "max_ray_diff": 4.440892098500626e-16,
+                "d_body": 1.6792123247455493e-15,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 0,
+                "d_sensory": 5.688200336284365e-16,
+                "max_ray_diff": 2.220446049250313e-16,
+                "d_body": 2.7269853042355408e-15,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 1,
+                "d_sensory": 5.9529077749218605e-16,
+                "max_ray_diff": 2.220446049250313e-16,
+                "d_body": 4.0245584642661925e-16,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 2,
+                "d_sensory": 5.822058658345461e-16,
+                "max_ray_diff": 2.220446049250313e-16,
+                "d_body": 6.245004513516506e-17,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 3,
+                "d_sensory": 6.866350197783356e-16,
+                "max_ray_diff": 4.440892098500626e-16,
+                "d_body": 4.0245584642661925e-16,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 0,
+                "d_sensory": 5.23691153334427e-16,
+                "max_ray_diff": 2.220446049250313e-16,
+                "d_body": 1.249000902703301e-16,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 1,
+                "d_sensory": 6.753223014464259e-16,
+                "max_ray_diff": 4.440892098500626e-16,
+                "d_body": 8.465450562766819e-16,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 2,
+                "d_sensory": 6.753223014464259e-16,
+                "max_ray_diff": 4.440892098500626e-16,
+                "d_body": 1.672273430841642e-15,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 3,
+                "d_sensory": 5.822058658345461e-16,
+                "max_ray_diff": 2.220446049250313e-16,
+                "d_body": 6.245004513516506e-16,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              }
+            ],
+            "max_d_sensory": 6.977643512971218e-16,
+            "max_single_ray_diff": 4.440892098500626e-16,
+            "max_d_body": 2.7269853042355408e-15,
+            "max_d_yaw": 0.0,
+            "max_d_pose": 0.0,
+            "action_divergence": 0.6363961030678927,
+            "family_passed": true
+          },
+          "family_4": {
+            "name": "Occluded Dogleg Arterial vs Blind Detour",
+            "trials": [
+              {
+                "seed": 3001,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 1,
+                "d_sensory": 0.02239671296172352,
+                "max_ray_diff": 0.02239671296172352,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 2,
+                "d_sensory": 0.020746763909372135,
+                "max_ray_diff": 0.020746763909372135,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 3,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 3,
+                "d_sensory": 0.0011968987061714564,
+                "max_ray_diff": 0.0011968987061714564,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 0,
+                "d_sensory": 0.031887186845172444,
+                "max_ray_diff": 0.031887186845172444,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 2,
+                "d_sensory": 0.04868925296452353,
+                "max_ray_diff": 0.04868925296452353,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 3,
+                "d_sensory": 0.03800672320913234,
+                "max_ray_diff": 0.03800672320913234,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 3,
+                "d_sensory": 0.04548818954696765,
+                "max_ray_diff": 0.04548818954696765,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 3,
+                "d_sensory": 0.03801204846529771,
+                "max_ray_diff": 0.03801204846529771,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              }
+            ],
+            "max_d_sensory": 0.04868925296452353,
+            "max_single_ray_diff": 0.04868925296452353,
+            "max_d_body": 0.0,
+            "max_d_yaw": 0.0,
+            "max_d_pose": 0.0,
+            "action_divergence": 0.55,
+            "family_passed": true
+          },
+          "family_5": {
+            "name": "Multi-Turn Sensory Blackout / Sonic Corridor Symmetry",
+            "trials": [
+              {
+                "seed": 3001,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3001,
+                "trial_idx": 3,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3002,
+                "trial_idx": 3,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3003,
+                "trial_idx": 3,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3004,
+                "trial_idx": 3,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 0,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 1,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 2,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              },
+              {
+                "seed": 3005,
+                "trial_idx": 3,
+                "d_sensory": 0.0,
+                "max_ray_diff": 0.0,
+                "d_body": 0.0,
+                "d_yaw": 0.0,
+                "d_pose": 0.0,
+                "passed": true
+              }
+            ],
+            "max_d_sensory": 0.0,
+            "max_single_ray_diff": 0.0,
+            "max_d_body": 0.0,
+            "max_d_yaw": 0.0,
+            "max_d_pose": 0.0,
+            "action_divergence": 0.7071067811865476,
+            "family_passed": true
+          }
+        },
+        "overall_pass": true,
+        "total_trials_evaluated": 100,
+        "failed_trials": 0
+      }
+    },
+    {
+      "name": "Audit 5 (Seed Determinism)",
+      "passed": true
+    },
+    {
+      "name": "Audit 6 (Simulator Isolation)",
+      "passed": true
+    },
+    {
+      "name": "Audit 7 (Actuation Interface)",
+      "passed": true
+    },
+    {
+      "name": "Audit 8 (Optimal Action Firewall)",
+      "passed": true,
+      "violations": []
+    },
+    {
+      "name": "Audit 9 (Amnesic Arm Invariant)",
+      "passed": true,
+      "grid_is_zero": true
+    },
+    {
+      "name": "Audit 10 (Cryptographic Manifest)",
+      "passed": true,
+      "manifest": {
+        "CARL_STAGE3_2R_FINAL_PREREGISTERED_PROTOCOL.md": "2e54acc70578372b6fd5dc1f472aa0ed4eb28004d53966b3234f9faced5583e3",
+        "carl_stage2_3_r1_deliberation.py": "651682c3e0950a0bfa03b7841c313e4bd6028a3b29eb5a7af3d4015b35579019",
+        "carl_stage2_2_r2_occupancy_memory.py": "d68d1b6804ac09a2367f54f0a93bbc0aa6a7e5c3b78c545454a0f1c75f6bf904",
+        "carl_stage2_2_r2_body_model.py": "495cf2423c8fcc919d25bc793acc930f479a613df6406f6a86ccb104102e8c95",
+        "carl_stage2_integrated_brain.py": "7ca0d38794de86088eb6b0a678b4b119b934b181573911d4bca8d970c5e1f78c",
+        "carl_stage1_hal.py": "3a37fd1569980880310f96b21b006ada74cfdf20f1e13a84ff9671c3fdf8f89f",
+        "stage3_2R_task_fixtures.py": "e06b77f661d312a4be7d4c87b2e3aced5a64508a0b5d9a9ab07668d008d17e42",
+        "test_stage3_2R_observational_equivalence.py": "f604764b7a4eac5f2a6b43b7f52b171c81f60b95c0e36b16518fac97f057124c",
+        "clean_arena.xml": "547a084f9d50b729ed449c4959ce9f834716a34f000760b67b0ff58cf668e425",
+        "vessel_kinetic.xml": "95280be72383dd0f7d9790129ed43e5a83f0ded003a5bfc0643828f2e8f8075d"
+      }
+    }
+  ],
+  "total_audits": 10,
+  "passed_count": 10,
+  "failed_count": 0
+}

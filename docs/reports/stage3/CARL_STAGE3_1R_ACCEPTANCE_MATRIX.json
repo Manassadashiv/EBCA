@@ -1,0 +1,201 @@
+{
+  "protocol_id": "CARL_STAGE3_1R",
+  "protocol_version": "1.0.0",
+  "date_frozen": "2026-09-13",
+  "prerequisite": "Stage 3.0 CERTIFIED, Stage 3.1 Original FAILED CLOSED",
+
+  "total_architecture_units": 2114,
+  "architecture_breakdown": {
+    "head_direction_ring": 64,
+    "toroidal_grid_sheet": 1024,
+    "cann_spatial_directional_subsystem": 1088,
+    "liquid_state_reservoir": 1026,
+    "total_neuromorphic_units": 2114
+  },
+
+  "primary_endpoint": {
+    "metric": "Hull Clearance Degradation (ARM-C Zeroed vs ARM-A Intact across 2,114-unit architecture)",
+    "formula": "ΔC_hull = mean(C_Intact) - mean(C_Zeroed)",
+    "unit": "meters",
+    "threshold": 0.050,
+    "direction": ">=",
+    "statistical_test": "Two-tailed Wilcoxon signed-rank test",
+    "alpha_raw": 0.010,
+    "bonferroni_comparisons": 2,
+    "alpha_corrected": 0.005,
+    "sample_size": 100,
+    "pairing": "Identical spawn configs across arms"
+  },
+
+  "intervention_arms": [
+    {
+      "arm_id": "ARM-A_Intact",
+      "description": "Uncorrupted 2,114-unit architecture (64 HD ring + 1,024 grid torus + 1,026 LSM reservoir) with remediated spawn-offset and inter-episode reset",
+      "neurons_active": 2114,
+      "disrupted_components": "None",
+      "role": "Experimental baseline"
+    },
+    {
+      "arm_id": "ARM-C_Zeroed",
+      "description": "Complete deprivation: all 2,114 units set to zero (64 HD ring + 1,024 grid torus + 1,026 LSM reservoir)",
+      "neurons_active": 0,
+      "disrupted_components": "HD ring (64), Grid torus (1,024), LSM Reservoir (1,026) = 2,114 units total",
+      "role": "Primary deprivation control",
+      "certification_role": "PRIMARY — must pass all 5 gates"
+    },
+    {
+      "arm_id": "ARM-D_FullShuffled",
+      "description": "Topology-destroying permutation across the complete 2,114-unit architecture: HD ring (64), grid torus (1,024), and LSM reservoir (1,026)",
+      "neurons_active": 2114,
+      "disrupted_components": "HD ring (64) topology, Grid torus (1,024) topology, LSM Reservoir (1,026) recurrent topology",
+      "role": "Disrupted-topology control",
+      "certification_role": "SECONDARY — must pass at least 3 of 5 gates"
+    }
+  ],
+
+  "excluded_arms": [
+    {
+      "arm_id": "ARM-B_Frozen",
+      "reason": "Confounded directional prior: freezing at spawn heading provides artificial compass lock aligned with corridor axis",
+      "disposition": "May be retained as observational control for post-hoc analysis only",
+      "certification_contribution": "NONE"
+    }
+  ],
+
+  "gates": [
+    {
+      "gate_id": "G1",
+      "name": "Continuous Action Divergence",
+      "metric": "Δu",
+      "formula": "mean_t ||u_Intact(t) - u_Ablated(t)||_2",
+      "threshold": 0.150,
+      "direction": ">",
+      "unit": "m/s",
+      "purpose": "Mechanistic coupling proof",
+      "criticality": "Required"
+    },
+    {
+      "gate_id": "G2",
+      "name": "Candidate Rank Shift",
+      "metric": "Spearman ρ at blackout midpoint",
+      "formula": "spearmanr(U_Intact[t_mid], U_Ablated[t_mid])",
+      "threshold": 0.700,
+      "direction": "<=",
+      "unit": "dimensionless",
+      "purpose": "Decision modulation proof during active CANN divergence",
+      "criticality": "Required",
+      "timing": "Blackout midpoint tick (NOT t=0)"
+    },
+    {
+      "gate_id": "G3",
+      "name": "Hull Clearance Degradation",
+      "metric": "ΔC_hull",
+      "formula": "mean(C_Intact) - mean(C_Ablated)",
+      "threshold": 0.050,
+      "direction": ">=",
+      "unit": "meters",
+      "purpose": "Primary behavioral necessity proof",
+      "criticality": "PRIMARY ENDPOINT"
+    },
+    {
+      "gate_id": "G4",
+      "name": "Clearance Statistical Significance",
+      "metric": "Wilcoxon p-value (Bonferroni-corrected)",
+      "formula": "wilcoxon(C_Intact - C_Ablated) * 2",
+      "threshold": 0.005,
+      "direction": "<",
+      "unit": "p-value",
+      "purpose": "Statistical rigor",
+      "criticality": "Required",
+      "note": "Bonferroni correction: 2 comparisons, α_raw = 0.01, α_corrected = 0.005"
+    },
+    {
+      "gate_id": "G5",
+      "name": "Collision Rate Safety Direction",
+      "metric": "ΔColl",
+      "formula": "CollRate_Ablated - CollRate_Intact",
+      "threshold": 0.0,
+      "direction": ">=",
+      "unit": "percentage points",
+      "purpose": "Safety grounding — ablation must not outperform intact",
+      "criticality": "Required"
+    }
+  ],
+
+  "pass_fail_rules": {
+    "PASS": {
+      "description": "Stage 3.1-R CERTIFIED",
+      "conditions": [
+        "ARM-C passes ALL 5 gates (G1, G2, G3, G4, G5)",
+        "ARM-D passes AT LEAST 3 of 5 gates"
+      ],
+      "downstream_unlock": "Stage 3.2 may begin pre-registration"
+    },
+    "INCONCLUSIVE": {
+      "description": "Stage 3.1-R PARTIALLY PASSED",
+      "conditions": [
+        "ARM-C passes ALL 5 gates",
+        "ARM-D passes FEWER THAN 3 of 5 gates"
+      ],
+      "downstream_unlock": "Stage 3.2 remains LOCKED. Focused ARM-D follow-up may be designed."
+    },
+    "FAIL_CLOSED": {
+      "description": "Stage 3.1-R FAILED",
+      "conditions": [
+        "ARM-C fails ANY of the 5 gates"
+      ],
+      "downstream_unlock": "Stage 3.2 and 3.3 remain STRICTLY LOCKED. Architectural review required."
+    }
+  },
+
+  "seeds": [3001, 3002, 3003, 3004, 3005],
+
+  "task_environments": [
+    {
+      "layout_id": "layout_1_left_trap",
+      "max_ticks": 80,
+      "blackout_range": [15, 40],
+      "blackout_midpoint_tick": 28,
+      "description": "Sharp 90° left corridor curve with sensory blackout"
+    },
+    {
+      "layout_id": "layout_2_right_trap",
+      "max_ticks": 80,
+      "blackout_range": [10, 30],
+      "blackout_midpoint_tick": 20,
+      "description": "Acute right turn with recessed trap and sensory blackout"
+    },
+    {
+      "layout_id": "layout_3_t_junction",
+      "max_ticks": 80,
+      "blackout_range": [15, 35],
+      "blackout_midpoint_tick": 25,
+      "description": "Symmetric T-junction with sensory blackout"
+    },
+    {
+      "layout_id": "layout_4_corridor_slit",
+      "max_ticks": 100,
+      "blackout_range": [20, 40],
+      "blackout_midpoint_tick": 30,
+      "description": "Multi-chicane corridor with sensory blackout"
+    }
+  ],
+
+  "statistical_protocol": {
+    "primary_test": "Two-tailed Wilcoxon signed-rank test",
+    "secondary_test": "McNemar exact test on paired collisions",
+    "effect_size": "Cohen's d (pooled variance)",
+    "multiple_comparison_correction": "Bonferroni (k=2)",
+    "no_jitter_policy": "Do NOT add synthetic jitter to tied ranks. Report p=1.0 if all differences are zero.",
+    "no_early_stopping": "All 300 episodes must complete regardless of interim statistics"
+  },
+
+  "frozen_thresholds_unchanged": true,
+  "threshold_changes": [
+    {
+      "gate": "G4",
+      "change": "α reduced from 0.010 to 0.005 (Bonferroni correction)",
+      "direction": "STRICTER (not relaxed)"
+    }
+  ]
+}

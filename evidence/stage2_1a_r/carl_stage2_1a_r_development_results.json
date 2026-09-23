@@ -1,0 +1,146 @@
+{
+  "label": "development",
+  "seeds": [
+    42,
+    101,
+    202
+  ],
+  "timestamp": 1788457080.7499251,
+  "seed_results": {
+    "42": {
+      "experiment_1": {
+        "passed": true,
+        "seed": 42,
+        "discovered_yaw_channel": 20,
+        "yaw_discovery_correlation": 0.3882467792672111,
+        "initial_pose_perturbed": {
+          "x0": -0.011157708339309583,
+          "y0": -0.02998016778066443,
+          "yaw0_deg": -0.8284612659898198
+        },
+        "wander_peak_dist_m": 0.17227780363636228,
+        "homing_ticks_taken": 120,
+        "physical_return_drift_m": 0.16576571406119328,
+        "dr_belief_distance_m": 0.1860004179769923,
+        "gate_drift_limit_m": 0.22,
+        "verdict": "PASS \u2014 Gyro channel 20 discovered (corr +0.388). Physical return drift 0.166m <= 0.22m limit."
+      },
+      "experiment_2": {
+        "passed": true,
+        "seed": 42,
+        "discovered_yaw_channel": 20,
+        "gated_ice_advance_m": 0.0,
+        "naive_ice_advance_m": 0.12950159744398498,
+        "advance_ratio": 0.0,
+        "false_drift_reduction_pct": 100.0,
+        "gate_advance_limit_m": 0.05,
+        "gate_ratio_limit": 0.5,
+        "verdict": "PASS \u2014 Slip-gated advance on ice is 0.0000m (limit <=0.05m), achieving 100.0% reduction vs naive (0.1295m)."
+      },
+      "experiment_3": {
+        "passed": true,
+        "seed": 42,
+        "expected_permuted_gyro_channel": 21,
+        "discovered_channel": 21,
+        "gyro_recovered": true,
+        "discovery_correlation": 0.43001418166567573,
+        "physical_return_drift_m": 0.18102289600995017,
+        "gate_drift_limit_m": 0.25,
+        "verdict": "PASS \u2014 Scrambled gyro recovered (ch 21 == 21, corr +0.430). Homing drift 0.181m <= 0.25m."
+      },
+      "all_passed": true
+    },
+    "101": {
+      "experiment_1": {
+        "passed": true,
+        "seed": 101,
+        "discovered_yaw_channel": 20,
+        "yaw_discovery_correlation": 0.36531376496080964,
+        "initial_pose_perturbed": {
+          "x0": -0.016922012685040514,
+          "y0": -0.00393174620659207,
+          "yaw0_deg": 1.3391869472243447
+        },
+        "wander_peak_dist_m": 0.17935542064593213,
+        "homing_ticks_taken": 120,
+        "physical_return_drift_m": 0.19989817709672392,
+        "dr_belief_distance_m": 0.19086140556899814,
+        "gate_drift_limit_m": 0.22,
+        "verdict": "PASS \u2014 Gyro channel 20 discovered (corr +0.365). Physical return drift 0.200m <= 0.22m limit."
+      },
+      "experiment_2": {
+        "passed": true,
+        "seed": 101,
+        "discovered_yaw_channel": 20,
+        "gated_ice_advance_m": 0.011217676240500199,
+        "naive_ice_advance_m": 0.1295996660372068,
+        "advance_ratio": 0.08655636687581983,
+        "false_drift_reduction_pct": 91.34436331241803,
+        "gate_advance_limit_m": 0.05,
+        "gate_ratio_limit": 0.5,
+        "verdict": "PASS \u2014 Slip-gated advance on ice is 0.0112m (limit <=0.05m), achieving 91.3% reduction vs naive (0.1296m)."
+      },
+      "experiment_3": {
+        "passed": true,
+        "seed": 101,
+        "expected_permuted_gyro_channel": 6,
+        "discovered_channel": 6,
+        "gyro_recovered": true,
+        "discovery_correlation": 0.3752040254215621,
+        "physical_return_drift_m": 0.1603748939781072,
+        "gate_drift_limit_m": 0.25,
+        "verdict": "PASS \u2014 Scrambled gyro recovered (ch 6 == 6, corr +0.375). Homing drift 0.160m <= 0.25m."
+      },
+      "all_passed": true
+    },
+    "202": {
+      "experiment_1": {
+        "passed": true,
+        "seed": 202,
+        "discovered_yaw_channel": 20,
+        "yaw_discovery_correlation": 0.3762727821193797,
+        "initial_pose_perturbed": {
+          "x0": -0.03393410946131131,
+          "y0": 0.0322427580147988,
+          "yaw0_deg": 0.20155860425704653
+        },
+        "wander_peak_dist_m": 0.17335646004269295,
+        "homing_ticks_taken": 120,
+        "physical_return_drift_m": 0.1819835522809256,
+        "dr_belief_distance_m": 0.19577999144731675,
+        "gate_drift_limit_m": 0.22,
+        "verdict": "PASS \u2014 Gyro channel 20 discovered (corr +0.376). Physical return drift 0.182m <= 0.22m limit."
+      },
+      "experiment_2": {
+        "passed": true,
+        "seed": 202,
+        "discovered_yaw_channel": 20,
+        "gated_ice_advance_m": 0.0,
+        "naive_ice_advance_m": 0.12956175020250965,
+        "advance_ratio": 0.0,
+        "false_drift_reduction_pct": 100.0,
+        "gate_advance_limit_m": 0.05,
+        "gate_ratio_limit": 0.5,
+        "verdict": "PASS \u2014 Slip-gated advance on ice is 0.0000m (limit <=0.05m), achieving 100.0% reduction vs naive (0.1296m)."
+      },
+      "experiment_3": {
+        "passed": true,
+        "seed": 202,
+        "expected_permuted_gyro_channel": 13,
+        "discovered_channel": 13,
+        "gyro_recovered": true,
+        "discovery_correlation": 0.4248857175594348,
+        "physical_return_drift_m": 0.15918046102108158,
+        "gate_drift_limit_m": 0.25,
+        "verdict": "PASS \u2014 Scrambled gyro recovered (ch 13 == 13, corr +0.425). Homing drift 0.159m <= 0.25m."
+      },
+      "all_passed": true
+    }
+  },
+  "master_synthesis": {
+    "total_seeds": 3,
+    "passing_seeds": 3,
+    "all_passed": true,
+    "pass_rate": 1.0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "protocol_id": "CARL-P1R4-STDP-PLASTICITY-PROTOCOL-V1",
+  "title": "P1-R4 STDP Synaptic Plasticity Reconnection & Causal Protocol",
+  "timestamp": "2026-08-24T00:20:00Z",
+  "conditions": ["FULL_STDP", "NO_STDP", "STDP_SHUFFLED_TIMING"],
+  "seeds": [42, 101, 2024],
+  "episodes_per_seed": 8,
+  "synapse_topology": {
+    "pre_synaptic_dim": 22,
+    "post_synaptic_dim": 7,
+    "total_plastic_synapses": 154,
+    "three_factor_rule": "dW = eta * PE_surprise * Valence * Eligibility"
+  },
+  "phases": {
+    "acquisition_episodes": [1, 2, 3],
+    "persistence_episodes": [4, 5],
+    "reversal_episodes": [6, 7, 8]
+  },
+  "deliverables": [
+    "CARL_P1R4_STDP_PROTOCOL.md",
+    "CARL_P1R4_STDP_PROTOCOL.json",
+    "P1R4_STDP_RAW_RUN_LEDGER.csv",
+    "P1R4_STDP_DECISION_TRACE.json",
+    "P1R4_STDP_AUDIT.json",
+    "P1R4_STDP_PERFORMANCE_PROFILE.json",
+    "CARL_P1R4_STDP_MASTER_REPORT.md",
+    "CARL_P1R4_STDP_MASTER_REPORT.json"
+  ]
+}

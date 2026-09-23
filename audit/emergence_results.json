@@ -1,0 +1,128 @@
+{
+  "EMERG_01_UNKNOWN_BARRIER_MAZE": {
+    "description": "Irregular random polygonal obstacle layout",
+    "net_displacement_m": 1.619,
+    "min_clearance_m": 0.623,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_02_BIFURCATED_EQUAL_ROUTES": {
+    "description": "Two symmetrical path affordances",
+    "net_displacement_m": 0.235,
+    "min_clearance_m": 0.623,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": false,
+    "status": "PASS"
+  },
+  "EMERG_03_ROUTE_DYNAMIC_CLOSURE": {
+    "description": "Selected route becomes blocked mid-execution",
+    "net_displacement_m": 0.853,
+    "min_clearance_m": 0.623,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_04_SENSOR_AMBIGUITY_OCCLUSION": {
+    "description": "50% sonar occlusion with tactile fallback",
+    "net_displacement_m": 0.618,
+    "min_clearance_m": 0.623,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_05_TEMPORARY_DEAD_END_TRAP": {
+    "description": "U-shaped enclosure requiring 180 deg reversal",
+    "net_displacement_m": 0.996,
+    "min_clearance_m": 0.647,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_06_INDIRECT_FOOD_RETRIEVAL": {
+    "description": "Food behind barrier requiring detour",
+    "net_displacement_m": 1.429,
+    "min_clearance_m": 0.623,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_07_OCCLUDED_RESOURCE_FORAGING": {
+    "description": "Resource out of line of sight",
+    "net_displacement_m": 1.276,
+    "min_clearance_m": 0.623,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_08_CURIOSITY_VS_SAFETY_CONFLICT": {
+    "description": "High curiosity zone placed near hazard boundary",
+    "net_displacement_m": 1.236,
+    "min_clearance_m": 0.65,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_09_STARVATION_VS_EXPLORATION": {
+    "description": "Critical low energy overriding explore drive",
+    "net_displacement_m": 1.27,
+    "min_clearance_m": 0.623,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_10_MEMORY_VS_EVIDENCE_CONFLICT": {
+    "description": "Stored hazard coordinate cleared in real world",
+    "net_displacement_m": 0.985,
+    "min_clearance_m": 0.647,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_11_FAMILIAR_STRATEGY_BREAKDOWN": {
+    "description": "Left turns penalized by high slip",
+    "net_displacement_m": 1.449,
+    "min_clearance_m": 0.581,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_12_BODY_CAPABILITY_CONSTRAINED": {
+    "description": "Wheel speed limited to 30% nominal",
+    "net_displacement_m": 1.483,
+    "min_clearance_m": 0.589,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_13_UNSEEN_CONCAVE_GEOMETRY": {
+    "description": "Sharp concave wedge not in training distribution",
+    "net_displacement_m": 2.235,
+    "min_clearance_m": 0.581,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  },
+  "EMERG_14_MULTI_OBJECTIVE_ARBITRATION": {
+    "description": "Simultaneous energy, thermal, and curiosity triggers",
+    "net_displacement_m": 1.322,
+    "min_clearance_m": 0.581,
+    "mean_empowerment_nats": 3.093,
+    "forensic_failures": 0,
+    "autonomous_emergence_supported": true,
+    "status": "PASS"
+  }
+}

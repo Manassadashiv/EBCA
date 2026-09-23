@@ -1,0 +1,112 @@
+{
+  "timestamp": "2026-08-16T22:45:00+05:30",
+  "audit_type": "SCRIPTED_BEHAVIOR_AND_EMERGENCE_FORENSICS",
+  "summary": "Forensic audit identifying scripted vs trained vs emergent behaviors in the CARL-DX prototype curriculum.",
+  "status": "PROTOTYPE_DEMONSTRATION_VERIFIED_BLIND_EMERGENCE_PENDING",
+  "total_scripted_interventions": 39,
+  "capability_taxonomical_matrix": {
+    "6DOF_EMBODIMENT": {
+      "implemented": true,
+      "trained": true,
+      "demonstrated": true,
+      "emergent": false,
+      "classification": "EMBODIED_PRIMITIVE_STACK",
+      "scripting_notes": "Actuation primitives (WALK, TURN, LOOK, INSPECT, AVOID, RECOVER) are parameterized inverse-kinematic routines."
+    },
+    "HOMEOSTATIC_INTEROCEPTION": {
+      "implemented": true,
+      "trained": false,
+      "demonstrated": true,
+      "emergent": false,
+      "classification": "ENDOGENOUS_PHYSIOLOGICAL_DYNAMICS",
+      "scripting_notes": "Energy/thermal equations update in real-time from torque, but target food beacon in Stage 1 was positioned by script."
+    },
+    "GENERATIVE_SELF_MODEL": {
+      "implemented": true,
+      "trained": true,
+      "demonstrated": true,
+      "emergent": false,
+      "classification": "ONLINE_RECURSIVE_ESTIMATION",
+      "scripting_notes": "Predicts next state and adapts ground friction estimate, but dream horizon and candidate action set are pre-defined."
+    },
+    "EPISODIC_AUTOBIOGRAPHICAL_MEMORY": {
+      "implemented": true,
+      "trained": true,
+      "demonstrated": true,
+      "emergent": false,
+      "classification": "HDC_ASSOCIATIVE_BINDING",
+      "scripting_notes": "In Stage 3, initial hazard episode was manually injected via store_episode rather than naturally acquired through unscripted crash."
+    },
+    "ENDOGENOUS_AGENCY_AND_VETO": {
+      "implemented": true,
+      "trained": false,
+      "demonstrated": true,
+      "emergent": false,
+      "classification": "INTERNAL_DRIVE_ARBITRATION",
+      "scripting_notes": "Goal generator derives goals from h(t), but test 4 triggered the veto by artificially injecting 25 rad/s at tick 15."
+    },
+    "AFFECT_BODY_LANGUAGE": {
+      "implemented": true,
+      "trained": false,
+      "demonstrated": true,
+      "emergent": false,
+      "classification": "PARAMETERIZED_POSTURAL_MAPPING",
+      "scripting_notes": "Head tilt and spine roll/pitch postures were directly commanded via set_affect_state in the test harness."
+    },
+    "CONTINUOUS_EMERGENCE_DEMO": {
+      "implemented": true,
+      "trained": false,
+      "demonstrated": true,
+      "emergent": false,
+      "classification": "SCRIPTED_STAGE_CHOREOGRAPHY",
+      "scripting_notes": "Demonstration switched behavioral modes based on hardcoded tick boundaries (t < 15, t < 35, t < 48) rather than unscripted agency."
+    },
+    "INTEGRATED_INFORMATION_PHI_PROXY": {
+      "implemented": true,
+      "trained": false,
+      "demonstrated": true,
+      "emergent": false,
+      "classification": "EXPERIMENTAL_METRIC_PROXY",
+      "scripting_notes": "Calculates Tononi-Sporns cross-channel causal transfer on state time-series. Strictly labelled as Phi_proxy."
+    }
+  },
+  "detailed_findings": [
+    {
+      "file": "run_developmental_curriculum.py",
+      "lines": [66, 69, 72, 75],
+      "category": "HARDCODED_TIMELINE_TICK",
+      "description": "Stage 0 partitioned into fixed tick brackets (t<15, t<35, t<48, t>=48) to showcase motor primitives in sequence."
+    },
+    {
+      "file": "run_developmental_curriculum.py",
+      "lines": [67, 70, 73, 76, 112, 115, 199, 241, 246, 321, 325, 329, 333],
+      "category": "SCRIPTED_AFFECT_STATE",
+      "description": "External test harness explicitly assigned affect labels ('CURIOUS', 'EXCITED', 'CAUTIOUS', 'THREAT_AVERSION', 'SATISFACTION') rather than emerging autonomously from internal state."
+    },
+    {
+      "file": "run_developmental_curriculum.py",
+      "line": 101,
+      "category": "MANUALLY_SEEDED_STATE",
+      "description": "Food position moved by test script to [0.35, 0.0] to guarantee absorption within 60-tick test window."
+    },
+    {
+      "file": "run_developmental_curriculum.py",
+      "line": 188,
+      "category": "MANUALLY_SEEDED_STATE",
+      "description": "Negative hazard memory at (0.6, 0.0) seeded synthetically via store_episode."
+    },
+    {
+      "file": "run_developmental_curriculum.py",
+      "lines": [319, 324, 328, 332],
+      "category": "SCRIPTED_STAGE_CHOREOGRAPHY",
+      "description": "Stage 6 emergence demonstration used hardcoded tick thresholds to sequence perception, locomotion, aversion, and satisfaction."
+    }
+  ],
+  "required_actions": [
+    "Build fully closed-loop unscripted autonomous agent (carl_autonomous_agent.py) where internal state directly drives goal arbitration, Dreamer rollout, affect posture, and motor execution.",
+    "Implement Blind Emergence Test (run_blind_emergence_test.py) with ZERO tick-based branches, ZERO manual goal assignments, and ZERO external affect commands in an unseen environment.",
+    "Execute Paired Memory Causality ablation (With Memory vs Memory Ablated after experiencing real unscripted collision).",
+    "Execute Paired Self-Model Causality ablation (Intact Self-Model vs Degraded/Perturbed Self-Model).",
+    "Fix scorecard goal_reached vs verdict inconsistency."
+  ]
+}

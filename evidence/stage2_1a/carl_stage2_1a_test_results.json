@@ -1,0 +1,209 @@
+{
+  "label": "test",
+  "seeds": [
+    303,
+    404,
+    505,
+    606,
+    707
+  ],
+  "timestamp": 1788452201.8247004,
+  "seed_results": {
+    "303": {
+      "experiment_1": {
+        "passed": true,
+        "total_ticks": 774,
+        "total_path_length_m": 1.4476186220560006,
+        "gt_return_drift_m": 0.16801314702029804,
+        "est_return_drift_m": 0.12583349903972207,
+        "est_drift_pct_of_path": 11.606174752137067,
+        "est_heading_error_deg": 10.916460013745052,
+        "gate_drift_pct_limit": 15.0,
+        "gate_heading_error_limit_deg": 12.0,
+        "verdict": "PASS \u2014 Position drift 11.6% (limit <=15%), heading error 10.9 deg (limit <=12 deg)."
+      },
+      "experiment_2": {
+        "passed": true,
+        "ice_advance_gt_m": 0.16004310942087302,
+        "ice_advance_naive_m": 0.16199999485988337,
+        "ice_advance_gated_m": 0.01934564819120487,
+        "error_ratio_gated_over_naive": 0.11941758521620487,
+        "false_drift_reduction_pct": 88.05824147837951,
+        "ticks_gated_on_ice": 28,
+        "gate_false_advance_limit_m": 0.05,
+        "gate_error_ratio_limit": 0.5,
+        "verdict": "PASS \u2014 Slip-gated false advance on ice is 0.0193m (limit <=0.05m), achieving 88.1% reduction vs naive (0.1620m)."
+      },
+      "experiment_3": {
+        "passed": true,
+        "correct_gyro_channel": 20,
+        "wrong_sensor_channel": 0,
+        "correct_mae_deg": 2.679221079176229,
+        "wrong_mae_deg": 95.30909812029958,
+        "degradation_factor": 35.573435451472314,
+        "gate_correct_mae_limit_deg": 10.0,
+        "gate_degradation_factor_min": 5.0,
+        "verdict": "PASS \u2014 Correct gyro MAE is 2.68 deg (limit <=10 deg), scrambled sensor degrades 35.6x to 95.31 deg."
+      },
+      "all_passed": true
+    },
+    "404": {
+      "experiment_1": {
+        "passed": true,
+        "total_ticks": 774,
+        "total_path_length_m": 1.4476186220560006,
+        "gt_return_drift_m": 0.16801314702029804,
+        "est_return_drift_m": 0.12583349903972207,
+        "est_drift_pct_of_path": 11.606174752137067,
+        "est_heading_error_deg": 10.916460013745052,
+        "gate_drift_pct_limit": 15.0,
+        "gate_heading_error_limit_deg": 12.0,
+        "verdict": "PASS \u2014 Position drift 11.6% (limit <=15%), heading error 10.9 deg (limit <=12 deg)."
+      },
+      "experiment_2": {
+        "passed": true,
+        "ice_advance_gt_m": 0.16004310942087302,
+        "ice_advance_naive_m": 0.16199999485988337,
+        "ice_advance_gated_m": 0.01934564819120487,
+        "error_ratio_gated_over_naive": 0.11941758521620487,
+        "false_drift_reduction_pct": 88.05824147837951,
+        "ticks_gated_on_ice": 28,
+        "gate_false_advance_limit_m": 0.05,
+        "gate_error_ratio_limit": 0.5,
+        "verdict": "PASS \u2014 Slip-gated false advance on ice is 0.0193m (limit <=0.05m), achieving 88.1% reduction vs naive (0.1620m)."
+      },
+      "experiment_3": {
+        "passed": true,
+        "correct_gyro_channel": 20,
+        "wrong_sensor_channel": 0,
+        "correct_mae_deg": 2.679221079176229,
+        "wrong_mae_deg": 95.30909812029958,
+        "degradation_factor": 35.573435451472314,
+        "gate_correct_mae_limit_deg": 10.0,
+        "gate_degradation_factor_min": 5.0,
+        "verdict": "PASS \u2014 Correct gyro MAE is 2.68 deg (limit <=10 deg), scrambled sensor degrades 35.6x to 95.31 deg."
+      },
+      "all_passed": true
+    },
+    "505": {
+      "experiment_1": {
+        "passed": true,
+        "total_ticks": 774,
+        "total_path_length_m": 1.4476186220560006,
+        "gt_return_drift_m": 0.16801314702029804,
+        "est_return_drift_m": 0.12583349903972207,
+        "est_drift_pct_of_path": 11.606174752137067,
+        "est_heading_error_deg": 10.916460013745052,
+        "gate_drift_pct_limit": 15.0,
+        "gate_heading_error_limit_deg": 12.0,
+        "verdict": "PASS \u2014 Position drift 11.6% (limit <=15%), heading error 10.9 deg (limit <=12 deg)."
+      },
+      "experiment_2": {
+        "passed": true,
+        "ice_advance_gt_m": 0.16004310942087302,
+        "ice_advance_naive_m": 0.16199999485988337,
+        "ice_advance_gated_m": 0.01934564819120487,
+        "error_ratio_gated_over_naive": 0.11941758521620487,
+        "false_drift_reduction_pct": 88.05824147837951,
+        "ticks_gated_on_ice": 28,
+        "gate_false_advance_limit_m": 0.05,
+        "gate_error_ratio_limit": 0.5,
+        "verdict": "PASS \u2014 Slip-gated false advance on ice is 0.0193m (limit <=0.05m), achieving 88.1% reduction vs naive (0.1620m)."
+      },
+      "experiment_3": {
+        "passed": true,
+        "correct_gyro_channel": 20,
+        "wrong_sensor_channel": 0,
+        "correct_mae_deg": 2.679221079176229,
+        "wrong_mae_deg": 95.30909812029958,
+        "degradation_factor": 35.573435451472314,
+        "gate_correct_mae_limit_deg": 10.0,
+        "gate_degradation_factor_min": 5.0,
+        "verdict": "PASS \u2014 Correct gyro MAE is 2.68 deg (limit <=10 deg), scrambled sensor degrades 35.6x to 95.31 deg."
+      },
+      "all_passed": true
+    },
+    "606": {
+      "experiment_1": {
+        "passed": true,
+        "total_ticks": 774,
+        "total_path_length_m": 1.4476186220560006,
+        "gt_return_drift_m": 0.16801314702029804,
+        "est_return_drift_m": 0.12583349903972207,
+        "est_drift_pct_of_path": 11.606174752137067,
+        "est_heading_error_deg": 10.916460013745052,
+        "gate_drift_pct_limit": 15.0,
+        "gate_heading_error_limit_deg": 12.0,
+        "verdict": "PASS \u2014 Position drift 11.6% (limit <=15%), heading error 10.9 deg (limit <=12 deg)."
+      },
+      "experiment_2": {
+        "passed": true,
+        "ice_advance_gt_m": 0.16004310942087302,
+        "ice_advance_naive_m": 0.16199999485988337,
+        "ice_advance_gated_m": 0.01934564819120487,
+        "error_ratio_gated_over_naive": 0.11941758521620487,
+        "false_drift_reduction_pct": 88.05824147837951,
+        "ticks_gated_on_ice": 28,
+        "gate_false_advance_limit_m": 0.05,
+        "gate_error_ratio_limit": 0.5,
+        "verdict": "PASS \u2014 Slip-gated false advance on ice is 0.0193m (limit <=0.05m), achieving 88.1% reduction vs naive (0.1620m)."
+      },
+      "experiment_3": {
+        "passed": true,
+        "correct_gyro_channel": 20,
+        "wrong_sensor_channel": 0,
+        "correct_mae_deg": 2.679221079176229,
+        "wrong_mae_deg": 95.30909812029958,
+        "degradation_factor": 35.573435451472314,
+        "gate_correct_mae_limit_deg": 10.0,
+        "gate_degradation_factor_min": 5.0,
+        "verdict": "PASS \u2014 Correct gyro MAE is 2.68 deg (limit <=10 deg), scrambled sensor degrades 35.6x to 95.31 deg."
+      },
+      "all_passed": true
+    },
+    "707": {
+      "experiment_1": {
+        "passed": true,
+        "total_ticks": 774,
+        "total_path_length_m": 1.4476186220560006,
+        "gt_return_drift_m": 0.16801314702029804,
+        "est_return_drift_m": 0.12583349903972207,
+        "est_drift_pct_of_path": 11.606174752137067,
+        "est_heading_error_deg": 10.916460013745052,
+        "gate_drift_pct_limit": 15.0,
+        "gate_heading_error_limit_deg": 12.0,
+        "verdict": "PASS \u2014 Position drift 11.6% (limit <=15%), heading error 10.9 deg (limit <=12 deg)."
+      },
+      "experiment_2": {
+        "passed": true,
+        "ice_advance_gt_m": 0.16004310942087302,
+        "ice_advance_naive_m": 0.16199999485988337,
+        "ice_advance_gated_m": 0.01934564819120487,
+        "error_ratio_gated_over_naive": 0.11941758521620487,
+        "false_drift_reduction_pct": 88.05824147837951,
+        "ticks_gated_on_ice": 28,
+        "gate_false_advance_limit_m": 0.05,
+        "gate_error_ratio_limit": 0.5,
+        "verdict": "PASS \u2014 Slip-gated false advance on ice is 0.0193m (limit <=0.05m), achieving 88.1% reduction vs naive (0.1620m)."
+      },
+      "experiment_3": {
+        "passed": true,
+        "correct_gyro_channel": 20,
+        "wrong_sensor_channel": 0,
+        "correct_mae_deg": 2.679221079176229,
+        "wrong_mae_deg": 95.30909812029958,
+        "degradation_factor": 35.573435451472314,
+        "gate_correct_mae_limit_deg": 10.0,
+        "gate_degradation_factor_min": 5.0,
+        "verdict": "PASS \u2014 Correct gyro MAE is 2.68 deg (limit <=10 deg), scrambled sensor degrades 35.6x to 95.31 deg."
+      },
+      "all_passed": true
+    }
+  },
+  "master_synthesis": {
+    "total_seeds": 5,
+    "passing_seeds": 5,
+    "all_passed": true,
+    "pass_rate": 1.0
+  }
+}

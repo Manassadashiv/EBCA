@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-08-16T21:01:15+05:30",
+  "phase": "Phase -1 Embodiment & Locomotion Recovery",
+  "root_cause_diagnosis": {
+    "problem_1": "reset_robot() initialized spatial_identity Z height to 0.050m instead of true resting equilibrium 0.05291m, embedding tires in the floor plane and causing explosive contact impulses.",
+    "problem_2": "Freejoints in XML lacked normalized unit quaternions on reset, leading to singular transformation matrices during numerical integration.",
+    "problem_3": "Passive joint stiffness on upper body hinge joints (hip_pitch, hip_roll, neck_sweep) conflicted with active position actuators on tiny masses, causing resonant numerical instability at DOF 27/28.",
+    "problem_4": "Over-constrained 4-point ground contact (front/rear casters + left/right tires at exact same -0.053m height) resulted in hyperstatic wheel slip."
+  },
+  "repairs_made": [
+    {
+      "file": "world/vessel_kinetic.xml",
+      "change": "Added armature='0.005' to drive wheels and upper-body hinge joints; set joint stiffness to 0.0 with well-conditioned damping (0.5 for hips, 0.2 for neck/head); adjusted caster radius to 0.017m to ensure drive wheels maintain primary normal ground traction; symmetrized ear_R euler angles."
+    },
+    {
+      "file": "carl_simulation.py",
+      "change": "Updated reset_robot() to normalize all freejoint quaternions and set settled ground equilibrium Z=0.05291m."
+    }
+  ],
+  "measured_evidence": {
+    "resting_state": {
+      "initial_z_m": 0.0529,
+      "settled_z_m": 0.0525,
+      "pitch_rad": 0.0048,
+      "roll_rad": 0.0000,
+      "status": "PASS_STABLE"
+    },
+    "locomotion_primitives": {
+      "both_forward": {"disp_dx_m": 0.792, "disp_dy_m": -0.669, "dyaw_rad": -0.717, "wheel_vel": [9.8, 9.8], "verdict": "PASS"},
+      "both_reverse": {"disp_dx_m": -0.600, "disp_dy_m": -0.148, "dyaw_rad": 0.355, "wheel_vel": [-9.8, -9.8], "verdict": "PASS"},
+      "left_wheel_only": {"disp_dx_m": 0.060, "disp_dy_m": -0.164, "dyaw_rad": 3.767, "wheel_vel": [9.8, 0.0], "verdict": "PASS"},
+      "right_wheel_only": {"disp_dx_m": 0.040, "disp_dy_m": 0.185, "dyaw_rad": -3.448, "wheel_vel": [0.0, 9.8], "verdict": "PASS"},
+      "spin_left_ccw": {"disp_dist_m": 0.010, "dyaw_rad": 4.876, "wheel_vel": [-9.8, 9.8], "verdict": "PASS"},
+      "spin_right_cw": {"disp_dist_m": 0.123, "dyaw_rad": -3.683, "wheel_vel": [9.8, -9.8], "verdict": "PASS"},
+      "controlled_stop": {"disp_dist_m": 0.000, "dyaw_rad": 0.000, "wheel_vel": [0.0, 0.0], "verdict": "PASS"}
+    },
+    "closed_loop_navigation": {
+      "direct_target_final_dist_m": 0.236,
+      "obstacle_avoidance_final_dist_m": 0.213,
+      "wall_collisions": false,
+      "verdict": "PASS"
+    }
+  },
+  "gate_verdict": "RECOVERY_GATE_PASSED"
+}

@@ -1,0 +1,63 @@
+================================================================================
+CARL-DX — PHASE 1 LABORATORY EXECUTION RECEIPT
+================================================================================
+Receipt Generated:         2026-08-22T22:45:00+05:30 (FORENSICALLY RECONCILED)
+Repository Root:           D:\ebca
+Audit Status:              VERIFIED AGAINST RAW CSV TELEMETRY (AUTHORITATIVE)
+
+--------------------------------------------------------------------------------
+1. CODE & MANIFEST INTEGRITY HASHES
+--------------------------------------------------------------------------------
+P0 Baseline Manifest:      D:\ebca\evidence\p1\manifest\p0_frozen_baseline_manifest.json
+P1 Input Manifest:         D:\ebca\evidence\p1\audit\P1_FORENSIC_RECONCILIATION_INPUT_MANIFEST.json
+P0 Manifest SHA-256:       13f0cb1883be7eb74268e0d5dc3a3628770c0cbf837a285d8520cfc3e72bc7b0
+
+P0 Frozen Source Files Verified (Zero Modifications):
+- brain/carl_autonomous_agent.py:      70298654927942eb1e7a962989cba7bd8a41a5f416f6b83920e832c853f7dcdc
+- brain/carl_embodied_organism.py:      ba9609857946555d0a397e776cc8d84dc24f71034469f6bd0c84185629838cab
+- brain/carl_generative_self_model.py:  d1c376cce9c55ffa60d66be111eee879a2a4cc2f049ac0a6b6c15b1bd747b7bf
+- brain/carl_endogenous_agency.py:      df8a5eb164ac47286f1e34814c297488440b8448f40d46fe1ea377a6e14751b8
+- brain/carl_homeostatic_core.py:       c199a83eb81b8758a08399c0981c5c300921c6d26308daf8575fa7ced1ccf2ce
+- brain/carl_episodic_memory.py:        7dfae138336d4888ad068889201000cbb4546a0977de6e243bd3dcffc18c967f
+- brain/carl_stuck_recovery.py:         45fdea9b752b5827072ba34f95b9e20cef9e7f47c6b1edea005b6a87091efd96
+- brain/carl_empowerment.py:            88dcac9219b432573380778d42958199e9562a234c59f99315742df6d55c61b6
+- brain/carl_reflex_laboratory.py:      69414d809c75a4806d0ac8eeebe04859e8c81c4851659859732dc69c86339125
+- world/vessel_kinetic.xml:             fe87cba38916f3ab19d831bafa99658bce9837693a28206930959749cac14d91
+
+--------------------------------------------------------------------------------
+2. EXPERIMENTAL EXECUTION METRICS (RECONCILED FROM 525 RAW CSVS)
+--------------------------------------------------------------------------------
+Environments Executed:     3 (ENV_1_BIFURCATION_CANONICAL, ENV_2_ASYMMETRIC_OFFSET, ENV_3_FRICTIONAL_TRANSITION)
+Conditions Executed:       7 (FULL_P1, P0_CONTROL, NO_MEMORY, NO_ADAPTATION, NO_NEED, GEN_ENV_2, GEN_ENV_3)
+Official Seeds Executed:   5 (42, 101, 2024, 31415, 8675309)
+Episodes per Sequence:     15 (Fixed Protocol: Ep 1-5 Baseline, Ep 6-10 Perturbed, Ep 11-15 Revisit)
+Total Physical Episodes:   525
+Successful Episodes:       0 (0.00% - All 525 runs timed out at 300 ticks vs 3.2m distance)
+Timed-Out Episodes:        525 (100.0%)
+Collisions Occurred:       0 (100% Collision-Free Across All 525 Episodes)
+Recovery Failures:         0
+
+--------------------------------------------------------------------------------
+3. GENERATED ARTIFACTS & PROVENANCE
+--------------------------------------------------------------------------------
+Raw Run Ledger:            D:\ebca\evidence\p1\audit\P1_RAW_RUN_LEDGER.csv (525 Rows)
+Reconciliation Table:      D:\ebca\evidence\p1\audit\P1_RECONCILIATION_MASTER.csv
+Forensic Master Report:    D:\ebca\evidence\p1\audit\P1_FORENSIC_RECONCILIATION_MASTER.md
+Forensic Master JSON:      D:\ebca\evidence\p1\audit\P1_FORENSIC_RECONCILIATION_MASTER.json
+Anti-Engineering Audit:    D:\ebca\evidence\p1\audit\anti_engineering_audit_report.json
+Audit Verdict:             ZERO BEHAVIOR-SPECIFIC SOLUTION RULES (69/69 files passed)
+Counterfactual Traces:     D:\ebca\evidence\p1\decision_trace\P1_DECISION_TRACE.json (10 Decision Points)
+
+Canonical Master Reports:
+- D:\ebca\CARL_P1_MASTER_REPORT.md
+- D:\ebca\CARL_P1_MASTER_REPORT.json
+
+--------------------------------------------------------------------------------
+4. OFFICIAL SCIENTIFIC VERDICT & FORENSIC STATUS
+--------------------------------------------------------------------------------
+FORENSIC INTEGRITY VERDICT:
+B. DATASET VALID WITH DOCUMENTATION ERRORS (Resolved & Reconciled)
+
+EMERGENCE CLASSIFICATION:
+P1 STATUS: NO QUALIFYING EMERGENT BEHAVIOR FOUND
+================================================================================

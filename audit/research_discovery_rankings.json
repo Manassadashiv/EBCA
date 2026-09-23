@@ -1,0 +1,52 @@
+[
+  {
+    "mechanism": "Tri-Drive Motivation (Homeostasis + Curiosity + Empowerment)",
+    "primary_citation": "Klyubin, Polani, & Nehaniv (2005); Friston et al. (2015)",
+    "relevance_score_10": 9.8,
+    "agency_impact_score_10": 9.9,
+    "computational_cost": "Low (<0.5ms via rollout dispersion)",
+    "risk_of_failure": "Very Low",
+    "classification": "DIAMOND",
+    "decision": "IMPLEMENT_AND_INTEGRATE"
+  },
+  {
+    "mechanism": "Active Inference & Counterfactual Dreamer Planning",
+    "primary_citation": "Friston (2010); Hafner et al. (2020)",
+    "relevance_score_10": 9.6,
+    "agency_impact_score_10": 9.7,
+    "computational_cost": "Low (Linearized state transitions)",
+    "risk_of_failure": "Low",
+    "classification": "DIAMOND",
+    "decision": "ALREADY_IMPLEMENTED_AND_MAINTAINED"
+  },
+  {
+    "mechanism": "Sensorimotor Body-Schema Self-Modeling",
+    "primary_citation": "Hoffmann et al. (2010); Sturm, Plagemann, & Burgard (2009)",
+    "relevance_score_10": 9.4,
+    "agency_impact_score_10": 9.2,
+    "computational_cost": "Low (Recursive parameter updating)",
+    "risk_of_failure": "Low",
+    "classification": "DIAMOND",
+    "decision": "IMPLEMENT_ONLINE_ADAPTATION"
+  },
+  {
+    "mechanism": "Quality-Diversity Repertoires (MAP-Elites)",
+    "primary_citation": "Mouret & Clune (2015); Cully et al. (2015)",
+    "relevance_score_10": 8.5,
+    "agency_impact_score_10": 8.7,
+    "computational_cost": "Medium-High (Grid cell archival)",
+    "risk_of_failure": "Medium (Storage drift)",
+    "classification": "PROMISING",
+    "decision": "RESEARCH_AND_PROTOTYPE_ARCHIVAL"
+  },
+  {
+    "mechanism": "Multi-Timescale Hierarchical Control",
+    "primary_citation": "Pezzulo et al. (2018); Botvinick (2008)",
+    "relevance_score_10": 9.5,
+    "agency_impact_score_10": 9.5,
+    "computational_cost": "Very Low (Separated loop frequencies)",
+    "risk_of_failure": "Very Low",
+    "classification": "DIAMOND",
+    "decision": "IMPLEMENT_HIERARCHICAL_FAST_SLOW"
+  }
+]

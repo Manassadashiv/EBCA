@@ -250,6 +250,33 @@ class PhysarumMaze:
         import math
         return math.atan2(by - yw, bx - xw)
 
+    # ── Dynamic Sonar Range Rasterization ───────────────────────
+    def rasterize_sonar_hits(self, robot_x, robot_y, robot_yaw, sonar_dists, sonar_angles,
+                             MAP_XMIN=-5.0, MAP_XMAX=5.0, MAP_YMIN=-5.0, MAP_YMAX=5.0, max_range=3.0):
+        """
+        Continuously paints live 24-sonar range hits directly into the 25x25 Physarum
+        grid, setting high-resistance barriers at detected obstacle coordinates.
+        """
+        for dist, angle_offset in zip(sonar_dists, sonar_angles):
+            if dist < (max_range - 0.15):
+                hit_x = robot_x + dist * np.cos(robot_yaw + angle_offset)
+                hit_y = robot_y + dist * np.sin(robot_yaw + angle_offset)
+
+                if MAP_XMIN <= hit_x <= MAP_XMAX and MAP_YMIN <= hit_y <= MAP_YMAX:
+                    gi = int(np.clip((hit_x - MAP_XMIN) / (MAP_XMAX - MAP_XMIN) * self.R, 0, self.R - 1))
+                    gj = int(np.clip((hit_y - MAP_YMIN) / (MAP_YMAX - MAP_YMIN) * self.C, 0, self.C - 1))
+
+                    self.obstacle[gi, gj] = True
+                    # Choke conductivities around newly spotted obstacle
+                    if gj < self.C - 1:
+                        self.D_h[gi, gj] = D_MIN
+                    if gj > 0:
+                        self.D_h[gi, gj - 1] = D_MIN
+                    if gi < self.R - 1:
+                        self.D_v[gi, gj] = D_MIN
+                    if gi > 0:
+                        self.D_v[gi - 1, gj] = D_MIN
+
     # ── Diagnostic: how connected is the path? ───────────────
     def path_strength(self):
         return float(np.percentile(np.concatenate([

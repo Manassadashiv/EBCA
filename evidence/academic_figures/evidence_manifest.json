@@ -1,0 +1,65 @@
+{
+  "title": "CARL-DX Phase 1-R5 Three-Factor STDP Causal Validation Evidence Package",
+  "generated": "2026-08-30",
+  "methodology": "Izhikevich 2007 three-factor STDP with eligibility traces",
+  "conditions": [
+    "STDP_ACTIVE",
+    "STDP_ABLATION",
+    "NO_STDP",
+    "SHUFFLED_STDP"
+  ],
+  "seeds": [
+    42,
+    101,
+    2024
+  ],
+  "episodes_per_seed": 8,
+  "ticks_per_episode": 300,
+  "total_experimental_runs": 96,
+  "figures": [
+    {
+      "file": "fig01_synaptic_weight_matrix_evolution.png",
+      "title": "Synaptic Weight Matrix W(22x7) Evolution"
+    },
+    {
+      "file": "fig02_causal_ablation_weight_convergence.png",
+      "title": "Causal Ablation: Weight Convergence"
+    },
+    {
+      "file": "fig03_ltp_ltd_plasticity_events.png",
+      "title": "LTP/LTD Events & Neuromodulatory Gating"
+    },
+    {
+      "file": "fig04_action_quality_divergence.png",
+      "title": "STDP-Learned Action Quality Divergence"
+    },
+    {
+      "file": "fig05_behavioral_trajectory_comparison.png",
+      "title": "Behavioral Trajectory Comparison"
+    },
+    {
+      "file": "fig06_prediction_error_dynamics.png",
+      "title": "Prediction Error & Motor Dynamics"
+    },
+    {
+      "file": "fig07_neural_connectivity_diagram.png",
+      "title": "Neural Architecture Diagram"
+    },
+    {
+      "file": "fig08_cross_seed_reproducibility.png",
+      "title": "Cross-Seed Reproducibility"
+    },
+    {
+      "file": "fig09_weight_distribution_evolution.png",
+      "title": "Weight Distribution Histograms"
+    },
+    {
+      "file": "fig10_route_selection_analysis.png",
+      "title": "Route Selection Decision Analysis"
+    },
+    {
+      "file": "fig11_evidence_summary_dashboard.png",
+      "title": "Comprehensive Evidence Summary Dashboard"
+    }
+  ]
+}

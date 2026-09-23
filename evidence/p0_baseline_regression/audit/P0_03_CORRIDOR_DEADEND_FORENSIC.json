@@ -1,0 +1,35 @@
+{
+  "audit_version": "P0-03-CORRIDOR-DEADEND-FORENSIC-v1.0",
+  "timestamp": "2026-08-18T03:11:00Z",
+  "status": "COMPLETED",
+  "hardened_gates_applied": 12,
+  "root_causes": {
+    "flaw_1_sonar_cone_clearance_geometry": {
+      "name": "Peripheral Sidewall Rays Falsely Collapsing Front Clearance",
+      "symptom": "In 0.75m narrow corridors, rays 5 and 9 at +/-34.28 deg hit sidewalls at 0.586m, forcing min(sonar[5:10]) < 1.10m even when direct forward ray 7 was 4.80m",
+      "flawed_logic": "front_clearance = float(np.min(sonar_rays[5:10]))",
+      "repaired_logic": "front_direct_clear = float(sonar_rays[7]); front_cone_clear = float(np.min(sonar_rays[6:9]))",
+      "impact": "Decoupled longitudinal corridor path from lateral sidewall proximity"
+    },
+    "flaw_2_dead_end_classification_overreach": {
+      "name": "Narrow Corridor Falsely Classified as Dead-End Enclosure",
+      "symptom": "Safety veto asserted DEAD_END_ENCLOSURE and forced EMERGENCY_SPIN_LEFT on open narrow corridors",
+      "flawed_logic": "is_dead_end = (front_clearance < 1.10 and left_clearance < 1.40 and right_clearance < 1.40)",
+      "repaired_logic": "is_dead_end = (front_direct_clear < 0.75 and front_cone_clear < 0.70 and left_clearance < 1.40 and right_clearance < 1.40)",
+      "impact": "Eliminated false spin overrides on traversable narrow corridors while preserving true dead-end protection"
+    },
+    "flaw_3_anticipatory_risk_curve_freeze": {
+      "name": "Premature Collision Risk Slope Causing Forward Freezing",
+      "symptom": "Anticipatory risk threshold at 0.95m with 70.0/m slope added 962.0 Free Energy at 0.85m clearance, causing BRAKE_REST to beat forward motion",
+      "repaired_logic": "Adjusted risk thresholds to 0.75m (30.0/m) and 0.45m (200.0/m), and updated idling penalty",
+      "impact": "Restored forward drive when clearance is 0.75m-0.95m while maintaining steep exponential repulsion below 0.45m"
+    }
+  },
+  "targeted_verification": {
+    "P0_G2_S42_CORRIDOR_NARROW_250T": "PASS",
+    "P0_K3_S42_CORRIDOR_NARROW_250T": "PASS",
+    "P0_D1_S42_HISTORICAL_TURN_TRAP_300T": "PASS",
+    "P0_F2_S42_DEAD_END_300T": "PASS",
+    "P0_L4_S42_DEAD_END_150T": "PASS"
+  }
+}

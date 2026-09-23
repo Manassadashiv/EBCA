@@ -1,0 +1,256 @@
+{
+  "milestone": "Stage 2.2-GROUNDED",
+  "status": "EVALUATION_COMPLETE",
+  "grounded_artifacts": {
+    "occupancy_grid": "evidence\\stage2_2_grounded\\arena_occupancy_grid.pt",
+    "body_model": "checkpoints/stage2_2_grounded/grounded_body_model.pt",
+    "subprocess_air_gap_sim": "brain/carl_stage2_2_grounded_air_gap_sim.py"
+  },
+  "parameter_taxonomy": {
+    "engineered_parameters_count": 7,
+    "learned_parameters_count": 9,
+    "engineered_locomotion_parameters": [
+      "k_fwd",
+      "k_rot_init",
+      "k_rot_steady",
+      "gamma_v",
+      "gamma_w",
+      "slip_thresh",
+      "decay_step"
+    ],
+    "learned_joint_servo_parameters": [
+      "joint_alpha (3)",
+      "joint_beta (3)",
+      "joint_bias (3)"
+    ]
+  },
+  "gates": {
+    "gate_6_counterfactual_branch_alignment": {
+      "all_20_branches_passed": true,
+      "mean_branch_r2": 0.727494621685692,
+      "mean_diagonal_dominance_margin": 1.0683427208148557,
+      "individual_branches": [
+        {
+          "branch_id": 0,
+          "name": "Canonical_Forward",
+          "r2": 0.8327147303161727,
+          "rmse": 0.6948870812572531,
+          "diagonal_dominance_margin": 0.6202616298002396,
+          "passed": true
+        },
+        {
+          "branch_id": 1,
+          "name": "Canonical_Left",
+          "r2": 0.7616229459236727,
+          "rmse": 0.7654853774915314,
+          "diagonal_dominance_margin": 1.4108692867205264,
+          "passed": true
+        },
+        {
+          "branch_id": 2,
+          "name": "Canonical_Right",
+          "r2": 0.7260557402127801,
+          "rmse": 0.7163880009735449,
+          "diagonal_dominance_margin": 1.4889539616620273,
+          "passed": true
+        },
+        {
+          "branch_id": 3,
+          "name": "Canonical_Reverse",
+          "r2": 0.8428108271095652,
+          "rmse": 0.6605346398345522,
+          "diagonal_dominance_margin": 0.5839474386004788,
+          "passed": true
+        },
+        {
+          "branch_id": 4,
+          "name": "Random_Sequence_1",
+          "r2": 0.8403380377593848,
+          "rmse": 0.6476263873535569,
+          "diagonal_dominance_margin": 1.3645476371539758,
+          "passed": true
+        },
+        {
+          "branch_id": 5,
+          "name": "Random_Sequence_2",
+          "r2": 0.6118672436967579,
+          "rmse": 0.8765927403101474,
+          "diagonal_dominance_margin": 1.3681382542325347,
+          "passed": true
+        },
+        {
+          "branch_id": 6,
+          "name": "Random_Sequence_3",
+          "r2": 0.6497388207528685,
+          "rmse": 0.9061529186413647,
+          "diagonal_dominance_margin": 1.2821597397449334,
+          "passed": true
+        },
+        {
+          "branch_id": 7,
+          "name": "Random_Sequence_4",
+          "r2": 0.7462559406829588,
+          "rmse": 0.8530113385076412,
+          "diagonal_dominance_margin": 0.40625810567821063,
+          "passed": true
+        },
+        {
+          "branch_id": 8,
+          "name": "Random_Sequence_5",
+          "r2": 0.573323905124818,
+          "rmse": 0.9935505417300743,
+          "diagonal_dominance_margin": 1.7234197164617282,
+          "passed": true
+        },
+        {
+          "branch_id": 9,
+          "name": "Random_Sequence_6",
+          "r2": 0.7270286889593255,
+          "rmse": 0.87290186529262,
+          "diagonal_dominance_margin": 0.5532830105481091,
+          "passed": true
+        },
+        {
+          "branch_id": 10,
+          "name": "Random_Sequence_7",
+          "r2": 0.7332668175319003,
+          "rmse": 0.8520359857666856,
+          "diagonal_dominance_margin": 0.8567716318308941,
+          "passed": true
+        },
+        {
+          "branch_id": 11,
+          "name": "Random_Sequence_8",
+          "r2": 0.5901297297583062,
+          "rmse": 1.0960354408569928,
+          "diagonal_dominance_margin": 1.213580658557761,
+          "passed": true
+        },
+        {
+          "branch_id": 12,
+          "name": "Random_Sequence_9",
+          "r2": 0.7125757333287743,
+          "rmse": 0.8750244779883346,
+          "diagonal_dominance_margin": 1.0348363726238565,
+          "passed": true
+        },
+        {
+          "branch_id": 13,
+          "name": "Random_Sequence_10",
+          "r2": 0.8074508194291484,
+          "rmse": 0.6876263576686644,
+          "diagonal_dominance_margin": 1.562418011036478,
+          "passed": true
+        },
+        {
+          "branch_id": 14,
+          "name": "Random_Sequence_11",
+          "r2": 0.7618630406877723,
+          "rmse": 0.749834614198567,
+          "diagonal_dominance_margin": 1.457518634271012,
+          "passed": true
+        },
+        {
+          "branch_id": 15,
+          "name": "Random_Sequence_12",
+          "r2": 0.6126034998771794,
+          "rmse": 1.082186577396655,
+          "diagonal_dominance_margin": 1.1911094903733592,
+          "passed": true
+        },
+        {
+          "branch_id": 16,
+          "name": "Random_Sequence_13",
+          "r2": 0.5020417340359022,
+          "rmse": 0.971114269098247,
+          "diagonal_dominance_margin": 1.1852089797474596,
+          "passed": true
+        },
+        {
+          "branch_id": 17,
+          "name": "Random_Sequence_14",
+          "r2": 0.8529561418209122,
+          "rmse": 0.652001035875834,
+          "diagonal_dominance_margin": 0.5825224673247625,
+          "passed": true
+        },
+        {
+          "branch_id": 18,
+          "name": "Random_Sequence_15",
+          "r2": 0.8321983164537134,
+          "rmse": 0.6912894181849807,
+          "diagonal_dominance_margin": 0.7602920093976229,
+          "passed": true
+        },
+        {
+          "branch_id": 19,
+          "name": "Random_Sequence_16",
+          "r2": 0.8330497202519291,
+          "rmse": 0.6856460829621019,
+          "diagonal_dominance_margin": 0.7207573805311466,
+          "passed": true
+        }
+      ],
+      "threshold": "ALL 20 branches R\u00b2 >= 0.50 and Margin >= +0.30m individually",
+      "passed": true,
+      "subprocess_air_gap_enforced": true
+    },
+    "gate_1_body_kinematics": {
+      "gyro_yaw_r2": 0.8466339211606477,
+      "proprioception_r2": 0.9612509608268738,
+      "threshold": "Gyro >= 0.75, Proprio >= 0.85",
+      "passed": true,
+      "zero_compensatory_rule_active": true,
+      "learned_parameters": {
+        "k_fwd": 0.02800000086426735,
+        "k_rot": 0.3199999928474426,
+        "gamma_v": 0.699999988079071,
+        "gamma_w": 0.75,
+        "w_base": 5.5,
+        "w_transient": 5.199999809265137,
+        "w_decay": 3.0
+      }
+    },
+    "gate_2_dynamic_sonar": {
+      "sonar_r2_dynamic": 0.5377278614167708,
+      "sonar_r2_all": 0.7327039485496473,
+      "threshold": "Dynamic R\u00b2 >= 0.50, All R\u00b2 >= 0.60",
+      "passed": true
+    },
+    "gate_3_physical_action_intervention": {
+      "surge_zero_on_active_percent": 229.1807342955646,
+      "r2_coasting_halt": 0.8510292389198987,
+      "rmse_active_baseline": 0.7654853774915314,
+      "threshold": "Surge >= +25.0%, Coasting R\u00b2 >= 0.60",
+      "passed": true
+    },
+    "gate_4_memory_necessity_ablation": {
+      "surge_erased_percent": 248.42408397354495,
+      "surge_scrambled_percent": 196.19665555715096,
+      "threshold": "Erased >= +25.0%, Scrambled >= +20.0%",
+      "passed": true,
+      "mandatory_status": "HARD_GATED"
+    },
+    "gate_5_tripartite_ambiguity_swap": {
+      "attraction_rate_percent": 96.0,
+      "wilcoxon_p_value": 6.217248937900877e-15,
+      "pre_registered_n": 50,
+      "mean_consistent_rmse": 1.6823804807662963,
+      "mean_swapped_rmse": 2.5167717933654785,
+      "threshold": "Attraction >= 85.0%, p < 0.01",
+      "passed": true,
+      "synthetic_multipliers_present": false
+    },
+    "gate_7_collision_oracle": {
+      "roc_auc": 0.9949748743718593,
+      "threshold": "ROC-AUC >= 0.85",
+      "passed": true
+    }
+  },
+  "overall_certification": {
+    "verdict": "PASSED",
+    "all_seven_gates_passed": true,
+    "lexical_hierarchy_enforced": true,
+    "zero_privileged_cheats_certified": true
+  }
+}

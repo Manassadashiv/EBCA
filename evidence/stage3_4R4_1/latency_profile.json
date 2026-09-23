@@ -1,0 +1,194 @@
+{
+  "num_cycles_profiled": 1000,
+  "mppi_candidates_M": 128,
+  "horizon_H": 15,
+  "total_cycle_statistics_ms": {
+    "mean": 4.14,
+    "p50": 2.96,
+    "p95": 8.73,
+    "p99": 10.39,
+    "max": 16.02,
+    "std": 2.34
+  },
+  "target_comparison": {
+    "mean_goal_ms": 20.0,
+    "p95_goal_ms": 45.0,
+    "mean_passed": true,
+    "p95_passed": true,
+    "status": "PASS"
+  },
+  "per_stage_breakdown": {
+    "sensor_preprocessing": {
+      "mean_ms": 0.145,
+      "p50_ms": 0.135,
+      "p95_ms": 0.211,
+      "p99_ms": 0.308,
+      "max_ms": 0.37,
+      "percent_of_total": 3.5
+    },
+    "occupancy_update": {
+      "mean_ms": 0.174,
+      "p50_ms": 0.16,
+      "p95_ms": 0.268,
+      "p99_ms": 0.384,
+      "max_ms": 0.495,
+      "percent_of_total": 4.19
+    },
+    "frontier_extraction": {
+      "mean_ms": 1.136,
+      "p50_ms": 0.038,
+      "p95_ms": 5.548,
+      "p99_ms": 6.282,
+      "max_ms": 10.526,
+      "percent_of_total": 27.44
+    },
+    "candidate_sampling": {
+      "mean_ms": 0.285,
+      "p50_ms": 0.259,
+      "p95_ms": 0.428,
+      "p99_ms": 0.608,
+      "max_ms": 0.83,
+      "percent_of_total": 6.88
+    },
+    "trajectory_propagation": {
+      "mean_ms": 0.279,
+      "p50_ms": 0.258,
+      "p95_ms": 0.403,
+      "p99_ms": 0.578,
+      "max_ms": 0.83,
+      "percent_of_total": 6.74
+    },
+    "hull_feasibility": {
+      "mean_ms": 1.087,
+      "p50_ms": 1.004,
+      "p95_ms": 1.486,
+      "p99_ms": 2.255,
+      "max_ms": 3.783,
+      "percent_of_total": 26.25
+    },
+    "efe_cost_calculation": {
+      "mean_ms": 3.112,
+      "p50_ms": 1.936,
+      "p95_ms": 7.646,
+      "p99_ms": 9.325,
+      "max_ms": 14.8,
+      "percent_of_total": 75.18
+    },
+    "softmax_action_synthesis": {
+      "mean_ms": 0.078,
+      "p50_ms": 0.068,
+      "p95_ms": 0.126,
+      "p99_ms": 0.206,
+      "max_ms": 0.767,
+      "percent_of_total": 1.89
+    },
+    "telemetry_logging": {
+      "mean_ms": 0.006,
+      "p50_ms": 0.005,
+      "p95_ms": 0.008,
+      "p99_ms": 0.012,
+      "max_ms": 0.051,
+      "percent_of_total": 0.13
+    },
+    "total_cycle_time": {
+      "mean_ms": 4.14,
+      "p50_ms": 2.961,
+      "p95_ms": 8.731,
+      "p99_ms": 10.39,
+      "max_ms": 16.019,
+      "percent_of_total": 100.0
+    }
+  },
+  "top_10_slowest_cycles": [
+    {
+      "cycle": 949,
+      "total_ms": 16.02,
+      "frontier_ms": 10.53,
+      "hull_ms": 1.17,
+      "efe_ms": 14.8,
+      "sample_ms": 0.23,
+      "rollout_ms": 0.24
+    },
+    {
+      "cycle": 7,
+      "total_ms": 14.65,
+      "frontier_ms": 8.17,
+      "hull_ms": 2.17,
+      "efe_ms": 12.28,
+      "sample_ms": 0.8,
+      "rollout_ms": 0.59
+    },
+    {
+      "cycle": 180,
+      "total_ms": 13.69,
+      "frontier_ms": 7.79,
+      "hull_ms": 1.78,
+      "efe_ms": 11.34,
+      "sample_ms": 0.63,
+      "rollout_ms": 0.42
+    },
+    {
+      "cycle": 141,
+      "total_ms": 13.28,
+      "frontier_ms": 8.37,
+      "hull_ms": 1.94,
+      "efe_ms": 11.8,
+      "sample_ms": 0.4,
+      "rollout_ms": 0.41
+    },
+    {
+      "cycle": 0,
+      "total_ms": 12.85,
+      "frontier_ms": 5.81,
+      "hull_ms": 3.78,
+      "efe_ms": 11.16,
+      "sample_ms": 0.54,
+      "rollout_ms": 0.29
+    },
+    {
+      "cycle": 148,
+      "total_ms": 12.31,
+      "frontier_ms": 8.1,
+      "hull_ms": 1.12,
+      "efe_ms": 10.69,
+      "sample_ms": 0.55,
+      "rollout_ms": 0.38
+    },
+    {
+      "cycle": 508,
+      "total_ms": 11.76,
+      "frontier_ms": 6.23,
+      "hull_ms": 2.25,
+      "efe_ms": 9.7,
+      "sample_ms": 0.6,
+      "rollout_ms": 0.61
+    },
+    {
+      "cycle": 179,
+      "total_ms": 11.62,
+      "frontier_ms": 6.78,
+      "hull_ms": 1.25,
+      "efe_ms": 10.56,
+      "sample_ms": 0.25,
+      "rollout_ms": 0.25
+    },
+    {
+      "cycle": 282,
+      "total_ms": 11.38,
+      "frontier_ms": 6.8,
+      "hull_ms": 1.46,
+      "efe_ms": 9.85,
+      "sample_ms": 0.42,
+      "rollout_ms": 0.38
+    },
+    {
+      "cycle": 956,
+      "total_ms": 11.22,
+      "frontier_ms": 6.41,
+      "hull_ms": 2.34,
+      "efe_ms": 9.87,
+      "sample_ms": 0.29,
+      "rollout_ms": 0.57
+    }
+  ]
+}

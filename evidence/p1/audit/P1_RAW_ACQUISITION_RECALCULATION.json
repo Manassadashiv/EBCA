@@ -1,0 +1,15 @@
+{
+  "audit_timestamp": "2026-08-22T22:45:00+05:30",
+  "total_csv_runs": 525,
+  "total_valid_runs": 525,
+  "total_acquired": 0,
+  "total_failed": 525,
+  "total_timed_out": 525,
+  "acquisition_rate_raw": 0.0,
+  "acquisition_rate_percent": "0.00%",
+  "acquisition_definition": "Euclidean distance to food coords < 0.30m (food_absorbed == True in MuJoCo step)",
+  "global_min_target_distance_m": 2.0364,
+  "mean_min_target_distance_m": 2.0512,
+  "global_final_target_distance_m": 2.0679,
+  "mean_final_target_distance_m": 2.1042
+}

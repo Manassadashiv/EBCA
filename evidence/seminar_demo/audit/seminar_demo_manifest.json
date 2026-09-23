@@ -1,0 +1,77 @@
+{
+  "demo_id": "CARL_P0_SEMINAR_DEMO_v1.0",
+  "timestamp": "2026-08-19T01:46:57Z",
+  "baseline_identifier": "CARL-DX 1.3.0-P0-CERTIFIED",
+  "scenario_definition": "Goal-Directed Adaptive Embodied Navigation under Symmetrical Bifurcation Perturbation",
+  "camera_parameters": {
+    "type": "MuJoCo 3rd-Person Dynamic Tracking Camera",
+    "resolution": "1280x720",
+    "fps": 30.0,
+    "tracking_body": "drive_deck",
+    "distance_m": "2.6 - 3.0",
+    "elevation_deg": -30.0,
+    "azimuth_deg": 140.0
+  },
+  "seeds_evaluated": [
+    42,
+    101,
+    2024
+  ],
+  "trial_a_summary": {
+    "description": "Obstacle blocks right channel; left channel open",
+    "route_selected_all_seeds": [
+      "LEFT (+Y)",
+      "LEFT (+Y)",
+      "LEFT (+Y)"
+    ],
+    "collisions_all_seeds": [
+      0,
+      0,
+      0
+    ],
+    "min_clearances": [
+      0.2639,
+      0.2639,
+      0.2639
+    ]
+  },
+  "trial_b_summary": {
+    "description": "Obstacle blocks left channel; right channel open",
+    "route_selected_all_seeds": [
+      "RIGHT (-Y)",
+      "RIGHT (-Y)",
+      "RIGHT (-Y)"
+    ],
+    "collisions_all_seeds": [
+      0,
+      0,
+      0
+    ],
+    "min_clearances": [
+      0.2634,
+      0.2634,
+      0.2634
+    ]
+  },
+  "selected_demo_run": {
+    "run_id": "TRIAL_A_LEFT_OPEN_S42",
+    "video_path": "D:\\ebca\\evidence\\seminar_demo\\video\\CARL_P0_SEMINAR_DEMO.mp4",
+    "video_duration_s": 25.0,
+    "video_frames": 750,
+    "resolution": "1280x720",
+    "fps": 30.0,
+    "collisions": 0,
+    "recovery_used": false
+  },
+  "plot_paths": [
+    "D:\\ebca\\evidence\\seminar_demo\\plots\\01_trajectory_environment.png",
+    "D:\\ebca\\evidence\\seminar_demo\\plots\\02_efe_action_ranking.png",
+    "D:\\ebca\\evidence\\seminar_demo\\plots\\03_predicted_vs_actual.png",
+    "D:\\ebca\\evidence\\seminar_demo\\plots\\04_internal_behavior_trace.png",
+    "D:\\ebca\\evidence\\seminar_demo\\plots\\05_trial_A_vs_B.png"
+  ],
+  "spot_checks_passed": true,
+  "anti_hardcoding_audit_passed": true,
+  "core_hashes_unmodified": true,
+  "overall_demo_status": "DEMO_VALID"
+}

@@ -12,7 +12,7 @@ class EndocrineSystem:
     BASELINE_ACH = 0.5
 
     DECAY_DA  = 2.0
-    DECAY_NE  = 3.0
+    DECAY_NE  = 8.0   # Fast NE recovery — sharp alertness spike with rapid decay
     DECAY_SHT = 1.0
     DECAY_ACH = 2.5
 
@@ -32,6 +32,8 @@ class EndocrineSystem:
         self.reward_avg = 0.0
         self.reward_avg_alpha = 0.01
         self.last_surge_event = ""
+        self.last_error_norm = 0.5
+        self.delta_lr = 0.0
 
     def step(self, dt: float = 0.033):
         """Advance all neuromodulator levels by one timestep using first-order decay kinetics.
@@ -58,11 +60,33 @@ class EndocrineSystem:
 
         Called on food detection, successful approach, or predicted reward.
         Clamping to MAX_NM is applied on the next step().
-        Args:
-            amount: DA increase (default 0.35 — moderate reward signal)
         """
         self.DA += amount
-        self.last_surge_event = f"DA+{amount:.2f}"
+        self.last_surge_event = "DA Surge"
+
+    def trigger_dopamine_treat(self, reward_magnitude: float = 1.0, event_name: str = "TREAT REWARD"):
+        """Dopamine Treat Reward (+1.0 Wall, +1.5 Handshake, +2.0 Floor Grasp, +3.0 Air Lift)."""
+        self.DA = float(np.clip(self.DA + reward_magnitude, self.MIN_NM, self.MAX_NM))
+        self.SHT = float(np.clip(self.SHT + 0.3, self.MIN_NM, self.MAX_NM))
+        self.last_surge_event = f"DA Treat: {event_name} (+{reward_magnitude:.1f})"
+
+    def trigger_heavy_penalty(self, reason: str = "COLLISION / MISALIGNMENT"):
+        """Heavy Penalty: Drains DA/5-HT to 0 and spikes Noradrenaline stress to MAX (1.0)."""
+        self.DA = 0.0
+        self.SHT = 0.0
+        self.NE = 1.0
+        self.last_surge_event = f"HEAVY PENALTY: {reason}"
+
+    def apply_idle_boredom_penalty(self):
+        """Anti-Laziness / Anti-Stalling Safeguard: Punishes idling (> 20 ticks inactive)."""
+        self.NE = float(np.clip(self.NE + 0.4, self.MIN_NM, self.MAX_NM))
+        self.DA = float(np.clip(self.DA - 0.2, self.MIN_NM, self.MAX_NM))
+        self.last_surge_event = "IDLE BOREDOM PENALTY"
+
+    def trigger_surprise_focus(self, delta: float):
+        """Surprise Noise Estimator: Spikes Acetylcholine (ACh) for focused attention."""
+        self.ACh = float(np.clip(self.ACh + min(1.0, delta * 10.0), self.MIN_NM, self.MAX_NM))
+        self.last_surge_event = f"ACh Surprise Focus (delta={delta:.3f})"
 
     def surge_ne(self, amount: float = 0.4):
         """Inject a norepinephrine surge (alertness, danger/threat response).
@@ -180,6 +204,26 @@ class EndocrineSystem:
         signal_strength = float(np.clip(max_nav_value / 2.0, 0.0, 1.0))
         # Always some replay influence when signal exists; hunger amplifies it
         return float(np.clip(signal_strength * (0.3 + 0.7 * hunger), 0.0, 1.0))
+
+    def update_mcl_learning_rate_gate(self, current_error_norm: float) -> str:
+        """
+        Meta-Control Loop (MCL) Information-Theoretic Gating:
+        Computes the derivative of learning progress:
+            ΔL_r = (|e_{t-1}| - |e_t|) / (|e_{t-1}| + ε)
+            
+        - If ΔL_r > 0.05: High ACh surge -> GLOBAL_EXPLORE (rapid novelty search)
+        - If ΔL_r <= 0.05: High 5-HT surge -> REFINE_BOUNDARY (conservative fine-tuning)
+        """
+        eps = 1e-5
+        self.delta_lr = (abs(self.last_error_norm) - abs(current_error_norm)) / (abs(self.last_error_norm) + eps)
+        self.last_error_norm = current_error_norm
+
+        if self.delta_lr > 0.05:
+            self.surge_ach(0.20)
+            return "GLOBAL_EXPLORE"
+        else:
+            self.surge_sht(0.15)
+            return "REFINE_BOUNDARY"
 
     def __repr__(self):
         return (f"DA={self.DA:.2f}, NE={self.NE:.2f}, "

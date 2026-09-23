@@ -1,0 +1,47 @@
+{
+  "checks_performed": [
+    {
+      "check": "JUMP_PHYSICAL_REALISM",
+      "passed": true,
+      "details": "Jumping correctly documented as PHYSICALLY_UNSUPPORTED without false positive PASS claims."
+    },
+    {
+      "check": "MANDATORY_DELIVERABLES_EXISTENCE",
+      "passed": true,
+      "missing": []
+    },
+    {
+      "check": "TRAJECTORY_DIVERSITY_INTEGRITY",
+      "passed": true,
+      "details": "Telemetry shows distinct empirical trajectories across distinct scenarios."
+    },
+    {
+      "check": "UNIVERSAL_CONTROLLER_INTEGRITY",
+      "passed": true,
+      "details": "No scenario-specific 'if scenario == X' branches in cognitive agent loop."
+    },
+    {
+      "check": "VIDEO_FRAME_DECODE_INTEGRITY",
+      "passed": true,
+      "details": "OpenCV frame decoding confirmed valid frames."
+    },
+    {
+      "check": "MEMORY_CAUSALITY_MATHEMATICAL_INTEGRITY",
+      "passed": true,
+      "details": "Memory condition shows valid non-zero divergence vs ablated condition."
+    },
+    {
+      "check": "ADAPTATION_PARAMETER_BOUNDS",
+      "passed": true,
+      "details": "Estimated physical parameters remain strictly bounded within realistic physics limits."
+    },
+    {
+      "check": "RESET_BIAS_CLEARANCE_INTEGRITY",
+      "passed": true,
+      "details": "Zero stale bias across all 11 reset conditions."
+    }
+  ],
+  "anomalies_detected": [],
+  "integrity_score_pct": 100.0,
+  "final_verdict": "VERIFIED_TRUTHFUL"
+}

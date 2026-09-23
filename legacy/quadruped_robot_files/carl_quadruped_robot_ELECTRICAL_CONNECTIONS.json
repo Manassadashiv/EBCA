@@ -1,0 +1,99 @@
+[
+  {
+    "source": "power_module",
+    "target": "lidar_sensor",
+    "type": "power",
+    "voltage": "5V",
+    "current": "1A"
+  },
+  {
+    "source": "power_module",
+    "target": "mcu_can_node_1",
+    "type": "power",
+    "voltage": "24V",
+    "current": "10A"
+  },
+  {
+    "source": "power_module",
+    "target": "mcu_can_node_2",
+    "type": "power",
+    "voltage": "24V",
+    "current": "10A"
+  },
+  {
+    "source": "power_module",
+    "target": "mcu_can_node_3",
+    "type": "power",
+    "voltage": "24V",
+    "current": "10A"
+  },
+  {
+    "source": "power_module",
+    "target": "mcu_can_node_4",
+    "type": "power",
+    "voltage": "24V",
+    "current": "10A"
+  },
+  {
+    "source": "mcu_can_node_2",
+    "target": "actuator_joint_fl1",
+    "type": "data",
+    "protocol": "pwm",
+    "sourcePin": "PWM",
+    "targetPin": "Phase_A"
+  },
+  {
+    "source": "power_module",
+    "target": "buck_converter_module",
+    "type": "power",
+    "label": "24V input to Buck",
+    "voltage": "24V"
+  },
+  {
+    "source": "buck_converter_module",
+    "target": "rpi_4_node",
+    "type": "power",
+    "sourcePin": "OUT+",
+    "targetPin": "5V_POWER",
+    "voltage": "5V"
+  },
+  {
+    "source": "rpi_4_node",
+    "target": "mcu_can_node_1",
+    "type": "data",
+    "sourcePin": "GPIO_UART",
+    "targetPin": "CAN_FD",
+    "voltage": "3.3V"
+  },
+  {
+    "source": "rpi_4_node",
+    "target": "mcu_can_node_2",
+    "type": "data",
+    "sourcePin": "GPIO_UART",
+    "targetPin": "CAN_FD",
+    "voltage": "3.3V"
+  },
+  {
+    "source": "rpi_4_node",
+    "target": "mcu_can_node_3",
+    "type": "data",
+    "sourcePin": "GPIO_UART",
+    "targetPin": "CAN_FD",
+    "voltage": "3.3V"
+  },
+  {
+    "source": "rpi_4_node",
+    "target": "mcu_can_node_4",
+    "type": "data",
+    "sourcePin": "GPIO_UART",
+    "targetPin": "CAN_FD",
+    "voltage": "3.3V"
+  },
+  {
+    "source": "rpi_4_node",
+    "target": "imu_sensor",
+    "type": "data",
+    "sourcePin": "GPIO_I2C",
+    "targetPin": "I2C"
+  }
+]

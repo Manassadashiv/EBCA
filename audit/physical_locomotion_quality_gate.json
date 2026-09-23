@@ -1,0 +1,152 @@
+{
+  "timestamp": "2026-08-16T21:30:00+05:30",
+  "gate_status": "PHYSICAL_LOCOMOTION_QUALITY_GATE = PASS",
+  "all_cases_correctly_classified": true,
+  "frozen_thresholds": {
+    "max_roll_deg": 8.59,
+    "max_pitch_deg": 8.59,
+    "max_rms_roll_deg": 2.86,
+    "max_rms_pitch_deg": 2.86,
+    "max_wobble_energy": 0.5,
+    "max_mean_slip_ratio": 0.35,
+    "max_peak_slip_ratio": 0.99,
+    "max_commanded_jerk_rad_s3": 120.0,
+    "max_wheel_jerk_rad_s3": 250.0,
+    "max_steering_reversals_per_100": 8,
+    "max_oscillation_freq_hz": 3.5
+  },
+  "test_cases": [
+    {
+      "case_id": "CASE_A_SMOOTH_CONTROLLED",
+      "description": "Smooth S-curve forward navigation to spatial target",
+      "expected_quality_pass": true,
+      "actual_quality_pass": true,
+      "verdict": "VERIFIED_PASS",
+      "reason": "ALL_QUALITY_CRITERIA_SATISFIED",
+      "metrics": {
+        "peak_roll_deg": 0.99,
+        "peak_pitch_deg": 3.16,
+        "rms_roll_deg": 0.16,
+        "rms_pitch_deg": 0.89,
+        "wobble_energy": 0.104,
+        "mean_slip_ratio": 0.318,
+        "peak_slip_ratio": 0.983,
+        "max_contact_loss_ticks": 0,
+        "peak_commanded_jerk_rad_s3": 24.55,
+        "peak_wheel_jerk_rad_s3": 165.27,
+        "steering_reversals_per_100": 0.0,
+        "dominant_steering_freq_hz": 0.5,
+        "path_length_m": 1.76,
+        "net_displacement_m": 1.758,
+        "min_goal_dist_m": 0.066,
+        "wall_contacts": 0
+      },
+      "mp4_video": "D:\\ebca\\replays\\case_A_smooth_motion.mp4",
+      "plots": {
+        "trajectory": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_A_smooth_trajectory.png",
+        "stability": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_A_smooth_stability.png",
+        "actuation": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_A_smooth_actuation.png"
+      }
+    },
+    {
+      "case_id": "CASE_B_STEERING_JITTER",
+      "description": "Target reached with high-frequency steering oscillation ('Fish-Out-Of-Water')",
+      "expected_quality_pass": false,
+      "actual_quality_pass": false,
+      "verdict": "VERIFIED_FAIL",
+      "reason": "GOAL_NOT_REACHED (min dist 1.40m > 0.25m) | ATTITUDE_INSTABILITY (roll=7.5\u00b0, pitch=10.2\u00b0, wobble=3.40) | EXCESSIVE_JERK (cmd_jerk=0.0 rad/s\u00b3, wheel_jerk=15120.4 rad/s\u00b3) | EXCESSIVE_WHEEL_SLIP (mean slip=0.74, peak=0.98) | UNSTABLE_STEERING_OSCILLATION (reversals/100=98.3, dom_freq=15.0Hz)",
+      "metrics": {
+        "peak_roll_deg": 7.46,
+        "peak_pitch_deg": 10.23,
+        "rms_roll_deg": 2.6,
+        "rms_pitch_deg": 4.25,
+        "wobble_energy": 3.396,
+        "mean_slip_ratio": 0.743,
+        "peak_slip_ratio": 0.976,
+        "max_contact_loss_ticks": 0,
+        "peak_commanded_jerk_rad_s3": 0.0,
+        "peak_wheel_jerk_rad_s3": 15120.41,
+        "steering_reversals_per_100": 98.3,
+        "dominant_steering_freq_hz": 15.02,
+        "path_length_m": 1.687,
+        "net_displacement_m": 0.366,
+        "min_goal_dist_m": 1.404,
+        "wall_contacts": 0
+      },
+      "mp4_video": "D:\\ebca\\replays\\case_B_steering_jitter.mp4",
+      "plots": {
+        "trajectory": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_B_jitter_trajectory.png",
+        "stability": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_B_jitter_stability.png",
+        "actuation": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_B_jitter_actuation.png"
+      }
+    },
+    {
+      "case_id": "CASE_C_WHEEL_SLIP_SPINOUT",
+      "description": "High wheel spin on icy surface causing severe wheel-ground slip",
+      "expected_quality_pass": false,
+      "actual_quality_pass": false,
+      "verdict": "VERIFIED_FAIL",
+      "reason": "WALL_COLLISION (29 contact events) | ATTITUDE_INSTABILITY (roll=5.6\u00b0, pitch=7.4\u00b0, wobble=1.38) | EXCESSIVE_JERK (cmd_jerk=0.0 rad/s\u00b3, wheel_jerk=1113.3 rad/s\u00b3) | EXCESSIVE_WHEEL_SLIP (mean slip=0.60, peak=1.00)",
+      "metrics": {
+        "peak_roll_deg": 5.6,
+        "peak_pitch_deg": 7.44,
+        "rms_roll_deg": 1.56,
+        "rms_pitch_deg": 2.8,
+        "wobble_energy": 1.38,
+        "mean_slip_ratio": 0.604,
+        "peak_slip_ratio": 0.996,
+        "max_contact_loss_ticks": 0,
+        "peak_commanded_jerk_rad_s3": 0.0,
+        "peak_wheel_jerk_rad_s3": 1113.32,
+        "steering_reversals_per_100": 0.0,
+        "dominant_steering_freq_hz": 0.5,
+        "path_length_m": 5.112,
+        "net_displacement_m": 4.683,
+        "min_goal_dist_m": 0.007,
+        "wall_contacts": 29
+      },
+      "mp4_video": "D:\\ebca\\replays\\case_C_wheel_slip.mp4",
+      "plots": {
+        "trajectory": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_C_slip_trajectory.png",
+        "stability": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_C_slip_stability.png",
+        "actuation": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_C_slip_actuation.png"
+      }
+    },
+    {
+      "case_id": "CASE_D_ATTITUDE_INSTABILITY",
+      "description": "Periodic tipping disturbances causing excessive roll/pitch wobble (> 15\u00b0)",
+      "expected_quality_pass": false,
+      "actual_quality_pass": false,
+      "verdict": "VERIFIED_FAIL",
+      "reason": "ATTITUDE_INSTABILITY (roll=7.2\u00b0, pitch=7.3\u00b0, wobble=1.54)",
+      "metrics": {
+        "peak_roll_deg": 7.19,
+        "peak_pitch_deg": 7.33,
+        "rms_roll_deg": 2.39,
+        "rms_pitch_deg": 2.13,
+        "wobble_energy": 1.541,
+        "mean_slip_ratio": 0.349,
+        "peak_slip_ratio": 0.899,
+        "max_contact_loss_ticks": 0,
+        "peak_commanded_jerk_rad_s3": 0.0,
+        "peak_wheel_jerk_rad_s3": 143.76,
+        "steering_reversals_per_100": 0.0,
+        "dominant_steering_freq_hz": 0.5,
+        "path_length_m": 3.021,
+        "net_displacement_m": 2.786,
+        "min_goal_dist_m": 0.104,
+        "wall_contacts": 0
+      },
+      "mp4_video": "D:\\ebca\\replays\\case_D_attitude_instability.mp4",
+      "plots": {
+        "trajectory": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_D_attitude_trajectory.png",
+        "stability": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_D_attitude_stability.png",
+        "actuation": "D:\\ebca\\evidence\\pre_training_locomotion_quality\\case_D_attitude_actuation.png"
+      }
+    }
+  ],
+  "comparative_plots": {
+    "trajectory_comparison": "D:\\ebca\\plots/before_after_trajectory.png",
+    "goal_distance_comparison": "D:\\ebca\\plots/before_after_goal_distance.png"
+  }
+}

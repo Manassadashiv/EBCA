@@ -1,0 +1,16 @@
+{
+  "manifest_name": "CARL-DX P1-R3 FROZEN VALIDATED PHYSICAL BASELINE",
+  "timestamp": "2026-08-23T23:05:00Z",
+  "hashes": {
+    "world/vessel_kinetic.xml": "b0c4a4d0d190b5e5048d0357d12f4b7da1f7af36f33640548b7565c643ccab88",
+    "brain/p1_r3/carl_p1r3_environment.py": "1c07412d856f18f73cde37c220c2d98daa8515abab71fc38ece0925b7f384f7c",
+    "brain/p1_r3/carl_p1r3_agent.py": "d5cf249894d506f40f2d9844fbb62f1ee7fd28575f296309811944e95d7796af",
+    "brain/carl_autonomous_agent.py": "70298654927942eb1e7a962989cba7bd8a41a5f416f6b83920e832c853f7dcdc",
+    "brain/carl_embodied_organism.py": "ba9609857946555d0a397e776cc8d84dc24f71034469f6bd0c84185629838cab",
+    "brain/carl_generative_self_model.py": "69710b02a124391894722c2bc31b2f7bede8a88e3084a595ae98bc38f4a3fa31",
+    "brain/carl_episodic_memory.py": "7dfae138336d4888ad068889201000cbb4546a0977de6e243bd3dcffc18c967f",
+    "brain/carl_reflex_laboratory.py": "69414d809c75a4806d0ac8eeebe04859e8c81c4851659859732dc69c86339125",
+    "brain/carl_homeostatic_core.py": "c199a83eb81b8758a08399c0981c5c300921c6d26308daf8575fa7ced1ccf2ce",
+    "tools/p1_r3/p1r3_exact_forensic_replay.py": "f261ddca1f533692a2c01f70a1bed8263de3597d9476eebc32f25e22ba95afc6"
+  }
+}

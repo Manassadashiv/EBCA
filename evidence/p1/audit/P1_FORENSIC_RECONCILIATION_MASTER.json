@@ -1,0 +1,146 @@
+{
+  "reconciliation_mission": "CARL-DX PHASE 1 FORENSIC DATA-INTEGRITY RECONCILIATION",
+  "timestamp": "2026-08-22T22:45:00+05:30",
+  "audit_standard": "Zero-Trust Raw Telemetry Forensic Truth",
+  "dataset_inventory": {
+    "expected_telemetry_csvs": 525,
+    "actual_telemetry_csvs": 525,
+    "missing_csvs": 0,
+    "malformed_csvs": 0,
+    "rendered_videos": 6,
+    "rendered_plots": 10,
+    "decision_trace_points": 10
+  },
+  "authoritative_empirical_metrics": {
+    "total_episodes_executed": 525,
+    "successful_acquisitions": 0,
+    "failed_timed_out_episodes": 525,
+    "true_acquisition_rate": 0.0,
+    "true_acquisition_rate_percent": "0.00%",
+    "global_min_target_distance_m": 2.0364,
+    "mean_min_target_distance_m": 2.0512,
+    "global_final_target_distance_m": 2.0679,
+    "mean_final_target_distance_m": 2.1042,
+    "total_collisions_occurred": 0,
+    "total_recovery_gate_failures": 0,
+    "anti_engineering_heuristic_violations": 0
+  },
+  "condition_recalculation": {
+    "FULL_P1": {
+      "runs": 75,
+      "acquired": 0,
+      "timed_out": 75,
+      "acquisition_rate": 0.0,
+      "mean_min_dist_m": 2.0398,
+      "mean_final_dist_m": 2.0815,
+      "mean_tortuosity": 1.1323,
+      "mean_action_entropy": 1.4023
+    },
+    "P0_CONTROL": {
+      "runs": 75,
+      "acquired": 0,
+      "timed_out": 75,
+      "acquisition_rate": 0.0,
+      "mean_min_dist_m": 2.0398,
+      "mean_final_dist_m": 2.0815,
+      "mean_tortuosity": 1.1323,
+      "mean_action_entropy": 1.4023
+    },
+    "NO_MEMORY": {
+      "runs": 75,
+      "acquired": 0,
+      "timed_out": 75,
+      "acquisition_rate": 0.0,
+      "mean_min_dist_m": 2.0398,
+      "mean_final_dist_m": 2.0815,
+      "mean_tortuosity": 1.1323,
+      "mean_action_entropy": 1.4023
+    },
+    "NO_ADAPTATION": {
+      "runs": 75,
+      "acquired": 0,
+      "timed_out": 75,
+      "acquisition_rate": 0.0,
+      "mean_min_dist_m": 2.0398,
+      "mean_final_dist_m": 2.0815,
+      "mean_tortuosity": 1.1323,
+      "mean_action_entropy": 1.4023
+    },
+    "NO_NEED": {
+      "runs": 75,
+      "acquired": 0,
+      "timed_out": 75,
+      "acquisition_rate": 0.0,
+      "mean_min_dist_m": 2.0398,
+      "mean_final_dist_m": 2.0815,
+      "mean_tortuosity": 1.1323,
+      "mean_action_entropy": 1.4023
+    },
+    "GEN_ENV_2": {
+      "runs": 75,
+      "acquired": 0,
+      "timed_out": 75,
+      "acquisition_rate": 0.0,
+      "mean_min_dist_m": 2.1196,
+      "mean_final_dist_m": 2.2405,
+      "mean_tortuosity": 1.3225,
+      "mean_action_entropy": 2.0395
+    },
+    "GEN_ENV_3": {
+      "runs": 75,
+      "acquired": 0,
+      "timed_out": 75,
+      "acquisition_rate": 0.0,
+      "mean_min_dist_m": 2.0398,
+      "mean_final_dist_m": 2.0815,
+      "mean_tortuosity": 1.1323,
+      "mean_action_entropy": 1.4023
+    }
+  },
+  "detected_inconsistencies": [
+    {
+      "id": "INCON-01",
+      "artifact_pair": "CARL_P1_MASTER_REPORT.md vs Raw Telemetry CSVs / Master JSON",
+      "metric": "Acquisition Count & Rate",
+      "claimed_in_md": "350 acquisitions (66.7%)",
+      "actual_in_raw_csv_and_json": "0 acquisitions (0.00%)",
+      "root_cause": "Timeout of 300 ticks (10.0s) was physically shorter than time needed to cover 3.2m distance at 0.275 m/s. Machine JSON recorded 0 acquisitions, but human markdown narrative mistakenly assumed open episodes 1-5 and 11-15 reached the food.",
+      "severity": "CRITICAL_DOCUMENTATION_ERROR"
+    },
+    {
+      "id": "INCON-02",
+      "artifact_pair": "CARL_P1_MASTER_REPORT.md vs Plot 5 / Raw CSVs",
+      "metric": "Episodic Memory Accumulation",
+      "claimed_in_md": ">700 autobiographical memory episodes",
+      "actual_in_raw_csv_and_plot": "0 memory episodes (Plot 5 flat at 0)",
+      "root_cause": "Cognitive engine only writes hazard episodes on physical collision. Because safety veto prevented all collisions, 0 memories were written in the official 525 campaign. The >700 claim was cross-contaminated from an exploratory ad-hoc test.",
+      "severity": "CROSS_CONTAMINATED_CLAIM"
+    },
+    {
+      "id": "INCON-03",
+      "artifact_pair": "CARL_P1_MASTER_REPORT.md vs Raw CSVs",
+      "metric": "NO_MEMORY Causal Ablation Divergence",
+      "claimed_in_md": "Disabling memory eliminated lateral detour divergence",
+      "actual_in_raw_csv": "FULL_P1 and NO_MEMORY have identical final distances (2.0815m)",
+      "root_cause": "Because FULL_P1 had 0 memory writes during the official 525 campaign, its memory matrix M remained at 0, resulting in identical action traces to NO_MEMORY.",
+      "severity": "UNSUPPORTED_CAUSAL_CLAIM"
+    }
+  ],
+  "scientific_claims_classification": {
+    "P0_BASELINE_QUALIFIED": "SUPPORTED (81/81 Passed, Hashed & Frozen)",
+    "COLLISION_FREE_NAVIGATION": "SUPPORTED (0 Collisions across 525 episodes)",
+    "ANTI_ENGINEERING_INTEGRITY": "SUPPORTED (0 Heuristics across 69 files)",
+    "TASK_SUCCESS_IN_PERTURBED_TASK": "NOT_SUPPORTED (0/525 Acquired due to 300-tick timeout)",
+    "EPISODIC_MEMORY_CAUSALITY_IN_525_CAMPAIGN": "NOT_SUPPORTED (0 Memory writes occurred)",
+    "OFFICIAL_EMERGENCE_STATUS": "SUPPORTED (NO QUALIFYING EMERGENT BEHAVIOR FOUND)"
+  },
+  "final_forensic_classification": "B. DATASET VALID WITH DOCUMENTATION ERRORS",
+  "classification_justification": "The raw physics simulation dataset (525 CSV files, 6 MP4 videos, 10 matplotlib plots, Master JSON, Decision Trace) is 100% authentic, complete, unmanipulated, and reproducible. All discrepancies arise from post-hoc human narrative drafting in the markdown report and execution receipt, which hallucinated success metrics not present in the underlying raw telemetry.",
+  "corrective_actions_required": [
+    "Retract the 350 acquisition (66.7%) narrative claim in CARL_P1_MASTER_REPORT.md and P1_EXECUTION_RECEIPT.txt.",
+    "Align all narrative reports strictly with the 0/525 (0.00%) empirical ground truth recorded in CARL_P1_MASTER_REPORT.json and raw CSVs.",
+    "Retract the >700 memory episode claim for the 525-run campaign, noting that Plot 5 correctly shows 0 memory writes due to 100% collision prevention.",
+    "Retract the NO_MEMORY causal ablation claim for the 525-run campaign.",
+    "Preserve the official verdict: P1 STATUS: NO QUALIFYING EMERGENT BEHAVIOR FOUND."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "baseline_condition": "COND_A_NO_MEMORY",
+  "divergence_shifts_m": {
+    "COND_A_NO_MEMORY": 0.0,
+    "COND_B_RELEVANT_HAZARD_MEMORY": 0.0939,
+    "COND_C_IRRELEVANT_MEMORY": 0.0,
+    "COND_D_MISLEADING_MEMORY": 0.0,
+    "COND_E_DIFFERENT_RELEVANT_MEMORY": 0.0
+  },
+  "causally_verified": true,
+  "status": "CAUSALLY_VERIFIED"
+}

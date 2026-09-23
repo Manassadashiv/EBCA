@@ -1,0 +1,41 @@
+{
+  "audit_timestamp": "2026-08-16T23:30:00+05:30",
+  "audit_subject": "CARL-DX Final Blind Run Physical Contact & Collision Reconciliation",
+  "collision_verdict": {
+    "collision_free_ground_truth": true,
+    "wall_collisions": 0,
+    "obstacle_collisions": 0,
+    "self_collisions": 0,
+    "chassis_floor_impacts": 0,
+    "total_destructive_contacts": 0,
+    "reported_collision_occurred_flag_status": "FALSE_POSITIVE_FLAG (Triggered by world ncon counting normal floor contacts of arena props)"
+  },
+  "contact_taxonomy_breakdown": {
+    "wheel_ground_contacts": {
+      "left_tire_contacts_mean": 2.0,
+      "right_tire_contacts_mean": 2.0,
+      "nature": "Normal rolling traction with arena floor"
+    },
+    "caster_ground_contacts": {
+      "front_caster_contacts_mean": 1.0,
+      "rear_caster_contacts_mean": 1.0,
+      "nature": "Normal level-attitude chassis support"
+    },
+    "arena_props_floor_contacts": {
+      "hazard_cube_floor_contacts": 4,
+      "toy_cube_0_floor_contacts": 4,
+      "toy_cube_1_floor_contacts": 4,
+      "toy_ball_0_floor_contacts": 1,
+      "nature": "Static gravitational resting contacts on plane"
+    },
+    "wall_and_perimeter_contacts": {
+      "count": 0,
+      "min_perimeter_distance_m": 3.472
+    },
+    "dynamic_obstacle_contacts": {
+      "count": 0,
+      "min_obstacle_distance_m": 1.258
+    }
+  },
+  "reconciled_safety_assessment": "The physical run was 100% collision-free. The robot maintained a minimum clearance of > 1.25m from all obstacles and walls. The collision_occurred telemetry field represented a logical code defect, not a physical collision."
+}

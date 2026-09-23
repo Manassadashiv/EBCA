@@ -1,0 +1,75 @@
+{
+  "audit_timestamp": "2026-09-06T23:48:43.633965",
+  "artifacts": {
+    "evidence/stage2_2_grounded/grounded_occupancy_grid.pt": {
+      "sha256": "4ce89ca587a3ef8ee7490d1b3bbe7625960b60b555eb05ce8056d01a9a95604e",
+      "size_bytes": 132825,
+      "mtime": "2026-09-06T20:25:44.259621"
+    },
+    "checkpoints/stage2_2_grounded/grounded_body_model.pt": {
+      "sha256": "c6d86f647df0a53f1cd1abb7f0ed8bdf69f075dca6c7f16a21f783b199fd732e",
+      "size_bytes": 551444,
+      "mtime": "2026-09-06T19:11:59.463748"
+    },
+    "evidence/stage2_2_grounded/grounded_benchmark_scorecard.json": {
+      "sha256": "c6aa579d1e87a065e7545416e145fab97b8e8d2dbf1fae049207198b3f93d1f8",
+      "size_bytes": 7745,
+      "mtime": "2026-09-06T20:21:53.769106"
+    },
+    "evidence/stage2_2_grounded/grounded_robustness_scorecard.json": {
+      "sha256": "8a7e705bc46704e77106ecd62a103723849acbbaab8bebd8c03d94715ddce2f7",
+      "size_bytes": 2095,
+      "mtime": "2026-09-06T20:46:46.637967"
+    },
+    "evidence/stage2_2_grounded/grounded_air_gapped_mental_rollouts.npz": {
+      "sha256": "866b454f43fb83cafcf6b65f4c39876dae24fa3e24ad04d4d36dcd088bfd56a3",
+      "size_bytes": 22409,
+      "mtime": "2026-09-06T20:21:52.936217"
+    },
+    "evidence/stage2_2_grounded/autonomous_mapping_telemetry.json": {
+      "sha256": "366f1a087a43e3b78f1764c5e4a63a02d521382425086f26c9583b96c80bb629",
+      "size_bytes": 342,
+      "mtime": "2026-09-06T20:25:44.272724"
+    },
+    "evidence/stage2_2_diag/datasets/DEV_TRAIN.npz": {
+      "sha256": "f01e84103449158d38d40c612650d37f4019b579cedcdf96cbf411683d35fcf3",
+      "size_bytes": 2485614,
+      "mtime": "2026-09-05T21:09:56.157792"
+    },
+    "evidence/stage2_2_diag/datasets/DEV_VAL.npz": {
+      "sha256": "6eac8745dfc3254e2690a7e402581bc1c1931f8538a07fefb202409ba5e033c9",
+      "size_bytes": 832334,
+      "mtime": "2026-09-05T21:12:02.784011"
+    },
+    "brain/carl_stage2_2_autonomous_mapper.py": {
+      "sha256": "e94cba2abddbdf8ef16c4f3212b3d69a122c2cd058bb5605bc0d0189441f1ff9",
+      "size_bytes": 10155,
+      "mtime": "2026-09-06T20:18:33.406309"
+    },
+    "brain/train_stage2_2_grounded_body_model.py": {
+      "sha256": "feec7e992df8b7db09954e8d9fd528cf8ea78fb9bb39b3f2c574665dd9a48b01",
+      "size_bytes": 17766,
+      "mtime": "2026-09-06T19:10:52.747530"
+    },
+    "brain/carl_stage2_2_grounded_air_gap_sim.py": {
+      "sha256": "a12f7b0502f0b7e4d4b302904a258afbc337909b3fd7fd31aca5353fa3bcdf6c",
+      "size_bytes": 6862,
+      "mtime": "2026-09-06T20:26:08.263011"
+    },
+    "brain/test_stage2_2_grounded_runner.py": {
+      "sha256": "3ba5570145c163bef10d18de2e317d3836917d114047872f5a9fcceb8eb1d088",
+      "size_bytes": 20049,
+      "mtime": "2026-09-06T20:26:15.581643"
+    },
+    "brain/test_stage2_2_robustness_battery.py": {
+      "sha256": "a37ac6f2e46e6a137399baf167a30b04eabd302676f0eceeccfe9ba38d94734a",
+      "size_bytes": 6996,
+      "mtime": "2026-09-06T19:04:40.852549"
+    },
+    "brain/carl_stage2_2_r2_occupancy_memory.py": {
+      "sha256": "a189494b6fa6b352dbf0cf3b1ad6a0e21d829ff87896d7a28195ffc03b3894b9",
+      "size_bytes": 11006,
+      "mtime": "2026-09-06T20:46:56.588435"
+    }
+  }
+}

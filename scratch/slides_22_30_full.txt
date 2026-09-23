@@ -1,0 +1,139 @@
+********************* SLIDE 22 *********************
+=== SLIDE 22 ===
+  [text:TextBox 1] EMBODIED SENSORIMOTOR GROUNDING
+  [text:TextBox 1] STAGE 1 EMPIRICAL EVIDENCE: STABILITY ENVELOPES & PARAMETER DISCOVERY
+  [text:TextBox 9] Dynamical Stability Envelope (30 Hz Closed Loop)
+  [text:TextBox 9] •  Swept linear velocity (01–05 m/s) and angular rate (02–15 rad/s) across 150 trials
+  [text:TextBox 9] •  Zero chassis tip over or simulation divergence observed across full envelope
+  [text:TextBox 9] •  Proves robust mechanical grounding in contact rich MuJoCo physics engine
+  [text:TextBox 11] Figure 2(a): 10,000 Tick Dynamical Stability Phase layout
+  [text:TextBox 12] 22
+
+********************* SLIDE 23 *********************
+=== SLIDE 23 ===
+  [text:TextBox 1] EMBODIED SENSORIMOTOR GROUNDING
+  [text:TextBox 1] STAGE 1 EMPIRICAL EVIDENCE: STABILITY ENVELOPES & PARAMETER DISCOVERY
+  [text:TextBox 9] Empirical Parameter Discovery & Regime Mapping
+  [text:TextBox 11] •  Unsupervised parameter identification mapped safe operating boundary vs slip hazard
+  [text:TextBox 11] •  Critical friction boundary identified at μ = 035 where slip exceeds 40%
+  [text:TextBox 11] •  Validates need for higher order continuous attractor spatial representations
+  [text:TextBox 13] Figure 2(b): Empirical Sensorimotor Contingency Matrix
+  [text:TextBox 14] 23
+
+********************* SLIDE 24 *********************
+=== SLIDE 24 ===
+  [text:TextBox 1] SENSORIMOTOR GROUNDING & ODOMETRY
+  [text:TextBox 1] STAGE 1.1 EMPIRICAL EVIDENCE: KINEMATIC FRICTION & UNPRIVILEGED ODOMETRIC DRIFT
+  [text:TextBox 9] •  Low Friction Regimes (μ = 005–025): Longitudinal slip σ reaches 982%, chassis halts
+  [text:TextBox 9] •  High Friction Regimes (μ = 050–10): Traction recovers, slip stabilizes at 241%
+  [text:TextBox 9] •  Proves dead reckoning alone diverges rapidly without continuous neural attractors
+  [text:TextBox 11] Friction Gradient Sweep (μ ∈ [005, 10])
+  [text:TextBox 13] Figure 3: Friction Gradient Response and Slip Monotonicity
+  [text:TextBox 14] 24
+
+********************* SLIDE 26 *********************
+=== SLIDE 26 ===
+  [text:TextBox 1] CONTINUOUS ATTRACTOR DYNAMICS
+  [text:TextBox 1] STAGE 2: CONTINUOUS ATTRACTOR HEAD DIRECTION & SPATIAL REPRESENTATION
+  [text:Rounded Rectangle 7] Physical Reality vs Internal CANN Self Model
+  [text:Rounded Rectangle 7] •  Dev Seed 101: Final homing return drift = 00650 m (within 022 m target gate) [PASS]
+  [text:Rounded Rectangle 7] •  Unseen Seed 505: Final return drift = 00570 m (022 m gate) [PASS]
+  [text:Rounded Rectangle 7] •  Demonstrates unprivileged spatial grounding across both seen and unseen seeds
+  [text:TextBox 11] 26
+
+********************* SLIDE 27 *********************
+=== SLIDE 27 ===
+  [text:TextBox 1] CONTINUOUS ATTRACTOR DYNAMICS
+  [text:TextBox 1] STAGE 2: CONTINUOUS ATTRACTOR HEAD DIRECTION & SPATIAL REPRESENTATION
+  [text:TextBox 8] •  Topology: 1D Continuous Attractor Neural Network (CANN) with periodic boundary
+  [text:TextBox 8] •  Inhibition Kernel: Mexican hat recurrent connectivity profile (local excitation, global inhibition)
+  [text:TextBox 8] •  Multi Seed Verification (5 Seeds Evaluated):
+  [text:TextBox 8] • Seed 101: Mean homing error = 0065 m (Target < 022 m) [PASS]
+  [text:TextBox 8] • Seed 202: Mean homing error = 0071 m (Target < 022 m) [PASS]
+  [text:TextBox 8] • Seed 303: Mean homing error = 0062 m (Target < 022 m) [PASS]
+  [text:TextBox 8] • Seed 404: Mean homing error = 0059 m (Target < 022 m) [PASS]
+  [text:TextBox 8] • Seed 505: Mean homing error = 0057 m (Target < 022 m) [PASS]
+  [text:TextBox 8] •  Blackout Resilience: Directional drift < 002 rad/s during complete sensor dropouts
+  [text:TextBox 8] •  Conclusion: Provides validated spatial foundation for Stage 22 predictive world model
+  [text:TextBox 10] Stage 21 Spatial Architecture & Multi Seed Scorecard
+  [text:TextBox 12] •  Maintains stable unimodal Gaussian activity packet across 360° angular space
+  [text:TextBox 12] •  Angular velocity inputs smoothly shift activity bump without phase dispersion
+  [text:TextBox 12] •  Sustains orientation representation across sensory blackout and wheel slip conditions
+  [text:TextBox 14] CANN Ring Attractor Bump Dynamics
+  [text:TextBox 15] 27
+
+********************* SLIDE 28 *********************
+=== SLIDE 28 ===
+  [text:TextBox 1] STAGE 2.2 :-PREDICTIVE WORLD MODEL 7 GATE VALIDATION
+  [table:cell(0,0)] Verification Gate
+  [table:cell(0,1)] Target Metric
+  [table:cell(0,2)] Threshold
+  [table:cell(0,3)] Achieved Score
+  [table:cell(0,4)] Result
+  [table:cell(1,0)] Gate 1: Body Proprioception
+  [table:cell(1,1)] Forward Velocity (v) R²
+  [table:cell(1,2)] ≥ 090
+  [table:cell(1,3)] R² = 09613
+  [table:cell(1,4)] PASS
+  [table:cell(2,0)] Gate 2: Angular Gyroscope
+  [table:cell(2,1)] Rotational Velocity (ω) R²
+  [table:cell(2,2)] ≥ 080
+  [table:cell(2,3)] R² = 08466
+  [table:cell(2,4)] PASS
+  [table:cell(3,0)] Gate 3: Dynamic Sonar Range
+  [table:cell(3,1)] Virtual Rays Range R²
+  [table:cell(3,2)] ≥ 050
+  [table:cell(3,3)] R² = 05377
+  [table:cell(3,4)] PASS
+  [table:cell(4,0)] Gate 4: Collision Prediction
+  [table:cell(4,1)] Imminent Contact ROC AUC
+  [table:cell(4,2)] ≥ 090
+  [table:cell(4,3)] ROC AUC = 0995
+  [table:cell(4,4)] PASS
+  [table:cell(5,0)] Gate 5: Multi Step Stability
+  [table:cell(5,1)] 5 Step Rollout Drift
+  [table:cell(5,2)] < 150%
+  [table:cell(5,3)] Drift = 818%
+  [table:cell(5,4)] PASS
+  [table:cell(6,0)] Gate 6: Causal Sensitivity
+  [table:cell(6,1)] Action Intervention Δ
+  [table:cell(6,2)] > 035
+  [table:cell(6,3)] Δ = 0442
+  [table:cell(6,4)] PASS
+  [table:cell(7,0)] Gate 7: Compute Latency
+  [table:cell(7,1)] Inference Cycle Time
+  [table:cell(7,2)] ≤ 100 ms
+  [table:cell(7,3)] 212 ms
+  [table:cell(7,4)] PASS
+  [text:TextBox 8] Table 2: Stage 2.2 Predictive World Model : Seven Gate Validation Results
+  [text:TextBox 9] 28
+
+********************* SLIDE 29 *********************
+=== SLIDE 29 ===
+  [text:TextBox 1] PREDICTIVE WORLD MODEL EVIDENCE
+  [text:TextBox 1] STAGE 2.2 ACTION BRANCHING AND FUTURE PREDICTION
+  [text:Rounded Rectangle 7] Causal Action Discrimination Margin (20/20 PASS)
+  [text:Rounded Rectangle 7] •  Tests whether different motor actions produce statistically distinct mental rollouts
+  [text:Rounded Rectangle 7] •  All 20 branches exceed the causal discrimination margin threshold (Δ ≥ +030 m)
+  [text:Rounded Rectangle 7] •  Confirms predictive model is causally sensitive to steering interventions (not mode collapsed)
+  [text:TextBox 9] Figure 4(a): Individual Counterfactual Branch Fidelity (20/20 Pass)
+  [text:TextBox 11] Individual Branch Fidelity (20/20 Branches PASS)
+  [text:TextBox 13] •  Evaluates predictive fidelity across 20 distinct counterfactual action rollouts
+  [text:TextBox 13] •  Every single branch exceeds the strict R² ≥ 050 threshold (mean R² = 0772)
+  [text:TextBox 13] •  Demonstrates unrolled forward dynamics closely track actual physical reality
+  [text:TextBox 14] 29
+
+********************* SLIDE 30 *********************
+=== SLIDE 30 ===
+  [text:TextBox 2] ACTION DELIBERATION MVE BENCHMARK
+  [text:TextBox 2] STAGE 2.3: ACTION SELECTION AND OBSTACLE AVOIDANCE
+  [text:TextBox 9] Figure 5(a): Causal Prediction Alignment Between Measured and Prospective Sonar
+  [text:TextBox 11] Figure 5(b): Asymmetric Evasion: Reactive Reflex versus Prospective Deliberation
+  [text:TextBox 13] Causal Prediction Calibration (97.9% Within Band)
+  [text:TextBox 15] • Demonstrates close agreement between prospective sensory predictions and subsequent physical observations within the defined acceptance band
+  [text:TextBox 15] •  97.9% of predictions fall within the tight ±0.25 m physical acceptance window
+  [text:TextBox 15] •  Confirms mental simulation does not suffer from compounding hallucinatory drift
+  [text:TextBox 17] Asymmetric Evasion Showdown: Reflex vs Deliberation
+  [text:TextBox 19] • Deliberative CARL evaluates prospective outcomes before action execution• The selected trajectory avoids the dead end corner, while the scripted reflex enters the blocked direction
+  [text:TextBox 20] 30
+

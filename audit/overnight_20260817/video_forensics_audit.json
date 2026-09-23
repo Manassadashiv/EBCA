@@ -1,0 +1,92 @@
+{
+  "SCENARIO_1_OPEN_SPACE_LOCOMOTION": {
+    "video_file": "scenario_1_open_space_locomotion_s42.mp4",
+    "total_frames": 100,
+    "resolution": "1280x720",
+    "mean_pixel_difference": 0.275,
+    "motion_detected": false,
+    "all_frames_valid": true,
+    "verdict": "PASS"
+  },
+  "SCENARIO_2_HEAD_ON_WALL": {
+    "video_file": "scenario_2_head_on_wall_s42.mp4",
+    "total_frames": 100,
+    "resolution": "1280x720",
+    "mean_pixel_difference": 0.31,
+    "motion_detected": false,
+    "all_frames_valid": true,
+    "verdict": "PASS"
+  },
+  "SCENARIO_3_ANGLED_45_WALL": {
+    "video_file": "scenario_3_angled_45_wall_s42.mp4",
+    "total_frames": 100,
+    "resolution": "1280x720",
+    "mean_pixel_difference": 0.317,
+    "motion_detected": false,
+    "all_frames_valid": true,
+    "verdict": "PASS"
+  },
+  "SCENARIO_4_CORRIDOR_WITH_OPENING": {
+    "video_file": "scenario_4_corridor_with_opening_s42.mp4",
+    "total_frames": 100,
+    "resolution": "1280x720",
+    "mean_pixel_difference": 0.336,
+    "motion_detected": false,
+    "all_frames_valid": true,
+    "verdict": "PASS"
+  },
+  "SCENARIO_5_DEAD_END_ENCLOSURE": {
+    "video_file": "scenario_5_dead_end_enclosure_s42.mp4",
+    "total_frames": 100,
+    "resolution": "1280x720",
+    "mean_pixel_difference": 0.314,
+    "motion_detected": false,
+    "all_frames_valid": true,
+    "verdict": "PASS"
+  },
+  "SCENARIO_6_NARROW_PASSAGE": {
+    "video_file": "scenario_6_narrow_passage_s42.mp4",
+    "total_frames": 100,
+    "resolution": "1280x720",
+    "mean_pixel_difference": 0.288,
+    "motion_detected": false,
+    "all_frames_valid": true,
+    "verdict": "PASS"
+  },
+  "SCENARIO_7_DYNAMIC_CROSSING_HAZARD": {
+    "video_file": "scenario_7_dynamic_crossing_hazard_s42.mp4",
+    "total_frames": 100,
+    "resolution": "1280x720",
+    "mean_pixel_difference": 0.387,
+    "motion_detected": false,
+    "all_frames_valid": true,
+    "verdict": "PASS"
+  },
+  "SCENARIO_8_UNEXPECTED_DROP_HAZARD": {
+    "video_file": "scenario_8_unexpected_drop_hazard_s42.mp4",
+    "total_frames": 100,
+    "resolution": "1280x720",
+    "mean_pixel_difference": 0.34,
+    "motion_detected": false,
+    "all_frames_valid": true,
+    "verdict": "PASS"
+  },
+  "SCENARIO_9_ADVERSARIAL_RANDOM_CLUTTER": {
+    "video_file": "scenario_9_adversarial_random_clutter_s42.mp4",
+    "total_frames": 100,
+    "resolution": "1280x720",
+    "mean_pixel_difference": 0.313,
+    "motion_detected": false,
+    "all_frames_valid": true,
+    "verdict": "PASS"
+  },
+  "SCENARIO_10_CORNER_WEDGE_TRAP": {
+    "video_file": "scenario_10_corner_wedge_trap_s42.mp4",
+    "total_frames": 100,
+    "resolution": "1280x720",
+    "mean_pixel_difference": 0.336,
+    "motion_detected": false,
+    "all_frames_valid": true,
+    "verdict": "PASS"
+  }
+}

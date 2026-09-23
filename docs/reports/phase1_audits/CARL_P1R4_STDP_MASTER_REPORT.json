@@ -1,0 +1,32 @@
+{
+  "report_id": "CARL-P1R4-STDP-PLASTICITY-MASTER-REPORT-2026",
+  "timestamp": "2026-08-24T00:30:00Z",
+  "milestone": "PHASE 1-R4 — STDP SYNAPTIC PLASTICITY RECONNECTION & CAUSAL VALIDATION",
+  "experimental_variant": "CARL-DX Phase 1-R4 (Isolated 3-Factor STDP + Active Inference)",
+  "hypothesis_tested": "Does an experience-driven STDP mechanism modify internal synaptic state and causally alter subsequent neural decisions independently of HDC episodic memory?",
+  "classification_level": "LEVEL 1: STDP ACTIVE AND SYNAPTIC WEIGHTS CHANGE (SUB-THRESHOLD CAUSAL EFFECT)",
+  "pilot_evaluation_summary": {
+    "seed_evaluated": 42,
+    "conditions_evaluated": ["FULL_STDP", "NO_STDP", "STDP_SHUFFLED_TIMING"],
+    "episodes_per_condition": 8,
+    "total_episodes_run": 24,
+    "causal_gate_status": "FAILED_AT_SEED_42 (Execution stopped per protocol rules)",
+    "causal_breakdown": {
+      "1_experience_occurs": "VERIFIED (LTD events: 298 in FULL_STDP, 1303 in SHUFFLED)",
+      "2_spike_timing_correlation": "VERIFIED (Asymmetric pre-post eligibility traces updated at 30Hz)",
+      "3_synaptic_weight_change": "VERIFIED (dW logged, ||W|| changed from 0.000 to 0.001)",
+      "4_internal_neural_response_shift": "FAILED_MAGNITUDE (Synaptic gain ||W||=0.001 produced < 0.05 EFE modulation, overwhelmed by HDC memory bias V_mem=4.5)",
+      "5_independent_behavioural_causality": "INCONCLUSIVE (HDC episodic memory dominated Route A switch in both FULL_STDP and NO_STDP)"
+    }
+  },
+  "scientific_findings": {
+    "1_three_factor_plasticity_active": "Three-factor STDP (Eligibility * PE * Valence) successfully executed online at 30Hz without system bottlenecks (14.5 µs latency).",
+    "2_synaptic_scaling_mismatch": "Initial learning rate (eta=0.015) with sub-second collision stalls accumulated small weight changes (||W|| ~ 0.001) over 8 episodes.",
+    "3_memory_plasticity_competition": "When HDC episodic memory is active in both conditions, high-valence episodic retrieval (+-4.5) masks subtle synaptic weight shifts, confirming the necessity of Part N disentanglement."
+  },
+  "recommendations_for_p1_r4_progression": [
+    "Scale STDP learning rate / gain: Increase eta from 0.015 to 0.15 and lambda_stdp to match EFE scale.",
+    "Ablate HDC memory (NO_HDC + STDP vs NO_HDC + NO_STDP) to isolate pure synaptic plasticity without episodic memory masking.",
+    "Introduce multi-trial temporal reinforcement to allow cumulative synaptic potentiation over longer developmental horizons."
+  ]
+}

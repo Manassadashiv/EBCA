@@ -1,0 +1,3240 @@
+[
+  {
+    "config_id": 20,
+    "env_id": 2,
+    "env_name": "Asymmetric T-Junction",
+    "arm": "ARM-A",
+    "seed": 5001,
+    "spawn_pos": [
+      0.5072791437754118,
+      0.007788302087031464
+    ],
+    "spawn_yaw": -0.014024575532730128,
+    "escaped": false,
+    "had_collision": false,
+    "timeout": true,
+    "termination_reason": "TIMEOUT",
+    "failure_class": "B. ACTION FAILURE",
+    "ticks_executed": 220,
+    "mean_latency_ms": 39.48,
+    "p95_latency_ms": 116.25,
+    "final_pose_true": [
+      0.9202,
+      -0.3943
+    ],
+    "final_pose_est": [
+      0.7036,
+      -0.3201
+    ],
+    "final_heading_err_deg": 6.1,
+    "selected_macro_frontier_final": [
+      0.4,
+      -2.8
+    ],
+    "dist_to_frontier_final": 2.7,
+    "feasible_candidates_mean": 88.4,
+    "rejected_candidates_mean": 39.6,
+    "min_predicted_hull_clearance": 0.0004,
+    "records_sample": [
+      {
+        "tick": 0,
+        "true_pos": [
+          0.5073,
+          0.0078
+        ],
+        "true_yaw_deg": -0.8,
+        "est_pos": [
+          0.5073,
+          0.0078
+        ],
+        "est_yaw_deg": -0.8,
+        "gyro_yaw_deg": -0.8,
+        "heading_err_deg": 0.0,
+        "selected_frontier": [
+          0.8,
+          0.0
+        ],
+        "dist_to_frontier": 0.3,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          1.0
+        ],
+        "efe_total": -28.03,
+        "efe_pragmatic": -1.745,
+        "efe_epistemic": 0.089,
+        "min_pred_clearance": 0.2237,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 132.96
+      },
+      {
+        "tick": 27,
+        "true_pos": [
+          0.613,
+          0.0511
+        ],
+        "true_yaw_deg": -69.65,
+        "est_pos": [
+          0.6019,
+          0.0
+        ],
+        "est_yaw_deg": -68.14,
+        "gyro_yaw_deg": -71.51,
+        "heading_err_deg": 1.51,
+        "selected_frontier": [
+          -0.2,
+          0.1
+        ],
+        "dist_to_frontier": 0.9,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          0.75,
+          -0.75
+        ],
+        "efe_total": 0.79,
+        "efe_pragmatic": 9.076,
+        "efe_epistemic": -0.013,
+        "min_pred_clearance": 0.1915,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 56.32
+      },
+      {
+        "tick": 54,
+        "true_pos": [
+          0.4969,
+          0.057
+        ],
+        "true_yaw_deg": -38.06,
+        "est_pos": [
+          0.5698,
+          0.0052
+        ],
+        "est_yaw_deg": -40.68,
+        "gyro_yaw_deg": -39.35,
+        "heading_err_deg": 2.62,
+        "selected_frontier": [
+          1.3,
+          -2.4
+        ],
+        "dist_to_frontier": 3.2,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          -0.7,
+          -0.7
+        ],
+        "efe_total": -31.415,
+        "efe_pragmatic": 19.248,
+        "efe_epistemic": -0.046,
+        "min_pred_clearance": 0.2367,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 16.81
+      },
+      {
+        "tick": 81,
+        "true_pos": [
+          0.4932,
+          -0.1517
+        ],
+        "true_yaw_deg": -65.89,
+        "est_pos": [
+          0.604,
+          -0.1272
+        ],
+        "est_yaw_deg": -62.28,
+        "gyro_yaw_deg": -60.64,
+        "heading_err_deg": 3.61,
+        "selected_frontier": [
+          1.4,
+          -2.4
+        ],
+        "dist_to_frontier": 3.0,
+        "feasible_candidates": 122,
+        "rejected_candidates": 6,
+        "chosen_action": [
+          0.499,
+          -0.658
+        ],
+        "efe_total": 0.782,
+        "efe_pragmatic": 8.654,
+        "efe_epistemic": 0.1,
+        "min_pred_clearance": 0.0041,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 19.4
+      },
+      {
+        "tick": 108,
+        "true_pos": [
+          0.5845,
+          -0.0806
+        ],
+        "true_yaw_deg": -123.39,
+        "est_pos": [
+          0.6293,
+          -0.109
+        ],
+        "est_yaw_deg": -121.04,
+        "gyro_yaw_deg": -105.83,
+        "heading_err_deg": 2.35,
+        "selected_frontier": [
+          1.6,
+          -2.1
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 124,
+        "rejected_candidates": 4,
+        "chosen_action": [
+          -0.6,
+          0.6
+        ],
+        "efe_total": 0.39,
+        "efe_pragmatic": 6.337,
+        "efe_epistemic": 0.081,
+        "min_pred_clearance": 0.0635,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 14.35
+      },
+      {
+        "tick": 135,
+        "true_pos": [
+          0.8017,
+          -0.281
+        ],
+        "true_yaw_deg": -64.36,
+        "est_pos": [
+          0.6948,
+          -0.2559
+        ],
+        "est_yaw_deg": -76.65,
+        "gyro_yaw_deg": -45.81,
+        "heading_err_deg": 12.29,
+        "selected_frontier": [
+          1.6,
+          -2.4
+        ],
+        "dist_to_frontier": 3.1,
+        "feasible_candidates": 82,
+        "rejected_candidates": 46,
+        "chosen_action": [
+          0.85,
+          1.0
+        ],
+        "efe_total": -4.73,
+        "efe_pragmatic": -4.057,
+        "efe_epistemic": -0.098,
+        "min_pred_clearance": 0.0968,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 19.68
+      },
+      {
+        "tick": 162,
+        "true_pos": [
+          0.7951,
+          -0.1911
+        ],
+        "true_yaw_deg": -102.21,
+        "est_pos": [
+          0.6958,
+          -0.2978
+        ],
+        "est_yaw_deg": -106.67,
+        "gyro_yaw_deg": -67.19,
+        "heading_err_deg": 4.46,
+        "selected_frontier": [
+          0.1,
+          -2.0
+        ],
+        "dist_to_frontier": 3.4,
+        "feasible_candidates": 35,
+        "rejected_candidates": 93,
+        "chosen_action": [
+          0.24,
+          0.129
+        ],
+        "efe_total": -1.151,
+        "efe_pragmatic": 2.555,
+        "efe_epistemic": 0.01,
+        "min_pred_clearance": 0.131,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 18.71
+      },
+      {
+        "tick": 189,
+        "true_pos": [
+          0.9427,
+          -0.3003
+        ],
+        "true_yaw_deg": -115.72,
+        "est_pos": [
+          0.7107,
+          -0.3073
+        ],
+        "est_yaw_deg": -121.53,
+        "gyro_yaw_deg": -81.7,
+        "heading_err_deg": 5.81,
+        "selected_frontier": [
+          0.1,
+          -2.0
+        ],
+        "dist_to_frontier": 3.4,
+        "feasible_candidates": 0,
+        "rejected_candidates": 128,
+        "chosen_action": [
+          -0.75,
+          0.75
+        ],
+        "efe_total": -135.096,
+        "efe_pragmatic": 21.535,
+        "efe_epistemic": 0.075,
+        "min_pred_clearance": 0.0299,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 78.49
+      },
+      {
+        "tick": 216,
+        "true_pos": [
+          0.947,
+          -0.3766
+        ],
+        "true_yaw_deg": -142.83,
+        "est_pos": [
+          0.7046,
+          -0.3198
+        ],
+        "est_yaw_deg": -155.38,
+        "gyro_yaw_deg": -110.15,
+        "heading_err_deg": 12.55,
+        "selected_frontier": [
+          0.4,
+          -2.8
+        ],
+        "dist_to_frontier": 2.7,
+        "feasible_candidates": 2,
+        "rejected_candidates": 126,
+        "chosen_action": [
+          -0.45,
+          0.45
+        ],
+        "efe_total": 9.181,
+        "efe_pragmatic": 21.684,
+        "efe_epistemic": 0.015,
+        "min_pred_clearance": 0.0412,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 18.63
+      }
+    ]
+  },
+  {
+    "config_id": 20,
+    "env_id": 2,
+    "env_name": "Asymmetric T-Junction",
+    "arm": "ARM-B",
+    "seed": 5001,
+    "spawn_pos": [
+      0.5072791437754118,
+      0.007788302087031464
+    ],
+    "spawn_yaw": -0.014024575532730128,
+    "escaped": false,
+    "had_collision": false,
+    "timeout": true,
+    "termination_reason": "TIMEOUT",
+    "failure_class": "B. ACTION FAILURE",
+    "ticks_executed": 220,
+    "mean_latency_ms": 32.82,
+    "p95_latency_ms": 85.03,
+    "final_pose_true": [
+      0.8438,
+      -0.9405
+    ],
+    "final_pose_est": [
+      0.8271,
+      -0.7864
+    ],
+    "final_heading_err_deg": 7.76,
+    "selected_macro_frontier_final": [
+      1.6,
+      -3.1
+    ],
+    "dist_to_frontier_final": 3.1,
+    "feasible_candidates_mean": 98.4,
+    "rejected_candidates_mean": 29.6,
+    "min_predicted_hull_clearance": 0.0203,
+    "records_sample": [
+      {
+        "tick": 0,
+        "true_pos": [
+          0.5073,
+          0.0078
+        ],
+        "true_yaw_deg": -0.8,
+        "est_pos": [
+          0.5073,
+          0.0078
+        ],
+        "est_yaw_deg": -0.8,
+        "gyro_yaw_deg": -0.8,
+        "heading_err_deg": 0.0,
+        "selected_frontier": [
+          0.8,
+          0.0
+        ],
+        "dist_to_frontier": 0.3,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          1.0
+        ],
+        "efe_total": -27.984,
+        "efe_pragmatic": -1.721,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.2237,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 62.29
+      },
+      {
+        "tick": 27,
+        "true_pos": [
+          0.672,
+          0.0742
+        ],
+        "true_yaw_deg": -43.55,
+        "est_pos": [
+          0.6044,
+          0.0077
+        ],
+        "est_yaw_deg": -46.01,
+        "gyro_yaw_deg": -46.01,
+        "heading_err_deg": 2.46,
+        "selected_frontier": [
+          1.1,
+          -2.2
+        ],
+        "dist_to_frontier": 2.7,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.85
+        ],
+        "efe_total": -15.963,
+        "efe_pragmatic": -0.857,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.2066,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 38.43
+      },
+      {
+        "tick": 54,
+        "true_pos": [
+          0.6309,
+          0.0081
+        ],
+        "true_yaw_deg": -83.59,
+        "est_pos": [
+          0.5786,
+          -0.0745
+        ],
+        "est_yaw_deg": -84.79,
+        "gyro_yaw_deg": -80.46,
+        "heading_err_deg": 1.19,
+        "selected_frontier": [
+          1.3,
+          -2.4
+        ],
+        "dist_to_frontier": 3.1,
+        "feasible_candidates": 126,
+        "rejected_candidates": 2,
+        "chosen_action": [
+          -0.7,
+          -0.7
+        ],
+        "efe_total": -31.5,
+        "efe_pragmatic": 18.365,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1839,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 20.06
+      },
+      {
+        "tick": 81,
+        "true_pos": [
+          0.5769,
+          -0.0106
+        ],
+        "true_yaw_deg": -84.91,
+        "est_pos": [
+          0.5489,
+          -0.1035
+        ],
+        "est_yaw_deg": -85.69,
+        "gyro_yaw_deg": -81.75,
+        "heading_err_deg": 0.78,
+        "selected_frontier": [
+          1.4,
+          -2.4
+        ],
+        "dist_to_frontier": 3.1,
+        "feasible_candidates": 99,
+        "rejected_candidates": 29,
+        "chosen_action": [
+          0.752,
+          0.982
+        ],
+        "efe_total": -16.625,
+        "efe_pragmatic": -1.854,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1233,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 14.59
+      },
+      {
+        "tick": 108,
+        "true_pos": [
+          0.8115,
+          -0.2682
+        ],
+        "true_yaw_deg": -39.96,
+        "est_pos": [
+          0.6781,
+          -0.2479
+        ],
+        "est_yaw_deg": -37.27,
+        "gyro_yaw_deg": -34.82,
+        "heading_err_deg": 2.69,
+        "selected_frontier": [
+          1.2,
+          -2.5
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          0.6,
+          -0.6
+        ],
+        "efe_total": 0.227,
+        "efe_pragmatic": 6.583,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.064,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 23.6
+      },
+      {
+        "tick": 135,
+        "true_pos": [
+          0.8211,
+          -0.4112
+        ],
+        "true_yaw_deg": -61.3,
+        "est_pos": [
+          0.7299,
+          -0.3017
+        ],
+        "est_yaw_deg": -49.42,
+        "gyro_yaw_deg": -53.66,
+        "heading_err_deg": 11.88,
+        "selected_frontier": [
+          1.4,
+          -2.5
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.75
+        ],
+        "efe_total": -9.16,
+        "efe_pragmatic": 2.734,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0738,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 139.15
+      },
+      {
+        "tick": 162,
+        "true_pos": [
+          0.8006,
+          -0.5758
+        ],
+        "true_yaw_deg": -80.43,
+        "est_pos": [
+          0.7778,
+          -0.4455
+        ],
+        "est_yaw_deg": -76.94,
+        "gyro_yaw_deg": -80.85,
+        "heading_err_deg": 3.49,
+        "selected_frontier": [
+          1.2,
+          -2.8
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 91,
+        "rejected_candidates": 37,
+        "chosen_action": [
+          0.926,
+          0.839
+        ],
+        "efe_total": -25.856,
+        "efe_pragmatic": -4.833,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1087,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 14.74
+      },
+      {
+        "tick": 189,
+        "true_pos": [
+          0.805,
+          -0.7198
+        ],
+        "true_yaw_deg": -94.25,
+        "est_pos": [
+          0.759,
+          -0.5972
+        ],
+        "est_yaw_deg": -95.39,
+        "gyro_yaw_deg": -92.82,
+        "heading_err_deg": 1.14,
+        "selected_frontier": [
+          1.2,
+          -3.0
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 38,
+        "rejected_candidates": 90,
+        "chosen_action": [
+          0.728,
+          0.993
+        ],
+        "efe_total": -25.696,
+        "efe_pragmatic": -4.742,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0778,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 67.54
+      },
+      {
+        "tick": 216,
+        "true_pos": [
+          0.8572,
+          -0.9397
+        ],
+        "true_yaw_deg": -64.75,
+        "est_pos": [
+          0.8128,
+          -0.7687
+        ],
+        "est_yaw_deg": -55.63,
+        "gyro_yaw_deg": -54.44,
+        "heading_err_deg": 9.13,
+        "selected_frontier": [
+          1.3,
+          -3.1
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 102,
+        "rejected_candidates": 26,
+        "chosen_action": [
+          1.0,
+          0.661
+        ],
+        "efe_total": -7.869,
+        "efe_pragmatic": 3.922,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0406,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 13.25
+      }
+    ]
+  },
+  {
+    "config_id": 21,
+    "env_id": 2,
+    "env_name": "Asymmetric T-Junction",
+    "arm": "ARM-A",
+    "seed": 5001,
+    "spawn_pos": [
+      0.5367343042712454,
+      0.03780479462056391
+    ],
+    "spawn_yaw": 0.041514285170588264,
+    "escaped": false,
+    "had_collision": true,
+    "timeout": false,
+    "termination_reason": "COLLIDED",
+    "failure_class": "D. STATE-ESTIMATION FAILURE",
+    "ticks_executed": 124,
+    "mean_latency_ms": 20.69,
+    "p95_latency_ms": 61.08,
+    "final_pose_true": [
+      1.0082,
+      -0.7581
+    ],
+    "final_pose_est": [
+      0.7595,
+      -0.3479
+    ],
+    "final_heading_err_deg": 1.92,
+    "selected_macro_frontier_final": [
+      1.2,
+      -2.8
+    ],
+    "dist_to_frontier_final": 2.9,
+    "feasible_candidates_mean": 113.1,
+    "rejected_candidates_mean": 14.9,
+    "min_predicted_hull_clearance": 0.0014,
+    "records_sample": [
+      {
+        "tick": 0,
+        "true_pos": [
+          0.5367,
+          0.0378
+        ],
+        "true_yaw_deg": 2.38,
+        "est_pos": [
+          0.5367,
+          0.0378
+        ],
+        "est_yaw_deg": 2.38,
+        "gyro_yaw_deg": 2.38,
+        "heading_err_deg": 0.0,
+        "selected_frontier": [
+          0.8,
+          -0.1
+        ],
+        "dist_to_frontier": 0.4,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.85
+        ],
+        "efe_total": -16.522,
+        "efe_pragmatic": 3.042,
+        "efe_epistemic": -0.006,
+        "min_pred_clearance": 0.1981,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 49.35
+      },
+      {
+        "tick": 15,
+        "true_pos": [
+          0.5845,
+          0.0345
+        ],
+        "true_yaw_deg": -80.45,
+        "est_pos": [
+          0.5665,
+          0.0291
+        ],
+        "est_yaw_deg": -81.12,
+        "gyro_yaw_deg": -83.81,
+        "heading_err_deg": 0.66,
+        "selected_frontier": [
+          -0.2,
+          0.1
+        ],
+        "dist_to_frontier": 0.8,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          0.75,
+          -0.75
+        ],
+        "efe_total": 0.549,
+        "efe_pragmatic": 8.054,
+        "efe_epistemic": 0.028,
+        "min_pred_clearance": 0.1986,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 13.8
+      },
+      {
+        "tick": 30,
+        "true_pos": [
+          0.6232,
+          0.1613
+        ],
+        "true_yaw_deg": -105.52,
+        "est_pos": [
+          0.5854,
+          0.0953
+        ],
+        "est_yaw_deg": -103.58,
+        "gyro_yaw_deg": -99.17,
+        "heading_err_deg": 1.94,
+        "selected_frontier": [
+          1.2,
+          -2.1
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          0.85,
+          1.0
+        ],
+        "efe_total": -17.436,
+        "efe_pragmatic": -1.186,
+        "efe_epistemic": -0.022,
+        "min_pred_clearance": 0.1505,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 12.92
+      },
+      {
+        "tick": 45,
+        "true_pos": [
+          0.7381,
+          0.0102
+        ],
+        "true_yaw_deg": -74.44,
+        "est_pos": [
+          0.6161,
+          -0.0047
+        ],
+        "est_yaw_deg": -71.63,
+        "gyro_yaw_deg": -71.57,
+        "heading_err_deg": 2.81,
+        "selected_frontier": [
+          1.2,
+          -2.1
+        ],
+        "dist_to_frontier": 2.6,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          1.0
+        ],
+        "efe_total": -27.923,
+        "efe_pragmatic": -6.036,
+        "efe_epistemic": 0.045,
+        "min_pred_clearance": 0.172,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 14.08
+      },
+      {
+        "tick": 60,
+        "true_pos": [
+          0.8351,
+          -0.2103
+        ],
+        "true_yaw_deg": -54.57,
+        "est_pos": [
+          0.6718,
+          -0.1172
+        ],
+        "est_yaw_deg": -50.94,
+        "gyro_yaw_deg": -48.8,
+        "heading_err_deg": 3.62,
+        "selected_frontier": [
+          1.3,
+          -2.3
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.616
+        ],
+        "efe_total": -7.814,
+        "efe_pragmatic": 3.408,
+        "efe_epistemic": -0.021,
+        "min_pred_clearance": 0.0551,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 17.03
+      },
+      {
+        "tick": 75,
+        "true_pos": [
+          0.87,
+          -0.3329
+        ],
+        "true_yaw_deg": -61.96,
+        "est_pos": [
+          0.7061,
+          -0.2191
+        ],
+        "est_yaw_deg": -62.36,
+        "gyro_yaw_deg": -62.66,
+        "heading_err_deg": 0.4,
+        "selected_frontier": [
+          1.2,
+          -2.5
+        ],
+        "dist_to_frontier": 2.7,
+        "feasible_candidates": 100,
+        "rejected_candidates": 28,
+        "chosen_action": [
+          1.0,
+          0.779
+        ],
+        "efe_total": -4.758,
+        "efe_pragmatic": 5.705,
+        "efe_epistemic": 0.05,
+        "min_pred_clearance": 0.0257,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 13.48
+      },
+      {
+        "tick": 90,
+        "true_pos": [
+          0.9115,
+          -0.4912
+        ],
+        "true_yaw_deg": -43.3,
+        "est_pos": [
+          0.7429,
+          -0.2736
+        ],
+        "est_yaw_deg": -33.91,
+        "gyro_yaw_deg": -38.08,
+        "heading_err_deg": 9.39,
+        "selected_frontier": [
+          1.4,
+          -2.5
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 122,
+        "rejected_candidates": 6,
+        "chosen_action": [
+          0.931,
+          -0.938
+        ],
+        "efe_total": 8.757,
+        "efe_pragmatic": 18.031,
+        "efe_epistemic": 0.007,
+        "min_pred_clearance": 0.0063,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 15.14
+      },
+      {
+        "tick": 105,
+        "true_pos": [
+          0.9188,
+          -0.5392
+        ],
+        "true_yaw_deg": -49.78,
+        "est_pos": [
+          0.7694,
+          -0.3177
+        ],
+        "est_yaw_deg": -44.38,
+        "gyro_yaw_deg": -47.74,
+        "heading_err_deg": 5.4,
+        "selected_frontier": [
+          1.3,
+          -2.7
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 68,
+        "rejected_candidates": 60,
+        "chosen_action": [
+          0.6,
+          -0.6
+        ],
+        "efe_total": 12.044,
+        "efe_pragmatic": 21.464,
+        "efe_epistemic": 0.039,
+        "min_pred_clearance": 0.0038,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 61.18
+      },
+      {
+        "tick": 120,
+        "true_pos": [
+          0.9741,
+          -0.7577
+        ],
+        "true_yaw_deg": -163.35,
+        "est_pos": [
+          0.7606,
+          -0.3476
+        ],
+        "est_yaw_deg": -160.94,
+        "gyro_yaw_deg": -156.83,
+        "heading_err_deg": 2.42,
+        "selected_frontier": [
+          1.2,
+          -2.8
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 0,
+        "rejected_candidates": 128,
+        "chosen_action": [
+          -0.45,
+          0.45
+        ],
+        "efe_total": 196.445,
+        "efe_pragmatic": 36.527,
+        "efe_epistemic": -0.003,
+        "min_pred_clearance": 0.0014,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 12.98
+      }
+    ]
+  },
+  {
+    "config_id": 21,
+    "env_id": 2,
+    "env_name": "Asymmetric T-Junction",
+    "arm": "ARM-B",
+    "seed": 5001,
+    "spawn_pos": [
+      0.5367343042712454,
+      0.03780479462056391
+    ],
+    "spawn_yaw": 0.041514285170588264,
+    "escaped": false,
+    "had_collision": false,
+    "timeout": true,
+    "termination_reason": "TIMEOUT",
+    "failure_class": "B. ACTION FAILURE",
+    "ticks_executed": 220,
+    "mean_latency_ms": 27.39,
+    "p95_latency_ms": 70.94,
+    "final_pose_true": [
+      0.8559,
+      -0.5541
+    ],
+    "final_pose_est": [
+      0.6732,
+      -0.2635
+    ],
+    "final_heading_err_deg": 7.3,
+    "selected_macro_frontier_final": [
+      0.5,
+      -2.8
+    ],
+    "dist_to_frontier_final": 2.6,
+    "feasible_candidates_mean": 119.0,
+    "rejected_candidates_mean": 9.0,
+    "min_predicted_hull_clearance": 0.0123,
+    "records_sample": [
+      {
+        "tick": 0,
+        "true_pos": [
+          0.5367,
+          0.0378
+        ],
+        "true_yaw_deg": 2.38,
+        "est_pos": [
+          0.5367,
+          0.0378
+        ],
+        "est_yaw_deg": 2.38,
+        "gyro_yaw_deg": 2.38,
+        "heading_err_deg": 0.0,
+        "selected_frontier": [
+          0.8,
+          -0.1
+        ],
+        "dist_to_frontier": 0.4,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.85
+        ],
+        "efe_total": -16.365,
+        "efe_pragmatic": 3.078,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1981,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 44.42
+      },
+      {
+        "tick": 27,
+        "true_pos": [
+          0.5721,
+          0.1406
+        ],
+        "true_yaw_deg": -136.69,
+        "est_pos": [
+          0.6066,
+          0.0793
+        ],
+        "est_yaw_deg": -128.22,
+        "gyro_yaw_deg": -133.85,
+        "heading_err_deg": 8.47,
+        "selected_frontier": [
+          1.3,
+          -2.2
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          0.75,
+          1.0
+        ],
+        "efe_total": -0.968,
+        "efe_pragmatic": 7.087,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1182,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 10.7
+      },
+      {
+        "tick": 54,
+        "true_pos": [
+          0.503,
+          -0.0897
+        ],
+        "true_yaw_deg": -124.14,
+        "est_pos": [
+          0.5762,
+          -0.0002
+        ],
+        "est_yaw_deg": -121.56,
+        "gyro_yaw_deg": -120.97,
+        "heading_err_deg": 2.58,
+        "selected_frontier": [
+          1.4,
+          -2.3
+        ],
+        "dist_to_frontier": 3.1,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          -0.625,
+          0.68
+        ],
+        "efe_total": 0.312,
+        "efe_pragmatic": 6.167,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0598,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 13.57
+      },
+      {
+        "tick": 81,
+        "true_pos": [
+          0.6283,
+          -0.165
+        ],
+        "true_yaw_deg": -36.37,
+        "est_pos": [
+          0.6557,
+          -0.1059
+        ],
+        "est_yaw_deg": -40.21,
+        "gyro_yaw_deg": -31.34,
+        "heading_err_deg": 3.84,
+        "selected_frontier": [
+          1.4,
+          -2.4
+        ],
+        "dist_to_frontier": 3.0,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.85
+        ],
+        "efe_total": -13.965,
+        "efe_pragmatic": 2.452,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0993,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 17.63
+      },
+      {
+        "tick": 108,
+        "true_pos": [
+          0.7184,
+          -0.3615
+        ],
+        "true_yaw_deg": 8.04,
+        "est_pos": [
+          0.6896,
+          -0.1084
+        ],
+        "est_yaw_deg": -6.67,
+        "gyro_yaw_deg": -10.34,
+        "heading_err_deg": 14.71,
+        "selected_frontier": [
+          1.3,
+          -2.4
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          0.75,
+          -0.75
+        ],
+        "efe_total": 0.14,
+        "efe_pragmatic": 6.173,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1557,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 11.1
+      },
+      {
+        "tick": 135,
+        "true_pos": [
+          0.8558,
+          -0.2941
+        ],
+        "true_yaw_deg": -168.79,
+        "est_pos": [
+          0.6734,
+          -0.1366
+        ],
+        "est_yaw_deg": -167.35,
+        "gyro_yaw_deg": -179.01,
+        "heading_err_deg": 1.44,
+        "selected_frontier": [
+          -0.1,
+          -2.0
+        ],
+        "dist_to_frontier": 3.7,
+        "feasible_candidates": 126,
+        "rejected_candidates": 2,
+        "chosen_action": [
+          0.75,
+          1.0
+        ],
+        "efe_total": -1.227,
+        "efe_pragmatic": 5.585,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1292,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 17.91
+      },
+      {
+        "tick": 162,
+        "true_pos": [
+          0.8449,
+          -0.3276
+        ],
+        "true_yaw_deg": -142.08,
+        "est_pos": [
+          0.6433,
+          -0.1703
+        ],
+        "est_yaw_deg": -143.35,
+        "gyro_yaw_deg": -149.11,
+        "heading_err_deg": 1.27,
+        "selected_frontier": [
+          -0.1,
+          -2.0
+        ],
+        "dist_to_frontier": 3.7,
+        "feasible_candidates": 122,
+        "rejected_candidates": 6,
+        "chosen_action": [
+          -0.161,
+          0.049
+        ],
+        "efe_total": -1.228,
+        "efe_pragmatic": 4.317,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0986,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 14.51
+      },
+      {
+        "tick": 189,
+        "true_pos": [
+          0.7149,
+          -0.3813
+        ],
+        "true_yaw_deg": -37.03,
+        "est_pos": [
+          0.6378,
+          -0.215
+        ],
+        "est_yaw_deg": -38.31,
+        "gyro_yaw_deg": -51.63,
+        "heading_err_deg": 1.27,
+        "selected_frontier": [
+          0.5,
+          -4.7
+        ],
+        "dist_to_frontier": 4.5,
+        "feasible_candidates": 127,
+        "rejected_candidates": 1,
+        "chosen_action": [
+          0.963,
+          0.749
+        ],
+        "efe_total": -2.604,
+        "efe_pragmatic": 11.663,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0569,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 145.45
+      },
+      {
+        "tick": 216,
+        "true_pos": [
+          0.8434,
+          -0.5526
+        ],
+        "true_yaw_deg": -154.97,
+        "est_pos": [
+          0.6735,
+          -0.2633
+        ],
+        "est_yaw_deg": -149.23,
+        "gyro_yaw_deg": -171.16,
+        "heading_err_deg": 5.74,
+        "selected_frontier": [
+          0.5,
+          -2.8
+        ],
+        "dist_to_frontier": 2.6,
+        "feasible_candidates": 89,
+        "rejected_candidates": 39,
+        "chosen_action": [
+          -0.6,
+          0.6
+        ],
+        "efe_total": 0.342,
+        "efe_pragmatic": 6.239,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0732,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 13.88
+      }
+    ]
+  },
+  {
+    "config_id": 22,
+    "env_id": 2,
+    "env_name": "Asymmetric T-Junction",
+    "arm": "ARM-A",
+    "seed": 5001,
+    "spawn_pos": [
+      0.5376764425683641,
+      -0.04468608074753526
+    ],
+    "spawn_yaw": -0.0457018699242106,
+    "escaped": false,
+    "had_collision": false,
+    "timeout": true,
+    "termination_reason": "TIMEOUT",
+    "failure_class": "B. ACTION FAILURE",
+    "ticks_executed": 220,
+    "mean_latency_ms": 43.16,
+    "p95_latency_ms": 150.62,
+    "final_pose_true": [
+      0.9882,
+      -0.8248
+    ],
+    "final_pose_est": [
+      0.7457,
+      -0.5215
+    ],
+    "final_heading_err_deg": 1.79,
+    "selected_macro_frontier_final": [
+      1.3,
+      -2.8
+    ],
+    "dist_to_frontier_final": 2.8,
+    "feasible_candidates_mean": 75.3,
+    "rejected_candidates_mean": 52.7,
+    "min_predicted_hull_clearance": 0.0004,
+    "records_sample": [
+      {
+        "tick": 0,
+        "true_pos": [
+          0.5377,
+          -0.0447
+        ],
+        "true_yaw_deg": -2.62,
+        "est_pos": [
+          0.5377,
+          -0.0447
+        ],
+        "est_yaw_deg": -2.62,
+        "gyro_yaw_deg": -2.62,
+        "heading_err_deg": 0.0,
+        "selected_frontier": [
+          0.8,
+          -0.2
+        ],
+        "dist_to_frontier": 0.4,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.85
+        ],
+        "efe_total": -17.868,
+        "efe_pragmatic": 2.575,
+        "efe_epistemic": 0.012,
+        "min_pred_clearance": 0.1913,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 49.05
+      },
+      {
+        "tick": 27,
+        "true_pos": [
+          0.5202,
+          0.0811
+        ],
+        "true_yaw_deg": -94.06,
+        "est_pos": [
+          0.5721,
+          -0.0219
+        ],
+        "est_yaw_deg": -96.35,
+        "gyro_yaw_deg": -99.19,
+        "heading_err_deg": 2.29,
+        "selected_frontier": [
+          1.3,
+          -2.3
+        ],
+        "dist_to_frontier": 3.0,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          0.893,
+          1.0
+        ],
+        "efe_total": -15.951,
+        "efe_pragmatic": -1.008,
+        "efe_epistemic": -0.027,
+        "min_pred_clearance": 0.2011,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 13.49
+      },
+      {
+        "tick": 54,
+        "true_pos": [
+          0.7252,
+          -0.3261
+        ],
+        "true_yaw_deg": -4.93,
+        "est_pos": [
+          0.6812,
+          -0.1755
+        ],
+        "est_yaw_deg": -2.59,
+        "gyro_yaw_deg": -7.6,
+        "heading_err_deg": 2.34,
+        "selected_frontier": [
+          1.3,
+          -2.5
+        ],
+        "dist_to_frontier": 3.0,
+        "feasible_candidates": 115,
+        "rejected_candidates": 13,
+        "chosen_action": [
+          0.75,
+          -0.75
+        ],
+        "efe_total": 0.095,
+        "efe_pragmatic": 6.394,
+        "efe_epistemic": -0.047,
+        "min_pred_clearance": 0.1446,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 14.9
+      },
+      {
+        "tick": 81,
+        "true_pos": [
+          0.7487,
+          -0.5093
+        ],
+        "true_yaw_deg": -117.62,
+        "est_pos": [
+          0.6837,
+          -0.2103
+        ],
+        "est_yaw_deg": -115.41,
+        "gyro_yaw_deg": -111.87,
+        "heading_err_deg": 2.21,
+        "selected_frontier": [
+          1.5,
+          -2.5
+        ],
+        "dist_to_frontier": 3.1,
+        "feasible_candidates": 122,
+        "rejected_candidates": 6,
+        "chosen_action": [
+          -0.537,
+          0.526
+        ],
+        "efe_total": 3.763,
+        "efe_pragmatic": 12.628,
+        "efe_epistemic": 0.021,
+        "min_pred_clearance": 0.007,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 129.44
+      },
+      {
+        "tick": 108,
+        "true_pos": [
+          0.7293,
+          -0.4044
+        ],
+        "true_yaw_deg": -103.92,
+        "est_pos": [
+          0.6922,
+          -0.1865
+        ],
+        "est_yaw_deg": -109.85,
+        "gyro_yaw_deg": -89.06,
+        "heading_err_deg": 5.94,
+        "selected_frontier": [
+          0.9,
+          -4.6
+        ],
+        "dist_to_frontier": 4.7,
+        "feasible_candidates": 105,
+        "rejected_candidates": 23,
+        "chosen_action": [
+          -0.45,
+          0.45
+        ],
+        "efe_total": 7.054,
+        "efe_pragmatic": 15.885,
+        "efe_epistemic": -0.075,
+        "min_pred_clearance": 0.0083,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 14.76
+      },
+      {
+        "tick": 135,
+        "true_pos": [
+          0.7554,
+          -0.6274
+        ],
+        "true_yaw_deg": -87.81,
+        "est_pos": [
+          0.7204,
+          -0.3393
+        ],
+        "est_yaw_deg": -83.06,
+        "gyro_yaw_deg": -70.8,
+        "heading_err_deg": 4.75,
+        "selected_frontier": [
+          1.4,
+          -2.7
+        ],
+        "dist_to_frontier": 3.0,
+        "feasible_candidates": 47,
+        "rejected_candidates": 81,
+        "chosen_action": [
+          -0.482,
+          0.522
+        ],
+        "efe_total": 7.301,
+        "efe_pragmatic": 9.008,
+        "efe_epistemic": 0.068,
+        "min_pred_clearance": 0.0393,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 13.88
+      },
+      {
+        "tick": 162,
+        "true_pos": [
+          0.876,
+          -0.6078
+        ],
+        "true_yaw_deg": -68.44,
+        "est_pos": [
+          0.737,
+          -0.3259
+        ],
+        "est_yaw_deg": -69.42,
+        "gyro_yaw_deg": -52.89,
+        "heading_err_deg": 0.98,
+        "selected_frontier": [
+          1.4,
+          -4.6
+        ],
+        "dist_to_frontier": 4.9,
+        "feasible_candidates": 90,
+        "rejected_candidates": 38,
+        "chosen_action": [
+          0.968,
+          0.731
+        ],
+        "efe_total": -11.127,
+        "efe_pragmatic": 5.916,
+        "efe_epistemic": 0.007,
+        "min_pred_clearance": 0.0272,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 13.84
+      },
+      {
+        "tick": 189,
+        "true_pos": [
+          0.9523,
+          -0.72
+        ],
+        "true_yaw_deg": -91.35,
+        "est_pos": [
+          0.7584,
+          -0.4393
+        ],
+        "est_yaw_deg": -93.98,
+        "gyro_yaw_deg": -73.82,
+        "heading_err_deg": 2.63,
+        "selected_frontier": [
+          1.2,
+          -2.8
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 2,
+        "rejected_candidates": 126,
+        "chosen_action": [
+          0.918,
+          1.0
+        ],
+        "efe_total": -11.138,
+        "efe_pragmatic": 12.407,
+        "efe_epistemic": -0.023,
+        "min_pred_clearance": 0.0094,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 64.19
+      },
+      {
+        "tick": 216,
+        "true_pos": [
+          0.9839,
+          -0.7939
+        ],
+        "true_yaw_deg": -105.94,
+        "est_pos": [
+          0.7474,
+          -0.5093
+        ],
+        "est_yaw_deg": -102.67,
+        "gyro_yaw_deg": -76.21,
+        "heading_err_deg": 3.27,
+        "selected_frontier": [
+          1.3,
+          -2.8
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 0,
+        "rejected_candidates": 128,
+        "chosen_action": [
+          0.871,
+          0.999
+        ],
+        "efe_total": 185.169,
+        "efe_pragmatic": 23.794,
+        "efe_epistemic": 0.026,
+        "min_pred_clearance": 0.0022,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 24.97
+      }
+    ]
+  },
+  {
+    "config_id": 22,
+    "env_id": 2,
+    "env_name": "Asymmetric T-Junction",
+    "arm": "ARM-B",
+    "seed": 5001,
+    "spawn_pos": [
+      0.5376764425683641,
+      -0.04468608074753526
+    ],
+    "spawn_yaw": -0.0457018699242106,
+    "escaped": false,
+    "had_collision": true,
+    "timeout": false,
+    "termination_reason": "COLLIDED",
+    "failure_class": "D. STATE-ESTIMATION FAILURE",
+    "ticks_executed": 208,
+    "mean_latency_ms": 30.49,
+    "p95_latency_ms": 79.43,
+    "final_pose_true": [
+      0.9989,
+      -0.1546
+    ],
+    "final_pose_est": [
+      0.6944,
+      -0.2892
+    ],
+    "final_heading_err_deg": 19.32,
+    "selected_macro_frontier_final": [
+      0.0,
+      -2.7
+    ],
+    "dist_to_frontier_final": 3.0,
+    "feasible_candidates_mean": 99.9,
+    "rejected_candidates_mean": 28.1,
+    "min_predicted_hull_clearance": 0.0319,
+    "records_sample": [
+      {
+        "tick": 0,
+        "true_pos": [
+          0.5377,
+          -0.0447
+        ],
+        "true_yaw_deg": -2.62,
+        "est_pos": [
+          0.5377,
+          -0.0447
+        ],
+        "est_yaw_deg": -2.62,
+        "gyro_yaw_deg": -2.62,
+        "heading_err_deg": 0.0,
+        "selected_frontier": [
+          0.8,
+          -0.2
+        ],
+        "dist_to_frontier": 0.4,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.85
+        ],
+        "efe_total": -17.723,
+        "efe_pragmatic": 2.599,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1913,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 53.86
+      },
+      {
+        "tick": 26,
+        "true_pos": [
+          0.5499,
+          0.0745
+        ],
+        "true_yaw_deg": -72.33,
+        "est_pos": [
+          0.5752,
+          -0.0195
+        ],
+        "est_yaw_deg": -73.23,
+        "gyro_yaw_deg": -72.38,
+        "heading_err_deg": 0.9,
+        "selected_frontier": [
+          1.3,
+          -2.3
+        ],
+        "dist_to_frontier": 3.0,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          1.0
+        ],
+        "efe_total": -27.993,
+        "efe_pragmatic": -6.034,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.217,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 15.52
+      },
+      {
+        "tick": 52,
+        "true_pos": [
+          0.684,
+          -0.1562
+        ],
+        "true_yaw_deg": -84.44,
+        "est_pos": [
+          0.6266,
+          -0.1885
+        ],
+        "est_yaw_deg": -81.85,
+        "gyro_yaw_deg": -81.31,
+        "heading_err_deg": 2.59,
+        "selected_frontier": [
+          1.3,
+          -2.3
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 115,
+        "rejected_candidates": 13,
+        "chosen_action": [
+          0.695,
+          1.0
+        ],
+        "efe_total": -17.06,
+        "efe_pragmatic": -1.782,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0908,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 16.33
+      },
+      {
+        "tick": 78,
+        "true_pos": [
+          0.7185,
+          -0.1173
+        ],
+        "true_yaw_deg": -125.27,
+        "est_pos": [
+          0.6499,
+          -0.2263
+        ],
+        "est_yaw_deg": -133.2,
+        "gyro_yaw_deg": -137.33,
+        "heading_err_deg": 7.93,
+        "selected_frontier": [
+          0.9,
+          -2.7
+        ],
+        "dist_to_frontier": 2.7,
+        "feasible_candidates": 122,
+        "rejected_candidates": 6,
+        "chosen_action": [
+          -0.6,
+          0.6
+        ],
+        "efe_total": 0.244,
+        "efe_pragmatic": 5.874,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0995,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 38.91
+      },
+      {
+        "tick": 104,
+        "true_pos": [
+          0.7126,
+          -0.0246
+        ],
+        "true_yaw_deg": -136.09,
+        "est_pos": [
+          0.648,
+          -0.2306
+        ],
+        "est_yaw_deg": -137.05,
+        "gyro_yaw_deg": -142.56,
+        "heading_err_deg": 0.96,
+        "selected_frontier": [
+          1.0,
+          -2.7
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 99,
+        "rejected_candidates": 29,
+        "chosen_action": [
+          -0.6,
+          0.6
+        ],
+        "efe_total": 0.122,
+        "efe_pragmatic": 5.687,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.163,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 22.5
+      },
+      {
+        "tick": 130,
+        "true_pos": [
+          0.7154,
+          -0.0161
+        ],
+        "true_yaw_deg": -98.9,
+        "est_pos": [
+          0.6503,
+          -0.2159
+        ],
+        "est_yaw_deg": -99.59,
+        "gyro_yaw_deg": -105.48,
+        "heading_err_deg": 0.68,
+        "selected_frontier": [
+          1.0,
+          -2.7
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 122,
+        "rejected_candidates": 6,
+        "chosen_action": [
+          -0.714,
+          -0.428
+        ],
+        "efe_total": 0.046,
+        "efe_pragmatic": 3.531,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.2156,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 19.77
+      },
+      {
+        "tick": 156,
+        "true_pos": [
+          0.8327,
+          -0.1239
+        ],
+        "true_yaw_deg": -90.62,
+        "est_pos": [
+          0.6987,
+          -0.2718
+        ],
+        "est_yaw_deg": -98.03,
+        "gyro_yaw_deg": -98.94,
+        "heading_err_deg": 7.41,
+        "selected_frontier": [
+          1.0,
+          -2.7
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 121,
+        "rejected_candidates": 7,
+        "chosen_action": [
+          0.125,
+          0.162
+        ],
+        "efe_total": -1.261,
+        "efe_pragmatic": 3.246,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1022,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 19.39
+      },
+      {
+        "tick": 182,
+        "true_pos": [
+          0.8599,
+          -0.1156
+        ],
+        "true_yaw_deg": -159.22,
+        "est_pos": [
+          0.6889,
+          -0.283
+        ],
+        "est_yaw_deg": -174.65,
+        "gyro_yaw_deg": -170.41,
+        "heading_err_deg": 15.43,
+        "selected_frontier": [
+          0.1,
+          -2.3
+        ],
+        "dist_to_frontier": 3.1,
+        "feasible_candidates": 55,
+        "rejected_candidates": 73,
+        "chosen_action": [
+          -0.75,
+          0.75
+        ],
+        "efe_total": 0.171,
+        "efe_pragmatic": 6.449,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.185,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 66.65
+      }
+    ]
+  },
+  {
+    "config_id": 23,
+    "env_id": 2,
+    "env_name": "Asymmetric T-Junction",
+    "arm": "ARM-A",
+    "seed": 5001,
+    "spawn_pos": [
+      0.5854423446305562,
+      0.01655278697883684
+    ],
+    "spawn_yaw": -0.029100462268800458,
+    "escaped": false,
+    "had_collision": false,
+    "timeout": true,
+    "termination_reason": "TIMEOUT",
+    "failure_class": "B. ACTION FAILURE",
+    "ticks_executed": 220,
+    "mean_latency_ms": 25.86,
+    "p95_latency_ms": 81.04,
+    "final_pose_true": [
+      0.9307,
+      -1.1132
+    ],
+    "final_pose_est": [
+      0.7832,
+      -0.6629
+    ],
+    "final_heading_err_deg": 10.74,
+    "selected_macro_frontier_final": [
+      0.7,
+      -3.1
+    ],
+    "dist_to_frontier_final": 2.4,
+    "feasible_candidates_mean": 115.9,
+    "rejected_candidates_mean": 12.1,
+    "min_predicted_hull_clearance": 0.0019,
+    "records_sample": [
+      {
+        "tick": 0,
+        "true_pos": [
+          0.5854,
+          0.0166
+        ],
+        "true_yaw_deg": -1.67,
+        "est_pos": [
+          0.5854,
+          0.0166
+        ],
+        "est_yaw_deg": -1.67,
+        "gyro_yaw_deg": -1.67,
+        "heading_err_deg": 0.0,
+        "selected_frontier": [
+          0.8,
+          0.0
+        ],
+        "dist_to_frontier": 0.3,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          1.0
+        ],
+        "efe_total": -27.909,
+        "efe_pragmatic": -1.645,
+        "efe_epistemic": -0.009,
+        "min_pred_clearance": 0.2425,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 56.32
+      },
+      {
+        "tick": 27,
+        "true_pos": [
+          0.6906,
+          0.0529
+        ],
+        "true_yaw_deg": -16.26,
+        "est_pos": [
+          0.6727,
+          0.009
+        ],
+        "est_yaw_deg": -27.88,
+        "gyro_yaw_deg": -27.88,
+        "heading_err_deg": 11.62,
+        "selected_frontier": [
+          1.3,
+          -2.2
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          -0.7,
+          -0.7
+        ],
+        "efe_total": -31.422,
+        "efe_pragmatic": 19.713,
+        "efe_epistemic": -0.05,
+        "min_pred_clearance": 0.1828,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 17.47
+      },
+      {
+        "tick": 54,
+        "true_pos": [
+          0.5845,
+          -0.0402
+        ],
+        "true_yaw_deg": -41.05,
+        "est_pos": [
+          0.6372,
+          -0.012
+        ],
+        "est_yaw_deg": -57.87,
+        "gyro_yaw_deg": -57.87,
+        "heading_err_deg": 16.82,
+        "selected_frontier": [
+          1.3,
+          -2.2
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.895
+        ],
+        "efe_total": -23.842,
+        "efe_pragmatic": -4.292,
+        "efe_epistemic": 0.017,
+        "min_pred_clearance": 0.1397,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 19.07
+      },
+      {
+        "tick": 81,
+        "true_pos": [
+          0.6609,
+          -0.0891
+        ],
+        "true_yaw_deg": -109.18,
+        "est_pos": [
+          0.6435,
+          -0.0443
+        ],
+        "est_yaw_deg": -113.87,
+        "gyro_yaw_deg": -126.08,
+        "heading_err_deg": 4.68,
+        "selected_frontier": [
+          1.2,
+          -2.4
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          0.75,
+          1.0
+        ],
+        "efe_total": -10.358,
+        "efe_pragmatic": 4.745,
+        "efe_epistemic": 0.027,
+        "min_pred_clearance": 0.1155,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 16.63
+      },
+      {
+        "tick": 108,
+        "true_pos": [
+          0.8113,
+          -0.3995
+        ],
+        "true_yaw_deg": -58.15,
+        "est_pos": [
+          0.7072,
+          -0.2353
+        ],
+        "est_yaw_deg": -52.46,
+        "gyro_yaw_deg": -79.91,
+        "heading_err_deg": 5.69,
+        "selected_frontier": [
+          1.2,
+          -2.5
+        ],
+        "dist_to_frontier": 2.7,
+        "feasible_candidates": 127,
+        "rejected_candidates": 1,
+        "chosen_action": [
+          1.0,
+          0.765
+        ],
+        "efe_total": -11.016,
+        "efe_pragmatic": 1.973,
+        "efe_epistemic": 0.025,
+        "min_pred_clearance": 0.0805,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 15.24
+      },
+      {
+        "tick": 135,
+        "true_pos": [
+          0.8868,
+          -0.6193
+        ],
+        "true_yaw_deg": -59.22,
+        "est_pos": [
+          0.808,
+          -0.4101
+        ],
+        "est_yaw_deg": -49.27,
+        "gyro_yaw_deg": -74.64,
+        "heading_err_deg": 9.96,
+        "selected_frontier": [
+          1.4,
+          -2.7
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 124,
+        "rejected_candidates": 4,
+        "chosen_action": [
+          0.45,
+          -0.45
+        ],
+        "efe_total": 3.714,
+        "efe_pragmatic": 11.888,
+        "efe_epistemic": 0.065,
+        "min_pred_clearance": 0.0054,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 16.3
+      },
+      {
+        "tick": 162,
+        "true_pos": [
+          0.8906,
+          -0.7514
+        ],
+        "true_yaw_deg": -161.14,
+        "est_pos": [
+          0.795,
+          -0.5016
+        ],
+        "est_yaw_deg": -161.5,
+        "gyro_yaw_deg": -179.96,
+        "heading_err_deg": 0.36,
+        "selected_frontier": [
+          0.5,
+          -2.8
+        ],
+        "dist_to_frontier": 2.4,
+        "feasible_candidates": 122,
+        "rejected_candidates": 6,
+        "chosen_action": [
+          -0.725,
+          0.725
+        ],
+        "efe_total": 0.415,
+        "efe_pragmatic": 6.491,
+        "efe_epistemic": 0.119,
+        "min_pred_clearance": 0.1154,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 17.45
+      },
+      {
+        "tick": 189,
+        "true_pos": [
+          0.8447,
+          -0.8889
+        ],
+        "true_yaw_deg": -46.23,
+        "est_pos": [
+          0.8254,
+          -0.5532
+        ],
+        "est_yaw_deg": -33.71,
+        "gyro_yaw_deg": -47.14,
+        "heading_err_deg": 12.52,
+        "selected_frontier": [
+          0.6,
+          -3.0
+        ],
+        "dist_to_frontier": 2.6,
+        "feasible_candidates": 101,
+        "rejected_candidates": 27,
+        "chosen_action": [
+          0.6,
+          -0.6
+        ],
+        "efe_total": 0.791,
+        "efe_pragmatic": 7.619,
+        "efe_epistemic": -0.037,
+        "min_pred_clearance": 0.0385,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 81.47
+      },
+      {
+        "tick": 216,
+        "true_pos": [
+          0.9186,
+          -1.0987
+        ],
+        "true_yaw_deg": -126.48,
+        "est_pos": [
+          0.7884,
+          -0.659
+        ],
+        "est_yaw_deg": -135.99,
+        "gyro_yaw_deg": -136.2,
+        "heading_err_deg": 9.51,
+        "selected_frontier": [
+          0.9,
+          -3.1
+        ],
+        "dist_to_frontier": 2.6,
+        "feasible_candidates": 6,
+        "rejected_candidates": 122,
+        "chosen_action": [
+          -0.75,
+          0.75
+        ],
+        "efe_total": 15.387,
+        "efe_pragmatic": 13.823,
+        "efe_epistemic": -0.042,
+        "min_pred_clearance": 0.0564,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 16.88
+      }
+    ]
+  },
+  {
+    "config_id": 23,
+    "env_id": 2,
+    "env_name": "Asymmetric T-Junction",
+    "arm": "ARM-B",
+    "seed": 5001,
+    "spawn_pos": [
+      0.5854423446305562,
+      0.01655278697883684
+    ],
+    "spawn_yaw": -0.029100462268800458,
+    "escaped": false,
+    "had_collision": false,
+    "timeout": true,
+    "termination_reason": "TIMEOUT",
+    "failure_class": "B. ACTION FAILURE",
+    "ticks_executed": 220,
+    "mean_latency_ms": 26.53,
+    "p95_latency_ms": 80.95,
+    "final_pose_true": [
+      0.8881,
+      -0.5837
+    ],
+    "final_pose_est": [
+      0.7632,
+      -0.3698
+    ],
+    "final_heading_err_deg": 7.19,
+    "selected_macro_frontier_final": [
+      0.4,
+      -2.8
+    ],
+    "dist_to_frontier_final": 2.7,
+    "feasible_candidates_mean": 109.8,
+    "rejected_candidates_mean": 18.1,
+    "min_predicted_hull_clearance": 0.0001,
+    "records_sample": [
+      {
+        "tick": 0,
+        "true_pos": [
+          0.5854,
+          0.0166
+        ],
+        "true_yaw_deg": -1.67,
+        "est_pos": [
+          0.5854,
+          0.0166
+        ],
+        "est_yaw_deg": -1.67,
+        "gyro_yaw_deg": -1.67,
+        "heading_err_deg": 0.0,
+        "selected_frontier": [
+          0.8,
+          0.0
+        ],
+        "dist_to_frontier": 0.3,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          1.0
+        ],
+        "efe_total": -27.767,
+        "efe_pragmatic": -1.636,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.2425,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 63.03
+      },
+      {
+        "tick": 27,
+        "true_pos": [
+          0.6686,
+          0.0379
+        ],
+        "true_yaw_deg": -57.18,
+        "est_pos": [
+          0.6827,
+          -0.0065
+        ],
+        "est_yaw_deg": -58.35,
+        "gyro_yaw_deg": -59.46,
+        "heading_err_deg": 1.17,
+        "selected_frontier": [
+          1.1,
+          -2.2
+        ],
+        "dist_to_frontier": 2.6,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.778
+        ],
+        "efe_total": -21.625,
+        "efe_pragmatic": -3.314,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.2239,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 17.42
+      },
+      {
+        "tick": 54,
+        "true_pos": [
+          0.7361,
+          0.0749
+        ],
+        "true_yaw_deg": -117.92,
+        "est_pos": [
+          0.7214,
+          -0.0085
+        ],
+        "est_yaw_deg": -127.21,
+        "gyro_yaw_deg": -126.13,
+        "heading_err_deg": 9.29,
+        "selected_frontier": [
+          1.3,
+          -2.3
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          0.674,
+          1.0
+        ],
+        "efe_total": -4.125,
+        "efe_pragmatic": 4.14,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.2262,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 16.23
+      },
+      {
+        "tick": 81,
+        "true_pos": [
+          0.7659,
+          -0.1218
+        ],
+        "true_yaw_deg": -83.03,
+        "est_pos": [
+          0.6758,
+          -0.1271
+        ],
+        "est_yaw_deg": -79.84,
+        "gyro_yaw_deg": -81.98,
+        "heading_err_deg": 3.19,
+        "selected_frontier": [
+          1.3,
+          -2.3
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          0.928,
+          0.998
+        ],
+        "efe_total": -27.053,
+        "efe_pragmatic": -5.709,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1294,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 16.59
+      },
+      {
+        "tick": 108,
+        "true_pos": [
+          0.911,
+          -0.4555
+        ],
+        "true_yaw_deg": 34.51,
+        "est_pos": [
+          0.7455,
+          -0.256
+        ],
+        "est_yaw_deg": 36.14,
+        "gyro_yaw_deg": 32.2,
+        "heading_err_deg": 1.63,
+        "selected_frontier": [
+          1.1,
+          -2.5
+        ],
+        "dist_to_frontier": 2.6,
+        "feasible_candidates": 122,
+        "rejected_candidates": 6,
+        "chosen_action": [
+          0.6,
+          -0.6
+        ],
+        "efe_total": 11.328,
+        "efe_pragmatic": 20.564,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0024,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 19.27
+      },
+      {
+        "tick": 135,
+        "true_pos": [
+          0.8285,
+          -0.5046
+        ],
+        "true_yaw_deg": -32.25,
+        "est_pos": [
+          0.7227,
+          -0.2626
+        ],
+        "est_yaw_deg": -39.88,
+        "gyro_yaw_deg": -43.81,
+        "heading_err_deg": 7.63,
+        "selected_frontier": [
+          0.7,
+          -2.8
+        ],
+        "dist_to_frontier": 2.5,
+        "feasible_candidates": 126,
+        "rejected_candidates": 2,
+        "chosen_action": [
+          0.545,
+          -0.545
+        ],
+        "efe_total": 0.398,
+        "efe_pragmatic": 7.51,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0482,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 16.45
+      },
+      {
+        "tick": 162,
+        "true_pos": [
+          0.8429,
+          -0.5468
+        ],
+        "true_yaw_deg": -101.67,
+        "est_pos": [
+          0.7379,
+          -0.3132
+        ],
+        "est_yaw_deg": -114.1,
+        "gyro_yaw_deg": -127.08,
+        "heading_err_deg": 12.43,
+        "selected_frontier": [
+          0.9,
+          -2.8
+        ],
+        "dist_to_frontier": 2.6,
+        "feasible_candidates": 122,
+        "rejected_candidates": 6,
+        "chosen_action": [
+          0.166,
+          -0.02
+        ],
+        "efe_total": -0.948,
+        "efe_pragmatic": 3.919,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1067,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 18.14
+      },
+      {
+        "tick": 189,
+        "true_pos": [
+          0.8935,
+          -0.5039
+        ],
+        "true_yaw_deg": -128.22,
+        "est_pos": [
+          0.7342,
+          -0.3191
+        ],
+        "est_yaw_deg": -146.52,
+        "gyro_yaw_deg": -151.46,
+        "heading_err_deg": 18.3,
+        "selected_frontier": [
+          0.4,
+          -2.8
+        ],
+        "dist_to_frontier": 2.7,
+        "feasible_candidates": 98,
+        "rejected_candidates": 30,
+        "chosen_action": [
+          -0.535,
+          0.442
+        ],
+        "efe_total": 2.221,
+        "efe_pragmatic": 9.868,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0819,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 81.07
+      },
+      {
+        "tick": 216,
+        "true_pos": [
+          0.8872,
+          -0.5915
+        ],
+        "true_yaw_deg": -55.46,
+        "est_pos": [
+          0.7594,
+          -0.3637
+        ],
+        "est_yaw_deg": -51.07,
+        "gyro_yaw_deg": -90.36,
+        "heading_err_deg": 4.39,
+        "selected_frontier": [
+          0.4,
+          -2.8
+        ],
+        "dist_to_frontier": 2.7,
+        "feasible_candidates": 91,
+        "rejected_candidates": 37,
+        "chosen_action": [
+          0.45,
+          -0.45
+        ],
+        "efe_total": 3.695,
+        "efe_pragmatic": 11.468,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0065,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 16.86
+      }
+    ]
+  },
+  {
+    "config_id": 24,
+    "env_id": 2,
+    "env_name": "Asymmetric T-Junction",
+    "arm": "ARM-A",
+    "seed": 5001,
+    "spawn_pos": [
+      0.5878692413092004,
+      -0.01853914285663307
+    ],
+    "spawn_yaw": 0.02420425213507,
+    "escaped": false,
+    "had_collision": false,
+    "timeout": true,
+    "termination_reason": "TIMEOUT",
+    "failure_class": "B. ACTION FAILURE",
+    "ticks_executed": 220,
+    "mean_latency_ms": 27.93,
+    "p95_latency_ms": 78.12,
+    "final_pose_true": [
+      0.8012,
+      -1.0081
+    ],
+    "final_pose_est": [
+      0.8109,
+      -0.6745
+    ],
+    "final_heading_err_deg": 6.42,
+    "selected_macro_frontier_final": [
+      1.1,
+      -3.1
+    ],
+    "dist_to_frontier_final": 2.7,
+    "feasible_candidates_mean": 116.3,
+    "rejected_candidates_mean": 11.7,
+    "min_predicted_hull_clearance": 0.0002,
+    "records_sample": [
+      {
+        "tick": 0,
+        "true_pos": [
+          0.5879,
+          -0.0185
+        ],
+        "true_yaw_deg": 1.39,
+        "est_pos": [
+          0.5879,
+          -0.0185
+        ],
+        "est_yaw_deg": 1.39,
+        "gyro_yaw_deg": 1.39,
+        "heading_err_deg": 0.0,
+        "selected_frontier": [
+          0.8,
+          -0.1
+        ],
+        "dist_to_frontier": 0.3,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.85
+        ],
+        "efe_total": -20.975,
+        "efe_pragmatic": 1.331,
+        "efe_epistemic": -0.014,
+        "min_pred_clearance": 0.2415,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 61.21
+      },
+      {
+        "tick": 27,
+        "true_pos": [
+          0.6478,
+          0.0625
+        ],
+        "true_yaw_deg": -103.16,
+        "est_pos": [
+          0.6538,
+          -0.0022
+        ],
+        "est_yaw_deg": -105.75,
+        "gyro_yaw_deg": -97.99,
+        "heading_err_deg": 2.59,
+        "selected_frontier": [
+          1.3,
+          -2.4
+        ],
+        "dist_to_frontier": 3.0,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          -0.7,
+          -0.7
+        ],
+        "efe_total": -31.368,
+        "efe_pragmatic": 18.969,
+        "efe_epistemic": 0.067,
+        "min_pred_clearance": 0.2606,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 17.2
+      },
+      {
+        "tick": 54,
+        "true_pos": [
+          0.5455,
+          -0.1369
+        ],
+        "true_yaw_deg": -60.52,
+        "est_pos": [
+          0.648,
+          -0.1225
+        ],
+        "est_yaw_deg": -59.69,
+        "gyro_yaw_deg": -50.38,
+        "heading_err_deg": 0.82,
+        "selected_frontier": [
+          1.3,
+          -2.4
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 127,
+        "rejected_candidates": 1,
+        "chosen_action": [
+          0.985,
+          0.992
+        ],
+        "efe_total": -14.724,
+        "efe_pragmatic": 0.841,
+        "efe_epistemic": -0.014,
+        "min_pred_clearance": 0.0247,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 17.58
+      },
+      {
+        "tick": 81,
+        "true_pos": [
+          0.5275,
+          -0.0157
+        ],
+        "true_yaw_deg": -142.37,
+        "est_pos": [
+          0.65,
+          -0.1509
+        ],
+        "est_yaw_deg": -138.62,
+        "gyro_yaw_deg": -125.64,
+        "heading_err_deg": 3.75,
+        "selected_frontier": [
+          1.4,
+          -2.5
+        ],
+        "dist_to_frontier": 3.1,
+        "feasible_candidates": 122,
+        "rejected_candidates": 6,
+        "chosen_action": [
+          -0.75,
+          0.75
+        ],
+        "efe_total": 0.155,
+        "efe_pragmatic": 6.014,
+        "efe_epistemic": 0.005,
+        "min_pred_clearance": 0.1262,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 17.19
+      },
+      {
+        "tick": 108,
+        "true_pos": [
+          0.571,
+          -0.1264
+        ],
+        "true_yaw_deg": -96.89,
+        "est_pos": [
+          0.66,
+          -0.1628
+        ],
+        "est_yaw_deg": -98.23,
+        "gyro_yaw_deg": -80.03,
+        "heading_err_deg": 1.35,
+        "selected_frontier": [
+          1.5,
+          -2.5
+        ],
+        "dist_to_frontier": 3.2,
+        "feasible_candidates": 123,
+        "rejected_candidates": 5,
+        "chosen_action": [
+          0.75,
+          1.0
+        ],
+        "efe_total": -7.399,
+        "efe_pragmatic": 5.439,
+        "efe_epistemic": 0.029,
+        "min_pred_clearance": 0.0465,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 100.7
+      },
+      {
+        "tick": 135,
+        "true_pos": [
+          0.6779,
+          -0.1072
+        ],
+        "true_yaw_deg": -78.15,
+        "est_pos": [
+          0.6637,
+          -0.2315
+        ],
+        "est_yaw_deg": -79.1,
+        "gyro_yaw_deg": -67.33,
+        "heading_err_deg": 0.94,
+        "selected_frontier": [
+          1.5,
+          -2.5
+        ],
+        "dist_to_frontier": 3.1,
+        "feasible_candidates": 95,
+        "rejected_candidates": 33,
+        "chosen_action": [
+          0.779,
+          1.0
+        ],
+        "efe_total": -15.787,
+        "efe_pragmatic": -1.667,
+        "efe_epistemic": -0.034,
+        "min_pred_clearance": 0.1195,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 13.35
+      },
+      {
+        "tick": 162,
+        "true_pos": [
+          0.8544,
+          -0.3508
+        ],
+        "true_yaw_deg": -26.81,
+        "est_pos": [
+          0.773,
+          -0.3696
+        ],
+        "est_yaw_deg": -29.97,
+        "gyro_yaw_deg": -22.46,
+        "heading_err_deg": 3.16,
+        "selected_frontier": [
+          1.2,
+          -2.8
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 100,
+        "rejected_candidates": 28,
+        "chosen_action": [
+          0.698,
+          -0.696
+        ],
+        "efe_total": 1.378,
+        "efe_pragmatic": 7.567,
+        "efe_epistemic": -0.023,
+        "min_pred_clearance": 0.0352,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 12.41
+      },
+      {
+        "tick": 189,
+        "true_pos": [
+          0.8705,
+          -0.5958
+        ],
+        "true_yaw_deg": -59.64,
+        "est_pos": [
+          0.8339,
+          -0.4834
+        ],
+        "est_yaw_deg": -49.41,
+        "gyro_yaw_deg": -49.74,
+        "heading_err_deg": 10.23,
+        "selected_frontier": [
+          1.2,
+          -2.9
+        ],
+        "dist_to_frontier": 2.8,
+        "feasible_candidates": 124,
+        "rejected_candidates": 4,
+        "chosen_action": [
+          1.0,
+          0.579
+        ],
+        "efe_total": -0.365,
+        "efe_pragmatic": 8.248,
+        "efe_epistemic": -0.047,
+        "min_pred_clearance": 0.0223,
+        "sonar_heading_confidence": 1.0,
+        "latency_ms": 66.8
+      },
+      {
+        "tick": 216,
+        "true_pos": [
+          0.8106,
+          -1.0089
+        ],
+        "true_yaw_deg": -134.08,
+        "est_pos": [
+          0.8171,
+          -0.6619
+        ],
+        "est_yaw_deg": -135.3,
+        "gyro_yaw_deg": -120.13,
+        "heading_err_deg": 1.23,
+        "selected_frontier": [
+          1.1,
+          -3.1
+        ],
+        "dist_to_frontier": 2.7,
+        "feasible_candidates": 123,
+        "rejected_candidates": 5,
+        "chosen_action": [
+          -0.726,
+          0.617
+        ],
+        "efe_total": 0.378,
+        "efe_pragmatic": 6.414,
+        "efe_epistemic": 0.037,
+        "min_pred_clearance": 0.0517,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 36.85
+      }
+    ]
+  },
+  {
+    "config_id": 24,
+    "env_id": 2,
+    "env_name": "Asymmetric T-Junction",
+    "arm": "ARM-B",
+    "seed": 5001,
+    "spawn_pos": [
+      0.5878692413092004,
+      -0.01853914285663307
+    ],
+    "spawn_yaw": 0.02420425213507,
+    "escaped": false,
+    "had_collision": true,
+    "timeout": false,
+    "termination_reason": "COLLIDED",
+    "failure_class": "D. STATE-ESTIMATION FAILURE",
+    "ticks_executed": 190,
+    "mean_latency_ms": 32.38,
+    "p95_latency_ms": 92.36,
+    "final_pose_true": [
+      0.9834,
+      -0.3293
+    ],
+    "final_pose_est": [
+      0.6763,
+      -0.2571
+    ],
+    "final_heading_err_deg": 34.67,
+    "selected_macro_frontier_final": [
+      2.0,
+      -1.8
+    ],
+    "dist_to_frontier_final": 2.9,
+    "feasible_candidates_mean": 95.8,
+    "rejected_candidates_mean": 32.2,
+    "min_predicted_hull_clearance": 0.0007,
+    "records_sample": [
+      {
+        "tick": 0,
+        "true_pos": [
+          0.5879,
+          -0.0185
+        ],
+        "true_yaw_deg": 1.39,
+        "est_pos": [
+          0.5879,
+          -0.0185
+        ],
+        "est_yaw_deg": 1.39,
+        "gyro_yaw_deg": 1.39,
+        "heading_err_deg": 0.0,
+        "selected_frontier": [
+          0.8,
+          -0.1
+        ],
+        "dist_to_frontier": 0.3,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          1.0,
+          0.85
+        ],
+        "efe_total": -20.809,
+        "efe_pragmatic": 1.432,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.2415,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 93.0
+      },
+      {
+        "tick": 23,
+        "true_pos": [
+          0.6656,
+          -0.0073
+        ],
+        "true_yaw_deg": -121.45,
+        "est_pos": [
+          0.6528,
+          -0.0348
+        ],
+        "est_yaw_deg": -122.58,
+        "gyro_yaw_deg": -121.95,
+        "heading_err_deg": 1.12,
+        "selected_frontier": [
+          1.0,
+          -2.2
+        ],
+        "dist_to_frontier": 2.5,
+        "feasible_candidates": 128,
+        "rejected_candidates": 0,
+        "chosen_action": [
+          -0.7,
+          -0.7
+        ],
+        "efe_total": -31.498,
+        "efe_pragmatic": 19.634,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.183,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 13.81
+      },
+      {
+        "tick": 46,
+        "true_pos": [
+          0.6578,
+          -0.0393
+        ],
+        "true_yaw_deg": -107.11,
+        "est_pos": [
+          0.63,
+          -0.0712
+        ],
+        "est_yaw_deg": -117.43,
+        "gyro_yaw_deg": -113.22,
+        "heading_err_deg": 10.31,
+        "selected_frontier": [
+          1.0,
+          -2.2
+        ],
+        "dist_to_frontier": 2.5,
+        "feasible_candidates": 100,
+        "rejected_candidates": 28,
+        "chosen_action": [
+          0.75,
+          1.0
+        ],
+        "efe_total": -12.133,
+        "efe_pragmatic": 1.303,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1565,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 12.58
+      },
+      {
+        "tick": 69,
+        "true_pos": [
+          0.7165,
+          -0.182
+        ],
+        "true_yaw_deg": -55.81,
+        "est_pos": [
+          0.6215,
+          -0.1193
+        ],
+        "est_yaw_deg": -56.11,
+        "gyro_yaw_deg": -55.49,
+        "heading_err_deg": 0.31,
+        "selected_frontier": [
+          1.1,
+          -2.2
+        ],
+        "dist_to_frontier": 2.5,
+        "feasible_candidates": 127,
+        "rejected_candidates": 1,
+        "chosen_action": [
+          1.0,
+          0.85
+        ],
+        "efe_total": -21.192,
+        "efe_pragmatic": -1.501,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.1426,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 12.82
+      },
+      {
+        "tick": 92,
+        "true_pos": [
+          0.8839,
+          -0.2418
+        ],
+        "true_yaw_deg": -86.11,
+        "est_pos": [
+          0.6719,
+          -0.1823
+        ],
+        "est_yaw_deg": -82.44,
+        "gyro_yaw_deg": -86.96,
+        "heading_err_deg": 3.67,
+        "selected_frontier": [
+          1.1,
+          -2.4
+        ],
+        "dist_to_frontier": 2.7,
+        "feasible_candidates": 123,
+        "rejected_candidates": 5,
+        "chosen_action": [
+          0.85,
+          1.0
+        ],
+        "efe_total": -8.269,
+        "efe_pragmatic": 7.025,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0386,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 14.25
+      },
+      {
+        "tick": 115,
+        "true_pos": [
+          0.9285,
+          -0.142
+        ],
+        "true_yaw_deg": -66.24,
+        "est_pos": [
+          0.6584,
+          -0.1832
+        ],
+        "est_yaw_deg": -52.85,
+        "gyro_yaw_deg": -51.61,
+        "heading_err_deg": 13.39,
+        "selected_frontier": [
+          1.4,
+          -2.6
+        ],
+        "dist_to_frontier": 3.2,
+        "feasible_candidates": 49,
+        "rejected_candidates": 79,
+        "chosen_action": [
+          0.496,
+          -0.482
+        ],
+        "efe_total": 8.85,
+        "efe_pragmatic": 20.135,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0086,
+        "sonar_heading_confidence": 0.7,
+        "latency_ms": 18.37
+      },
+      {
+        "tick": 138,
+        "true_pos": [
+          0.931,
+          -0.2659
+        ],
+        "true_yaw_deg": -147.77,
+        "est_pos": [
+          0.6561,
+          -0.2216
+        ],
+        "est_yaw_deg": -120.8,
+        "gyro_yaw_deg": -113.38,
+        "heading_err_deg": 26.97,
+        "selected_frontier": [
+          1.6,
+          -2.5
+        ],
+        "dist_to_frontier": 3.2,
+        "feasible_candidates": 122,
+        "rejected_candidates": 6,
+        "chosen_action": [
+          -0.45,
+          0.45
+        ],
+        "efe_total": 3.734,
+        "efe_pragmatic": 12.555,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0705,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 93.15
+      },
+      {
+        "tick": 161,
+        "true_pos": [
+          0.9399,
+          -0.241
+        ],
+        "true_yaw_deg": -123.06,
+        "est_pos": [
+          0.6539,
+          -0.2279
+        ],
+        "est_yaw_deg": -91.24,
+        "gyro_yaw_deg": -83.82,
+        "heading_err_deg": 31.82,
+        "selected_frontier": [
+          1.8,
+          -2.4
+        ],
+        "dist_to_frontier": 3.3,
+        "feasible_candidates": 45,
+        "rejected_candidates": 83,
+        "chosen_action": [
+          -0.491,
+          0.435
+        ],
+        "efe_total": 10.393,
+        "efe_pragmatic": 19.602,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0332,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 83.09
+      },
+      {
+        "tick": 184,
+        "true_pos": [
+          0.9803,
+          -0.2943
+        ],
+        "true_yaw_deg": -91.92,
+        "est_pos": [
+          0.6755,
+          -0.2556
+        ],
+        "est_yaw_deg": -53.66,
+        "gyro_yaw_deg": -46.24,
+        "heading_err_deg": 38.26,
+        "selected_frontier": [
+          2.0,
+          -1.8
+        ],
+        "dist_to_frontier": 2.9,
+        "feasible_candidates": 0,
+        "rejected_candidates": 128,
+        "chosen_action": [
+          -0.195,
+          -0.004
+        ],
+        "efe_total": 135.256,
+        "efe_pragmatic": 27.793,
+        "efe_epistemic": 0.0,
+        "min_pred_clearance": 0.0047,
+        "sonar_heading_confidence": 0.0,
+        "latency_ms": 20.13
+      }
+    ]
+  }
+]

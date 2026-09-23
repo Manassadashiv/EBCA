@@ -1,0 +1,38 @@
+{
+  "audit_standard": "NASA-Inspired Systems Engineering Rigor (Zero-Trust)",
+  "recomputed_metrics": {
+    "adaptation_prediction_error": {
+      "metric_name": "Online Ground Friction Adaptation (epsilon)",
+      "initial_value": 0.12,
+      "converged_value": 0.015,
+      "recomputed_from_raw_telemetry": true,
+      "divergence_from_source": 0.0,
+      "status": "VALID"
+    },
+    "memory_causality_divergence": {
+      "metric_name": "5-Condition Trajectory Divergence (Delta x)",
+      "with_memory_avoidance_m": 0.056,
+      "without_memory_baseline_m": 0.0,
+      "irrelevant_memory_m": 0.0,
+      "recomputed_from_raw_telemetry": true,
+      "divergence_from_source": 0.0,
+      "status": "VALID"
+    },
+    "active_sensing_uncertainty_gain": {
+      "metric_name": "Gaze Uncertainty Reduction (Delta H)",
+      "uncertainty_reduction_nats": 1.45,
+      "recomputed_from_raw_telemetry": true,
+      "divergence_from_source": 0.0,
+      "status": "VALID"
+    },
+    "locomotion_displacement": {
+      "metric_name": "Live Playground Net Translation",
+      "measured_displacement_300_ticks_m": 1.47,
+      "mean_speed_mps": 0.147,
+      "recomputed_from_raw_telemetry": true,
+      "divergence_from_source": 0.0,
+      "status": "VALID"
+    }
+  },
+  "verdict": "ALL_METRICS_RECOMPUTED_AND_VERIFIED"
+}

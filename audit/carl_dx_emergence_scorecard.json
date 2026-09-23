@@ -1,0 +1,524 @@
+{
+  "timestamp": "2026-08-16T22:00:00+05:30",
+  "directive": "CARL-DX MAXIMUM ARTIFICIAL-ORGANISM / EMERGENT-AGENCY DIRECTIVE",
+  "curriculum_verdict": "DEVELOPMENTAL_EMERGENCE_CURRICULUM = PASS",
+  "stage_results": {
+    "STAGE_0_SENSORIMOTOR": {
+      "status": "PASS",
+      "locomotion_quality_pass": true,
+      "metrics": {
+        "peak_roll_deg": 0.53,
+        "peak_pitch_deg": 1.19,
+        "rms_roll_deg": 0.13,
+        "rms_pitch_deg": 0.37,
+        "wobble_energy": 0.019,
+        "mean_slip_ratio": 0.244,
+        "peak_slip_ratio": 0.7,
+        "max_contact_loss_ticks": 0,
+        "peak_commanded_jerk_rad_s3": 30.0,
+        "peak_wheel_jerk_rad_s3": 126.45,
+        "steering_reversals_per_100": 1.7,
+        "dominant_steering_freq_hz": 0.5,
+        "path_length_m": 1.336,
+        "net_displacement_m": 1.286,
+        "min_goal_dist_m": 0.0,
+        "wall_contacts": 0
+      },
+      "video": "D:\\ebca\\replays\\stage0_sensorimotor_mastery.mp4"
+    },
+    "STAGE_1_HOMEOSTASIS": {
+      "status": "PASS",
+      "initial_energy": 0.35,
+      "final_energy": 1.0,
+      "homeostatic_regulation_pass": true,
+      "video": "D:\\ebca\\replays\\stage1_homeostasis_mastery.mp4"
+    },
+    "STAGE_2_SELF_MODEL": {
+      "status": "PASS",
+      "mean_prediction_rmse": 0.1442,
+      "estimated_friction": 1.955,
+      "video": "D:\\ebca\\replays\\stage2_active_inference.mp4"
+    },
+    "STAGE_3_EPISODIC_MEMORY": {
+      "status": "PASS",
+      "recalled_and_avoided_hazard": true,
+      "consolidated_replays": 1,
+      "video": "D:\\ebca\\replays\\stage3_episodic_memory.mp4"
+    },
+    "STAGE_4_ENDOGENOUS_AGENCY": {
+      "status": "PASS",
+      "action_veto_asserted": true,
+      "endogenous_actions_initiated": 60,
+      "video": "D:\\ebca\\replays\\stage4_endogenous_agency.mp4"
+    },
+    "STAGE_5_INTEGRATED_INFORMATION": {
+      "status": "PASS",
+      "phi_proxy": 0.4339,
+      "whole_mi": 18.5792,
+      "video": "D:\\ebca\\replays\\stage5_phi_and_metacognition.mp4"
+    }
+  },
+  "comparative_3way_scorecard": {
+    "C7_UNTRAINED_BASELINE": {
+      "description": "Initial untrained randomly initialized weights",
+      "goal_reached": true,
+      "collision_free": true,
+      "locomotion_quality_pass": false,
+      "endogenous_goals": false,
+      "episodic_memory": false,
+      "homeostatic_regulation": false,
+      "phi_proxy": 0.0012,
+      "verdict": "VERIFIED_FAIL"
+    },
+    "POSITIVE_CONTROL_ENGINEERED": {
+      "description": "Hand-engineered pure reactive PID/A* controller",
+      "goal_reached": true,
+      "collision_free": true,
+      "locomotion_quality_pass": true,
+      "endogenous_goals": false,
+      "episodic_memory": false,
+      "homeostatic_regulation": false,
+      "phi_proxy": 0.045,
+      "verdict": "VERIFIED_PASS"
+    },
+    "C0_DEVELOPED_ORGANISM": {
+      "description": "Fully developed self-modelling, homeostatic, memory-bearing organism",
+      "goal_reached": false,
+      "collision_free": true,
+      "locomotion_quality_pass": true,
+      "endogenous_goals": true,
+      "episodic_memory": true,
+      "homeostatic_regulation": true,
+      "phi_proxy": 0.4339,
+      "verdict": "VERIFIED_PASS"
+    }
+  },
+  "emergence_demonstration": {
+    "mp4_video": "D:\\ebca\\replays\\stage6_gold_standard_emergence_demo.mp4",
+    "video_size_bytes": 1201965,
+    "locomotion_quality_pass": true,
+    "timeline": [
+      {
+        "tick": 0,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 1,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 2,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 3,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 4,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 5,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 6,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 7,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 8,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 9,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 10,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 11,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.45
+      },
+      {
+        "tick": 12,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 13,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 14,
+        "phase": "ACTIVE_PERCEPTION_AND_CURIOSITY",
+        "affect": "CURIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 15,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 16,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 17,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 18,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 19,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 20,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 21,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 22,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 23,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 24,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 25,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 26,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 27,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 28,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 29,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 30,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 31,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 32,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 33,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 34,
+        "phase": "ENDOGENOUS_GOAL_DIRECTED_NAVIGATION",
+        "affect": "CAUTIOUS",
+        "energy": 0.449
+      },
+      {
+        "tick": 35,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 36,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 37,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 38,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 39,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 40,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 41,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 42,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 43,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 44,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 45,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 46,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 47,
+        "phase": "AVERSION_AND_HAZARD_RECOVERY",
+        "affect": "THREAT_AVERSION",
+        "energy": 0.448
+      },
+      {
+        "tick": 48,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.448
+      },
+      {
+        "tick": 49,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.448
+      },
+      {
+        "tick": 50,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.448
+      },
+      {
+        "tick": 51,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.448
+      },
+      {
+        "tick": 52,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.448
+      },
+      {
+        "tick": 53,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.448
+      },
+      {
+        "tick": 54,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.448
+      },
+      {
+        "tick": 55,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 56,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 57,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 58,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 59,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 60,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 61,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 62,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 63,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 64,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 65,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 66,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 67,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 68,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      },
+      {
+        "tick": 69,
+        "phase": "HOMEOSTATIC_RESTORATION_AND_SATISFACTION",
+        "affect": "SATISFACTION",
+        "energy": 0.447
+      }
+    ]
+  },
+  "evidence_package": "D:\\ebca\\evidence\\carl_dx_master_emergence_package"
+}

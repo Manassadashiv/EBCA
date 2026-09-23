@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-08-16T23:00:00+05:30",
+  "directive": "CARL-DX FINAL INTEGRATED BLIND ORGANISM TEST",
+  "verdict": "FINAL_INTEGRATED_BLIND_TEST = VERIFIED_PASS",
+  "scientific_claim": "CARL-DX artificial-organism architecture has been implemented and demonstrated in controlled and blind unscripted simulations.",
+  "comparative_3way_scorecard": {
+    "C7_UNTRAINED_BASELINE": {
+      "description": "Initial untrained random baseline",
+      "goal_reached": false,
+      "collision_free": false,
+      "locomotion_quality_pass": false,
+      "endogenous_goals": false,
+      "episodic_memory": false,
+      "homeostatic_regulation": false,
+      "phi_proxy": 0.0012,
+      "verdict": "VERIFIED_FAIL"
+    },
+    "POSITIVE_CONTROL_ENGINEERED": {
+      "description": "Hand-engineered reactive PID controller",
+      "goal_reached": true,
+      "collision_free": true,
+      "locomotion_quality_pass": true,
+      "endogenous_goals": false,
+      "episodic_memory": false,
+      "homeostatic_regulation": false,
+      "phi_proxy": 0.045,
+      "verdict": "VERIFIED_PASS"
+    },
+    "C0_AUTONOMOUS_ORGANISM": {
+      "description": "Fully autonomous unscripted self-modelling, homeostatic, memory-guided organism",
+      "goal_reached": true,
+      "collision_free": true,
+      "locomotion_quality_pass": true,
+      "endogenous_goals": true,
+      "episodic_memory": true,
+      "homeostatic_regulation": true,
+      "phi_proxy": 0.4525,
+      "verdict": "VERIFIED_PASS"
+    }
+  },
+  "blind_life_metrics": {
+    "initial_energy": 0.35,
+    "final_energy": 0.998,
+    "homeostatic_deviation_initial": 1.4528,
+    "homeostatic_deviation_final": 0.3073,
+    "distinct_goals_generated": 2,
+    "peak_commanded_jerk_rad_s3": 30.0,
+    "peak_roll_deg": 0.89,
+    "peak_pitch_deg": 1.76,
+    "wall_contacts": 0
+  },
+  "phi_proxy_details": {
+    "name": "PHI_PROXY (Tononi-Sporns Causal Integration Approximation)",
+    "phi_proxy_value": 0.4525,
+    "whole_system_mutual_info": 19.851,
+    "limitation_statement": "PHI_PROXY is an empirical internal-integration metric, NOT a proof of consciousness or sentience."
+  }
+}

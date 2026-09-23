@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-08-16T21:10:00+05:30",
+  "reconciliation_verdict": "PHASE_0_INTEGRITY = PASS",
+  "root_cause_analysis": {
+    "category": "c_and_e (Multiple Auditor/Checkpoint Iterations & Stale Historical Report Artifacts)",
+    "detailed_chronology": [
+      {
+        "time": "21:01:44",
+        "event": "Initial execution of test_phase_0_auditor.py (task-2542). Initial C7 saved with hash c28096b79743c72b2a63200ff3d5fcbf36c968f63bfad15904944d173d6b058c and auditor hash 010d8a57bb807fa5b34005b76cf6b8f9e612cb7bb99d8b7ea75e52c9d4b684cb. An early draft of phase_0_audit_report.md was recorded with these static hashes."
+      },
+      {
+        "time": "21:02:59",
+        "event": "Fixed NumPy 2.0+ tuple serialization in savez_compressed and refined kinematics checks in carl_experiment_auditor.py, which changed auditor hash to 87c1304be33ed0f8aa24c918c8bf2b4a2652c0a96c680dc6566f7a070dabf7c6 and regenerated C7 with hash 73d3cbe17a50e1f65c8eaaa95ad413a1b67f9be7af24f4722e0bee99e483c78a (task-2561)."
+      },
+      {
+        "time": "21:04:39",
+        "event": "Updated carl_experiment_auditor.py to inspect actuator commanded and wheel angular jerk (d^3 theta / dt^3), and updated test_phase_0_auditor.py with WaterflowVelocityFilter. This established the final frozen auditor code hash a0d6b0115a40e48b10685d0156289eaf8b1ead384a888008f952e5d894092004."
+      },
+      {
+        "time": "21:09:00",
+        "event": "Full clean scratch re-run of test_phase_0_auditor.py (task-2642). Achieved 12/12 Adversarial Faults correctly rejected and 10/10 Positive Controls correctly accepted with 100% live hash parity."
+      }
+    ],
+    "discrepancy_explanation": "During debugging across tasks 2542, 2561, and 2642, the source code and serialized checkpoint evolved, while the previously written markdown report retained stale static hashes from an intermediate turn. All previous iterations are now reconciled, identified, and frozen with 100% cryptographic parity."
+  },
+  "frozen_cryptographic_manifest": {
+    "auditor_source": {
+      "path": "brain/carl_experiment_auditor.py",
+      "sha256": "a0d6b0115a40e48b10685d0156289eaf8b1ead384a888008f952e5d894092004",
+      "status": "VERIFIED_FROZEN"
+    },
+    "initial_untrained_checkpoint_c7": {
+      "path": "checkpoints/initial_untrained_C7.npz",
+      "sha256": "73d3cbe17a50e1f65c8eaaa95ad413a1b67f9be7af24f4722e0bee99e483c78a",
+      "status": "VERIFIED_FROZEN"
+    },
+    "evaluation_manifest": {
+      "path": "evaluation_sets/manifest_eval_sets.json",
+      "sha256": "df935592c4c655d4abfbbdc3d4627f8a25bc0d4421ac0a0ce37afeb8d8cc781d",
+      "status": "VERIFIED_FROZEN",
+      "total_episodes": {
+        "baseline": 100,
+        "validation": 100,
+        "hidden_ood": 100
+      }
+    },
+    "global_manifest": {
+      "path": "manifest.json",
+      "sha256": "d7c86a3d6cbcfcb982e519969e6b4ad26fc8e65e6df7b8504f76ca096ffbc261",
+      "status": "VERIFIED_FROZEN"
+    },
+    "core_codebase_sources": {
+      "carl_local_cortex_py": "665f9031a6d57b12982e57a93520b5311ef58c2cca11424111cd13febcca0ff2",
+      "carl_motor_filter_py": "dc5308186abca5cff3c5a25e34d82461edab1bb03d5d1e2068d02c3d6f04afd2",
+      "carl_simulation_py": "d5510217772f3ae91fabb137057688248c78c0484f1deb9547cf9ddec53770a3",
+      "vessel_kinetic_xml": "fe87cba38916f3ab19d831bafa99658bce9837693a28206930959749cac14d91",
+      "test_phase_0_auditor_py": "832b49c719e71ec6a987d6e661603598f86f7b99c75bf69c73b06ea64e1c278c"
+    }
+  },
+  "independent_auditor_verification_summary": {
+    "adversarial_fault_suite": {
+      "total_cases": 12,
+      "correctly_rejected": 12,
+      "pass_rate_pct": 100.0,
+      "status": "PASS"
+    },
+    "positive_control_suite": {
+      "total_cases": 10,
+      "correctly_accepted": 10,
+      "pass_rate_pct": 100.0,
+      "status": "PASS"
+    }
+  },
+  "gate_status": "PHASE_0_INTEGRITY = PASS"
+}

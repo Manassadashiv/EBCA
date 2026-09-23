@@ -1,0 +1,107 @@
+=== SLIDE 15 ===
+  [Times New Roman 24.0pt] COMPLETE CONTROL LOOP & ENDOCRINE MODULATION PATHWAYS
+  [Times New Roman 18.0pt] Dynamic Neuromodulatory Kinetics & Deliberative Gain Control [Stages 1.4 & 3.5]
+  [Times New Roman 19.0pt] Neuromodulatory Hormone Kinetics
+  [Times New Roman 18.0pt] Four Circulating Virtual Hormones Regulating Cognitive Modes
+  [Times New Roman 18.0pt] •  Dopamine (DA): Encodes appetitive reward expectation; promotes forward goal-seeking persistence.
+  [Times New Roman 18.0pt] •  Norepinephrine (NE): Modulates exploration noise scale (σ) and vigilance under sensory uncertainty.
+  [Times New Roman 18.0pt] •  Serotonin (5-HT): Sets temporal discounting horizon and motor behavioral inhibition.
+  [Times New Roman 18.0pt] •  Cortisol: Emergency stress hormone; contracts safe obstacle clearance margins under threat.
+  [Times New Roman 19.0pt] Deliberation & Safety Coupling
+  [Times New Roman 18.0pt] Hierarchical Integration with Continuous Action Optimization
+  [Times New Roman 18.0pt] •  Online Gain Adaptation: Hormone concentrations dynamically scale MPPI exploration temperature λ.
+  [Times New Roman 18.0pt] •  Stress-Gated Precision: High Cortisol tightens swept-cone safety margins in hazardous regimes.
+  [Times New Roman 18.0pt] •  Sensorimotor Grounding: Chemical kinetics are grounded in physical topological constraints.
+  [Times New Roman 18.0pt] •  Deterministic Homeostasis: Closed-loop synthesis and decay stabilize long-horizon behavior.
+  [Times New Roman 18.0pt] 15
+=== SLIDE 16 ===
+  [Times New Roman 24.0pt] CONTROL LOGIC FLOW: REFLEX MODE
+  [Times New Roman 18.0pt] Sub-Millisecond Spiking Neural Network (LIF) Emergency Pre-emption
+  [Times New Roman 20.0pt] 1. Hazard Detection
+  [Times New Roman 18.0pt] Near-field ultrasonic sensors detect imminent obstacle violation (distance d ≤ 0.15 m).
+  [Times New Roman 20.0pt] 2. SNN Spiking Reflex
+  [Times New Roman 18.0pt] Sub-millisecond Leaky Integrate-and-Fire (LIF) reflex layer fires emergency burst (< 1.0 ms).
+  [Times New Roman 20.0pt] 3. Motor Pre-emption
+  [Times New Roman 18.0pt] Direct motor mixer pre-empts cognitive deliberation and executes decisive aversive repulsion.
+  [Times New Roman 19.0pt] Key Safety Properties of the Spiking Reflex Architecture
+  [Times New Roman 18.0pt] Autonomous Pre-emptive Safety Guarantee
+  [Times New Roman 18.0pt] •  Zero Cognitive Delay: Bypasses MPPI optimization and world model rollouts when safety margins are breached.
+  [Times New Roman 18.0pt] •  Asymmetric Repulsion: SNN generates maximum angular velocity away from the closest detected obstacle vector.
+  [Times New Roman 18.0pt] •  Verified Invariant: Over 150 physical challenge trials executed with 0.00% uncontrolled collisions.
+  [Times New Roman 18.0pt] 16
+=== SLIDE 18 ===
+  [Times New Roman 24.0pt] STAGE 1 — SENSORIMOTOR GROUNDING & BODY BABBLING
+  [Times New Roman 18.0pt] Embodied Sensorimotor Foundations & Baseline Qualification [Historical: Phase 0]
+  [Times New Roman 19.0pt] 1. Embodied Digital Twin Environment
+  [Times New Roman 18.0pt] Physics Grounding & Sensorimotor Interface
+  [Times New Roman 18.0pt] •  MuJoCo 30 Hz Physics: Real-time closed-loop rigid-body simulation twin.
+  [Times New Roman 18.0pt] •  Ground Traction Dynamics: Kinematic slip, wheel chatter, and friction response.
+  [Times New Roman 18.0pt] •  Sensory Modalities: 12 ultrasonic sonar cones, 6-axis IMU, and odometry.
+  [Times New Roman 19.0pt] 2. Motor Babbling & Topology Discovery
+  [Times New Roman 18.0pt] Unsupervised Autonomous Sensorimotor Mapping
+  [Times New Roman 18.0pt] •  6-Channel Motor Babbling: Autonomous exploration discovering physical limits.
+  [Times New Roman 18.0pt] •  Kinematic Characterization: Linear momentum and angular turn-rate mapping.
+  [Times New Roman 18.0pt] •  Actuator Lag Identification: Discovered unmodeled drive dynamics.
+  [Times New Roman 19.0pt] 3. Reflex Architecture & Operational Safety
+  [Times New Roman 18.0pt] Sub-Millisecond Pre-emption & Stuck Recovery
+  [Times New Roman 18.0pt] •  Spiking Reflex Layer: LIF spiking network fires emergency burst (< 1.0 ms).
+  [Times New Roman 18.0pt] •  3-Tier Recovery Machine: Deterministic progressive stuck recovery maneuvers.
+  [Times New Roman 18.0pt] •  Operational Safety Veto: Swept-cone collision margin prevents impacts.
+  [Times New Roman 19.0pt] 4. Qualification & Baseline Certification
+  [Times New Roman 18.0pt] Empirical Zero-Collision Verification Suite
+  [Times New Roman 18.0pt] •  81/81 Benchmark Runs Cleared: 100% success across structured maze tasks.
+  [Times New Roman 18.0pt] •  0.00% Uncontrolled Collisions: Zero impact events across all test fixtures.
+  [Times New Roman 18.0pt] •  Permanent Regression Baseline: Locked SHA-256 baseline certified.
+  [Times New Roman 18.0pt] Historical Note: Formerly designated Phase 0 in preliminary development; certified as Stage 1 substrate.
+  [Times New Roman 18.0pt] 18
+=== SLIDE 19 ===
+  [Times New Roman 24.0pt] STAGE 1 LIVE DEMONSTRATION [HISTORICAL: PHASE 0]
+  [Times New Roman 18.0pt] Same CARL controller • Different environment • Autonomous route selection • Target acquired
+  [Times New Roman 18.0pt] 19
+=== SLIDE 20 ===
+  [Times New Roman 24.0pt] STAGE 1 VALIDATION EVIDENCE [HISTORICAL: PHASE 0]
+  [Times New Roman 18.0pt] Figure 1: Goal Directed Navigation Trajectories Under Environmental Constraint
+  [Times New Roman 18.0pt] 81/81 runs passed • 0 collisions • 0 uncontrolled recovery failures • STAGE 1 CERTIFIED [P0 COMPLETE]
+  [Times New Roman 18.0pt] 20
+=== SLIDE 21 ===
+  [Times New Roman 24.0pt] STAGE 1.1 — INDIVIDUAL EMERGENCE & ADAPTIVE SENSORIMOTOR LEARNING
+  [Times New Roman 18.0pt] Experience-Driven Internal Adaptation Beyond Predefined Behaviors [Historical: Phase 1]
+  [Times New Roman 19.0pt] 1. Dynamic Friction Gradient Adaptation
+  [Times New Roman 18.0pt] Online Slip Detection & Traction State Estimation
+  [Times New Roman 18.0pt] •  Adaptive Friction Mapping: Online tracking across surface transitions (μ ∈ [0.2, 1.0]).
+  [Times New Roman 18.0pt] •  Chatter Detection: IMU and encoder divergence flags instantaneous loss of surface traction.
+  [Times New Roman 19.0pt] 2. Dynamical Stability Envelope Mapping
+  [Times New Roman 18.0pt] Safe Operating Boundary Discovery Across 150 Physical Trials
+  [Times New Roman 18.0pt] •  Systematic Velocity Sweeps: Linear v ∈ [0.1, 0.5] m/s, angular ω ∈ [0.2, 1.5] rad/s.
+  [Times New Roman 18.0pt] •  Boundary Mapping: Empirical stability envelope prevents dynamic rollover and skidding.
+  [Times New Roman 19.0pt] 3. Emergent Individual Adaptation Outcome
+  [Times New Roman 18.0pt] Transition from Static Control to Experience-Driven Plasticity
+  [Times New Roman 18.0pt] •  Adaptive Plasticity: Agent modifies internal sensorimotor representations from experience.
+  [Times New Roman 18.0pt] •  Physical Grounding: Verified on physical MuJoCo surfaces under dynamic friction drops.
+  [Times New Roman 18.0pt] Historical Note: Formerly designated Phase 1 in preliminary development; certified as Stage 1.1 substrate.
+  [Times New Roman 18.0pt] 21
+=== SLIDE 25 ===
+  [Times New Roman 24.0pt] STAGE 2 — GENERATIVE WORLD & SELF MODELING
+  [Times New Roman 18.0pt] Internal Spatial Representations & Prospective Deliberation Substrate [Historical: Phase 2]
+  [Times New Roman 19.0pt] 1. 2,114-Unit Spatial Attractor Networks
+  [Times New Roman 18.0pt] Grounded Head Direction & Grid Space Representation
+  [Times New Roman 18.0pt] •  64-HD Attractor Ring: Continuous attractor network tracking heading angle.
+  [Times New Roman 18.0pt] •  1,024-Grid Cell Torus: 2D spatial periodic representation for path integration.
+  [Times New Roman 18.0pt] •  LSM Reservoir Coupling: 500-neuron recurrent network provides temporal memory.
+  [Times New Roman 19.0pt] 2. Decoupled Generative World Model
+  [Times New Roman 18.0pt] Prospective Forward Dynamics Simulation (R² = 0.97)
+  [Times New Roman 18.0pt] •  1-Step Dynamics Model: Grounded predictive forward model with R² = 0.97.
+  [Times New Roman 18.0pt] •  Sensory Anticipation: Predicts next-step sonar readings and collision boundaries.
+  [Times New Roman 18.0pt] •  Counterfactual Rollouts: Simulates prospective branch trajectories in real time.
+  [Times New Roman 19.0pt] 3. Allocentric Occupancy Memory
+  [Times New Roman 18.0pt] 2D Spatial Memory Grid with Shadow Casting
+  [Times New Roman 18.0pt] •  Allocentric Raster Grid: 2D occupancy memory persisting obstacle locations.
+  [Times New Roman 18.0pt] •  Ray-Traced Shadow Casting: Eliminates phantom updates behind solid geometry.
+  [Times New Roman 18.0pt] •  Temporal Occlusion Persistence: Retains obstacle bounds when sensors look away.
+  [Times New Roman 19.0pt] 4. Deliberation Substrate Certification
+  [Times New Roman 18.0pt] Scope-Bounded Acceptance Suite: 40/40 Mazes Cleared
+  [Times New Roman 18.0pt] •  Prospective Trajectory Evaluation: Continuous swept-cone collision evaluation.
+  [Times New Roman 18.0pt] •  Scope-Bounded Certified: 40/40 challenge mazes cleared with 0.00% collisions.
+  [Times New Roman 18.0pt] •  Stage 3 Carryover: CANN causal coupling & memory necessity proven in Stage 3.
+  [Times New Roman 18.0pt] Historical Note: Formerly designated Phase 2 in preliminary development; certified as Stage 2 substrate.
+  [Times New Roman 18.0pt] 25
