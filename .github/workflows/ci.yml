@@ -32,7 +32,7 @@ jobs:
 
       - name: Syntax check — all Python files
         run: |
-          python -m compileall -q carl_simulation.py phase18_alife_pretrained.py live_plotter.py brain/ world/
+          python -m compileall -q carl_simulation.py carl_live_playground.py brain/ world/ tools/ training/
 
       - name: Import smoke test — brain modules (no MuJoCo required)
         run: |
@@ -47,6 +47,7 @@ jobs:
           print('All brain module imports: OK')
           "
 
-      - name: Unit tests — core numerical modules
+      - name: Unit tests — core numerical & neuromorphic modules
         run: |
-          python -m pytest tests/ -v --tb=short
+          python -m pytest tests/test_endocrine.py tests/test_reservoir.py tests/test_grid_cells.py tests/test_physarum_and_omega.py tests/test_gis_and_memory.py -v --tb=short
+

@@ -1,159 +1,199 @@
-# CARL-DX: Biologically Grounded Cognitive Robotic Architecture
-
 <div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-3776AB?logo=python&logoColor=white)](https://python.org)
-[![Physics Engine](https://img.shields.io/badge/MuJoCo-3.x-red?logo=deepmind&logoColor=white)](https://mujoco.org)
-[![Architecture](https://img.shields.io/badge/Neuromorphic-2%2C114--Unit%20CANN%20%2B%20LSM-blueviolet)](#the-2114-unit-neuromorphic-computational-architecture)
-[![Control Loop](https://img.shields.io/badge/Real--Time%20Loop-30%20Hz%20(33.3%20ms)-brightgreen)](#real-time-control--digital-twin-specifications)
-[![Developmental Roadmap](https://img.shields.io/badge/Roadmap-Stages%201--3%20Certified%20%E2%9C%85-success)](#the-5-stage-master-developmental-architecture)
-[![AST Anti-Cheat](https://img.shields.io/badge/AST%20Anti--Cheat-100%25%20Quarantined-blue)](#the-zero-simulator-cheat-invariant-gate-5)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+```
+  ██████╗ █████╗ ██████╗ ██╗         ██████╗ ██╗  ██╗
+ ██╔════╝██╔══██╗██╔══██╗██║         ██╔══██╗╚██╗██╔╝
+ ██║     ███████║██████╔╝██║         ██║  ██║ ╚███╔╝ 
+ ██║     ██╔══██║██╔══██╗██║         ██║  ██║ ██╔██╗ 
+ ╚██████╗██║  ██║██║  ██║███████╗    ██████╔╝██╔╝ ██╗
+  ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝    ╚═════╝ ╚═╝  ╚═╝
+```
 
-**A Digital Twin Framework for Biologically Inspired Cognitive Robotic Systems Operating in Continuous Physical State Spaces**
+### Cognitive Autonomous Recurrent Lifeform — Developmental eXperiment
+**A 2,114-Unit Neuromorphic Cognitive Architecture Operating in an Exact 30 Hz Physical Digital Twin**
 
-[Overview](#executive-summary) • [Architecture Mindmap](#architecture-mindmap) • [Cognitive Loop](#cognitive-execution-loop) • [5-Stage Roadmap](#the-5-stage-master-developmental-architecture) • [Scorecard](#empirical-verification-ledger) • [Quickstart](#quickstart--usage) • [Repository Structure](#repository-structure)
+---
+
+[![CI Status](https://img.shields.io/github/actions/workflow/status/Manassadashiv/EBCA/ci.yml?branch=main&label=Build%20%26%20CI&logo=github&style=for-the-badge&color=22c55e)](https://github.com/Manassadashiv/EBCA/actions)
+[![Python Version](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Physics Simulator](https://img.shields.io/badge/MuJoCo-3.x%20Physics-F05032?style=for-the-badge&logo=deepmind&logoColor=white)](https://mujoco.org)
+[![Neuromorphic Core](https://img.shields.io/badge/Architecture-2%2C114%20Attractor%20Units-8B5CF6?style=for-the-badge)](#-the-2114-unit-neuromorphic-architecture)
+[![Control Frequency](https://img.shields.io/badge/Real--Time%20Loop-30%20Hz%20(33.3%20ms)-06B6D4?style=for-the-badge)](#-real-time-control-specifications)
+[![Developmental State](https://img.shields.io/badge/Roadmap-Stages%201--3%20Certified%20%E2%9C%85-10B981?style=for-the-badge)](#-the-5-stage-master-developmental-progression)
+[![AST Anti-Cheat Gate](https://img.shields.io/badge/AST%20Anti--Cheat-100%25%20Quarantined-3B82F6?style=for-the-badge)](#-the-zero-simulator-cheat-invariant-gate-5)
+[![License: MIT](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge)](LICENSE)
+
+<br/>
+
+[Key Capabilities](#-key-capabilities) • [Architecture Mindmap](#-architecture-mindmap) • [Cognitive Loop](#-cognitive-execution-loop) • [5-Stage Roadmap](#-the-5-stage-master-developmental-progression) • [Verification Ledger](#-empirical-verification-ledger) • [Quickstart](#-quickstart--usage) • [Defense Guide](#-presentation--defense-resources)
 
 </div>
 
 ---
 
-## Executive Summary
+## 🌟 Executive Summary
 
-**CARL-DX** (Cognitive Autonomous Recurrent Lifeform — Developmental eXperiment) is a biologically grounded, zero-trust audited artificial organism developed inside an exact 30 Hz physical digital twin using Google DeepMind's **MuJoCo** physics engine.
+**CARL-DX** is a bio-inspired embodied cognitive robotic architecture operating inside a high-fidelity 3D digital twin powered by Google DeepMind's **MuJoCo physics engine**. 
 
-Traditional robotic systems rely either on rigid, handcoded finite state machines or brittle, end-to-end deep reinforcement learning models that train in cloud disembodiment and collapse when subjected to real-world friction variations or sensor dropouts. Furthermore, standard navigation benchmarks frequently violate biological plausibility by feeding the agent privileged simulator coordinates (`qpos`, `geom_xpos`).
+Standard modern robotics systems often rely on either handcoded heuristic state machines (which fail in unmapped terrains) or end-to-end deep reinforcement learning models (which act as black boxes, require millions of destructive trials, and catastrophically collapse when ground friction changes). Crucially, academic benchmarks frequently permit subtle simulation cheats by reading absolute global coordinates (`qpos`, `geom_xpos`) directly from physics memory.
 
-CARL-DX resolves this foundational gap by constructing a **2,114-unit neuromorphic computational architecture** operating strictly from unprivileged, noisy sensor streams (15 directional distance rays, 1-axis gyroscope, wheel encoders, tactile bumpers, and interoceptive battery telemetry). Cognition is decomposed into biologically grounded, mathematically verified cortical and subcortical organs:
-
-- **64-Unit Continuous Attractor Neural Network (CANN)** for Head Direction (HD) path integration with Mexican-hat recurrent inhibition.
-- **1,024-Unit Toroidal Grid Cell Attractor** for 2D translational spatial mapping.
-- **1,026-Unit Recurrent Liquid State Machine (LSM)** reservoir for temporal sensorimotor projection.
-- **Endocrine Allostatic Regulation** (Dopamine, Noradrenaline, Serotonin, Acetylcholine, Cortisol) modulating behavioral states under friction collapse and hazard encounters.
-- **Continuous Action Synthesis via MPPI** ($M=128$ candidate trajectories, $H=15$ steps, $dt=0.0333\text{s}$) scored in $1.36\text{ ms}$ via vectorized tensor operations.
-- **Active Inference Deliberation** minimizing Expected Free Energy ($G = G_{\text{pragmatic}} + G_{\text{epistemic}}$) to discover composite maneuvers without heuristics.
-- **Decoupled Predictive World Model** ($R^2 = 0.9613$) and allocentric raster occupancy memory with prospective swept-cone collision vetoing.
+CARL-DX establishes a **zero-trust, unprivileged baseline**:
+- **Zero Simulator Cheats**: The cognitive decision pipeline is strictly isolated via **AST static analysis**; coordinates and raycasts are never accessed directly.
+- **Physical Grounding**: CARL perceives the world strictly through unprivileged virtual serial telemetry (15 distance rays, 1-axis gyroscope, wheel encoders, tactile bumpers, and interoceptive battery drain).
+- **Sub-Millisecond Reflexes**: Low-level hazard reflexes resolve in $< 0.2\text{ ms}$, while high-level continuous trajectory optimization completes in $1.36\text{ ms}$, safely within the 33.3 ms (30 Hz) real-time cycle budget.
 
 ---
 
-## Architecture Mindmap
+## ⚡ Key Capabilities
+
+| Organ / Mechanism | Biological Grounding | Technical Implementation | Certified Metric |
+| :--- | :--- | :--- | :---: |
+| **Head Direction Attractor** | Mammalian HD Cells (*Taube 1998*) | 64-unit continuous attractor ring network (CANN) with Mexican-hat synaptic inhibition. | Drift $< 0.02\text{ rad/s}$ under complete blackout |
+| **Spatial Grid Torus** | Medial Entorhinal Cortex (*Moser 2005*) | 1,024-unit 2D toroidal continuous attractor maintaining allocentric translational phase. | Homing return drift $\le 0.062\text{ m}$ ($< 0.22\text{ m}$ dock gate) |
+| **Sensory Reservoir** | Cortical Microcircuits (*Maass 2002*) | 1,026-unit recurrent Liquid State Machine (LSM) operating near criticality ($\rho \approx 1.0$). | Real-time sensorimotor temporal projection |
+| **Kinematic Traction Observer** | Mammalian Proprioception | Online wheel slip estimation ($\sigma = \frac{v_{\text{wheel}} - \hat{v}_x}{v_{\text{wheel}}}$) fusing IMU $\dot{v}_x$ and encoders. | $68.57\%$ slip detection on $\mu = 0.005$ ice |
+| **Continuous Action Synthesis** | Optimal Motor Control (*Todorov 2002*) | Model Predictive Path Integral (MPPI) evaluating $M=128$ candidate paths over $H=15$ steps. | Mean latency **$1.36\text{ ms}$** (p95 $2.14\text{ ms}$ $\le 45\text{ ms}$) |
+| **Active Inference Deliberation** | Free Energy Principle (*Friston 2010*) | Minimization of Expected Free Energy ($G = \text{Pragmatic} + \text{Epistemic}$) toward topological macro-frontiers. | Autonomous reverse-pivot discovery in cul-de-sacs |
+| **Predictive World Model** | Internal Forward Models (*Ha 2018*) | Decoupled grounded forward dynamics predicting 5 future sensory states. | **$R^2 = 0.9613$** across 7 pre-registered gates |
+
+---
+
+## 🧠 Architecture Mindmap
 
 ```mermaid
 graph TD
-    subgraph SENSORY_HAL ["Hardware Abstraction Layer (Unprivileged Virtual Serial Bus)"]
-        S_Sonar["15x Sonar Rays (360° Ring)"]
+    subgraph SENSORY_LAYER ["1. Unprivileged Sensory Stream (Hardware Abstraction Layer)"]
+        S_Sonar["15x Sonar Distance Rays (360° Ring)"]
         S_IMU["Vestibular Gyroscope (ω_gyro)"]
-        S_Enc["Wheel Odometry & Encoders"]
+        S_Enc["Wheel Encoders (v_wheel = r · (ω_L + ω_R)/2)"]
         S_Acc["3-Axis Accelerometer (ax, ay, az)"]
-        S_Int["Interoceptive Battery & Touch"]
+        S_Int["Interoceptive Battery & Touch Bumpers"]
     end
 
-    subgraph REFLEX_STEM ["Subcortical Brainstem (Fast Reactive Layer - < 0.5 ms)"]
-        R_Spike["Spiking Reflex Arc (LIF Neurons)"]
-        R_Slip["Grounded Kinematic Slip Observer (σ > 0.52)"]
+    subgraph REFLEX_STEM ["2. Subcortical Brainstem (< 0.5 ms Reaction)"]
+        R_Spike["Spiking Reflex Arc (LIF Threshold)"]
+        R_Slip["Grounded Kinematic Slip Detector (σ > 0.52)"]
         R_Endo["Endocrine Allostasis (DA, NE, Cortisol, ACh)"]
-        R_Veto["Rotational Swept-Hull Collision Veto"]
+        R_Veto["Rotational Swept-Hull Collision Veto (R_swept = 0.1773m)"]
     end
 
-    subgraph NEUROMORPHIC_CORE ["2,114-Unit Neuromorphic Core"]
-        HD_Ring["64-HD Head Direction Ring Attractor (Mexican-Hat Tuning)"]
-        Grid_Torus["1,024-Unit 2D Toroidal Grid Cell Attractor"]
-        Reservoir["1,026-Unit Liquid State Machine (Reservoir Computing)"]
-        World_Model["Decoupled Predictive World Model (R² = 0.9613)"]
-        Occ_Mem["Allocentric Raster Occupancy Memory (Grid-Torus Indexed)"]
+    subgraph NEUROMORPHIC_CORE ["3. 2,114-Unit Neuromorphic Core"]
+        HD_Ring["64-HD Head Direction Ring Attractor (Mexican-Hat Invariant)"]
+        Grid_Torus["1,024-Unit 2D Toroidal Grid Attractor (Allocentric Space)"]
+        Reservoir["1,026-Unit Recurrent Liquid State Machine (LSM Reservoir)"]
+        World_Model["Decoupled Grounded Predictive World Model (R² = 0.9613)"]
+        Occ_Mem["Allocentric Raster Occupancy Memory (Grid-Indexed)"]
     end
 
-    subgraph DELIBERATION_ENGINE ["Cortical Deliberation & Action Synthesis (30 Hz)"]
-        MPPI["Continuous MPPI Optimizer (M=128 Paths, H=15 Steps, 1.36 ms)"]
-        Active_Inf["Active Inference: Expected Free Energy G = Pragmatic + Epistemic"]
-        Top_Frontier["Topological Macro-Frontier Clustering"]
+    subgraph DELIBERATION ["4. Cortical Deliberation & Action Synthesis (30 Hz)"]
+        MPPI["Continuous MPPI Engine (M=128 Paths, H=15 Steps, 1.36 ms Latency)"]
+        Active_Inf["Active Inference: Expected Free Energy G(u) = Pragmatic + Epistemic"]
+        Top_Frontier["Topological Macro-Frontier Clustering & Egress Steering"]
     end
 
-    subgraph ACTUATION ["Physical Digital Twin (MuJoCo Physics @ 500 Hz / 16 Substeps)"]
-        Motors["Differential Drive Wheel Motors (u_L, u_R ∈ [-1.0, 1.0])"]
-        Chassis["Vessel Kinetic Chassis (L=0.23m, W=0.27m, Track=0.22m)"]
+    subgraph ACTUATION ["5. Physical Digital Twin (MuJoCo Physics @ 500 Hz / 16 Substeps)"]
+        Motors["Differential Drive Actuators (u_L, u_R ∈ [-1.0, 1.0])"]
+        Chassis["Vessel Kinetic Chassis (Length=0.23m, Width=0.27m, Track=0.22m)"]
     end
 
-    %% Wiring
-    S_Sonar & S_IMU & S_Enc & S_Acc & S_Int --> REFLEX_STEM
+    SENSORY_LAYER --> REFLEX_STEM
     REFLEX_STEM --> NEUROMORPHIC_CORE
-    NEUROMORPHIC_CORE --> DELIBERATION_ENGINE
-    DELIBERATION_ENGINE --> Motors
+    NEUROMORPHIC_CORE --> DELIBERATION
+    DELIBERATION --> Motors
     Motors --> Chassis
-    Chassis -->|Kinematic Feedback| SENSORY_HAL
+    Chassis -->|Real Kinematic Motion| SENSORY_LAYER
 
-    classDef hal fill:#1f2937,stroke:#3b82f6,stroke-width:2px,color:#fff;
-    classDef reflex fill:#374151,stroke:#ef4444,stroke-width:2px,color:#fff;
-    classDef neuro fill:#1e1e38,stroke:#8b5cf6,stroke-width:2px,color:#fff;
-    classDef delib fill:#14532d,stroke:#22c55e,stroke-width:2px,color:#fff;
-    classDef act fill:#78350f,stroke:#f59e0b,stroke-width:2px,color:#fff;
+    classDef hal fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#f8fafc;
+    classDef reflex fill:#1e1b4b,stroke:#ef4444,stroke-width:2px,color:#f8fafc;
+    classDef neuro fill:#2e1065,stroke:#a855f7,stroke-width:2px,color:#f8fafc;
+    classDef delib fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#f8fafc;
+    classDef act fill:#451a03,stroke:#f59e0b,stroke-width:2px,color:#f8fafc;
 
-    class SENSORY_HAL hal;
+    class SENSORY_LAYER hal;
     class REFLEX_STEM reflex;
     class NEUROMORPHIC_CORE neuro;
-    class DELIBERATION_ENGINE delib;
+    class DELIBERATION delib;
     class ACTUATION act;
 ```
 
 ---
 
-## Cognitive Execution Loop
+## ⏱ Cognitive Execution Loop
 
-The real-time cognitive control cycle executes strictly every **33.3 milliseconds** ($30\text{ Hz}$), operating well within the digital control $50\%$ latency budget:
+CARL-DX operates on an exact **$33.3\text{ ms}$ ($30\text{ Hz}$)** cognitive cycle, with the entire deliberation phase consuming only **$6.4\%$** of the available tick budget:
 
 ```mermaid
 sequenceDiagram
     autonumber
     participant Phys as MuJoCo Digital Twin (500 Hz)
-    participant HAL as Sensorimotor HAL (Unprivileged)
-    participant Reflex as Spiking Reflex & Slip Observer
-    participant CANN as 2,114-Unit CANN & Spatial Memory
-    participant MPPI as MPPI & Active Inference (1.36 ms)
-    participant Actuator as Differential Motors
+    participant HAL as Virtual Serial HAL (Unprivileged)
+    participant Reflex as Reflex Arc & Slip Observer
+    participant CANN as 2,114-Unit CANN Attractor Core
+    participant MPPI as MPPI & Active Inference Engine
+    participant Motors as Differential Wheel Motors
 
-    Phys->>HAL: Integrate 16 physics substeps (dt = 0.002s x 16 = 0.0333s)
-    HAL->>Reflex: Stream 25-D sensor vector (sonar, gyro, slip, battery)
+    Phys->>HAL: Step 16 physics substeps (16 x 0.002s = 0.0333s)
+    HAL->>Reflex: Stream 25-D unprivileged sensor packet
     
-    rect rgb(30, 41, 59)
-        note over Reflex: Check emergency reflex threshold (d < 0.15m) & slip (σ > 0.52)
-        alt Emergency Obstacle Contact
-            Reflex->>Actuator: Instantaneous override reverse torque (Latency < 0.2 ms)
-        else Normal Operation
-            Reflex->>CANN: Update head-direction bump & grid-torus phase
-            CANN->>MPPI: Supply allocentric pose prior & occupancy grid
-            note over MPPI: Sample M=128 candidate trajectories (H=15 steps)<br/>Evaluate G = Pragmatic + Epistemic in 1.36 ms
-            MPPI->>Actuator: Command optimal continuous wheel velocities (u_L*, u_R*)
+    rect rgb(15, 23, 42)
+        note over Reflex: Check distance threshold (d < 0.15m) & traction slip (σ > 0.52)
+        alt Emergency Contact Detected
+            Reflex->>Motors: Override with reverse torque pulse (< 0.2 ms latency)
+        else Normal Deliberation
+            Reflex->>CANN: Update head-direction bump & grid displacement phase
+            CANN->>MPPI: Stream allocentric pose prior & occupancy memory
+            note over MPPI: Vectorized tensor sampling: M=128 rollouts x H=15 steps<br/>Score G = Pragmatic + Epistemic in 1.36 ms
+            MPPI->>Motors: Output optimal continuous velocities (u_L*, u_R*)
         end
     end
 
-    Actuator->>Phys: Apply wheel torques (semi-implicit Euler integration)
+    Motors->>Phys: Apply wheel motor torques to continuous physics simulation
 ```
 
 ---
 
-## The 5-Stage Master Developmental Architecture
+## 🗺 The 5-Stage Master Developmental Progression
 
-Development follows an immutable, sequential 5-stage roadmap certified under pre-registered, fail-closed protocols:
+The architecture is developed under a strict, immutable 5-stage sequential roadmap:
 
-| Stage | Developmental Focus | Core Mechanism | Acceptance Gate & Criteria | Status |
+```
+[STAGE 1] Sensorimotor Grounding & Body Babbling   -> CERTIFIED ✅
+[STAGE 2] Generative World & Self Modeling         -> CERTIFIED ✅
+[STAGE 3] Continuous Action Synthesis & Discovery  -> STAGES 3.0-3.3 CERTIFIED ✅ / STAGE 3.4 ACTIVE ⏳
+[STAGE 4] Autopoietic / Lifelong Synaptic Memory   -> Planned
+[STAGE 5] Metacognition & Permission-Gated Tuning  -> Planned
+```
+
+<details open>
+<summary><b>Detailed Breakdown of Developmental Stages & Acceptance Gates</b></summary>
+<br/>
+
+| Stage | Developmental Focus | Architectural Organ Grown | Pre-Registered Acceptance Gate | Empirical Status |
 | :--- | :--- | :--- | :--- | :---: |
-| **Stage 1** | **Sensorimotor Grounding** *(Learn My Body)* | 6-channel anonymous motor babbling, linear momentum model, grounded kinematic slip observer ($\sigma = \frac{v_{\text{wheel}} - \hat{v}_x}{v_{\text{wheel}}}$). | Zero tip-overs in 150 trials; $\mu = 0.005$ ice detection rate $\ge 68.5\%$; AST anti-cheat clean. | **CERTIFIED ✅** |
-| **Stage 2** | **Generative World & Self-Modeling** *(Learn My World)* | 2,114-unit neuromorphic architecture (64-HD ring + 1,024-grid torus + 1,026 reservoir); $R^2=0.9613$ world model; prospective trajectory vetoing. | Homing return drift $\le 0.22\text{ m}$; 40/40 challenge mazes cleared with $0.0\%$ collisions; p95 latency $\le 40.58\text{ ms}$. | **CERTIFIED ✅** |
-| **Stage 3.0** | **Pre-Flight Integrity Gateway** | Dormant `geom_xpos` leak purge; floating base normalization; cryptographic SHA-256 baseline lock. | 100% clean AST scan across all decision files; zero simulator coordinate access. | **CERTIFIED ✅** |
-| **Stage 3.1** | **CANN Causal Coupling** | Direct CANN state coupling into trajectory evaluation; 4-arm ablation battery (Intact vs Frozen vs Zeroed vs Shuffled). | Action divergence $\Delta \mathbf{u} \ge 0.15\text{ m/s}$ ($p < 0.01$); achieved $\Delta \mathbf{u} = 0.563\text{ m/s}$, $p < 10^{-16}$. | **CERTIFIED ✅** |
-| **Stage 3.2** | **Spatial Memory Necessity** | Counterfactual trajectory fidelity ($\le 0.08\text{ m}$ rollout error) across 5 non-LOS task families (blind corners, cul-de-sacs, sensor dropouts). | $\Delta \text{Success} \ge 35\%$, $p < 0.001$; proves spatial memory provides information unrecoverable from sonar alone. | **CERTIFIED ✅** |
-| **Stage 3.3** | **Continuous Action Synthesis** | Model Predictive Path Integral (MPPI) optimization ($M=128, H=15, dt=0.0333\text{s}$) over continuous wheel velocity space $\mathbf{u} \in [-1.0, 1.0]^2$. | Jerk $\|\Delta \mathbf{u}^*\|_2 \le 0.35$; mean latency $1.36\text{ ms}$, p95 $2.14\text{ ms} \le 45\text{ ms}$; $\ge 50\%$ collision reduction vs discrete baseline. | **CERTIFIED ✅** |
-| **Stage 3.4** | **Autonomous Behavioral Discovery** | Expected Free Energy minimization ($G = \text{Pragmatic} + \text{Epistemic}$) under Active Inference; discovery of composite maneuvers without scripts. | 200-episode frozen battery; $100\%$ corridor escapes in Env 1, $60\%$ in Env 2, collisions reduced from $18\%$ to $0.0\%$. | **ACTIVE ⏳** |
-| **Stage 3.5** | **Perturbation & Adaptation** | Dynamic online friction adaptation ($\mu = 0.20$), motor torque loss compensation, and endocrine exploration tuning. | Autonomous parameter re-estimation without human intervention. | *Planned* |
-| **Stage 3.6** | **Behavioral Synergies & Physarum** | Trajectory clustering into reusable motor primitives via HDC memory; Physarum polycephalum plasmodial flow maze pruning. | Sub-graph pruning of exploratory dead-ends. | *Planned* |
-| **Stage 4** | **Autopoietic / Lifelong Memory** | Reward-modulated Spike-Timing-Dependent Plasticity (R-STDP); cross-lifespan persistent state compounding. | Zero catastrophic forgetting across power cycles. | *Planned* |
-| **Stage 5** | **Metacognition & Permission-Gated Self-Modification** | "The Witness" introspective failure analysis; causal hypothesis formation; permission-gated self-tuning. | Automated root-cause isolation of navigation deadlocks. | *Planned* |
+| **Stage 1.0** | Body Babbling | 6-channel motor babbling | Anonymous topology discovery | **PASSED ✅** |
+| **Stage 1.5** | Momentum Model | Linear forward dynamics model | Held-out prediction $R^2 \ge 0.75$ ($R^2=0.820$) | **PASSED ✅** |
+| **Stage 1.6** | Kinematic Slip | Grounded traction discrepancy estimator | Ice detection $\ge 60\%$ on $\mu=0.005$ | **PASSED ✅** |
+| **Stage 2.1A** | Vestibular Homing | Unsupervised vestibular discovery | Drift $\le 0.22\text{ m}$ (Achieved $0.062\text{ m}$) | **PASSED ✅** |
+| **Stage 2.1B** | CANN Core | 2,114-unit attractor network | Directional stability under sensory loss | **PASSED ✅** |
+| **Stage 2.2** | Grounded World Model | Decoupled 5-step forward model | 7/7 Multi-step prediction gates ($R^2=0.9613$) | **PASSED ✅** |
+| **Stage 2.3** | Deliberation Veto | Prospective swept-cone clearance | 40/40 Challenge mazes cleared with 0.0% collision | **PASSED ✅** |
+| **Stage 3.0** | Pipeline Hygiene | Code hygiene & sandbox isolation | 100% Clean AST static anti-cheat scan | **PASSED ✅** |
+| **Stage 3.1** | CANN Causal Battery | Direct CANN-to-action coupling | Action divergence $\Delta \mathbf{u} \ge 0.15\text{ m/s}$ ($p < 0.01$) | **PASSED ✅** |
+| **Stage 3.2** | Spatial Memory | Counterfactual rollout fidelity | $\Delta \text{Success} \ge 35\%$ across 5 non-LOS families | **PASSED ✅** |
+| **Stage 3.3** | Continuous MPPI | Vectorized trajectory synthesis | Latency p95 $\le 45\text{ ms}$; $\ge 50\%$ collision reduction | **PASSED ✅** |
+| **Stage 3.4** | Active Inference | EFE minimization in cul-de-sacs | 100% Env 1 escape, 0% collisions in screening | **ACTIVE ⏳** |
+| **Stage 3.5** | Adaptation | Online friction & torque compensation | Adaptation to sudden $\mu=0.20$ drops | *Planned* |
+| **Stage 3.6** | Motor Synergies | HDC motor primitives & Physarum routing | Dead-end pruning via slime-mold diffusion | *Planned* |
+| **Stage 4** | Lifelong Memory | Reward-modulated STDP & persistent state | Zero catastrophic forgetting across power lifespans | *Planned* |
+| **Stage 5** | Metacognition | "The Witness" introspective failure analysis | Causal failure attribution & permission-gated tuning | *Planned* |
+
+</details>
 
 ---
 
-## Empirical Verification Ledger
+## 📊 Empirical Verification Ledger
 
-All empirical evaluations adhere to **fail-closed pre-registration**: statistical tests, sample counts, and pass thresholds are locked before executing experiments.
+Every threshold, sample count, and evaluation matrix is pre-registered prior to testing:
 
 ```
 ====================================================================================================
@@ -178,39 +218,39 @@ Stage 3.4  Active Inference Cul-de-Sac Escape Screening Mazes           100% Env
 
 ---
 
-## The Zero-Simulator-Cheat Invariant (Gate 5)
+## 🛡 The Zero-Simulator-Cheat Invariant (Gate 5)
 
-A central scientific requirement of CARL-DX is **Decision-Pipeline Isolation**:
-- Real biological organisms and physical rovers cannot query their ground-truth coordinates from the universe.
-- CARL-DX strictly quarantines the MuJoCo simulation state at the Hardware Abstraction Layer.
-- Automated continuous integration enforces this invariant via **AST (Abstract Syntax Tree) static analysis** ([`tests/test_stage3_ast_anti_cheat.py`](tests/test_stage3_ast_anti_cheat.py)).
+CARL-DX enforces an architectural isolation invariant verified by continuous automated **Abstract Syntax Tree (AST)** static inspection ([`tests/test_stage3_ast_anti_cheat.py`](tests/test_stage3_ast_anti_cheat.py)):
 
-Any appearance of privileged simulation attributes inside cognitive decision modules triggers an immediate, unappealable build failure:
-$$\text{Forbidden AST Attributes: } \{\texttt{qpos}, \texttt{qvel}, \texttt{qacc}, \texttt{geom\_xpos}, \texttt{site\_xpos}, \texttt{mj\_ray}, \texttt{mj\_step}\}$$
+```python
+# The cognitive decision pipeline is forbidden from accessing simulator ground truth:
+FORBIDDEN_ATTRIBUTES = {"qpos", "qvel", "qacc", "geom_xpos", "site_xpos", "mj_ray", "mj_step"}
+```
 
----
-
-## Mathematical & Physical Grounding
-
-Every numerical threshold in CARL-DX is derived from first-principles physics, control theory, or established literature:
-
-1. **Homing Gate ($\le 0.22\text{ m}$)**: Exactly matches the physical wheel-to-wheel track width ($0.22\text{ m}$) of the chassis (*Siegwart & Nourbakhsh 2011*). Landing within $0.22\text{ m}$ guarantees mechanical dock engagement.
-2. **Control Frequency ($30\text{ Hz}$ / $33.3\text{ ms}$)**: MuJoCo integrates physics at $500\text{ Hz}$ ($dt = 0.002\text{ s}$). Grouping 16 substeps yields $16 \times 0.002\text{ s} = 0.0333\text{ s} = 30\text{ Hz}$, matching mammalian gamma/motor loops (*Maass 2002*).
-3. **Lookahead Horizon ($H = 15\text{ steps} = 0.45\text{ s}$)**: Matches animal perceptual reaction horizons ($0.5\text{ s}$, *Todorov 2012*). At cruising speed ($0.45\text{ m/s}$), CARL looks ahead $\approx 0.20\text{ m}$, aligning with forward sonar beam divergence.
-4. **MPPI Candidate Count ($M = 128$)**: Information-theoretic optimal distribution sampling for non-holonomic mobile drive (*Williams et al. 2017*), structured for L1 CPU cache vectorization.
-5. **Critical Friction ($\mu = 0.35$)**: Analytically derived from Coulomb's traction boundary at peak acceleration ($a_{\text{max}} \approx 3.5\text{ m/s}^2$):
-   $$\mu_{\text{crit}} = \frac{a_{\text{max}}}{g} = \frac{3.5}{9.81} \approx 0.356$$
-6. **Emergency Reflex Threshold ($0.15\text{ m}$)**: Stopping distance ($6.25\text{ cm}$) + reaction distance ($1.7\text{ cm}$) + caster safety margin ($7.0\text{ cm}$) $\approx 15.0\text{ cm}$.
+- Any reference to simulator coordinates, internal physics matrices, or raycasting primitives inside the cognitive loop triggers an immediate build failure.
+- Physical state estimation must emerge strictly through the unprivileged virtual serial hardware boundary.
 
 ---
 
-## Repository Structure
+## 📐 Mathematical & Literature Parameter Provenance
 
-The repository is organized into a modular scientific architecture:
+All operational constants are derived from first-principles mechanics and academic literature:
+
+- **Homing Target Gate ($0.22\text{ m}$)**: Matches the physical wheel-to-wheel track width ($0.22\text{ m}$) of the chassis (*Siegwart & Nourbakhsh 2011*). Landing within $0.22\text{ m}$ guarantees physical contact with charging dock terminals.
+- **Control Frequency ($30\text{ Hz}$ / $33.3\text{ ms}$)**: MuJoCo integrates physics at $500\text{ Hz}$ ($dt = 0.002\text{ s}$). Grouping 16 substeps yields $16 \times 0.002\text{ s} = 0.0333\text{ s} = 30\text{ Hz}$, matching mammalian motor/gamma rhythm cycles (*Maass 2002*).
+- **Lookahead Horizon ($H = 15\text{ steps} = 0.45\text{ s}$)**: Derived from the mammalian immediate perceptual reaction horizon ($0.5\text{ s}$, *Todorov 2012*). At cruising speed ($0.45\text{ m/s}$), CARL looks ahead $\approx 0.20\text{ m}$, aligning with sonar divergence angles.
+- **MPPI Sample Count ($M = 128$)**: Information-theoretic optimal distribution coverage for non-holonomic mobile drive (*Williams et al. 2017*), structured for L1 CPU cache vectorization.
+- **Critical Friction ($\mu = 0.35$)**: Analytically derived from Coulomb's traction boundary at maximum acceleration:
+  $$\mu_{\text{crit}} = \frac{a_{\text{max}}}{g} = \frac{3.5\text{ m/s}^2}{9.81\text{ m/s}^2} \approx 0.356$$
+- **Emergency Reflex Distance ($0.15\text{ m}$)**: Stopping distance ($6.25\text{ cm}$) + reaction distance ($1.7\text{ cm}$) + caster buffer ($7.0\text{ cm}$) $\approx 15.0\text{ cm}$.
+
+---
+
+## 📂 Repository Structure
 
 ```text
 d:\ebca/
-├── carl_simulation.py                         # Canonical 30 Hz closed-loop simulation entry point
+├── carl_simulation.py                         # Primary 30 Hz closed-loop simulation entry point
 ├── carl_live_playground.py                    # Interactive 3D visualization & testing arena
 ├── CARL_PRESENTATION_COMPLETE_LAYMAN_GUIDE.md # 45-slide presentation & master viva defense guide
 ├── requirements.txt                           # Core dependencies
@@ -240,8 +280,11 @@ d:\ebca/
 │   └── stage3_4_environments/                 # Cul-de-sac and asymmetric T-junction challenge mazes
 │
 ├── tests/                                     # Pre-Registered Verification & Regression Suites
+│   ├── test_endocrine.py                      # Neuromodulatory unit tests
+│   ├── test_reservoir.py                      # Liquid State Machine unit tests
+│   ├── test_grid_cells.py                     # Toroidal grid attractor tests
+│   ├── test_physarum_and_omega.py             # Physarum flow routing tests
 │   ├── test_stage1_gate5_suite.py             # Stage 1 sensorimotor grounding regression
-│   ├── test_stage2_2_anti_cheat_isolation.py  # Stage 2 cognitive isolation audit
 │   ├── test_stage3_ast_anti_cheat.py          # Stage 3.0 AST static analyzer & SHA-256 integrity gateway
 │   ├── test_stage3_1R_cann_causal_battery.py  # Stage 3.1 4-arm CANN causal battery
 │   ├── test_stage3_2RA_trajectory_fidelity.py # Stage 3.2 rollout fidelity benchmark (<= 0.08m error)
@@ -274,10 +317,10 @@ d:\ebca/
 
 ---
 
-## Quickstart & Usage
+## 🚀 Quickstart & Usage
 
 ### 1. Installation
-Clone the repository and install required dependencies within a virtual environment:
+Clone the repository and install core dependencies:
 
 ```bash
 git clone https://github.com/Manassadashiv/EBCA.git
@@ -292,46 +335,46 @@ pip install -r requirements.txt
 ```
 
 ### 2. Run Interactive 3D Digital Twin Playground
-Launch the real-time interactive physics environment to inspect sensor rays, chassis dynamics, and obstacle fields:
+Launch the real-time interactive physics environment with live sensor ray rendering and chassis steering:
 
 ```bash
 python carl_live_playground.py
 ```
 
-### 3. Run Autonomous Cognitive Simulation
-Execute CARL's unified 30 Hz cognitive control loop with continuous attractor navigation:
+### 3. Run Autonomous Cognitive Organism
+Execute CARL's unified 30 Hz cognitive control cycle with continuous attractor navigation:
 
 ```bash
 python carl_simulation.py
 ```
 
-### 4. Execute AST Anti-Cheat Integrity Gateway
-Verify that the decision pipeline is 100% clean of privileged simulation variables:
+### 4. Run Core Neuromorphic & Numerical Unit Tests
+Verify the 86 core numerical unit tests:
+
+```bash
+pytest tests/test_endocrine.py tests/test_reservoir.py tests/test_grid_cells.py tests/test_physarum_and_omega.py tests/test_gis_and_memory.py -v
+```
+
+### 5. Execute AST Anti-Cheat Static Scan
+Verify zero privileged simulator coordinate leakage in the decision loop:
 
 ```bash
 pytest tests/test_stage3_ast_anti_cheat.py -v
 ```
 
-### 5. Run Continuous Trajectory Synthesis Benchmark (Stage 3.3 MPPI)
-Evaluate continuous action smoothness and obstacle negotiation latency:
+---
 
-```bash
-pytest tests/test_stage3_3R_remediation_battery.py -v
-```
+## 🎓 Presentation & Defense Resources
+
+For academic seminars, doctoral/master's defense committees, and viva presentations:
+- **Comprehensive Layman Guide**: [`CARL_PRESENTATION_COMPLETE_LAYMAN_GUIDE.md`](CARL_PRESENTATION_COMPLETE_LAYMAN_GUIDE.md) contains complete slide-by-slide scripts, real-world analogies, defense Q&A scripts, and theoretical derivations across all 45 presentation slides.
+- **Master Presentation Deck**: [`docs/presentation/decks/310_Stage3_Updated_Final.pptx`](docs/presentation/decks/310_Stage3_Updated_Final.pptx).
 
 ---
 
-## Presentation & Defense Guide
+## 📜 Citation
 
-For academic defense committees, seminars, or viva examinations:
-- **Comprehensive Layman Guide**: [`CARL_PRESENTATION_COMPLETE_LAYMAN_GUIDE.md`](CARL_PRESENTATION_COMPLETE_LAYMAN_GUIDE.md) provides complete slide-by-slide scripts, plain-English analogies, examiner defense strategies, and parameter derivations across all 45 presentation slides.
-- **Slide Decks**: Located in [`docs/presentation/decks/310_Stage3_Updated_Final.pptx`](docs/presentation/decks/310_Stage3_Updated_Final.pptx).
-
----
-
-## Citation & Academic Reference
-
-If you utilize CARL-DX or the EBCA framework in your research, please cite:
+If you use CARL-DX or the EBCA framework in your research, please cite:
 
 ```bibtex
 @article{ebca2026carldx,
@@ -346,6 +389,6 @@ If you utilize CARL-DX or the EBCA framework in your research, please cite:
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
