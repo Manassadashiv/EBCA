@@ -1,0 +1,436 @@
+{
+  "hitCount": 2,
+  "nextCursorMark": "",
+  "results": [
+    {
+      "id": "PPR970722",
+      "source": "PPR",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PPR970722"
+        ]
+      },
+      "doi": "10.1101/2025.01.25.634851",
+      "title": "Theta oscillations dictate the evolution of memories across periods of sleep or wakefulness",
+      "authorString": "Denis D, Chen Z, Kaur M, Clayden B, Schreiner T, Cairney SA.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Denis D",
+            "lastName": "Denis",
+            "firstName": "Dan",
+            "initials": "D",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-3740-7587"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Psychology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Chen Z",
+            "lastName": "Chen",
+            "firstName": "Zhiyi",
+            "initials": "Z",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0009-0009-3922-5083"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Psychology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Kaur M",
+            "lastName": "Kaur",
+            "firstName": "Manroop",
+            "initials": "M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Psychology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Clayden B",
+            "lastName": "Clayden",
+            "firstName": "Ben",
+            "initials": "B",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Psychology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Schreiner T",
+            "lastName": "Schreiner",
+            "firstName": "Thomas",
+            "initials": "T",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-2030-5998"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Psychology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Cairney SA",
+            "lastName": "Cairney",
+            "firstName": "Scott",
+            "initials": "SA",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-1135-6059"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Psychology, , ,"
+                },
+                {
+                  "affiliation": "York Biomedical Research Institute, , ,"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0002-1135-6059"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-2030-5998"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-3740-7587"
+          },
+          {
+            "type": "ORCID",
+            "value": "0009-0009-3922-5083"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics"
+        ]
+      },
+      "pubYear": "2025",
+      "abstractText": "Every day, we are exposed to an enormity of information. But how does the brain select which experiences to strengthen into long-term memories? Using scalp electroencephalography in human participants, we find evidence that memories are tagged at encoding for selective strengthening across sleep or wakefulness. For memories retained over sleep, this process was driven by 3-8 Hz theta rhythms at learning, with the magnitude of this theta response predicting the coupling of slow oscillations to sleep spindles in later sleep (an established neural correlate of sleep-dependent memory processing). In turn, slow oscillation-spindle coupling was associated with superior memory retention at a post-sleep test. These findings offer new insights into the neural mechanisms through which our brains determine which information is retained for the future.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2025
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "doi",
+            "site": "Unpaywall",
+            "url": "https://doi.org/10.1101/2025.01.25.634851"
+          },
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1101/2025.01.25.634851"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/article/PPR/PPR970722"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR970722&type=FILE&fileName=EMS202921-pdf.pdf&mimeType=application/pdf"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "Y",
+      "nihAuthMan": "N",
+      "manuscriptId": "EMS202921",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2025-01-28",
+      "firstPublicationDate": "2025-01-26",
+      "firstIndexDate": "2025-01-28",
+      "fullTextReceivedDate": "2025-12-15",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "PPR305107",
+      "source": "PPR",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PPR305107"
+        ]
+      },
+      "doi": "10.1101/2021.03.31.437408",
+      "title": "Mutual interaction between Visual Homeostatic Plasticity and Sleep in Adult Humans",
+      "authorString": "Menicucci D, Lunghi C, Zaccaro A, Morrone MC, Gemignani A.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Menicucci D",
+            "lastName": "Menicucci",
+            "firstName": "Danilo",
+            "initials": "D",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-5521-4108"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Surgical, Medical and Molecular Pathology and Critical Care, University of Pisa, Pisa, Italy"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Lunghi C",
+            "lastName": "Lunghi",
+            "firstName": "Claudia",
+            "initials": "C",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-3811-5404"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Laboratoire des Syst\u00e8mes Perceptifs, D\u00e9partement d\u2019\u00e9tudes Cognitives, \u00c9cole Normale Sup\u00e9rieure, PSL University, UMR 8248 CNRS, 75005 Paris, France"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zaccaro A",
+            "lastName": "Zaccaro",
+            "firstName": "Andrea",
+            "initials": "A",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-0409-7132"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Surgical, Medical and Molecular Pathology and Critical Care, University of Pisa, Pisa, Italy"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Morrone MC",
+            "lastName": "Morrone",
+            "firstName": "Maria Concetta",
+            "initials": "MC",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-1025-0316"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa, Pisa, Italy"
+                },
+                {
+                  "affiliation": "IRCCS Fondazione Stella Maris, Calambrone, Pisa, Italy"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Gemignani A",
+            "lastName": "Gemignani",
+            "firstName": "Angelo",
+            "initials": "A",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-7249-874X"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Surgical, Medical and Molecular Pathology and Critical Care, University of Pisa, Pisa, Italy"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-7249-874X"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-0409-7132"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-1025-0316"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-5521-4108"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-3811-5404"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics",
+          "recommended_reviews"
+        ]
+      },
+      "pubYear": "2021",
+      "abstractText": "Sleep and plasticity are highly interrelated, as sleep slow oscillations and sleep spindles are associated with consolidation of Hebbian-based processes. However, in adult humans, visual cortical plasticity is mainly sustained by homeostatic mechanisms, for which the role of sleep is still largely unknown. Here we demonstrate that non-REM sleep stabilizes homeostatic plasticity of ocular dominance induced in adult humans by short-term monocular deprivation: the counter intuitive and otherwise transient boost of the deprived eye was preserved at the morning awakening (>6 hours after deprivation). Subjects exhibiting a stronger boost of the deprived eye after sleep had increased sleep spindle density in frontopolar electrodes, suggesting the involvement of distributed processes. Crucially, the individual susceptibility to visual homeostatic plasticity soon after deprivation correlated with the changes in sleep slow oscillations and spindle power in occipital sites, consistent with a modulation in early occipital visual cortex.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2021
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "European Research Council",
+            "grantId": "338866",
+            "orderIn": 0
+          },
+          {
+            "agency": "European Research Council",
+            "grantId": "832813",
+            "orderIn": 0
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Unpaywall",
+            "url": "https://www.biorxiv.org/content/biorxiv/early/2022/06/21/2021.03.31.437408.full.pdf"
+          },
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1101/2021.03.31.437408"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/article/PPR/PPR305107"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR305107&type=FILE&fileName=EMS146415-pdf.pdf&mimeType=application/pdf"
+          }
+        ]
+      },
+      "commentCorrectionList": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "35972073",
+            "reference": "eLife. 2022 Aug;11:e70633",
+            "type": "Preprint of",
+            "note": "CrossRef Pre-print loader",
+            "orderIn": 10001
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "license": "cc by-nc-nd",
+      "authMan": "N",
+      "epmcAuthMan": "Y",
+      "nihAuthMan": "N",
+      "manuscriptId": "EMS146415",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2021-04-01",
+      "firstPublicationDate": "2021-03-31",
+      "firstIndexDate": "2021-04-01",
+      "fullTextReceivedDate": "2022-07-04",
+      "hasEvaluations": "Y"
+    }
+  ]
+}

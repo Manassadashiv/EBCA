@@ -1,0 +1,269 @@
+
+======================================================================
+TOPIC: 4.1_synaptic_plasticity
+======================================================================
+
+  Query: reward modulated spike timing dependent plasticity (10 papers)
+    * [OpenAlex|2013] Whatever next? Predictive brains, situated agents, and the future of cognitive science (Cited: 5867) | DOI: https://doi.org/10.1017/s0140525x12000477
+    * [OpenAlex|2019] The Microbiota-Gut-Brain Axis (Cited: 5155) | DOI: https://doi.org/10.1152/physrev.00018.2018
+    * [OpenAlex|2012] The origin of extracellular fields and currents — EEG, ECoG, LFP and spikes (Cited: 4203) | DOI: https://doi.org/10.1038/nrn3241
+    * [OpenAlex|2019] Continual lifelong learning with neural networks: A review (Cited: 3078) | DOI: https://doi.org/10.1016/j.neunet.2019.01.012
+    * [OpenAlex|2013] About Sleep's Role in Memory (Cited: 2770) | DOI: https://doi.org/10.1152/physrev.00032.2012
+    * [OpenAlex|2016] Building machines that learn and think like people (Cited: 2487) | DOI: https://doi.org/10.1017/s0140525x16001837
+    * [EuropePMC|2015] Hippocampal sharp wave-ripple: A cognitive biomarker for episodic memory and planning. (Cited: 1481) | DOI: 10.1002/hipo.22488
+    * [EuropePMC|2013] Cortical interneurons that specialize in disinhibitory control. (Cited: 1061) | DOI: 10.1038/nature12676
+    * [EuropePMC|2005] Theta rhythms coordinate hippocampal-prefrontal interactions in a spatial memory task. (Cited: 854) | DOI: 10.1371/journal.pbio.0030402
+    * [EuropePMC|2016] Mesolimbic dopamine signals the value of work. (Cited: 711) | DOI: 10.1038/nn.4173
+
+  Query: three factor learning rule neuromodulation eligibility traces (10 papers)
+    * [OpenAlex|2020] Synaptic Plasticity Forms and Functions (Cited: 795) | DOI: https://doi.org/10.1146/annurev-neuro-090919-022842
+    * [OpenAlex|2016] Toward an Integration of Deep Learning and Neuroscience (Cited: 658) | DOI: https://doi.org/10.3389/fncom.2016.00094
+    * [OpenAlex|2012] Neural Basis of Reinforcement Learning and Decision Making (Cited: 549) | DOI: https://doi.org/10.1146/annurev-neuro-062111-150512
+    * [OpenAlex|2010] Opponency Revisited: Competition and Cooperation Between Dopamine and Serotonin (Cited: 453) | DOI: https://doi.org/10.1038/npp.2010.151
+    * [OpenAlex|2019] A multidisciplinary European guideline for tinnitus: diagnostics, assessment, and treatment (Cited: 443) | DOI: https://doi.org/10.1007/s00106-019-0633-7
+    * [OpenAlex|2016] Neuromodulated Spike-Timing-Dependent Plasticity, and Theory of Three-Factor Learning Rules (Cited: 415) | DOI: https://doi.org/10.3389/fncir.2015.00085
+    * [EuropePMC|2016] Toward an Integration of Deep Learning and Neuroscience. (Cited: 276) | DOI: 10.3389/fncom.2016.00094
+    * [EuropePMC|2015] Neuromodulated Spike-Timing-Dependent Plasticity, and Theory of Three-Factor Learning Rules. (Cited: 224) | DOI: 10.3389/fncir.2015.00085
+    * [EuropePMC|2018] Eligibility Traces and Plasticity on Behavioral Time Scales: Experimental Support of NeoHebbian Three-Factor Learning Rules. (Cited: 214) | DOI: 10.3389/fncir.2018.00053
+    * [EuropePMC|2018] SuperSpike: Supervised Learning in Multilayer Spiking Neural Networks. (Cited: 179) | DOI: 10.1162/neco_a_01086
+
+  Query: homeostatic synaptic scaling Turrigiano stability (10 papers)
+    * [OpenAlex|2019] Continual lifelong learning with neural networks: A review (Cited: 3078) | DOI: https://doi.org/10.1016/j.neunet.2019.01.012
+    * [OpenAlex|2010] Microglial Interactions with Synapses Are Modulated by Visual Experience (Cited: 1537) | DOI: https://doi.org/10.1371/journal.pbio.1000527
+    * [OpenAlex|2011] Homeostatic Synaptic Plasticity: Local and Global Mechanisms for Stabilizing Neuronal Function (Cited: 1143) | DOI: https://doi.org/10.1101/cshperspect.a005736
+    * [OpenAlex|2015] Astrocytes Control Synapse Formation, Function, and Elimination (Cited: 835) | DOI: https://doi.org/10.1101/cshperspect.a020370
+    * [OpenAlex|2006] Arc/Arg3.1 Mediates Homeostatic Synaptic Scaling of AMPA Receptors (Cited: 776) | DOI: https://doi.org/10.1016/j.neuron.2006.08.034
+    * [OpenAlex|2014] All-optical electrophysiology in mammalian neurons using engineered microbial rhodopsins (Cited: 772) | DOI: https://doi.org/10.1038/nmeth.3000
+    * [EuropePMC|2021] Structure, Function, and Pharmacology of Glutamate Receptor Ion Channels. (Cited: 607) | DOI: 10.1124/pharmrev.120.000131
+    * [EuropePMC|2010] The Arc of synaptic memory. (Cited: 391) | DOI: 10.1007/s00221-009-1959-2
+    * [EuropePMC|2008] Phenomenological models of synaptic plasticity based on spike timing. (Cited: 324) | DOI: 10.1007/s00422-008-0233-1
+    * [EuropePMC|2016] Synaptopathies: synaptic dysfunction in neurological disorders - A review from students to students. (Cited: 317) | DOI: 10.1111/jnc.13713
+
+  Query: biological credit assignment backpropagation without gradient (10 papers)
+    * [OpenAlex|1992] Simple statistical gradient-following algorithms for connectionist reinforcement learning (Cited: 6992) | DOI: https://doi.org/10.1007/bf00992696
+    * [OpenAlex|1988] Learning to Predict by the Methods of Temporal Differences (Cited: 5081) | DOI: https://doi.org/10.1007/bf00115009
+    * [OpenAlex|2015] Unsupervised Learning of Video Representations using LSTMs (Cited: 1541) | DOI: https://doi.org/10.48550/arxiv.1502.04681
+    * [OpenAlex|1995] Learning to act using real-time dynamic programming (Cited: 1104) | DOI: https://doi.org/10.1016/0004-3702(94)00011-o
+    * [OpenAlex|2023] Deep learning modelling techniques: current progress, applications, advantages, and challenges (Cited: 1060) | DOI: https://doi.org/10.1007/s10462-023-10466-8
+    * [OpenAlex|2019] A deep learning framework for neuroscience (Cited: 1021) | DOI: https://doi.org/10.1038/s41593-019-0520-2
+    * [EuropePMC|2016] Toward an Integration of Deep Learning and Neuroscience. (Cited: 276) | DOI: 10.3389/fncom.2016.00094
+    * [EuropePMC|2017] Towards deep learning with segregated dendrites. (Cited: 236) | DOI: 10.7554/elife.22901
+    * [EuropePMC|2020] A solution to the learning dilemma for recurrent networks of spiking neurons. (Cited: 196) | DOI: 10.1038/s41467-020-17236-y
+    * [EuropePMC|2018] SuperSpike: Supervised Learning in Multilayer Spiking Neural Networks. (Cited: 179) | DOI: 10.1162/neco_a_01086
+
+======================================================================
+TOPIC: 4.2_hdc_episodic_memory
+======================================================================
+
+  Query: hyperdimensional computing episodic memory continual learning (7 papers)
+    * [OpenAlex|2024] A Comprehensive Survey of Continual Learning: Theory, Method and Application (Cited: 1068) | DOI: https://doi.org/10.1109/tpami.2024.3367329
+    * [OpenAlex|2023] A survey on few-shot class-incremental learning (Cited: 214) | DOI: https://doi.org/10.1016/j.neunet.2023.10.039
+    * [OpenAlex|2022] A Survey on Hyperdimensional Computing aka Vector Symbolic Architectures, Part II: Applications, Cognitive Models, and Challenges (Cited: 139) | DOI: https://doi.org/10.1145/3558000
+    * [OpenAlex|2025] Few-Shot Class-Incremental Learning for Classification and Object Detection: A Survey (Cited: 81) | DOI: https://doi.org/10.1109/tpami.2025.3529038
+    * [OpenAlex|1996] A Day in the Life of a Meme. (Cited: 69) | DOI: https://doi.org/10.21825/philosophica.82341
+    * [OpenAlex|2024] A Review of Brain-Inspired Cognition and Navigation Technology for Mobile Robots (Cited: 50) | DOI: https://doi.org/10.34133/cbsystems.0128
+    * [EuropePMC|2026] Convergence of Soft Electronics and Artificial Intelligence: From Materials to Intelligent Systems. (Cited: 0) | DOI: 10.1007/s40820-026-02265-x
+
+  Query: vector symbolic architecture catastrophic forgetting (10 papers)
+    * [OpenAlex|2006] Stanley: The robot that won the DARPA Grand Challenge (Cited: 2174) | DOI: https://doi.org/10.1002/rob.20147
+    * [OpenAlex|2022] A Metaverse: Taxonomy, Components, Applications, and Open Challenges (Cited: 1824) | DOI: https://doi.org/10.1109/access.2021.3140175
+    * [OpenAlex|2023] Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence (Cited: 1726) | DOI: https://doi.org/10.1016/j.inffus.2023.101805
+    * [OpenAlex|2026] A Survey of Large Language Models (Cited: 1542) | DOI: https://doi.org/10.1007/s11704-026-60308-3
+    * [OpenAlex|2020] Proceedings of the 28th International Conference on Computational Linguistics (Cited: 1420) | DOI: https://doi.org/10.18653/v1/2020.coling-main
+    * [OpenAlex|2018] An Introduction to Deep Reinforcement Learning (Cited: 1286) | DOI: https://doi.org/10.1561/2200000071
+    * [EuropePMC|2006] Generalization of motor learning depends on the history of prior action. (Cited: 170) | DOI: 10.1371/journal.pbio.0040316
+    * [EuropePMC|2025] Artificial intelligence in healthcare and medicine: clinical applications, therapeutic advances, and future perspectives. (Cited: 126) | DOI: 10.1186/s40001-025-03196-w
+    * [EuropePMC|2021] Deep Learning applications for COVID-19. (Cited: 96) | DOI: 10.1186/s40537-020-00392-9
+    * [EuropePMC|2025] Unleashing the potential of prompt engineering for large language models. (Cited: 74) | DOI: 10.1016/j.patter.2025.101260
+
+  Query: sparse distributed memory Kanerva associative memory (10 papers)
+    * [OpenAlex|2010] From Frequency to Meaning: Vector Space Models of Semantics (Cited: 2863) | DOI: https://doi.org/10.1613/jair.2934
+    * [OpenAlex|2013] The Arcade Learning Environment: An Evaluation Platform for General Agents (Cited: 1104) | DOI: https://doi.org/10.1613/jair.3912
+    * [OpenAlex|2020] Memory engrams: Recalling the past and imagining the future (Cited: 1081) | DOI: https://doi.org/10.1126/science.aaw4325
+    * [OpenAlex|1988] Sparse Distributed Memory (Cited: 958) | DOI: None
+    * [OpenAlex|1993] A neurobiological model of visual attention and invariant pattern recognition based on dynamic routing of information (Cited: 908) | DOI: https://doi.org/10.1523/jneurosci.13-11-04700.1993
+    * [OpenAlex|2018] Measuring Catastrophic Forgetting in Neural Networks (Cited: 653) | DOI: https://doi.org/10.1609/aaai.v32i1.11651
+    * [EuropePMC|2019] Robust computation with rhythmic spike patterns. (Cited: 25) | DOI: 10.1073/pnas.1902653116
+    * [EuropePMC|2020] Circuit and Cellular Mechanisms Facilitate the Transformation from Dense to Sparse Coding in the Insect Olfactory System. (Cited: 23) | DOI: 10.1523/eneuro.0305-18.2020
+    * [EuropePMC|2021] The anterior paired lateral neuron normalizes odour-evoked activity in the <i>Drosophila</i> mushroom body calyx. (Cited: 20) | DOI: 10.7554/elife.74172
+    * [EuropePMC|2017] The HTM Spatial Pooler-A Neocortical Algorithm for Online Sparse Distributed Coding. (Cited: 20) | DOI: 10.3389/fncom.2017.00111
+
+  Query: holographic reduced representations cognitive architecture (10 papers)
+    * [OpenAlex|2013] Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank (Cited: 6544) | DOI: https://doi.org/10.18653/v1/d13-1170
+    * [OpenAlex|2021] A Survey on Knowledge Graphs: Representation, Acquisition, and Applications (Cited: 2893) | DOI: https://doi.org/10.1109/tnnls.2021.3070843
+    * [OpenAlex|2020] Towards 6G wireless communication networks: vision, enabling technologies, and new paradigm shifts (Cited: 2025) | DOI: https://doi.org/10.1007/s11432-020-2955-6
+    * [OpenAlex|2018] Deep learning for sentiment analysis: A survey (Cited: 1928) | DOI: https://doi.org/10.1002/widm.1253
+    * [OpenAlex|2021] Knowledge Graphs (Cited: 1893) | DOI: https://doi.org/10.1145/3447772
+    * [OpenAlex|2020] 6G Wireless Communication Systems: Applications, Requirements, Technologies, Challenges, and Research Directions (Cited: 1854) | DOI: https://doi.org/10.1109/ojcoms.2020.3010270
+    * [EuropePMC|2021] Imaging intact human organs with local resolution of cellular structures using hierarchical phase-contrast tomography. (Cited: 221) | DOI: 10.1038/s41592-021-01317-x
+    * [EuropePMC|2008] A review of imaging techniques for systems biology. (Cited: 164) | DOI: 10.1186/1752-0509-2-74
+    * [EuropePMC|2013] Physical principles for scalable neural recording. (Cited: 162) | DOI: 10.3389/fncom.2013.00137
+    * [EuropePMC|2020] How many neurons are sufficient for perception of cortical activity? (Cited: 101) | DOI: 10.7554/elife.58889
+
+======================================================================
+TOPIC: 4.3_memory_consolidation_replay
+======================================================================
+
+  Query: hippocampal sharp wave ripples memory consolidation replay (10 papers)
+    * [OpenAlex|2013] About Sleep's Role in Memory (Cited: 2770) | DOI: https://doi.org/10.1152/physrev.00032.2012
+    * [OpenAlex|2015] Hippocampal sharp wave‐ripple: A cognitive biomarker for episodic memory and planning (Cited: 1750) | DOI: https://doi.org/10.1002/hipo.22488
+    * [OpenAlex|2020] Memory engrams: Recalling the past and imagining the future (Cited: 1081) | DOI: https://doi.org/10.1126/science.aaw4325
+    * [OpenAlex|2007] Neural Ensembles in CA3 Transiently Encode Paths Forward of the Animal at a Decision Point (Cited: 1002) | DOI: https://doi.org/10.1523/jneurosci.3761-07.2007
+    * [OpenAlex|1999] Replay and Time Compression of Recurring Spike Sequences in the Hippocampus (Cited: 935) | DOI: https://doi.org/10.1523/jneurosci.19-21-09497.1999
+    * [OpenAlex|2010] Coherent Theta Oscillations and Reorganization of Spike Timing in the Hippocampal- Prefrontal Network upon Learning (Cited: 874) | DOI: https://doi.org/10.1016/j.neuron.2010.05.013
+    * [EuropePMC|2015] Hippocampal sharp wave-ripple: A cognitive biomarker for episodic memory and planning. (Cited: 1481) | DOI: 10.1002/hipo.22488
+    * [EuropePMC|2015] Hierarchical nesting of slow oscillations, spindles and ripples in the human hippocampus during sleep. (Cited: 739) | DOI: 10.1038/nn.4119
+    * [EuropePMC|2009] Awake replay of remote experiences in the hippocampus. (Cited: 640) | DOI: 10.1038/nn.2344
+    * [EuropePMC|2018] The Role of Hippocampal Replay in Memory and Planning. (Cited: 322) | DOI: 10.1016/j.cub.2017.10.073
+
+  Query: complementary learning systems McClelland memory replay (10 papers)
+    * [OpenAlex|2013] Whatever next? Predictive brains, situated agents, and the future of cognitive science (Cited: 5867) | DOI: https://doi.org/10.1017/s0140525x12000477
+    * [OpenAlex|2019] Continual lifelong learning with neural networks: A review (Cited: 3078) | DOI: https://doi.org/10.1016/j.neunet.2019.01.012
+    * [OpenAlex|2016] Building machines that learn and think like people (Cited: 2487) | DOI: https://doi.org/10.1017/s0140525x16001837
+    * [OpenAlex|2005] Sleep-dependent memory consolidation (Cited: 1842) | DOI: https://doi.org/10.1038/nature04286
+    * [OpenAlex|1992] Self-improving reactive agents based on reinforcement learning, planning and teaching (Cited: 1564) | DOI: https://doi.org/10.1007/bf00992699
+    * [OpenAlex|2017] Toward a Rational and Mechanistic Account of Mental Effort (Cited: 1069) | DOI: https://doi.org/10.1146/annurev-neuro-072116-031526
+    * [EuropePMC|2015] Hippocampal sharp wave-ripple: A cognitive biomarker for episodic memory and planning. (Cited: 1481) | DOI: 10.1002/hipo.22488
+    * [EuropePMC|2009] A complementary systems account of word learning: neural and behavioural evidence. (Cited: 328) | DOI: 10.1098/rstb.2009.0111
+    * [EuropePMC|2012] Generalization through the recurrent interaction of episodic memories: a model of the hippocampal system. (Cited: 279) | DOI: 10.1037/a0028681
+    * [EuropePMC|2016] Toward an Integration of Deep Learning and Neuroscience. (Cited: 276) | DOI: 10.3389/fncom.2016.00094
+
+  Query: synaptic homeostasis hypothesis sleep Tononi Cirelli (10 papers)
+    * [OpenAlex|2013] About Sleep's Role in Memory (Cited: 2770) | DOI: https://doi.org/10.1152/physrev.00032.2012
+    * [OpenAlex|2007] Stress, Depression, and Neuroplasticity: A Convergence of Mechanisms (Cited: 1786) | DOI: https://doi.org/10.1038/sj.npp.1301574
+    * [OpenAlex|2016] The two‐process model of sleep regulation: a reappraisal (Cited: 1570) | DOI: https://doi.org/10.1111/jsr.12371
+    * [OpenAlex|2004] The Sleep Slow Oscillation as a Traveling Wave (Cited: 1220) | DOI: https://doi.org/10.1523/jneurosci.1318-04.2004
+    * [OpenAlex|2011] Human Disease Models in Drosophila melanogaster and the Role of the Fly in Therapeutic Drug Discovery (Cited: 1136) | DOI: https://doi.org/10.1124/pr.110.003293
+    * [OpenAlex|2020] Glymphatic failure as a final common pathway to dementia (Cited: 1125) | DOI: https://doi.org/10.1126/science.abb8739
+    * [EuropePMC|2015] Hippocampal sharp wave-ripple: A cognitive biomarker for episodic memory and planning. (Cited: 1481) | DOI: 10.1002/hipo.22488
+    * [EuropePMC|2008] Is sleep essential? (Cited: 434) | DOI: 10.1371/journal.pbio.0060216
+    * [EuropePMC|2016] Sleep deprivation causes memory deficits by negatively impacting neuronal connectivity in hippocampal area CA1. (Cited: 255) | DOI: 10.7554/elife.13424
+    * [EuropePMC|2014] Neuronal machinery of sleep homeostasis in Drosophila. (Cited: 225) | DOI: 10.1016/j.neuron.2013.12.013
+
+  Query: reverse replay neuromorphic offline learning (10 papers)
+    * [OpenAlex|2016] Building machines that learn and think like people (Cited: 2487) | DOI: https://doi.org/10.1017/s0140525x16001837
+    * [OpenAlex|2017] Event-Driven Random Back-Propagation: Enabling Neuromorphic Deep Learning Machines (Cited: 237) | DOI: https://doi.org/10.3389/fnins.2017.00324
+    * [OpenAlex|2022] Biological underpinnings for lifelong learning machines (Cited: 233) | DOI: https://doi.org/10.1038/s42256-022-00452-0
+    * [OpenAlex|2022] A survey on security in internet of things with a focus on the impact of emerging technologies (Cited: 198) | DOI: https://doi.org/10.1016/j.iot.2022.100564
+    * [OpenAlex|2021] The Versatile Wayfinder: Prefrontal Contributions to Spatial Navigation (Cited: 133) | DOI: https://doi.org/10.1016/j.tics.2021.02.010
+    * [OpenAlex|2022] Replay, the default mode network and the cascaded memory systems model (Cited: 126) | DOI: https://doi.org/10.1038/s41583-022-00620-6
+    * [EuropePMC|2016] 25th Annual Computational Neuroscience Meeting: CNS-2016. (Cited: 67) | DOI: 10.1186/s12868-016-0283-6
+    * [EuropePMC|2022] Sleep-like unsupervised replay reduces catastrophic forgetting in artificial neural networks. (Cited: 27) | DOI: 10.1038/s41467-022-34938-7
+    * [EuropePMC|2020] CARS 2020-Computer Assisted Radiology and Surgery Proceedings of the 34th International Congress and Exhibition, Munich, Germany, June 23-27, 2020. (Cited: 5) | DOI: 10.1007/s11548-020-02171-6
+    * [EuropePMC|2010] Cyber-workstation for computational neuroscience. (Cited: 5) | DOI: 10.3389/neuro.16.017.2009
+
+======================================================================
+TOPIC: 4.4_autopoiesis_lifelong_persistence
+======================================================================
+
+  Query: autopoiesis Maturana Varela living systems autonomy (10 papers)
+    * [OpenAlex|1993] Critical thinking assessment (Cited: 1093) | DOI: https://doi.org/10.1080/00405849309543594
+    * [OpenAlex|1995] A dynamical systems perspective on agent-environment interaction (Cited: 755) | DOI: https://doi.org/10.1016/0004-3702(94)00005-l
+    * [OpenAlex|2012] On assemblages and geography (Cited: 665) | DOI: https://doi.org/10.1177/2043820612449261
+    * [OpenAlex|2003] Developmental robotics: a survey (Cited: 624) | DOI: https://doi.org/10.1080/09540090310001655110
+    * [OpenAlex|2009] Globalization and Inequalities: Complexity and Contested Modernities (Cited: 591) | DOI: https://doi.org/10.4135/9781446269145
+    * [OpenAlex|2009] Defining Agency: Individuality, Normativity, Asymmetry, and Spatio-temporality in Action (Cited: 478) | DOI: https://doi.org/10.1177/1059712309343819
+    * [EuropePMC|2022] Technological Approach to Mind Everywhere: An Experimentally-Grounded Framework for Understanding Diverse Bodies and Minds. (Cited: 81) | DOI: 10.3389/fnsys.2022.768201
+    * [EuropePMC|2020] An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. (Cited: 55) | DOI: 10.3389/frai.2020.00030
+    * [EuropePMC|2014] The body social: an enactive approach to the self. (Cited: 49) | DOI: 10.3389/fpsyg.2014.00986
+    * [EuropePMC|2023] Interpersonal attunement in social interactions: from <i>collective</i> psychophysiology to <i>inter-</i><i>personalized</i> psychiatry and beyond. (Cited: 48) | DOI: 10.1098/rstb.2021.0365
+
+  Query: lifelong developmental robotics state persistence (10 papers)
+    * [OpenAlex|2025] The rise and potential of large language model based agents: a survey (Cited: 910) | DOI: https://doi.org/10.1007/s11432-024-4222-0
+    * [OpenAlex|2023] Obesity and type 2 diabetes mellitus: connections in epidemiology, pathogenesis, and treatments (Cited: 780) | DOI: https://doi.org/10.3389/fendo.2023.1161521
+    * [OpenAlex|2015] The Promise of the Maker Movement for Education (Cited: 756) | DOI: https://doi.org/10.7771/2157-9288.1099
+    * [OpenAlex|2013] Computer Science Curricula 2013: Curriculum Guidelines for Undergraduate Degree Programs in Computer Science (Cited: 730) | DOI: https://doi.org/10.1145/2534860
+    * [OpenAlex|2021] Preparing Workplaces for Digital Transformation: An Integrative Review and Framework of Multi-Level Factors (Cited: 594) | DOI: https://doi.org/10.3389/fpsyg.2021.620766
+    * [OpenAlex|2017] The Emerging Neuroscience of Intrinsic Motivation: A New Frontier in Self-Determination Research (Cited: 540) | DOI: https://doi.org/10.3389/fnhum.2017.00145
+    * [EuropePMC|2005] In vitro expanded human CD4+CD25+ regulatory T cells suppress effector T cell proliferation. (Cited: 141) | DOI: 10.1016/j.clim.2005.02.017
+    * [EuropePMC|2017] The Emerging Neuroscience of Intrinsic Motivation: A New Frontier in Self-Determination Research. (Cited: 138) | DOI: 10.3389/fnhum.2017.00145
+    * [EuropePMC|2023] Against cortical reorganisation. (Cited: 93) | DOI: 10.7554/elife.84716
+    * [EuropePMC|2025] Challenging Cognitive Load Theory: The Role of Educational Neuroscience and Artificial Intelligence in Redefining Learning Efficacy. (Cited: 61) | DOI: 10.3390/brainsci15020203
+
+  Query: dissipative structures self organization living systems (10 papers)
+    * [OpenAlex|2010] Emerging applications of stimuli-responsive polymer materials (Cited: 5707) | DOI: https://doi.org/10.1038/nmat2614
+    * [OpenAlex|2007] Typology of sociotechnical transition pathways (Cited: 5208) | DOI: https://doi.org/10.1016/j.respol.2007.01.003
+    * [OpenAlex|2007] Nanomaterials and nanoparticles: Sources and toxicity (Cited: 3786) | DOI: https://doi.org/10.1116/1.2815690
+    * [OpenAlex|2009] Impact of pesticides use in agriculture: their benefits and hazards (Cited: 3583) | DOI: https://doi.org/10.2478/v10102-009-0001-7
+    * [OpenAlex|2011] The Solar Dynamics Observatory (SDO) (Cited: 3468) | DOI: https://doi.org/10.1007/s11207-011-9841-3
+    * [OpenAlex|2008] Relative Income, Happiness, and Utility: An Explanation for the Easterlin Paradox and Other Puzzles (Cited: 3144) | DOI: https://doi.org/10.1257/jel.46.1.95
+    * [EuropePMC|2021] Current hydrogel advances in physicochemical and biological response-driven biomedical application diversity. (Cited: 835) | DOI: 10.1038/s41392-021-00830-x
+    * [EuropePMC|2014] The structure and dynamics of multilayer networks. (Cited: 792) | DOI: 10.1016/j.physrep.2014.07.001
+    * [EuropePMC|2019] Computational Modeling of Realistic Cell Membranes. (Cited: 552) | DOI: 10.1021/acs.chemrev.8b00460
+    * [EuropePMC|2013] Life as we know it. (Cited: 339) | DOI: 10.1098/rsif.2013.0475
+
+  Query: embodied cognitive architecture identity continuity (10 papers)
+    * [OpenAlex|2011] TOWARD A THEORY OF PARADOX: A DYNAMIC EQUILIBRIUM MODEL OF ORGANIZING. (Cited: 2891) | DOI: https://doi.org/10.5465/amr.2011.59330958
+    * [OpenAlex|2022] Metaverse beyond the hype: Multidisciplinary perspectives on emerging challenges, opportunities, and agenda for research, practice and policy (Cited: 2731) | DOI: https://doi.org/10.1016/j.ijinfomgt.2022.102542
+    * [OpenAlex|2016] Building machines that learn and think like people (Cited: 2487) | DOI: https://doi.org/10.1017/s0140525x16001837
+    * [OpenAlex|2023] On the Road to 6G: Visions, Requirements, Key Technologies, and Testbeds (Cited: 2330) | DOI: https://doi.org/10.1109/comst.2023.3249835
+    * [OpenAlex|1999] The Politics, Power, and Pathologies of International Organizations (Cited: 2113) | DOI: https://doi.org/10.1162/002081899551048
+    * [OpenAlex|2022] A Metaverse: Taxonomy, Components, Applications, and Open Challenges (Cited: 1824) | DOI: https://doi.org/10.1109/access.2021.3140175
+    * [EuropePMC|2008] The dynamic brain: from spiking neurons to neural masses and cortical fields. (Cited: 742) | DOI: 10.1371/journal.pcbi.1000092
+    * [EuropePMC|2016] Toward an Integration of Deep Learning and Neuroscience. (Cited: 276) | DOI: 10.3389/fncom.2016.00094
+    * [EuropePMC|2014] Autism, oxytocin and interoception. (Cited: 249) | DOI: 10.1016/j.neubiorev.2014.09.012
+    * [EuropePMC|2007] The empathic brain and its dysfunction in psychiatric populations: implications for intervention across different clinical conditions. (Cited: 205) | DOI: 10.1186/1751-0759-1-22
+
+======================================================================
+TOPIC: frontier_artificial_consciousness_emergence
+======================================================================
+
+  Query: integrated information theory consciousness Tononi (10 papers)
+    * [OpenAlex|2001] The magical number 4 in short-term memory: A reconsideration of mental storage capacity (Cited: 6767) | DOI: https://doi.org/10.1017/s0140525x01003922
+    * [OpenAlex|2009] Cortical Hubs Revealed by Intrinsic Functional Connectivity: Mapping, Assessment of Stability, and Relation to Alzheimer's Disease (Cited: 2856) | DOI: https://doi.org/10.1523/jneurosci.5062-08.2009
+    * [OpenAlex|2013] About Sleep's Role in Memory (Cited: 2770) | DOI: https://doi.org/10.1152/physrev.00032.2012
+    * [OpenAlex|2012] The brain basis of emotion: A meta-analytic review (Cited: 2306) | DOI: https://doi.org/10.1017/s0140525x11000446
+    * [OpenAlex|2004] An information integration theory of consciousness (Cited: 1715) | DOI: https://doi.org/10.1186/1471-2202-5-42
+    * [OpenAlex|2016] Integrated information theory: from consciousness to its physical substrate (Cited: 1713) | DOI: https://doi.org/10.1038/nrn.2016.44
+    * [EuropePMC|2015] Hippocampal sharp wave-ripple: A cognitive biomarker for episodic memory and planning. (Cited: 1481) | DOI: 10.1002/hipo.22488
+    * [EuropePMC|2004] An information integration theory of consciousness. (Cited: 787) | DOI: 10.1186/1471-2202-5-42
+    * [EuropePMC|2014] The entropic brain: a theory of conscious states informed by neuroimaging research with psychedelic drugs. (Cited: 716) | DOI: 10.3389/fnhum.2014.00020
+    * [EuropePMC|2019] REBUS and the Anarchic Brain: Toward a Unified Model of the Brain Action of Psychedelics. (Cited: 711) | DOI: 10.1124/pr.118.017160
+
+  Query: global neuronal workspace theory conscious access Dehaene (10 papers)
+    * [OpenAlex|2004] An information integration theory of consciousness (Cited: 1715) | DOI: https://doi.org/10.1186/1471-2202-5-42
+    * [OpenAlex|2008] Affective neuroscience of pleasure: reward in humans and animals (Cited: 1252) | DOI: https://doi.org/10.1007/s00213-008-1099-6
+    * [OpenAlex|2014] The hubs of the human connectome are generally implicated in the anatomy of brain disorders (Cited: 1161) | DOI: https://doi.org/10.1093/brain/awu132
+    * [OpenAlex|2010] Modular and Hierarchically Modular Organization of Brain Networks (Cited: 1155) | DOI: https://doi.org/10.3389/fnins.2010.00200
+    * [OpenAlex|2004] Brain function in coma, vegetative state, and related disorders (Cited: 1030) | DOI: https://doi.org/10.1016/s1474-4422(04)00852-x
+    * [OpenAlex|2016] Using Neuroscience to Help Understand Fear and Anxiety: A Two-System Framework (Cited: 1026) | DOI: https://doi.org/10.1176/appi.ajp.2016.16030353
+    * [EuropePMC|2010] Modular and hierarchically modular organization of brain networks. (Cited: 752) | DOI: 10.3389/fnins.2010.00200
+    * [EuropePMC|2007] Brain dynamics underlying the nonlinear threshold for access to consciousness. (Cited: 503) | DOI: 10.1371/journal.pbio.0050260
+    * [EuropePMC|2019] Human consciousness is supported by dynamic complex patterns of brain signal coordination. (Cited: 381) | DOI: 10.1126/sciadv.aat7603
+    * [EuropePMC|2009] Converging intracranial markers of conscious access. (Cited: 273) | DOI: 10.1371/journal.pbio.1000061
+
+  Query: active inference selfhood Markov blanket Friston (10 papers)
+    * [OpenAlex|2016] From cognitivism to autopoiesis: towards a computational framework for the embodied mind (Cited: 384) | DOI: https://doi.org/10.1007/s11229-016-1288-5
+    * [OpenAlex|2019] Thinking through other minds: A variational approach to cognition and culture (Cited: 344) | DOI: https://doi.org/10.1017/s0140525x19001213
+    * [OpenAlex|2019] The Hard Problem of Consciousness and the Free Energy Principle (Cited: 236) | DOI: https://doi.org/10.3389/fpsyg.2018.02714
+    * [OpenAlex|2018] Am I Self-Conscious? (Or Does Self-Organization Entail Self-Consciousness?) (Cited: 196) | DOI: https://doi.org/10.3389/fpsyg.2018.00579
+    * [OpenAlex|2020] Sentience and the Origins of Consciousness: From Cartesian Duality to Markovian Monism (Cited: 185) | DOI: https://doi.org/10.3390/e22050516
+    * [OpenAlex|2018] ‘Seeing the Dark’: Grounding Phenomenal Transparency and Opacity in Precision Estimation for Active Inference (Cited: 153) | DOI: https://doi.org/10.3389/fpsyg.2018.00643
+    * [EuropePMC|2018] From cognitivism to autopoiesis: towards a computational framework for the embodied mind. (Cited: 164) | DOI: 10.1007/s11229-016-1288-5
+    * [EuropePMC|2018] Am I Self-Conscious? (Or Does Self-Organization Entail Self-Consciousness?). (Cited: 93) | DOI: 10.3389/fpsyg.2018.00579
+    * [EuropePMC|2020] Sentience and the Origins of Consciousness: From Cartesian Duality to Markovian Monism. (Cited: 89) | DOI: 10.3390/e22050516
+    * [EuropePMC|2018] The Hard Problem of Consciousness and the Free Energy Principle. (Cited: 78) | DOI: 10.3389/fpsyg.2018.02714
+
+  Query: attention schema theory self modeling Graziano (10 papers)
+    * [OpenAlex|2005] The Brain's concepts: the role of the Sensory-motor system in conceptual knowledge (Cited: 2724) | DOI: https://doi.org/10.1080/02643290442000310
+    * [OpenAlex|2011] Taking Stock of Self-Control (Cited: 1685) | DOI: https://doi.org/10.1177/1088868311418749
+    * [OpenAlex|2008] Full-body illusions and minimal phenomenal selfhood (Cited: 1059) | DOI: https://doi.org/10.1016/j.tics.2008.10.003
+    * [OpenAlex|2005] Touching a Rubber Hand: Feeling of Body Ownership Is Associated with Activity in Multisensory Brain Areas (Cited: 783) | DOI: https://doi.org/10.1523/jneurosci.0800-05.2005
+    * [OpenAlex|2015] Over my fake body: body ownership illusions for studying the multisensory basis of own-body perception (Cited: 524) | DOI: https://doi.org/10.3389/fnhum.2015.00141
+    * [OpenAlex|2009] More than skin deep: Body representation beyond primary somatosensory cortex (Cited: 479) | DOI: https://doi.org/10.1016/j.neuropsychologia.2009.08.022
+    * [EuropePMC|2013] Re-evaluating the role of TPJ in attentional control: contextual updating? (Cited: 364) | DOI: 10.1016/j.neubiorev.2013.08.010
+    * [EuropePMC|2015] The attention schema theory: a mechanistic account of subjective awareness. (Cited: 69) | DOI: 10.3389/fpsyg.2015.00500
+    * [EuropePMC|2022] Human Mental Workload: A Survey and a Novel Inclusive Definition. (Cited: 63) | DOI: 10.3389/fpsyg.2022.883321
+    * [EuropePMC|2020] An Integrated World Modeling Theory (IWMT) of Consciousness: Combining Integrated Information and Global Neuronal Workspace Theories With the Free Energy Principle and Active Inference Framework; Toward Solving the Hard Problem and Characterizing Agentic Causation. (Cited: 55) | DOI: 10.3389/frai.2020.00030
+
+  Query: artificial consciousness criteria tests empirical (10 papers)
+    * [OpenAlex|2023] Aion Framework: Dimensional Emergence of AI Consciousness, Observer-Induced Collapse, and Cosmological Portal Dynamics (Cited: 13688) | DOI: https://doi.org/10.4230/lipics.giscience.2023.43
+    * [OpenAlex|2005] The Benefits of Frequent Positive Affect: Does Happiness Lead to Success? (Cited: 7126) | DOI: https://doi.org/10.1037/0033-2909.131.6.803
+    * [OpenAlex|2019] Systematic review of research on artificial intelligence applications in higher education – where are the educators? (Cited: 6944) | DOI: https://doi.org/10.1186/s41239-019-0171-0
+    * [OpenAlex|2001] The magical number 4 in short-term memory: A reconsideration of mental storage capacity (Cited: 6767) | DOI: https://doi.org/10.1017/s0140525x01003922
+    * [OpenAlex|1992] The Duality of Technology: Rethinking the Concept of Technology in Organizations (Cited: 4943) | DOI: https://doi.org/10.1287/orsc.3.3.398
+    * [OpenAlex|2023] Opinion Paper: “So what if ChatGPT wrote it?” Multidisciplinary perspectives on opportunities, challenges and implications of generative conversational AI for research, practice and policy (Cited: 4471) | DOI: https://doi.org/10.1016/j.ijinfomgt.2023.102642
+    * [EuropePMC|2013] Surviving Sepsis Campaign: international guidelines for management of severe sepsis and septic shock, 2012. (Cited: 2944) | DOI: 10.1007/s00134-012-2769-8
+    * [EuropePMC|2015] Hippocampal sharp wave-ripple: A cognitive biomarker for episodic memory and planning. (Cited: 1481) | DOI: 10.1002/hipo.22488
+    * [EuropePMC|2020] A rapid advice guideline for the diagnosis and treatment of 2019 novel coronavirus (2019-nCoV) infected pneumonia (standard version). (Cited: 1216) | DOI: 10.1186/s40779-020-0233-6
+    * [EuropePMC|2019] The European guideline on management of major bleeding and coagulopathy following trauma: fifth edition. (Cited: 764) | DOI: 10.1186/s13054-019-2347-3

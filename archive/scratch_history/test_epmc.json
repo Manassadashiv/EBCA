@@ -1,0 +1,1117 @@
+{
+  "hitCount": 109,
+  "nextCursorMark": "AoIIQP43Aig1NTE3MzkyOQ==",
+  "results": [
+    {
+      "id": "42591065",
+      "source": "MED",
+      "pmid": "42591065",
+      "pmcid": "PMC13470304",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC13470304"
+        ]
+      },
+      "doi": "10.1002/advs.77116",
+      "title": "Neuromorphic Devices and Computing for Sensing, Memory, and Control.",
+      "authorString": "Zhu Z, Schaffer N, Yang X.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Zhu Z",
+            "lastName": "Zhu",
+            "firstName": "Zhengguang",
+            "initials": "Z",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0009-0004-2315-806X"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Biomedical Engineering, Johns Hopkins University, Baltimore, Maryland, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Schaffer N",
+            "lastName": "Schaffer",
+            "firstName": "Nicholas",
+            "initials": "N",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0009-0001-7334-5451"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Biomedical Engineering, Johns Hopkins University, Baltimore, Maryland, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Yang X",
+            "lastName": "Yang",
+            "firstName": "Xiao",
+            "initials": "X",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-1504-4949"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Biomedical Engineering, Johns Hopkins University, Baltimore, Maryland, USA."
+                },
+                {
+                  "affiliation": "Department of Electrical and Computer Engineering, Johns Hopkins University, Baltimore, Maryland, USA."
+                },
+                {
+                  "affiliation": "Department of Materials Science and Engineering, Johns Hopkins University, Baltimore, Maryland, USA."
+                },
+                {
+                  "affiliation": "Center for MicroPhysiological Systems, Johns Hopkins University, Baltimore, Maryland, USA."
+                },
+                {
+                  "affiliation": "Translational Therapeutics and Regenerative Engineering Center, Johns Hopkins University, Baltimore, Maryland, USA."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0003-1504-4949"
+          },
+          {
+            "type": "ORCID",
+            "value": "0009-0001-7334-5451"
+          },
+          {
+            "type": "ORCID",
+            "value": "0009-0004-2315-806X"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "supporting_data"
+        ]
+      },
+      "journalInfo": {
+        "journalIssueId": 4236699,
+        "dateOfPublication": "2026 Aug",
+        "monthOfPublication": 8,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "Adv Sci (Weinh)",
+          "title": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+          "essn": "2198-3844",
+          "issn": "2198-3844",
+          "isoabbreviation": "Adv Sci (Weinh)",
+          "nlmid": "101664569"
+        },
+        "printPublicationDate": "2026-08-01"
+      },
+      "pubYear": "2026",
+      "pageInfo": "e77116",
+      "abstractText": "Neuromorphic devices are bioinspired electronic systems that mimic key structures and functions of the nervous system, enabling integration and communication between living tissues and machines. This review examines how neuromorphic devices and computing are designed to emulate the structure, organization, and function of the nervous system. For neuromorphic devices, we first describe strategies that mimic subcellular neural functions. We then highlight how device architecture recapitulates biological topology from subcellular components to brain networks. We next summarize how neuromorphic devices emulate sensory and sensorimotor (sensory-modulation) neural circuits. For neuromorphic computing, we review recent advances in artificial and biological neuromorphic computing, including spiking neural networks, bioinspired learning algorithms, and applications. We also discuss emerging biohybrid intelligence systems leveraging two- and three-dimensional biological networks as computational units. Finally, we outline key challenges, potential milestones, and future directions.",
+      "affiliation": "Department of Biomedical Engineering, Johns Hopkins University, Baltimore, Maryland, USA.",
+      "publicationStatus": "aheadofprint",
+      "language": "eng",
+      "pubModel": "Print-Electronic",
+      "pubTypeList": {
+        "pubType": [
+          "review-article",
+          "Review",
+          "Journal Article"
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "Maryland Stem Cell Research Fund Launch Program",
+            "orderIn": 0
+          },
+          {
+            "agency": "Johns Hopkins University Startup Fund",
+            "orderIn": 0
+          }
+        ]
+      },
+      "keywordList": {
+        "keyword": [
+          "Bioelectronics",
+          "Artificial neural Network",
+          "Brain\u2013computer Interface",
+          "Neuromorphic Hardware",
+          "Neuromorphic Engineering",
+          "Organoid",
+          "Biological Neural Network"
+        ]
+      },
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1002/advs.77116"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13470304"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13470304?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "doi"
+        ]
+      },
+      "dateOfCreation": "2026-08-13",
+      "dateOfRevision": "2026-08-15",
+      "electronicPublicationDate": "2026-08-13",
+      "firstPublicationDate": "2026-08-13",
+      "firstIndexDate": "2026-08-15",
+      "fullTextReceivedDate": "2026-09-09",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "41472829",
+      "source": "MED",
+      "pmid": "41472829",
+      "pmcid": "PMC12745983",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC12745983"
+        ]
+      },
+      "doi": "10.1016/j.patter.2025.101414",
+      "title": "Three-factor learning in spiking neural networks: An overview of methods and trends from a machine learning perspective.",
+      "authorString": "Mazurek S, Caputa J, Argasi\u0144ski JK, Wielgosz M.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Mazurek S",
+            "lastName": "Mazurek",
+            "firstName": "Szymon",
+            "initials": "S",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0009-0006-7557-0157"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Faculty of Computer Science, Electronics and Telecommunications, AGH University of Krakow, Adam Mickiewicz Avenue 30, 30-059 Krakow, Poland."
+                },
+                {
+                  "affiliation": "Academic Computer Centre Cyfronet AGH, Nawojki Street 11, 30-950 Krakow, Poland."
+                },
+                {
+                  "affiliation": "Sano - Centre for Computational Medicine, Czarnowiejska Street 36/C5, 30-054 Krakow, Poland."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Caputa J",
+            "lastName": "Caputa",
+            "firstName": "Jakub",
+            "initials": "J",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Faculty of Computer Science, Electronics and Telecommunications, AGH University of Krakow, Adam Mickiewicz Avenue 30, 30-059 Krakow, Poland."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Argasi\u0144ski JK",
+            "lastName": "Argasi\u0144ski",
+            "firstName": "Jan K",
+            "initials": "JK",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Human-Centered Artificial Intelligence, Jagiellonian University, Golebia Street 24, 31-007 Krakow, Poland."
+                },
+                {
+                  "affiliation": "Sano - Centre for Computational Medicine, Czarnowiejska Street 36/C5, 30-054 Krakow, Poland."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Wielgosz M",
+            "lastName": "Wielgosz",
+            "firstName": "Maciej",
+            "initials": "M",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-4401-2957"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Faculty of Computer Science, Electronics and Telecommunications, AGH University of Krakow, Adam Mickiewicz Avenue 30, 30-059 Krakow, Poland."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0002-4401-2957"
+          },
+          {
+            "type": "ORCID",
+            "value": "0009-0006-7557-0157"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics",
+          "supporting_data"
+        ]
+      },
+      "journalInfo": {
+        "issue": "12",
+        "volume": "6",
+        "journalIssueId": 4080541,
+        "dateOfPublication": "2025 Dec",
+        "monthOfPublication": 12,
+        "yearOfPublication": 2025,
+        "journal": {
+          "medlineAbbreviation": "Patterns (N Y)",
+          "title": "Patterns (New York, N.Y.)",
+          "essn": "2666-3899",
+          "issn": "2666-3899",
+          "isoabbreviation": "Patterns (N Y)",
+          "nlmid": "101767765"
+        },
+        "printPublicationDate": "2025-12-01"
+      },
+      "pubYear": "2025",
+      "pageInfo": "101414",
+      "abstractText": "Three-factor learning rules in spiking neural networks (SNNs) have emerged as a crucial extension of traditional Hebbian learning and spike-timing-dependent plasticity (STDP), incorporating neuromodulatory signals to improve adaptation and learning efficiency. These mechanisms enhance biological plausibility and facilitate improved credit assignment in artificial neural systems. This paper considers this topic from a machine learning perspective, providing an overview of recent advances in three-factor learning and discussing theoretical foundations, algorithmic implementations, and their relevance to reinforcement learning and neuromorphic computing. In addition, we explore interdisciplinary approaches, scalability challenges, and potential applications in robotics, cognitive modeling, and artificial intelligence (AI) systems. Finally, we highlight key research gaps and propose future directions for bridging the gap between neuroscience and AI.",
+      "affiliation": "Faculty of Computer Science, Electronics and Telecommunications, AGH University of Krakow, Adam Mickiewicz Avenue 30, 30-059 Krakow, Poland.",
+      "publicationStatus": "epublish",
+      "language": "eng",
+      "pubModel": "Electronic-eCollection",
+      "pubTypeList": {
+        "pubType": [
+          "review-article",
+          "Review",
+          "Journal Article"
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "Horizon 2020",
+            "grantId": "MEiN/2023/DIR/3796",
+            "orderIn": 0
+          },
+          {
+            "agency": "Foundation for Polish Science",
+            "orderIn": 0
+          },
+          {
+            "agency": "Horizon 2020 Framework Programme",
+            "grantId": "857533",
+            "orderIn": 0
+          },
+          {
+            "agency": "Ministerstwo Edukacji i Nauki",
+            "orderIn": 0
+          }
+        ]
+      },
+      "keywordList": {
+        "keyword": [
+          "Spiking Neural Networks",
+          "Credit Assignment",
+          "Neuromorphic Computing",
+          "Three-factor Learning",
+          "Biologically Inspired Learning"
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1016/j.patter.2025.101414"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC12745983"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC12745983?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 2,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "license": "cc by-nc-nd",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "doi"
+        ]
+      },
+      "dateOfCompletion": "2025-12-31",
+      "dateOfCreation": "2025-12-31",
+      "dateOfRevision": "2026-01-02",
+      "electronicPublicationDate": "2025-11-10",
+      "firstPublicationDate": "2025-11-10",
+      "firstIndexDate": "2026-01-02",
+      "fullTextReceivedDate": "2025-12-30",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "42340555",
+      "source": "MED",
+      "pmid": "42340555",
+      "pmcid": "PMC13294435",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC13294435"
+        ]
+      },
+      "doi": "10.1007/s40820-026-02253-1",
+      "title": "2D Materials Powering Neuromorphic Intelligence.",
+      "authorString": "Kazmi J, Ahmad W, Naqi M, Abbas Y, Abbas A, Wang P, Mohamed MA, Rosei F, Wang ZM, Song H.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Kazmi J",
+            "lastName": "Kazmi",
+            "firstName": "Jamal",
+            "initials": "J",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Physics, College of Sciences, Shanghai University, Shanghai, 200444, People's Republic of China. jamal_physics@shu.edu.cn."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ahmad W",
+            "lastName": "Ahmad",
+            "firstName": "Waqas",
+            "initials": "W",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-0938-9193"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Laboratory of 2D Optoelectronics and Nanoelectronics (L2DON), State Key Laboratory of Quantum and Functional Materials, Department of Materials Science and Engineering, Southern University of Science and Technology, 1088 Xueyuan Vlvd, Shenzhen, 518000, People's Republic of China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Naqi M",
+            "lastName": "Naqi",
+            "firstName": "Muhammad",
+            "initials": "M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "School of Engineering, Liverpool John Moores University, Liverpool, L3 3AF, UK."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Abbas Y",
+            "lastName": "Abbas",
+            "firstName": "Yawar",
+            "initials": "Y",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Electronic and Nanoscale Engineering Division, James Watt School of Engineering, University of Glasgow, Glasgow, G12 8QQ, Scotland, UK."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Abbas A",
+            "lastName": "Abbas",
+            "firstName": "Aumber",
+            "initials": "A",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Mechanical Engineering and Interdisciplinary Research Center for Hydrogen Technologies & Carbon Management, King Fahd University of Petroleum and Minerals (KFUPM), 31261, Dhahran, Saudi Arabia."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Wang P",
+            "lastName": "Wang",
+            "firstName": "Peijian",
+            "initials": "P",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Key Laboratory of Carbon Materials of Zhejiang Province, College of Chemistry and Materials Engineering, Wenzhou University, Wenzhou, 325035, People's Republic of China. pjwangpku@nus.edu.sg."
+                },
+                {
+                  "affiliation": "Materials Science and Engineering, National University of Singapore, Singapore, 138602, Singapore. pjwangpku@nus.edu.sg."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Mohamed MA",
+            "lastName": "Mohamed",
+            "firstName": "Mohd Ambri",
+            "initials": "MA",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Microengineering and Nanoelectronics (IMEN), Universiti Kebangsaan Malaysia (UKM), 43600, Bangi, Selangor, Malaysia. ambri@ukm.edu.my."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Rosei F",
+            "lastName": "Rosei",
+            "firstName": "Federico",
+            "initials": "F",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Chemical and Pharmaceutical Sciences, University of Trieste, Via Gorgerin 1, 34127, Trieste, Italy. federico.rosei@units.it."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Wang ZM",
+            "lastName": "Wang",
+            "firstName": "Zhiming M",
+            "initials": "ZM",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "The School of Physics, University of Electronic Science and Technology of China, Chengdu, 611731, People's Republic of China. zhmwang@uestc.edu.cn."
+                },
+                {
+                  "affiliation": "Shimmer Center, Tianfu Jiangxi Laboratory, Chengdu, 641419, People's Republic of China. zhmwang@uestc.edu.cn."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Song H",
+            "lastName": "Song",
+            "firstName": "Hongwei",
+            "initials": "H",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Physics, College of Sciences, Shanghai University, Shanghai, 200444, People's Republic of China. songhw@jlu.edu.cn."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0002-0938-9193"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-8663-7824"
+          }
+        ]
+      },
+      "journalInfo": {
+        "issue": "1",
+        "volume": "18",
+        "journalIssueId": 4204344,
+        "dateOfPublication": "2026 Jun",
+        "monthOfPublication": 6,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "Nanomicro Lett",
+          "title": "Nano-micro letters",
+          "essn": "2150-5551",
+          "issn": "2311-6706",
+          "isoabbreviation": "Nanomicro Lett",
+          "nlmid": "101727940"
+        },
+        "printPublicationDate": "2026-06-01"
+      },
+      "pubYear": "2026",
+      "pageInfo": "413",
+      "abstractText": "The exponential demand for energy-efficient and adaptive computing architectures drives the evolution of artificial intelligence (AI) and machine learning (ML). Neuromorphic computing, inspired by biological neural networks, overcomes the limitations of traditional von Neumann architectures, including high energy consumption and limited scalability. The introduction of two-dimensional (2D) materials, such as transition metal dichalcogenides, hexagonal boron nitride, black phosphorus, and tellurene, enables neuromorphic devices with unprecedented control over electronic and optoelectronic properties. These materials exhibit atomic-scale thickness, high carrier mobility, and tunable bandgaps, facilitating synaptic behaviours such as spike-timing-dependent plasticity and paired-pulse facilitation. This review describes the integration of 2D materials into neuromorphic systems, highlighting applications in wearable electronics, brain-machine interfaces, and quantum neuromorphic platforms. In wearable and edge computing, 2D-based devices enable localized, ultra-low-power data processing. In brain-machine interfaces, they enhance signal transduction and neural interfacing. Quantum effects in 2D materials further enable hybrid quantum-classical neuromorphic architectures for high-dimensional computational tasks. Despite significant advances, challenges in reproducibility, scalability, and stability remain. Addressing these limitations through innovations in synthesis and defect passivation is essential for practical application. This review underscores the transformative potential of 2D-material-based neuromorphic computing for energy-efficient AI. Integration of 2D materials into neuromorphic computing architectures offers a promising pathway toward energy-efficient and adaptive systems that bridge biological learning mechanisms with machine intelligence.",
+      "affiliation": "Department of Physics, College of Sciences, Shanghai University, Shanghai, 200444, People's Republic of China. jamal_physics@shu.edu.cn.",
+      "publicationStatus": "epublish",
+      "language": "eng",
+      "pubModel": "Electronic",
+      "pubTypeList": {
+        "pubType": [
+          "review-article",
+          "Review",
+          "Journal Article"
+        ]
+      },
+      "keywordList": {
+        "keyword": [
+          "Transition Metal Dichalcogenides",
+          "Artificial Synaptic Devices",
+          "2D Neuromorphic Computing",
+          "Machine-learning Integration",
+          "Quantum-inspired Neuromorphics"
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1007/s40820-026-02253-1"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13294435"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13294435?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "N",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCompletion": "2026-06-24",
+      "dateOfCreation": "2026-06-24",
+      "dateOfRevision": "2026-09-22",
+      "electronicPublicationDate": "2026-06-24",
+      "firstPublicationDate": "2026-06-24",
+      "firstIndexDate": "2026-06-25",
+      "fullTextReceivedDate": "2026-06-27",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "42625007",
+      "source": "MED",
+      "pmid": "42625007",
+      "pmcid": "PMC13493818",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC13493818"
+        ]
+      },
+      "doi": "10.1038/s44385-026-00074-w",
+      "title": "Towards neuromorphic neurotechnologies: integrating brain-inspired computing with brain-computer interfaces.",
+      "authorString": "Fares H, Ronchini M, Zamani M, Farkhani H, Chiappalone M, Neftci E, Moradi F.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Fares H",
+            "lastName": "Fares",
+            "firstName": "Hoda",
+            "initials": "H",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-0460-7611"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Bao Group, Department of Chemical Engineering, Stanford University, Stanford, CA, USA. hfares@ece.au.dk."
+                },
+                {
+                  "affiliation": "Department of Electrical and Computer Engineering, Aarhus University, Aarhus, Denmark. hfares@ece.au.dk."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ronchini M",
+            "lastName": "Ronchini",
+            "firstName": "Margherita",
+            "initials": "M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Electrical and Computer Engineering, Aarhus University, Aarhus, Denmark."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zamani M",
+            "lastName": "Zamani",
+            "firstName": "Milad",
+            "initials": "M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Mechanical and Electrical Engineering, University of Southern Denmark, Odense, Denmark."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Farkhani H",
+            "lastName": "Farkhani",
+            "firstName": "Hooman",
+            "initials": "H",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Mechanical and Electrical Engineering, University of Southern Denmark, Odense, Denmark."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Chiappalone M",
+            "lastName": "Chiappalone",
+            "firstName": "Michela",
+            "initials": "M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Informatics, Bioengineering, Robotics and Systems Engineering, University of Genova, Genova, Italy."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Neftci E",
+            "lastName": "Neftci",
+            "firstName": "Emre",
+            "initials": "E",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Peter Gr\u00fcnberg Institute, Forschungszentrum J\u00fclich GmbH, J\u00fclich, Germany."
+                },
+                {
+                  "affiliation": "RWTH Aachen University, Aachen, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Moradi F",
+            "lastName": "Moradi",
+            "firstName": "Farshad",
+            "initials": "F",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Mechanical and Electrical Engineering, University of Southern Denmark, Odense, Denmark. hfares@stanford.edu."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0003-0460-7611"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "supporting_data"
+        ]
+      },
+      "journalInfo": {
+        "issue": "1",
+        "volume": "3",
+        "journalIssueId": 4238033,
+        "dateOfPublication": "2026 Aug",
+        "monthOfPublication": 8,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "NPJ Biomed Innov",
+          "title": "npj biomedical innovations",
+          "essn": "3005-1444",
+          "issn": "3005-1444",
+          "isoabbreviation": "NPJ Biomed Innov",
+          "nlmid": "9918994495106676"
+        },
+        "printPublicationDate": "2026-08-01"
+      },
+      "pubYear": "2026",
+      "pageInfo": "51",
+      "abstractText": "Neurological disorders pose a growing global health burden, motivating advances in neural interfacing and artificial intelligence (AI). This review surveys state-of-the-art approaches for neural recording, stimulation and signal decoding and encoding across brain-computer interfaces, neuroprosthetics, and neuromodulation systems aimed at restoring function and treating neurological disorders. It highlights recent progress in AI, particularly neuromorphic computing and spiking neural networks (SNNs), and introduces Brain-Inspired Brain-Computer Interfaces (BI-BCIs) as a unifying framework for low-power, closed-loop, and miniaturized neuromorphic neurotechnologies.",
+      "affiliation": "Bao Group, Department of Chemical Engineering, Stanford University, Stanford, CA, USA. hfares@ece.au.dk.",
+      "publicationStatus": "epublish",
+      "language": "eng",
+      "pubModel": "Electronic",
+      "pubTypeList": {
+        "pubType": [
+          "review-article",
+          "Review",
+          "Journal Article"
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "European Union's Horizon 2020 research and innovation program",
+            "grantId": "No 767092",
+            "orderIn": 0
+          },
+          {
+            "agency": "Lundbeck Foundation",
+            "grantId": "R402-2022-1413",
+            "orderIn": 0
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1038/s44385-026-00074-w"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13493818"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC13493818?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "N",
+      "hasData": "Y",
+      "license": "cc by-nc-nd",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "doi"
+        ]
+      },
+      "dateOfCompletion": "2026-08-21",
+      "dateOfCreation": "2026-08-21",
+      "dateOfRevision": "2026-08-23",
+      "electronicPublicationDate": "2026-08-20",
+      "firstPublicationDate": "2026-08-20",
+      "firstIndexDate": "2026-08-22",
+      "fullTextReceivedDate": "2026-09-10",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "41868567",
+      "source": "MED",
+      "pmid": "41868567",
+      "pmcid": "PMC12999960",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC12999960"
+        ]
+      },
+      "doi": "10.3389/fnbot.2026.1757795",
+      "title": "SpikeAEC: a neuromodulation-based spiking controller for explore-exploit balancing in mobile robots.",
+      "authorString": "Liu C, Liu Y, Zhou Y, Su B.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Liu C",
+            "lastName": "Liu",
+            "firstName": "Canyang",
+            "initials": "C",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "School of Artificial Intelligence, Nanjing University of Information Science and Technology, Nanjing, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Liu Y",
+            "lastName": "Liu",
+            "firstName": "Yichen",
+            "initials": "Y",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "School of Artificial Intelligence, Nanjing University of Information Science and Technology, Nanjing, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zhou Y",
+            "lastName": "Zhou",
+            "firstName": "Yongqi",
+            "initials": "Y",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0009-0004-8834-4883"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "School of Electronics and Information Engineering, Nanjing University of Information Science and Technology, Nanjing, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Su B",
+            "lastName": "Su",
+            "firstName": "Buqin",
+            "initials": "B",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "School of Computing, Nanjing University of Information Science and Technology, Nanjing, China."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0009-0004-8834-4883"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics",
+          "supporting_data"
+        ]
+      },
+      "journalInfo": {
+        "volume": "20",
+        "journalIssueId": 4123247,
+        "dateOfPublication": "2026 ",
+        "monthOfPublication": 0,
+        "yearOfPublication": 2026,
+        "journal": {
+          "medlineAbbreviation": "Front Neurorobot",
+          "title": "Frontiers in neurorobotics",
+          "essn": "1662-5218",
+          "issn": "1662-5218",
+          "isoabbreviation": "Front Neurorobot",
+          "nlmid": "101477958"
+        },
+        "printPublicationDate": "2026-01-01"
+      },
+      "pubYear": "2026",
+      "pageInfo": "1757795",
+      "abstractText": "Balancing exploration and exploitation remains a fundamental challenge in reliable mobile robot control, as conventional policies often converge on suboptimal behaviors. Inspired by the brain's division of labor for adaptive control, we propose SpikeAEC, a fully spiking, neuromodulated Actor-Explorer-Critic architecture designed to address this dilemma online within a closed-loop system. SpikeAEC comprises three specialized subnetworks operating in parallel: the Actor, inspired by the basal ganglia, proposes exploitative actions; the Explorer, modeled after the ACC-GPe-STN pathway, generates adaptive exploratory actions gated by a vigilance signal modulated by the accumulated global temporal-difference (TD) error; and the Critic, based on the ventral striatum, computes the TD error. The final action is selected by a separate, TAN-based Arbitrator, which probabilistically chooses between the Actor's and Explorer's action proposals according to recent performance and the TD error. These subnetworks are coupled through a unified three-factor learning framework that uses the TD signal and phasic neuromodulators (acetylcholine and dopamine) from the Arbitrator to drive pathway-specific synaptic plasticity. This online plasticity enhances the quality of action proposals and accelerates policy refinement. In simulation, SpikeAEC outperforms leading brain-inspired methods by converging 24% faster, reducing trajectory length by 18%, and increasing cumulative reward by over 5% against the top-performing baseline, all while maintaining consistency with established neurophysiological principles.",
+      "affiliation": "School of Artificial Intelligence, Nanjing University of Information Science and Technology, Nanjing, China.",
+      "publicationStatus": "epublish",
+      "language": "eng",
+      "pubModel": "Electronic-eCollection",
+      "pubTypeList": {
+        "pubType": [
+          "research-article",
+          "Journal Article"
+        ]
+      },
+      "keywordList": {
+        "keyword": [
+          "Neuromodulation",
+          "Exploration-exploitation Dilemma",
+          "Three-factor Learning Rules",
+          "Spiking Neural Networks (Snns)",
+          "Actor-Explorer-Critic"
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.3389/fnbot.2026.1757795"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC12999960"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC12999960?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "doi"
+        ]
+      },
+      "dateOfCompletion": "2026-03-23",
+      "dateOfCreation": "2026-03-23",
+      "dateOfRevision": "2026-08-13",
+      "electronicPublicationDate": "2026-03-05",
+      "firstPublicationDate": "2026-03-05",
+      "firstIndexDate": "2026-03-23",
+      "fullTextReceivedDate": "2026-03-20",
+      "hasEvaluations": "N"
+    }
+  ]
+}

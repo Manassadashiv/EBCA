@@ -1,0 +1,2718 @@
+{
+  "hitCount": 2115,
+  "nextCursorMark": "AoJcLygzOTY5MDE3Nw==",
+  "results": [
+    {
+      "id": "23361625",
+      "source": "MED",
+      "pmid": "23361625",
+      "pmcid": "PMC7095153",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC7095153"
+        ]
+      },
+      "doi": "10.1007/s00134-012-2769-8",
+      "title": "Surviving Sepsis Campaign: international guidelines for management of severe sepsis and septic shock, 2012.",
+      "authorString": "Dellinger RP, Levy MM, Rhodes A, Annane D, Gerlach H, Opal SM, Sevransky JE, Sprung CL, Douglas IS, Jaeschke R, Osborn TM, Nunnally ME, Townsend SR, Reinhart K, Kleinpell RM, Angus DC, Deutschman CS, Machado FR, Rubenfeld GD, Webb S, Beale RJ, Vincent JL, Moreno R, Surviving Sepsis Campaign Guidelines Committee including The Pediatric Subgroup.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Dellinger RP",
+            "lastName": "Dellinger",
+            "firstName": "R P",
+            "initials": "RP",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Cooper University Hospital, Camden, NJ, USA. Dellinger-Phil@CooperHealth.edu"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Levy MM",
+            "lastName": "Levy",
+            "firstName": "Mitchell M",
+            "initials": "MM"
+          },
+          {
+            "fullName": "Rhodes A",
+            "lastName": "Rhodes",
+            "firstName": "Andrew",
+            "initials": "A"
+          },
+          {
+            "fullName": "Annane D",
+            "lastName": "Annane",
+            "firstName": "Djillali",
+            "initials": "D"
+          },
+          {
+            "fullName": "Gerlach H",
+            "lastName": "Gerlach",
+            "firstName": "Herwig",
+            "initials": "H"
+          },
+          {
+            "fullName": "Opal SM",
+            "lastName": "Opal",
+            "firstName": "Steven M",
+            "initials": "SM"
+          },
+          {
+            "fullName": "Sevransky JE",
+            "lastName": "Sevransky",
+            "firstName": "Jonathan E",
+            "initials": "JE"
+          },
+          {
+            "fullName": "Sprung CL",
+            "lastName": "Sprung",
+            "firstName": "Charles L",
+            "initials": "CL"
+          },
+          {
+            "fullName": "Douglas IS",
+            "lastName": "Douglas",
+            "firstName": "Ivor S",
+            "initials": "IS"
+          },
+          {
+            "fullName": "Jaeschke R",
+            "lastName": "Jaeschke",
+            "firstName": "Roman",
+            "initials": "R"
+          },
+          {
+            "fullName": "Osborn TM",
+            "lastName": "Osborn",
+            "firstName": "Tiffany M",
+            "initials": "TM"
+          },
+          {
+            "fullName": "Nunnally ME",
+            "lastName": "Nunnally",
+            "firstName": "Mark E",
+            "initials": "ME"
+          },
+          {
+            "fullName": "Townsend SR",
+            "lastName": "Townsend",
+            "firstName": "Sean R",
+            "initials": "SR"
+          },
+          {
+            "fullName": "Reinhart K",
+            "lastName": "Reinhart",
+            "firstName": "Konrad",
+            "initials": "K"
+          },
+          {
+            "fullName": "Kleinpell RM",
+            "lastName": "Kleinpell",
+            "firstName": "Ruth M",
+            "initials": "RM"
+          },
+          {
+            "fullName": "Angus DC",
+            "lastName": "Angus",
+            "firstName": "Derek C",
+            "initials": "DC"
+          },
+          {
+            "fullName": "Deutschman CS",
+            "lastName": "Deutschman",
+            "firstName": "Clifford S",
+            "initials": "CS"
+          },
+          {
+            "fullName": "Machado FR",
+            "lastName": "Machado",
+            "firstName": "Flavia R",
+            "initials": "FR"
+          },
+          {
+            "fullName": "Rubenfeld GD",
+            "lastName": "Rubenfeld",
+            "firstName": "Gordon D",
+            "initials": "GD"
+          },
+          {
+            "fullName": "Webb S",
+            "lastName": "Webb",
+            "firstName": "Steven",
+            "initials": "S"
+          },
+          {
+            "fullName": "Beale RJ",
+            "lastName": "Beale",
+            "firstName": "Richard J",
+            "initials": "RJ"
+          },
+          {
+            "fullName": "Vincent JL",
+            "lastName": "Vincent",
+            "firstName": "Jean-Louis",
+            "initials": "JL"
+          },
+          {
+            "fullName": "Moreno R",
+            "lastName": "Moreno",
+            "firstName": "Rui",
+            "initials": "R"
+          },
+          {
+            "collectiveName": "Surviving Sepsis Campaign Guidelines Committee including The Pediatric Subgroup"
+          }
+        ]
+      },
+      "investigatorList": {
+        "investigator": [
+          {
+            "fullName": "Dellinger R",
+            "lastName": "Dellinger",
+            "firstName": "R  Phillip",
+            "initials": "R"
+          },
+          {
+            "fullName": "Moreno R",
+            "lastName": "Moreno",
+            "firstName": "Rui",
+            "initials": "R"
+          },
+          {
+            "fullName": "Aitken L",
+            "lastName": "Aitken",
+            "firstName": "Leanne",
+            "initials": "L"
+          },
+          {
+            "fullName": "Rahma HA",
+            "lastName": "Rahma",
+            "firstName": "Hussain Al",
+            "initials": "HA"
+          },
+          {
+            "fullName": "Angus DC",
+            "lastName": "Angus",
+            "firstName": "Derek C",
+            "initials": "DC"
+          },
+          {
+            "fullName": "Annane D",
+            "lastName": "Annane",
+            "firstName": "Dijillali",
+            "initials": "D"
+          },
+          {
+            "fullName": "Beale RJ",
+            "lastName": "Beale",
+            "firstName": "Richard J",
+            "initials": "RJ"
+          },
+          {
+            "fullName": "Bernard GR",
+            "lastName": "Bernard",
+            "firstName": "Gordon R",
+            "initials": "GR"
+          },
+          {
+            "fullName": "Biban P",
+            "lastName": "Biban",
+            "firstName": "Paolo",
+            "initials": "P"
+          },
+          {
+            "fullName": "Bion JF",
+            "lastName": "Bion",
+            "firstName": "Julian F",
+            "initials": "JF",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-0344-5403"
+            }
+          },
+          {
+            "fullName": "Calandra T",
+            "lastName": "Calandra",
+            "firstName": "Thierry",
+            "initials": "T"
+          },
+          {
+            "fullName": "Carcillo JA",
+            "lastName": "Carcillo",
+            "firstName": "Joseph A",
+            "initials": "JA"
+          },
+          {
+            "fullName": "Clemmer TP",
+            "lastName": "Clemmer",
+            "firstName": "Terry P",
+            "initials": "TP"
+          },
+          {
+            "fullName": "Deutschman CS",
+            "lastName": "Deutschman",
+            "firstName": "Clifford S",
+            "initials": "CS"
+          },
+          {
+            "fullName": "Divatia JV",
+            "lastName": "Divatia",
+            "firstName": "J V",
+            "initials": "JV"
+          },
+          {
+            "fullName": "Douglas IS",
+            "lastName": "Douglas",
+            "firstName": "Ivor S",
+            "initials": "IS"
+          },
+          {
+            "fullName": "Du B",
+            "lastName": "Du",
+            "firstName": "Bin",
+            "initials": "B"
+          },
+          {
+            "fullName": "Fujishima S",
+            "lastName": "Fujishima",
+            "firstName": "Seitaro",
+            "initials": "S",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-8823-8440"
+            }
+          },
+          {
+            "fullName": "Gando S",
+            "lastName": "Gando",
+            "firstName": "Satoshi",
+            "initials": "S"
+          },
+          {
+            "fullName": "Gerlach H",
+            "lastName": "Gerlach",
+            "firstName": "Herwig",
+            "initials": "H"
+          },
+          {
+            "fullName": "Goodyear-Bruch C",
+            "lastName": "Goodyear-Bruch",
+            "firstName": "Caryl",
+            "initials": "C"
+          },
+          {
+            "fullName": "Guyatt G",
+            "lastName": "Guyatt",
+            "firstName": "Gordon",
+            "initials": "G"
+          },
+          {
+            "fullName": "Hazelzet JA",
+            "lastName": "Hazelzet",
+            "firstName": "Jan A",
+            "initials": "JA"
+          },
+          {
+            "fullName": "Hirasawa H",
+            "lastName": "Hirasawa",
+            "firstName": "Hiroyuki",
+            "initials": "H"
+          },
+          {
+            "fullName": "Hollenberg SM",
+            "lastName": "Hollenberg",
+            "firstName": "Steven M",
+            "initials": "SM"
+          },
+          {
+            "fullName": "Jacobi J",
+            "lastName": "Jacobi",
+            "firstName": "Judith",
+            "initials": "J",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-2421-0734"
+            }
+          },
+          {
+            "fullName": "Jaeschke R",
+            "lastName": "Jaeschke",
+            "firstName": "Roman",
+            "initials": "R"
+          },
+          {
+            "fullName": "Jenkins I",
+            "lastName": "Jenkins",
+            "firstName": "Ian",
+            "initials": "I"
+          },
+          {
+            "fullName": "Jimenez E",
+            "lastName": "Jimenez",
+            "firstName": "Edgar",
+            "initials": "E"
+          },
+          {
+            "fullName": "Jones AE",
+            "lastName": "Jones",
+            "firstName": "Alan E",
+            "initials": "AE"
+          },
+          {
+            "fullName": "Kacmarek RM",
+            "lastName": "Kacmarek",
+            "firstName": "Robert M",
+            "initials": "RM"
+          },
+          {
+            "fullName": "Kern W",
+            "lastName": "Kern",
+            "firstName": "Winfried",
+            "initials": "W"
+          },
+          {
+            "fullName": "Kleinpell RM",
+            "lastName": "Kleinpell",
+            "firstName": "Ruth M",
+            "initials": "RM"
+          },
+          {
+            "fullName": "Koh SO",
+            "lastName": "Koh",
+            "firstName": "Shin Ok",
+            "initials": "SO"
+          },
+          {
+            "fullName": "Kotani J",
+            "lastName": "Kotani",
+            "firstName": "Joji",
+            "initials": "J"
+          },
+          {
+            "fullName": "Levy M",
+            "lastName": "Levy",
+            "firstName": "Mitchell",
+            "initials": "M"
+          },
+          {
+            "fullName": "Machado F",
+            "lastName": "Machado",
+            "firstName": "Flavia",
+            "initials": "F"
+          },
+          {
+            "fullName": "Marini J",
+            "lastName": "Marini",
+            "firstName": "John",
+            "initials": "J"
+          },
+          {
+            "fullName": "Marshall JC",
+            "lastName": "Marshall",
+            "firstName": "John C",
+            "initials": "JC"
+          },
+          {
+            "fullName": "Masur H",
+            "lastName": "Masur",
+            "firstName": "Henry",
+            "initials": "H"
+          },
+          {
+            "fullName": "Mehta S",
+            "lastName": "Mehta",
+            "firstName": "Sangeeta",
+            "initials": "S"
+          },
+          {
+            "fullName": "Muscedere J",
+            "lastName": "Muscedere",
+            "firstName": "John",
+            "initials": "J"
+          },
+          {
+            "fullName": "Napolitano LM",
+            "lastName": "Napolitano",
+            "firstName": "Lena M",
+            "initials": "LM"
+          },
+          {
+            "fullName": "Nunnally ME",
+            "lastName": "Nunnally",
+            "firstName": "Mark E",
+            "initials": "ME"
+          },
+          {
+            "fullName": "Opal SM",
+            "lastName": "Opal",
+            "firstName": "Steven M",
+            "initials": "SM"
+          },
+          {
+            "fullName": "Osborn TM",
+            "lastName": "Osborn",
+            "firstName": "Tiffany M",
+            "initials": "TM"
+          },
+          {
+            "fullName": "Parker MM",
+            "lastName": "Parker",
+            "firstName": "Margaret M",
+            "initials": "MM"
+          },
+          {
+            "fullName": "Parrrillo JE",
+            "lastName": "Parrrillo",
+            "firstName": "Joseph E",
+            "initials": "JE"
+          },
+          {
+            "fullName": "Qiu H",
+            "lastName": "Qiu",
+            "firstName": "Haibo",
+            "initials": "H"
+          },
+          {
+            "fullName": "Randolph AG",
+            "lastName": "Randolph",
+            "firstName": "Adrienne G",
+            "initials": "AG"
+          },
+          {
+            "fullName": "Reinhart K",
+            "lastName": "Reinhart",
+            "firstName": "Konrad",
+            "initials": "K"
+          },
+          {
+            "fullName": "Rello J",
+            "lastName": "Rello",
+            "firstName": "Jordi",
+            "initials": "J",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-0676-6210"
+            }
+          },
+          {
+            "fullName": "Resende E",
+            "lastName": "Resende",
+            "firstName": "Ederlon",
+            "initials": "E"
+          },
+          {
+            "fullName": "Rhodes A",
+            "lastName": "Rhodes",
+            "firstName": "Andrew",
+            "initials": "A"
+          },
+          {
+            "fullName": "Rivers EP",
+            "lastName": "Rivers",
+            "firstName": "Emanuel P",
+            "initials": "EP"
+          },
+          {
+            "fullName": "Rubenfeld GD",
+            "lastName": "Rubenfeld",
+            "firstName": "Gordon D",
+            "initials": "GD"
+          },
+          {
+            "fullName": "Schorr CA",
+            "lastName": "Schorr",
+            "firstName": "Christa A",
+            "initials": "CA",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-7777-4280"
+            }
+          },
+          {
+            "fullName": "Sevransky JE",
+            "lastName": "Sevransky",
+            "firstName": "Jonathan E",
+            "initials": "JE"
+          },
+          {
+            "fullName": "Shukri K",
+            "lastName": "Shukri",
+            "firstName": "Khalid",
+            "initials": "K"
+          },
+          {
+            "fullName": "Silva E",
+            "lastName": "Silva",
+            "firstName": "Eliezer",
+            "initials": "E"
+          },
+          {
+            "fullName": "Soth MD",
+            "lastName": "Soth",
+            "firstName": "Mark D",
+            "initials": "MD"
+          },
+          {
+            "fullName": "Sprung CL",
+            "lastName": "Sprung",
+            "firstName": "Charles L",
+            "initials": "CL"
+          },
+          {
+            "fullName": "Thompson AE",
+            "lastName": "Thompson",
+            "firstName": "Ann E",
+            "initials": "AE"
+          },
+          {
+            "fullName": "Townsend SR",
+            "lastName": "Townsend",
+            "firstName": "Sean R",
+            "initials": "SR"
+          },
+          {
+            "fullName": "Vender JS",
+            "lastName": "Vender",
+            "firstName": "Jeffery S",
+            "initials": "JS"
+          },
+          {
+            "fullName": "Vincent JL",
+            "lastName": "Vincent",
+            "firstName": "Jean-Louis",
+            "initials": "JL"
+          },
+          {
+            "fullName": "Webb SA",
+            "lastName": "Webb",
+            "firstName": "Steve A",
+            "initials": "SA"
+          },
+          {
+            "fullName": "Welte T",
+            "lastName": "Welte",
+            "firstName": "Tobias",
+            "initials": "T"
+          },
+          {
+            "fullName": "Zimmerman JL",
+            "lastName": "Zimmerman",
+            "firstName": "Janice L",
+            "initials": "JL"
+          },
+          {
+            "fullName": "Hazelzet JA",
+            "lastName": "Hazelzet",
+            "firstName": "Jan A",
+            "initials": "JA"
+          },
+          {
+            "fullName": "Randolph AG",
+            "lastName": "Randolph",
+            "firstName": "Adrienne G",
+            "initials": "AG"
+          },
+          {
+            "fullName": "Parker MM",
+            "lastName": "Parker",
+            "firstName": "Margaret M",
+            "initials": "MM"
+          },
+          {
+            "fullName": "Thompson AE",
+            "lastName": "Thompson",
+            "firstName": "Ann E",
+            "initials": "AE"
+          },
+          {
+            "fullName": "Biban P",
+            "lastName": "Biban",
+            "firstName": "Paolo",
+            "initials": "P"
+          },
+          {
+            "fullName": "Duncan A",
+            "lastName": "Duncan",
+            "firstName": "Alan",
+            "initials": "A"
+          },
+          {
+            "fullName": "Mangia C",
+            "lastName": "Mangia",
+            "firstName": "Cristina",
+            "initials": "C",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-7981-1938"
+            }
+          },
+          {
+            "fullName": "Kissoon N",
+            "lastName": "Kissoon",
+            "firstName": "Niranjan",
+            "initials": "N"
+          },
+          {
+            "fullName": "Carcillo JA",
+            "lastName": "Carcillo",
+            "firstName": "Joseph A",
+            "initials": "JA"
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-6011-6951"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-7073-6265"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-7777-4280"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-7981-1938"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-8556-2405"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-8823-8440"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-9531-6486"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-3084-3071"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-4541-1431"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-8737-574X"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-0142-7527"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-0344-5403"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-0676-6210"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-2421-0734"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics",
+          "supporting_data",
+          "recommended_reviews",
+          "wikipedia"
+        ]
+      },
+      "journalInfo": {
+        "issue": "2",
+        "volume": "39",
+        "journalIssueId": 2009841,
+        "dateOfPublication": "2013 Feb",
+        "monthOfPublication": 2,
+        "yearOfPublication": 2013,
+        "journal": {
+          "medlineAbbreviation": "Intensive Care Med",
+          "title": "Intensive care medicine",
+          "essn": "1432-1238",
+          "issn": "0342-4642",
+          "isoabbreviation": "Intensive Care Med",
+          "nlmid": "7704851"
+        },
+        "printPublicationDate": "2013-02-01"
+      },
+      "pubYear": "2013",
+      "pageInfo": "165-228",
+      "abstractText": "<h4>Objective</h4>To provide an update to the \"Surviving Sepsis Campaign Guidelines for Management of Severe Sepsis and Septic Shock,\" last published in 2008.<h4>Design</h4>A consensus committee of 68 international experts representing 30 international organizations was convened. Nominal groups were assembled at key international meetings (for those committee members attending the conference). A formal conflict of interest policy was developed at the onset of the process and enforced throughout. The entire guidelines process was conducted independent of any industry funding. A stand-alone meeting was held for all subgroup heads, co- and vice-chairs, and selected individuals. Teleconferences and electronic-based discussion among subgroups and among the entire committee served as an integral part of the development.<h4>Methods</h4>The authors were advised to follow the principles of the Grading of Recommendations Assessment, Development and Evaluation (GRADE) system to guide assessment of quality of evidence from high (A) to very low (D) and to determine the strength of recommendations as strong (1) or weak (2). The potential drawbacks of making strong recommendations in the presence of low-quality evidence were emphasized. Recommendations were classified into three groups: (1) those directly targeting severe sepsis; (2) those targeting general care of the critically ill patient and considered high priority in severe sepsis; and (3) pediatric considerations.<h4>Results</h4>Key recommendations and suggestions, listed by category, include: early quantitative resuscitation of the septic patient during the first 6 h after recognition (1C); blood cultures before antibiotic therapy (1C); imaging studies performed promptly to confirm a potential source of infection (UG); administration of broad-spectrum antimicrobials therapy within 1 h of the recognition of septic shock (1B) and severe sepsis without septic shock (1C) as the goal of therapy; reassessment of antimicrobial therapy daily for de-escalation, when appropriate (1B); infection source control with attention to the balance of risks and benefits of the chosen method within 12 h of diagnosis (1C); initial fluid resuscitation with crystalloid (1B) and consideration of the addition of albumin in patients who continue to require substantial amounts of crystalloid to maintain adequate mean arterial pressure (2C) and the avoidance of hetastarch formulations (1B); initial fluid challenge in patients with sepsis-induced tissue hypoperfusion and suspicion of hypovolemia to achieve a minimum of 30 mL/kg of crystalloids (more rapid administration and greater amounts of fluid may be needed in some patients (1C); fluid challenge technique continued as long as hemodynamic improvement is based on either dynamic or static variables (UG); norepinephrine as the first-choice vasopressor to maintain mean arterial pressure \u226565 mmHg (1B); epinephrine when an additional agent is needed to maintain adequate blood pressure (2B); vasopressin (0.03 U/min) can be added to norepinephrine to either raise mean arterial pressure to target or to decrease norepinephrine dose but should not be used as the initial vasopressor (UG); dopamine is not recommended except in highly selected circumstances (2C); dobutamine infusion administered or added to vasopressor in the presence of (a) myocardial dysfunction as suggested by elevated cardiac filling pressures and low cardiac output, or (b) ongoing signs of hypoperfusion despite achieving adequate intravascular volume and adequate mean arterial pressure (1C); avoiding use of intravenous hydrocortisone in adult septic shock patients if adequate fluid resuscitation and vasopressor therapy are able to restore hemodynamic stability (2C); hemoglobin target of 7-9 g/dL in the absence of tissue hypoperfusion, ischemic coronary artery disease, or acute hemorrhage (1B); low tidal volume (1A) and limitation of inspiratory plateau pressure (1B) for acute respiratory distress syndrome (ARDS); application of at least a minimal amount of positive end-expiratory pressure (PEEP) in ARDS (1B); higher rather than lower level of PEEP for patients with sepsis-induced moderate or severe ARDS (2C); recruitment maneuvers in sepsis patients with severe refractory hypoxemia due to ARDS (2C); prone positioning in sepsis-induced ARDS patients with a PaO (2)/FiO (2) ratio of \u2264100 mm Hg in facilities that have experience with such practices (2C); head-of-bed elevation in mechanically ventilated patients unless contraindicated (1B); a conservative fluid strategy for patients with established ARDS who do not have evidence of tissue hypoperfusion (1C); protocols for weaning and sedation (1A); minimizing use of either intermittent bolus sedation or continuous infusion sedation targeting specific titration endpoints (1B); avoidance of neuromuscular blockers if possible in the septic patient without ARDS (1C); a short course of neuromuscular blocker (no longer than 48 h) for patients with early ARDS and a PaO (2)/FI O (2) <150 mm Hg (2C); a protocolized approach to blood glucose management commencing insulin dosing when two consecutive blood glucose levels are >180 mg/dL, targeting an upper blood glucose \u2264180 mg/dL (1A); equivalency of continuous veno-venous hemofiltration or intermittent hemodialysis (2B); prophylaxis for deep vein thrombosis (1B); use of stress ulcer prophylaxis to prevent upper gastrointestinal bleeding in patients with bleeding risk factors (1B); oral or enteral (if necessary) feedings, as tolerated, rather than either complete fasting or provision of only intravenous glucose within the first 48 h after a diagnosis of severe sepsis/septic shock (2C); and addressing goals of care, including treatment plans and end-of-life planning (as appropriate) (1B), as early as feasible, but within 72 h of intensive care unit admission (2C). Recommendations specific to pediatric severe sepsis include: therapy with face mask oxygen, high flow nasal cannula oxygen, or nasopharyngeal continuous PEEP in the presence of respiratory distress and hypoxemia (2C), use of physical examination therapeutic endpoints such as capillary refill (2C); for septic shock associated with hypovolemia, the use of crystalloids or albumin to deliver a bolus of 20 mL/kg of crystalloids (or albumin equivalent) over 5-10 min (2C); more common use of inotropes and vasodilators for low cardiac output septic shock associated with elevated systemic vascular resistance (2C); and use of hydrocortisone only in children with suspected or proven \"absolute\"' adrenal insufficiency (2C).<h4>Conclusions</h4>Strong agreement existed among a large cohort of international experts regarding many level 1 recommendations for the best care of patients with severe sepsis. Although a significant number of aspects of care have relatively weak support, evidence-based recommendations regarding the acute management of sepsis and septic shock are the foundation of improved outcomes for this important group of critically ill patients.",
+      "affiliation": "Cooper University Hospital, Camden, NJ, USA. Dellinger-Phil@CooperHealth.edu",
+      "publicationStatus": "ppublish",
+      "language": "eng",
+      "pubModel": "Print-Electronic",
+      "pubTypeList": {
+        "pubType": [
+          "research-article",
+          "Practice Guideline",
+          "Journal Article"
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Sepsis",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "Y",
+                  "abbreviation": "DI",
+                  "qualifierName": "diagnosis"
+                },
+                {
+                  "majorTopic_YN": "Y",
+                  "abbreviation": "TH",
+                  "qualifierName": "therapy"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Shock, Septic",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "Y",
+                  "abbreviation": "DI",
+                  "qualifierName": "diagnosis"
+                },
+                {
+                  "majorTopic_YN": "Y",
+                  "abbreviation": "TH",
+                  "qualifierName": "therapy"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Severity of Illness Index"
+          }
+        ]
+      },
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "pdf",
+            "site": "Unpaywall",
+            "url": "https://link.springer.com/content/pdf/10.1007/s00134-012-2769-8.pdf"
+          },
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1007/s00134-012-2769-8"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC7095153"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC7095153?pdf=render"
+          }
+        ]
+      },
+      "commentCorrectionList": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "24030845",
+            "reference": "Med Klin Intensivmed Notfmed. 2013 Oct;108(7):595-6. doi: 10.1007/s00063-013-0288-1",
+            "type": "Comment in",
+            "orderIn": 1
+          },
+          {
+            "source": "MED",
+            "id": "24229440",
+            "reference": "Crit Care. 2013 Nov 15;17(6):328. doi: 10.1186/cc13113",
+            "type": "Comment in",
+            "orderIn": 2
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 2944,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "doi"
+        ]
+      },
+      "dateOfCompletion": "2013-09-23",
+      "dateOfCreation": "2013-01-31",
+      "dateOfRevision": "2024-02-22",
+      "electronicPublicationDate": "2013-01-30",
+      "firstPublicationDate": "2013-01-30",
+      "firstIndexDate": "2013-01-31",
+      "fullTextReceivedDate": "2025-02-03",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "26135716",
+      "source": "MED",
+      "pmid": "26135716",
+      "pmcid": "PMC4648295",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC4648295"
+        ]
+      },
+      "doi": "10.1002/hipo.22488",
+      "title": "Hippocampal sharp wave-ripple: A cognitive biomarker for episodic memory and planning.",
+      "authorString": "Buzs\u00e1ki G.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Buzs\u00e1ki G",
+            "lastName": "Buzs\u00e1ki",
+            "firstName": "Gy\u00f6rgy",
+            "initials": "G",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-3100-4800"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "The Neuroscience Institute, School of Medicine and Center for Neural Science, New York University, New York, New York."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0002-3100-4800"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics"
+        ]
+      },
+      "journalInfo": {
+        "issue": "10",
+        "volume": "25",
+        "journalIssueId": 2327074,
+        "dateOfPublication": "2015 Oct",
+        "monthOfPublication": 10,
+        "yearOfPublication": 2015,
+        "journal": {
+          "medlineAbbreviation": "Hippocampus",
+          "title": "Hippocampus",
+          "essn": "1098-1063",
+          "issn": "1050-9631",
+          "isoabbreviation": "Hippocampus",
+          "nlmid": "9108167"
+        },
+        "printPublicationDate": "2015-10-01"
+      },
+      "pubYear": "2015",
+      "pageInfo": "1073-1188",
+      "abstractText": "Sharp wave ripples (SPW-Rs) represent the most synchronous population pattern in the mammalian brain. Their excitatory output affects a wide area of the cortex and several subcortical nuclei. SPW-Rs occur during \"off-line\" states of the brain, associated with consummatory behaviors and non-REM sleep, and are influenced by numerous neurotransmitters and neuromodulators. They arise from the excitatory recurrent system of the CA3 region and the SPW-induced excitation brings about a fast network oscillation (ripple) in CA1. The spike content of SPW-Rs is temporally and spatially coordinated by a consortium of interneurons to replay fragments of waking neuronal sequences in a compressed format. SPW-Rs assist in transferring this compressed hippocampal representation to distributed circuits to support memory consolidation; selective disruption of SPW-Rs interferes with memory. Recently acquired and pre-existing information are combined during SPW-R replay to influence decisions, plan actions and, potentially, allow for creative thoughts. In addition to the widely studied contribution to memory, SPW-Rs may also affect endocrine function via activation of hypothalamic circuits. Alteration of the physiological mechanisms supporting SPW-Rs leads to their pathological conversion, \"p-ripples,\" which are a marker of epileptogenic tissue and can be observed in rodent models of schizophrenia and Alzheimer's Disease. Mechanisms for SPW-R genesis and function are discussed in this review.",
+      "affiliation": "The Neuroscience Institute, School of Medicine and Center for Neural Science, New York University, New York, New York.",
+      "publicationStatus": "ppublish",
+      "language": "eng",
+      "pubModel": "Print",
+      "pubTypeList": {
+        "pubType": [
+          "Research Support, Non-U.S. Gov't",
+          "research-article",
+          "Review",
+          "Research Support, U.S. Gov't, Non-P.H.S.",
+          "Journal Article",
+          "Research Support, N.I.H., Extramural"
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "NINDS NIH HHS",
+            "acronym": "NS",
+            "grantId": "U01 NS090526",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIMH NIH HHS",
+            "acronym": "MH",
+            "grantId": "R01 MH107396",
+            "orderIn": 0
+          },
+          {
+            "agency": "National Institutes of Health",
+            "grantId": "MH54671",
+            "orderIn": 0
+          },
+          {
+            "agency": "National Institutes of Health",
+            "grantId": "5U01NS090583",
+            "orderIn": 0
+          },
+          {
+            "agency": "NINDS NIH HHS",
+            "acronym": "NS",
+            "grantId": "NS075015",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIBIB NIH HHS",
+            "acronym": "EB",
+            "grantId": "R21 EB019221",
+            "orderIn": 0
+          },
+          {
+            "agency": "NINDS NIH HHS",
+            "acronym": "NS",
+            "grantId": "5U01NS090583",
+            "orderIn": 0
+          },
+          {
+            "agency": "National Institutes of Health",
+            "grantId": "MH107396",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIMH NIH HHS",
+            "acronym": "MH",
+            "grantId": "R01 MH102840",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIMH NIH HHS",
+            "acronym": "MH",
+            "grantId": "MH107396",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIMH NIH HHS",
+            "acronym": "MH",
+            "grantId": "MH54671",
+            "orderIn": 0
+          },
+          {
+            "agency": "NSF",
+            "grantId": "SBE 0542013",
+            "orderIn": 0
+          },
+          {
+            "agency": "National Institutes of Health",
+            "grantId": "NS075015",
+            "orderIn": 0
+          },
+          {
+            "agency": "NIMH NIH HHS",
+            "acronym": "MH",
+            "grantId": "R01 MH054671",
+            "orderIn": 0
+          },
+          {
+            "agency": "NINDS NIH HHS",
+            "acronym": "NS",
+            "grantId": "U01 NS090583",
+            "orderIn": 0
+          },
+          {
+            "agency": "Human Frontiers Science Program and the G. Harold and Leila Y. Mathers Foundation",
+            "orderIn": 0
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Hippocampus",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "Y",
+                  "abbreviation": "PH",
+                  "qualifierName": "physiology"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "PP",
+                  "qualifierName": "physiopathology"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Animals"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Executive Function",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "Y",
+                  "abbreviation": "PH",
+                  "qualifierName": "physiology"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Brain Waves",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "Y",
+                  "abbreviation": "PH",
+                  "qualifierName": "physiology"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Memory, Episodic"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Biomarkers"
+          }
+        ]
+      },
+      "keywordList": {
+        "keyword": [
+          "Memory",
+          "Learning",
+          "Epilepsy",
+          "Planning",
+          "Imagining"
+        ]
+      },
+      "chemicalList": {
+        "chemical": [
+          {
+            "name": "Biomarkers",
+            "registryNumber": "0"
+          }
+        ]
+      },
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1002/hipo.22488"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC4648295"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC4648295?pdf=render"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 1481,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "N",
+      "hasLabsLinks": "Y",
+      "hasData": "N",
+      "license": "cc by-nc-nd",
+      "authMan": "Y",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "Y",
+      "manuscriptId": "NIHMS707132",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCompletion": "2016-06-01",
+      "dateOfCreation": "2015-07-03",
+      "dateOfRevision": "2025-01-10",
+      "firstPublicationDate": "2015-10-01",
+      "firstIndexDate": "2015-07-04",
+      "fullTextReceivedDate": "2025-02-05",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "32029004",
+      "source": "MED",
+      "pmid": "32029004",
+      "pmcid": "PMC7003341",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC7003341"
+        ]
+      },
+      "doi": "10.1186/s40779-020-0233-6",
+      "title": "A rapid advice guideline for the diagnosis and treatment of 2019 novel coronavirus (2019-nCoV) infected pneumonia (standard version).",
+      "authorString": "Jin YH, Cai L, Cheng ZS, Cheng H, Deng T, Fan YP, Fang C, Huang D, Huang LQ, Huang Q, Han Y, Hu B, Hu F, Li BH, Li YR, Liang K, Lin LK, Luo LS, Ma J, Ma LL, Peng ZY, Pan YB, Pan ZY, Ren XQ, Sun HM, Wang Y, Wang YY, Weng H, Wei CJ, Wu DF, Xia J, Xiong Y, Xu HB, Yao XM, Yuan YF, Ye TS, Zhang XC, Zhang YW, Zhang YG, Zhang HM, Zhao Y, Zhao MJ, Zi H, Zeng XT, Wang YY, Wang XH, , for the Zhongnan Hospital of Wuhan University Novel Coronavirus Management and Research Team, Evidence-Based Medicine Chapter of China International Exchange and Promotive Association for Medical and Health Care (CPAM).",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Jin YH",
+            "lastName": "Jin",
+            "firstName": "Ying-Hui",
+            "initials": "YH",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Cai L",
+            "lastName": "Cai",
+            "firstName": "Lin",
+            "initials": "L",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Hospital Management, Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Cheng ZS",
+            "lastName": "Cheng",
+            "firstName": "Zhen-Shun",
+            "initials": "ZS",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Respiratory Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Cheng H",
+            "lastName": "Cheng",
+            "firstName": "Hong",
+            "initials": "H",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Pharmacy, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Deng T",
+            "lastName": "Deng",
+            "firstName": "Tong",
+            "initials": "T",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                },
+                {
+                  "affiliation": "Institute of Evidence-Based Medicine and Knowledge Translation, Henan University, Kaifeng, 475000, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Fan YP",
+            "lastName": "Fan",
+            "firstName": "Yi-Pin",
+            "initials": "YP",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "China Academy of Chinese Medical Sciences, Beijing, 100700, China."
+                },
+                {
+                  "affiliation": "China Center for Evidence Based Traditional Chinese Medicine (CCEBTCM), Beijing, 100700, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Fang C",
+            "lastName": "Fang",
+            "firstName": "Cheng",
+            "initials": "C",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Huang D",
+            "lastName": "Huang",
+            "firstName": "Di",
+            "initials": "D",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Huang LQ",
+            "lastName": "Huang",
+            "firstName": "Lu-Qi",
+            "initials": "LQ",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "China Academy of Chinese Medical Sciences, Beijing, 100700, China."
+                },
+                {
+                  "affiliation": "China Center for Evidence Based Traditional Chinese Medicine (CCEBTCM), Beijing, 100700, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Huang Q",
+            "lastName": "Huang",
+            "firstName": "Qiao",
+            "initials": "Q",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Han Y",
+            "lastName": "Han",
+            "firstName": "Yong",
+            "initials": "Y",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Hospital Management, Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Hu B",
+            "lastName": "Hu",
+            "firstName": "Bo",
+            "initials": "B",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Critical Care Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Hu F",
+            "lastName": "Hu",
+            "firstName": "Fen",
+            "initials": "F",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Critical Care Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Li BH",
+            "lastName": "Li",
+            "firstName": "Bing-Hui",
+            "initials": "BH",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                },
+                {
+                  "affiliation": "Institute of Evidence-Based Medicine and Knowledge Translation, Henan University, Kaifeng, 475000, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Li YR",
+            "lastName": "Li",
+            "firstName": "Yi-Rong",
+            "initials": "YR",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Clinical Laboratory, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Liang K",
+            "lastName": "Liang",
+            "firstName": "Ke",
+            "initials": "K",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Infectious Diseases, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Lin LK",
+            "lastName": "Lin",
+            "firstName": "Li-Kai",
+            "initials": "LK",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Hospital Management, Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Luo LS",
+            "lastName": "Luo",
+            "firstName": "Li-Sha",
+            "initials": "LS",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ma J",
+            "lastName": "Ma",
+            "firstName": "Jing",
+            "initials": "J",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Critical Care Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ma LL",
+            "lastName": "Ma",
+            "firstName": "Lin-Lu",
+            "initials": "LL",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Peng ZY",
+            "lastName": "Peng",
+            "firstName": "Zhi-Yong",
+            "initials": "ZY",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Critical Care Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Pan YB",
+            "lastName": "Pan",
+            "firstName": "Yun-Bao",
+            "initials": "YB",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Clinical Laboratory, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Pan ZY",
+            "lastName": "Pan",
+            "firstName": "Zhen-Yu",
+            "initials": "ZY",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Division of Medical Affairs, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ren XQ",
+            "lastName": "Ren",
+            "firstName": "Xue-Qun",
+            "initials": "XQ",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Evidence-Based Medicine and Knowledge Translation, Henan University, Kaifeng, 475000, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Sun HM",
+            "lastName": "Sun",
+            "firstName": "Hui-Min",
+            "initials": "HM",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Division of Nursing Affairs, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Wang Y",
+            "lastName": "Wang",
+            "firstName": "Ying",
+            "initials": "Y",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Office of Nosocomial Infection Control, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Wang YY",
+            "lastName": "Wang",
+            "firstName": "Yun-Yun",
+            "initials": "YY",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Weng H",
+            "lastName": "Weng",
+            "firstName": "Hong",
+            "initials": "H",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-7795-5671"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Wei CJ",
+            "lastName": "Wei",
+            "firstName": "Chao-Jie",
+            "initials": "CJ",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Respiratory Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Wu DF",
+            "lastName": "Wu",
+            "firstName": "Dong-Fang",
+            "initials": "DF",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Pharmacy, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Xia J",
+            "lastName": "Xia",
+            "firstName": "Jian",
+            "initials": "J",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Emergency Center, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Xiong Y",
+            "lastName": "Xiong",
+            "firstName": "Yong",
+            "initials": "Y",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-0678-4064"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Infectious Diseases, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Xu HB",
+            "lastName": "Xu",
+            "firstName": "Hai-Bo",
+            "initials": "HB",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Radiology, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Yao XM",
+            "lastName": "Yao",
+            "firstName": "Xiao-Mei",
+            "initials": "XM",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Health Research Methods, Evidence, and Impact, McMaster University, Hamilton, ON, L8S 4L8, Canada."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Yuan YF",
+            "lastName": "Yuan",
+            "firstName": "Yu-Feng",
+            "initials": "YF",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Hospital Management, Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ye TS",
+            "lastName": "Ye",
+            "firstName": "Tai-Sheng",
+            "initials": "TS",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Traditional Chinese Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zhang XC",
+            "lastName": "Zhang",
+            "firstName": "Xiao-Chun",
+            "initials": "XC",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Radiology, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zhang YW",
+            "lastName": "Zhang",
+            "firstName": "Ying-Wen",
+            "initials": "YW",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Traditional Chinese Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zhang YG",
+            "lastName": "Zhang",
+            "firstName": "Yin-Gao",
+            "initials": "YG",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Hospital Management, Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zhang HM",
+            "lastName": "Zhang",
+            "firstName": "Hua-Min",
+            "initials": "HM",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "China Academy of Chinese Medical Sciences, Beijing, 100700, China."
+                },
+                {
+                  "affiliation": "China Center for Evidence Based Traditional Chinese Medicine (CCEBTCM), Beijing, 100700, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zhao Y",
+            "lastName": "Zhao",
+            "firstName": "Yan",
+            "initials": "Y",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Emergency Center, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zhao MJ",
+            "lastName": "Zhao",
+            "firstName": "Ming-Juan",
+            "initials": "MJ",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zi H",
+            "lastName": "Zi",
+            "firstName": "Hao",
+            "initials": "H",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China."
+                },
+                {
+                  "affiliation": "Institute of Evidence-Based Medicine and Knowledge Translation, Henan University, Kaifeng, 475000, China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zeng XT",
+            "lastName": "Zeng",
+            "firstName": "Xian-Tao",
+            "initials": "XT",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-1262-725X"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China. zengxiantao1128@163.com."
+                },
+                {
+                  "affiliation": "Global Health Institute, Wuhan University, Wuhan, 430072, China. zengxiantao1128@163.com."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Wang YY",
+            "lastName": "Wang",
+            "firstName": "Yong-Yan",
+            "initials": "YY",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "China Academy of Chinese Medical Sciences, Beijing, 100700, China. wangyyanpublic@bta.net.cn."
+                },
+                {
+                  "affiliation": "China Center for Evidence Based Traditional Chinese Medicine (CCEBTCM), Beijing, 100700, China. wangyyanpublic@bta.net.cn."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Wang XH",
+            "lastName": "Wang",
+            "firstName": "Xing-Huan",
+            "initials": "XH",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China. wangxinghuan1965@163.com."
+                },
+                {
+                  "affiliation": "Institute of Hospital Management, Wuhan University, Wuhan, 430071, China. wangxinghuan1965@163.com."
+                }
+              ]
+            }
+          },
+          {
+            "collectiveName": ", for the Zhongnan Hospital of Wuhan University Novel Coronavirus Management and Research Team, Evidence-Based Medicine Chapter of China International Exchange and Promotive Association for Medical and Health Care (CPAM)"
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-7795-5671"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-2266-0267"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-4465-9814"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-6311-2945"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-0678-4064"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-1262-725X"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-3497-0024"
+          },
+          {
+            "type": "ORCID",
+            "value": "0009-0002-7226-8447"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics",
+          "supporting_data",
+          "wikipedia"
+        ]
+      },
+      "journalInfo": {
+        "issue": "1",
+        "volume": "7",
+        "journalIssueId": 2910591,
+        "dateOfPublication": "2020 Feb",
+        "monthOfPublication": 2,
+        "yearOfPublication": 2020,
+        "journal": {
+          "medlineAbbreviation": "Mil Med Res",
+          "title": "Military Medical Research",
+          "essn": "2054-9369",
+          "issn": "2095-7467",
+          "isoabbreviation": "Mil Med Res",
+          "nlmid": "101643181"
+        },
+        "printPublicationDate": "2020-02-01"
+      },
+      "pubYear": "2020",
+      "pageInfo": "4",
+      "abstractText": "In December 2019, a new type viral pneumonia cases occurred in Wuhan, Hubei Province; and then named \"2019 novel coronavirus (2019-nCoV)\" by the World Health Organization (WHO) on 12 January 2020. For it is a never been experienced respiratory disease before and with infection ability widely and quickly, it attracted the world's attention but without treatment and control manual. For the request from frontline clinicians and public health professionals of 2019-nCoV infected pneumonia management, an evidence-based guideline urgently needs to be developed. Therefore, we drafted this guideline according to the rapid advice guidelines methodology and general rules of WHO guideline development; we also added the first-hand management data of Zhongnan Hospital of Wuhan University. This guideline includes the guideline methodology, epidemiological characteristics, disease screening and population prevention, diagnosis, treatment and control (including traditional Chinese Medicine), nosocomial infection prevention and control, and disease nursing of the 2019-nCoV. Moreover, we also provide a whole process of a successful treatment case of the severe 2019-nCoV infected pneumonia and experience and lessons of hospital rescue for 2019-nCoV infections. This rapid advice guideline is suitable for the first frontline doctors and nurses, managers of hospitals and healthcare sections, community residents, public health persons, relevant researchers, and all person who are interested in the 2019-nCoV.",
+      "affiliation": "Center for Evidence-Based and Translational Medicine, Zhongnan Hospital of Wuhan University, Wuhan, 430071, China.",
+      "publicationStatus": "epublish",
+      "language": "eng",
+      "pubModel": "Electronic",
+      "pubTypeList": {
+        "pubType": [
+          "Research Support, Non-U.S. Gov't",
+          "research-article",
+          "Practice Guideline",
+          "Journal Article"
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Lung",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "DG",
+                  "qualifierName": "diagnostic imaging"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Cross Infection",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "PC",
+                  "qualifierName": "prevention & control"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Pneumonia, Viral",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "DI",
+                  "qualifierName": "diagnosis"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ET",
+                  "qualifierName": "etiology"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "EP",
+                  "qualifierName": "epidemiology"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "TH",
+                  "qualifierName": "therapy"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "TM",
+                  "qualifierName": "transmission"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Coronavirus Infections",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "DI",
+                  "qualifierName": "diagnosis"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "DT",
+                  "qualifierName": "drug therapy"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "EP",
+                  "qualifierName": "epidemiology"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "TH",
+                  "qualifierName": "therapy"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "TM",
+                  "qualifierName": "transmission"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Drugs, Chinese Herbal"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Anti-Bacterial Agents",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "TU",
+                  "qualifierName": "therapeutic use"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Antiviral Agents",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "TU",
+                  "qualifierName": "therapeutic use"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Diagnosis, Differential"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Mass Screening"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Fluid Therapy"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Nursing Care"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Clinical Laboratory Techniques"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Evidence-Based Medicine"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Infection Control",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "ST",
+                  "qualifierName": "standards"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Molecular Epidemiology"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Personal Protective Equipment"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Betacoronavirus",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "IP",
+                  "qualifierName": "isolation & purification"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "PY",
+                  "qualifierName": "pathogenicity"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "COVID-19"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "SARS-CoV-2"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "COVID-19 Testing"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "COVID-19 Drug Treatment"
+          }
+        ]
+      },
+      "keywordList": {
+        "keyword": [
+          "Infectious diseases",
+          "Respiratory disease",
+          "Pneumonia",
+          "evidence-based medicine",
+          "Clinical Practice Guideline",
+          "2019-Ncov",
+          "2019 Novel Coronavirus",
+          "Rapid Advice Guideline"
+        ]
+      },
+      "chemicalList": {
+        "chemical": [
+          {
+            "name": "Anti-Bacterial Agents",
+            "registryNumber": "0"
+          },
+          {
+            "name": "Antiviral Agents",
+            "registryNumber": "0"
+          },
+          {
+            "name": "Drugs, Chinese Herbal",
+            "registryNumber": "0"
+          }
+        ]
+      },
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1186/s40779-020-0233-6"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC7003341"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC7003341?pdf=render"
+          }
+        ]
+      },
+      "commentCorrectionList": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "32245395",
+            "reference": "Mil Med Res. 2020 Apr 4;7(1):16. doi: 10.1186/s40779-020-00246-8",
+            "type": "Comment in",
+            "orderIn": 1
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 1216,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCompletion": "2020-03-19",
+      "dateOfCreation": "2020-02-08",
+      "dateOfRevision": "2023-11-03",
+      "electronicPublicationDate": "2020-02-06",
+      "firstPublicationDate": "2020-02-06",
+      "firstIndexDate": "2020-02-09",
+      "fullTextReceivedDate": "2025-02-04",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "30917843",
+      "source": "MED",
+      "pmid": "30917843",
+      "pmcid": "PMC6436241",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC6436241"
+        ]
+      },
+      "doi": "10.1186/s13054-019-2347-3",
+      "title": "The European guideline on management of major bleeding and coagulopathy following trauma: fifth edition.",
+      "authorString": "Spahn DR, Bouillon B, Cerny V, Duranteau J, Filipescu D, Hunt BJ, Komadina R, Maegele M, Nardi G, Riddez L, Samama CM, Vincent JL, Rossaint R.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Spahn DR",
+            "lastName": "Spahn",
+            "firstName": "Donat R",
+            "initials": "DR",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Anaesthesiology, University of Zurich and University Hospital Zurich, Raemistrasse 100, CH-8091, Zurich, Switzerland."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Bouillon B",
+            "lastName": "Bouillon",
+            "firstName": "Bertil",
+            "initials": "B",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Trauma and Orthopaedic Surgery, Cologne-Merheim Medical Centre (CMMC), University of Witten/Herdecke, Ostmerheimer Strasse 200, D-51109, Cologne, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Cerny V",
+            "lastName": "Cerny",
+            "firstName": "Vladimir",
+            "initials": "V",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Anaesthesiology, Perioperative Medicine and Intensive Care, J.E. Purkinje University, Masaryk Hospital, Usti nad Labem, Socialni pece 3316/12A, CZ-40113, Usti nad Labem, Czech Republic."
+                },
+                {
+                  "affiliation": "Centre for Research and Development, University Hospital Hradec Kralove, Hradec Kralove, Czech Republic, Sokolska 581, CZ-50005, Hradec Kralove, Czech Republic."
+                },
+                {
+                  "affiliation": "Department of Anaesthesiology and Intensive Care Medicine, Faculty of Medicine in Hradec Kralove, Charles University, Simkova 870, CZ-50003, Hradec Kralove, Czech Republic."
+                },
+                {
+                  "affiliation": "Department of Anaesthesia, Pain Management and Perioperative Medicine, QE II Health Sciences Centre, Dalhousie University, Halifax, 10 West Victoria, 1276 South Park St, Halifax, NS, B3H 2Y9, Canada."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Duranteau J",
+            "lastName": "Duranteau",
+            "firstName": "Jacques",
+            "initials": "J",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Anaesthesia and Intensive Care, H\u00f4pitaux Universitaires Paris Sud, University of Paris XI, Facult\u00e9 de M\u00e9decine Paris-Sud, 78 rue du G\u00e9n\u00e9ral Leclerc, F-94275, Le Kremlin-Bic\u00eatre Cedex, France."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Filipescu D",
+            "lastName": "Filipescu",
+            "firstName": "Daniela",
+            "initials": "D",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cardiac Anaesthesia and Intensive Care, C. C. Iliescu Emergency Institute of Cardiovascular Diseases, Sos Fundeni 256-258, RO-022328, Bucharest, Romania."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Hunt BJ",
+            "lastName": "Hunt",
+            "firstName": "Beverley J",
+            "initials": "BJ",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "King's College and Departments of Haematology and Pathology, Guy's and St Thomas' NHS Foundation Trust, Westminster Bridge Road, London, SE1 7EH, UK."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Komadina R",
+            "lastName": "Komadina",
+            "firstName": "Radko",
+            "initials": "R",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Traumatology, General and Teaching Hospital Celje, Medical Faculty Ljubljana University, SI-3000, Celje, Slovenia."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Maegele M",
+            "lastName": "Maegele",
+            "firstName": "Marc",
+            "initials": "M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Trauma and Orthopaedic Surgery, Cologne-Merheim Medical Centre (CMMC), Institute for Research in Operative Medicine (IFOM), University of Witten/Herdecke, Ostmerheimer Strasse 200, D-51109, Cologne, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Nardi G",
+            "lastName": "Nardi",
+            "firstName": "Giuseppe",
+            "initials": "G",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Anaesthesia and ICU, AUSL della Romagna, Infermi Hospital Rimini, Viale Settembrini, 2, I-47924, Rimini, Italy."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Riddez L",
+            "lastName": "Riddez",
+            "firstName": "Louis",
+            "initials": "L",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Surgery and Trauma, Karolinska University Hospital, S-171 76, Solna, Sweden."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Samama CM",
+            "lastName": "Samama",
+            "firstName": "Charles-Marc",
+            "initials": "CM",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Hotel-Dieu University Hospital, 1, place du Parvis de Notre-Dame, F-75181, Paris Cedex 04, France."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Vincent JL",
+            "lastName": "Vincent",
+            "firstName": "Jean-Louis",
+            "initials": "JL",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-6011-6951"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Intensive Care, Erasme University Hospital, Universit\u00e9 Libre de Bruxelles, Route de Lennik 808, B-1070, Brussels, Belgium."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Rossaint R",
+            "lastName": "Rossaint",
+            "firstName": "Rolf",
+            "initials": "R",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-7587-1693"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Anaesthesiology, University Hospital Aachen, RWTH Aachen University, Pauwelsstrasse 30, D-52074, Aachen, Germany. RRossaint@ukaachen.de."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-6011-6951"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-7587-1693"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics",
+          "supporting_data"
+        ]
+      },
+      "journalInfo": {
+        "issue": "1",
+        "volume": "23",
+        "journalIssueId": 2791630,
+        "dateOfPublication": "2019 Mar",
+        "monthOfPublication": 3,
+        "yearOfPublication": 2019,
+        "journal": {
+          "medlineAbbreviation": "Crit Care",
+          "title": "Critical care (London, England)",
+          "essn": "1466-609X",
+          "issn": "1364-8535",
+          "isoabbreviation": "Crit Care",
+          "nlmid": "9801902"
+        },
+        "printPublicationDate": "2019-03-01"
+      },
+      "pubYear": "2019",
+      "pageInfo": "98",
+      "abstractText": "<h4>Background</h4>Severe traumatic injury continues to present challenges to healthcare systems around the world, and post-traumatic bleeding remains a leading cause of potentially preventable death among injured patients. Now in its fifth edition, this document aims to provide guidance on the management of major bleeding and coagulopathy following traumatic injury and encourages adaptation of the guiding principles described here to individual institutional circumstances and resources.<h4>Methods</h4>The pan-European, multidisciplinary Task Force for Advanced Bleeding Care in Trauma was founded in 2004, and the current author group included representatives of six relevant European professional societies. The group applied a structured, evidence-based consensus approach to address scientific queries that served as the basis for each recommendation and supporting rationale. Expert opinion and current clinical practice were also considered, particularly in areas in which randomised clinical trials have not or cannot be performed. Existing recommendations were re-examined and revised based on scientific evidence that has emerged since the previous edition and observed shifts in clinical practice. New recommendations were formulated to reflect current clinical concerns and areas in which new research data have been generated.<h4>Results</h4>Advances in our understanding of the pathophysiology of post-traumatic coagulopathy have supported improved management strategies, including evidence that early, individualised goal-directed treatment improves the outcome of severely injured patients. The overall organisation of the current guideline has been designed to reflect the clinical decision-making process along the patient pathway in an approximate temporal sequence. Recommendations are grouped behind the rationale for key decision points, which are patient- or problem-oriented rather than related to specific treatment modalities. While these recommendations provide guidance for the diagnosis and treatment of major bleeding and coagulopathy, emerging evidence supports the author group's belief that the greatest outcome improvement can be achieved through education and the establishment of and adherence to local clinical management algorithms.<h4>Conclusions</h4>A multidisciplinary approach and adherence to evidence-based guidance are key to improving patient outcomes. If incorporated into local practice, these clinical practice guidelines have the potential to ensure a uniform standard of care across Europe and beyond and better outcomes for the severely bleeding trauma patient.",
+      "affiliation": "Institute of Anaesthesiology, University of Zurich and University Hospital Zurich, Raemistrasse 100, CH-8091, Zurich, Switzerland.",
+      "publicationStatus": "epublish",
+      "language": "eng",
+      "pubModel": "Electronic",
+      "pubTypeList": {
+        "pubType": [
+          "research-article",
+          "Journal Article"
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "Octapharma AG",
+            "grantId": "N/A",
+            "orderIn": 0
+          },
+          {
+            "agency": "CSL Behring GmbH",
+            "grantId": "N/A",
+            "orderIn": 0
+          },
+          {
+            "agency": "LFB Biom\u00e9dicaments",
+            "grantId": "N/A",
+            "orderIn": 0
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Encephalocele",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "PC",
+                  "qualifierName": "prevention & control"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Wounds and Injuries",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "Y",
+                  "abbreviation": "CO",
+                  "qualifierName": "complications"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "DT",
+                  "qualifierName": "drug therapy"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Hemorrhage",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "Y",
+                  "abbreviation": "DT",
+                  "qualifierName": "drug therapy"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Respiration, Artificial",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "MT",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Evidence-Based Medicine",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "MT",
+                  "qualifierName": "methods"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "TD",
+                  "qualifierName": "trends"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Blood Coagulation",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "majorTopic_YN": "Y",
+                  "abbreviation": "DE",
+                  "qualifierName": "drug effects"
+                },
+                {
+                  "majorTopic_YN": "N",
+                  "abbreviation": "PH",
+                  "qualifierName": "physiology"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Europe"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Guidelines as Topic"
+          }
+        ]
+      },
+      "keywordList": {
+        "keyword": [
+          "Trauma",
+          "Emergency Medicine",
+          "Coagulopathy",
+          "Practice Guideline",
+          "Haemostasis"
+        ]
+      },
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1186/s13054-019-2347-3"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC6436241"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/articles/PMC6436241?pdf=render"
+          }
+        ]
+      },
+      "commentCorrectionList": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "31681989",
+            "reference": "Anaesthesia. 2019 Dec;74(12):1623-1624. doi: 10.1111/anae.14874",
+            "type": "Comment in",
+            "orderIn": 1
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "Y",
+      "citedByCount": 764,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "N",
+      "nihAuthMan": "N",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "doi"
+        ]
+      },
+      "dateOfCompletion": "2019-12-12",
+      "dateOfCreation": "2019-03-29",
+      "dateOfRevision": "2024-07-25",
+      "electronicPublicationDate": "2019-03-27",
+      "firstPublicationDate": "2019-03-27",
+      "firstIndexDate": "2019-03-29",
+      "fullTextReceivedDate": "2025-02-04",
+      "hasEvaluations": "N"
+    }
+  ]
+}

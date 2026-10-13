@@ -1,0 +1,1196 @@
+{
+  "hitCount": 2454,
+  "nextCursorMark": "AoIIQImx/Sg1NTU2MTc3Nw==",
+  "results": [
+    {
+      "id": "PPR1310194",
+      "source": "PPR",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PPR1310194"
+        ]
+      },
+      "doi": "10.64898/2026.08.27.26356661",
+      "title": "A multimodal investigation of perceptual awareness in Alzheimer\u2019s disease",
+      "authorString": "Huntley J, Barnett B, Bor D, Mancuso M, Mediano PAM, Naci L, Fleming S, Bertazzoli G, Clare L, Owen AM, Rocchi L, Howard R.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Huntley J",
+            "lastName": "Huntley",
+            "firstName": "Jonathan",
+            "initials": "J",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-6304-6231"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Health and Community Sciences, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Barnett B",
+            "lastName": "Barnett",
+            "firstName": "Benjy",
+            "initials": "B",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Experimental Psychology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Bor D",
+            "lastName": "Bor",
+            "firstName": "Daniel",
+            "initials": "D",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Psychology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Mancuso M",
+            "lastName": "Mancuso",
+            "firstName": "Marco",
+            "initials": "M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Human Neuroscience Department, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Mediano PAM",
+            "lastName": "Mediano",
+            "firstName": "Pedro",
+            "initials": "PAM",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Computing, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Naci L",
+            "lastName": "Naci",
+            "firstName": "Lorina",
+            "initials": "L",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "School of Psychology, , Global Brain Health Institute, ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Fleming S",
+            "lastName": "Fleming",
+            "firstName": "Stephen",
+            "initials": "S",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Experimental Psychology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Bertazzoli G",
+            "lastName": "Bertazzoli",
+            "firstName": "Giacomo",
+            "initials": "G",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": ", , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Clare L",
+            "lastName": "Clare",
+            "firstName": "Linda",
+            "initials": "L",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Health and Community Sciences, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Owen AM",
+            "lastName": "Owen",
+            "firstName": "Adrian",
+            "initials": "AM",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Physiology and Pharmacology, , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Rocchi L",
+            "lastName": "Rocchi",
+            "firstName": "Lorenzo",
+            "initials": "L",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Neurology, , , United Kingdom"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Howard R",
+            "lastName": "Howard",
+            "firstName": "Robert",
+            "initials": "R",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Division of Psychiatry, , ,"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-6304-6231"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "supporting_data"
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "Understanding how the contents of consciousness, particularly perceptual awareness, change with the progression of AD is crucial for meaningful person-centred care. This is especially important in severe AD when impairments in language and other cognitive domains limit reporting of experience. We investigated whether electrophysiological (EEG) and fMRI signatures of perceptual awareness remain present in people with mild-moderate and severe AD. A visual masking paradigm examined visual awareness negativity (VAN) and late positive (LP) electrophysiological responses and activation in visual cortex and fronto-parietal regions; and a complex audio-visual (movie) task examined activation in fronto-parietal networks previously associated with perceptual awareness. Healthy older controls demonstrated cortical responses characteristic of awareness in both EEG and fMRI modalities. In people with mild-moderate AD, VAN and LP markers and fronto-parietal activation were significantly reduced. In participants with severe AD, who were behaviourally minimally responsive, there was limited evidence of frontoparietal markers of perceptual awareness, however this may reflect attentional and task insensitivity. These results demonstrate that the brain mechanisms associated with perceptual awareness become increasingly impaired with progression of AD. This motivates further investigation into the dimensions of awareness affected by the disorder with implications for treatment and management of people with dementia.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "medRxiv",
+        "yearOfPublication": 2026
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "Wellcome Trust",
+            "grantId": "206648/Z/17/Z",
+            "orderIn": 0
+          },
+          {
+            "agency": "European Research Council",
+            "grantId": "101043666",
+            "orderIn": 0
+          },
+          {
+            "agency": "Wellcome Trust",
+            "grantId": "210920/Z/18/Z",
+            "orderIn": 0
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.08.27.26356661"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/article/PPR/PPR1310194"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "N",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "Y",
+      "nihAuthMan": "N",
+      "manuscriptId": "EMS218120",
+      "hasTMAccessionNumbers": "Y",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "doi"
+        ]
+      },
+      "dateOfCreation": "2026-09-02",
+      "firstPublicationDate": "2026-08-31",
+      "firstIndexDate": "2026-09-02",
+      "fullTextReceivedDate": "2026-09-05",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "PPR1162676",
+      "source": "PPR",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PPR1162676"
+        ]
+      },
+      "doi": "10.21203/rs.3.rs-8883514/v1",
+      "title": "Dorsal-ventral precuneus gradients organise large-scale networks and track consciousness level",
+      "authorString": "Lu D, Ram A, Carhart-Harris R, Roseman L, Owen A, Naci L, Menon D, Stamatakis E.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Lu D",
+            "lastName": "Lu",
+            "firstName": "Dian",
+            "initials": "D",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Neurosurgery, The Second Affiliated Hospital, School of Medicine, ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ram A",
+            "lastName": "Ram",
+            "firstName": "Adapa",
+            "initials": "A",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Division of Anaesthesia, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Carhart-Harris R",
+            "lastName": "Carhart-Harris",
+            "firstName": "Robin",
+            "initials": "R",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-6062-7150"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Psychedelics Division - Neuroscape, Department of Neurology, , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Roseman L",
+            "lastName": "Roseman",
+            "firstName": "Leor",
+            "initials": "L",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-9990-6029"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Centre for Psychedelic Research, Department of Brain Sciences, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Owen A",
+            "lastName": "Owen",
+            "firstName": "Adrian",
+            "initials": "A",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-5738-3765"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Psychology and Department of Physiology and Pharmacology, Western Institute for Neuroscience, , , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Naci L",
+            "lastName": "Naci",
+            "firstName": "Lorina",
+            "initials": "L",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-9630-3978"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Trinity College Institute of Neuroscience, School of Psychology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Menon D",
+            "lastName": "Menon",
+            "firstName": "David",
+            "initials": "D",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-3228-9692"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Division of Anaesthesia, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Stamatakis E",
+            "lastName": "Stamatakis",
+            "firstName": "Emmanuel",
+            "initials": "E",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-6955-9601"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Division of Anaesthesia, , ,"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-6955-9601"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-9630-3978"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-9990-6029"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-3228-9692"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-5738-3765"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-6062-7150"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics"
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "<title>Abstract</title>  <p>Large-scale functional connectivity (FC) networks are typically treated as discrete neuroanatomical entities, yet their organisation in regions where multiple systems converge remains poorly understood. Here we investigate the posterior precuneus (PCu)\u2014a key hub of the default mode network (DMN) situated at the interface with the frontoparietal control network (FPCN)\u2014using a spatial-derivative approach that quantifies how FC changes along the PCu's dorsal\u2013ventral axis. Across five pharmacological datasets encompassing psychedelic and anaesthetic states, we demonstrate that the spatial derivative of functional connectivity (FC) recovers canonical DMN\u2013FPCN organization with superior anatomical specificity compared to FC alone. This functional gradient is systematically modulated by consciousness level: its overall magnitude diminishes across all altered states of consciousness (ASCs), while its spatial entropy increases under psychedelics but decreases under sedation. These effects cannot be explained by local smoothing and instead suggest that the PCu embeds a continuous, anatomically constrained transition between large-scale networks that is sensitive to global brain-state dynamics. Our findings motivate a gradient-based perspective on functional network organisation and identify a parsimonious neural signature that tracks the brain\u2019s dynamical repertoire across diverse ASCs.</p>",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "Research Square",
+        "yearOfPublication": 2026
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "Wellcome Trust",
+            "grantId": "083660/Z/07/Z",
+            "orderIn": 0
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.21203/rs.3.rs-8883514/v1"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/article/PPR/PPR1162676"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR1162676&type=FILE&fileName=EMS212853-pdf.pdf&mimeType=application/pdf"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "Y",
+      "nihAuthMan": "N",
+      "manuscriptId": "EMS212853",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-03-07",
+      "firstPublicationDate": "2026-03-06",
+      "firstIndexDate": "2026-03-07",
+      "fullTextReceivedDate": "2026-03-10",
+      "versionList": {
+        "version": [
+          {
+            "id": "PPR1162676",
+            "source": "PPR",
+            "versionNumber": 1,
+            "firstPublishDate": "2026-03-06",
+            "pubTypeList": {
+              "pubType": [
+                "preprint"
+              ]
+            },
+            "hasEvaluations": "N"
+          }
+        ]
+      },
+      "versionNumber": 1,
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "PPR1322147",
+      "source": "PPR",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PPR1322147"
+        ]
+      },
+      "doi": "10.21203/rs.3.rs-10663195/v1",
+      "title": "Perceived Stress, Stressors, and Recommendations Suggested by Medical Students: A Convergent Mixed-Methods Study",
+      "authorString": "Noor IN, Alam S, Rahman ZS, Rakib MMNA, Ray SK, Rume MIR, Parag DDD, Islam N.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Noor IN",
+            "lastName": "Noor",
+            "firstName": "Irfan Nowroze",
+            "initials": "IN"
+          },
+          {
+            "fullName": "Alam S",
+            "lastName": "Alam",
+            "firstName": "Sumaira",
+            "initials": "S"
+          },
+          {
+            "fullName": "Rahman ZS",
+            "lastName": "Rahman",
+            "firstName": "Zerin Shabnam",
+            "initials": "ZS"
+          },
+          {
+            "fullName": "Rakib MMNA",
+            "lastName": "Rakib",
+            "firstName": "Nahid Al",
+            "initials": "MMNA"
+          },
+          {
+            "fullName": "Ray SK",
+            "lastName": "Ray",
+            "firstName": "Sanjoy Kumar",
+            "initials": "SK"
+          },
+          {
+            "fullName": "Rume MIR",
+            "lastName": "Rume",
+            "firstName": "Md Ibrahim Rahman",
+            "initials": "MIR"
+          },
+          {
+            "fullName": "Parag DDD",
+            "lastName": "Parag",
+            "firstName": "Deb Dulal Dey",
+            "initials": "DDD"
+          },
+          {
+            "fullName": "Islam N",
+            "lastName": "Islam",
+            "firstName": "Nawshin",
+            "initials": "N"
+          }
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "<title>Abstract</title>  <p>Introduction:  Stress among medical students is a global concern that affects their well-being, learning, and future professional performance. Although Bangladeshi studies have quantified stress prevalence and stressors, evidence on students' lived experiences, coping responses, and recommendations for well-being is limited. This study aimed to assess stress and stressors among medical undergraduates; explore stress experiences, contextual stressors, coping, and recommendations; and integrate quantitative and qualitative findings for institutional stress-reduction strategies. Methods  A convergent mixed-methods study was conducted on medical students from one private (PrMC) and one public (PbMC) college in Dhaka, Bangladesh. The quantitative survey included 201 participants using proportionate stratified random sampling. Perceived stress and stressors were assessed using the Perceived Stress Scale-10 (PSS-10) and Medical Student Stressor Questionnaire (MSSQ-40). The qualitative component comprised six focus groups with 53 students from various academic phases. Quantitative data were analyzed using descriptive statistics, non-parametric tests, and multivariable regression, and qualitative data using reflexive thematic analysis. The findings were integrated using joint display and meta-inference. Results  The mean PSS-10 score was 22.23\u2009\u00b1\u20096.19, with 70.6% and 24.4% of participants reporting moderate and high stress, respectively. Academic-related (mean\u2009=\u20092.252) and teaching- and learning-related stressors (mean\u2009=\u20092.024) were the highest-rated MSSQ-40 domains. Female sex and private medical college enrolment were independently associated with lower stress, whereas academic-related stressors were associated with higher stress (all p\u2009<\u20090.01). Qualitative analysis showed stress stemmed from interconnected academic, institutional, and social contexts, including workload, assessment pressure, unsupportive institutional practices, limited recreational and social infrastructure, and inadequate mental health services. Students described informal peer support as a lifeline. Although students employed both problem- and emotion-focused coping strategies, many perceived these responses as insufficient because organizational constraints limited their effectiveness. Students often see stress as inevitable in academia and endure it. Participants suggested refining curriculum, supportive faculty interactions, a better learning environment, and trustworthy mental health resources. Conclusion  Medical students in Bangladesh experience moderate-to-high stress driven by academic, institutional and social contexts. Improving medical student well-being requires system-level reforms that address academic structures, institutional support, and learning environments rather than relying solely on individual resilience-focused approaches.</p>",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "Research Square",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.21203/rs.3.rs-10663195/v1"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/article/PPR/PPR1322147"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "N",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "N",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "Y",
+      "nihAuthMan": "N",
+      "manuscriptId": "EMS218954",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-09-19",
+      "firstPublicationDate": "2026-09-18",
+      "firstIndexDate": "2026-09-19",
+      "fullTextReceivedDate": "2026-10-05",
+      "versionList": {
+        "version": [
+          {
+            "id": "PPR1322147",
+            "source": "PPR",
+            "versionNumber": 1,
+            "firstPublishDate": "2026-09-18",
+            "pubTypeList": {
+              "pubType": [
+                "preprint"
+              ]
+            },
+            "hasEvaluations": "N"
+          }
+        ]
+      },
+      "versionNumber": 1,
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "PPR1238475",
+      "source": "PPR",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PPR1238475"
+        ]
+      },
+      "doi": "10.64898/2026.05.12.26352585",
+      "title": "Deep Learning for Automated Meningioma Segmentation: Toward Clinical Integration and Workflow Efficiency",
+      "authorString": "Fenney E, Muralidharan L, Ruffle JK, Pandit A, Millip M, Hammam A, Brookes T, Jabeen F, Colman J, Sarwani O, Alattar K, Efthymiou E, Kallam N, Siddiqui J, Marcus HJ, Nachev P, Hyare H.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Fenney E",
+            "lastName": "Fenney",
+            "firstName": "Ebru",
+            "initials": "E",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Translational Neuroscience and Stroke, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Muralidharan L",
+            "lastName": "Muralidharan",
+            "firstName": "Laxmi",
+            "initials": "L",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Translational Neuroscience and Stroke, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ruffle JK",
+            "lastName": "Ruffle",
+            "firstName": "James",
+            "initials": "JK",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-6248-7203"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Translational Neuroscience and Stroke, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Pandit A",
+            "lastName": "Pandit",
+            "firstName": "Anand",
+            "initials": "A",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-4936-4916"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Translational Neuroscience and Stroke, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Millip M",
+            "lastName": "Millip",
+            "firstName": "Mirabel",
+            "initials": "M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Lysholm Department of Neuroradiology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Hammam A",
+            "lastName": "Hammam",
+            "firstName": "Ahmed",
+            "initials": "A",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Lysholm Department of Neuroradiology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Brookes T",
+            "lastName": "Brookes",
+            "firstName": "Thomas",
+            "initials": "T",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Lysholm Department of Neuroradiology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Jabeen F",
+            "lastName": "Jabeen",
+            "firstName": "Farrah",
+            "initials": "F",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Lysholm Department of Neuroradiology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Colman J",
+            "lastName": "Colman",
+            "firstName": "Jordan",
+            "initials": "J",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-6028-504X"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Lysholm Department of Neuroradiology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Sarwani O",
+            "lastName": "Sarwani",
+            "firstName": "Omran",
+            "initials": "O",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Lysholm Department of Neuroradiology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Alattar K",
+            "lastName": "Alattar",
+            "firstName": "Komeil",
+            "initials": "K",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Lysholm Department of Neuroradiology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Efthymiou E",
+            "lastName": "Efthymiou",
+            "firstName": "Evgenia",
+            "initials": "E",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Lysholm Department of Neuroradiology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Kallam N",
+            "lastName": "Kallam",
+            "firstName": "Neha",
+            "initials": "N",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Lysholm Department of Neuroradiology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Siddiqui J",
+            "lastName": "Siddiqui",
+            "firstName": "Juveria",
+            "initials": "J",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Lysholm Department of Neuroradiology, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Marcus HJ",
+            "lastName": "Marcus",
+            "firstName": "Hani",
+            "initials": "HJ",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-8000-392X"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Translational Neuroscience and Stroke, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Nachev P",
+            "lastName": "Nachev",
+            "firstName": "Parashkev",
+            "initials": "P",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Translational Neuroscience and Stroke, , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Hyare H",
+            "lastName": "Hyare",
+            "firstName": "Harpreet",
+            "initials": "H",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Translational Neuroscience and Stroke, , ,"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-6248-7203"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-8000-392X"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-6028-504X"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-4936-4916"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics"
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "<h4>Key Results</h4>  In five-fold cross-validation (1000 cases, six institutions), the model achieved mean Dice similarity coefficients of 0.939 for enhancing tumor, 0.937 for tumor core, and 0.921 for whole tumor, with tumor core volumes strongly correlated with reference volumes (r = 0.995). In external validation (310 cases, single institution), mean tumor core Dice was 0.872 despite heterogeneous MRI protocols and incomplete sequences; tumor core volume correlation remained strong (r = 0.971). In a blinded evaluation by 10 radiologists across 510 cases, model segmentations scored higher than reference annotations, with the advantage fourfold larger in real-world clinical data; mean inference time was 1.2 seconds per case. <h4>Summary Statement</h4>  A fully automated deep learning model achieved high meningioma segmentation accuracy, generalized to heterogeneous clinical imaging in 1.2 seconds, and surpassed reference annotation quality in blinded radiologist evaluation. <h4>Background</h4>  Meningiomas are the most common primary intracranial tumors in adults, and volumetric assessment increasingly guides surveillance and treatment decisions. Automated segmentation could enable standardized volumetry but requires robust validation. <h4>Purpose</h4>  To develop a fully automated three-dimensional deep learning model for meningioma segmentation on multiparametric MRI, and to evaluate segmentation accuracy, external generalizability, failure modes, radiologist-rated clinical plausibility, and workflow feasibility. <h4>Methods</h4>  From 2024 to 2026, this retrospective study trained a custom 3D nnU-Net residual encoder model. Expert segmentations covered enhancing tumor (ET), tumor core (TC), and whole tumor (WT). Dice similarity coefficient (DSC) was the primary metric. External validation used an independent single-institution dataset (n = 310 intracranial cases) with incomplete MRI protocols. Failure modes, model equity, and inference time were assessed. A blinded multi-rater study (10 radiologists; 510 cases) rated TC segmentations using a 0\u201310 Likert scale, analyzed with linear mixed-effects models. <h4>Results</h4>  Model training used the BraTS Meningioma 2023 dataset (n = 1000; mean age 60.2 \u00b1 14.5; 705 female). In cross-validation, mean DSC was 0.939 for ET, 0.937 for TC, and 0.921 for WT. In external validation, mean DSC was 0.872 for TC and 0.842 for WT, despite heterogeneous protocols and incomplete sequences. Predicted TC volumes correlated strongly with reference volumes in cross-validation (r = 0.995) and external validation (r = 0.971). Most common failure modes were skull base and intraosseous tumors with performance equitable across demographic subgroups. Mean inference time was 1.2 seconds. In blinded evaluation (1120 ratings), model segmentations received higher scores than reference annotations (+0.32 BraTS; +1.38 external validation). <h4>Conclusion</h4>  A fully automated deep-learning model achieved high meningioma segmentation accuracy across multi-institutional training data and external clinical imaging. In a blinded study, model segmentation quality exceeded reference annotations, and 1.2-second inference supported workflow integration. Prospective evaluation is warranted before routine deployment.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "medRxiv",
+        "yearOfPublication": 2026
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.05.12.26352585"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/article/PPR/PPR1238475"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/api/fulltextRepo?pprId=PPR1238475&type=FILE&fileName=EMS216782-pdf.pdf&mimeType=application/pdf"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "Y",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "N",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "Y",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "license": "cc by",
+      "authMan": "N",
+      "epmcAuthMan": "Y",
+      "nihAuthMan": "N",
+      "manuscriptId": "EMS216782",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-05-26",
+      "firstPublicationDate": "2026-05-15",
+      "firstIndexDate": "2026-05-26",
+      "fullTextReceivedDate": "2026-08-06",
+      "hasEvaluations": "N"
+    },
+    {
+      "id": "PPR1212520",
+      "source": "PPR",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PPR1212520"
+        ]
+      },
+      "doi": "10.64898/2026.04.28.721302",
+      "title": "Heartbeat-locked auditory deviations slow down cardiac activity",
+      "authorString": "Koroma M, Nguy K, Pelentritou A, De Lucia M, Demertzi A.",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Koroma M",
+            "lastName": "Koroma",
+            "firstName": "Matthieu",
+            "initials": "M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Physiology of Cognition Lab, GIGA-CRC Human Imaging Unit, GIGA Institute, All\u00e9e du 6 Ao\u00fbt, 8 (B30), 4000 Sart Tilman, ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Nguy K",
+            "lastName": "Nguy",
+            "firstName": "Kevin",
+            "initials": "K",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-4745-1231"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Physiology of Cognition Lab, GIGA-CRC Human Imaging Unit, GIGA Institute, All\u00e9e du 6 Ao\u00fbt, 8 (B30), 4000 Sart Tilman, ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Pelentritou A",
+            "lastName": "Pelentritou",
+            "firstName": "Andria",
+            "initials": "A",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0009-0007-1323-2803"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Brain-Body and Consciousness Laboratory, & , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "De Lucia M",
+            "lastName": "De Lucia",
+            "firstName": "Marzia",
+            "initials": "M",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-8792-7885"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Brain-Body and Consciousness Laboratory, & , ,"
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Demertzi A",
+            "lastName": "Demertzi",
+            "firstName": "Athena",
+            "initials": "A",
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-8021-3759"
+            },
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Physiology of Cognition Lab, GIGA-CRC Human Imaging Unit, GIGA Institute, All\u00e9e du 6 Ao\u00fbt, 8 (B30), 4000 Sart Tilman, ,"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-8021-3759"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-8792-7885"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-4745-1231"
+          },
+          {
+            "type": "ORCID",
+            "value": "0009-0007-1323-2803"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics"
+        ]
+      },
+      "pubYear": "2026",
+      "abstractText": "Our responses to environmental inputs depend on the variations of our own physiological activity. However, the mechanisms by which the integration of sensory information with interoceptive signals shape bodily responses to external events remain debated. In this pre-registered study, we hypothesized three possible mechanisms underlying such exteroceptive-interoceptive integration: cardiac surprise, active inference, and dynamic coupling. To test them, we implemented a closed-loop stimulation procedure to play auditory deviations from sequences either synchronized or not with heartbeats which varied in type (omissions or rare tones) and predictability (random or regular intervals). First, we replicated previous findings that cardiac activity slows down in response to sound omissions only when sounds are synchronized with heartbeats. Second, we showed that this effect extends to rare tones, excluding the dynamic coupling hypothesis. Third, we demonstrated that these responses do not depend on the predictability of auditory deviations, excluding both cardiac surprise and active inference hypotheses. In a control experiment, we further observed that behavioral responses depend on the type and predictability of auditory deviants: participants can discriminate subjectively which sounds were synchronized with their own heartbeats without evidence of a relationship to interoception nor cardiac responses. Overall, these results demonstrate that auditory deviations slow down cardiac responses when locked to heartbeats but independently from their type and regularity, calling for novel hypotheses to account for the interoceptive-exteroceptive integration of sensory signals into cardiac activity. <h4>Impact statement</h4>  Using a cardio-audio synchrony task, we show that cardiac responses slow down upon heartbeat-locked auditory deviations independently from their type or regularity, suggesting a simple, fundamental mechanism of integration of internal and external signals into bodily responses to the environment. The heart may provide a straightforward way to study basic self-related processes, without depending on behavior or self-report, which is especially valuable for individuals who are unable to respond or communicate.",
+      "pubTypeList": {
+        "pubType": [
+          "Preprint"
+        ]
+      },
+      "bookOrReportDetails": {
+        "publisher": "bioRxiv",
+        "yearOfPublication": 2026
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "European Research Council",
+            "grantId": "757763",
+            "orderIn": 0
+          },
+          {
+            "agency": "Swiss National Science Foundation",
+            "grantId": "212981",
+            "orderIn": 0
+          },
+          {
+            "agency": "European Research Council",
+            "grantId": "667875",
+            "orderIn": 0
+          }
+        ]
+      },
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.04.28.721302"
+          },
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "html",
+            "site": "Europe_PMC",
+            "url": "https://europepmc.org/article/PPR/PPR1212520"
+          }
+        ]
+      },
+      "isOpenAccess": "Y",
+      "inEPMC": "N",
+      "inPMC": "N",
+      "citedByCount": 0,
+      "hasReferences": "Y",
+      "hasTextMinedTerms": "Y",
+      "hasDbCrossReferences": "N",
+      "hasPDF": "N",
+      "hasBook": "N",
+      "hasSuppl": "Y",
+      "hasLabsLinks": "Y",
+      "hasData": "Y",
+      "license": "cc by-nc",
+      "authMan": "N",
+      "epmcAuthMan": "Y",
+      "nihAuthMan": "N",
+      "manuscriptId": "EMS218508",
+      "hasTMAccessionNumbers": "N",
+      "dateOfCreation": "2026-05-19",
+      "firstPublicationDate": "2026-04-30",
+      "firstIndexDate": "2026-05-19",
+      "fullTextReceivedDate": "2026-09-29",
+      "hasEvaluations": "N"
+    }
+  ]
+}
