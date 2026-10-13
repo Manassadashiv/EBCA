@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-10-13T15:09:45Z",
+  "milestone": "Stage 3.7 \u2014 Multi-Modal Perception, Canonical Integration & Adversarial Acceptance",
+  "status": "CERTIFIED",
+  "gates": {
+    "gate1_escape_and_collision_immunity": {
+      "threshold": "escapes >= 90%, collisions <= 5%",
+      "escapes": 50,
+      "collisions": 0,
+      "total_episodes": 50,
+      "escape_rate": 1.0,
+      "collision_rate": 0.0,
+      "passed": true
+    },
+    "gate2_active_gaze_saccades": {
+      "threshold": "mean_pan_range >= 0.35 rad",
+      "mean_pan_range_rad": 1.626334965081009,
+      "passed": true
+    },
+    "gate3_chassis_suspension_stability": {
+      "threshold": "mean_pitch <= 0.20 rad, max_pitch <= 0.60 rad, slip < 0.15, slew <= 0.08",
+      "mean_pitch_rad": 0.06686786148383392,
+      "max_pitch_rad": 0.4215375999908647,
+      "mean_slip": 0.017622784885502455,
+      "max_slew": 0.08000001311302185,
+      "passed": true
+    },
+    "gate4_cycle_latency_budget": {
+      "threshold": "mean <= 25.0 ms, p95 <= 50.0 ms",
+      "total_cycles": 4504,
+      "mean_latency_ms": 20.700482504831488,
+      "p95_latency_ms": 27.94263499672523,
+      "passed": true
+    },
+    "gate5_ast_decision_isolation": {
+      "threshold": "0 leaks across 14 files",
+      "files_scanned": 14,
+      "leaks_found": 0,
+      "passed": true
+    },
+    "gate6_organ_activation": {
+      "threshold": "100.0% episodes with all 7 developmental organs active",
+      "organ_active_rate": 1.0,
+      "passed": true
+    },
+    "gate7_adversarial_quadrant_robustness": {
+      "threshold": ">= 85.0% escapes in every quadrant",
+      "quadrant_rates": {
+        "front": 1.0,
+        "left": 1.0,
+        "back": 1.0,
+        "right": 1.0
+      },
+      "passed": true
+    }
+  }
+}

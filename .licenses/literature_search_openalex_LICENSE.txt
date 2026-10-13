@@ -1,0 +1,4 @@
+OpenAlex API Terms Notification
+Checked at: 2026-09-24T22:38:00+05:30
+Terms URL: https://developers.openalex.org/
+Always check the license of retrieved papers before reuse.

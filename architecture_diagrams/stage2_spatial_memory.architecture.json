@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Stage 2.2: Allocentric Spatial Memory & World Model",
+    "subtitle": "Sonar Ray-Carving & Grounded Forward Generative Prediction",
+    "output": "stage2_spatial_memory.html",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "ray-carving-path",
+        "label": "Sonar Ray-Carving Pipeline",
+        "focus": [
+          "sonar_array",
+          "ray_projector",
+          "bresenham_engine",
+          "occupancy_grid"
+        ],
+        "note": "Translates 15 time-of-flight acoustic readings into an allocentric log-odds occupancy grid."
+      },
+      {
+        "id": "predictive-modeling",
+        "label": "World Model Rollout",
+        "focus": [
+          "occupancy_grid",
+          "world_model",
+          "candidate_action",
+          "predicted_sonar"
+        ],
+        "note": "Predicts future sensory states up to 5 steps ahead with R\u00b2 = 0.97 accuracy."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "sonar_array",
+      "type": "external",
+      "label": "15-Channel Sonar",
+      "sublabel": "Ultrasonic Array",
+      "pos": [
+        40,
+        160
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Raw Range d_k"
+    },
+    {
+      "id": "ray_projector",
+      "type": "backend",
+      "label": "Beam Projector",
+      "sublabel": "autonomous_mapper.py",
+      "pos": [
+        260,
+        160
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Body-to-World"
+    },
+    {
+      "id": "bresenham_engine",
+      "type": "backend",
+      "label": "Bresenham Carver",
+      "sublabel": "occupancy_memory.py",
+      "pos": [
+        480,
+        160
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Free-Space Line"
+    },
+    {
+      "id": "occupancy_grid",
+      "type": "database",
+      "label": "Allocentric Grid",
+      "sublabel": "occupancy_memory.py",
+      "pos": [
+        700,
+        160
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "128x128 @ 0.05m"
+    },
+    {
+      "id": "candidate_action",
+      "type": "backend",
+      "label": "Candidate Action",
+      "sublabel": "Deliberative u=[v, \u03c9]",
+      "pos": [
+        700,
+        320
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "world_model",
+      "type": "database",
+      "label": "Neural World Model",
+      "sublabel": "modular_world_model.py",
+      "pos": [
+        480,
+        320
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "R\u00b2 = 0.971"
+    },
+    {
+      "id": "predicted_sonar",
+      "type": "backend",
+      "label": "Predicted Sonar",
+      "sublabel": "Sensory Expectation",
+      "pos": [
+        260,
+        320
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Lookahead H=5"
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Allocentric Spatial Memory and Predictive World Modeling",
+      "wraps": [
+        "ray_projector",
+        "bresenham_engine",
+        "occupancy_grid",
+        "world_model",
+        "predicted_sonar"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "sonar-to-proj",
+      "from": "sonar_array",
+      "to": "ray_projector",
+      "label": "ToF Range",
+      "variant": "emphasis"
+    },
+    {
+      "id": "proj-to-bresen",
+      "from": "ray_projector",
+      "to": "bresenham_engine"
+    },
+    {
+      "id": "bresen-to-grid",
+      "from": "bresenham_engine",
+      "to": "occupancy_grid",
+      "label": "Log-Odds"
+    },
+    {
+      "id": "grid-to-model",
+      "from": "occupancy_grid",
+      "to": "world_model",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "via": [
+        [
+          775,
+          260
+        ],
+        [
+          555,
+          260
+        ]
+      ]
+    },
+    {
+      "id": "action-to-model",
+      "from": "candidate_action",
+      "to": "world_model"
+    },
+    {
+      "id": "model-to-pred",
+      "from": "world_model",
+      "to": "predicted_sonar"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Bayesian Ray-Carving",
+      "items": [
+        "15 sonar transducers carved across 128x128 allocentric raster",
+        "Recursive log-odds update: L(m) = L(m) + log(P/(1-P)) - L_0",
+        "Completes full map update in 3.42 ms per cognitive tick"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Decoupled World Model",
+      "items": [
+        "Achieves R\u00b2 = 0.971 in forecasting future depth profiles",
+        "Enables prospective deliberation without simulator cheating",
+        "Certified across 40/40 challenge mazes with 0.00% collisions"
+      ]
+    }
+  ]
+}

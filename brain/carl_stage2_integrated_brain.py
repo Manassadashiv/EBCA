@@ -19,7 +19,7 @@ Strict Anti-Cheat Properties:
 
 import math
 import numpy as np
-from typing import Dict, Any, Tuple, Optional
+from typing import Dict, Any, Tuple, Optional, List
 
 from brain.carl_stage1_reservoir import CarlStage1Reservoir
 from brain.carl_stage2_hd_ring import HeadDirectionRingAttractor

@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-09-23T23:42:00+05:30",
+  "git_commit": "a47e1554672abdca21e181a8d5755998f1e7d3b8",
+  "git_branch": "main",
+  "git_status": "clean",
+  "baseline_sha256_hashes": {
+    "brain/carl_autonomous_agent.py": "721678532C6444AC19AE70294A20A18674BFC9C248F0C4CA9F03EBE2B2A295FC",
+    "brain/carl_active_inference.py": "0A91D2BDB71006E27702C1D5585BD91868B32888368DDAEAA79D1167F9789455",
+    "brain/carl_mppi_deliberation.py": "6B4EBE6713068340181AA23BD418D2828CE23C2512F82AD1DFFB2CAC246AC0C9",
+    "brain/carl_stage2_3_r1_deliberation.py": "651682C3E0950A0BFA03B7841C313E4BD6028A3B29EB5A7AF3D4015B35579019",
+    "tests/test_stage3_ast_anti_cheat.py": "AE1F96B03E916D4148161E84F5E6B7538A937CD69627CCEF4BD0369E01957945"
+  },
+  "pre_reunification_test_summary": {
+    "total_tests": 93,
+    "passed": 91,
+    "failed": 2,
+    "failure_reason": "Pre-existing NameError in Python 3.13 runtime evaluation: 'List' is not defined in carl_stage2_integrated_brain.py line 157",
+    "ast_static_scan": "PASSED (100% clean)",
+    "sha256_integrity": "PASSED (All frozen baselines match)",
+    "embodied_organism_hygiene": "PASSED",
+    "spatial_memory_data_path": "PASSED",
+    "cann_causal_wiring": "PASSED"
+  }
+}

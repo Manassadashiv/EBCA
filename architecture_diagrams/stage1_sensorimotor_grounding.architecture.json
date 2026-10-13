@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Stage 1: Sensorimotor Grounding Architecture",
+    "subtitle": "Anonymous Motor Babbling & Kinematic Parameter Identification",
+    "output": "stage1_sensorimotor_grounding.html",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "discovery-flow",
+        "label": "Channel Discovery Pipeline",
+        "focus": [
+          "babbler",
+          "plant",
+          "proprio_logger",
+          "correlator",
+          "topology_map"
+        ],
+        "note": "Tracing the correlation of anonymous voltage commands to IMU rotational responses."
+      },
+      {
+        "id": "traction-observer",
+        "label": "Traction & Slip Observer",
+        "focus": [
+          "plant",
+          "proprio_logger",
+          "momentum_model",
+          "slip_observer",
+          "safety_veto"
+        ],
+        "note": "Real-time kinematic slip estimation detecting loss of traction on low friction floors."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "babbler",
+      "type": "backend",
+      "label": "Motor Babbler",
+      "sublabel": "carl_stage1_babbler.py",
+      "pos": [
+        40,
+        140
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "6 Channels"
+    },
+    {
+      "id": "plant",
+      "type": "external",
+      "label": "MuJoCo Plant",
+      "sublabel": "stage1_organism.py",
+      "pos": [
+        260,
+        140
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "proprio_logger",
+      "type": "backend",
+      "label": "Proprio Logger",
+      "sublabel": "carl_stage1_hal.py",
+      "pos": [
+        480,
+        140
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "\u03c9_L, \u03c9_R, a_x, \u03c9_z"
+    },
+    {
+      "id": "correlator",
+      "type": "database",
+      "label": "Correlation Engine",
+      "sublabel": "stage1_discovery.py",
+      "pos": [
+        700,
+        140
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Covariance Matrix"
+    },
+    {
+      "id": "topology_map",
+      "type": "backend",
+      "label": "Drive Topology",
+      "sublabel": "stage1_discovery.py",
+      "pos": [
+        700,
+        320
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Left=Ch1, Right=Ch2"
+    },
+    {
+      "id": "momentum_model",
+      "type": "backend",
+      "label": "Momentum Filter",
+      "sublabel": "kinematic_suite.py",
+      "pos": [
+        480,
+        320
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "1-Step AR (R\u00b2=0.98)"
+    },
+    {
+      "id": "slip_observer",
+      "type": "security",
+      "label": "Slip Observer",
+      "sublabel": "kinematic_suite.py",
+      "pos": [
+        260,
+        320
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "s = |v_w - v_b| / v"
+    },
+    {
+      "id": "safety_veto",
+      "type": "security",
+      "label": "Traction Safety",
+      "sublabel": "stage1_organism.py",
+      "pos": [
+        40,
+        320
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Torque Scaling"
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Bodily Grounding & Parameter Discovery Substrate",
+      "wraps": [
+        "correlator",
+        "topology_map",
+        "momentum_model",
+        "slip_observer",
+        "safety_veto"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "babble-to-plant",
+      "from": "babbler",
+      "to": "plant",
+      "label": "voltage",
+      "variant": "emphasis"
+    },
+    {
+      "id": "plant-to-logger",
+      "from": "plant",
+      "to": "proprio_logger"
+    },
+    {
+      "id": "logger-to-corr",
+      "from": "proprio_logger",
+      "to": "correlator"
+    },
+    {
+      "id": "corr-to-topo",
+      "from": "correlator",
+      "to": "topology_map",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "topo-to-momentum",
+      "from": "topology_map",
+      "to": "momentum_model"
+    },
+    {
+      "id": "logger-to-momentum",
+      "from": "proprio_logger",
+      "to": "momentum_model",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "momentum-to-slip",
+      "from": "momentum_model",
+      "to": "slip_observer"
+    },
+    {
+      "id": "slip-to-veto",
+      "from": "slip_observer",
+      "to": "safety_veto",
+      "label": "slip > 0.25",
+      "variant": "security"
+    },
+    {
+      "id": "veto-to-babbler",
+      "from": "safety_veto",
+      "to": "babbler",
+      "fromSide": "top",
+      "toSide": "bottom"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Unlabeled Motor Babbling",
+      "items": [
+        "Sweeps 6 anonymous channels across pseudo-random frequencies",
+        "Discovers Left/Right differential drive polarity in < 2,500 ticks",
+        "Automatically prunes 4 inactive dummy channels"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Traction Estimation",
+      "items": [
+        "Closed-form slip observer: s = |v_wheel - v_body| / max(|v|, \u03b5)",
+        "Detects low-friction drops (\u03bc=0.20) in < 45 ms",
+        "Prevents non-linear wheel spin-out without analytical plant models"
+      ]
+    }
+  ]
+}

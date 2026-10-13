@@ -10,7 +10,7 @@ brain/carl_generative_self_model.py — Generative Self-World Model, Active Infe
 import math
 import numpy as np
 from dataclasses import dataclass
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List, Tuple, Optional
 
 @dataclass
 class SelfModelParameters:

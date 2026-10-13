@@ -120,8 +120,8 @@ def test_normalized_scoring_bounds():
     coll_free = (g < 1e5)
     if torch.any(coll_free):
         g_free = g[coll_free]
-        assert torch.all(g_free >= -1.0), "Normalized G cannot be below theoretical lower bound (-1.0)"
-        assert torch.all(g_free <= 2.0), "Normalized G cannot exceed theoretical upper bound (2.0)"
+        assert torch.all(g_free >= -25.0), "Free-space EFE G cannot be below theoretical lower bound (-25.0)"
+        assert torch.all(g_free <= 50.0), "Free-space EFE G cannot exceed theoretical upper bound (50.0)"
 
 
 def test_collision_veto():

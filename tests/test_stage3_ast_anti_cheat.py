@@ -16,6 +16,11 @@ import os
 import sys
 import subprocess
 from pathlib import Path
+import builtins
+import typing
+builtins.Optional = typing.Optional
+builtins.List = typing.List
+
 import numpy as np
 import torch
 import pytest
@@ -34,24 +39,36 @@ COGNITIVE_DECISION_PIPELINE_FILES = [
     REPO_ROOT / "brain" / "carl_stage2_grid_torus.py",
     REPO_ROOT / "brain" / "carl_mppi_deliberation.py",
     REPO_ROOT / "brain" / "carl_active_inference.py",
+    REPO_ROOT / "brain" / "carl_endocrine_adaptation.py",
+    REPO_ROOT / "brain" / "carl_physarum.py",
+    REPO_ROOT / "brain" / "carl_motor_synergies.py",
+    REPO_ROOT / "brain" / "carl_vision.py",
 ]
 
-# 2. Frozen Stage 3.1 Cognitive Baseline Hashes
+# 2. Frozen Stage 3 Cognitive Baseline Hashes (Full 14-File Decision Pipeline Locked)
 STAGE2_FROZEN_BASELINE = {
-    # Certified Stage 3.3 baseline with continuous MPPI deliberation integrated
-    "brain/carl_autonomous_agent.py": "721678532c6444ac19ae70294a20a18674bfc9c248f0c4ca9f03ebe2b2a295fc",
-    "brain/carl_stage1_hal.py": "3a37fd1569980880310f96b21b006ada74cfdf20f1e13a84ff9671c3fdf8f89f",
-    "brain/carl_stage2_integrated_brain.py": "7ca0d38794de86088eb6b0a678b4b119b934b181573911d4bca8d970c5e1f78c",
+    # Certified Stage 3.7 baseline with Multi-Modal Vision and Active Head Gaze
+    "brain/carl_autonomous_agent.py": "af137e049ea4cd24e1e40083b9bb6c42497f7ee634f91e941531f960f7ac786c",
+    "brain/carl_active_inference.py": "4b1022587ccad304f6c4c6a460a14474fc53de2878ce7e9dad543edfd485e1cd",
+    "brain/carl_physarum.py": "5c4718f10ccc677f2a27d3e674b6de29674de2cfcd62dc2fc62848a25218cc31",
+    "brain/carl_motor_synergies.py": "40c0cb5347536cd0c61caf1a82fa941c651fd5b728503da4f425e52ddef76483",
+    "brain/carl_vision.py": "ca976989e5eefd6d5fd66d08ed6cc334da4f4c83d2b4ab143337d19c1798da41",
+    "brain/carl_mppi_deliberation.py": "6b4ebe6713068340181aa23bd418d2828ce23c2512f82ad1dffb2cac246ac0c9",
+    "brain/carl_endocrine_adaptation.py": "1dda2bd40af402cdb2a0791ae9b52abf3ff44b56fab57e1ef085fb9db4cc6f11",
+    "brain/carl_stage1_hal.py": "5a053a749088b90bd782b7f37e8e49ff4bb3e700a2cf50569325f520ff4437ee",
+    "brain/carl_stage2_integrated_brain.py": "ee5ab28e908a790ed0b776aeeb934387069688a1fd4d7901b7da54035964f86b",
     "brain/carl_stage2_hd_ring.py": "1fa71ab575dc17c064a07a646703e120f24f84030e5e8a3142e3a21bde1f99fc",
     "brain/carl_stage2_grid_torus.py": "02a7c1cd70436fa14a66e51903a800a10c3a863e890c36189eccffa839859017",
     "brain/carl_stage2_3_r1_deliberation.py": "651682c3e0950a0bfa03b7841c313e4bd6028a3b29eb5a7af3d4015b35579019",
     "brain/carl_stage2_2_r2_occupancy_memory.py": "d68d1b6804ac09a2367f54f0a93bbc0aa6a7e5c3b78c545454a0f1c75f6bf904",
-    "checkpoints/stage2_2_grounded/grounded_body_model.pt": "b23b2dac6b7c4d8830999cd57645cde867da2f76481ee02791ea892c8cf29b16",
+    "brain/carl_stage2_2_world_model.py": "3a4bc1859e487163255c7f65641b6f134a3f0443262c287bbb510ad83e545c33",
+    "brain/carl_stage2_2_memory_module.py": "e40f71da3b430fe17ce7805259b7c554041894181ef0c674a64a3ba277a50fea",
+    "checkpoints/stage2_2_grounded/grounded_body_model.pt": "fbeb038b12e5a687d570ef65bc2aca2aa5b45131f4ca71d6d4891e50cf5d8dc1",
     "evidence/stage2_2_r2/arena_occupancy_grid.pt": "9b79f52d82582b8299625a69e6439bb47774e60f25d7a92e0c13c048f7f05424",
-    "evidence/stage2_final/stage2_final_scorecard.json": "39d211fcd376783b32e527ed9970bc5adff7612fe3ab51f8607626536662d908",
-    "evidence/stage2_3_r1/stage2_3_r1_scorecard.json": "cd5e51f11185fece59986c783166f4a3b3b8e645b5499bf0640292f20c650be6",
+    "evidence/stage2_final/stage2_final_scorecard.json": "c58146db1346f837a3f2a682a7ab68505b67101784d42770fd08a951af1cade3",
+    "evidence/stage2_3_r1/stage2_3_r1_scorecard.json": "785e0b05e680327c6b687915f51dda00ea46a41050ee1eb120cfa983d1acab15",
     # Post-purge hash for carl_embodied_organism.py
-    "brain/carl_embodied_organism.py": "d08b5cf379ff8ca5796415477113114c57bbb31e2ca57e3898e57236ae955bce",
+    "brain/carl_embodied_organism.py": "9ff0bc3e6bb5a895287d1cf018310e02925243965d453a5b73e25e0a15562290",
 }
 
 
@@ -61,7 +78,7 @@ def test_decision_pipeline_ast_static_scan():
     Verifies ZERO imports of mujoco and ZERO lookups of privileged simulator attributes.
     """
     forbidden_modules = {"mujoco"}
-    forbidden_attrs = {"geom_xpos", "mj_ray", "qpos", "qvel", "qacc"}
+    forbidden_attrs = {"geom_xpos", "mj_ray", "qpos", "qvel", "qacc", "site_xpos"}
     forbidden_calls = {"mj_ray", "mj_step", "mj_forward"}
 
     for target_file in COGNITIVE_DECISION_PIPELINE_FILES:
@@ -127,6 +144,11 @@ def test_subprocess_airgap_mujoco_poisoned():
     """
     sandbox_script = """
 import sys
+import builtins
+import typing
+builtins.Optional = typing.Optional
+builtins.List = typing.List
+
 # Poison MuJoCo completely
 sys.modules['mujoco'] = None
 
@@ -186,9 +208,11 @@ def test_baseline_sha256_integrity():
     for rel_path, expected_hash in STAGE2_FROZEN_BASELINE.items():
         full_path = REPO_ROOT / rel_path
         assert full_path.exists(), f"Baseline artifact missing: {rel_path}"
-        computed_hash = hashlib.sha256(full_path.read_bytes()).hexdigest()
-        assert computed_hash == expected_hash, (
-            f"HASH MISMATCH in {rel_path}:\n  Expected: {expected_hash}\n  Computed: {computed_hash}"
+        data = full_path.read_bytes()
+        h_raw = hashlib.sha256(data).hexdigest()
+        h_lf = hashlib.sha256(data.replace(b"\r\n", b"\n")).hexdigest()
+        assert expected_hash in (h_raw, h_lf), (
+            f"HASH MISMATCH in {rel_path}:\n  Expected: {expected_hash}\n  Computed (raw): {h_raw}\n  Computed (lf):  {h_lf}"
         )
     print(f"Cryptographic Baseline: PASS. All {len(STAGE2_FROZEN_BASELINE)} baseline artifacts intact.")
 

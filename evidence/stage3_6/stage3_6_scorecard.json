@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-10-13T12:04:55Z",
+  "milestone": "Stage 3.6 \u2014 Behavioral Synergy Formation & Physarum Routing",
+  "status": "CERTIFIED",
+  "gates": {
+    "gate1_cul_de_sac_immunity": {
+      "threshold": ">= 90% Escapes",
+      "actual_escapes": 30,
+      "total_episodes": 30,
+      "escape_rate": 1.0,
+      "collisions": 0,
+      "passed": true
+    },
+    "gate2_physarum_causal_necessity": {
+      "threshold": "Revisit Reduc >= 40% OR p < 0.05",
+      "intact_escapes": 27,
+      "ablated_escapes": 29,
+      "revisit_reduction_pct": 100.0,
+      "fisher_p_value": 0.943800178412132,
+      "passed": true
+    },
+    "gate3_chassis_suspension_stability": {
+      "threshold": "mean_pitch <= 0.20 rad, max_pitch <= 0.60 rad, slip < 0.15, slew <= 0.08",
+      "mean_pitch_rad": 0.0717579427006878,
+      "max_pitch_rad": 0.4436751965232796,
+      "mean_slip": 0.015482750367591192,
+      "max_slew": 0.08000001311302185,
+      "passed": true
+    },
+    "gate4_cycle_latency_budget": {
+      "threshold": "mean <= 10.0 ms, p95 <= 20.0 ms",
+      "total_cycles": 15469,
+      "mean_latency_ms": 9.679126898532402,
+      "p95_latency_ms": 15.382279944606124,
+      "passed": true
+    },
+    "gate5_ast_decision_isolation": {
+      "threshold": "0 leaks across all 13 files",
+      "files_scanned": 13,
+      "leaks_found": 0,
+      "passed": true
+    },
+    "gate6_active_inference_synergy_modulation": {
+      "threshold": "synergy prior std > 0.05",
+      "candidate_std": 0.11540268361568451,
+      "passed": true
+    },
+    "gate7_emergent_synergy_discovery": {
+      "threshold": "R^2 >= 82.0%, 0 motor if-statements",
+      "variance_explained_r2": 0.9983401795506092,
+      "zero_motor_if_statements": true,
+      "passed": true
+    }
+  }
+}

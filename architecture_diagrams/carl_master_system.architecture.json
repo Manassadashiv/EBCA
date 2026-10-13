@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "CARL-DX Master Embodied Architecture",
+    "subtitle": "End-to-End Organism Data Flow & Zero-Copy Cognitive Loop",
+    "output": "carl_master_system.html",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "sensorimotor-loop",
+        "label": "Sensorimotor Execution Loop",
+        "focus": [
+          "mujoco_plant",
+          "hal_boundary",
+          "carl_organism",
+          "mppi_planner",
+          "motor_filter"
+        ],
+        "note": "Follows the 30 Hz physical sensor ingestion through cognitive processing to actuator command delivery."
+      },
+      {
+        "id": "spatial-cognition",
+        "label": "Neuromorphic & Spatial Memory Core",
+        "focus": [
+          "carl_organism",
+          "cann_substrate",
+          "occupancy_memory",
+          "world_model"
+        ],
+        "note": "Internal generative representation combining continuous attractors and allocentric raster mapping."
+      },
+      {
+        "id": "security-isolation",
+        "label": "AST Anti-Cheat Quarantine",
+        "focus": [
+          "mujoco_plant",
+          "hal_boundary",
+          "ast_auditor",
+          "carl_organism"
+        ],
+        "note": "Strict isolation barrier preventing physics coordinates from leaking into cognitive decisions."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "mujoco_plant",
+      "type": "external",
+      "label": "MuJoCo Plant",
+      "sublabel": "Physics Engine (dt=0.005s)",
+      "pos": [
+        40,
+        260
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Ground Truth"
+    },
+    {
+      "id": "hal_boundary",
+      "type": "security",
+      "label": "Hardware Layer (HAL)",
+      "sublabel": "carl_stage1_hal.py",
+      "pos": [
+        260,
+        260
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Noise & Isolation"
+    },
+    {
+      "id": "carl_organism",
+      "type": "backend",
+      "label": "Organism Core",
+      "sublabel": "carl_embodied_organism.py",
+      "pos": [
+        480,
+        260
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Zero-Copy Bus"
+    },
+    {
+      "id": "cann_substrate",
+      "type": "database",
+      "label": "2,114 CANN Attractor",
+      "sublabel": "carl_stage2_hd_ring.py",
+      "pos": [
+        480,
+        100
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "HD + Grid Torus"
+    },
+    {
+      "id": "occupancy_memory",
+      "type": "database",
+      "label": "Allocentric Memory",
+      "sublabel": "occupancy_memory.py",
+      "pos": [
+        700,
+        100
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "128x128 Raster"
+    },
+    {
+      "id": "world_model",
+      "type": "database",
+      "label": "World Model",
+      "sublabel": "modular_world_model.py",
+      "pos": [
+        700,
+        260
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "R\u00b2 = 0.971"
+    },
+    {
+      "id": "mppi_planner",
+      "type": "backend",
+      "label": "MPPI Deliberation",
+      "sublabel": "carl_mppi_deliberation.py",
+      "pos": [
+        700,
+        420
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "M=128 Rollouts"
+    },
+    {
+      "id": "motor_filter",
+      "type": "backend",
+      "label": "Motor Filter",
+      "sublabel": "carl_motor_filter.py",
+      "pos": [
+        480,
+        420
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Jerk Limiter"
+    },
+    {
+      "id": "ast_auditor",
+      "type": "security",
+      "label": "AST Auditor",
+      "sublabel": "liar_detector.py",
+      "pos": [
+        260,
+        420
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Zero Cheat"
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Cognitive Space (Zero Simulator Leaks)",
+      "wraps": [
+        "carl_organism",
+        "cann_substrate",
+        "occupancy_memory",
+        "world_model",
+        "mppi_planner",
+        "motor_filter"
+      ]
+    },
+    {
+      "kind": "security-group",
+      "label": "Hardware Quarantine",
+      "wraps": [
+        "hal_boundary",
+        "ast_auditor"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "plant-to-hal",
+      "from": "mujoco_plant",
+      "to": "hal_boundary",
+      "label": "raw IO",
+      "variant": "emphasis"
+    },
+    {
+      "id": "hal-to-organism",
+      "from": "hal_boundary",
+      "to": "carl_organism"
+    },
+    {
+      "id": "organism-to-cann",
+      "from": "carl_organism",
+      "to": "cann_substrate",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "cann-to-memory",
+      "from": "cann_substrate",
+      "to": "occupancy_memory",
+      "label": "pose"
+    },
+    {
+      "id": "organism-to-world",
+      "from": "carl_organism",
+      "to": "world_model"
+    },
+    {
+      "id": "memory-to-world",
+      "from": "occupancy_memory",
+      "to": "world_model"
+    },
+    {
+      "id": "world-to-mppi",
+      "from": "world_model",
+      "to": "mppi_planner"
+    },
+    {
+      "id": "mppi-to-filter",
+      "from": "mppi_planner",
+      "to": "motor_filter",
+      "label": "u*"
+    },
+    {
+      "id": "filter-to-organism",
+      "from": "motor_filter",
+      "to": "carl_organism",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "organism-to-hal",
+      "from": "carl_organism",
+      "to": "hal_boundary",
+      "fromSide": "bottom",
+      "toSide": "bottom",
+      "via": [
+        [
+          555,
+          360
+        ],
+        [
+          335,
+          360
+        ]
+      ]
+    },
+    {
+      "id": "auditor-check",
+      "from": "ast_auditor",
+      "to": "hal_boundary",
+      "variant": "security",
+      "fromSide": "top",
+      "toSide": "bottom"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Embodied Substrate",
+      "items": [
+        "Operates at 33.3 Hz (dt_ctrl = 0.030s) against MuJoCo physics (dt_sim = 0.005s)",
+        "All perception derived strictly from 15-channel sonar and 6-axis IMU",
+        "Mean cycle latency: 8.83 ms, p95: 13.14 ms (margin: 73.7%)"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Generative Cognition",
+      "items": [
+        "2,114-unit CANN maintains noise-resistant heading and metric spatial phase",
+        "Vectorized Bresenham ray-carving builds 128x128 allocentric occupancy map",
+        "Decoupled world model predicts forward sensory states (R\u00b2 = 0.97)"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Security & Action",
+      "items": [
+        "MPPI continuous trajectory optimization (M=128, H=15)",
+        "17-point swept-cone collision shield vetoes wall clipping",
+        "Zero simulator coordinates verified via automated AST anti-cheat scanner"
+      ]
+    }
+  ]
+}

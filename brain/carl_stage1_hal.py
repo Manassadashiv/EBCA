@@ -67,8 +67,9 @@ class CarlStage1HAL:
         self._permutation = np.arange(self.ACTUATOR_DIM, dtype=int)
         self._sensor_permutation = np.arange(self.SENSORY_DIM, dtype=int)
         
-        # Sonar angles: 15 rays spanning [-120 deg, +120 deg]
-        self._sonar_angles = np.linspace(-2.0944, 2.0944, 15, endpoint=True)
+        # Omnidirectional Optical ToF: 15 laser distance rays spanning full 360-deg ring [-168 deg, +168 deg]
+        # Step: 24.0 deg (Ray 7 = 0.0 deg forward, Rays 0 & 14 = +/-168 deg rear bumper coverage)
+        self._sonar_angles = np.deg2rad(np.linspace(-168.0, 168.0, 15, endpoint=True))
         
         # Identify all bodies and geoms belonging strictly to CARL's kinematic tree
         root_body_id = self.model.body("drive_deck").id
@@ -86,6 +87,10 @@ class CarlStage1HAL:
             if self.model.geom_bodyid[g_id] in self.carl_body_ids
         }
         self.floor_geom_id = self.model.geom("floor").id
+        try:
+            self.bumper_geom_id = self.model.geom("chassis_bumper").id
+        except Exception:
+            self.bumper_geom_id = -1
         self.tire_geom_ids = {
             self.model.geom("tire_L").id,
             self.model.geom("tire_R").id
@@ -94,6 +99,9 @@ class CarlStage1HAL:
         # Battery state
         self._battery_level: float = 1.0
         self._battery_drain_rate: float = 0.0001  # per tick
+
+        # Offscreen camera renderer cache
+        self._renderer: Optional[mujoco.Renderer] = None
 
         # Internal tracking
         self.tick_count: int = 0
@@ -234,6 +242,39 @@ class CarlStage1HAL:
             "tire_floor_contacts": tire_floor_contacts,
         }
 
+    def get_carl_impact_info(self) -> Dict[str, Any]:
+        """
+        Distinguishes damaging structural collisions (Fn > 15.0 N or penetration < -5mm)
+        from compliant tangential cuticular boundary sliding (tactile thigmotaxis).
+        Grounding: Jayaram & Full (PNAS 2016) & Phase 0 Invariant 2.
+        """
+        damaging_impacts = 0
+        grazing_contacts = 0
+        max_normal_force = 0.0
+        c_force = np.zeros(6, dtype=np.float64)
+        for i in range(self.data.ncon):
+            c = self.data.contact[i]
+            in1 = c.geom1 in self.carl_geom_ids
+            in2 = c.geom2 in self.carl_geom_ids
+            if (in1 and not in2) or (in2 and not in1):
+                other = c.geom2 if in1 else c.geom1
+                if other != self.floor_geom_id:
+                    mujoco.mj_contactForce(self.model, self.data, i, c_force)
+                    fn = float(abs(c_force[0]))
+                    if fn > max_normal_force:
+                        max_normal_force = fn
+                    carl_g = c.geom1 if in1 else c.geom2
+                    is_bumper = (carl_g == self.bumper_geom_id)
+                    if (is_bumper or fn <= 15.0) and c.dist >= -0.004:
+                        grazing_contacts += 1
+                    else:
+                        damaging_impacts += 1
+        return {
+            "damaging_impacts": damaging_impacts,
+            "grazing_contacts": grazing_contacts,
+            "max_normal_force": max_normal_force,
+        }
+
     def write_actuators(self, u: np.ndarray) -> np.ndarray:
         """
         Applies continuous 6-D command vector u ∈ [-1.0, 1.0]^6 to physical actuators.
@@ -275,6 +316,16 @@ class CarlStage1HAL:
         diag["u_executed"] = u_executed
 
         return s_next, diag
+
+    def read_camera(self, camera_name: str = "eye_cam", width: int = 64, height: int = 64) -> np.ndarray:
+        """
+        Unprivileged offscreen retinal ingestion from CARL's physical eye_cam.
+        Returns uint8 RGB array of shape (height, width, 3).
+        """
+        if self._renderer is None:
+            self._renderer = mujoco.Renderer(self.model, height=height, width=width)
+        self._renderer.update_scene(self.data, camera=camera_name)
+        return self._renderer.render()
 
     def get_diagnostics(self) -> Dict[str, Any]:
         """Returns ground-truth physical state diagnostics for validation audits."""

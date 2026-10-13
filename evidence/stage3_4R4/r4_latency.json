@@ -1,10 +1,10 @@
 {
-  "sample_count": 1977,
-  "mean_ms": 20.547385685596677,
-  "median_ms": 14.628999982960522,
-  "p95_ms": 86.67263999814168,
-  "p99_ms": 157.53949201898652,
-  "max_ms": 374.61609998717904,
-  "budget_mean_pass": false,
-  "budget_p95_pass": false
+  "sample_count": 1811,
+  "mean_ms": 4.320364217727724,
+  "median_ms": 3.600600000936538,
+  "p95_ms": 8.370749972527847,
+  "p99_ms": 9.101409983122721,
+  "max_ms": 12.58330000564456,
+  "budget_mean_pass": true,
+  "budget_p95_pass": true
 }

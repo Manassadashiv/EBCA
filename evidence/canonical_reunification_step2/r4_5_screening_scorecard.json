@@ -1,0 +1,15 @@
+{
+  "n_trials": 10,
+  "escapes": 1,
+  "collisions": 0,
+  "timeouts": 9,
+  "env1_escapes": 1,
+  "env1_collisions": 0,
+  "env1_timeouts": 4,
+  "env2_escapes": 0,
+  "env2_collisions": 0,
+  "env2_timeouts": 5,
+  "env2_channel_entry_rate": 0.0,
+  "mean_latency_ms": 4.55,
+  "p95_latency_ms": 8.99
+}

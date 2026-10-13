@@ -1,0 +1,140 @@
+{
+  "audit_metadata": {
+    "milestone": "Stage 3 Readiness Audit — Canonical Compatibility Matrix",
+    "date": "2026-09-24",
+    "workspace": "D:\\ebca"
+  },
+  "modules": [
+    {
+      "module_name": "EndocrineSystem",
+      "stage": "3.5",
+      "classification": "B",
+      "source_file": "brain/carl_endocrine.py",
+      "required_inputs": [
+        "Timestep dt (float)",
+        "Prediction error norm (float) from GenerativeSelfModel / CANN",
+        "Collision / wall-proximity events from unprivileged sonar array",
+        "Optional: battery / energetic load from HAL sensor slice"
+      ],
+      "produced_outputs": [
+        "4 neuromodulator levels: DA, NE, 5-HT, ACh (scalars in [0.0, 3.0])",
+        "Bayesian sensory precision weight pi (scalar >= 0.1)",
+        "Exploration noise amplitude sigma_eta (scalar >= 0.01)",
+        "Reward prediction error RPE (scalar)"
+      ],
+      "inputs_exist_on_canonical_organism": {
+        "status": true,
+        "details": "dt is passed into step_cognitive_cycle(); prediction_error is computed in self.self_model.update_with_observation(); min_obstacle_dist is in sensory.min_obstacle_dist; raw_sensors contains energy/thermal states."
+      },
+      "outputs_integratable_without_redesign": {
+        "status": true,
+        "details": "NE and ACh can directly scale candidate perturbation noise in MPPI (sigma) or weight the epistemic exploration term in Active Inference (w_info). Precision pi can scale sonar covariance."
+      },
+      "alters_existing_certified_behavior": {
+        "status": true,
+        "details": "YES. Altering candidate exploration noise or EFE weights (w_info) directly affects trajectory selection and candidate steering in both MPPI (Stage 3.3) and Active Inference (Stage 3.4), changing downstream actions."
+      },
+      "requires_new_state_apis_buses": {
+        "status": false,
+        "details": "No new buses required. Can be instantiated as self.endocrine = EndocrineSystem() inside CarlAutonomousOrganismAgent, stepped synchronously in step_cognitive_cycle, and exposed in CognitiveCycleTelemetry."
+      }
+    },
+    {
+      "module_name": "KinematicSlipAndFrictionSubstrate",
+      "stage": "3.5",
+      "classification": "B",
+      "source_file": "brain/carl_stage1_hal.py / brain/carl_autonomous_agent.py",
+      "required_inputs": [
+        "Estimated forward speed v_est (float)",
+        "Commanded wheel velocity u_fwd (float)",
+        "IMU longitudinal acceleration ax (raw_sensors[15])",
+        "Floor surface friction mu (environmental perturbation)"
+      ],
+      "produced_outputs": [
+        "slip_ratio (float in [0.0, 1.0])",
+        "Adaptive torque compensation scalar (e.g. k_torque_scale in [0.8, 1.5])",
+        "Estimated traction threshold"
+      ],
+      "inputs_exist_on_canonical_organism": {
+        "status": true,
+        "details": "Already computed at lines 286-297 of carl_autonomous_agent.py (ax_history, v_est, slip_ratio). HAL supports hal.set_friction(mu) via MuJoCo geom friction override."
+      },
+      "outputs_integratable_without_redesign": {
+        "status": true,
+        "details": "The adaptive torque scale can multiply the action command in step_embodiment() or scale wheel drive commands prior to hal.step()."
+      },
+      "alters_existing_certified_behavior": {
+        "status": true,
+        "details": "YES. Closed-loop torque scaling changes physical wheel velocity and slip dynamics across all environments."
+      },
+      "requires_new_state_apis_buses": {
+        "status": false,
+        "details": "State (self.slip_ratio, self.v_est) already lives on the organism instance. Only a closed-loop gain policy (e.g., gain scheduling on slip_ratio) needs to be added."
+      }
+    },
+    {
+      "module_name": "PhysarumMaze",
+      "stage": "3.6",
+      "classification": "B",
+      "source_file": "brain/carl_physarum.py",
+      "required_inputs": [
+        "Source grid coordinate (src_x, src_y) (integer index or robot pos)",
+        "Sink/Goal grid coordinate (snk_x, snk_y) (integer index)",
+        "Obstacle mask or occupancy grid (2D numpy array)"
+      ],
+      "produced_outputs": [
+        "2D harmonic pressure field (25x25 float array)",
+        "Continuous gradient heading vector (atan2 angle in radians)",
+        "Tube conductivity matrix D_h, D_v"
+      ],
+      "inputs_exist_on_canonical_organism": {
+        "status": true,
+        "details": "AllocentricRasterOccupancyMemory in self.spatial_memory contains the 2D grid; robot pose is in self.deliberation.pose[:2]; goal is in active_goal.target_coordinates."
+      },
+      "outputs_integratable_without_redesign": {
+        "status": false,
+        "details": "High architectural friction. CarlAutonomousOrganismAgent operates via continuous trajectory rollouts (MPPI / Active Inference) evaluated against EFE. Physarum outputs a discrete 25x25 cell grid gradient. Bridging this requires converting the pressure gradient into an informative prior over continuous candidate generation or adding a Physarum distance potential into EFE scoring. Crucially, scipy.sparse.linalg.spsolve takes 5-15 ms per step, which would push total cycle latency above the 20 ms real-time budget."
+      },
+      "alters_existing_certified_behavior": {
+        "status": true,
+        "details": "YES. Adding a Physarum routing prior would fundamentally alter trajectory scoring across both mazes and dead-ends."
+      },
+      "requires_new_state_apis_buses": {
+        "status": true,
+        "details": "Requires a raster-to-physarum bridge adapter, a background thread solver or downsampled grid to avoid latency violation, and a new interface on the deliberation engine to ingest global heading priors."
+      }
+    },
+    {
+      "module_name": "ActiveHeadGazeAndEyeCamera",
+      "stage": "3.7",
+      "classification": "B",
+      "source_file": "world/carl_vessel.xml / brain/carl_embodied_organism.py",
+      "required_inputs": [
+        "Head joint positions (neck_pitch, head_yaw)",
+        "MuJoCo eye_cam RGB offscreen buffer (160x120x3 or 320x240x3)",
+        "Head actuator control commands (2 DoF)"
+      ],
+      "produced_outputs": [
+        "RGB visual tensor (torch.Tensor or np.ndarray)",
+        "Active visual bounding boxes / optical flow cues",
+        "Target bearing and elevation in robot ego-frame"
+      ],
+      "inputs_exist_on_canonical_organism": {
+        "status": false,
+        "details": "The hardware camera and joints exist in carl_vessel.xml. However, CarlStage1HAL does NOT initialize or step an offscreen mujoco.Renderer during 30 Hz simulation. Calling mujoco.Renderer(model, height, width).render() at 30 Hz takes 25-45 ms per frame on CPU/OpenGL, violating the 20 ms cognitive latency budget."
+      },
+      "outputs_integratable_without_redesign": {
+        "status": false,
+        "details": "Major architectural redesign required. The canonical organism currently relies strictly on 15 unprivileged sonars, IMU gyro, and wheel encoders. Adding visual perception requires an asynchronous vision thread or low-frequency (2-5 Hz) visual cortex that projects 2D camera detections into 3D world rays and stamps them into the allocentric raster map without privileged coordinate leaks."
+      },
+      "alters_existing_certified_behavior": {
+        "status": true,
+        "details": "YES. Modifies sensory perception, adds head motion commands (2 DoF) to the 6-channel motor bus, and alters occupancy mapping."
+      },
+      "requires_new_state_apis_buses": {
+        "status": true,
+        "details": "Requires HAL camera frame buffer API, asynchronous renderer thread, camera-to-world raycaster, and head actuation controller."
+      }
+    }
+  ]
+}

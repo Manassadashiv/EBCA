@@ -1,0 +1,134 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.7, pytest-9.1.1, pluggy-1.6.0 -- D:\ebca\.venv_cuda\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\ebca
+plugins: anyio-4.14.2
+collecting ... collected 93 items
+
+tests/test_endocrine.py::TestClamping::test_no_modulator_exceeds_max_after_large_surge PASSED [  1%]
+tests/test_endocrine.py::TestClamping::test_no_modulator_goes_below_min PASSED [  2%]
+tests/test_endocrine.py::TestDecay::test_da_decays_toward_baseline_after_surge PASSED [  3%]
+tests/test_endocrine.py::TestDecay::test_ne_decays_faster_than_da PASSED [  4%]
+tests/test_endocrine.py::TestDecay::test_baseline_is_stable_equilibrium PASSED [  5%]
+tests/test_endocrine.py::TestSurgeEvents::test_surge_da_sets_event_label PASSED [  6%]
+tests/test_endocrine.py::TestSurgeEvents::test_surge_ne_sets_event_label PASSED [  7%]
+tests/test_endocrine.py::TestSurgeEvents::test_surge_sht_sets_event_label PASSED [  8%]
+tests/test_endocrine.py::TestSurgeEvents::test_surge_ach_sets_event_label PASSED [  9%]
+tests/test_endocrine.py::TestPrecisionWeight::test_precision_weight_always_above_floor PASSED [ 10%]
+tests/test_endocrine.py::TestPrecisionWeight::test_precision_weight_increases_with_ach PASSED [ 11%]
+tests/test_endocrine.py::TestPrecisionWeight::test_precision_weight_decreases_with_sht PASSED [ 12%]
+tests/test_endocrine.py::TestExplorationNoise::test_noise_scale_always_above_floor PASSED [ 13%]
+tests/test_endocrine.py::TestExplorationNoise::test_noise_scale_scales_with_ne PASSED [ 15%]
+tests/test_endocrine.py::TestBehavioralMode::test_exploit_when_food_visible PASSED [ 16%]
+tests/test_endocrine.py::TestBehavioralMode::test_survive_when_battery_critical PASSED [ 17%]
+tests/test_endocrine.py::TestBehavioralMode::test_survive_when_ne_very_high PASSED [ 18%]
+tests/test_endocrine.py::TestBehavioralMode::test_explore_when_battery_ok_no_food PASSED [ 19%]
+tests/test_endocrine.py::TestBehavioralMode::test_exploit_overrides_low_battery PASSED [ 20%]
+tests/test_endocrine.py::TestHungerDrive::test_hunger_in_unit_range PASSED [ 21%]
+tests/test_endocrine.py::TestHungerDrive::test_hunger_monotonically_decreasing PASSED [ 22%]
+tests/test_endocrine.py::TestHungerDrive::test_full_battery_zero_hunger PASSED [ 23%]
+tests/test_endocrine.py::TestHungerDrive::test_empty_battery_max_hunger PASSED [ 24%]
+tests/test_endocrine.py::TestReplayBlendWeight::test_blend_always_in_unit_range PASSED [ 25%]
+tests/test_endocrine.py::TestReplayBlendWeight::test_high_hunger_increases_blend PASSED [ 26%]
+tests/test_endocrine.py::TestReplayBlendWeight::test_zero_nav_value_gives_zero_blend PASSED [ 27%]
+tests/test_reservoir.py::TestInitialization::test_spectral_radius_near_target PASSED [ 29%]
+tests/test_reservoir.py::TestInitialization::test_initial_state_is_zero PASSED [ 30%]
+tests/test_reservoir.py::TestInitialization::test_w_out_initialized_to_zero PASSED [ 31%]
+tests/test_reservoir.py::TestInitialization::test_rls_counter_starts_at_zero PASSED [ 32%]
+tests/test_reservoir.py::TestStepBounds::test_output_clamped_to_motor_range PASSED [ 33%]
+tests/test_reservoir.py::TestStepBounds::test_no_nan_after_many_steps PASSED [ 34%]
+tests/test_reservoir.py::TestStepBounds::test_no_nan_with_zero_input PASSED [ 35%]
+tests/test_reservoir.py::TestStepBounds::test_output_shape_matches_k PASSED [ 36%]
+tests/test_reservoir.py::TestStepBounds::test_state_norm_is_nonnegative PASSED [ 37%]
+tests/test_reservoir.py::TestStateBoundedness::test_state_stays_bounded_after_long_run PASSED [ 38%]
+tests/test_reservoir.py::TestRLS::test_rls_increments_counter PASSED     [ 39%]
+tests/test_reservoir.py::TestRLS::test_rls_reduces_prediction_error_over_time PASSED [ 40%]
+tests/test_reservoir.py::TestRLS::test_rls_does_not_produce_nan_weights PASSED [ 41%]
+tests/test_reservoir.py::TestRLS::test_p_matrix_stays_bounded PASSED     [ 43%]
+tests/test_reservoir.py::TestSaveLoad::test_save_load_preserves_w_out PASSED [ 44%]
+tests/test_reservoir.py::TestSaveLoad::test_save_load_preserves_rls_count PASSED [ 45%]
+tests/test_reservoir.py::TestSaveLoad::test_load_returns_false_if_file_missing PASSED [ 46%]
+tests/test_grid_cells.py::TestGridCellModule::test_firing_rates_non_negative PASSED [ 47%]
+tests/test_grid_cells.py::TestGridCellModule::test_firing_rates_bounded PASSED [ 48%]
+tests/test_grid_cells.py::TestGridCellModule::test_output_shape PASSED   [ 49%]
+tests/test_grid_cells.py::TestGridCellModule::test_path_integration_accumulates PASSED [ 50%]
+tests/test_grid_cells.py::TestGridCellModule::test_reset_sets_pi_phase PASSED [ 51%]
+tests/test_grid_cells.py::TestGridCellModule::test_fire_without_position_uses_pi_phase PASSED [ 52%]
+tests/test_grid_cells.py::TestGridCellModule::test_firing_rate_formula_bounded PASSED [ 53%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_firing_is_non_negative PASSED [ 54%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_firing_sums_positive PASSED [ 55%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_decode_position_near_input PASSED [ 56%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_peak_cell_returns_valid_index PASSED [ 58%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_decode_returns_none_when_no_activity PASSED [ 59%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_update_graph_creates_bidirectional_edge PASSED [ 60%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_update_graph_ignores_self_transition PASSED [ 61%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_update_graph_increments_edge_count PASSED [ 62%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_duplicate_edge_not_double_counted PASSED [ 63%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_stamp_reward_sets_positive_value PASSED [ 64%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_stamp_reward_sets_persistent_beacon PASSED [ 65%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_persistent_beacon_survives_heavy_decay PASSED [ 66%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_diffusion_propagates_to_neighbours PASSED [ 67%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_nav_values_never_negative PASSED [ 68%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_reward_decays_over_time PASSED [ 69%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_get_novelty_target_returns_none_when_no_neighbours PASSED [ 70%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_get_novelty_target_returns_centre_when_connected PASSED [ 72%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_get_replay_target_returns_none_when_no_nav_signal PASSED [ 73%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_get_replay_target_returns_best_neighbour PASSED [ 74%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_get_graph_stats_has_required_keys PASSED [ 75%]
+tests/test_grid_cells.py::TestPlaceCellLayer::test_graph_stats_edges_match_total_edges PASSED [ 76%]
+tests/test_grid_cells.py::TestHippocampalNavigator::test_step_returns_required_keys PASSED [ 77%]
+tests/test_grid_cells.py::TestHippocampalNavigator::test_uncertainty_in_unit_range PASSED [ 78%]
+tests/test_grid_cells.py::TestHippocampalNavigator::test_novelty_in_unit_range PASSED [ 79%]
+tests/test_grid_cells.py::TestHippocampalNavigator::test_novelty_decreases_with_repeated_visits PASSED [ 80%]
+tests/test_grid_cells.py::TestHippocampalNavigator::test_theta_gate_in_unit_range PASSED [ 81%]
+tests/test_grid_cells.py::TestHippocampalNavigator::test_grid_output_shape PASSED [ 82%]
+tests/test_grid_cells.py::TestHippocampalNavigator::test_reset_clears_uncertainty PASSED [ 83%]
+tests/test_grid_cells.py::TestHippocampalNavigator::test_theta_learning_rate_in_valid_range PASSED [ 84%]
+tests/test_grid_cells.py::TestHippocampalNavigator::test_curiosity_boost_increases_with_novelty PASSED [ 86%]
+tests/test_physarum_and_omega.py::test_physarum_solver_and_heading PASSED [ 87%]
+tests/test_physarum_and_omega.py::test_theta_gate_and_allostasis PASSED  [ 88%]
+tests/test_physarum_and_omega.py::test_industrial_motor_filter PASSED    [ 89%]
+tests/test_gis_and_memory.py::test_hdc_bipolar_binding_and_bundling PASSED [ 90%]
+tests/test_gis_and_memory.py::test_cig_constraint_evaluation_and_risk PASSED [ 91%]
+tests/test_gis_and_memory.py::test_gis_roundtrip_persistence PASSED      [ 92%]
+tests/test_stage3_ast_anti_cheat.py::test_decision_pipeline_ast_static_scan PASSED [ 93%]
+tests/test_stage3_ast_anti_cheat.py::test_embodied_organism_hygiene_scan PASSED [ 94%]
+tests/test_stage3_ast_anti_cheat.py::test_subprocess_airgap_mujoco_poisoned FAILED [ 95%]
+tests/test_stage3_ast_anti_cheat.py::test_baseline_sha256_integrity PASSED [ 96%]
+tests/test_stage3_ast_anti_cheat.py::test_cann_data_path_verification FAILED [ 97%]
+tests/test_stage3_ast_anti_cheat.py::test_spatial_memory_data_path_verification PASSED [ 98%]
+tests/test_stage3_ast_anti_cheat.py::test_cann_causal_wiring_verification PASSED [100%]
+
+================================== FAILURES ===================================
+___________________ test_subprocess_airgap_mujoco_poisoned ____________________
+tests\test_stage3_ast_anti_cheat.py:176: in test_subprocess_airgap_mujoco_poisoned
+    assert proc.returncode == 0, f"Air-gapped subprocess crashed:\n{proc.stderr}\n{proc.stdout}"
+E   AssertionError: Air-gapped subprocess crashed:
+E     Traceback (most recent call last):
+E       File "<string>", line 18, in <module>
+E         from brain.carl_stage2_integrated_brain import CarlStage2BIntegratedBrain
+E       File "D:\ebca\brain\carl_stage2_integrated_brain.py", line 29, in <module>
+E         class CarlStage2BIntegratedBrain:
+E         ...<287 lines>...
+E                 return u, False, dist_grid
+E       File "D:\ebca\brain\carl_stage2_integrated_brain.py", line 157, in CarlStage2BIntegratedBrain
+E         def learn_translational_self_model(self, U_sweeps: List[np.ndarray], S_sweeps: List[np.ndarray]) -> float:
+E                                                            ^^^^
+E     NameError: name 'List' is not defined. Did you mean: 'list'?
+E     
+E     
+E   assert 1 == 0
+E    +  where 1 = CompletedProcess(args=['D:\\ebca\\.venv_cuda\\Scripts\\python.exe', '-c', '\nimport sys\n# Poison MuJoCo completely\nsys.modules[\'mujoco\'] = None\n\n# Verify poisoning is active\ntry:\n    import mujoco\n    print("POISON_FAILED")\n    sys.exit(1)\nexcept (ImportError, ModuleNotFoundError):\n    pass\n\nimport numpy as np\nimport torch\nfrom brain.carl_stage2_3_r1_deliberation import CARLStage2_3R1DeliberationEngine\nfrom brain.carl_stage2_2_r2_occupancy_memory import SpatialOccupancyMemory\nfrom brain.carl_stage2_integrated_brain import CarlStage2BIntegratedBrain\n\n# 1. Instantiate CANN\ncann = CarlStage2BIntegratedBrain(seed=42)\ncann.w_rot[20] = 1.0\ncann.w_fwd[15] = 1.0\ncann.is_developmentally_trained = True\n\nraw_s = np.zeros(25, dtype=np.float64)\nraw_s[:15] = 2.5\nu_act = np.zeros(6, dtype=np.float64)\nres_cann = cann.update_brain(u_executed=u_act, s_current=raw_s)\nassert res_cann["total_neurons_active"] == 2114, "CANN neuron count mismatch"\n\n# 2. Instantiate Deliberation Engine\ndelib = CARLStage2_3R1DeliberationEngine(mode="deliberative")\nsonars = np.full(15, 2.5, dtype=np.float32)\nact, tel = delib.select_action(curr_sensors=sonars, curr_v=0.1, curr_w=0.0)\nassert act.shape == (6,), f"Action shape mismatch: {act.shape}"\nassert "selected_branch" in tel, "Missing selected_branch in telemetry"\n\nprint("SUBPROCESS_AIRGAP_PASS")\nsys.exit(0)\n'], returncode=1, stdout='', stderr='Traceback (most recent call last):\n  File "<string>", line 18, in <module>\n    from brain.carl_stage2_integrated_brain import CarlStage2BIntegratedBrain\n  File "D:\\ebca\\brain\\carl_stage2_integrated_brain.py", line 29, in <module>\n    class CarlStage2BIntegratedBrain:\n    ...<287 lines>...\n            return u, False, dist_grid\n  File "D:\\ebca\\brain\\carl_stage2_integrated_brain.py", line 157, in CarlStage2BIntegratedBrain\n    def learn_translational_self_model(self, U_sweeps: List[np.ndarray], S_sweeps: List[np.ndarray]) -> float:\n                                                       ^^^^\nNameError: name \'List\' is not defined. Did you mean: \'list\'?\n').returncode
+______________________ test_cann_data_path_verification _______________________
+tests\test_stage3_ast_anti_cheat.py:204: in test_cann_data_path_verification
+    from brain.carl_stage2_integrated_brain import CarlStage2BIntegratedBrain
+brain\carl_stage2_integrated_brain.py:29: in <module>
+    class CarlStage2BIntegratedBrain:
+brain\carl_stage2_integrated_brain.py:157: in CarlStage2BIntegratedBrain
+    def learn_translational_self_model(self, U_sweeps: List[np.ndarray], S_sweeps: List[np.ndarray]) -> float:
+                                                       ^^^^
+E   NameError: name 'List' is not defined
+=========================== short test summary info ===========================
+FAILED tests/test_stage3_ast_anti_cheat.py::test_subprocess_airgap_mujoco_poisoned
+FAILED tests/test_stage3_ast_anti_cheat.py::test_cann_data_path_verification
+======================== 2 failed, 91 passed in 25.44s ========================

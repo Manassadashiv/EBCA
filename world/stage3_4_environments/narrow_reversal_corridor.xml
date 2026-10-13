@@ -8,7 +8,7 @@
   </visual>
 
   <default>
-    <geom contype="1" conaffinity="1" condim="4" friction="2.5 0.05 0.005" solref="0.002 1.0" solimp="0.99 0.999 0.001 0.5 2" />
+    <geom contype="1" conaffinity="1" condim="4" friction="2.5 0.05 0.005" solref="0.015 1.0" solimp="0.99 0.999 0.001 0.5 2" />
     <joint damping="0.15" frictionloss="0.003" />
     <position ctrllimited="true" forcelimited="true" forcerange="-25.0 25.0" />
     <velocity forcelimited="true" forcerange="-12.0 12.0" />
@@ -65,7 +65,7 @@
       <freejoint name="spatial_identity" />
       
       
-      <geom name="chassis_bumper" type="box" size="0.115 0.135 0.020" pos="0 0 0" material="dark_graphite" mass="0.40" contype="2" conaffinity="1" solref="0.001 1.0" solimp="0.99 0.999 0.0001 0.5 2" />
+      <geom name="chassis_bumper" type="box" size="0.115 0.135 0.020" pos="0 0 0" material="dark_graphite" mass="0.40" contype="2" conaffinity="1" friction="0.08 0.005 0.0001" solref="0.015 1.0" solimp="0.99 0.999 0.0001 0.5 2" />
       <geom name="chassis_core" type="box" size="0.09 0.08 0.018" pos="0 0 0" material="dark_graphite" mass="0.10" contype="2" conaffinity="1" />
       <geom name="chassis_shell" type="ellipsoid" size="0.11 0.09 0.032" pos="0 0 0.012" material="matte_pearl_white" mass="0.20" contype="2" conaffinity="1" />
       <site name="site_chassis" pos="0 0 0" size="0.01" />
@@ -77,9 +77,11 @@
 
       
       <body name="w_caster_front" pos="0.100 0 -0.035">
+        <joint name="susp_caster_front" type="slide" axis="0 0 1" range="-0.008 0.008" stiffness="350" damping="18" armature="0.001" />
         <geom type="sphere" size="0.017" material="dark_graphite" friction="0.0001 0.00001 0.00001" mass="0.015" contype="2" conaffinity="1" />
       </body>
       <body name="w_caster_rear" pos="-0.100 0 -0.035">
+        <joint name="susp_caster_rear" type="slide" axis="0 0 1" range="-0.008 0.008" stiffness="350" damping="18" armature="0.001" />
         <geom type="sphere" size="0.017" material="dark_graphite" friction="0.0001 0.00001 0.00001" mass="0.015" contype="2" conaffinity="1" />
       </body>
 

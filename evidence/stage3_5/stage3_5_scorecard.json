@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-10-13T09:09:13Z",
+  "milestone": "Stage 3.5 \u2014 Physical Perturbation & Environmental Adaptation (200-Episode Battery)",
+  "all_gates_certified": false,
+  "gates": {
+    "gate1_friction_drop_resilience": {
+      "passed": true,
+      "episodes": 30,
+      "escapes": 29,
+      "escape_rate_pct": 96.67,
+      "threshold_escape_pct": 80.0,
+      "collisions": 0,
+      "collision_rate_pct": 0.0,
+      "threshold_collision_pct": 6.67
+    },
+    "gate2_torque_asymmetry_tolerance": {
+      "passed": false,
+      "episodes": 20,
+      "escapes": 16,
+      "escape_rate_pct": 80.0,
+      "threshold_escape_pct": 80.0,
+      "collisions": 3,
+      "collision_rate_pct": 15.0,
+      "threshold_collision_pct": 5.0
+    },
+    "gate3_endocrine_causal_necessity": {
+      "passed": true,
+      "pairs_evaluated": 100,
+      "total_episodes": 200,
+      "intact_escapes": 94,
+      "intact_escape_pct": 94.0,
+      "zeroed_escapes": 71,
+      "zeroed_escape_pct": 71.0,
+      "delta_escape_gain_pct": 23.0,
+      "threshold_delta_pct": 15.0,
+      "fisher_p_value": 1.2287493311088577e-05,
+      "threshold_p_value": 0.05
+    },
+    "gate4_control_cycle_budget": {
+      "passed": true,
+      "total_cycles_evaluated": 73237,
+      "mean_latency_ms": 6.89,
+      "target_mean_ms": 15.0,
+      "p95_latency_ms": 11.12,
+      "target_p95_ms": 40.0,
+      "max_latency_ms": 77.14
+    },
+    "gate5_decision_pipeline_isolation": {
+      "passed": true,
+      "ast_violations": 0,
+      "target": "100% clean AST scan"
+    },
+    "gate6_active_inference_authenticity": {
+      "passed": true,
+      "epistemic_delta_u": 0.0425,
+      "threshold_delta_u": 0.015,
+      "ttest_p_value": 1.25e-06,
+      "mean_ensemble_entropy_nats": 1.482,
+      "target": "Active Inference Authenticity Verified"
+    }
+  }
+}

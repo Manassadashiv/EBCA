@@ -1,0 +1,192 @@
+{
+  "audit_metadata": {
+    "milestone": "Stage 3 Readiness Audit",
+    "date": "2026-09-24",
+    "workspace": "D:\\ebca",
+    "rule_compliance": "Diagnostic Only — Zero Code Modifications"
+  },
+  "modules": [
+    {
+      "stage": "3.5",
+      "capability": "Neuromodulatory Endocrine Kinetics",
+      "file": "brain/carl_endocrine.py",
+      "classes_functions": [
+        "EndocrineSystem",
+        "EndocrineSystem.step",
+        "EndocrineSystem.surge_da",
+        "EndocrineSystem.surge_ne",
+        "EndocrineSystem.surge_sht",
+        "EndocrineSystem.surge_ach",
+        "EndocrineSystem.get_precision_weight",
+        "EndocrineSystem.get_exploration_noise_scale",
+        "EndocrineSystem.get_reward_prediction_error"
+      ],
+      "classification": "B",
+      "classification_label": "Partially implemented",
+      "approximate_maturity": "Clean mathematical kinetics (exponential decay, clamping, surges) implemented and unit-tested; contains legacy non-canonical methods (hunger/battery/treat rewards).",
+      "imports_dependencies": ["numpy"],
+      "tests_present": ["tests/test_endocrine.py"],
+      "current_callers": ["carl_simulation.py (legacy)", "tests/test_endocrine.py"],
+      "imported_by_carl_autonomous_agent": false,
+      "active_in_step_cognitive_cycle": false,
+      "connected_to_zero_copy_bus": false,
+      "behavioral_effect": "Telemetry/logging only in legacy runner; has mathematical methods to modulate Bayesian sensory precision weight (pi) and exploration noise (sigma_eta), but neither is connected to deliberation candidate generation or EFE scoring.",
+      "implementation_type": "Partial full-implementation (core kinetics full; behavioral coupling unbuilt)"
+    },
+    {
+      "stage": "3.5",
+      "capability": "Morphological Adaptation & Self-Healing",
+      "file": "brain/carl_adaptation.py",
+      "classes_functions": [
+        "MorphologicalAdaptationEngine",
+        "MorphologicalAdaptationEngine.step_adaptation"
+      ],
+      "classification": "D",
+      "classification_label": "Stub / Unusable",
+      "approximate_maturity": "Obsolete 77-line prototype. Contains hardcoded quadruped/walking CPG sway logic ('cpg_sway_frequency = 0.10'). Relies on unprivileged simulator qvel violations.",
+      "imports_dependencies": ["numpy"],
+      "tests_present": [],
+      "current_callers": ["carl_simulation.py (lines 1040-1044; return values are completely discarded/unused)"],
+      "imported_by_carl_autonomous_agent": false,
+      "active_in_step_cognitive_cycle": false,
+      "connected_to_zero_copy_bus": false,
+      "behavioral_effect": "None (dummy execution in legacy runner; return scales l_scale, r_scale are never assigned to actuators).",
+      "implementation_type": "Stub / Obsolete prototype"
+    },
+    {
+      "stage": "3.5",
+      "capability": "Kinematic Slip & Friction Observer Substrate",
+      "file": "brain/carl_stage1_hal.py / brain/carl_autonomous_agent.py",
+      "classes_functions": [
+        "CarlAutonomousOrganismAgent.slip_ratio",
+        "CarlAutonomousOrganismAgent.v_est",
+        "CarlStage1HAL.set_friction"
+      ],
+      "classification": "B",
+      "classification_label": "Partially implemented",
+      "approximate_maturity": "Stage 1.6 certified observer correctly tracks wheel slip and estimated forward velocity inside step_cognitive_cycle(). However, active closed-loop motor torque compensation responding to sudden mu=0.20 friction drops is not implemented.",
+      "imports_dependencies": ["numpy", "mujoco"],
+      "tests_present": ["tests/test_stage1_suite.py"],
+      "current_callers": ["CarlAutonomousOrganismAgent.step_cognitive_cycle"],
+      "imported_by_carl_autonomous_agent": true,
+      "active_in_step_cognitive_cycle": true,
+      "connected_to_zero_copy_bus": true,
+      "behavioral_effect": "State estimation only (v_est and slip_ratio calculated on bus, but no torque adaptation policy exists).",
+      "implementation_type": "Observation layer certified; control adaptation layer missing"
+    },
+    {
+      "stage": "3.6",
+      "capability": "Holographic Hyperdimensional Memory",
+      "file": "brain/carl_hdc.py",
+      "classes_functions": [
+        "HolographicEpisodicMemory",
+        "HolographicEpisodicMemory.bind",
+        "HolographicEpisodicMemory.bundle",
+        "HolographicEpisodicMemory.encode_episode",
+        "HolographicEpisodicMemory.record_place_transition",
+        "HolographicEpisodicMemory.evaluate_episodic_threat"
+      ],
+      "classification": "C",
+      "classification_label": "Prototype / Experimental",
+      "approximate_maturity": "Implements 10,000-D bipolar vector binding and bundling for discrete place-cell indices. DOES NOT implement continuous motor trajectory synergy clustering, action primitive indexing, or synergy recall as required by Stage 3.6.",
+      "imports_dependencies": ["numpy"],
+      "tests_present": ["tests/test_gis_and_memory.py (indirect)"],
+      "current_callers": ["Legacy prototype scripts"],
+      "imported_by_carl_autonomous_agent": false,
+      "active_in_step_cognitive_cycle": false,
+      "connected_to_zero_copy_bus": false,
+      "behavioral_effect": "None in canonical organism (agent uses carl_episodic_memory.py with 2,048-D vectors for hazard avoidance).",
+      "implementation_type": "Vector algebra complete; trajectory synergy algorithm entirely unwritten"
+    },
+    {
+      "stage": "3.6",
+      "capability": "Physarum Polycephalum Route Optimization",
+      "file": "brain/carl_physarum.py",
+      "classes_functions": [
+        "PhysarumMaze",
+        "PhysarumMaze.step",
+        "PhysarumMaze._solve_pressure",
+        "PhysarumMaze._update_conductivities",
+        "PhysarumMaze.best_move",
+        "PhysarumMaze.get_heading",
+        "PhysarumMaze.rasterize_sonar_hits"
+      ],
+      "classification": "B",
+      "classification_label": "Partially implemented",
+      "approximate_maturity": "Solves harmonic 2D pressure field over a 25x25 grid using scipy.sparse.linalg.spsolve. However, tubular conductivity adaptation (_update_conductivities) is disabled in step() (resetting Dh=1, Dv=1 every frame to prevent dead-tube lock-in). High CPU latency overhead (~5-15 ms per solve).",
+      "imports_dependencies": ["numpy", "scipy.sparse", "scipy.sparse.linalg"],
+      "tests_present": ["tests/test_physarum_and_omega.py"],
+      "current_callers": ["tests/test_physarum_and_omega.py"],
+      "imported_by_carl_autonomous_agent": false,
+      "active_in_step_cognitive_cycle": false,
+      "connected_to_zero_copy_bus": false,
+      "behavioral_effect": "Standalone heading computation; unintegrated with MPPI/Active Inference trajectory candidate generation.",
+      "implementation_type": "Grid Poisson solver complete; true plasmodial flow adaptation disabled; deliberation coupling unbuilt"
+    },
+    {
+      "stage": "3.7",
+      "capability": "Optical Vision Network (CarlVisionNet)",
+      "file": "brain/train_vision.py",
+      "classes_functions": [
+        "CarlVisionNet",
+        "CarlVisionDataset",
+        "train_model"
+      ],
+      "classification": "C",
+      "classification_label": "Prototype / Experimental",
+      "approximate_maturity": "Supervised PyTorch CNN (Conv2d + FC heads) trained on a synthetic 4-class toy dataset (FOOD, OBSTACLE, PREDATOR, BACKGROUND). Model weights exist in memory/carl_vision.pt (19.7 MB). However, it is an offline toy detector completely disconnected from real-time MuJoCo offscreen rendering and ungrounded in the allocentric raster map.",
+      "imports_dependencies": ["torch", "torch.nn", "torch.optim", "cv2", "numpy"],
+      "tests_present": ["brain/verify_vision_predictions.py (failing due to BASE_DIR scoping bug; non-pytest)"],
+      "current_callers": ["None in active pipeline"],
+      "imported_by_carl_autonomous_agent": false,
+      "active_in_step_cognitive_cycle": false,
+      "connected_to_zero_copy_bus": false,
+      "behavioral_effect": "Zero effect on organism navigation.",
+      "implementation_type": "Offline synthetic toy detector; online multi-modal sensory organ unbuilt"
+    },
+    {
+      "stage": "3.7",
+      "capability": "Active Head Gaze & Eye Camera Hardware Interface",
+      "file": "world/carl_vessel.xml / brain/carl_embodied_organism.py",
+      "classes_functions": [
+        "EmbodiedSensoryState.target_visible",
+        "EmbodiedSensoryState.target_bearing",
+        "EmbodiedSensoryState.target_dist"
+      ],
+      "classification": "B",
+      "classification_label": "Partially implemented (Hardware exists, software quarantined)",
+      "approximate_maturity": "Hardware camera ('eye_cam') and pan/tilt neck joints ('neck_pitch', 'head_yaw') exist in carl_vessel.xml. In pre-flight (Stage 3.0), privileged geom_xpos reads were purged from carl_embodied_organism.py and quarantined to Stage 3.7. Active gaze servoing and bounding box projection remain unbuilt.",
+      "imports_dependencies": ["mujoco", "numpy"],
+      "tests_present": ["tests/test_stage3_ast_anti_cheat.py (confirms clean isolation)"],
+      "current_callers": ["CarlEmbodiedOrganism.read_proprioception"],
+      "imported_by_carl_autonomous_agent": true,
+      "active_in_step_cognitive_cycle": true,
+      "connected_to_zero_copy_bus": true,
+      "behavioral_effect": "Outputs target_visible=False, bearing=None, dist=None by default (quarantined stub).",
+      "implementation_type": "Physical sensor present in model; cognitive vision ingestion pipeline unbuilt"
+    },
+    {
+      "stage": "3.7",
+      "capability": "Vision-Language-Action System 2 Cortex",
+      "file": "brain/carl_vlm_cortex.py",
+      "classes_functions": [
+        "VLMSystem2Cortex",
+        "VLMSystem2Cortex.load_model",
+        "VLMSystem2Cortex.start_cortex",
+        "VLMSystem2Cortex.submit_frame",
+        "VLMSystem2Cortex.get_latest_intention"
+      ],
+      "classification": "D",
+      "classification_label": "Stub / Unusable",
+      "approximate_maturity": "Attempts to download and run a 7B-parameter VLM (nvidia/NVLM-D-7B) via bitsandbytes NF4. Completely incompatible with 30 Hz real-time robotics and RTX 3050 execution. Falls back to static dictionary lookup if offline.",
+      "imports_dependencies": ["torch", "transformers", "bitsandbytes", "queue", "threading"],
+      "tests_present": ["tests/test_vlm_cortex.py"],
+      "current_callers": ["tests/test_vlm_cortex.py"],
+      "imported_by_carl_autonomous_agent": false,
+      "active_in_step_cognitive_cycle": false,
+      "connected_to_zero_copy_bus": false,
+      "behavioral_effect": "None.",
+      "implementation_type": "Stub / External model wrapper incompatible with real-time neuromorphic substrate"
+    }
+  ]
+}

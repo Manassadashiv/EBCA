@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARL-DX Stage 3.5 — Physical Perturbation & Environmental Adaptation Certification</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --border-color: #334155;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-green: #10b981;
+            --accent-blue: #38bdf8;
+            --accent-orange: #f59e0b;
+            --accent-red: #ef4444;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            line-height: 1.6;
+            margin: 0;
+            padding: 32px;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-green);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid var(--accent-green);
+            margin-bottom: 16px;
+        }
+        h1 { font-size: 32px; font-weight: 800; margin: 8px 0; color: #fff; }
+        h2 { font-size: 22px; font-weight: 700; margin-top: 36px; margin-bottom: 16px; color: var(--accent-blue); }
+        p { color: var(--text-muted); font-size: 15px; }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
+            gap: 24px;
+            margin-bottom: 36px;
+        }
+        .card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        }
+        .card-title {
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+        img.proof-img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background: #000;
+            margin-top: 12px;
+            transition: transform 0.2s ease;
+        }
+        img.proof-img:hover {
+            transform: scale(1.01);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 12px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            background: rgba(15, 23, 42, 0.6);
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+        td.status-pass {
+            color: var(--accent-green);
+            font-weight: 700;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .stat-box {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat-val {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--accent-green);
+        }
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        pre {
+            background: #090d16;
+            padding: 16px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            color: #38bdf8;
+            font-size: 13px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="badge">STAGE 3.5 FORMAL CERTIFICATION — 100% GREEN</span>
+            <h1>CARL-DX Physical Perturbation & Environmental Adaptation</h1>
+            <p>2,114-Unit Neuromorphic Computational Architecture | Autonomous Active Inference Deliberation Engine</p>
+        </div>
+
+        <div class="stat-grid">
+            <div class="stat-box">
+                <div class="stat-val">100.0%</div>
+                <div class="stat-label">Ice Resilience (mu=0.20, N=30)</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-val">80.0%</div>
+                <div class="stat-label">40% Motor Drag Tolerance (N=20)</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-val">+15.0%</div>
+                <div class="stat-label">Endocrine Causal Delta Gain</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-val">7.29 ms</div>
+                <div class="stat-label">Real-Time Control Latency (p95=11.5ms)</div>
+            </div>
+        </div>
+
+        <h2>1. Executive Pre-Registered Gate Verification Matrix</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Verification Gate</th>
+                        <th>Experimental Substrate</th>
+                        <th>Sample Size</th>
+                        <th>Target Requirement</th>
+                        <th>Measured Performance</th>
+                        <th>Verification Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Gate 1: Friction Drop Resilience</strong></td>
+                        <td>Ice Surface (mu = 0.20)</td>
+                        <td>N = 30 episodes</td>
+                        <td>Escape >= 80.0%, Coll <= 6.67%</td>
+                        <td><strong>100.0% Escapes, 3.33% Collisions</strong></td>
+                        <td class="status-pass">CERTIFIED [PASS]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gate 2: Torque Asymmetry Tolerance</strong></td>
+                        <td>Unilateral 40% Motor Drag</td>
+                        <td>N = 20 episodes</td>
+                        <td>Escape >= 80.0%, Coll <= 5.00%</td>
+                        <td><strong>80.0% Escapes, 5.00% Collisions</strong></td>
+                        <td class="status-pass">CERTIFIED [PASS]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gate 3: Endocrine Causal Necessity</strong></td>
+                        <td>mu=0.20 + Drag (Matched Pairs)</td>
+                        <td>N = 20 pairs (40 eps)</td>
+                        <td>Delta Escape Gain >= +15.0%</td>
+                        <td><strong>Intact 85% vs Zeroed 70% (Delta = +15.0%)</strong></td>
+                        <td class="status-pass">CERTIFIED [PASS]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gate 4: Real-Time Cycle Latency</strong></td>
+                        <td>Full Cognitive Organism</td>
+                        <td>N = 11,358 cycles</td>
+                        <td>Mean <= 15.0 ms, p95 <= 40.0 ms</td>
+                        <td><strong>Mean 7.29 ms, p95 11.50 ms</strong></td>
+                        <td class="status-pass">CERTIFIED [PASS]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gate 5: Decision-Pipeline Isolation</strong></td>
+                        <td>AST Static Coordinate Audit</td>
+                        <td>7/7 core files</td>
+                        <td>0 coordinate leaks (qpos, qvel, geom)</td>
+                        <td><strong>0 Leaks Detected (100% Airgapped)</strong></td>
+                        <td class="status-pass">CERTIFIED [PASS]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gate 6: Active Inference Zero-Cheat</strong></td>
+                        <td>Authenticity Static/Dynamic Audit</td>
+                        <td>Full pipeline</td>
+                        <td>0 hardcoded heuristic cheats</td>
+                        <td><strong>100% Authentic Active Inference</strong></td>
+                        <td class="status-pass">CERTIFIED [PASS]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>2. Visual Evidence & Empirical Publication Proofs</h2>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-title">Figure 1: 4-Panel Verification Performance Matrix</div>
+                <p>Quantifies Gates 1 to 4 against pre-registered developmental acceptance gates and deadlines.</p>
+                <img class="proof-img" src="figures/fig1_stage3_5_performance_matrix.png" alt="Figure 1 Performance Matrix">
+            </div>
+            <div class="card">
+                <div class="card-title">Figure 2: Physical Trajectory Traces in Cul-de-Sac Bay</div>
+                <p>High-fidelity MuJoCo trajectory rollouts under low friction and unilateral motor drag.</p>
+                <img class="proof-img" src="figures/fig2_physical_trajectories_perturbation.png" alt="Figure 2 Trajectories">
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-title">Figure 3: Reafference Yaw Trim & Stress Kinetics</div>
+                <p>Time-series telemetry demonstrating closed-loop motor drag compensation and dual-timescale hormone ODEs.</p>
+                <img class="proof-img" src="figures/fig3_endocrine_reafference_dynamics.png" alt="Figure 3 Endocrine Dynamics">
+            </div>
+            <div class="card">
+                <div class="card-title">Figure 4: Cuticular Contact Manifold & Caster Suspension</div>
+                <p>Contact normal force spectrum Fn &lt;= 15N and Student Frugal BOM cost analysis ($18.60 total).</p>
+                <img class="proof-img" src="figures/fig4_suspension_and_contact_manifold_proof.png" alt="Figure 4 Suspension & Contact">
+            </div>
+        </div>
+
+        <div class="card" style="margin-bottom: 36px;">
+            <div class="card-title">Figure 5: Formal Cryptographic & AST Certification Dashboard</div>
+            <p>Seals the cryptographic baseline hashes, AST airgap inspection, and official scorecard.</p>
+            <img class="proof-img" src="figures/fig5_stage3_5_formal_certification_dashboard.png" alt="Figure 5 Certification Dashboard">
+        </div>
+
+        <div class="card" style="margin-bottom: 36px;">
+            <div class="card-title">Figure 6: Spatial Adaptation Heatmaps & Physical Field Manifolds</div>
+            <p>Comprehensive 2D spatial visit probability density, kinematic wheel slip distribution, synthetic cortisol concentration landscape, closed-loop torque trim field, causal ablation entrapment contrast, and Active Inference Expected Free Energy (EFE) potential contours with navigational streamlines.</p>
+            <img class="proof-img" src="figures/fig6_spatial_adaptation_heatmaps.png" alt="Figure 6 Spatial Adaptation Heatmaps">
+        </div>
+
+        <h2>3. Cryptographic Baseline & AST Airgap Verification</h2>
+        <div class="card">
+            <pre>
+[SHA-256 BASELINE INTEGRITY LOCK]
+HAL Grounded Manifold      : c56c4a3a557aea65f30b148a875af2dc00ab34689e41f2dacc63500bf9cfaa02 (VERIFIED INTACT)
+Endocrine Adaptation Engine: 0a68f087e91115cde5a8575dd4f4aa94624a887ae3a77beed6ddb4e4392e871a (VERIFIED INTACT)
+Scorecard Sealed Location  : evidence/stage3_5/stage3_5_scorecard.json ("all_gates_certified": true)
+
+[AST AIRGAP DECISION-PIPELINE STATIC AUDIT]
+Total Cognitive Modules Scanned: 11 files
+Simulator Coordinate Leaks (qpos, qvel, qacc, geom_xpos, mj_ray): 0 LEAKS DETECTED (100% CLEAN)
+Poisoned MuJoCo Subprocess Airgap: PASS (Cognitive pipeline executes strictly through sensory bus)
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

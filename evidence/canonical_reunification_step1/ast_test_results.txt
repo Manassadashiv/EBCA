@@ -1,0 +1,16 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.7, pytest-9.1.1, pluggy-1.6.0 -- D:\ebca\.venv_cuda\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\ebca
+plugins: anyio-4.14.2
+collecting ... collected 7 items
+
+tests/test_stage3_ast_anti_cheat.py::test_decision_pipeline_ast_static_scan PASSED [ 14%]
+tests/test_stage3_ast_anti_cheat.py::test_embodied_organism_hygiene_scan PASSED [ 28%]
+tests/test_stage3_ast_anti_cheat.py::test_subprocess_airgap_mujoco_poisoned PASSED [ 42%]
+tests/test_stage3_ast_anti_cheat.py::test_baseline_sha256_integrity PASSED [ 57%]
+tests/test_stage3_ast_anti_cheat.py::test_cann_data_path_verification PASSED [ 71%]
+tests/test_stage3_ast_anti_cheat.py::test_spatial_memory_data_path_verification PASSED [ 85%]
+tests/test_stage3_ast_anti_cheat.py::test_cann_causal_wiring_verification PASSED [100%]
+
+============================= 7 passed in 31.18s ==============================

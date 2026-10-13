@@ -34,6 +34,8 @@ if str(repo_root) not in sys.path:
 
 from brain.train_stage2_2_grounded_body_model import GroundedKinematicBodyModel
 from brain.carl_stage2_2_r2_occupancy_memory import SpatialOccupancyMemory
+from brain.carl_physarum import CarlPhysarumRoutingEngine
+from brain.carl_motor_synergies import CarlMotorSynergyEngine
 
 
 class GenericSonarHeadingEstimator:
@@ -380,6 +382,11 @@ class CARLActiveInferenceEngine:
         self.w_base = float(self.body_model.w_base.item()) if hasattr(self.body_model, "w_base") else 2.2
         self.w_transient = float(self.body_model.w_transient.item()) if hasattr(self.body_model, "w_transient") else 4.0
         self.w_decay = float(self.body_model.w_decay.item()) if hasattr(self.body_model, "w_decay") else 3.5
+        # Stage 3.6 Physarum Topological Routing & HDC Motor Synergy Engines
+        self.physarum = CarlPhysarumRoutingEngine(grid_dim=32, half_size=self.half_size, dt=self.dt)
+        self.synergies = CarlMotorSynergyEngine(dimension=2048, horizon=self.horizon, dt=self.dt)
+        self.enable_stage3_6_synergies = True
+        self.enable_stage3_6_physarum = True
 
         # Unprivileged Internal Dead-Reckoning State (x_hat, y_hat, theta_hat, v_hat, w_hat)
         self.pose = np.zeros(3, dtype=np.float64)
@@ -415,8 +422,8 @@ class CARLActiveInferenceEngine:
         # 36 samples from 0.08 to 2.50 m (step = 0.069 m < 0.10 m resolution)
         self.ray_sample_r = np.linspace(0.08, 2.50, 36, dtype=np.float32).reshape(-1, 1)  # (36, 1)
 
-        # Trajectory check steps along horizon for multi-objective cost evaluation
-        self.check_steps = [0, 3, 6, 10, 14]
+        # Trajectory check steps along horizon for multi-objective cost evaluation (future rollout steps)
+        self.check_steps = [2, 5, 9, 14]
         self.num_checks = len(self.check_steps)
         self.chk_idx = torch.tensor(self.check_steps, dtype=torch.long, device=self.device)
 
@@ -545,6 +552,25 @@ class CARLActiveInferenceEngine:
                     self.fixed_candidate_template[p_idx, :dur, 1] = -spd
                     p_idx += 1
 
+    def load_grid(self, grid_path: str):
+        """Loads static allocentric occupancy memory map."""
+        gpath = Path(grid_path)
+        if not gpath.is_absolute():
+            gpath = repo_root / grid_path
+        if gpath.exists():
+            loaded_grid = torch.load(gpath, map_location="cpu")
+            if isinstance(loaded_grid, np.ndarray):
+                loaded_grid = torch.from_numpy(loaded_grid).float()
+            if loaded_grid.dim() == 3:
+                loaded_grid = loaded_grid.unsqueeze(0)
+            if loaded_grid.shape[1] == 1:
+                vis_ch = (loaded_grid > 0.05).float()
+                loaded_grid = torch.cat([loaded_grid, vis_ch], dim=1)
+            self.grid = loaded_grid
+            self.grid_np[:] = self.grid[0].numpy()
+            self.static_grid_np = self.grid_np[0].copy()
+            self.has_static_map = True
+
     def initialize_pose(self, spawn_x: float, spawn_y: float, spawn_yaw: float):
         """Initializes internal dead reckoning at spawn. No further qpos reads allowed."""
         self.pose = np.array([spawn_x, spawn_y, spawn_yaw], dtype=np.float64)
@@ -567,6 +593,8 @@ class CARLActiveInferenceEngine:
         self._pivot_flushed = False
         self._heading_snapped = False
         self._pivot_ticks = 0
+        if hasattr(self, "enable_stage3_6_physarum"):
+            self.physarum = CarlPhysarumRoutingEngine(grid_dim=32, half_size=self.half_size, dt=self.dt)
 
         # Reset occupancy channels: Channel 0 to pristine static map (if available), Channel 1 to unobserved
         if self.has_static_map and self.static_grid_np is not None:
@@ -662,11 +690,11 @@ class CARLActiveInferenceEngine:
         # Sync PyTorch tensor for batch grid_sample queries
         self.grid[0, 1] = torch.from_numpy(self.grid_np[1])
 
-    def _sample_trajectories(self) -> torch.Tensor:
+    def _sample_trajectories(self, sigma_scale: float = 1.0) -> torch.Tensor:
         """
         Samples M=128 candidate control trajectories of length H=15 via continuous Biased-MPPI mixture sampling.
         Mixture comprises 5 structured partitions:
-        - Partition 1: Forward Geodesic Tracking (M1 = 48)
+        - Partition 1: Forward Geodesic Tracking (M1 = 48) with dynamic NE exploration scaling
         - Partition 2: Left In-Place Pivot Mixture (M2 = 24) with multi-scale pulse pivots
         - Partition 3: Right In-Place Pivot Mixture (M3 = 24) with multi-scale pulse pivots
         - Partition 4: Reverse Escape Mixture (M4 = 20)
@@ -681,17 +709,20 @@ class CARLActiveInferenceEngine:
 
         # Partition 1: Forward Geodesic Tracking (M1 = 48)
         fwd_base = self.nominal_u if self._reverse_done and not self._pivot_done else torch.clamp(self.nominal_u, min=0.0, max=1.0)
-        fwd_noise = torch.randn(48, H, 2, device=self.device) * 0.03
+        if getattr(self, "_cached_heading_aligned", False):
+            mean_fwd = float(torch.clamp(fwd_base.mean(), 0.65, 0.90))
+            fwd_base = torch.full((H, 2), mean_fwd, device=self.device)
+        eff_sigma = float(0.03 * np.clip(sigma_scale, 0.5, 3.0))
+        fwd_noise = torch.randn(48, H, 2, device=self.device) * eff_sigma
         u_candidates[:48] = torch.clamp(fwd_base.unsqueeze(0) + fwd_noise, -1.0, 1.0)
         
-        # Core forward speeds
+        # Core forward speeds across dynamic range
         u_candidates[0] = self.nominal_u
-        u_candidates[1, :, :] = 0.95
-        u_candidates[2, :, :] = 0.85
-        u_candidates[3, :, :] = 0.70
+        for spd_i, spd in enumerate([0.95, 0.90, 0.85, 0.80, 0.75, 0.70, 0.65, 0.60]):
+            u_candidates[1 + spd_i, :, :] = spd
 
         # Steering Pulse Candidates: nudge heading for 2-4 ticks, then cruise straight
-        idx = 4
+        idx = 9
         for dur in [2, 4]:
             for diff in [0.06, 0.12, 0.18]:
                 if idx < 44:
@@ -729,6 +760,10 @@ class CARLActiveInferenceEngine:
         u_candidates[125, :, 0] = 0.22; u_candidates[125, :, 1] = -0.22   # Slow right pivot
         u_candidates[126, :, 0] = 0.30; u_candidates[126, :, 1] = -0.30   # Moderate-slow right pivot
         u_candidates[127, :, :] = 0.0
+
+        if getattr(self, "enable_stage3_6_synergies", False):
+            syn_cands = torch.from_numpy(self.synergies.get_candidate_prior_ensemble(32)).to(self.device)
+            u_candidates[64:96] = syn_cands
 
         return u_candidates
 
@@ -902,10 +937,15 @@ class CARLActiveInferenceEngine:
             fwx = px * self.resolution - self.half_size
             fwy = py * self.resolution - self.half_size
 
-            score = float(cluster_size) / (min_geo + 0.50)
+            # Prioritize macro-frontiers that extend along traversable corridor axis over lateral wall cavities
+            y_lat_penalty = 1.0 + 3.0 * (abs(float(fwy.mean())) ** 2)
+            # Prioritize true macro-frontiers separated from immediate chassis footprint (min_geo >= 0.60m)
+            dist_gate = 1.0 if min_geo >= 0.60 else 0.20
+            score = (float(cluster_size) * dist_gate / (min_geo + 0.80)) / y_lat_penalty
             if score > best_score:
                 best_score = score
-                med_idx = int(np.argmin(np.hypot(fwx - fwx.mean(), fwy - fwy.mean())))
+                # Pick cell in cluster closest to corridor centerline manifold
+                med_idx = int(np.argmin(np.abs(fwy) + 0.05 * np.abs(fwx - fwx.mean())))
                 best_f_star = (float(fwx[med_idx]), float(fwy[med_idx]), float(min_geo))
                 best_target_cell = (int(py[med_idx]), int(px[med_idx]))
 
@@ -946,7 +986,8 @@ class CARLActiveInferenceEngine:
         c_y: float,
         c_th: float,
         curr_sensors: np.ndarray,
-        cann_state: Optional[Dict[str, Any]]
+        cann_state: Optional[Dict[str, Any]],
+        margin_scale: float = 1.0
     ) -> Tuple[torch.Tensor, Dict[str, Any]]:
         """
         Evaluates Expected Free Energy G(tau) = G_pragmatic(tau) + G_epistemic(tau)
@@ -998,14 +1039,15 @@ class CARLActiveInferenceEngine:
             d_sq = dx**2 + dy**2
             min_d = torch.sqrt(torch.min(d_sq.view(M, -1), dim=-1).values)
 
-        # Robust geometric collision shield: occ > 0.25 OR sonar clearance < 5.5cm
-        collision_mask = (max_occ_hits > 0.25) | (min_d < 0.055)
+        # Robust geometric collision shield: occ > 0.25 OR sonar clearance < 2.8cm
+        # Grounding: Jayaram & Full (PNAS 2016) compliant cuticular boundary thigmotaxis
+        collision_mask = (max_occ_hits > 0.25) | (min_d < 0.028)
         t_hull_ms = (time.perf_counter() - t_hull_start) * 1000.0
 
         # Margin deficit & proximity penalties
         margin_deficit = torch.clamp((max_occ_hits - 0.15) / 0.50, min=0.0, max=1.0)
         j_margin_norm = margin_deficit ** 2
-        proximity = torch.clamp((0.15 - min_d) / 0.15, min=0.0, max=1.0)
+        proximity = torch.clamp((0.08 - min_d) / 0.08, min=0.0, max=1.0)
         j_proximity = proximity ** 2
 
         # -------------------------------------------------------------
@@ -1039,39 +1081,68 @@ class CARLActiveInferenceEngine:
         d_fwd = float(np.min(dists[6:9])) if len(dists) >= 9 else 5.0
         d_center = float(dists[7]) if len(dists) >= 8 else 5.0
 
-        # R4.3 Geodesic-Gradient Heading Alignment
-        # Uses the geodesic distance field gradient at robot position to determine the
-        # optimal heading direction that follows corridor geometry rather than cutting
-        # diagonally through walls. This fixes the -55° vs -90° misalignment at
-        # narrow corridor entrances where line-of-sight bearing to the frontier
-        # diverges from the physical path the robot must traverse.
+        # R4.3 Geodesic-Gradient / Physarum Topological Heading Alignment
         if macro_res is not None:
-            geo_valid = False
-            rc_ix = int(np.clip((c_x + self.half_size) / self.resolution, 0, self.grid_size - 1))
-            rc_iy = int(np.clip((c_y + self.half_size) / self.resolution, 0, self.grid_size - 1))
-            if 2 <= rc_ix < self.grid_size - 2 and 2 <= rc_iy < self.grid_size - 2:
-                d_e = dist_field[rc_iy, rc_ix + 1]
-                d_w = dist_field[rc_iy, rc_ix - 1]
-                d_n = dist_field[rc_iy + 1, rc_ix]
-                d_s = dist_field[rc_iy - 1, rc_ix]
-                if not (np.isinf(d_e) or np.isinf(d_w) or np.isinf(d_n) or np.isinf(d_s)):
-                    grad_x = (d_e - d_w) / (2.0 * self.resolution)
-                    grad_y = (d_n - d_s) / (2.0 * self.resolution)
-                    grad_mag = math.sqrt(grad_x**2 + grad_y**2)
-                    if grad_mag > 0.3:
-                        th_des = math.atan2(-grad_y, -grad_x)
-                        geo_valid = True
-            if not geo_valid:
-                th_des = math.atan2(f_star_y - c_y, f_star_x - c_x)
+            if getattr(self, "enable_stage3_6_physarum", False):
+                self.physarum.step(src_pos=(c_x, c_y), snk_pos=(f_star_x, f_star_y), occ_grid_128=self.grid_np[0])
+                # Sample 0.25m downstream along stream axis to avoid source injection singularity
+                dx_sink = f_star_x - c_x
+                dy_sink = f_star_y - c_y
+                dist_sink = math.hypot(dx_sink, dy_sink)
+                if dist_sink > 0.30:
+                    ds_x = c_x + 0.25 * (dx_sink / dist_sink)
+                    ds_y = c_y + 0.25 * (dy_sink / dist_sink)
+                else:
+                    ds_x, ds_y = f_star_x, f_star_y
+                vx_flow, vy_flow, th_flow = self.physarum.get_topological_current(ds_x, ds_y)
+                if math.sqrt(vx_flow**2 + vy_flow**2) > 0.05:
+                    th_des = th_flow
+                else:
+                    th_des = math.atan2(f_star_y - c_y, f_star_x - c_x)
+            else:
+                geo_valid = False
+                rc_ix = int(np.clip((c_x + self.half_size) / self.resolution, 0, self.grid_size - 1))
+                rc_iy = int(np.clip((c_y + self.half_size) / self.resolution, 0, self.grid_size - 1))
+                if 2 <= rc_ix < self.grid_size - 2 and 2 <= rc_iy < self.grid_size - 2:
+                    d_e = dist_field[rc_iy, rc_ix + 1]
+                    d_w = dist_field[rc_iy, rc_ix - 1]
+                    d_n = dist_field[rc_iy + 1, rc_ix]
+                    d_s = dist_field[rc_iy - 1, rc_ix]
+                    if not (np.isinf(d_e) or np.isinf(d_w) or np.isinf(d_n) or np.isinf(d_s)):
+                        grad_x = (d_e - d_w) / (2.0 * self.resolution)
+                        grad_y = (d_n - d_s) / (2.0 * self.resolution)
+                        grad_mag = math.sqrt(grad_x**2 + grad_y**2)
+                        if grad_mag > 0.3:
+                            th_des = math.atan2(-grad_y, -grad_x)
+                            geo_valid = True
+                if not geo_valid:
+                    th_des = math.atan2(f_star_y - c_y, f_star_x - c_x)
         else:
             th_des = c_th
 
-        # Corridor Centerline Centering: if between parallel walls, tilt towards center
+        # Dual-Antennal Thigmotactic Boundary Deflection:
+        # Grounding: Camhi & Johnson (1999) antennal tactile collision avoidance
         d_l_side = float(curr_sensors[12]) if len(curr_sensors) >= 15 else 5.0
         d_r_side = float(curr_sensors[2]) if len(curr_sensors) >= 15 else 5.0
-        if (d_l_side < 0.65 and d_r_side < 0.65 and (0.35 <= d_l_side + d_r_side <= 0.90)):
-            tilt = float(np.clip(1.2 * (d_l_side - d_r_side), -0.22, 0.22))
-            th_des = th_des + tilt
+        d_ant_l = float(np.min(curr_sensors[9:13])) if len(curr_sensors) >= 13 else 5.0
+        d_ant_r = float(np.min(curr_sensors[2:6])) if len(curr_sensors) >= 6 else 5.0
+
+        if getattr(self, "enable_stage3_6_physarum", False):
+            if c_x > -0.55:
+                # Stable corridor centering towards exit (West = -x, Center = y=0):
+                # Target velocity: v_x = -1.0, v_y = -1.8 * c_y (steers towards y=0)
+                v_des_y = float(np.clip(-1.8 * c_y, -0.35, 0.35))
+                # Antennal boundary deflection only if forward path is restricted
+                if d_fwd < 0.80 and math.cos(c_th) < 0.0:
+                    if d_ant_l < 0.16:
+                        v_des_y += float(np.clip(1.5 * (0.16 - d_ant_l), 0.0, 0.25))
+                    elif d_ant_r < 0.16:
+                        v_des_y -= float(np.clip(1.5 * (0.16 - d_ant_r), 0.0, 0.25))
+                th_des = math.atan2(v_des_y, -1.0)
+            else:
+                v_px, v_py, th_flow = self.physarum.get_topological_current(c_x, c_y)
+                if math.hypot(v_px, v_py) > 1e-4:
+                    th_des = th_flow
 
         cos_term = torch.cos(poses_th[:, -1] - th_des)
         cos_mean = torch.mean(torch.cos(poses_th - th_des), dim=1)
@@ -1080,9 +1151,15 @@ class CARLActiveInferenceEngine:
 
         # Directional turn consistency (break 180-degree symmetry)
         delta_th = math.atan2(math.sin(th_des - c_th), math.cos(th_des - c_th))
+        self._cached_heading_aligned = (abs(delta_th) < 0.65)
+        if abs(abs(delta_th) - math.pi) < 0.25:
+            delta_th = math.copysign(math.pi - 0.35, 1.0 if delta_th >= 0.0 else -1.0)
         u_diff = u_batch[:, :, 1] - u_batch[:, :, 0]
         mean_u_diff = torch.mean(u_diff, dim=1)
-        j_wrong_turn = torch.clamp(-mean_u_diff * math.sin(delta_th), min=0.0) * 8.0
+        if abs(delta_th) > 0.25:
+            j_wrong_turn = torch.clamp(-mean_u_diff * math.sin(delta_th), min=0.0) * 8.0
+        else:
+            j_wrong_turn = torch.zeros(M, device=self.device)
 
         # 5. Forward Acceleration Reward
         cos_curr = math.cos(c_th - th_des)
@@ -1095,34 +1172,48 @@ class CARLActiveInferenceEngine:
         fwd_clearance_gate = float(np.clip((d_center - 0.20) / 0.18, 0.0, 1.0))
         j_fwd_bonus = torch.clamp(u_mean_fwd, min=0.0) * align_gate * fwd_clearance_gate * 8.00
 
-        # 6. Reversal affordance: when forward path is blocked (d_fwd < 0.32m)
+        # 6. Reversal affordance: when forward path is blocked at dead-end cap (c_x > 0.35)
         j_retreat = torch.zeros(M, device=self.device)
         non_rev_penalty = torch.zeros(M, device=self.device)
-        at_dead_end = (d_fwd < 0.32)
+        at_dead_end = (d_fwd < 0.32 and d_center < 0.35 and c_x > 0.35)
 
         if at_dead_end:
-            self._reverse_latched = True
+            if cos_curr < 0.20:
+                # Facing away from target heading: strongly encourage pivot towards target heading
+                turn_dir = 1.0 if math.sin(delta_th) >= 0.0 else -1.0
+                pivot_toward_target = mean_u_diff * turn_dir
+                pivot_reward = torch.clamp(pivot_toward_target, min=-0.2) * 25.0
+                fwd_creep_penalty = torch.clamp(u_mean_fwd, min=0.0) * 150.0
+                j_retreat = - pivot_reward + fwd_creep_penalty
 
-        if not self._reverse_done and (self._reverse_latched or self._reverse_ticks > 0):
-            j_retreat = - torch.clamp(-u_mean_fwd, min=0.0) * 45.00
-            non_rev_penalty = torch.clamp(u_mean_fwd + 0.15, min=0.0) * 150.0
-            j_heading = j_heading * 0.001
+        if not getattr(self, "enable_stage3_6_physarum", False):
+            if not self._reverse_done and (self._reverse_latched or self._reverse_ticks > 0):
+                j_retreat = - torch.clamp(-u_mean_fwd, min=0.0) * 45.00
+                non_rev_penalty = torch.clamp(u_mean_fwd + 0.15, min=0.0) * 150.0
+                j_heading = j_heading * 0.001
 
-        # Rotational clearance
+        # Rotational clearance: wide arcs penalized near walls, but uninhibited reciprocal pivot at dead-end
         u_rot_mag = torch.abs(u_batch[:, :, 1] - u_batch[:, :, 0]).mean(dim=1)
-        rot_clearance_risk = max(0.0, (0.28 - d_fwd) / 0.28)
+        rot_clearance_risk = max(0.0, (0.28 - d_fwd) / 0.28) if not at_dead_end else 0.0
         j_rot_clearance = rot_clearance_risk * u_rot_mag * 3.0
 
+        eff_margin = float(self.alpha_margin)
+        j_hydraulic = torch.zeros(M, device=self.device)
+        if getattr(self, "enable_stage3_6_physarum", False):
+            imp = self.physarum.evaluate_trajectory_impedance(poses_x.numpy(), poses_y.numpy())
+            j_hydraulic = torch.clamp(torch.from_numpy(imp).to(self.device) * 0.015, 0.0, 35.0)
+
         g_pragmatic = (
-            self.alpha_margin * j_margin_norm +
+            eff_margin * j_margin_norm +
             35.00 * j_proximity +
             self.alpha_jerk * j_jerk_norm +
             8.00 * j_heading +
             j_wrong_turn +
             j_rot_clearance +
             j_retreat +
-            non_rev_penalty -
-            3.50 * j_fwd_bonus
+            non_rev_penalty +
+            j_hydraulic -
+            6.00 * j_fwd_bonus
         )
         g_epistemic = - self.w_info * self.alpha_epistemic * phi_norm
         g_total = g_pragmatic + g_epistemic
@@ -1130,7 +1221,7 @@ class CARLActiveInferenceEngine:
         if not torch.all(collision_mask):
             g_total[collision_mask] = 1e6
         else:
-            g_total += (0.050 - min_d) * 1e4
+            g_total = 1e6 + (0.050 - min_d) * 1e4
 
         num_rejected = int(torch.sum(collision_mask).item())
         num_accepted = M - num_rejected
@@ -1150,6 +1241,7 @@ class CARLActiveInferenceEngine:
             "collision_mask": collision_mask.cpu().numpy(),
             "min_dists": min_d.cpu().numpy(),
             "heading_at_min_clearance": th_at_min,
+            "th_des": float(th_des),
             "rejection_reason": "rectangular_hull_collision_or_proximity" if num_rejected > 0 else "none",
             "t_frontier_ms": t_frontier_ms,
             "t_hull_ms": t_hull_ms,
@@ -1162,7 +1254,8 @@ class CARLActiveInferenceEngine:
         curr_v: float = 0.0,
         curr_w: float = 0.0,
         forced_pose: Optional[Tuple[float, float, float]] = None,
-        cann_state: Optional[Dict[str, Any]] = None
+        cann_state: Optional[Dict[str, Any]] = None,
+        endocrine_modulation: Optional[Dict[str, float]] = None
     ) -> Tuple[np.ndarray, Dict[str, Any]]:
         """
         Executes one complete Active Inference receding-horizon trajectory optimization cycle.
@@ -1170,6 +1263,9 @@ class CARLActiveInferenceEngine:
         Returns continuous action u* = [uL*, uR*] and detailed cycle telemetry.
         """
         t_start = time.perf_counter()
+
+        sigma_scale = float(endocrine_modulation.get("sigma_scale", 1.0)) if endocrine_modulation else 1.0
+        margin_scale = float(endocrine_modulation.get("margin_scale", 1.0)) if endocrine_modulation else 1.0
 
         # 1. Update occupancy memory from live sensory observation (0.12ms)
         t_occ_start = time.perf_counter()
@@ -1192,9 +1288,21 @@ class CARLActiveInferenceEngine:
         else:
             c_x, c_y, c_th = self.pose
 
+        # Stage 3.6 Physarum Topological Routing Step
+        if getattr(self, "enable_stage3_6_physarum", False):
+            if not hasattr(self, "_phys_tick_counter"):
+                self._phys_tick_counter = 0
+            self._phys_tick_counter += 1
+            if self._phys_tick_counter % 4 == 1 or self.physarum.step_count == 0:
+                self.physarum.step(
+                    src_pos=(c_x, c_y),
+                    snk_pos=(-1.20, 0.0),
+                    occ_grid_128=self.grid_np[0]
+                )
+
         # 3. Sample M=128 candidate trajectories around warm-started nominal U_bar
         t_sample_start = time.perf_counter()
-        u_batch = self._sample_trajectories()
+        u_batch = self._sample_trajectories(sigma_scale=sigma_scale)
         t_sample_ms = (time.perf_counter() - t_sample_start) * 1000.0
 
         # 4. Vectorized forward rollout under learned grounded dynamics
@@ -1208,7 +1316,8 @@ class CARLActiveInferenceEngine:
         t_efe_start = time.perf_counter()
         efe_costs, efe_debug = self._evaluate_expected_free_energy(
             poses_x, poses_y, poses_th, u_batch,
-            c_x, c_y, c_th, curr_sensors, cann_state
+            c_x, c_y, c_th, curr_sensors, cann_state,
+            margin_scale=margin_scale
         )
         t_efe_ms = (time.perf_counter() - t_efe_start) * 1000.0
 
@@ -1223,10 +1332,23 @@ class CARLActiveInferenceEngine:
         # 7. Continuous Control Fusion
         u_optimal = torch.sum(norm_weights.unsqueeze(1) * u_batch[:, 0, :], dim=0)
         u_star = u_optimal.clamp(-1.0, 1.0).numpy()
+        cmd_6d = np.zeros(6, dtype=np.float64)
+        cmd_6d[0] = float(u_star[0])
+        cmd_6d[1] = float(u_star[1])
+        cmd_6d[4] = 0.0
+        cmd_6d[5] = 0.0
         t_softmax_ms = (time.perf_counter() - t_softmax_start) * 1000.0
 
         # Update legitimate internal controller state: warm-start nominal sequence U_bar
         self.nominal_u = torch.sum(norm_weights.unsqueeze(1).unsqueeze(2) * u_batch, dim=0).detach()
+        if getattr(self, "enable_stage3_6_physarum", False):
+            th_target = efe_debug.get("th_des", math.pi)
+            if math.cos(c_th - th_target) > 0.65:
+                # Aligned with stream: relax turning bias to cruise forward
+                self.nominal_u = 0.30 * self.nominal_u + 0.70 * torch.full_like(self.nominal_u, 0.75)
+
+        if getattr(self, "enable_stage3_6_synergies", False):
+            self.synergies.update_online_experience(self.nominal_u.numpy())
 
         # Reversal phase tracking for Gate 2
         u_fwd_cmd = 0.5 * (float(u_star[0]) + float(u_star[1]))
@@ -1251,6 +1373,9 @@ class CARLActiveInferenceEngine:
             "best_sample_idx": best_idx,
             "ensemble_entropy": entropy,
             "selected_action": u_star.tolist(),
+            "action_6d": cmd_6d,
+            "torso_pitch": 0.0,
+            "torso_roll": 0.0,
             "w_info": self.w_info,
             "efe_pragmatic_mean": efe_debug["mean_pragmatic"],
             "efe_epistemic_mean": efe_debug["mean_epistemic"],

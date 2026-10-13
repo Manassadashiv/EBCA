@@ -75,3 +75,7 @@ ebca_project_gantt.csv
 # Generated PDF walkthroughs
 textbook/*.pdf
 
+# Temporary development scratch directory
+scratch/
+
+

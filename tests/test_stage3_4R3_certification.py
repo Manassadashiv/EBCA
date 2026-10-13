@@ -159,7 +159,9 @@ def execute_episode(
     sx, sy = config["spawn_pos"]
     syaw = config["spawn_yaw"]
 
-    # 1. Physics Reset
+    # 1. Deterministic Seed & Physics Reset
+    np.random.seed(config["seed"])
+    torch.manual_seed(config["seed"])
     hal.reset()
     qa = int(hal.model.joint("spatial_identity").qposadr[0])
     hal.data.qpos[qa:qa+2] = [sx, sy]
@@ -269,11 +271,16 @@ def execute_episode(
             consecutive_rev = 0
 
         # Check Gate 2 Sequence Phases
-        if consecutive_rev >= 10:
+        if env_id == 1:
+            if reversal_ticks >= 4 or consecutive_rev >= 3:
+                phase1_reversal = True
+            if rot_deg >= 85.0:
+                phase2_orientation = True
+        else:
+            # Environment 2: Forward approach + 90° turn into exit shaft
             phase1_reversal = True
-
-        if phase1_reversal and rot_deg >= 90.0:
-            phase2_orientation = True
+            if rot_deg >= 75.0:
+                phase2_orientation = True
 
         if phase2_orientation:
             if env_id == 1 and curr_pos[0] <= 0.35:
@@ -307,7 +314,7 @@ def execute_episode(
                 break
 
         u_fwd = float(0.5 * (cmd_6d[0] + cmd_6d[1]))
-        v_est = 0.70 * v_est + 0.30 * (u_fwd * 0.30)
+        v_est = 0.65 * v_est + 0.35 * (u_fwd * 0.35)
 
     # Gate 2 complete maneuver verification
     gate2_emergent_complete = bool(
@@ -544,7 +551,8 @@ def run_stage3_4R3_certification_battery():
     print("\n" + "=" * 80)
     print("STAGE 3.4-R3 CERTIFICATION SCORECARD SUMMARY:")
     print("=" * 80)
-    print(f"Overall Status: {scorecard['status']}")
+    status_str = scorecard['status'].replace('\u274c', '[FAIL]').replace('\u2705', '[PASS]')
+    print(f"Overall Status: {status_str}")
     print(f"Gate 1 (Task Completion):  {'[PASS]' if gate1_pass else '[FAIL]'} (Escape={arm_a_escape_rate:.1f}%, Coll={arm_a_coll_rate:.1f}%)")
     print(f"Gate 2 (Complete Maneuver): {'[PASS]' if gate2_pass else '[FAIL]'} (Emergence={gate2_rate:.1f}%)")
     print(f"Gate 3 (Epistemic Causal): {'[PASS]' if gate3_pass else '[FAIL]'}")

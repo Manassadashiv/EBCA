@@ -1,0 +1,27 @@
+{
+  "benchmark": "Stage 3.4 Canonical Active Inference Cognitive Cycle Latency Profile",
+  "num_cycles": 1000,
+  "warmup_cycles": 15,
+  "canonical_full_cycle": {
+    "mean_ms": 8.825,
+    "p50_ms": 7.673,
+    "p95_ms": 13.136,
+    "p99_ms": 17.257,
+    "max_ms": 32.05,
+    "min_ms": 6.64
+  },
+  "deliberation_only": {
+    "mean_ms": 6.156,
+    "p95_ms": 10.103
+  },
+  "formal_gate_4_thresholds": {
+    "mean_budget_ms": 20.0,
+    "p95_budget_ms": 45.0,
+    "gate4_passed": true
+  },
+  "comparison_against_standalone_r4_2": {
+    "r4_2_standalone_mean_ms": 1.76,
+    "r4_2_standalone_p95_ms": 2.21,
+    "canonical_organism_overhead_ms": 2.669
+  }
+}

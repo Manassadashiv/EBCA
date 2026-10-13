@@ -1,0 +1,98 @@
+{
+  "title": "CARL: Embodied Cognitive Digital Twin \u2014 Integrated Demonstration",
+  "resolution": "1920x1080",
+  "aspect_ratio": "16:9",
+  "fps": 30,
+  "video_path": "carl_dx_final_stage1_stage2_stage3_3_proof.mp4",
+  "file_size_mb": 64.18,
+  "demonstrated_scope": "Stage 1 -> Stage 2 -> Stage 3.3",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "name": "Prologue Title Card",
+      "time_range": "0:00 - 0:06",
+      "duration_sec": 6.0,
+      "provenance": "JNTUH Mechanical Engineering Project 310 Specification",
+      "milestones": [
+        "1.1-1.3",
+        "2.1-2.3",
+        "3.1-3.3"
+      ],
+      "data_type": "Architectural metadata & scope declaration"
+    },
+    {
+      "scene_id": 2,
+      "name": "Stage 1 Sensorimotor Grounding",
+      "time_range": "0:06 - 0:14",
+      "duration_sec": 8.0,
+      "provenance": "world/stage3_4_environments/cul_de_sac_turning_bay.xml, brain/carl_stage1_hal.py",
+      "milestones": [
+        "Milestone 1.1: Motor Babbling",
+        "Milestone 1.2: Forward Momentum",
+        "Milestone 1.3: Slip Observer"
+      ],
+      "data_type": "Live physics simulation with IMU acceleration, wheel tachometers, closed-form slip observer"
+    },
+    {
+      "scene_id": 3,
+      "name": "Stage 2 Generative World & Self Modeling",
+      "time_range": "0:14 - 0:25",
+      "duration_sec": 10.7,
+      "provenance": "brain/carl_stage2_hd_ring.py, world/stage3_4_environments/cul_de_sac_turning_bay_grid.pt",
+      "milestones": [
+        "Milestone 2.1: 64-HD CANN Ring Attractor",
+        "Milestone 2.2: Allocentric Occupancy Memory",
+        "Milestone 2.3: 15-Ray Sonar Shielding"
+      ],
+      "data_type": "Live 64-neuron continuous attractor bump integration, real-time 2D free-space ray carving"
+    },
+    {
+      "scene_id": 4,
+      "name": "Stage 3.3 Continuous MPPI Deliberation & Corridor Escape",
+      "time_range": "0:25 - 0:57",
+      "duration_sec": 32.7,
+      "provenance": "brain/carl_active_inference.py, evidence/stage3_readiness_audit/",
+      "milestones": [
+        "Milestone 3.1: Anti-Cheat Pipeline Quarantine",
+        "Milestone 3.2: Counterfactual Rollouts",
+        "Milestone 3.3: M=128 MPPI Deliberation"
+      ],
+      "data_type": "Live M=128 parallel trajectory rollouts, swept-cone hull clearance, autonomous reverse, pivot, and corridor cruise"
+    },
+    {
+      "scene_id": 5,
+      "name": "Corridor Escape Victory Banner",
+      "time_range": "0:57 - 1:02",
+      "duration_sec": 5.0,
+      "provenance": "Autonomous traversal beyond corridor exit mouth (x < -0.90m, zero collisions)",
+      "milestones": [
+        "Full Task Completion"
+      ],
+      "data_type": "Full arena trajectory trail illumination and completion banner"
+    },
+    {
+      "scene_id": 6,
+      "name": "Epilogue Performance Summary",
+      "time_range": "1:02 - 1:10",
+      "duration_sec": 8.0,
+      "provenance": "Certified Stage 2 Audit (40/40 mazes, 0.00% collisions) & Stage 3 N=1000 benchmark (mean 8.83ms, p95 13.14ms)",
+      "milestones": [
+        "Stage 1 Verified",
+        "Stage 2 Certified",
+        "Stage 3.3 Certified"
+      ],
+      "data_type": "Verified frozen benchmark metrics"
+    }
+  ],
+  "latency_benchmark": {
+    "sample_count": 1000,
+    "mean_latency_ms": 8.825,
+    "p95_latency_ms": 13.136,
+    "real_time_budget_ms": 45.0,
+    "budget_compliance": "PASSED [100% OK]"
+  },
+  "anti_cheat_status": {
+    "ast_security_scan": "100% CLEAN",
+    "privileged_simulator_state_access": "NONE (0 references to qpos, qvel, geom_xpos in active decision pipeline)"
+  }
+}

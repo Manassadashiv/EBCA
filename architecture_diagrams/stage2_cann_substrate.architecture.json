@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Stage 2.1: 2,114-Unit Neuromorphic CANN Substrate",
+    "subtitle": "Continuous Attractor Dynamics & Metric Spatial Representation",
+    "output": "stage2_cann_architecture.html",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "heading-integration",
+        "label": "Head Direction Tracking",
+        "focus": [
+          "imu_gyro",
+          "hd_ring",
+          "bump_tracker",
+          "spatial_controller"
+        ],
+        "note": "Velocity efference shifts the 64-neuron ring attractor to maintain internal compass angle."
+      },
+      {
+        "id": "grid-tiling",
+        "label": "2D Toroidal Grid Tiling",
+        "focus": [
+          "wheel_odo",
+          "grid_torus",
+          "torus_phase",
+          "spatial_controller"
+        ],
+        "note": "Translational velocity translates the 2D attractor bump across the 32x32 toroidal sheet."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "imu_gyro",
+      "type": "external",
+      "label": "IMU Gyroscope (\u03c9_z)",
+      "sublabel": "Vestibular Yaw Rate",
+      "pos": [
+        40,
+        140
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "wheel_odo",
+      "type": "external",
+      "label": "Wheel Odometry (v)",
+      "sublabel": "Forward Velocity",
+      "pos": [
+        40,
+        320
+      ],
+      "size": [
+        150,
+        60
+      ]
+    },
+    {
+      "id": "hd_ring",
+      "type": "database",
+      "label": "64-HD Ring Attractor",
+      "sublabel": "carl_stage2_hd_ring.py",
+      "pos": [
+        260,
+        140
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Manifold S\u00b9"
+    },
+    {
+      "id": "grid_torus",
+      "type": "database",
+      "label": "1,024-Grid Torus",
+      "sublabel": "grid_torus.py",
+      "pos": [
+        260,
+        320
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "32x32 Torus T\u00b2"
+    },
+    {
+      "id": "reservoir",
+      "type": "database",
+      "label": "1,026-Reservoir",
+      "sublabel": "carl_reservoir.py",
+      "pos": [
+        480,
+        480
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Echo-State CA3"
+    },
+    {
+      "id": "bump_tracker",
+      "type": "backend",
+      "label": "HD Phase Decoder",
+      "sublabel": "carl_stage2_hd_ring.py",
+      "pos": [
+        480,
+        140
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Heading \u03b8"
+    },
+    {
+      "id": "torus_phase",
+      "type": "backend",
+      "label": "Grid Phase Decoder",
+      "sublabel": "grid_torus.py",
+      "pos": [
+        480,
+        320
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Phase (u, v)"
+    },
+    {
+      "id": "spatial_controller",
+      "type": "backend",
+      "label": "Integrated Brain",
+      "sublabel": "integrated_brain.py",
+      "pos": [
+        700,
+        230
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "2,114 Units"
+    },
+    {
+      "id": "ablation_probe",
+      "type": "security",
+      "label": "CANN Causal Probe",
+      "sublabel": "r_causality.py",
+      "pos": [
+        700,
+        410
+      ],
+      "size": [
+        150,
+        60
+      ],
+      "tag": "Gate 3.1 Certified"
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "2,114-Unit Neuromorphic Continuous Attractor Substrate",
+      "wraps": [
+        "hd_ring",
+        "grid_torus",
+        "reservoir",
+        "bump_tracker",
+        "torus_phase",
+        "spatial_controller"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "gyro-to-hd",
+      "from": "imu_gyro",
+      "to": "hd_ring",
+      "variant": "emphasis"
+    },
+    {
+      "id": "odo-to-grid",
+      "from": "wheel_odo",
+      "to": "grid_torus"
+    },
+    {
+      "id": "odo-to-res",
+      "from": "wheel_odo",
+      "to": "reservoir",
+      "fromSide": "bottom",
+      "toSide": "left",
+      "via": [
+        [
+          115,
+          510
+        ]
+      ]
+    },
+    {
+      "id": "hd-to-tracker",
+      "from": "hd_ring",
+      "to": "bump_tracker"
+    },
+    {
+      "id": "grid-to-phase",
+      "from": "grid_torus",
+      "to": "torus_phase"
+    },
+    {
+      "id": "tracker-to-brain",
+      "from": "bump_tracker",
+      "to": "spatial_controller"
+    },
+    {
+      "id": "phase-to-brain",
+      "from": "torus_phase",
+      "to": "spatial_controller"
+    },
+    {
+      "id": "res-to-probe",
+      "from": "reservoir",
+      "to": "ablation_probe"
+    },
+    {
+      "id": "brain-to-probe",
+      "from": "spatial_controller",
+      "to": "ablation_probe",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Continuous Attractor Network",
+      "items": [
+        "64 HD neurons on 1D circle maintain angular orientation",
+        "1,024 grid neurons on 2D torus provide periodic metric coordinates",
+        "1,026 recurrent liquid units provide temporal credit assignment"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "Causal Verification",
+      "items": [
+        "Ablating or shuffling CANN activity produces \u0394u > 0.15 divergence (p < 0.001)",
+        "Proof that attractor representations actively steer motor actions",
+        "Certified under pre-registered Stage 3.1 ablation battery"
+      ]
+    }
+  ]
+}

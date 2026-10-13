@@ -32,9 +32,10 @@
 | **720p HD Wide-Angle USB Camera** | 1 | ₹490.00 | **₹490.00** | Amazon.in / Robu.in |
 | **MG996R Neck Servo + 4x SG90 Arm Servos** | 5 | ₹85–₹320 | **₹660.00** | Robu.in / ElectronicsComp |
 | **2WD Smart Robot Car Chassis Kit + Encoders** | 1 | ₹420.00 | **₹420.00** | Robu.in / ElectronicsComp |
+| **Dual CY-15A Cushioned Spring Casters ($k=350\text{ N/m}$)** | 2 | ₹75.00 | **₹150.00** | Robu.in / ElectronicsComp |
 | **L298N Motor Driver Module** | 1 | ₹125.00 | **₹125.00** | Robu.in |
 | **MPU6050 6-DOF IMU Sensor Module** | 1 | ₹145.00 | **₹145.00** | Robu.in |
 | **2x 18650 Li-ion Cells + Dual Holder Case** | 1 set | ₹365.00 | **₹365.00** | Robu.in / ElectronicsComp |
 | **LM2596 DC-DC Buck Regulator (5V 3A)** | 1 | ₹85.00 | **₹85.00** | Robu.in |
 | **Dupont Jumper Wires & Breadboard Accessories** | 1 set | ₹185.00 | **₹185.00** | Robu.in |
-| **FINAL TOTAL SWEET SPOT BUILD COST** | | | **~₹9,845.00 INR** | *(Fits under ₹10,000 ceiling!)* |
+| **FINAL TOTAL SWEET SPOT BUILD COST** | | | **~₹9,995.00 INR** | *(Fits under ₹10,000 ceiling!)* |

@@ -5,6 +5,7 @@ Based on: Tero, Kobayashi & Nakagaki (2007) Science — proven shortest-path con
 The maze is a network of tubes. Tubes carrying high flow THICKEN.
 Tubes carrying no flow RETRACT. System provably converges to Steiner shortest path.
 """
+import math
 import numpy as np
 from scipy import sparse
 from scipy.sparse.linalg import spsolve
@@ -101,10 +102,19 @@ class PhysarumMaze:
         L = self._build_laplacian()
         rhs = np.zeros(self.N, dtype=float)
 
+        # Grounding regularization: tiny diagonal damping epsilon prevents singular subgraphs
+        L_csr = L.tocsr()
+        L_csr += sparse.diags(np.full(self.N, 1e-5), 0, format="csr")
+
         # Boundary conditions: fix source and sink pressures
-        L_mod = L.tolil()
-        L_mod[src_idx, :] = 0; L_mod[src_idx, src_idx] = 1.0; rhs[src_idx] = 1.0
-        L_mod[snk_idx, :] = 0; L_mod[snk_idx, snk_idx] = 1.0; rhs[snk_idx] = 0.0
+        L_mod = L_csr.tolil()
+        if src_idx == snk_idx:
+            L_mod[src_idx, :] = 0
+            L_mod[src_idx, src_idx] = 1.0
+            rhs[src_idx] = 0.5
+        else:
+            L_mod[src_idx, :] = 0; L_mod[src_idx, src_idx] = 1.0; rhs[src_idx] = 1.0
+            L_mod[snk_idx, :] = 0; L_mod[snk_idx, snk_idx] = 1.0; rhs[snk_idx] = 0.0
 
         try:
             p = spsolve(L_mod.tocsr(), rhs)
@@ -281,3 +291,309 @@ class PhysarumMaze:
     def path_strength(self):
         return float(np.percentile(np.concatenate([
             self.D_h.flatten(), self.D_v.flatten()]), 90))
+
+
+class CarlPhysarumRoutingEngine:
+    """
+    Stage 3.6 Canonical Physarum Routing Organ.
+    Operates directly on allocentric occupancy grid memory to model free space as an
+    autopoietic, dissipative hydraulic network governed by Hagen-Poiseuille flux dynamics:
+        Q_ij = (D_ij / L_ij) * (P_i - P_j)
+        dD_ij / dt = |Q_ij|^gamma - r * D_ij
+
+    Key Emergent Behaviors:
+    1. Dead-end & Cul-de-Sac Atrophy: Corridors with zero through-flux experience Q=0,
+       causing exponential atrophy (D -> D_min) and high hydraulic impedance.
+    2. Topological Current Streamlines: Continuous vector field V_phys(x, y) = -grad P(x, y)
+       guides continuous trajectory synthesis toward open exits without heuristic if-statements.
+    3. Trajectory Impedance Manifold: Evaluates hydraulic resistance along candidate rollouts
+       to eliminate dead-end re-entry in continuous MPPI.
+    """
+    def __init__(
+        self,
+        grid_dim: int = 32,
+        half_size: float = 6.4,
+        gamma: float = 1.25,
+        decay_rate: float = 0.25,
+        d_min: float = 1e-4,
+        d_max: float = 10.0,
+        dt: float = 0.030,
+    ):
+        self.grid_dim = int(grid_dim)
+        self.half_size = float(half_size)
+        self.res = (2.0 * self.half_size) / self.grid_dim
+        self.gamma = float(gamma)
+        self.decay_rate = float(decay_rate)
+        self.d_min = float(d_min)
+        self.d_max = float(d_max)
+        self.dt = float(dt)
+
+        # Internal grid states
+        self.N = self.grid_dim * self.grid_dim
+        self.D_h = np.ones((self.grid_dim, self.grid_dim - 1), dtype=np.float32)
+        self.D_v = np.ones((self.grid_dim - 1, self.grid_dim), dtype=np.float32)
+        self.pressure = np.zeros((self.grid_dim, self.grid_dim), dtype=np.float32)
+        self.impedance = np.ones((self.grid_dim, self.grid_dim), dtype=np.float32)
+        self.grad_x = np.zeros((self.grid_dim, self.grid_dim), dtype=np.float32)
+        self.grad_y = np.zeros((self.grid_dim, self.grid_dim), dtype=np.float32)
+
+        self.obstacle_mask = np.zeros((self.grid_dim, self.grid_dim), dtype=bool)
+        self.step_count = 0
+        self.last_solve_time_ms = 0.0
+
+        # Cached indices for sparse assembly
+        self._setup_sparse_indexer()
+
+    def _setup_sparse_indexer(self):
+        """Precomputes neighbor index arrays for fast vectorized sparse matrix updates."""
+        self.node_idx = np.arange(self.N, dtype=np.int32).reshape(self.grid_dim, self.grid_dim)
+        self.n1_h = self.node_idx[:, :-1].flatten()
+        self.n2_h = self.node_idx[:, 1:].flatten()
+        self.n1_v = self.node_idx[:-1, :].flatten()
+        self.n2_v = self.node_idx[1:, :].flatten()
+        self.all_nodes = np.arange(self.N, dtype=np.int32)
+
+        # Precompute static sparsity structure
+        self.sparse_rows = np.concatenate([self.n1_h, self.n2_h, self.n1_v, self.n2_v, self.all_nodes])
+        self.sparse_cols = np.concatenate([self.n2_h, self.n1_h, self.n2_v, self.n1_v, self.all_nodes])
+
+    def world_to_grid(self, x: float, y: float) -> Tuple[int, int]:
+        """Converts metric world coordinates to grid indices [0, grid_dim-1]."""
+        gi = int(np.clip((y + self.half_size) / self.res, 0, self.grid_dim - 1))
+        gj = int(np.clip((x + self.half_size) / self.res, 0, self.grid_dim - 1))
+        return gi, gj
+
+    def grid_to_world(self, gi: int, gj: int) -> Tuple[float, float]:
+        """Converts grid indices to continuous metric coordinates at cell center."""
+        x = float(-self.half_size + (gj + 0.5) * self.res)
+        y = float(-self.half_size + (gi + 0.5) * self.res)
+        return x, y
+
+    def update_occupancy(self, occ_grid_128: np.ndarray, thresh: float = 0.35):
+        """
+        Downsamples 128x128 allocentric occupancy grid into Physarum representation.
+        Takes channel 0 (obstacle hit density). Uses mean block downsampling to preserve
+        traversable narrow corridors and avoid artificial corridor obstruction.
+        """
+        if occ_grid_128.ndim == 3:
+            occ = occ_grid_128[0]
+        else:
+            occ = occ_grid_128
+
+        # Block downsampling
+        if occ.shape[0] == self.grid_dim:
+            down = occ
+        elif occ.shape[0] % self.grid_dim == 0:
+            factor = occ.shape[0] // self.grid_dim
+            down = occ.reshape(self.grid_dim, factor, self.grid_dim, factor).mean(axis=(1, 3))
+        else:
+            from scipy.ndimage import zoom
+            down = zoom(occ, self.grid_dim / occ.shape[0], order=1)
+        self.obstacle_mask = down > thresh
+
+    def step(
+        self,
+        src_pos: Tuple[float, float],
+        snk_pos: Tuple[float, float],
+        occ_grid_128: Optional[np.ndarray] = None
+    ):
+        """
+        Executes one full Physarum adaptation step:
+        1. Ingests occupancy map.
+        2. Solves Kirchhoff pressure field from source to sink.
+        3. Updates tube conductivities via Hagen-Poiseuille flux dynamics.
+        4. Calculates topological current gradient field and hydraulic impedance manifold.
+        """
+        import time
+        t0 = time.perf_counter()
+        self.step_count += 1
+
+        if occ_grid_128 is not None:
+            self.update_occupancy(occ_grid_128)
+
+        si, sj = self.world_to_grid(src_pos[0], src_pos[1])
+        ti, tj = self.world_to_grid(snk_pos[0], snk_pos[1])
+
+        # If source and sink are coincident or invalid, maintain ground state
+        if (si == ti and sj == tj) or self.obstacle_mask[si, sj] or self.obstacle_mask[ti, tj]:
+            # Push sink to nearest non-obstacle neighbor if blocked
+            if self.obstacle_mask[ti, tj]:
+                ti, tj = self._find_nearest_free_cell(ti, tj)
+
+        src_n = int(self.node_idx[si, sj])
+        snk_n = int(self.node_idx[ti, tj])
+
+        # 1. Build and solve sparse Poisson system
+        L, rhs = self._build_poisson_system(src_n, snk_n)
+        try:
+            p = spsolve(L, rhs)
+            if np.any(np.isnan(p)):
+                p = np.zeros(self.N, dtype=np.float32)
+        except Exception:
+            p = np.zeros(self.N, dtype=np.float32)
+
+        self.pressure = np.clip(p.reshape(self.grid_dim, self.grid_dim), 0.0, 1.0).astype(np.float32)
+
+        # 2. Update tube conductivities (Flux-dependent adaptation)
+        self._adapt_conductivities()
+
+        # 3. Compute continuous topological current and hydraulic impedance
+        self._compute_current_and_impedance()
+
+        self.last_solve_time_ms = float((time.perf_counter() - t0) * 1000.0)
+
+    def _find_nearest_free_cell(self, gi: int, gj: int) -> Tuple[int, int]:
+        """Finds closest non-obstacle cell using breadth expansion."""
+        for r in range(1, 8):
+            for di in range(-r, r + 1):
+                for dj in range(-r, r + 1):
+                    ni, nj = gi + di, gj + dj
+                    if 0 <= ni < self.grid_dim and 0 <= nj < self.grid_dim:
+                        if not self.obstacle_mask[ni, nj]:
+                            return ni, nj
+        return gi, gj
+
+    def _build_poisson_system(self, src_n: int, snk_n: int):
+        """Vectorized construction of sparse symmetric positive-definite Kirchhoff matrix without loops."""
+        obs_h = self.obstacle_mask[:, :-1] | self.obstacle_mask[:, 1:]
+        obs_v = self.obstacle_mask[:-1, :] | self.obstacle_mask[1:, :]
+
+        dh_eff = np.where(obs_h, self.d_min, self.D_h).flatten()
+        dv_eff = np.where(obs_v, self.d_min, self.D_v).flatten()
+
+        diag = np.full(self.N, 1e-4, dtype=np.float32)
+        np.add.at(diag, self.n1_h, dh_eff)
+        np.add.at(diag, self.n2_h, dh_eff)
+        np.add.at(diag, self.n1_v, dv_eff)
+        np.add.at(diag, self.n2_v, dv_eff)
+
+        # Enforce Dirichlet boundaries using penalty method (avoids expensive LIL conversion)
+        penalty = 1e6
+        diag[src_n] += penalty
+        diag[snk_n] += penalty
+
+        data = np.concatenate([-dh_eff, -dh_eff, -dv_eff, -dv_eff, diag])
+        L = sparse.csr_matrix((data, (self.sparse_rows, self.sparse_cols)), shape=(self.N, self.N), dtype=np.float32)
+
+        rhs = np.zeros(self.N, dtype=np.float32)
+        rhs[src_n] = penalty * 1.0
+        rhs[snk_n] = 0.0
+
+        return L, rhs
+
+    def _adapt_conductivities(self):
+        """
+        Applies Hagen-Poiseuille adaptation equation:
+            dD/dt = |Q|^gamma - r * D
+        Dead ends with Q=0 experience exponential atrophy dD/dt = -r*D.
+        """
+        p = self.pressure
+
+        # Horizontal flux: Q_h = D_h * |P(i, j) - P(i, j+1)|
+        p_left = p[:, :-1]
+        p_right = p[:, 1:]
+        delta_p_h = np.abs(p_left - p_right)
+        Q_h = self.D_h * delta_p_h
+
+        # Adaptation update
+        dD_h = (np.power(Q_h, self.gamma) - self.decay_rate * self.D_h) * self.dt
+        self.D_h = np.clip(self.D_h + dD_h, self.d_min, self.d_max)
+
+        # Zero out obstacle edges
+        obs_h = self.obstacle_mask[:, :-1] | self.obstacle_mask[:, 1:]
+        self.D_h[obs_h] = self.d_min
+
+        # Vertical flux: Q_v = D_v * |P(i, j) - P(i+1, j)|
+        p_top = p[:-1, :]
+        p_bot = p[1:, :]
+        delta_p_v = np.abs(p_top - p_bot)
+        Q_v = self.D_v * delta_p_v
+
+        dD_v = (np.power(Q_v, self.gamma) - self.decay_rate * self.D_v) * self.dt
+        self.D_v = np.clip(self.D_v + dD_v, self.d_min, self.d_max)
+
+        obs_v = self.obstacle_mask[:-1, :] | self.obstacle_mask[1:, :]
+        self.D_v[obs_v] = self.d_min
+
+    def _compute_current_and_impedance(self):
+        """
+        Computes topological current field V = -grad P and cell-wise hydraulic impedance.
+        """
+        # Cell-wise average conductivity D_bar
+        D_cell = np.full((self.grid_dim, self.grid_dim), self.d_min, dtype=np.float32)
+        D_cell[:, :-1] += self.D_h * 0.5
+        D_cell[:, 1:] += self.D_h * 0.5
+        D_cell[:-1, :] += self.D_v * 0.5
+        D_cell[1:, :] += self.D_v * 0.5
+
+        # Hydraulic impedance: high in atrophied dead-ends, low along thick conduits
+        self.impedance = (1.0 / (D_cell + 1e-4)).astype(np.float32)
+        self.impedance[self.obstacle_mask] = 1000.0
+
+        # Negative pressure gradient: V = -grad P
+        gy, gx = np.gradient(self.pressure)
+        # Note: In grid coords, i is y and j is x
+        self.grad_x = -gx / self.res
+        self.grad_y = -gy / self.res
+
+    def get_topological_current(self, x: float, y: float) -> Tuple[float, float, float]:
+        """
+        Continuous bilinear interpolation of the topological current vector at (x, y).
+        Returns:
+            vx: continuous x-flow velocity
+            vy: continuous y-flow velocity
+            theta_flow: continuous stream angle (radians)
+        """
+        gj = (x + self.half_size) / self.res - 0.5
+        gi = (y + self.half_size) / self.res - 0.5
+
+        j0 = int(np.clip(np.floor(gj), 0, self.grid_dim - 1))
+        j1 = int(np.clip(j0 + 1, 0, self.grid_dim - 1))
+        i0 = int(np.clip(np.floor(gi), 0, self.grid_dim - 1))
+        i1 = int(np.clip(i0 + 1, 0, self.grid_dim - 1))
+
+        fj = float(np.clip(gj - j0, 0.0, 1.0))
+        fi = float(np.clip(gi - i0, 0.0, 1.0))
+
+        vx = (1 - fi) * (1 - fj) * self.grad_x[i0, j0] + \
+             (1 - fi) * fj * self.grad_x[i0, j1] + \
+             fi * (1 - fj) * self.grad_x[i1, j0] + \
+             fi * fj * self.grad_x[i1, j1]
+
+        vy = (1 - fi) * (1 - fj) * self.grad_y[i0, j0] + \
+             (1 - fi) * fj * self.grad_y[i0, j1] + \
+             fi * (1 - fj) * self.grad_y[i1, j0] + \
+             fi * fj * self.grad_y[i1, j1]
+
+        mag = math.sqrt(vx * vx + vy * vy)
+        theta_flow = math.atan2(vy, vx) if mag > 1e-5 else 0.0
+        return float(vx), float(vy), float(theta_flow)
+
+    def evaluate_trajectory_impedance(
+        self,
+        traj_x: np.ndarray,
+        traj_y: np.ndarray
+    ) -> np.ndarray:
+        """
+        Evaluates cumulative hydraulic impedance along an ensemble of candidate trajectories (M, H).
+        Trajectories venturing into atrophied dead-ends receive high resistance penalties.
+        """
+        M, H = traj_x.shape
+        gj = np.clip(((traj_x + self.half_size) / self.res).astype(int), 0, self.grid_dim - 1)
+        gi = np.clip(((traj_y + self.half_size) / self.res).astype(int), 0, self.grid_dim - 1)
+
+        # Sample impedance map
+        costs = self.impedance[gi, gj]  # shape (M, H)
+        return np.sum(costs, axis=1)
+
+    def get_atrophy_diagnostics(self) -> Dict[str, float]:
+        """Returns quantitative metrics proving dead-end hydraulic atrophy."""
+        d_all = np.concatenate([self.D_h.flatten(), self.D_v.flatten()])
+        return {
+            "mean_conductivity": float(np.mean(d_all)),
+            "min_conductivity": float(np.min(d_all)),
+            "max_conductivity": float(np.max(d_all)),
+            "atrophy_ratio": float(np.sum(d_all <= (self.d_min * 10.0)) / len(d_all)),
+            "solve_time_ms": self.last_solve_time_ms,
+        }
+

@@ -1,0 +1,188 @@
+{
+  "test_suite": "Stage 3.4 Canonical Equivalence Gate",
+  "overall_pass": true,
+  "numerical_tolerances": {
+    "action_u_atol": 1e-06,
+    "cost_atol": 1e-05,
+    "entropy_atol": 1e-05,
+    "candidate_count_exact": true,
+    "best_idx_exact": true
+  },
+  "scenarios": {
+    "open_corridor": {
+      "scenario": "open_corridor",
+      "seed": 42,
+      "path_a_action": [
+        0.949999988079071,
+        0.949999988079071
+      ],
+      "path_b_action": [
+        0.949999988079071,
+        0.949999988079071
+      ],
+      "delta_u": [
+        0.0,
+        0.0
+      ],
+      "max_delta_u": 0.0,
+      "path_a_best_idx": 1,
+      "path_b_best_idx": 1,
+      "path_a_best_cost": -26.634767532348633,
+      "path_b_best_cost": -26.634767532348633,
+      "delta_best_cost": 0.0,
+      "path_a_accepted": 128,
+      "path_b_accepted": 128,
+      "path_a_rejected": 0,
+      "path_b_rejected": 0,
+      "path_a_entropy": -0.0,
+      "path_b_entropy": -0.0,
+      "delta_entropy": 0.0,
+      "path_a_min_clearance": 0.7383897304534912,
+      "path_b_min_clearance": 0.7383897304534912,
+      "delta_min_clearance": 0.0,
+      "path_a_rejection_reason": "none",
+      "path_b_rejection_reason": "none",
+      "is_equivalent": true
+    },
+    "right_proximity": {
+      "scenario": "right_proximity",
+      "seed": 42,
+      "path_a_action": [
+        0.8199999332427979,
+        0.880000114440918
+      ],
+      "path_b_action": [
+        0.8199999332427979,
+        0.880000114440918
+      ],
+      "delta_u": [
+        0.0,
+        0.0
+      ],
+      "max_delta_u": 0.0,
+      "path_a_best_idx": 11,
+      "path_b_best_idx": 11,
+      "path_a_best_cost": -3.704221487045288,
+      "path_b_best_cost": -3.704221487045288,
+      "delta_best_cost": 0.0,
+      "path_a_accepted": 13,
+      "path_b_accepted": 13,
+      "path_a_rejected": 115,
+      "path_b_rejected": 115,
+      "path_a_entropy": 2.5710345653351396e-05,
+      "path_b_entropy": 2.5710345653351396e-05,
+      "delta_entropy": 0.0,
+      "path_a_min_clearance": 0.1593271642923355,
+      "path_b_min_clearance": 0.1593271642923355,
+      "delta_min_clearance": 0.0,
+      "path_a_rejection_reason": "rectangular_hull_collision_or_proximity",
+      "path_b_rejection_reason": "rectangular_hull_collision_or_proximity",
+      "is_equivalent": true
+    },
+    "left_proximity": {
+      "scenario": "left_proximity",
+      "seed": 42,
+      "path_a_action": [
+        0.8500000238418579,
+        -0.8500000238418579
+      ],
+      "path_b_action": [
+        0.8500000238418579,
+        -0.8500000238418579
+      ],
+      "delta_u": [
+        0.0,
+        0.0
+      ],
+      "max_delta_u": 0.0,
+      "path_a_best_idx": 83,
+      "path_b_best_idx": 83,
+      "path_a_best_cost": -1471.374755859375,
+      "path_b_best_cost": -1471.374755859375,
+      "delta_best_cost": 0.0,
+      "path_a_accepted": 0,
+      "path_b_accepted": 0,
+      "path_a_rejected": 128,
+      "path_b_rejected": 128,
+      "path_a_entropy": -0.0,
+      "path_b_entropy": -0.0,
+      "delta_entropy": 0.0,
+      "path_a_min_clearance": 0.1593271642923355,
+      "path_b_min_clearance": 0.1593271642923355,
+      "delta_min_clearance": 0.0,
+      "path_a_rejection_reason": "rectangular_hull_collision_or_proximity",
+      "path_b_rejection_reason": "rectangular_hull_collision_or_proximity",
+      "is_equivalent": true
+    },
+    "dead_end": {
+      "scenario": "dead_end",
+      "seed": 42,
+      "path_a_action": [
+        -0.5,
+        -0.5
+      ],
+      "path_b_action": [
+        -0.5,
+        -0.5
+      ],
+      "delta_u": [
+        0.0,
+        0.0
+      ],
+      "max_delta_u": 0.0,
+      "path_a_best_idx": 98,
+      "path_b_best_idx": 98,
+      "path_a_best_cost": -22.559255599975586,
+      "path_b_best_cost": -22.559255599975586,
+      "delta_best_cost": 0.0,
+      "path_a_accepted": 116,
+      "path_b_accepted": 116,
+      "path_a_rejected": 12,
+      "path_b_rejected": 12,
+      "path_a_entropy": 4.721044591233525e-40,
+      "path_b_entropy": 4.721044591233525e-40,
+      "delta_entropy": 0.0,
+      "path_a_min_clearance": 0.15523526072502136,
+      "path_b_min_clearance": 0.15523526072502136,
+      "delta_min_clearance": 0.0,
+      "path_a_rejection_reason": "rectangular_hull_collision_or_proximity",
+      "path_b_rejection_reason": "rectangular_hull_collision_or_proximity",
+      "is_equivalent": true
+    },
+    "oblique_corridor": {
+      "scenario": "oblique_corridor",
+      "seed": 42,
+      "path_a_action": [
+        0.8500000238418579,
+        -0.8500000238418579
+      ],
+      "path_b_action": [
+        0.8500000238418579,
+        -0.8500000238418579
+      ],
+      "delta_u": [
+        0.0,
+        0.0
+      ],
+      "max_delta_u": 0.0,
+      "path_a_best_idx": 83,
+      "path_b_best_idx": 83,
+      "path_a_best_cost": 0.9947769045829773,
+      "path_b_best_cost": 0.9947769045829773,
+      "delta_best_cost": 0.0,
+      "path_a_accepted": 128,
+      "path_b_accepted": 128,
+      "path_a_rejected": 0,
+      "path_b_rejected": 0,
+      "path_a_entropy": 5.1024070302219116e-08,
+      "path_b_entropy": 5.1024070302219116e-08,
+      "delta_entropy": 0.0,
+      "path_a_min_clearance": 0.4646757245063782,
+      "path_b_min_clearance": 0.4646757245063782,
+      "delta_min_clearance": 0.0,
+      "path_a_rejection_reason": "none",
+      "path_b_rejection_reason": "none",
+      "is_equivalent": true
+    }
+  }
+}

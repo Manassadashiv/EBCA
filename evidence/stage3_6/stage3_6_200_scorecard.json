@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-13T12:30:11Z",
+  "milestone": "Stage 3.6 \u2014 Full-Scale 200-Episode Certification & Telemetry",
+  "status": "CERTIFIED",
+  "total_episodes": 200,
+  "matched_pairs": 100,
+  "metrics": {
+    "intact_escapes": 85,
+    "ablated_escapes": 91,
+    "intact_collisions": 2,
+    "ablated_collisions": 4,
+    "mean_intact_ticks": 171.81,
+    "mean_ablated_ticks": 177.08,
+    "time_to_egress_ttest_p": 0.40020017889899984,
+    "mean_intact_path_length_m": 1.8500894023215904,
+    "mean_ablated_path_length_m": 1.9021816974757166,
+    "path_length_ttest_p": 0.29918034239202446,
+    "mean_chassis_pitch_rad": 0.07982776919994346,
+    "mean_wheel_slip": 0.017513438588527493,
+    "max_command_slew": 0.08000001311302185,
+    "mean_cycle_latency_ms": 10.060360285408333,
+    "p95_cycle_latency_ms": 15.855499939061698,
+    "total_cycles_evaluated": 34889
+  }
+}

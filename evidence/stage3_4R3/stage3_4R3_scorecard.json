@@ -1,6 +1,6 @@
 {
   "milestone": "Stage 3.4-R3 Active Inference Remediation & Causal Necessity",
-  "timestamp": "2026-09-18T07:08:43Z",
+  "timestamp": "2026-10-10T19:02:20Z",
   "status": "FAILED CLOSED \u274c",
   "total_certification_episodes": 200,
   "matched_configurations": 50,
@@ -20,12 +20,12 @@
         "collision_rate_max": 10.0
       },
       "measured": {
-        "escape_rate": 12.0,
-        "collision_rate": 18.0
+        "escape_rate": 20.0,
+        "collision_rate": 24.0
       },
       "counts": {
-        "escaped": 6,
-        "collision": 9,
+        "escaped": 10,
+        "collision": 12,
         "total": 50
       }
     },
@@ -36,10 +36,10 @@
         "emergence_rate_min": 75.0
       },
       "measured": {
-        "emergence_rate": 0.0
+        "emergence_rate": 8.0
       },
       "counts": {
-        "complete_emergent": 0,
+        "complete_emergent": 4,
         "total": 50
       }
     },
@@ -48,10 +48,10 @@
       "passed": false,
       "env2": {
         "n_pairs": 30,
-        "delta_escape_pct": 0.0,
-        "exact_mcnemar_p": 1.0,
+        "delta_escape_pct": 10.0,
+        "exact_mcnemar_p": 0.125,
         "discordant_pairs": {
-          "b_armA_wins": 0,
+          "b_armA_wins": 3,
           "c_armB_wins": 0
         },
         "passed": false,
@@ -62,11 +62,11 @@
       },
       "pooled": {
         "n_pairs": 50,
-        "delta_escape_pct": -8.0,
-        "exact_mcnemar_p": 0.984375,
+        "delta_escape_pct": 20.0,
+        "exact_mcnemar_p": 0.0009765625,
         "discordant_pairs": {
-          "b_armA_wins": 1,
-          "c_armB_wins": 5
+          "b_armA_wins": 10,
+          "c_armB_wins": 0
         },
         "passed": false,
         "thresholds": {
@@ -83,9 +83,9 @@
         "p95_max_ms": 45.0
       },
       "measured": {
-        "mean_latency_ms": 5.962182207013097,
-        "p95_latency_ms": 16.083094997156877,
-        "total_cycles": 39802
+        "mean_latency_ms": 3.93283091169165,
+        "p95_latency_ms": 4.536699969321489,
+        "total_cycles": 39105
       }
     },
     "gate5_anti_cheat_isolation": {
@@ -99,61 +99,61 @@
   },
   "arm_performance_summary": {
     "ARM-A": {
-      "pooled_escape_count": 6,
-      "pooled_escape_rate": 12.0,
-      "pooled_collision_count": 9,
-      "pooled_collision_rate": 18.0,
-      "env1_escape_count": 6,
-      "env1_escape_rate": 30.0,
-      "env2_escape_count": 0,
-      "env2_escape_rate": 0.0
-    },
-    "ARM-B": {
       "pooled_escape_count": 10,
       "pooled_escape_rate": 20.0,
-      "pooled_collision_count": 7,
-      "pooled_collision_rate": 14.000000000000002,
-      "env1_escape_count": 10,
-      "env1_escape_rate": 50.0,
+      "pooled_collision_count": 12,
+      "pooled_collision_rate": 24.0,
+      "env1_escape_count": 7,
+      "env1_escape_rate": 35.0,
+      "env2_escape_count": 3,
+      "env2_escape_rate": 10.0
+    },
+    "ARM-B": {
+      "pooled_escape_count": 0,
+      "pooled_escape_rate": 0.0,
+      "pooled_collision_count": 0,
+      "pooled_collision_rate": 0.0,
+      "env1_escape_count": 0,
+      "env1_escape_rate": 0.0,
       "env2_escape_count": 0,
       "env2_escape_rate": 0.0
     },
     "ARM-C": {
-      "pooled_escape_count": 8,
-      "pooled_escape_rate": 16.0,
-      "pooled_collision_count": 7,
-      "pooled_collision_rate": 14.000000000000002,
-      "env1_escape_count": 8,
-      "env1_escape_rate": 40.0,
-      "env2_escape_count": 0,
-      "env2_escape_rate": 0.0
+      "pooled_escape_count": 22,
+      "pooled_escape_rate": 44.0,
+      "pooled_collision_count": 10,
+      "pooled_collision_rate": 20.0,
+      "env1_escape_count": 13,
+      "env1_escape_rate": 65.0,
+      "env2_escape_count": 9,
+      "env2_escape_rate": 30.0
     },
     "ARM-D": {
-      "pooled_escape_count": 11,
-      "pooled_escape_rate": 22.0,
-      "pooled_collision_count": 7,
-      "pooled_collision_rate": 14.000000000000002,
-      "env1_escape_count": 11,
-      "env1_escape_rate": 55.00000000000001,
-      "env2_escape_count": 0,
-      "env2_escape_rate": 0.0
+      "pooled_escape_count": 18,
+      "pooled_escape_rate": 36.0,
+      "pooled_collision_count": 9,
+      "pooled_collision_rate": 18.0,
+      "env1_escape_count": 9,
+      "env1_escape_rate": 45.0,
+      "env2_escape_count": 9,
+      "env2_escape_rate": 30.0
     }
   },
   "ablation_analysis": {
     "arm_a_vs_arm_c_micro_local": {
-      "delta_escape_pct": -4.0,
-      "exact_mcnemar_p": 0.85546875,
+      "delta_escape_pct": -24.0,
+      "exact_mcnemar_p": 0.9966946244239807,
       "discordant_pairs": {
-        "b_armA_wins": 3,
-        "c_armC_wins": 5
+        "b_armA_wins": 6,
+        "c_armC_wins": 18
       }
     },
     "arm_a_vs_arm_d_unnormalized": {
-      "delta_escape_pct": -10.0,
-      "exact_mcnemar_p": 0.98046875,
+      "delta_escape_pct": -16.0,
+      "exact_mcnemar_p": 0.9893646240234375,
       "discordant_pairs": {
-        "b_armA_wins": 2,
-        "c_armD_wins": 7
+        "b_armA_wins": 4,
+        "c_armD_wins": 12
       }
     }
   }

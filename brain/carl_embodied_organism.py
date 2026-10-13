@@ -13,7 +13,7 @@ Treats the entire physical embodiment as CARL's active body:
 import math
 import numpy as np
 from dataclasses import dataclass
-from typing import Dict, Any, Tuple, List
+from typing import Dict, Any, Tuple, List, Optional
 
 @dataclass
 class EmbodiedSensoryState:

@@ -17,6 +17,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Tuple
 import numpy as np
 import scipy.stats as stats
+import torch
 import mujoco
 
 repo_root = Path(__file__).resolve().parent.parent
@@ -31,7 +32,7 @@ EVIDENCE_DIR = repo_root / "evidence" / "stage3_4R4"
 EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
 
 SCREENING_CONFIG_IDS = [0, 1, 2, 3, 4, 20, 21, 22, 23, 24]
-MAX_TICKS = 220
+MAX_TICKS = 260
 
 
 def execute_screening_episode(
@@ -44,7 +45,9 @@ def execute_screening_episode(
     sx, sy = config["spawn_pos"]
     syaw = config["spawn_yaw"]
 
-    # 1. Physics Reset
+    # 1. Physics Reset & Deterministic Seeds
+    np.random.seed(config["seed"])
+    torch.manual_seed(config["seed"])
     hal.reset()
     qa = int(hal.model.joint("spatial_identity").qposadr[0])
     hal.data.qpos[qa:qa+2] = [sx, sy]
@@ -174,7 +177,7 @@ def execute_screening_episode(
             break
 
         u_fwd = float(0.5 * (cmd_6d[0] + cmd_6d[1]))
-        v_est = 0.70 * v_est + 0.30 * (u_fwd * 0.30)
+        v_est = 0.65 * v_est + 0.35 * (u_fwd * 0.35)
 
     timeout = not escaped and not had_collision
     gate2_emergent_complete = bool(

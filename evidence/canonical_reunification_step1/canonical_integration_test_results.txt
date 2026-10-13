@@ -1,0 +1,11 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.7, pytest-9.1.1, pluggy-1.6.0 -- D:\ebca\.venv_cuda\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\ebca
+plugins: anyio-4.14.2
+collecting ... collected 2 items
+
+tests/test_stage3_4_canonical_integration.py::test_canonical_active_inference_wiring PASSED [ 50%]
+tests/test_stage3_4_canonical_integration.py::test_canonical_grid_path_initialization PASSED [100%]
+
+============================= 2 passed in 28.17s ==============================
