@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-10-19T02:20:01Z",
+  "milestone": "Stage 5 \u2014 Master Integrated Organism Acceptance Battery (Physical MuJoCo)",
+  "physics_engine": "MuJoCo 3.9.0",
+  "status": "CERTIFIED",
+  "gates": {
+    "gate1_escape_immunity": {
+      "threshold": "escapes >= 90.0%",
+      "escapes": 20,
+      "total_episodes": 20,
+      "escape_rate": 1.0,
+      "passed": true
+    },
+    "gate2_collision_safety": {
+      "threshold": "collisions == 0.0%",
+      "collisions": 0,
+      "total_episodes": 20,
+      "collision_rate": 0.0,
+      "passed": true
+    },
+    "gate3_causal_attribution": {
+      "threshold": "attribution_accuracy >= 85.0%",
+      "correct_attributions": 19,
+      "total_episodes": 20,
+      "accuracy": 0.95,
+      "passed": true
+    },
+    "gate4_real_time_latency": {
+      "threshold": "mean <= 25.0ms, p95 <= 50.0ms",
+      "mean_latency_ms": 14.930100463248303,
+      "p95_latency_ms": 42.93906000093555,
+      "total_control_cycles": 1943,
+      "passed": true
+    },
+    "gate5_8_organ_activation": {
+      "threshold": "all_8_organs_active == 100.0%",
+      "compliant_episodes": 20,
+      "total_episodes": 20,
+      "compliance_rate": 1.0,
+      "passed": true
+    },
+    "gate6_parameter_adaptation": {
+      "threshold": "permissions_granted > 0 and param_shifts_observed == True",
+      "permissions_granted": 66,
+      "param_shifts_observed": true,
+      "passed": true
+    },
+    "gate7_ast_anti_cheat": {
+      "threshold": "zero_simulator_coordinate_leaks across 19 files",
+      "files_scanned": 19,
+      "leaks_found": 0,
+      "passed": true
+    }
+  },
+  "per_family_stats": {
+    "SLIP": {
+      "escapes": 5,
+      "collisions": 0,
+      "correct_attributions": 5,
+      "mean_ticks": 112.4,
+      "mean_latency_ms": 30.977946172149622,
+      "mean_surprise": 0.9246799010797015
+    },
+    "DEADEND": {
+      "escapes": 5,
+      "collisions": 0,
+      "correct_attributions": 5,
+      "mean_ticks": 165.6,
+      "mean_latency_ms": 12.15451137432741,
+      "mean_surprise": 0.9092483320936543
+    },
+    "OCCLUSION": {
+      "escapes": 5,
+      "collisions": 0,
+      "correct_attributions": 5,
+      "mean_ticks": 55.6,
+      "mean_latency_ms": 9.977470701651596,
+      "mean_surprise": 0.8657354100158663
+    },
+    "HABIT_MISFIRE": {
+      "escapes": 5,
+      "collisions": 0,
+      "correct_attributions": 4,
+      "mean_ticks": 55.0,
+      "mean_latency_ms": 12.185964515801967,
+      "mean_surprise": 0.8731590408365213
+    }
+  }
+}

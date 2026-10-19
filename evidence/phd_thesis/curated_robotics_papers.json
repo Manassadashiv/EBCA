@@ -1,0 +1,635 @@
+[
+  {
+    "title": "Mobility in Metamorphic Mechanisms of Foldable/Erectable Kinds",
+    "year": 1999,
+    "cites": 571,
+    "doi": "https://doi.org/10.1115/1.2829470",
+    "authors": [
+      "Jian S. Dai",
+      "Julian R. Jones"
+    ],
+    "venue": "Journal of Mechanical Design"
+  },
+  {
+    "title": "Matrix Representation of Topological Changes in Metamorphic Mechanisms",
+    "year": 2004,
+    "cites": 174,
+    "doi": "https://doi.org/10.1115/1.1866159",
+    "authors": [
+      "Jian S. Dai",
+      "John Rees Jones"
+    ],
+    "venue": "Journal of Mechanical Design"
+  },
+  {
+    "title": "Reconfigurability of the origami-inspired integrated 8R kinematotropic metamorphic mechanism and its evolved 6R and 4R mechanisms",
+    "year": 2021,
+    "cites": 96,
+    "doi": "https://doi.org/10.1016/j.mechmachtheory.2021.104245",
+    "authors": [
+      "Ruiqin Wang",
+      "Yaqing Song",
+      "Jian S. Dai"
+    ],
+    "venue": "Mechanism and Machine Theory"
+  },
+  {
+    "title": "Biological Modeling and Evolution Based Synthesis of Metamorphic Mechanisms",
+    "year": 2008,
+    "cites": 93,
+    "doi": "https://doi.org/10.1115/1.2900719",
+    "authors": [
+      "Liping Zhang",
+      "Delun Wang",
+      "Jian S. Dai"
+    ],
+    "venue": "Journal of Mechanical Design"
+  },
+  {
+    "title": "Synthesis of a novel type of metamorphic mechanism module for large scale deployable grasping manipulators",
+    "year": 2018,
+    "cites": 78,
+    "doi": "https://doi.org/10.1016/j.mechmachtheory.2018.06.017",
+    "authors": [
+      "Guanglu Jia",
+      "Hailin Huang",
+      "Bing Li"
+    ],
+    "venue": "Mechanism and Machine Theory"
+  },
+  {
+    "title": "Structure Synthesis of Single-Driven Metamorphic Mechanisms Based on the Augmented Assur Groups",
+    "year": 2012,
+    "cites": 77,
+    "doi": "https://doi.org/10.1115/1.4006741",
+    "authors": [
+      "Shujun Li",
+      "Jian S. Dai"
+    ],
+    "venue": "Journal of Mechanisms and Robotics"
+  },
+  {
+    "title": "High\u2013load capacity origami transformable wheel",
+    "year": 2021,
+    "cites": 128,
+    "doi": "https://doi.org/10.1126/scirobotics.abe0201",
+    "authors": [
+      "Dae\u2010Young Lee",
+      "Jae-Kyeong Kim",
+      "Chang-Young Sohn"
+    ],
+    "venue": "Science Robotics"
+  },
+  {
+    "title": "A transformable wheel-legged mobile robot: Design, analysis and experiment",
+    "year": 2017,
+    "cites": 122,
+    "doi": "https://doi.org/10.1016/j.robot.2017.09.008",
+    "authors": [
+      "Tao Sun",
+      "Xiang Xu",
+      "Weihua Su"
+    ],
+    "venue": "Robotics and Autonomous Systems"
+  },
+  {
+    "title": "An optional passive/active transformable wheel-legged mobility concept for search and rescue robots",
+    "year": 2018,
+    "cites": 101,
+    "doi": "https://doi.org/10.1016/j.robot.2018.06.005",
+    "authors": [
+      "Long Bai",
+      "Jian Guan",
+      "Xiaohong Chen"
+    ],
+    "venue": "Robotics and Autonomous Systems"
+  },
+  {
+    "title": "FUHAR: A transformable wheel-legged hybrid mobile robot",
+    "year": 2020,
+    "cites": 97,
+    "doi": "https://doi.org/10.1016/j.robot.2020.103627",
+    "authors": [
+      "\u0130rem Merty\u00fcz",
+      "Alper Kadir Tany\u0131ld\u0131z\u0131",
+      "Beyda Ta\u015far"
+    ],
+    "venue": "Robotics and Autonomous Systems"
+  },
+  {
+    "title": "A transformable wheel robot with a passive leg",
+    "year": 2015,
+    "cites": 76,
+    "doi": "https://doi.org/10.1109/iros.2015.7353966",
+    "authors": [
+      "Yu She",
+      "Carter J. Hurd",
+      "Hai\u2010Jun Su"
+    ],
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+  },
+  {
+    "title": "A novel stair-climbing wheelchair with transformable wheeled four-bar linkages",
+    "year": 2010,
+    "cites": 53,
+    "doi": "https://doi.org/10.1109/iros.2010.5648906",
+    "authors": [
+      "Yusuke Sugahara",
+      "N Yonezawa",
+      "Kazuhiro Kosuge"
+    ],
+    "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+  },
+  {
+    "title": "Design of Two-Link, In-Plane, Bistable Compliant Micro-Mechanisms",
+    "year": 1999,
+    "cites": 116,
+    "doi": "https://doi.org/10.1115/1.2829477",
+    "authors": [
+      "Brian D. Jensen",
+      "Larry L. Howell",
+      "Linton G. Salmon"
+    ],
+    "venue": "Journal of Mechanical Design"
+  },
+  {
+    "title": "Plastic latching accelerometer based on bistable compliant mechanisms",
+    "year": 2007,
+    "cites": 108,
+    "doi": "https://doi.org/10.1088/0964-1726/16/5/055",
+    "authors": [
+      "Brett J. Hansen",
+      "Christopher J. Carron",
+      "Brian D. Jensen"
+    ],
+    "venue": "Smart Materials and Structures"
+  },
+  {
+    "title": "Design of bistable compliant mechanisms using precision\u2013position and rigid-body replacement methods",
+    "year": 2009,
+    "cites": 80,
+    "doi": "https://doi.org/10.1016/j.mechmachtheory.2009.09.009",
+    "authors": [
+      "Mart\u00edn A. Pucheta",
+      "Alberto Cardona"
+    ],
+    "venue": "Mechanism and Machine Theory"
+  },
+  {
+    "title": "Bistable compliant mechanism using magneto active elastomer actuation",
+    "year": 2015,
+    "cites": 70,
+    "doi": "https://doi.org/10.1177/1045389x15620037",
+    "authors": [
+      "Adrienne Crivaro",
+      "Robert Sheridan",
+      "Mary Frecker"
+    ],
+    "venue": "Journal of Intelligent Material Systems and Structures"
+  },
+  {
+    "title": "Synthesis of Bistable Compliant Four-Bar Mechanisms Using Polynomial Homotopy",
+    "year": 2006,
+    "cites": 55,
+    "doi": "https://doi.org/10.1115/1.2757192",
+    "authors": [
+      "Hai\u2010Jun Su",
+      "J. Michael McCarthy"
+    ],
+    "venue": "Journal of Mechanical Design"
+  },
+  {
+    "title": "Reliability-Based Optimal Design of a Bistable Compliant Mechanism",
+    "year": 1994,
+    "cites": 54,
+    "doi": "https://doi.org/10.1115/1.2919495",
+    "authors": [
+      "Larry L. Howell",
+      "S. S. Rao",
+      "Ashok Midha"
+    ],
+    "venue": "Journal of Mechanical Design"
+  },
+  {
+    "title": "Towards a theoretical foundation for morphological computation with compliant bodies",
+    "year": 2011,
+    "cites": 330,
+    "doi": "https://doi.org/10.1007/s00422-012-0471-0",
+    "authors": [
+      "Helmut H\u00e4user",
+      "Auke Jan Ijspeert",
+      "Rudolf Marcel F\u00fcchslin"
+    ],
+    "venue": "Biological Cybernetics"
+  },
+  {
+    "title": "What Is Morphological Computation? On How the Body Contributes to Cognition and Control",
+    "year": 2017,
+    "cites": 186,
+    "doi": "https://doi.org/10.1162/artl_a_00219",
+    "authors": [
+      "Vincent C. M\u00fcller",
+      "Matej Hoffmann"
+    ],
+    "venue": "Artificial Life"
+  },
+  {
+    "title": "Morphological computation",
+    "year": 2006,
+    "cites": 184,
+    "doi": "https://doi.org/10.1016/j.robot.2006.03.003",
+    "authors": [
+      "Chandana Paul"
+    ],
+    "venue": "Robotics and Autonomous Systems"
+  },
+  {
+    "title": "Morphological Computation \u2013 Connecting Brain, Body, and Environment",
+    "year": 2009,
+    "cites": 157,
+    "doi": "https://doi.org/10.1007/978-3-642-00616-6_5",
+    "authors": [
+      "Rolf Pfeifer",
+      "Gabriel G\u00f3mez"
+    ],
+    "venue": "Lecture notes in computer science"
+  },
+  {
+    "title": "Morphological computation for adaptive behavior and cognition",
+    "year": 2006,
+    "cites": 157,
+    "doi": "https://doi.org/10.1016/j.ics.2005.12.080",
+    "authors": [
+      "Rolf Pfeifer",
+      "Fumiya Iida A",
+      "Gabriel G\u00f3mez"
+    ],
+    "venue": "International Congress Series"
+  },
+  {
+    "title": "The role of feedback in morphological computation with compliant bodies",
+    "year": 2012,
+    "cites": 119,
+    "doi": "https://doi.org/10.1007/s00422-012-0516-4",
+    "authors": [
+      "Helmut H\u00e4user",
+      "Auke Jan Ijspeert",
+      "Rudolf Marcel F\u00fcchslin"
+    ],
+    "venue": "Biological Cybernetics"
+  },
+  {
+    "title": "Design and control of tensegrity robots for locomotion",
+    "year": 2006,
+    "cites": 423,
+    "doi": "https://doi.org/10.1109/tro.2006.878980",
+    "authors": [
+      "Chandana Paul",
+      "Francisco J. Valero\u2010Cuevas",
+      "Hod Lipson"
+    ],
+    "venue": "IEEE Transactions on Robotics"
+  },
+  {
+    "title": "Design and control of compliant tensegrity robots through simulation and hardware validation",
+    "year": 2014,
+    "cites": 267,
+    "doi": "https://doi.org/10.1098/rsif.2014.0520",
+    "authors": [
+      "Ken Caluwaerts",
+      "J\u00e9r\u00e9mie Despraz",
+      "At\u0131l I\u015f\u00e7en"
+    ],
+    "venue": "Journal of The Royal Society Interface"
+  },
+  {
+    "title": "A Light\u2010Powered Ultralight Tensegrity Robot with High Deformability and Load Capacity",
+    "year": 2018,
+    "cites": 251,
+    "doi": "https://doi.org/10.1002/adma.201806849",
+    "authors": [
+      "Zhijian Wang",
+      "Kai Li",
+      "Qiguang He"
+    ],
+    "venue": "Advanced Materials"
+  },
+  {
+    "title": "System design and locomotion of SUPERball, an untethered tensegrity robot",
+    "year": 2015,
+    "cites": 205,
+    "doi": "https://doi.org/10.1109/icra.2015.7139590",
+    "authors": [
+      "Andrew P. Sabelhaus",
+      "Jonathan Bruce",
+      "Ken Caluwaerts"
+    ],
+    "venue": "Proceedings - IEEE International Conference on Robotics and Automation/Proceedings"
+  },
+  {
+    "title": "Tensegrity Robotics",
+    "year": 2021,
+    "cites": 162,
+    "doi": "https://doi.org/10.1089/soro.2020.0170",
+    "authors": [
+      "Dylan Shah",
+      "Joran Booth",
+      "Robert L. Baines"
+    ],
+    "venue": "Soft Robotics"
+  },
+  {
+    "title": "Adaptive and Resilient Soft Tensegrity Robots",
+    "year": 2018,
+    "cites": 146,
+    "doi": "https://doi.org/10.1089/soro.2017.0066",
+    "authors": [
+      "John A. Rieffel",
+      "Jean-Baptiste Mouret"
+    ],
+    "venue": "Soft Robotics"
+  },
+  {
+    "title": "Design, fabrication and control of origami robots",
+    "year": 2018,
+    "cites": 641,
+    "doi": "https://doi.org/10.1038/s41578-018-0009-8",
+    "authors": [
+      "Daniela L. Rus",
+      "Michael Thomas Tolley"
+    ],
+    "venue": "Nature Reviews Materials"
+  },
+  {
+    "title": "Stretchable origami robotic arm with omnidirectional bending and twisting",
+    "year": 2021,
+    "cites": 410,
+    "doi": "https://doi.org/10.1073/pnas.2110023118",
+    "authors": [
+      "Shuai Wu",
+      "Qiji Ze",
+      "Jize Dai"
+    ],
+    "venue": "Proceedings of the National Academy of Sciences"
+  },
+  {
+    "title": "Universal computing by DNA origami robots in a living animal",
+    "year": 2014,
+    "cites": 374,
+    "doi": "https://doi.org/10.1038/nnano.2014.58",
+    "authors": [
+      "Yaniv Amir",
+      "Eldad Ben Ishay",
+      "Daniel Levner"
+    ],
+    "venue": "Nature Nanotechnology"
+  },
+  {
+    "title": "An untethered miniature origami robot that self-folds, walks, swims, and degrades",
+    "year": 2015,
+    "cites": 260,
+    "doi": "https://doi.org/10.1109/icra.2015.7139386",
+    "authors": [
+      "Shuhei Miyashita",
+      "Steven Guitron",
+      "Marvin Ludersdorfer"
+    ],
+    "venue": "Proceedings - IEEE International Conference on Robotics and Automation/Proceedings"
+  },
+  {
+    "title": "Mori: A Modular Origami Robot",
+    "year": 2017,
+    "cites": 206,
+    "doi": "https://doi.org/10.1109/tmech.2017.2697310",
+    "authors": [
+      "Christoph H. Belke",
+      "Jamie Kyujin Paik"
+    ],
+    "venue": "IEEE/ASME Transactions on Mechatronics"
+  },
+  {
+    "title": "Electro-ribbon actuators and electro-origami robots",
+    "year": 2018,
+    "cites": 197,
+    "doi": "https://doi.org/10.1126/scirobotics.aau9795",
+    "authors": [
+      "Majid Taghavi",
+      "Tim Helps",
+      "Jonathan Michael Rossiter"
+    ],
+    "venue": "Science Robotics"
+  },
+  {
+    "title": "Analysis and Synthesis of the Bidirectional Antagonistic Variable Stiffness Mechanism",
+    "year": 2014,
+    "cites": 96,
+    "doi": "https://doi.org/10.1109/tmech.2014.2321428",
+    "authors": [
+      "Florian Petit",
+      "Werner Friedl",
+      "Hannes H\u00f6ppner"
+    ],
+    "venue": "IEEE/ASME Transactions on Mechatronics"
+  },
+  {
+    "title": "Soft, Multi-DoF, Variable Stiffness Mechanism Using Layer Jamming for Wearable Robots",
+    "year": 2019,
+    "cites": 89,
+    "doi": "https://doi.org/10.1109/lra.2019.2908493",
+    "authors": [
+      "Won Ho Choi",
+      "Sung-Hwan Kim",
+      "Dongun Lee"
+    ],
+    "venue": "IEEE Robotics and Automation Letters"
+  },
+  {
+    "title": "Variable stiffness mechanism for human-friendly robots",
+    "year": 2010,
+    "cites": 68,
+    "doi": "https://doi.org/10.1016/j.mechmachtheory.2010.01.001",
+    "authors": [
+      "Dongjun Hyun",
+      "Hyun Seok Yang",
+      "Jungwan Park"
+    ],
+    "venue": "Mechanism and Machine Theory"
+  },
+  {
+    "title": "Design, modeling and testing of a compact variable stiffness mechanism for exoskeletons",
+    "year": 2020,
+    "cites": 66,
+    "doi": "https://doi.org/10.1016/j.mechmachtheory.2020.103905",
+    "authors": [
+      "Zhongyi Li",
+      "Shaoping Bai",
+      "Ole Madsen"
+    ],
+    "venue": "Mechanism and Machine Theory"
+  },
+  {
+    "title": "A Human-Inspired Soft Finger with Dual-Mode Morphing Enabled by Variable Stiffness Mechanism",
+    "year": 2021,
+    "cites": 63,
+    "doi": "https://doi.org/10.1089/soro.2020.0153",
+    "authors": [
+      "Jihong Yan",
+      "Zhidong Xu",
+      "Peipei Shi"
+    ],
+    "venue": "Soft Robotics"
+  },
+  {
+    "title": "Continuously Variable Stiffness Mechanism Using Nonuniform Patterns on Coaxial Tubes for Continuum Microsurgical Robot",
+    "year": 2019,
+    "cites": 60,
+    "doi": "https://doi.org/10.1109/tro.2019.2931480",
+    "authors": [
+      "Jongwoo Kim",
+      "Woo-Young Choi",
+      "Sungchul Kang"
+    ],
+    "venue": "IEEE Transactions on Robotics"
+  },
+  {
+    "title": "A miniature 7g jumping robot",
+    "year": 2008,
+    "cites": 328,
+    "doi": "https://doi.org/10.1109/robot.2008.4543236",
+    "authors": [
+      "Mirko Kova\u010d",
+      "Martin Fuchs",
+      "Andr\u00e9 Guignard"
+    ],
+    "venue": "Proceedings - IEEE International Conference on Robotics and Automation/Proceedings"
+  },
+  {
+    "title": "Flea-Inspired Catapult Mechanism for Miniature Jumping Robots",
+    "year": 2012,
+    "cites": 272,
+    "doi": "https://doi.org/10.1109/tro.2012.2198510",
+    "authors": [
+      "Minkyun Noh",
+      "Seung-Won Kim",
+      "Sungmin An"
+    ],
+    "venue": "IEEE Transactions on Robotics"
+  },
+  {
+    "title": "Ascento: A Two-Wheeled Jumping Robot",
+    "year": 2019,
+    "cites": 271,
+    "doi": "https://doi.org/10.1109/icra.2019.8793792",
+    "authors": [
+      "Victor Klemm",
+      "Alessandro Morra",
+      "Ciro Salzmann"
+    ],
+    "venue": "Proceedings - IEEE International Conference on Robotics and Automation/Proceedings"
+  },
+  {
+    "title": "Jumping robots: a biomimetic solution to locomotion across rough terrain",
+    "year": 2007,
+    "cites": 208,
+    "doi": "https://doi.org/10.1088/1748-3182/2/3/s01",
+    "authors": [
+      "Rhodri H. Armour",
+      "Keith E. Paskins",
+      "Adrian Bowyer"
+    ],
+    "venue": "Bioinspiration & Biomimetics"
+  },
+  {
+    "title": "Minimalist Jumping Robots for Celestial Exploration",
+    "year": 2003,
+    "cites": 177,
+    "doi": "https://doi.org/10.1177/027836403128965204",
+    "authors": [
+      "Joel W. Burdick",
+      "Paolo Fiorini"
+    ],
+    "venue": "The International Journal of Robotics Research"
+  },
+  {
+    "title": "MSU Jumper: A Single-Motor-Actuated Miniature Steerable Jumping Robot",
+    "year": 2013,
+    "cites": 166,
+    "doi": "https://doi.org/10.1109/tro.2013.2249371",
+    "authors": [
+      "Jianguo Zhao",
+      "Jing Lin Xu",
+      "Bingtuan Gao"
+    ],
+    "venue": "IEEE Transactions on Robotics"
+  },
+  {
+    "title": "Recent advances in physical reservoir computing: A review",
+    "year": 2019,
+    "cites": 2114,
+    "doi": "https://doi.org/10.1016/j.neunet.2019.03.005",
+    "authors": [
+      "Gouhei Tanaka",
+      "Toshiyuki Yamane",
+      "J. B. H\u00e9roux"
+    ],
+    "venue": "Neural Networks"
+  },
+  {
+    "title": "Physical reservoir computing\u2014an introductory perspective",
+    "year": 2020,
+    "cites": 441,
+    "doi": "https://doi.org/10.35848/1347-4065/ab8d4f",
+    "authors": [
+      "Kohei Nakajima"
+    ],
+    "venue": "Japanese Journal of Applied Physics"
+  },
+  {
+    "title": "Physical reservoir computing with emerging electronics",
+    "year": 2024,
+    "cites": 229,
+    "doi": "https://doi.org/10.1038/s41928-024-01133-z",
+    "authors": [
+      "Xiangpeng Liang",
+      "Jianshi Tang",
+      "Ya\u2010Nan Zhong"
+    ],
+    "venue": "Nature Electronics"
+  },
+  {
+    "title": "Physical reservoir computing based on spin torque oscillator with forced synchronization",
+    "year": 2019,
+    "cites": 169,
+    "doi": "https://doi.org/10.1063/1.5081797",
+    "authors": [
+      "Sumito Tsunegi",
+      "Tomohiro Taniguchi",
+      "Kohei Nakajima"
+    ],
+    "venue": "Applied Physics Letters"
+  },
+  {
+    "title": "Physical reservoir computing using magnetic skyrmion memristor and spin torque nano-oscillator",
+    "year": 2019,
+    "cites": 148,
+    "doi": "https://doi.org/10.1063/1.5115183",
+    "authors": [
+      "Wencong Jiang",
+      "Lina Chen",
+      "Kaiyuan Zhou"
+    ],
+    "venue": "Applied Physics Letters"
+  },
+  {
+    "title": "Task-adaptive physical reservoir computing",
+    "year": 2023,
+    "cites": 138,
+    "doi": "https://doi.org/10.1038/s41563-023-01698-8",
+    "authors": [
+      "Oscar Lee",
+      "Tianyi Wei",
+      "Kilian D. Stenning"
+    ],
+    "venue": "Nature Materials"
+  }
+]

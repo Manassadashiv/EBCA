@@ -1,0 +1,914 @@
+{
+  "champion": {
+    "id": "IDEA_01",
+    "title": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL)",
+    "family": "Metamorphic & Variable-Topology",
+    "scores": {
+      "correctness": 9.3,
+      "completeness": 9.0,
+      "specificity": 9.0,
+      "robustness": 8.8,
+      "clarity": 9.0
+    },
+    "total": 9.05,
+    "details": {
+      "id": "IDEA_01",
+      "family": "Metamorphic & Variable-Topology",
+      "title": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL)",
+      "principle": "Screw-theory constraint matrix bifurcation at singular configurations",
+      "math": "J_c(q) \\cdot \\dot{q} = 0 \\implies \\det(J_c(q^*)) = 0; \\text{Branch switch from } \\mathrm{SO}(2) \\text{ rolling to } \\mathrm{SE}(2) \\text{ pantograph walking}",
+      "problem_solved": "Climbs 3x wheel diameter obstacles without secondary actuators or clutches",
+      "phd_novelty": "First passive deterministic 1-DOF kinematic bifurcation wheel with closed-form Lyapunov stability",
+      "validation": "Analytical twist-wrench synthesis + PrePoMax contact FEA + high-speed camera dyno"
+    }
+  },
+  "tournament_log": [
+    {
+      "round": 1,
+      "initial_pool_size": 50,
+      "bye": null,
+      "matches": [
+        {
+          "match": "R1_M1",
+          "competitor_1": {
+            "id": "IDEA_26",
+            "title": "Multistable Origami Flasher Deployable Wheel Rim",
+            "total": 8.3
+          },
+          "competitor_2": {
+            "id": "IDEA_24",
+            "title": "Bistable Elastica Catapult Tail for Micro-Leaping",
+            "total": 8.595
+          },
+          "winner": "IDEA_24",
+          "margin": 0.295,
+          "reason": "Bistable Elastica Catapult Tail for Micro-Leaping outperformed Multistable Origami Flasher Deployable Wheel Rim on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M2",
+          "competitor_1": {
+            "id": "IDEA_20",
+            "title": "Hyperbolic Metamaterial Vibration Energy Harvester Bed",
+            "total": 8.57
+          },
+          "competitor_2": {
+            "id": "IDEA_12",
+            "title": "Nonlinear Metamaterial Physical Reservoir Computing Spine",
+            "total": 8.96
+          },
+          "winner": "IDEA_12",
+          "margin": 0.39,
+          "reason": "Nonlinear Metamaterial Physical Reservoir Computing Spine outperformed Hyperbolic Metamaterial Vibration Energy Harvester Bed on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M3",
+          "competitor_1": {
+            "id": "IDEA_05",
+            "title": "Singularity-Crossing Toggle-Spoke Adaptive Wheel",
+            "total": 9.05
+          },
+          "competitor_2": {
+            "id": "IDEA_46",
+            "title": "Magnetic Bistable Reluctance Latch for Zero-Power Terrain Locking",
+            "total": 8.2
+          },
+          "winner": "IDEA_05",
+          "margin": 0.85,
+          "reason": "Singularity-Crossing Toggle-Spoke Adaptive Wheel outperformed Magnetic Bistable Reluctance Latch for Zero-Power Terrain Locking on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M4",
+          "competitor_1": {
+            "id": "IDEA_27",
+            "title": "Bistable Tensegrity Impact Dissipation Perimeter",
+            "total": 8.3
+          },
+          "competitor_2": {
+            "id": "IDEA_10",
+            "title": "Spherical 4R Metamorphic Passive Steer-Caster",
+            "total": 8.49
+          },
+          "winner": "IDEA_10",
+          "margin": 0.19,
+          "reason": "Spherical 4R Metamorphic Passive Steer-Caster outperformed Bistable Tensegrity Impact Dissipation Perimeter on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M5",
+          "competitor_1": {
+            "id": "IDEA_30",
+            "title": "Multistable Torsional Snap-Ring Overload Clutch",
+            "total": 8.3
+          },
+          "competitor_2": {
+            "id": "IDEA_17",
+            "title": "Passive Force-Balancing Kinematic Cross-Coupler",
+            "total": 8.57
+          },
+          "winner": "IDEA_17",
+          "margin": 0.27,
+          "reason": "Passive Force-Balancing Kinematic Cross-Coupler outperformed Multistable Torsional Snap-Ring Overload Clutch on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M6",
+          "competitor_1": {
+            "id": "IDEA_32",
+            "title": "Klann 8-Bar High-Obstacle Step-Climbing Linkage",
+            "total": 8.22
+          },
+          "competitor_2": {
+            "id": "IDEA_22",
+            "title": "Chiral Auxetic Expanding Compliant Wheel",
+            "total": 8.595
+          },
+          "winner": "IDEA_22",
+          "margin": 0.375,
+          "reason": "Chiral Auxetic Expanding Compliant Wheel outperformed Klann 8-Bar High-Obstacle Step-Climbing Linkage on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M7",
+          "competitor_1": {
+            "id": "IDEA_13",
+            "title": "Microfluidic Hagen-Poiseuille Viscoelastic Dynamic Damper",
+            "total": 8.57
+          },
+          "competitor_2": {
+            "id": "IDEA_04",
+            "title": "Augmented Assur-Group Variable-DOF Topological Suspension",
+            "total": 8.49
+          },
+          "winner": "IDEA_13",
+          "margin": 0.08,
+          "reason": "Microfluidic Hagen-Poiseuille Viscoelastic Dynamic Damper outperformed Augmented Assur-Group Variable-DOF Topological Suspension on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M8",
+          "competitor_1": {
+            "id": "IDEA_40",
+            "title": "Centipede-Inspired Multi-Segment Torsional Passive Spine",
+            "total": 8.2
+          },
+          "competitor_2": {
+            "id": "IDEA_39",
+            "title": "Watt-II 6-Bar Dynamic Weight-Transfer Suspension",
+            "total": 8.36
+          },
+          "winner": "IDEA_39",
+          "margin": 0.16,
+          "reason": "Watt-II 6-Bar Dynamic Weight-Transfer Suspension outperformed Centipede-Inspired Multi-Segment Torsional Passive Spine on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M9",
+          "competitor_1": {
+            "id": "IDEA_11",
+            "title": "Non-Euclidean Continuous Elastica Metamaterial Suspension",
+            "total": 8.96
+          },
+          "competitor_2": {
+            "id": "IDEA_25",
+            "title": "Post-Buckling Tactile Ground Probing Whisker",
+            "total": 8.3
+          },
+          "winner": "IDEA_11",
+          "margin": 0.66,
+          "reason": "Non-Euclidean Continuous Elastica Metamaterial Suspension outperformed Post-Buckling Tactile Ground Probing Whisker on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M10",
+          "competitor_1": {
+            "id": "IDEA_36",
+            "title": "Avian-Inspired Antagonistic Energy-Recoil Tendon Ankle",
+            "total": 8.2
+          },
+          "competitor_2": {
+            "id": "IDEA_01",
+            "title": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL)",
+            "total": 9.05
+          },
+          "winner": "IDEA_01",
+          "margin": 0.85,
+          "reason": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL) outperformed Avian-Inspired Antagonistic Energy-Recoil Tendon Ankle on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M11",
+          "competitor_1": {
+            "id": "IDEA_44",
+            "title": "Origami Miura-Ori Bellows Hermetic Protective Skin",
+            "total": 8.2
+          },
+          "competitor_2": {
+            "id": "IDEA_19",
+            "title": "Centrifugal-Torsional Self-Modulating Tread Expander",
+            "total": 8.57
+          },
+          "winner": "IDEA_19",
+          "margin": 0.37,
+          "reason": "Centrifugal-Torsional Self-Modulating Tread Expander outperformed Origami Miura-Ori Bellows Hermetic Protective Skin on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M12",
+          "competitor_1": {
+            "id": "IDEA_34",
+            "title": "Pantograph Variable-Stiffness Scissor Anchor Arm",
+            "total": 8.2
+          },
+          "competitor_2": {
+            "id": "IDEA_49",
+            "title": "Pre-Stressed Tensegrity-Origami Deployable Roll-Cage",
+            "total": 8.34
+          },
+          "winner": "IDEA_49",
+          "margin": 0.14,
+          "reason": "Pre-Stressed Tensegrity-Origami Deployable Roll-Cage outperformed Pantograph Variable-Stiffness Scissor Anchor Arm on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M13",
+          "competitor_1": {
+            "id": "IDEA_42",
+            "title": "Granular Jamming Reconfigurable Variable-Stiffness Spine",
+            "total": 7.79
+          },
+          "competitor_2": {
+            "id": "IDEA_31",
+            "title": "Theo Jansen 11-Bar Optimized Kinetic Strider Module",
+            "total": 8.22
+          },
+          "winner": "IDEA_31",
+          "margin": 0.43,
+          "reason": "Theo Jansen 11-Bar Optimized Kinetic Strider Module outperformed Granular Jamming Reconfigurable Variable-Stiffness Spine on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M14",
+          "competitor_1": {
+            "id": "IDEA_29",
+            "title": "Progressive-Stiffness Asymmetric Carbon-Elastomer Leaf Spring",
+            "total": 8.3
+          },
+          "competitor_2": {
+            "id": "IDEA_21",
+            "title": "Pre-Stressed von Mises Truss Snap-Through Suspension",
+            "total": 8.595
+          },
+          "winner": "IDEA_21",
+          "margin": 0.295,
+          "reason": "Pre-Stressed von Mises Truss Snap-Through Suspension outperformed Progressive-Stiffness Asymmetric Carbon-Elastomer Leaf Spring on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M15",
+          "competitor_1": {
+            "id": "IDEA_23",
+            "title": "Cross-Axis Flexure Pivot Monolithic Caster Hub",
+            "total": 8.3
+          },
+          "competitor_2": {
+            "id": "IDEA_43",
+            "title": "Tendon-Driven Morphological Tail Momentum-Canceller",
+            "total": 8.2
+          },
+          "winner": "IDEA_23",
+          "margin": 0.1,
+          "reason": "Cross-Axis Flexure Pivot Monolithic Caster Hub outperformed Tendon-Driven Morphological Tail Momentum-Canceller on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M16",
+          "competitor_1": {
+            "id": "IDEA_47",
+            "title": "Micro-Fluted Amphibious Surface-Tension Paddle-Rim",
+            "total": 8.2
+          },
+          "competitor_2": {
+            "id": "IDEA_37",
+            "title": "Gecko-Inspired Directional Dry Adhesion Tread Cleats",
+            "total": 8.2
+          },
+          "winner": "IDEA_47",
+          "margin": 0.05,
+          "reason": "Micro-Fluted Amphibious Surface-Tension Paddle-Rim outperformed Gecko-Inspired Directional Dry Adhesion Tread Cleats on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M17",
+          "competitor_1": {
+            "id": "IDEA_33",
+            "title": "Chebyshev-Peaucellier Straight-Line Inverted Turret Mount",
+            "total": 8.2
+          },
+          "competitor_2": {
+            "id": "IDEA_45",
+            "title": "Directional Interlocking Rigid-Flexible Spine Chain",
+            "total": 8.2
+          },
+          "winner": "IDEA_33",
+          "margin": 0.05,
+          "reason": "Chebyshev-Peaucellier Straight-Line Inverted Turret Mount outperformed Directional Interlocking Rigid-Flexible Spine Chain on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M18",
+          "competitor_1": {
+            "id": "IDEA_14",
+            "title": "Passive Kinematic Preflex Steer-Stabilizer Linkage",
+            "total": 8.96
+          },
+          "competitor_2": {
+            "id": "IDEA_50",
+            "title": "Anisotropic Metamaterial Friction Skirt with Passive Vectoring",
+            "total": 8.2
+          },
+          "winner": "IDEA_14",
+          "margin": 0.76,
+          "reason": "Passive Kinematic Preflex Steer-Stabilizer Linkage outperformed Anisotropic Metamaterial Friction Skirt with Passive Vectoring on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M19",
+          "competitor_1": {
+            "id": "IDEA_48",
+            "title": "Centrifugal Fluid-Shift Morphing Elastomer Wheel",
+            "total": 8.2
+          },
+          "competitor_2": {
+            "id": "IDEA_03",
+            "title": "Bennett-Linkage Spatial Helical Morphing Chassis",
+            "total": 8.49
+          },
+          "winner": "IDEA_03",
+          "margin": 0.29,
+          "reason": "Bennett-Linkage Spatial Helical Morphing Chassis outperformed Centrifugal Fluid-Shift Morphing Elastomer Wheel on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M20",
+          "competitor_1": {
+            "id": "IDEA_28",
+            "title": "Shape-Memory Bimetallic Self-Tuning Damping Shunt",
+            "total": 8.3
+          },
+          "competitor_2": {
+            "id": "IDEA_38",
+            "title": "Mantis Shrimp Strikeless Cam-Latching Debris Clearer",
+            "total": 8.2
+          },
+          "winner": "IDEA_28",
+          "margin": 0.1,
+          "reason": "Shape-Memory Bimetallic Self-Tuning Damping Shunt outperformed Mantis Shrimp Strikeless Cam-Latching Debris Clearer on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M21",
+          "competitor_1": {
+            "id": "IDEA_06",
+            "title": "Sarrus-Fold Metamorphic Sensor Turret with Passive Collision Retraction",
+            "total": 8.49
+          },
+          "competitor_2": {
+            "id": "IDEA_35",
+            "title": "Cockroach-Inspired Compliant C-Leg with Spatulate Tarsus",
+            "total": 8.36
+          },
+          "winner": "IDEA_06",
+          "margin": 0.13,
+          "reason": "Sarrus-Fold Metamorphic Sensor Turret with Passive Collision Retraction outperformed Cockroach-Inspired Compliant C-Leg with Spatulate Tarsus on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M22",
+          "competitor_1": {
+            "id": "IDEA_07",
+            "title": "Line-Symmetric Bricard 6R Overconstrained Metamorphic Pivot",
+            "total": 8.49
+          },
+          "competitor_2": {
+            "id": "IDEA_09",
+            "title": "Autonomous Branch-Switching Metamorphic Differential",
+            "total": 8.49
+          },
+          "winner": "IDEA_07",
+          "margin": 0.05,
+          "reason": "Line-Symmetric Bricard 6R Overconstrained Metamorphic Pivot outperformed Autonomous Branch-Switching Metamorphic Differential on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M23",
+          "competitor_1": {
+            "id": "IDEA_15",
+            "title": "Phononic-Crystal Acoustic Bandgap Chassis Bed",
+            "total": 8.57
+          },
+          "competitor_2": {
+            "id": "IDEA_16",
+            "title": "Hysteretic Torsional Metamaterial Drive Coupling",
+            "total": 8.57
+          },
+          "winner": "IDEA_15",
+          "margin": 0.05,
+          "reason": "Phononic-Crystal Acoustic Bandgap Chassis Bed outperformed Hysteretic Torsional Metamaterial Drive Coupling on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M24",
+          "competitor_1": {
+            "id": "IDEA_18",
+            "title": "Mechanical Logic-Gate Impact Energy Router",
+            "total": 8.57
+          },
+          "competitor_2": {
+            "id": "IDEA_02",
+            "title": "Reconfigurable Origami 8R Kinematotropic Morphing Rim",
+            "total": 9.05
+          },
+          "winner": "IDEA_02",
+          "margin": 0.48,
+          "reason": "Reconfigurable Origami 8R Kinematotropic Morphing Rim outperformed Mechanical Logic-Gate Impact Energy Router on feasibility and analytical rigor."
+        },
+        {
+          "match": "R1_M25",
+          "competitor_1": {
+            "id": "IDEA_08",
+            "title": "Dual-Manifold Kinematotropic Anti-Inversion Stabilizer",
+            "total": 8.49
+          },
+          "competitor_2": {
+            "id": "IDEA_41",
+            "title": "6-Strut Icosahedron Tensegrity Ballistic Exoskeleton",
+            "total": 8.34
+          },
+          "winner": "IDEA_08",
+          "margin": 0.15,
+          "reason": "Dual-Manifold Kinematotropic Anti-Inversion Stabilizer outperformed 6-Strut Icosahedron Tensegrity Ballistic Exoskeleton on feasibility and analytical rigor."
+        }
+      ],
+      "survivors": [
+        "IDEA_24",
+        "IDEA_03",
+        "IDEA_22",
+        "IDEA_11",
+        "IDEA_39",
+        "IDEA_28",
+        "IDEA_33",
+        "IDEA_06",
+        "IDEA_23",
+        "IDEA_21",
+        "IDEA_47",
+        "IDEA_17",
+        "IDEA_15",
+        "IDEA_02",
+        "IDEA_19",
+        "IDEA_12",
+        "IDEA_07",
+        "IDEA_13",
+        "IDEA_49",
+        "IDEA_01",
+        "IDEA_08",
+        "IDEA_05",
+        "IDEA_31",
+        "IDEA_10"
+      ]
+    },
+    {
+      "round": 2,
+      "initial_pool_size": 25,
+      "bye": "IDEA_14",
+      "matches": [
+        {
+          "match": "R2_M1",
+          "competitor_1": {
+            "id": "IDEA_24",
+            "title": "Bistable Elastica Catapult Tail for Micro-Leaping",
+            "total": 8.595
+          },
+          "competitor_2": {
+            "id": "IDEA_03",
+            "title": "Bennett-Linkage Spatial Helical Morphing Chassis",
+            "total": 8.49
+          },
+          "winner": "IDEA_24",
+          "margin": 0.105,
+          "reason": "Bistable Elastica Catapult Tail for Micro-Leaping outperformed Bennett-Linkage Spatial Helical Morphing Chassis on feasibility and analytical rigor."
+        },
+        {
+          "match": "R2_M2",
+          "competitor_1": {
+            "id": "IDEA_22",
+            "title": "Chiral Auxetic Expanding Compliant Wheel",
+            "total": 8.595
+          },
+          "competitor_2": {
+            "id": "IDEA_11",
+            "title": "Non-Euclidean Continuous Elastica Metamaterial Suspension",
+            "total": 8.96
+          },
+          "winner": "IDEA_11",
+          "margin": 0.365,
+          "reason": "Non-Euclidean Continuous Elastica Metamaterial Suspension outperformed Chiral Auxetic Expanding Compliant Wheel on feasibility and analytical rigor."
+        },
+        {
+          "match": "R2_M3",
+          "competitor_1": {
+            "id": "IDEA_39",
+            "title": "Watt-II 6-Bar Dynamic Weight-Transfer Suspension",
+            "total": 8.36
+          },
+          "competitor_2": {
+            "id": "IDEA_28",
+            "title": "Shape-Memory Bimetallic Self-Tuning Damping Shunt",
+            "total": 8.3
+          },
+          "winner": "IDEA_39",
+          "margin": 0.06,
+          "reason": "Watt-II 6-Bar Dynamic Weight-Transfer Suspension outperformed Shape-Memory Bimetallic Self-Tuning Damping Shunt on feasibility and analytical rigor."
+        },
+        {
+          "match": "R2_M4",
+          "competitor_1": {
+            "id": "IDEA_33",
+            "title": "Chebyshev-Peaucellier Straight-Line Inverted Turret Mount",
+            "total": 8.2
+          },
+          "competitor_2": {
+            "id": "IDEA_06",
+            "title": "Sarrus-Fold Metamorphic Sensor Turret with Passive Collision Retraction",
+            "total": 8.49
+          },
+          "winner": "IDEA_06",
+          "margin": 0.29,
+          "reason": "Sarrus-Fold Metamorphic Sensor Turret with Passive Collision Retraction outperformed Chebyshev-Peaucellier Straight-Line Inverted Turret Mount on feasibility and analytical rigor."
+        },
+        {
+          "match": "R2_M5",
+          "competitor_1": {
+            "id": "IDEA_23",
+            "title": "Cross-Axis Flexure Pivot Monolithic Caster Hub",
+            "total": 8.3
+          },
+          "competitor_2": {
+            "id": "IDEA_21",
+            "title": "Pre-Stressed von Mises Truss Snap-Through Suspension",
+            "total": 8.595
+          },
+          "winner": "IDEA_21",
+          "margin": 0.295,
+          "reason": "Pre-Stressed von Mises Truss Snap-Through Suspension outperformed Cross-Axis Flexure Pivot Monolithic Caster Hub on feasibility and analytical rigor."
+        },
+        {
+          "match": "R2_M6",
+          "competitor_1": {
+            "id": "IDEA_47",
+            "title": "Micro-Fluted Amphibious Surface-Tension Paddle-Rim",
+            "total": 8.2
+          },
+          "competitor_2": {
+            "id": "IDEA_17",
+            "title": "Passive Force-Balancing Kinematic Cross-Coupler",
+            "total": 8.57
+          },
+          "winner": "IDEA_17",
+          "margin": 0.37,
+          "reason": "Passive Force-Balancing Kinematic Cross-Coupler outperformed Micro-Fluted Amphibious Surface-Tension Paddle-Rim on feasibility and analytical rigor."
+        },
+        {
+          "match": "R2_M7",
+          "competitor_1": {
+            "id": "IDEA_15",
+            "title": "Phononic-Crystal Acoustic Bandgap Chassis Bed",
+            "total": 8.57
+          },
+          "competitor_2": {
+            "id": "IDEA_02",
+            "title": "Reconfigurable Origami 8R Kinematotropic Morphing Rim",
+            "total": 9.05
+          },
+          "winner": "IDEA_02",
+          "margin": 0.48,
+          "reason": "Reconfigurable Origami 8R Kinematotropic Morphing Rim outperformed Phononic-Crystal Acoustic Bandgap Chassis Bed on feasibility and analytical rigor."
+        },
+        {
+          "match": "R2_M8",
+          "competitor_1": {
+            "id": "IDEA_19",
+            "title": "Centrifugal-Torsional Self-Modulating Tread Expander",
+            "total": 8.57
+          },
+          "competitor_2": {
+            "id": "IDEA_12",
+            "title": "Nonlinear Metamaterial Physical Reservoir Computing Spine",
+            "total": 8.96
+          },
+          "winner": "IDEA_12",
+          "margin": 0.39,
+          "reason": "Nonlinear Metamaterial Physical Reservoir Computing Spine outperformed Centrifugal-Torsional Self-Modulating Tread Expander on feasibility and analytical rigor."
+        },
+        {
+          "match": "R2_M9",
+          "competitor_1": {
+            "id": "IDEA_07",
+            "title": "Line-Symmetric Bricard 6R Overconstrained Metamorphic Pivot",
+            "total": 8.49
+          },
+          "competitor_2": {
+            "id": "IDEA_13",
+            "title": "Microfluidic Hagen-Poiseuille Viscoelastic Dynamic Damper",
+            "total": 8.57
+          },
+          "winner": "IDEA_13",
+          "margin": 0.08,
+          "reason": "Microfluidic Hagen-Poiseuille Viscoelastic Dynamic Damper outperformed Line-Symmetric Bricard 6R Overconstrained Metamorphic Pivot on feasibility and analytical rigor."
+        },
+        {
+          "match": "R2_M10",
+          "competitor_1": {
+            "id": "IDEA_49",
+            "title": "Pre-Stressed Tensegrity-Origami Deployable Roll-Cage",
+            "total": 8.34
+          },
+          "competitor_2": {
+            "id": "IDEA_01",
+            "title": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL)",
+            "total": 9.05
+          },
+          "winner": "IDEA_01",
+          "margin": 0.71,
+          "reason": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL) outperformed Pre-Stressed Tensegrity-Origami Deployable Roll-Cage on feasibility and analytical rigor."
+        },
+        {
+          "match": "R2_M11",
+          "competitor_1": {
+            "id": "IDEA_08",
+            "title": "Dual-Manifold Kinematotropic Anti-Inversion Stabilizer",
+            "total": 8.49
+          },
+          "competitor_2": {
+            "id": "IDEA_05",
+            "title": "Singularity-Crossing Toggle-Spoke Adaptive Wheel",
+            "total": 9.05
+          },
+          "winner": "IDEA_05",
+          "margin": 0.56,
+          "reason": "Singularity-Crossing Toggle-Spoke Adaptive Wheel outperformed Dual-Manifold Kinematotropic Anti-Inversion Stabilizer on feasibility and analytical rigor."
+        },
+        {
+          "match": "R2_M12",
+          "competitor_1": {
+            "id": "IDEA_31",
+            "title": "Theo Jansen 11-Bar Optimized Kinetic Strider Module",
+            "total": 8.22
+          },
+          "competitor_2": {
+            "id": "IDEA_10",
+            "title": "Spherical 4R Metamorphic Passive Steer-Caster",
+            "total": 8.49
+          },
+          "winner": "IDEA_10",
+          "margin": 0.27,
+          "reason": "Spherical 4R Metamorphic Passive Steer-Caster outperformed Theo Jansen 11-Bar Optimized Kinetic Strider Module on feasibility and analytical rigor."
+        }
+      ],
+      "survivors": [
+        "IDEA_17",
+        "IDEA_14",
+        "IDEA_05",
+        "IDEA_12",
+        "IDEA_21",
+        "IDEA_02",
+        "IDEA_13",
+        "IDEA_10",
+        "IDEA_11",
+        "IDEA_24",
+        "IDEA_06",
+        "IDEA_01"
+      ]
+    },
+    {
+      "round": 3,
+      "initial_pool_size": 13,
+      "bye": "IDEA_39",
+      "matches": [
+        {
+          "match": "R3_M1",
+          "competitor_1": {
+            "id": "IDEA_17",
+            "title": "Passive Force-Balancing Kinematic Cross-Coupler",
+            "total": 8.57
+          },
+          "competitor_2": {
+            "id": "IDEA_14",
+            "title": "Passive Kinematic Preflex Steer-Stabilizer Linkage",
+            "total": 8.96
+          },
+          "winner": "IDEA_14",
+          "margin": 0.39,
+          "reason": "Passive Kinematic Preflex Steer-Stabilizer Linkage outperformed Passive Force-Balancing Kinematic Cross-Coupler on feasibility and analytical rigor."
+        },
+        {
+          "match": "R3_M2",
+          "competitor_1": {
+            "id": "IDEA_05",
+            "title": "Singularity-Crossing Toggle-Spoke Adaptive Wheel",
+            "total": 9.05
+          },
+          "competitor_2": {
+            "id": "IDEA_12",
+            "title": "Nonlinear Metamaterial Physical Reservoir Computing Spine",
+            "total": 8.96
+          },
+          "winner": "IDEA_05",
+          "margin": 0.09,
+          "reason": "Singularity-Crossing Toggle-Spoke Adaptive Wheel outperformed Nonlinear Metamaterial Physical Reservoir Computing Spine on feasibility and analytical rigor."
+        },
+        {
+          "match": "R3_M3",
+          "competitor_1": {
+            "id": "IDEA_21",
+            "title": "Pre-Stressed von Mises Truss Snap-Through Suspension",
+            "total": 8.595
+          },
+          "competitor_2": {
+            "id": "IDEA_02",
+            "title": "Reconfigurable Origami 8R Kinematotropic Morphing Rim",
+            "total": 9.05
+          },
+          "winner": "IDEA_02",
+          "margin": 0.455,
+          "reason": "Reconfigurable Origami 8R Kinematotropic Morphing Rim outperformed Pre-Stressed von Mises Truss Snap-Through Suspension on feasibility and analytical rigor."
+        },
+        {
+          "match": "R3_M4",
+          "competitor_1": {
+            "id": "IDEA_13",
+            "title": "Microfluidic Hagen-Poiseuille Viscoelastic Dynamic Damper",
+            "total": 8.57
+          },
+          "competitor_2": {
+            "id": "IDEA_10",
+            "title": "Spherical 4R Metamorphic Passive Steer-Caster",
+            "total": 8.49
+          },
+          "winner": "IDEA_13",
+          "margin": 0.08,
+          "reason": "Microfluidic Hagen-Poiseuille Viscoelastic Dynamic Damper outperformed Spherical 4R Metamorphic Passive Steer-Caster on feasibility and analytical rigor."
+        },
+        {
+          "match": "R3_M5",
+          "competitor_1": {
+            "id": "IDEA_11",
+            "title": "Non-Euclidean Continuous Elastica Metamaterial Suspension",
+            "total": 8.96
+          },
+          "competitor_2": {
+            "id": "IDEA_24",
+            "title": "Bistable Elastica Catapult Tail for Micro-Leaping",
+            "total": 8.595
+          },
+          "winner": "IDEA_11",
+          "margin": 0.365,
+          "reason": "Non-Euclidean Continuous Elastica Metamaterial Suspension outperformed Bistable Elastica Catapult Tail for Micro-Leaping on feasibility and analytical rigor."
+        },
+        {
+          "match": "R3_M6",
+          "competitor_1": {
+            "id": "IDEA_06",
+            "title": "Sarrus-Fold Metamorphic Sensor Turret with Passive Collision Retraction",
+            "total": 8.49
+          },
+          "competitor_2": {
+            "id": "IDEA_01",
+            "title": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL)",
+            "total": 9.05
+          },
+          "winner": "IDEA_01",
+          "margin": 0.56,
+          "reason": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL) outperformed Sarrus-Fold Metamorphic Sensor Turret with Passive Collision Retraction on feasibility and analytical rigor."
+        }
+      ],
+      "survivors": [
+        "IDEA_01",
+        "IDEA_02",
+        "IDEA_13",
+        "IDEA_14",
+        "IDEA_39",
+        "IDEA_05"
+      ]
+    },
+    {
+      "round": 4,
+      "initial_pool_size": 7,
+      "bye": "IDEA_11",
+      "matches": [
+        {
+          "match": "R4_M1",
+          "competitor_1": {
+            "id": "IDEA_01",
+            "title": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL)",
+            "total": 9.05
+          },
+          "competitor_2": {
+            "id": "IDEA_02",
+            "title": "Reconfigurable Origami 8R Kinematotropic Morphing Rim",
+            "total": 9.05
+          },
+          "winner": "IDEA_01",
+          "margin": 0.05,
+          "reason": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL) outperformed Reconfigurable Origami 8R Kinematotropic Morphing Rim on feasibility and analytical rigor."
+        },
+        {
+          "match": "R4_M2",
+          "competitor_1": {
+            "id": "IDEA_13",
+            "title": "Microfluidic Hagen-Poiseuille Viscoelastic Dynamic Damper",
+            "total": 8.57
+          },
+          "competitor_2": {
+            "id": "IDEA_14",
+            "title": "Passive Kinematic Preflex Steer-Stabilizer Linkage",
+            "total": 8.96
+          },
+          "winner": "IDEA_14",
+          "margin": 0.39,
+          "reason": "Passive Kinematic Preflex Steer-Stabilizer Linkage outperformed Microfluidic Hagen-Poiseuille Viscoelastic Dynamic Damper on feasibility and analytical rigor."
+        },
+        {
+          "match": "R4_M3",
+          "competitor_1": {
+            "id": "IDEA_39",
+            "title": "Watt-II 6-Bar Dynamic Weight-Transfer Suspension",
+            "total": 8.36
+          },
+          "competitor_2": {
+            "id": "IDEA_05",
+            "title": "Singularity-Crossing Toggle-Spoke Adaptive Wheel",
+            "total": 9.05
+          },
+          "winner": "IDEA_05",
+          "margin": 0.69,
+          "reason": "Singularity-Crossing Toggle-Spoke Adaptive Wheel outperformed Watt-II 6-Bar Dynamic Weight-Transfer Suspension on feasibility and analytical rigor."
+        }
+      ],
+      "survivors": [
+        "IDEA_14",
+        "IDEA_11",
+        "IDEA_01",
+        "IDEA_05"
+      ]
+    },
+    {
+      "round": 5,
+      "initial_pool_size": 4,
+      "bye": null,
+      "matches": [
+        {
+          "match": "R5_M1",
+          "competitor_1": {
+            "id": "IDEA_14",
+            "title": "Passive Kinematic Preflex Steer-Stabilizer Linkage",
+            "total": 8.96
+          },
+          "competitor_2": {
+            "id": "IDEA_11",
+            "title": "Non-Euclidean Continuous Elastica Metamaterial Suspension",
+            "total": 8.96
+          },
+          "winner": "IDEA_14",
+          "margin": 0.05,
+          "reason": "Passive Kinematic Preflex Steer-Stabilizer Linkage outperformed Non-Euclidean Continuous Elastica Metamaterial Suspension on feasibility and analytical rigor."
+        },
+        {
+          "match": "R5_M2",
+          "competitor_1": {
+            "id": "IDEA_01",
+            "title": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL)",
+            "total": 9.05
+          },
+          "competitor_2": {
+            "id": "IDEA_05",
+            "title": "Singularity-Crossing Toggle-Spoke Adaptive Wheel",
+            "total": 9.05
+          },
+          "winner": "IDEA_01",
+          "margin": 0.05,
+          "reason": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL) outperformed Singularity-Crossing Toggle-Spoke Adaptive Wheel on feasibility and analytical rigor."
+        }
+      ],
+      "survivors": [
+        "IDEA_01",
+        "IDEA_14"
+      ]
+    },
+    {
+      "round": 6,
+      "initial_pool_size": 2,
+      "bye": null,
+      "matches": [
+        {
+          "match": "R6_M1",
+          "competitor_1": {
+            "id": "IDEA_01",
+            "title": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL)",
+            "total": 9.05
+          },
+          "competitor_2": {
+            "id": "IDEA_14",
+            "title": "Passive Kinematic Preflex Steer-Stabilizer Linkage",
+            "total": 8.96
+          },
+          "winner": "IDEA_01",
+          "margin": 0.09,
+          "reason": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL) outperformed Passive Kinematic Preflex Steer-Stabilizer Linkage on feasibility and analytical rigor."
+        }
+      ],
+      "survivors": [
+        "IDEA_01"
+      ]
+    }
+  ]
+}

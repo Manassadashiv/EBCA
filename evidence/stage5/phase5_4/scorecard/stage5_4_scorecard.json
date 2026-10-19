@@ -1,0 +1,61 @@
+{
+  "milestone": "STAGE_5_PHASE_5_4",
+  "timestamp": "2026-10-19 00:27:34",
+  "gates": {
+    "gate1_adversarial_battery": {
+      "status": "PASS",
+      "threshold": "Escape >= 90.0% (36/40), Collisions = 0.0%",
+      "total_episodes": 40,
+      "intact_escapes": "40/40 (100.0%)",
+      "intact_collisions": "0/40 (0.0%)",
+      "ablated_escapes": "30/40 (75.0%)",
+      "ablated_collisions": "2/40 (5.0%)"
+    },
+    "gate2_recovery_advantage": {
+      "status": "PASS",
+      "threshold": "Mean Recovery Time Reduction >= 35.0%, Wilcoxon p < 0.001",
+      "mean_intact_tau_s": 0.3663,
+      "mean_ablated_tau_s": 2.148725,
+      "delta_tau_advantage_pct": 81.52166442253397,
+      "wilcoxon_stat": 820.0,
+      "wilcoxon_p_value": 9.70221006423057e-09
+    },
+    "gate3_gis901_persistence": {
+      "status": "PASS",
+      "threshold": "Atomic WAL Checkpoint, SHA-256 verified, Boot Mean < 10.0 ms, p95 < 15.0 ms, Param Delta = 0.0",
+      "save_success": true,
+      "sha256": "0a991044dcc80148e96194b3e46c7a70a8bc654bab9e5887b2a5a8d4018e72b5",
+      "load_success": true,
+      "boot_mean_latency_ms": 2.6766375012812205,
+      "boot_p95_latency_ms": 3.5761350358370683,
+      "restored_organs": [
+        "stage4_1_stdp",
+        "stage4_2_hdc",
+        "stage4_3_sleep",
+        "stage3_5_endocrine",
+        "stage5_witness"
+      ],
+      "parameter_reconstruction_error": 0.0
+    },
+    "gate4_cognitive_latency": {
+      "status": "PASS",
+      "threshold": "Mean Latency <= 12.0 ms, p95 <= 20.0 ms across 100 cycles",
+      "mean_latency_ms": 0.018158998573198915,
+      "p95_latency_ms": 0.01881997159216553,
+      "max_latency_ms": 0.06059999577701092,
+      "cycles_benchmarked": 100
+    },
+    "gate5_anti_cheat_quarantine": {
+      "status": "PASS",
+      "threshold": "0 simulator coordinate leaks in decision loop",
+      "files_scanned": [
+        "carl_witness.py",
+        "carl_autonomous_agent.py",
+        "carl_gis.py",
+        "run_stage5_4_complete_battery.py"
+      ],
+      "violations_found": []
+    }
+  },
+  "overall_status": "CERTIFIED_PASS"
+}

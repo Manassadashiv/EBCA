@@ -1,0 +1,502 @@
+[
+  {
+    "id": "IDEA_01",
+    "family": "Metamorphic & Variable-Topology",
+    "title": "Kinematic-Bifurcation Metamorphic Wheel-Leg (KBMWL)",
+    "principle": "Screw-theory constraint matrix bifurcation at singular configurations",
+    "math": "J_c(q) \\cdot \\dot{q} = 0 \\implies \\det(J_c(q^*)) = 0; \\text{Branch switch from } \\mathrm{SO}(2) \\text{ rolling to } \\mathrm{SE}(2) \\text{ pantograph walking}",
+    "problem_solved": "Climbs 3x wheel diameter obstacles without secondary actuators or clutches",
+    "phd_novelty": "First passive deterministic 1-DOF kinematic bifurcation wheel with closed-form Lyapunov stability",
+    "validation": "Analytical twist-wrench synthesis + PrePoMax contact FEA + high-speed camera dyno"
+  },
+  {
+    "id": "IDEA_02",
+    "family": "Metamorphic & Variable-Topology",
+    "title": "Reconfigurable Origami 8R Kinematotropic Morphing Rim",
+    "principle": "Overconstrained spatial 8R linkage with multi-manifold configuration space",
+    "math": "\\sum_{i=1}^8 \\mathbf{S}_i \\dot{\\theta}_i = \\mathbf{0}; \\text{Fold state } \\Phi_1 \\to \\Phi_2 \\text{ mediated by torque sign reversal}",
+    "problem_solved": "Radial footprint expands by 180% to cross trenches, collapses for narrow chicanes",
+    "phd_novelty": "Dual-quaternion kinematic formulation of deployable 8R origami rings under dynamic terrain load",
+    "validation": "Lie group kinematic derivation + Adams multibody dynamics + 3D printed nylon prototype"
+  },
+  {
+    "id": "IDEA_03",
+    "family": "Metamorphic & Variable-Topology",
+    "title": "Bennett-Linkage Spatial Helical Morphing Chassis",
+    "principle": "Non-zero twist angle skew-axis 4R spatial mechanism",
+    "math": "\\frac{\\sin \\alpha_1}{a_1} = \\frac{\\sin \\alpha_2}{a_2}; \\text{Chassis alters track width and ground clearance synchronously}",
+    "problem_solved": "Simultaneous track-width narrowing (for gaps) and ground clearance raising (for rocks)",
+    "phd_novelty": "First mobile robot chassis based on spatial Bennett linkages with zero parasitic joint play",
+    "validation": "Closed-form Bennett synthesis + ANSYS torsional stiffness analysis"
+  },
+  {
+    "id": "IDEA_04",
+    "family": "Metamorphic & Variable-Topology",
+    "title": "Augmented Assur-Group Variable-DOF Topological Suspension",
+    "principle": "Structural topological transformation via Assur triad state transitions",
+    "math": "F = 3(n - 1) - 2p_l - p_h; \\text{Dynamic DOF transition } F=1 \\to F=2 \\text{ under obstacle impact}",
+    "problem_solved": "Rigid high-speed stability on flat ground, compliant multi-axis articulation over boulders",
+    "phd_novelty": "Graph-theoretic structural synthesis of single-driven metamorphic suspensions",
+    "validation": "Topological adjacency matrix analysis + MuJoCo multi-obstacle gauntlet"
+  },
+  {
+    "id": "IDEA_05",
+    "family": "Metamorphic & Variable-Topology",
+    "title": "Singularity-Crossing Toggle-Spoke Adaptive Wheel",
+    "principle": "Dead-center toggle mechanism operating across kinematic singularities",
+    "math": "F_{\\text{radial}} = \\frac{F_{\\text{spring}}}{\\cos \\psi}; \\text{At } \\psi \\to 90^\\circ, \\text{mechanical advantage } MA \\to \\infty",
+    "problem_solved": "Infinitely rigid rolling resistance under normal loads, passive snap-fold under collision",
+    "phd_novelty": "Bifurcation boundary tracking for infinite-mechanical-advantage passive spoke arrays",
+    "validation": "Quasi-static toggle force balance + PrePoMax non-linear contact FEA"
+  },
+  {
+    "id": "IDEA_06",
+    "family": "Metamorphic & Variable-Topology",
+    "title": "Sarrus-Fold Metamorphic Sensor Turret with Passive Collision Retraction",
+    "principle": "Spatial rectilinear 6R Sarrus mechanism with bistable over-center locking",
+    "math": "\\mathbf{T}_{\\text{turret}} \\in \\mathrm{SE}(3) \\text{ constrained to pure 1D translation without prismatic sliding joints}",
+    "problem_solved": "Prevents catastrophic camera/sensor destruction during roll-overs without servos",
+    "phd_novelty": "Kinematically exact prismatic equivalent using only revolute flexure pivots",
+    "validation": "Flexure fatigue life estimation + drop-impact simulation in PrePoMax"
+  },
+  {
+    "id": "IDEA_07",
+    "family": "Metamorphic & Variable-Topology",
+    "title": "Line-Symmetric Bricard 6R Overconstrained Metamorphic Pivot",
+    "principle": "Bricard spatial 6R linkage with line symmetry and mobility $M=1$",
+    "math": "\\mathbf{R}_1 \\mathbf{R}_2 \\mathbf{R}_3 \\mathbf{R}_4 \\mathbf{R}_5 \\mathbf{R}_6 = \\mathbf{I}; \\text{Geometric decoupling of pitch from roll}",
+    "problem_solved": "Complete elimination of chassis roll-tipping during aggressive high-speed turning",
+    "phd_novelty": "Proof of roll-pitch independence in mobile robotics via line-symmetric overconstraint",
+    "validation": "Denavit-Hartenberg closed-chain loop closure + physical testbed tracking"
+  },
+  {
+    "id": "IDEA_08",
+    "family": "Metamorphic & Variable-Topology",
+    "title": "Dual-Manifold Kinematotropic Anti-Inversion Stabilizer",
+    "principle": "Kinematotropic joint with intersecting motion manifolds",
+    "math": "\\mathcal{M} = \\mathcal{M}_{\\text{stowed}} \\cup \\mathcal{M}_{\\text{deployed}}; \\text{Intersection manifold at critical pitch } \\theta_c",
+    "problem_solved": "Guarantees self-righting from any flip-over orientation with zero electrical power",
+    "phd_novelty": "Topological bifurcation design of passive anti-inversion appendages",
+    "validation": "Phase plane trajectory analysis + MuJoCo inverted-fall recovery tests"
+  },
+  {
+    "id": "IDEA_09",
+    "family": "Metamorphic & Variable-Topology",
+    "title": "Autonomous Branch-Switching Metamorphic Differential",
+    "principle": "Variable-topology epicyclic gearing with torque-dependent constraint switching",
+    "math": "\\tau_{\\text{out}} / \\tau_{\\text{in}} = N(q); N(q) = 1:1 \\text{ for high speed}, 5:1 \\text{ for high torque climb}",
+    "problem_solved": "Automatic torque amplification on steep inclines without electronic shifting",
+    "phd_novelty": "Passive metamorphic gear-train kinematics using centrifugal-friction branch locks",
+    "validation": "Dynamic gear-mesh efficiency modeling + torque dynamometer verification"
+  },
+  {
+    "id": "IDEA_10",
+    "family": "Metamorphic & Variable-Topology",
+    "title": "Spherical 4R Metamorphic Passive Steer-Caster",
+    "principle": "Spherical 4-bar linkage with angular link dimensions satisfying Grashof criteria",
+    "math": "\\cos \\theta_4 = f(\\theta_1, \\alpha_{12}, \\alpha_{23}, \\alpha_{34}, \\alpha_{41}); \\text{Self-centering mechanical restoring moment}",
+    "problem_solved": "Eliminates caster flutter and high-speed shimmy instability completely",
+    "phd_novelty": "Nonlinear damping synthesis in spherical 4R space for autonomous micro-casters",
+    "validation": "High-speed caster sweep testbed + Floquet stability analysis"
+  },
+  {
+    "id": "IDEA_11",
+    "family": "Morphological Computation",
+    "title": "Non-Euclidean Continuous Elastica Metamaterial Suspension",
+    "principle": "Euler-Bernoulli large-deflection elastica with non-linear cubic restoring force",
+    "math": "E I \\frac{d^2 \\theta}{d s^2} + F_x \\sin \\theta - F_y \\cos \\theta = 0; F(x) = k_1 x - k_2 x^2 + k_3 x^3",
+    "problem_solved": "Performs analog mechanical low-pass filtering and impulse clipping at $t=0$",
+    "phd_novelty": "Continuous elastica functional mapping for zero-latency robotic disturbance rejection",
+    "validation": "Elliptic integral analytical solution + PrePoMax hyperelastic simulation"
+  },
+  {
+    "id": "IDEA_12",
+    "family": "Morphological Computation",
+    "title": "Nonlinear Metamaterial Physical Reservoir Computing Spine",
+    "principle": "High-dimensional mechanical strain reservoir in cellular elastomer lattices",
+    "math": "\\mathbf{x}(t + \\Delta t) = f(\\mathbf{W}_{\\text{in}} \\mathbf{u}(t) + \\mathbf{W}_{\\text{res}} \\mathbf{x}(t)); \\text{Readout via strain gauges}",
+    "problem_solved": "Direct physical estimation of terrain slip and friction without IMU Kalman filtering",
+    "phd_novelty": "Demonstration of physical reservoir computing in structural robotic chassis",
+    "validation": "Nonlinear strain-rate tensor mapping + linear regression state readout ($R^2 > 0.95$)"
+  },
+  {
+    "id": "IDEA_13",
+    "family": "Morphological Computation",
+    "title": "Microfluidic Hagen-Poiseuille Viscoelastic Dynamic Damper",
+    "principle": "Shear-thinning non-Newtonian flow through compliant metamaterial micro-channels",
+    "math": "\\Delta P = \\frac{8 \\mu L Q}{\\pi R^4}; \\mu(\\dot{\\gamma}) = K \\dot{\\gamma}^{n-1} \\implies \\text{Frequency-dependent stiffness}",
+    "problem_solved": "Zero stiffness at low speeds (flexible terrain hug), rock-hard rigidity under shock",
+    "phd_novelty": "Closed-loop microfluidic damping integrated directly into 3D-printed flexure cavities",
+    "validation": "Navier-Stokes micro-flow FEA + dynamic mechanical thermal analysis (DMTA)"
+  },
+  {
+    "id": "IDEA_14",
+    "family": "Morphological Computation",
+    "title": "Passive Kinematic Preflex Steer-Stabilizer Linkage",
+    "principle": "Anti-parallel spatial four-bar linkage coupling yaw impulse to wheel toe-in",
+    "math": "\\Delta \\delta_{\\text{steer}} = -K_{\\text{preflex}} \\cdot \\ddot{\\psi}_{\\text{chassis}}; \\tau_{\\text{delay}} = 0 \\text{ ms}",
+    "problem_solved": "Instantaneous mechanical yaw compensation when striking obstacles off-center",
+    "phd_novelty": "Hardware realization of biological insect preflexes in wheeled autonomous rovers",
+    "validation": "Perturbation impulse response testing + high-speed optical tracking"
+  },
+  {
+    "id": "IDEA_15",
+    "family": "Morphological Computation",
+    "title": "Phononic-Crystal Acoustic Bandgap Chassis Bed",
+    "principle": "Periodic acoustic metamaterial Bragg scattering and localized resonance",
+    "math": "\\lambda_{\\text{Bragg}} = 2 a; \\text{Stop-band attenuation } > 40\\text{ dB in } [40\\text{ Hz}, 250\\text{ Hz}] \\text{ spectrum}",
+    "problem_solved": "Completely isolates sensor suite (IMU, camera) from motor PWM and gear chatter",
+    "phd_novelty": "Phononic bandgap chassis design for low-cost neuromorphic sensor horizon integrity",
+    "validation": "Dispersion relation Bloch wave simulation + laser Doppler vibrometry"
+  },
+  {
+    "id": "IDEA_16",
+    "family": "Morphological Computation",
+    "title": "Hysteretic Torsional Metamaterial Drive Coupling",
+    "principle": "Helical auxetic compliant joint with nonlinear Coulomb friction hysteresis",
+    "math": "T(\\theta) = k_\\theta \\theta + T_{\\text{slip}} \\operatorname{sgn}(\\dot{\\theta}); \\text{Mechanical torque shock limiter}",
+    "problem_solved": "Prevents motor gearbox tooth shearing during sudden wheel lockup",
+    "phd_novelty": "Closed-form hysteretic loop synthesis for sub-gram robotic powertrain protection",
+    "validation": "Torsional fatigue cycle testing + dynamic impact drop tower"
+  },
+  {
+    "id": "IDEA_17",
+    "family": "Morphological Computation",
+    "title": "Passive Force-Balancing Kinematic Cross-Coupler",
+    "principle": "Torsional elastica beam coupling bilateral wheel normal forces",
+    "math": "F_{N,L} + F_{N,R} = m g; \\frac{\\partial F_{N,L}}{\\partial z_R} = -\\frac{\\partial F_{N,R}}{\\partial z_R}",
+    "problem_solved": "Maintains 50-50 traction on uneven ground without active differential software",
+    "phd_novelty": "Exact compliance synthesis for bilateral normal force equalization",
+    "validation": "Dual-platform load cell balance tests across discrete step obstacles"
+  },
+  {
+    "id": "IDEA_18",
+    "family": "Morphological Computation",
+    "title": "Mechanical Logic-Gate Impact Energy Router",
+    "principle": "Bistable mechanical switch routing impact kinetic energy into plastic deformation zones",
+    "math": "\\text{Output} = \\text{Route}_A \\text{ if } F < F_{\\text{crit}} \\text{ else } \\text{Route}_B; \\Delta t < 0.2\\text{ ms}",
+    "problem_solved": "Safeguards structural electronics while preserving forward locomotion capability",
+    "phd_novelty": "Discrete mechanical state logic embedded directly in monolithic chassis structures",
+    "validation": "Explicit dynamic crash simulation + instrumented drop hammer testing"
+  },
+  {
+    "id": "IDEA_19",
+    "family": "Morphological Computation",
+    "title": "Centrifugal-Torsional Self-Modulating Tread Expander",
+    "principle": "Inertia-coupled expanding flexible tread lugs governed by angular speed $\\omega$",
+    "math": "r_{\\text{eff}}(\\omega) = r_0 + \\frac{m \\omega^2}{k_{\\text{lug}}}; \\mu_{\\text{eff}} = \\mu_0 (1 + \\alpha \\omega^2)",
+    "problem_solved": "Passively increases contact patch area during wheel spin to regain traction",
+    "phd_novelty": "Passive slip-attenuation treads using dynamic centrifugal equilibrium",
+    "validation": "Mud/sand pit traction pull tests + high-speed camera rim tracking"
+  },
+  {
+    "id": "IDEA_20",
+    "family": "Morphological Computation",
+    "title": "Hyperbolic Metamaterial Vibration Energy Harvester Bed",
+    "principle": "Coupled non-linear electromechanical piezoelectric compliant resonator",
+    "math": "m \\ddot{z} + c \\dot{z} + k_1 z + k_3 z^3 + \\theta V = F(t); C_p \\dot{V} + \\frac{V}{R} - \\theta \\dot{z} = 0",
+    "problem_solved": "Harvests terrain vibration to trickle-charge backup persistence SRAM capacitors",
+    "phd_novelty": "Duffing oscillator bistable energy harvesting tailored to wheeled rover spectrum",
+    "validation": "Harmonic excitation sweep + power generation measurement ($> 2.4\text{ mW}$)"
+  },
+  {
+    "id": "IDEA_21",
+    "family": "Multistable & Bistable Compliant",
+    "title": "Pre-Stressed von Mises Truss Snap-Through Suspension",
+    "principle": "Bistable shallow truss snap-through buckling under critical transverse force",
+    "math": "F(w) = 2 E A \\sin \\alpha \\left( \\frac{w}{L} - \\frac{3}{2} \\left(\\frac{w}{L}\\right)^2 + \\frac{1}{2} \\left(\\frac{w}{L}\\right)^3 \\right)",
+    "problem_solved": "Smooth rolling mode (State 1) snaps into high-clearance crawl mode (State 2)",
+    "phd_novelty": "Asymmetric potential energy well design for autonomous terrain adaptation",
+    "validation": "Non-linear Riks arc-length FEA in PrePoMax + MTS universal test machine"
+  },
+  {
+    "id": "IDEA_22",
+    "family": "Multistable & Bistable Compliant",
+    "title": "Chiral Auxetic Expanding Compliant Wheel",
+    "principle": "Negative Poisson's ratio ($\nu < 0$) rotating ligament cellular metamaterial",
+    "math": "\\nu_{yx} = -\\frac{\\varepsilon_x}{\\varepsilon_y} < 0; \\Delta R_{\\text{radial}} \\propto F_{\\text{tangential}} \\cdot \\sin \\theta_{\\text{ligament}}",
+    "problem_solved": "Wheel diametrically swells under driving torque to conquer vertical curbs",
+    "phd_novelty": "Topology optimization of chiral auxetic wheels for variable-radius locomotion",
+    "validation": "Homogenization theory formulation + digital image correlation (DIC) strain field"
+  },
+  {
+    "id": "IDEA_23",
+    "family": "Multistable & Bistable Compliant",
+    "title": "Cross-Axis Flexure Pivot Monolithic Caster Hub",
+    "principle": "Cartwheel compliant cross-axis flexure pivot with infinite fatigue life",
+    "math": "K_\\theta = \\frac{2 E I}{L} + \\frac{F_{\\text{axial}} L}{6}; \\text{Zero backlash, zero friction, zero stiction}",
+    "problem_solved": "Completely eliminates caster bearing friction and particle clogging in dusty terrain",
+    "phd_novelty": "Large-deflection compliance matrix of monolithic cross-axis pivots under radial loads",
+    "validation": "1,000,000-cycle cyclic fatigue simulation + laser deflection bench"
+  },
+  {
+    "id": "IDEA_24",
+    "family": "Multistable & Bistable Compliant",
+    "title": "Bistable Elastica Catapult Tail for Micro-Leaping",
+    "principle": "Non-linear elastica snap-through release of stored strain energy",
+    "math": "U_{\\text{strain}} = \\frac{1}{2} \\int_0^L E I \\kappa(s)^2 ds; v_{\\text{launch}} = \\sqrt{\\frac{2 \\eta U_{\\text{strain}}}{m_{\\text{robot}}}}",
+    "problem_solved": "Enables 1.0 kg rover to leap 0.5 m vertically over un-drivable barriers",
+    "phd_novelty": "Elastica release kinematics matching launch angle to ballistic trajectory optimization",
+    "validation": "High-speed camera release capture (2000 fps) + MuJoCo ballistic model"
+  },
+  {
+    "id": "IDEA_25",
+    "family": "Multistable & Bistable Compliant",
+    "title": "Post-Buckling Tactile Ground Probing Whisker",
+    "principle": "Euler column elastica buckling under point contact",
+    "math": "P_{\\text{crit}} = \\frac{\\pi^2 E I}{(K L)^2}; \\text{Constant contact force independent of deflection}",
+    "problem_solved": "Tactile drop-off and pothole detection with zero sensor reaction torque",
+    "phd_novelty": "Post-buckling invariant-force tactile sensing arrays for autonomous vehicles",
+    "validation": "Force-displacement indentation profiles + PrePoMax contact FEA"
+  },
+  {
+    "id": "IDEA_26",
+    "family": "Multistable & Bistable Compliant",
+    "title": "Multistable Origami Flasher Deployable Wheel Rim",
+    "principle": "Origami flasher folding pattern with discrete stable energy minima",
+    "math": "U(\\theta_1, \\dots, \\theta_n) = \\sum \\frac{1}{2} k_i (\\theta_i - \\theta_{i,0})^2; \\nabla U = \\mathbf{0} \\text{ has } N \\ge 3 \\text{ solutions}",
+    "problem_solved": "Compact stowage diameter (50 mm) expanding to high-clearance wheel (120 mm)",
+    "phd_novelty": "Rigid origami kinematics with compliant elastic crease energy barriers",
+    "validation": "Folding kinematics simulation + radial load capacity dyno tests"
+  },
+  {
+    "id": "IDEA_27",
+    "family": "Multistable & Bistable Compliant",
+    "title": "Bistable Tensegrity Impact Dissipation Perimeter",
+    "principle": "Pre-stressed strut-cable network exhibiting geometric bifurcation under shock",
+    "math": "\\mathbf{A}(\\mathbf{x}) \\mathbf{t} = \\mathbf{w}; \\det(\\mathbf{K}_{\\text{geom}}(\\mathbf{x}) + \\mathbf{K}_{\\text{mat}}) \\le 0 \\implies \\text{Snap collapse}",
+    "problem_solved": "Absorbs 90% of head-on wall collision kinetic energy without damage",
+    "phd_novelty": "Non-linear stiffness bifurcation in class-1 tensegrity bumper structures",
+    "validation": "Pre-stress modal analysis + pendulum impact testing"
+  },
+  {
+    "id": "IDEA_28",
+    "family": "Multistable & Bistable Compliant",
+    "title": "Shape-Memory Bimetallic Self-Tuning Damping Shunt",
+    "principle": "Coupled thermo-mechanical flexure with temperature-dependent modulus",
+    "math": "E(T) = E_0 (1 - \\alpha \\Delta T); \\text{Passive stiffness compensation across } -10^\\circ\\mathrm{C} \\text{ to } +50^\\circ\\mathrm{C}",
+    "problem_solved": "Maintains constant suspension damping despite ambient temperature changes",
+    "phd_novelty": "Autonomous passive thermal compensation in micro-robotic suspension flexures",
+    "validation": "Environmental thermal chamber characterization + frequency response"
+  },
+  {
+    "id": "IDEA_29",
+    "family": "Multistable & Bistable Compliant",
+    "title": "Progressive-Stiffness Asymmetric Carbon-Elastomer Leaf Spring",
+    "principle": "Variable-thickness cantilever elastica with contact contact-wrap profile",
+    "math": "k_{\\text{eff}}(y) = k_0 \\left(1 + \\gamma \\left(\\frac{y}{y_{\\text{max}}}\\right)^2\\right); \\text{Maintains constant ride frequency}",
+    "problem_solved": "Isolates camera pitch angle across varying payload battery configurations",
+    "phd_novelty": "Optimal contact curve synthesis for payload-invariant suspension frequencies",
+    "validation": "PrePoMax nonlinear contact FEA + dynamic shaker test"
+  },
+  {
+    "id": "IDEA_30",
+    "family": "Multistable & Bistable Compliant",
+    "title": "Multistable Torsional Snap-Ring Overload Clutch",
+    "principle": "Circumferential wavy spring buckling under critical shear stress",
+    "math": "\\tau_{\\text{crit}} = \\frac{E h^3}{12 (1 - \\nu^2) R^2} f(\\text{wave number}); \\text{Zero-wear disengagement}",
+    "problem_solved": "Instantaneous disconnect during stone jam with zero-current motor stall protection",
+    "phd_novelty": "Contactless compliant snap-ring clutch design for robotic hub actuators",
+    "validation": "Torsional slip-torque repeatability testing across 5,000 cycles"
+  },
+  {
+    "id": "IDEA_31",
+    "family": "Bio-Inspired Kinematic Linkages",
+    "title": "Theo Jansen 11-Bar Optimized Kinetic Strider Module",
+    "principle": "Planar 1-DOF 11-bar kinematic linkage generating ovoid locus with flat stance phase",
+    "math": "\\mathbf{r}_{\\text{foot}}(\\theta) = \\sum_{k=0}^M (a_k \\cos k\\theta + b_k \\sin k\\theta); \\text{Zero vertical deviation during stance}",
+    "problem_solved": "Glides across rubble with zero chassis vertical oscillation and high energetic economy",
+    "phd_novelty": "Genetic optimization of Jansen link lengths for payload-to-weight maximization",
+    "validation": "Kinematic loop closure equations in MATLAB + 3D printed dynamic prototype"
+  },
+  {
+    "id": "IDEA_32",
+    "family": "Bio-Inspired Kinematic Linkages",
+    "title": "Klann 8-Bar High-Obstacle Step-Climbing Linkage",
+    "principle": "Planar 8-bar linkage with high vertical step reach and rapid return swing",
+    "math": "h_{\\text{step}} / r_{\\text{crank}} > 2.4; \\text{Kinematic Grashof condition satisfied for continuous crank input}",
+    "problem_solved": "Scales curbs 2.5x higher than wheeled rovers of equivalent volume",
+    "phd_novelty": "Analytical velocity synthesis of Klann linkages under dynamic ground friction",
+    "validation": "Multibody dynamic simulation in MuJoCo + physical obstacle climbing rig"
+  },
+  {
+    "id": "IDEA_33",
+    "family": "Bio-Inspired Kinematic Linkages",
+    "title": "Chebyshev-Peaucellier Straight-Line Inverted Turret Mount",
+    "principle": "Exact straight-line kinematic linkage using Peaucellier-Lipkin cell",
+    "math": "(r_1^2 - r_2^2) = x \\cdot x' = \\text{const}; \\text{Generates mathematically exact rectilinear motion}",
+    "problem_solved": "Sensor horizon remains mathematically planar without gyroscope servo stabilization",
+    "phd_novelty": "First application of exact Peaucellier cells for passive robotic horizon stabilization",
+    "validation": "Kinematic tolerance stack-up analysis + laser interferometer tracking"
+  },
+  {
+    "id": "IDEA_34",
+    "family": "Bio-Inspired Kinematic Linkages",
+    "title": "Pantograph Variable-Stiffness Scissor Anchor Arm",
+    "principle": "Kinematic pantograph linkage with internal spring pre-tensioning",
+    "math": "X_{\\text{tip}} = \\lambda \\cdot X_{\\text{input}}; F_{\\text{tip}} = \\frac{1}{\\lambda} F_{\\text{input}}; \\lambda \\ge 4",
+    "problem_solved": "Rapidly projects an anchoring hook forward to hoist rover up steep steps",
+    "phd_novelty": "Singularity-free scissor linkage deployment under unknown contact resistance",
+    "validation": "Dynamic pull-up force measurement + structural deflection FEA"
+  },
+  {
+    "id": "IDEA_35",
+    "family": "Bio-Inspired Kinematic Linkages",
+    "title": "Cockroach-Inspired Compliant C-Leg with Spatulate Tarsus",
+    "principle": "Spring-Loaded Inverted Pendulum (SLIP) dynamics via curved composite blade",
+    "math": "m \\ddot{r} - m r \\dot{\\theta}^2 + k (r - r_0) + m g \\cos \\theta = 0; \\text{Passive self-stabilizing limit cycle}",
+    "problem_solved": "High-speed stable running across unstructured rocks at $1.5\text{ m/s}$",
+    "phd_novelty": "SLIP model stability boundary identification for hybrid wheel-leg blades",
+    "validation": "Poincar\u00e9 map eigenvalue stability proof + high-speed mocap tracking"
+  },
+  {
+    "id": "IDEA_36",
+    "family": "Bio-Inspired Kinematic Linkages",
+    "title": "Avian-Inspired Antagonistic Energy-Recoil Tendon Ankle",
+    "principle": "Tendon-driven antagonistic compliant joint with variable moment arm",
+    "math": "\\tau(\\theta) = r_1(\\theta) T_1 - r_2(\\theta) T_2; \\text{Quadratic strain energy storage during impact}",
+    "problem_solved": "Recovers 65% of deceleration kinetic energy to assist forward obstacle launch",
+    "phd_novelty": "Variable moment-arm tendon kinematics for energy-neutral robotic hopping",
+    "validation": "Energy restitution bench testing + high-speed force plate analysis"
+  },
+  {
+    "id": "IDEA_37",
+    "family": "Bio-Inspired Kinematic Linkages",
+    "title": "Gecko-Inspired Directional Dry Adhesion Tread Cleats",
+    "principle": "Asymmetric van der Waals adhesion via angled elastomeric micro-fibril arrays",
+    "math": "\\frac{F_{\\text{shear}}}{F_{\\text{normal}}} = \\tan \\theta_{\\text{fibril}} + \\mu_0; \\text{High grip in pull, zero resistance in peel}",
+    "problem_solved": "Climbs $45^\\circ$ polished inclines without magnetic or vacuum systems",
+    "phd_novelty": "Continuous peeling kinematics for rotating micro-fibril tread cleats",
+    "validation": "Contact mechanics adhesion dyno + incline climbing endurance tests"
+  },
+  {
+    "id": "IDEA_38",
+    "family": "Bio-Inspired Kinematic Linkages",
+    "title": "Mantis Shrimp Strikeless Cam-Latching Debris Clearer",
+    "principle": "Saddle-shaped hyperbolic paraboloid spring with four-bar latch mechanism",
+    "math": "P_{\\text{peak}} = \\frac{d E_{\\text{elastic}}}{d t} \\approx 500\\text{ W/kg}; \\text{Discharges stored energy in } 2.0\\text{ ms}",
+    "problem_solved": "Shatters or ejects gravel pebbles wedging the drive wheels autonomously",
+    "phd_novelty": "Micro-scale explosive kinetic latch mechanisms powered by sub-watt motors",
+    "validation": "High-speed imaging of debris strike + impulse load cell integration"
+  },
+  {
+    "id": "IDEA_39",
+    "family": "Bio-Inspired Kinematic Linkages",
+    "title": "Watt-II 6-Bar Dynamic Weight-Transfer Suspension",
+    "principle": "Planar Watt-II 6-bar kinematic chain coupling drive torque to rear normal force",
+    "math": "\\Delta F_{N,\\text{rear}} = \\frac{\\tau_{\\text{drive}}}{h_{\\text{cg}}} \\cdot K_{\\text{Watt}}; \\text{Prevents backward pitch-over}",
+    "problem_solved": "Enables climbing $35^\\circ$ ramps without wheel slip or front wheel lift-off",
+    "phd_novelty": "Dynamic torque-to-normal-force kinematic transfer synthesis via Watt chains",
+    "validation": "Ramp incline traction testing + load distribution verification"
+  },
+  {
+    "id": "IDEA_40",
+    "family": "Bio-Inspired Kinematic Linkages",
+    "title": "Centipede-Inspired Multi-Segment Torsional Passive Spine",
+    "principle": "Periodic spherical flexure chain with asymmetric anisotropic stiffness",
+    "math": "K_{\\text{yaw}} \\ll K_{\\text{pitch}} \\ll K_{\\text{roll}}; \\text{Conforms to serpentine ruts while resisting rollover}",
+    "problem_solved": "Navigates narrow winding trenches without high-centering or wedging",
+    "phd_novelty": "Continuum mechanics formulation of anisotropic passive multi-segment chassis",
+    "validation": "Trench traversal simulation in MuJoCo + 3D printed multi-vertebra prototype"
+  },
+  {
+    "id": "IDEA_41",
+    "family": "Hybrid Tensegrity & Soft-Rigid",
+    "title": "6-Strut Icosahedron Tensegrity Ballistic Exoskeleton",
+    "principle": "Class-1 spatial tensegrity network in equilibrium under internal pre-stress",
+    "math": "\\mathbf{B} \\mathbf{q} = \\mathbf{0}; \\mathbf{K}_{\\text{tangent}} = \\mathbf{K}_m + \\mathbf{K}_g(\\mathbf{t}) > 0; \\text{Omnidirectional shock dissipation}",
+    "problem_solved": "Survives $5\text{ m}$ free-fall drop onto solid rock with zero internal shock damage",
+    "phd_novelty": "Analytical pre-stress modal tuning of tensegrity cages protecting rigid robotic cores",
+    "validation": "Form-finding via dynamic relaxation + high-g drop accelerometer proof"
+  },
+  {
+    "id": "IDEA_42",
+    "family": "Hybrid Tensegrity & Soft-Rigid",
+    "title": "Granular Jamming Reconfigurable Variable-Stiffness Spine",
+    "principle": "Jamming phase transition of dry micro-beads under sub-atmospheric pressure",
+    "math": "\\tau_y = \\mu P_{\\text{vacuum}} + c; E_{\\text{jammed}} / E_{\\text{unjammed}} > 40; \\Delta t_{\\text{transition}} < 80\\text{ ms}",
+    "problem_solved": "Instantly switches from completely compliant terrain draper to rock-rigid towing frame",
+    "phd_novelty": "Miniaturized zero-flow vacuum jamming architecture for autonomous rovers",
+    "validation": "Triaxial shear stress testing + 3D bending moment characterization"
+  },
+  {
+    "id": "IDEA_43",
+    "family": "Hybrid Tensegrity & Soft-Rigid",
+    "title": "Tendon-Driven Morphological Tail Momentum-Canceller",
+    "principle": "Underactuated hyper-redundant continuum arm with antagonistic cable routing",
+    "math": "\\mathbf{L}_{\\text{tail}} + \\mathbf{L}_{\\text{body}} = \\mathbf{0} \\implies \\mathbf{I}_{\\text{tail}} \\dot{\\boldsymbol{\\omega}}_{\\text{tail}} = -\\mathbf{I}_{\\text{body}} \\dot{\\boldsymbol{\\omega}}_{\\text{body}}",
+    "problem_solved": "Reorients robot in mid-air during falls to guarantee landing wheels-down",
+    "phd_novelty": "Geometric control of continuum tail momentum transfer for micro-rovers",
+    "validation": "Zero-gravity drop tower testing + high-speed 3D motion capture"
+  },
+  {
+    "id": "IDEA_44",
+    "family": "Hybrid Tensegrity & Soft-Rigid",
+    "title": "Origami Miura-Ori Bellows Hermetic Protective Skin",
+    "principle": "Rigid-foldable Miura-ori tessellation with single degree of kinematic freedom",
+    "math": "\\cos \\theta = \\frac{\\cos \\alpha_1 \\cos \\alpha_2 - \\cos \\gamma}{\\sin \\alpha_1 \\sin \\alpha_2}; \\text{Poisson contraction coupling}",
+    "problem_solved": "Impermeable barrier against abrasive sand and water immersion with zero drive drag",
+    "phd_novelty": "Miura-ori crease fatigue minimization under cyclic high-amplitude steering shear",
+    "validation": "IP68 water ingress testing + 500,000 fold cyclic endurance test"
+  },
+  {
+    "id": "IDEA_45",
+    "family": "Hybrid Tensegrity & Soft-Rigid",
+    "title": "Directional Interlocking Rigid-Flexible Spine Chain",
+    "principle": "Asymmetric contact bevels in serial linkage causing directional kinematic locking",
+    "math": "\\theta_{\\text{pitch}} \\in [0, +45^\\circ] \\text{ (Free bend upward)}, \\theta_{\\text{pitch}} \\in [-2^\\circ, 0] \\text{ (Rigid locked downward)}",
+    "problem_solved": "Climbs steps without sagging while maintaining stiff cantilever support",
+    "phd_novelty": "Contact mechanics of unilateral kinematic kinematic chains for micro-chassis",
+    "validation": "Cantilever load deflection testing + step traversal verification"
+  },
+  {
+    "id": "IDEA_46",
+    "family": "Hybrid Tensegrity & Soft-Rigid",
+    "title": "Magnetic Bistable Reluctance Latch for Zero-Power Terrain Locking",
+    "principle": "Permanent-magnet variable reluctance circuit with dual minimum reluctance paths",
+    "math": "F_{\\text{mag}} = \\frac{B^2 A}{2 \\mu_0}; \\text{Bistable latching force } > 45\\text{ N} \\text{ with zero static electrical power}",
+    "problem_solved": "Locks high-clearance vs low-profile chassis modes without holding current",
+    "phd_novelty": "Electromagnetic-compliant hybrid bistable latches for robotic morphing",
+    "validation": "Maxwell 3D magnetic FEA + holding force dynamometer testing"
+  },
+  {
+    "id": "IDEA_47",
+    "family": "Hybrid Tensegrity & Soft-Rigid",
+    "title": "Micro-Fluted Amphibious Surface-Tension Paddle-Rim",
+    "principle": "Cassie-Baxter superhydrophobic micro-grooves generating dynamic hydrodynamic lift",
+    "math": "\\cos \\theta^* = f_1 \\cos \\theta - f_2; F_{\\text{thrust}} = \\frac{1}{2} C_D \\rho A (v_{\\text{rim}} - v_{\\text{fluid}})^2",
+    "problem_solved": "Enables rover to transition seamlessly from dry soil to paddling across open water",
+    "phd_novelty": "Coupled superhydrophobic surface mechanics and low-Reynolds propulsion in micro-wheels",
+    "validation": "Water tank tow testing + contact angle goniometry"
+  },
+  {
+    "id": "IDEA_48",
+    "family": "Hybrid Tensegrity & Soft-Rigid",
+    "title": "Centrifugal Fluid-Shift Morphing Elastomer Wheel",
+    "principle": "Coupled centrifugal liquid redistribution expanding an elastic toroidal bladder",
+    "math": "P_{\\text{centrifugal}} = \\frac{1}{2} \\rho \\omega^2 (R_{\\text{outer}}^2 - R_{\\text{inner}}^2); \\Delta R \\propto \\frac{P}{E_{\\text{elastomer}}}",
+    "problem_solved": "Automatically doubles wheel diameter at high speeds for efficient cruising",
+    "phd_novelty": "Fluid-structure interaction modeling of self-morphing centrifugal wheels",
+    "validation": "Explicit dynamic FSI simulation + stroboscopic tachometer deformation capture"
+  },
+  {
+    "id": "IDEA_49",
+    "family": "Hybrid Tensegrity & Soft-Rigid",
+    "title": "Pre-Stressed Tensegrity-Origami Deployable Roll-Cage",
+    "principle": "Kresling origami pattern coupled with antagonistic elastic tendons",
+    "math": "\\theta_{\\text{twist}} = \\arccos\\left(\\frac{a^2 + b^2 - l^2}{2 a b}\\right); \\text{Bistable pop-up deployment in } 12\\text{ ms}",
+    "problem_solved": "Pops up instantly upon rollover detection, enveloping camera turret before ground impact",
+    "phd_novelty": "Kresling-tensegrity dynamic deployment mechanics under high-impact conditions",
+    "validation": "High-speed camera deployment tracking + dynamic compression testing"
+  },
+  {
+    "id": "IDEA_50",
+    "family": "Hybrid Tensegrity & Soft-Rigid",
+    "title": "Anisotropic Metamaterial Friction Skirt with Passive Vectoring",
+    "principle": "Micro-patterned textured skin with extreme frictional asymmetry $\\mu_\\parallel \\ll \\mu_\\perp$",
+    "math": "\\mathbf{F}_f = -\\left( \\mu_\\parallel (\\mathbf{v} \\cdot \\hat{\\mathbf{t}}) \\hat{\\mathbf{t}} + \\mu_\\perp (\\mathbf{v} \\cdot \\hat{\\mathbf{n}}) \\hat{\\mathbf{n}} \\right) F_N; \\frac{\\mu_\\perp}{\\mu_\\parallel} > 6.0",
+    "problem_solved": "Passive resistance against sliding sideways down steep cross-slopes",
+    "phd_novelty": "Directional Coulomb friction tensors synthesized via 3D multi-material printing",
+    "validation": "Inclined plane slip-angle characterization across sand, gravel, and ice"
+  }
+]

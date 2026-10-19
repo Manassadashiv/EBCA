@@ -1,0 +1,721 @@
+{
+  "metamorphic mechanism robotics": [
+    {
+      "id": "https://openalex.org/W2084744129",
+      "title": "The Shuttle Radar Topography Mission",
+      "publication_year": 2007,
+      "cited_by_count": 8875,
+      "doi": "https://doi.org/10.1029/2005rg000183",
+      "authors": [
+        "T. G. Farr",
+        "P. A. Rosen",
+        "Edward R. Caro"
+      ],
+      "host_venue": "Reviews of Geophysics"
+    },
+    {
+      "id": "https://openalex.org/W2784648116",
+      "title": "Soft Robotic Grippers",
+      "publication_year": 2018,
+      "cited_by_count": 1963,
+      "doi": "https://doi.org/10.1002/adma.201707035",
+      "authors": [
+        "Jun Shintake",
+        "Vito Cacucciolo",
+        "Dario Floreano"
+      ],
+      "host_venue": "Advanced Materials"
+    },
+    {
+      "id": "https://openalex.org/W4316506832",
+      "title": "Unmanned aerial vehicles (UAVs): practical aspects, applications, open challenges, security issues, and future trends",
+      "publication_year": 2023,
+      "cited_by_count": 1072,
+      "doi": "https://doi.org/10.1007/s11370-022-00452-4",
+      "authors": [
+        "Syed Agha Hassnain Mohsan",
+        "Nawaf Qasem Hamood Othman",
+        "Yanlong Li"
+      ],
+      "host_venue": "Intelligent Service Robotics"
+    },
+    {
+      "id": "https://openalex.org/W4282970004",
+      "title": "Towards the Unmanned Aerial Vehicles (UAVs): A Comprehensive Review",
+      "publication_year": 2022,
+      "cited_by_count": 919,
+      "doi": "https://doi.org/10.3390/drones6060147",
+      "authors": [
+        "Syed Agha Hassnain Mohsan",
+        "Muhammad Asghar Khan",
+        "Fazal Noor"
+      ],
+      "host_venue": "Drones"
+    },
+    {
+      "id": "https://openalex.org/W1966741850",
+      "title": "A survey of emerging threats in cybersecurity",
+      "publication_year": 2014,
+      "cited_by_count": 889,
+      "doi": "https://doi.org/10.1016/j.jcss.2014.02.005",
+      "authors": [
+        "Julian Jang\u2010Jaccard",
+        "\u202aSurya Nepal\u202c"
+      ],
+      "host_venue": "Journal of Computer and System Sciences"
+    },
+    {
+      "id": "https://openalex.org/W3129323667",
+      "title": "Directed Energy Deposition (DED) Process: State of the Art",
+      "publication_year": 2021,
+      "cited_by_count": 811,
+      "doi": "https://doi.org/10.1007/s40684-020-00302-7",
+      "authors": [
+        "Dong\u2010Gyu Ahn"
+      ],
+      "host_venue": "International Journal of Precision Engineering and Manufacturing-Green Technology"
+    }
+  ],
+  "kinematic bifurcation variable topology linkage": [
+    {
+      "id": "https://openalex.org/W1970626830",
+      "title": "Mapping Information Flow in Sensorimotor Networks",
+      "publication_year": 2006,
+      "cited_by_count": 293,
+      "doi": "https://doi.org/10.1371/journal.pcbi.0020144",
+      "authors": [
+        "Max Lungarella",
+        "Olaf Sporns"
+      ],
+      "host_venue": "PLoS Computational Biology"
+    },
+    {
+      "id": "https://openalex.org/W2060119452",
+      "title": "Reduction, symmetry, and phases in mechanics",
+      "publication_year": 1990,
+      "cited_by_count": 289,
+      "doi": "https://doi.org/10.1090/memo/0436",
+      "authors": [
+        "J. Marsden",
+        "Richard Montgomery",
+        "Tudor Stefan Ratiu"
+      ],
+      "host_venue": "Memoirs of the American Mathematical Society"
+    },
+    {
+      "id": "https://openalex.org/W3211234425",
+      "title": "Design, modeling, and control of morphing aircraft: A review",
+      "publication_year": 2021,
+      "cited_by_count": 279,
+      "doi": "https://doi.org/10.1016/j.cja.2021.09.013",
+      "authors": [
+        "Lingling Chu",
+        "Qi Li",
+        "Feng Gu"
+      ],
+      "host_venue": "Chinese Journal of Aeronautics"
+    },
+    {
+      "id": "https://openalex.org/W2143142102",
+      "title": "Topological Methods for the Analysis of Solar Magnetic Fields",
+      "publication_year": 2005,
+      "cited_by_count": 208,
+      "doi": "https://doi.org/10.12942/lrsp-2005-7",
+      "authors": [
+        "D. W. Longcope"
+      ],
+      "host_venue": "Living Reviews in Solar Physics"
+    },
+    {
+      "id": "https://openalex.org/W2887652868",
+      "title": "A mixed-mode phase field fracture model in anisotropic rocks with consistent kinematics",
+      "publication_year": 2018,
+      "cited_by_count": 199,
+      "doi": "https://doi.org/10.1016/j.cma.2018.08.008",
+      "authors": [
+        "Eric C. Bryant",
+        "WaiChing Sun"
+      ],
+      "host_venue": "Computer Methods in Applied Mechanics and Engineering"
+    },
+    {
+      "id": "https://openalex.org/W1979963107",
+      "title": "Graph-based term weighting for information retrieval",
+      "publication_year": 2011,
+      "cited_by_count": 187,
+      "doi": "https://doi.org/10.1007/s10791-011-9172-x",
+      "authors": [
+        "Roi Blanco",
+        "Christina Lioma"
+      ],
+      "host_venue": "Information Retrieval"
+    }
+  ],
+  "morphological computation physical reservoir computing": [
+    {
+      "id": "https://openalex.org/W2031753087",
+      "title": "Fractional Brownian Motions, Fractional Noises and Applications",
+      "publication_year": 1968,
+      "cited_by_count": 7654,
+      "doi": "https://doi.org/10.1137/1010093",
+      "authors": [
+        "Beno\u00eet B. Mandelbrot",
+        "John W. Van Ness"
+      ],
+      "host_venue": "SIAM Review"
+    },
+    {
+      "id": "https://openalex.org/W1887863118",
+      "title": "Soil and Water Assessment Tool Theoretical Documentation Version 2009",
+      "publication_year": 2011,
+      "cited_by_count": 3980,
+      "doi": null,
+      "authors": [
+        "S.L. Neitsch",
+        "Jeffery G. Arnold",
+        "James R. Kiniry"
+      ],
+      "host_venue": "OakTrust (Texas A&M University Libraries)"
+    },
+    {
+      "id": "https://openalex.org/W2140980425",
+      "title": "The many lives of active galactic nuclei: cooling flows, black holes and the luminosities and colours of galaxies",
+      "publication_year": 2005,
+      "cited_by_count": 3685,
+      "doi": "https://doi.org/10.1111/j.1365-2966.2005.09675.x",
+      "authors": [
+        "Darren J. Croton",
+        "Volker Springel",
+        "S. D. M. White"
+      ],
+      "host_venue": "Monthly Notices of the Royal Astronomical Society"
+    },
+    {
+      "id": "https://openalex.org/W1587869157",
+      "title": "The hydraulic geometry of stream channels and some physiographic implications",
+      "publication_year": 1953,
+      "cited_by_count": 2962,
+      "doi": "https://doi.org/10.3133/pp252",
+      "authors": [
+        "Luna B. Leopold",
+        "Thomas Maddock"
+      ],
+      "host_venue": "USGS professional paper"
+    },
+    {
+      "id": "https://openalex.org/W3102100346",
+      "title": "A review of uncertainty quantification in deep learning: Techniques, applications and challenges",
+      "publication_year": 2021,
+      "cited_by_count": 2737,
+      "doi": "https://doi.org/10.1016/j.inffus.2021.05.008",
+      "authors": [
+        "Moloud Abdar",
+        "Farhad Pourpanah",
+        "Sadiq Hussain"
+      ],
+      "host_venue": "Information Fusion"
+    },
+    {
+      "id": "https://openalex.org/W2100514692",
+      "title": "Cosmological smoothed particle hydrodynamics simulations: a hybrid multiphase model for star formation",
+      "publication_year": 2003,
+      "cited_by_count": 2261,
+      "doi": "https://doi.org/10.1046/j.1365-8711.2003.06206.x",
+      "authors": [
+        "Volker Springel",
+        "Lars Hernquist"
+      ],
+      "host_venue": "Monthly Notices of the Royal Astronomical Society"
+    }
+  ],
+  "bistable compliant mechanism snap through": [
+    {
+      "id": "https://openalex.org/W1981602625",
+      "title": "A review of the recent research on vibration energy harvesting via bistable systems",
+      "publication_year": 2013,
+      "cited_by_count": 1353,
+      "doi": "https://doi.org/10.1088/0964-1726/22/2/023001",
+      "authors": [
+        "Ryan L. Harne",
+        "Kon\u2010Well Wang"
+      ],
+      "host_venue": "Smart Materials and Structures"
+    },
+    {
+      "id": "https://openalex.org/W3213189848",
+      "title": "Soft actuators for real-world applications",
+      "publication_year": 2021,
+      "cited_by_count": 885,
+      "doi": "https://doi.org/10.1038/s41578-021-00389-7",
+      "authors": [
+        "Meng Li",
+        "Aniket Pal",
+        "Amirreza Aghakhani"
+      ],
+      "host_venue": "Nature Reviews Materials"
+    },
+    {
+      "id": "https://openalex.org/W2966362568",
+      "title": "A review of energy harvesting using piezoelectric materials: state-of-the-art a decade later (2008\u20132018)",
+      "publication_year": 2019,
+      "cited_by_count": 870,
+      "doi": "https://doi.org/10.1088/1361-665x/ab36e4",
+      "authors": [
+        "Mohsen Safaei",
+        "Henry Angelo Sodano",
+        "Steven R. Anton"
+      ],
+      "host_venue": "Smart Materials and Structures"
+    },
+    {
+      "id": "https://openalex.org/W2769501833",
+      "title": "Fluid-driven origami-inspired artificial muscles",
+      "publication_year": 2017,
+      "cited_by_count": 750,
+      "doi": "https://doi.org/10.1073/pnas.1713450114",
+      "authors": [
+        "Shuguang Li",
+        "Daniel M. Vogt",
+        "Daniela L. Rus"
+      ],
+      "host_venue": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "id": "https://openalex.org/W4212805852",
+      "title": "Bistable and Multistable Actuators for Soft Robots: Structures, Materials, and Functionalities",
+      "publication_year": 2022,
+      "cited_by_count": 588,
+      "doi": "https://doi.org/10.1002/adma.202110384",
+      "authors": [
+        "Yinding Chi",
+        "Yanbin Li",
+        "Yao Zhao"
+      ],
+      "host_venue": "Advanced Materials"
+    },
+    {
+      "id": "https://openalex.org/W3021947263",
+      "title": "Leveraging elastic instabilities for amplified performance: Spine-inspired high-speed and high-force soft robots",
+      "publication_year": 2020,
+      "cited_by_count": 500,
+      "doi": "https://doi.org/10.1126/sciadv.aaz6912",
+      "authors": [
+        "Yichao Tang",
+        "Yinding Chi",
+        "Jiefeng Sun"
+      ],
+      "host_venue": "Science Advances"
+    }
+  ],
+  "transformable wheel leg origami robotics": [
+    {
+      "id": "https://openalex.org/W2023412496",
+      "title": "Origami-inspired active structures: a synthesis and review",
+      "publication_year": 2014,
+      "cited_by_count": 421,
+      "doi": "https://doi.org/10.1088/0964-1726/23/9/094001",
+      "authors": [
+        "Edwin A. Peraza Hernandez",
+        "Darren J. Hartl",
+        "Richard Malak"
+      ],
+      "host_venue": "Smart Materials and Structures"
+    },
+    {
+      "id": "https://openalex.org/W4225796442",
+      "title": "Spinning-enabled wireless amphibious origami millirobot",
+      "publication_year": 2022,
+      "cited_by_count": 285,
+      "doi": "https://doi.org/10.1038/s41467-022-30802-w",
+      "authors": [
+        "Qiji Ze",
+        "Shuai Wu",
+        "Jize Dai"
+      ],
+      "host_venue": "Nature Communications"
+    },
+    {
+      "id": "https://openalex.org/W4389097388",
+      "title": "Machine-learned wearable sensors for real-time hand-motion recognition: toward practical applications",
+      "publication_year": 2023,
+      "cited_by_count": 152,
+      "doi": "https://doi.org/10.1093/nsr/nwad298",
+      "authors": [
+        "Kyung Rok Pyun",
+        "Kangkyu Kwon",
+        "Myung Jin Yoo"
+      ],
+      "host_venue": "National Science Review"
+    },
+    {
+      "id": "https://openalex.org/W3089403702",
+      "title": "Liquid Crystal Polymer\u2010Based Soft Robots",
+      "publication_year": 2020,
+      "cited_by_count": 150,
+      "doi": "https://doi.org/10.1002/aisy.202000148",
+      "authors": [
+        "Yao\u2010Yu Xiao",
+        "Zhi\u2010Chao Jiang",
+        "Yue Zhao"
+      ],
+      "host_venue": "Advanced Intelligent Systems"
+    },
+    {
+      "id": "https://openalex.org/W4281556190",
+      "title": "Polymer Mechanochromism from Force-Tuned Excited-State Intramolecular Proton Transfer",
+      "publication_year": 2022,
+      "cited_by_count": 135,
+      "doi": "https://doi.org/10.1021/jacs.2c03056",
+      "authors": [
+        "Huan Hu",
+        "Xin Min Cheng",
+        "Zhimin Ma"
+      ],
+      "host_venue": "Journal of the American Chemical Society"
+    },
+    {
+      "id": "https://openalex.org/W3211468091",
+      "title": "Review of soft fluidic actuators: classification and materials modeling analysis",
+      "publication_year": 2021,
+      "cited_by_count": 134,
+      "doi": "https://doi.org/10.1088/1361-665x/ac383a",
+      "authors": [
+        "Amir Pagoli",
+        "Fr\u00e9d\u00e9ric Chapelle",
+        "Juan Antonio Corrales Ram\u00f3n"
+      ],
+      "host_venue": "Smart Materials and Structures"
+    }
+  ],
+  "tensegrity robot impact resilience": [
+    {
+      "id": "https://openalex.org/W2887258823",
+      "title": "Recent advances in physical reservoir computing: A review",
+      "publication_year": 2019,
+      "cited_by_count": 2114,
+      "doi": "https://doi.org/10.1016/j.neunet.2019.03.005",
+      "authors": [
+        "Gouhei Tanaka",
+        "Toshiyuki Yamane",
+        "J. B. H\u00e9roux"
+      ],
+      "host_venue": "Neural Networks"
+    },
+    {
+      "id": "https://openalex.org/W3139086409",
+      "title": "A review on self-healing polymers for soft robotics",
+      "publication_year": 2021,
+      "cited_by_count": 311,
+      "doi": "https://doi.org/10.1016/j.mattod.2021.01.009",
+      "authors": [
+        "Seppe Terryn",
+        "Jakob Langenbach",
+        "Ellen Roels"
+      ],
+      "host_venue": "Materials Today"
+    },
+    {
+      "id": "https://openalex.org/W2618978088",
+      "title": "Fundamentals of soft robot locomotion",
+      "publication_year": 2017,
+      "cited_by_count": 309,
+      "doi": "https://doi.org/10.1098/rsif.2017.0101",
+      "authors": [
+        "Marcello Calisti",
+        "Giacomo Picardi",
+        "Cecilia Laschi"
+      ],
+      "host_venue": "Journal of The Royal Society Interface"
+    },
+    {
+      "id": "https://openalex.org/W4283161827",
+      "title": "Responsive materials architected in space and time",
+      "publication_year": 2022,
+      "cited_by_count": 296,
+      "doi": "https://doi.org/10.1038/s41578-022-00450-z",
+      "authors": [
+        "Xiaoxing Xia",
+        "Christopher M. Spadaccini",
+        "Julia R. Greer"
+      ],
+      "host_venue": "Nature Reviews Materials"
+    },
+    {
+      "id": "https://openalex.org/W2905880610",
+      "title": "A Light\u2010Powered Ultralight Tensegrity Robot with High Deformability and Load Capacity",
+      "publication_year": 2018,
+      "cited_by_count": 251,
+      "doi": "https://doi.org/10.1002/adma.201806849",
+      "authors": [
+        "Zhijian Wang",
+        "Kai Li",
+        "Qiguang He"
+      ],
+      "host_venue": "Advanced Materials"
+    },
+    {
+      "id": "https://openalex.org/W4296686346",
+      "title": "Mechanostructures: Rational mechanical design, fabrication, performance evaluation, and industrial application of advanced structures",
+      "publication_year": 2022,
+      "cited_by_count": 220,
+      "doi": "https://doi.org/10.1016/j.pmatsci.2022.101021",
+      "authors": [
+        "Wenwang Wu",
+        "Re Xia",
+        "Guian Qian"
+      ],
+      "host_venue": "Progress in Materials Science"
+    }
+  ],
+  "passive mechanical preflex disturbance rejection": [
+    {
+      "id": "https://openalex.org/W4385416440",
+      "title": "Review of the Flight Control Method of a Bird-like Flapping-Wing Air Vehicle",
+      "publication_year": 2023,
+      "cited_by_count": 31,
+      "doi": "https://doi.org/10.3390/mi14081547",
+      "authors": [
+        "Xiaoqing Fang",
+        "Yian Wen",
+        "Zhida Gao"
+      ],
+      "host_venue": "Micromachines"
+    },
+    {
+      "id": "https://openalex.org/W3003703606",
+      "title": "Planning for the Unexpected: Explicitly Optimizing Motions for Ground Uncertainty in Running",
+      "publication_year": 2020,
+      "cited_by_count": 16,
+      "doi": "https://doi.org/10.1109/icra40945.2020.9197049",
+      "authors": [
+        "Kevin Green",
+        "Ross L. Hatton",
+        "JONATHAN W. HURST"
+      ],
+      "host_venue": "Proceedings - IEEE International Conference on Robotics and Automation/Proceedings"
+    },
+    {
+      "id": "https://openalex.org/W2898476307",
+      "title": "Human-like hopping in machines",
+      "publication_year": 2018,
+      "cited_by_count": 16,
+      "doi": "https://doi.org/10.1007/s00422-018-0788-4",
+      "authors": [
+        "Jonathan Oehlke",
+        "Philipp Beckerle",
+        "Andre Seyfarth A"
+      ],
+      "host_venue": "Biological Cybernetics"
+    },
+    {
+      "id": "https://openalex.org/W4401607269",
+      "title": "A Compliant Robotic Leg Based on Fibre Jamming",
+      "publication_year": 2024,
+      "cited_by_count": 10,
+      "doi": "https://doi.org/10.1109/tro.2024.3443714",
+      "authors": [
+        "Lois Liow",
+        "James Brett",
+        "Joshua Pinskier"
+      ],
+      "host_venue": "IEEE Transactions on Robotics"
+    },
+    {
+      "id": "https://openalex.org/W4328049297",
+      "title": "Muscle prestimulation tunes velocity preflex in simulated perturbed hopping",
+      "publication_year": 2023,
+      "cited_by_count": 9,
+      "doi": "https://doi.org/10.1038/s41598-023-31179-6",
+      "authors": [
+        "Fabio Izzi",
+        "An Chun Mo",
+        "Syn Schmitt"
+      ],
+      "host_venue": "Scientific Reports"
+    },
+    {
+      "id": "https://openalex.org/W2591986849",
+      "title": "Robustness of Biological and Bio-inspired Exoskeletons",
+      "publication_year": 2015,
+      "cited_by_count": 3,
+      "doi": null,
+      "authors": [
+        "Kaushik Jayaram"
+      ],
+      "host_venue": "eScholarship (California Digital Library)"
+    }
+  ],
+  "variable stiffness mechanism jamming robotics": [
+    {
+      "id": "https://openalex.org/W2784648116",
+      "title": "Soft Robotic Grippers",
+      "publication_year": 2018,
+      "cited_by_count": 1963,
+      "doi": "https://doi.org/10.1002/adma.201707035",
+      "authors": [
+        "Jun Shintake",
+        "Vito Cacucciolo",
+        "Dario Floreano"
+      ],
+      "host_venue": "Advanced Materials"
+    },
+    {
+      "id": "https://openalex.org/W4286560842",
+      "title": "End-to-end design of wearable sensors",
+      "publication_year": 2022,
+      "cited_by_count": 1295,
+      "doi": "https://doi.org/10.1038/s41578-022-00460-x",
+      "authors": [
+        "Hatice Ceren Ates",
+        "Peter Quoc Nguyen",
+        "Laura Gonzalez\u2010Macia"
+      ],
+      "host_venue": "Nature Reviews Materials"
+    },
+    {
+      "id": "https://openalex.org/W1998564308",
+      "title": "Thin Plates and Shells: Theory, Analysis, and Applications",
+      "publication_year": 2002,
+      "cited_by_count": 1011,
+      "doi": "https://doi.org/10.1115/1.1483356",
+      "authors": [
+        "E.S. Ventsel",
+        "Theodor Krauthammer",
+        "Erasmo Carrera"
+      ],
+      "host_venue": "Applied Mechanics Reviews"
+    },
+    {
+      "id": "https://openalex.org/W3213189848",
+      "title": "Soft actuators for real-world applications",
+      "publication_year": 2021,
+      "cited_by_count": 885,
+      "doi": "https://doi.org/10.1038/s41578-021-00389-7",
+      "authors": [
+        "Meng Li",
+        "Aniket Pal",
+        "Amirreza Aghakhani"
+      ],
+      "host_venue": "Nature Reviews Materials"
+    },
+    {
+      "id": "https://openalex.org/W2769501833",
+      "title": "Fluid-driven origami-inspired artificial muscles",
+      "publication_year": 2017,
+      "cited_by_count": 750,
+      "doi": "https://doi.org/10.1073/pnas.1713450114",
+      "authors": [
+        "Shuguang Li",
+        "Daniel M. Vogt",
+        "Daniela L. Rus"
+      ],
+      "host_venue": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "id": "https://openalex.org/W2799893835",
+      "title": "Biofabrication strategies for 3D in vitro models and regenerative medicine",
+      "publication_year": 2018,
+      "cited_by_count": 749,
+      "doi": "https://doi.org/10.1038/s41578-018-0006-y",
+      "authors": [
+        "Lorenzo Moroni",
+        "Jason A. Burdick",
+        "Christopher B. Highley"
+      ],
+      "host_venue": "Nature Reviews Materials"
+    }
+  ],
+  "micro jumping robot bistable catapult": [
+    {
+      "id": "https://openalex.org/W2967783898",
+      "title": "Beyond power amplification: latch-mediated spring actuation is an emerging framework for the study of diverse elastic systems",
+      "publication_year": 2019,
+      "cited_by_count": 152,
+      "doi": "https://doi.org/10.1242/jeb.197889",
+      "authors": [
+        "Sarah J. Longo",
+        "S. M. Cox",
+        "Emanuel Azizi"
+      ],
+      "host_venue": "Journal of Experimental Biology"
+    },
+    {
+      "id": "https://openalex.org/W2509889353",
+      "title": "Morphing in nature and beyond: a review of natural and synthetic shape-changing materials and mechanisms",
+      "publication_year": 2016,
+      "cited_by_count": 147,
+      "doi": "https://doi.org/10.1007/s10853-016-0295-8",
+      "authors": [
+        "Kate Oliver",
+        "Annela M. Seddon",
+        "Richard S. Trask"
+      ],
+      "host_venue": "Journal of Materials Science"
+    },
+    {
+      "id": "https://openalex.org/W4311317367",
+      "title": "How ornithopters can perch autonomously on a branch",
+      "publication_year": 2022,
+      "cited_by_count": 108,
+      "doi": "https://doi.org/10.1038/s41467-022-35356-5",
+      "authors": [
+        "Raphael Zufferey",
+        "Jesus Tormo-Barbero",
+        "Daniel Feliu-Taleg\u00f3n"
+      ],
+      "host_venue": "Nature Communications"
+    },
+    {
+      "id": "https://openalex.org/W4283168474",
+      "title": "An adjustable device to adaptively realise diverse nonlinear force-displacement characteristics",
+      "publication_year": 2022,
+      "cited_by_count": 90,
+      "doi": "https://doi.org/10.1016/j.ymssp.2022.109379",
+      "authors": [
+        "Gianluca Gatti"
+      ],
+      "host_venue": "Mechanical Systems and Signal Processing"
+    },
+    {
+      "id": "https://openalex.org/W4317796971",
+      "title": "Insect-scale jumping robots enabled by a dynamic buckling cascade",
+      "publication_year": 2023,
+      "cited_by_count": 71,
+      "doi": "https://doi.org/10.1073/pnas.2210651120",
+      "authors": [
+        "Yuzhe Wang",
+        "Qiong Wang",
+        "Mingchao Liu"
+      ],
+      "host_venue": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "id": "https://openalex.org/W3109905228",
+      "title": "Jumping Locomotion Strategies: From Animals to Bioinspired Robots",
+      "publication_year": 2020,
+      "cited_by_count": 58,
+      "doi": "https://doi.org/10.3390/app10238607",
+      "authors": [
+        "Xiaojuan Mo",
+        "Wenjie Ge",
+        "Marco Miraglia"
+      ],
+      "host_venue": "Applied Sciences"
+    }
+  ],
+  "compliant planar linkage Jansen Klann obstacle traversal": [
+    {
+      "id": "https://openalex.org/W1982812855",
+      "title": "Novel Solution for Leg Motion with 5-Link Belt Mechanism",
+      "publication_year": 2014,
+      "cited_by_count": 13,
+      "doi": "https://doi.org/10.2478/ijame-2014-0048",
+      "authors": [
+        "E.-C. Lovasz",
+        "Pop C.",
+        "Pop F."
+      ],
+      "host_venue": "International Journal of Applied Mechanics and Engineering"
+    }
+  ]
+}

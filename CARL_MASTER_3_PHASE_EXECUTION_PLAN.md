@@ -1,144 +1,132 @@
-# CARL-DX: Master 3-Phase Execution Plan & Developmental Progression
-**Document ID:** `CARL-PLAN-2026-PHASES-V1`  
+# CARL-DX: Master Execution Plan & Developmental Progression (Updated)
+**Document ID:** `CARL-PLAN-2026-STAGE5-POA-V2`  
 **Candidate:** Manas Sadashiv (Roll: 22011P0310)  
 **Affiliation:** JNTUH UCESTH, Department of Mechanical Engineering (IDP AMS)  
 **Title:** DESIGN AND DEVELOPMENT OF A DIGITAL TWIN FRAMEWORK FOR BIOLOGICALLY INSPIRED COGNITIVE ROBOTIC SYSTEMS  
-**Date Saved:** October 10, 2026  
+**Date Updated:** October 18, 2026  
+**Hardware Baseline:** Lenovo IdeaPad Gaming 3 (Intel Core i5-13450HX 10C/16T, 16GB DDR5, RTX 3050 6GB Laptop, 512GB NVMe)
 
 ---
 
-## Executive Overview: The 3-Phase Architecture
+## Executive Overview: The Canonical Developmental Roadmap
 
-This document preserves the official, sequential execution plan designed to take CARL from its active developmental roadblock through full cognitive closure, academic viva defense, and frugal physical hardware demonstration.
+This document serves as the single source of truth for CARL-DX's developmental progression, preserving our agreed Plan of Action (POA) across conversation compactions, defense preparation, and hardware execution.
 
 ```
-┌────────────────────────────────────────────────────────────────────────┐
-│ Phase 1: The Immediate Fix for Stage 3.4 (Deadlock Resolution)        │
-│   ├── Step 1: Eliminate Rear Blind Spot in HAL (-168° to +168°)   ✅   │
-│   ├── Step 2: Upgrade to True Continuous Active Inference         ✅   │
-│   └── Step 3: Run Frozen Stage 3.4 Certification Battery          ⏳   │
-├────────────────────────────────────────────────────────────────────────┤
-│ Phase 2: Complete the 5-Stage Master Dissertation Progression          │
-│   ├── Step 4: Stages 3.5 to 3.7 (Friction, Physarum, Vision)      🔒   │
-│   ├── Step 5: Stage 4 (Lifelong Memory via R-STDP & HDC)          🔒   │
-│   └── Step 6: Stage 5 (Metacognition & "The Witness")             🔒   │
-├────────────────────────────────────────────────────────────────────────┤
-│ Phase 3: Physical Hardware Prototype Demonstration (Viva Defense)      │
-│   └── Step 7: ESP32 Frugal Prototype (₹2,150 BOM & Sim-to-Real)   🔒   │
-└────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│ STAGE 1: Sensorimotor Grounding & Body Babbling                       [COMPLETED ✅]   │
+│   └── 6-channel motor babbling, kinematic slip, traction estimation                    │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ STAGE 2: Generative World & Self Modeling                             [COMPLETED ✅]   │
+│   └── Grounded spatial memory, 2,114-unit CANN attractor, prospective deliberation   │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ STAGE 3: Continuous Action Synthesis & Behavioral Discovery           [COMPLETED ✅]   │
+│   ├── 3.0: Pre-flight integrity & AST anti-cheat quarantine lock                       │
+│   ├── 3.1 & 3.2: CANN causal coupling & spatial memory non-LOS necessity              │
+│   ├── 3.3 & 3.4: Continuous MPPI under Active Inference (Epistemic + Pragmatic)        │
+│   ├── 3.4.2: Smooth action synthesis, suspension stabilization & jerk penalty         │
+│   ├── 3.5: Physical perturbation adaptation (friction drop μ=0.20, torque drag)       │
+│   ├── 3.6: Physarum Hagen-Poiseuille routing & HDC motor synergy clustering           │
+│   └── 3.7: Multi-modal vision (CarlVisionNet), head gaze, 50-episode frozen acceptance│
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ STAGE 4: Autopoietic / Lifelong Memory & Persistence                  [COMPLETED ✅]   │
+│   ├── 4.1: Online Reward-Modulated STDP plasticity & Turrigiano homeostatic bounds    │
+│   ├── 4.2: Holographic Vector Symbolic Memory Architecture (2,048-D FHRR episodic)    │
+│   ├── 4.3: Memory consolidation, NREM SWR offline reverse replay & synaptic scaling   │
+│   └── 4.4: Autopoietic lifelong persistence & WAL/GIS-901 state compounding (SHA-256) │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ STAGE 5: Metacognition & Permission-Gated Self-Modification           [CURRENT ⏳]     │
+│   ├── 5.1: "The Witness" introspective telemetry monitoring engine                     │
+│   ├── 5.2: Abductive causal failure attribution via HDC trace lookup                   │
+│   ├── 5.3: Permission-gated hyperparameter & habit plasticity self-adaptation         │
+│   └── 5.4: Adversarial failure recovery certification suite (30–50 episodes)          │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ M.TECH DISSERTATION & DEFENSE PACKAGE                                 [PRE-PLANNED 🔒] │
+│   ├── Complete thesis chapter writeup, evidence dashboards (awesome_vis_*), p-values   │
+│   └── Lightweight 30-fps headless video demo reel for examination committee           │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│ POST-STAGE 5 RESEARCH: 3D CLUTTER & MORPHOLOGICAL LITMUS TEST         [PLANNED 🔒]     │
+│   ├── Phase A: Complex 3D cluttered / non-planar MuJoCo environment (post-Stage 5)    │
+│   ├── Phase B: Foreign Embodiment Transfer (inject brain into unseen body + timer test)│
+│   └── Phase C: Sim-to-Real Physical Hardware Prototype (₹2,150 BOM on ESP32 + HAL)     │
+└────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Phase 1: The Immediate Fix for Stage 3.4 (Resolving the Deadlock)
+## Plan of Action (POA): Step-by-Step Execution
 
-### Step 1: Eliminate the $120^\circ$ Rear Blind Spot
-* **Target File:** [`brain/carl_stage1_hal.py`](file:///d:/ebca/brain/carl_stage1_hal.py)
-* **Problem:** Distance rays were originally confined to $[-120^\circ, +120^\circ]$. When reversing or pivoting inside narrow $70\text{ cm}$ corridors, the robot was completely blind to rear obstacles.
-* **Implementation:** Expanded the sonar ray array to 15 radial beams spanning $[-168^\circ, +168^\circ]$ at $0.14\text{ m}$ radial offset outside the chassis perimeter.
-* **Status:** **COMPLETED & VERIFIED ✅**
-
----
-
-### Step 2: Upgrade to True Continuous Active Inference (Kill the Canned Menu)
-* **Target File:** [`brain/carl_active_inference.py`](file:///d:/ebca/brain/carl_active_inference.py)
-* **Problem:** Brittle 128 canned action templates, discrete state latches (`_reverse_latched`, `_pivot_done`), and hardcoded Cartesian coordinates (`if c_x < 0.60`) violated the doctoral mandate of autopoietic emergence.
-* **Implementation:**
-  1. **Purged all heuristics:** Deleted all state latches, `if s_left < 0.85` checks, and coordinate cheats.
-  2. **11-Point Chassis Hull Shield:** Evaluates the real rectangular bumper geometry ($23\text{ cm} \times 27\text{ cm}$) in $\mathcal{O}(1)$ time.
-  3. **Continuous Harmonic Potential Field:** Evaluates electrostatic-like wall repulsion ($\mathcal{J}_{\text{rep}} \propto 1/d^2$) for natural hallway centering without conditional logic.
-  4. **Geodesic Navigation Manifold:** Smooth gradient guidance ($\theta_{\text{des}} = -\operatorname{atan2}(\nabla \mathcal{D}_{\text{free}})$) computed via dynamic programming on allocentric occupancy memory.
-  5. **Continuous Velocity Grid ($M=128, H=15$):** Uniform sampling over the 2D velocity manifold ($u_{\text{fwd}} \in [-0.65, 0.75], u_{\text{diff}} \in [-0.90, 0.90]$) blended via softmax path-integral weighting.
-  6. **Static Geometry Caching:** Cached the traversable manifold, dropping mean cycle latency to **4.99 ms** (p95: **5.63 ms**).
-* **Audit:** Passed 7/7 automated tests in [`tests/test_stage3_ast_anti_cheat.py`](file:///d:/ebca/tests/test_stage3_ast_anti_cheat.py) in **21.03 s** (100% clean AST anti-cheat quarantine).
-* **Status:** **COMPLETED & VERIFIED ✅**
+### Step 1: Stage 4 Baseline Freeze & Quarantine Lock
+* **Status:** Complete verification.
+* Ensure all Stage 4 test artifacts and evidence dashboards (`awesome_vis_*`, connectomes, SWR cascades) are archived.
+* Confirm 100% clean AST anti-cheat quarantine across all 14 decision-pipeline files (zero `qpos`, `geom_xpos`, or `mj_ray` coordinate leaks).
+* Commit and tag repository: `v4.4-certified`.
 
 ---
 
-### Step 3: Run the Frozen Stage 3.4 Certification Battery
-* **Target Files:** [`tests/test_stage3_4R4_screening.py`](file:///d:/ebca/tests/test_stage3_4R4_screening.py), [`tests/test_stage3_4R3_certification.py`](file:///d:/ebca/tests/test_stage3_4R3_certification.py)
-* **Objective:** Execute the multi-environment benchmark across all 50 matched configurations $\times$ 4 arms (Cul-de-sac turning bays, asymmetric T-junctions, and narrow non-line-of-sight challenge mazes).
-* **Certification Gates:**
-  * **Gate 1:** Escape Rate $\ge 80.0\%$, Collision Rate $\le 10.0\%$.
-  * **Gate 2:** Complete Emergent Maneuver Verification (Phase 1 reversal $\to$ Phase 2 re-orientation $\to$ Phase 3 corridor entry $\to$ Phase 4 egress).
-  * **Gate 3:** Epistemic Causal Necessity (ARM-A vs ARM-B separation, McNemar $p < 0.001$).
-  * **Gate 4:** Real-Time Cycle Latency: Mean $\le 20.0\text{ ms}$, p95 $\le 45.0\text{ ms}$ (Already achieving **4.99 ms** mean / **5.63 ms** p95).
-  * **Gate 5:** 100% AST Decision Pipeline Isolation (Zero simulator coordinates).
-* **Status:** **UP NEXT (Current Active Milestone) ⏳**
+### Step 2: Stage 5 — Metacognition & Permission-Gated Self-Modification
+* **Target File:** [`brain/carl_witness.py`](file:///d:/ebca/brain/carl_witness.py) (integrated into [`brain/carl_autonomous_agent.py`](file:///d:/ebca/brain/carl_autonomous_agent.py))
+* **Core Principle:** Isolated, clean developmental environment to prevent physics engine artifacts from confounding cognitive failure diagnosis.
+* **Architecture:**
+  1. **Sub-Phase 5.1 ("The Witness" Telemetry Monitoring):**
+     * Introspectively monitors internal signals: prediction error divergence, Free Energy variance, motor stall, CANN drift, endocrine stress hormones (Noradrenaline/Cortisol).
+     * Strictly bounded to unprivileged HAL telemetry (zero simulator cheats).
+  2. **Sub-Phase 5.2 (Abductive Causal Attribution):**
+     * When uncertainty spikes or progress stalls, query 2,048-D HDC episodic memory.
+     * Differentiate: Sensor occlusion vs. wheel slip/traction loss vs. topological dead end vs. actuator saturation.
+     * Formulate structured human-readable introspective diagnoses (the star deliverable for the viva defense).
+  3. **Sub-Phase 5.3 (Permission-Gated Self-Modification):**
+     * Synthesize bounded parameter modulations: MPPI exploration temperature, obstacle repulsion weight, R-STDP habit plasticity rates.
+     * Enforce mathematical safety invariants (clamped bounds; no runaway feedback loops).
+  4. **Sub-Phase 5.4 (Stage 5 Certification Battery):**
+     * 30–50 randomized adversarial traps (cul-de-sacs with sudden friction drops, blind occlusions, symmetric dead ends).
+     * Pass criteria: Significant reduction in time-to-recovery vs. ablation ($p < 0.001$), 0 collisions, 100% clean AST quarantine.
 
 ---
 
-## Phase 2: Complete the 5-Stage Master Dissertation Progression
-
-Once Stage 3.4 is certified and locked, development progresses through the remaining developmental milestones on the unified zero-copy agent bus:
-
-### Step 4: Environmental Adaptation & Canonical Integration (Stages 3.5 – 3.7)
-* **Stage 3.5 — Physical Perturbation & Adaptation:**
-  * Wire [`brain/carl_adaptation.py`](file:///d:/ebca/brain/carl_adaptation.py) and [`brain/carl_endocrine.py`](file:///d:/ebca/brain/carl_endocrine.py).
-  * Test sudden friction collapse ($\mu = 0.20$, ice/oil patches) and motor torque loss.
-  * Morphological slip estimation dynamically scales motor gains, while stress hormone kinetics (Noradrenaline / Cortisol) modulate MPPI temperature $\lambda$ to broaden exploratory candidate spread during high uncertainty.
-* **Stage 3.6 — Behavioral Synergy Formation & Physarum Flow Routing:**
-  * Wire [`brain/carl_physarum.py`](file:///d:/ebca/brain/carl_physarum.py) and [`brain/carl_hdc.py`](file:///d:/ebca/brain/carl_hdc.py).
-  * Slime mold plasmodial flux equations adapt tube network conductivity $D$, causing dead ends to decay and funneling candidate generation toward proven global corridors.
-  * Cluster successful trajectory maneuvers into 10,000-D hypervector motor synergies for instantaneous recall.
-* **Stage 3.7 — Multi-Modal Vision & Full Canonical Reunification:**
-  * Ingest offscreen RGB retinal feed from `eye_cam` via `CarlVisionNet`.
-  * Active neck pan/tilt gaze scanning.
-  * Unify all cognitive organs into the canonical organism ([`brain/carl_autonomous_agent.py`](file:///d:/ebca/brain/carl_autonomous_agent.py)) and execute the final 50-episode adversarial acceptance suite.
-* **Status:** **LOCKED 🔒**
+### Step 3: M.Tech Dissertation Submission & Defense Asset Packaging
+* **Target:** JNTUH UCESTH Mechanical Engineering (IDP AMS) Defense Committee.
+* **Framing Strategy:**
+  * Emphasize **first-principles neuromorphic engineering** (37,500+ lines of native mathematics, not canned black-box ROS/YOLO).
+  * Highlight **edge-compute feasibility**: Complete 10-organ cognitive cycle executes in $< 25\text{ ms}$ on consumer hardware.
+  * Showcase **empirical rigor**: Pre-registered ablation batteries, McNemar / Wilcoxon tests with $p < 10^{-12}$, and AST anti-cheat quarantine.
+* **Assets:**
+  * Compile thesis chapters from generated markdown evidence files.
+  * Presentation slides with embedded high-resolution graphics (`awesome_vis_4_*`).
+  * Headless-rendered 30-fps video runs demonstrating autonomous navigation, slip recovery, and sleep consolidation.
 
 ---
 
-### Step 5: Stage 4 — Autopoietic / Lifelong Memory & Persistence
-* **Target Files:** [`brain/carl_stdp.py`](file:///d:/ebca/brain/carl_stdp.py), [`brain/carl_hdc.py`](file:///d:/ebca/brain/carl_hdc.py)
-* **Capabilities:**
-  * **Online R-STDP Plasticity:** Reward-modulated Spike-Timing-Dependent Plasticity converts recurring Active Inference policies into fast reflex habits without catastrophic forgetting.
-  * **Holographic Episodic Memory:** Multi-modal state binding across high-dimensional space ($[P \otimes S \otimes E]$).
-  * **GIS-901 State Compounding:** Compounding spatial knowledge and topological graphs across multiple simulated lifespans.
-* **Status:** **FUTURE MILESTONE 🔒**
+### Step 4: Post-Stage 5 Research & Morphological Transfer Test
+* **Rationale for Timing:** Introducing complex 3D environments *only after* Stage 5 is fully certified prevents confounding cognitive failure attribution with mesh collision bugs.
 
----
+#### Phase A: Heavy 3D Cluttered Environment
+* Introduce 3D non-planar terrain (slopes, ramps, rough ground) and dynamic clutter obstacles in MuJoCo.
+* Validate that CARL's virtual suspension, pitch stabilization, and Active Inference MPPI scale seamlessly to 3D dynamics.
 
-### Step 6: Stage 5 — Metacognition ("The Witness")
-* **Target File:** [`brain/carl_witness.py`](file:///d:/ebca/brain/carl_witness.py)
-* **Capabilities:**
-  * **Introspective Failure Analysis:** An introspective metacognitive cortex monitors prediction error surges and candidate veto rates.
-  * **Abductive Causal Attribution:** Diagnoses failure causes (distinguishing sensor lag, friction loss, or clearance misjudgment).
-  * **Introspective Monologue:** Generates transparent, human-readable failure attribution explanations (the centerpiece for your viva defense presentation).
-  * **Permission-Gated Self-Improvement:** Proposes formal parameter updates to the human user with mathematical proof before execution.
-* **Status:** **FINAL MATURITY 🔒**
+#### Phase B: The Foreign Embodiment Transfer Experiment (The Litmus Test)
+* **The Hypothesis:** If CARL-DX is a true developmental cognitive architecture and not an overfitted maze solver, the cognitive core should autonomously adapt to a foreign robot body without manual code changes.
+* **Protocol:**
+  1. Inject checkpointed brain into an unseen morphology (e.g., 4-wheel skid steer, asymmetric wheel diameters, or altered center-of-mass).
+  2. Start the clock ($T$).
+  3. CARL initiates Stage 1 body babbling to re-discover motor-sensory kinematics.
+  4. Measure time-to-adaptation, stability recovery, and maze navigation success vs. a tabula rasa baseline.
+* **Academic Significance:** Proves true morphological adaptability; publishable in international developmental robotics conferences (e.g., IEEE ICDL / ALIFE).
 
----
-
-## Phase 3: Physical Hardware Prototype Demonstration (Viva Defense)
-
-### Step 7: Build the ₹2,150 Frugal Physical Hardware Prototype
+#### Phase C: Sim-to-Real Physical Hardware Prototype
 * **Specification File:** [`docs/CARL_STUDENT_FRUGAL_HARDWARE_BOM.md`](file:///d:/ebca/docs/CARL_STUDENT_FRUGAL_HARDWARE_BOM.md)
-* **Hardware Architecture:**
-  * Microcontroller: ESP32 Dual-Core (Wi-Fi/Bluetooth PNS peripheral bridge).
-  * Sensors: Array of VL53L0X / VL53L1X Time-of-Flight distance sensors + MPU6050 6-DoF IMU.
-  * Actuators: N20 Micro Metal Gearmotors driven by DRV8833 H-Bridge.
-  * Chassis: 3D printed / laser-cut acrylic differential-drive chassis matching digital twin dimensions ($23\text{ cm} \times 27\text{ cm}$).
-* **Software Bridge (Sim-to-Real):**
-  * Micro-ROS / UDP socket interface streaming unprivileged sensor readings over Wi-Fi to the laptop workstation running CARL's Active Inference brain at 30 Hz.
-  * Return stream transmits continuous wheel velocity PWM commands back to the ESP32.
-* **Viva Presentation Value:** Proves that the digital twin developed in JNTUH's Mechanical Engineering department is not just a simulation exercise, but a deployed physical robotic architecture.
-* **Status:** **READY FOR HARDWARE SOURCING & ASSEMBLY 🔒**
+* **Budget:** ₹2,150 frugal bill of materials (ESP32 dual-core, VL53L0X ToF array, MPU6050 IMU, DRV8833, N20 metal gearmotors).
+* **Bridge:** UDP/Wi-Fi unprivileged HAL bridge streaming real sensor data to laptop workstation and returning PWM wheel commands at 30 Hz.
 
 ---
 
-## Master Checklist & Progress Tracker
+## Computational Invariants & Laptop Health Protocol
 
-| Milestone | Sub-Step | Deliverable | Status |
-|---|---|---|:---:|
-| **Phase 1** | **Step 1** | Eliminate Rear Blind Spot (15 rays, $[-168^\circ, +168^\circ]$) | **DONE ✅** |
-| **Phase 1** | **Step 2** | Pure Continuous Active Inference & AST Anti-Cheat Pass | **DONE ✅** |
-| **Phase 1** | **Step 3** | Run Frozen Stage 3.4 Multi-Environment Certification Battery | **CURRENT ⏳** |
-| **Phase 2** | **Step 4** | Stages 3.5 – 3.7 (Friction Adaptation, Physarum, Vision) | **NEXT 🔒** |
-| **Phase 2** | **Step 5** | Stage 4 (Lifelong Synaptic Memory via R-STDP & HDC) | **PLANNED 🔒** |
-| **Phase 2** | **Step 6** | Stage 5 (Metacognitive "Witness" & Monologue) | **PLANNED 🔒** |
-| **Phase 3** | **Step 7** | Physical Frugal Hardware Demonstration (₹2,150 Prototype) | **PLANNED 🔒** |
+* **Machine:** Lenovo IdeaPad Gaming 3 (i5-13450HX, 16GB RAM, RTX 3050 6GB Laptop).
+* **Headless Simulation Mandate:** All benchmark certification runs and training cycles must run in headless mode (`render=False`). MuJoCo math executes in pure C/Python at $10\times$–$20\times$ real-time speed.
+* **Thread Throttling:** Limit concurrent CPU worker threads to 8–10 out of the 16 available threads. This guarantees your laptop never freezes, thermals stay cool, and daily workflow/browser remain completely responsive.
+* **Memory Ceiling:** Memory footprint for the entire 2,114-unit network, HDC hypervectors, and MPPI rollout buffer is strictly clamped to $< 1.5\text{ GB}$ RAM.
 
 ---
 
-*This document serves as the permanent, immutable engineering record for CARL-DX developmental progression. It must be preserved across conversation compaction and used to guide all subsequent sprints.*
+*This document is the official execution charter for Stage 5 through final viva defense and physical embodiment.*

@@ -1,0 +1,4693 @@
+{
+  "embodiment": "Google DeepMind Franka Emika Panda",
+  "source": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/franka_emika_panda",
+  "task": "Pure-Contact Pick-and-Place Manipulation",
+  "weld_used": false,
+  "physics_engine": "MuJoCo 3.x (integrator=implicitfast, friction=3.5)",
+  "success": true,
+  "final_cube_pos": [
+    0.059368917471286274,
+    0.5506182783560022,
+    0.43778900212499083
+  ],
+  "final_dist_to_basket_m": 0.05147802170159118,
+  "total_frames": 275,
+  "sha256": "144aea073c8b125e966169f4faa64c24610ad2876f4dde63978e3825dff47e7c",
+  "frame_analysis": [
+    {
+      "step": 0,
+      "time_sec": 0.0,
+      "cube_pos": [
+        0.5,
+        0.0,
+        0.42
+      ],
+      "hand_pos": [
+        0.5544994780317354,
+        -2.6377536518327582e-33,
+        0.6245024294875892
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 6,
+      "time_sec": 0.012,
+      "cube_pos": [
+        0.5,
+        -4.2180248358756686e-24,
+        0.41961646407494047
+      ],
+      "hand_pos": [
+        0.5525165084201379,
+        -1.338773559893279e-05,
+        0.6229873845697294
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 12,
+      "time_sec": 0.024,
+      "cube_pos": [
+        0.5,
+        7.192984039915957e-20,
+        0.4189701720844232
+      ],
+      "hand_pos": [
+        0.5486618517926212,
+        9.905465497385363e-06,
+        0.6222870200471361
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 18,
+      "time_sec": 0.036000000000000004,
+      "cube_pos": [
+        0.5,
+        1.8849305705390833e-19,
+        0.41847930883060686
+      ],
+      "hand_pos": [
+        0.5442462893866306,
+        3.909097909869553e-05,
+        0.6235567650057939
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 24,
+      "time_sec": 0.048,
+      "cube_pos": [
+        0.5,
+        3.198849097563983e-19,
+        0.41815408519990405
+      ],
+      "hand_pos": [
+        0.5395970834921423,
+        6.990381975341195e-05,
+        0.6262853334065587
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 30,
+      "time_sec": 0.06,
+      "cube_pos": [
+        0.5,
+        4.3117558508423665e-19,
+        0.41795436166381844
+      ],
+      "hand_pos": [
+        0.5352748819646392,
+        0.00010360844733451986,
+        0.6292629192010845
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 36,
+      "time_sec": 0.07200000000000001,
+      "cube_pos": [
+        0.5,
+        5.448567357277445e-19,
+        0.41784186266161044
+      ],
+      "hand_pos": [
+        0.5313845923447478,
+        0.0001314818901371595,
+        0.6320054668377676
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 42,
+      "time_sec": 0.084,
+      "cube_pos": [
+        0.5,
+        6.779177431117572e-19,
+        0.4177855547337464
+      ],
+      "hand_pos": [
+        0.5279212330934859,
+        0.00015065184478730743,
+        0.6344131227352657
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 48,
+      "time_sec": 0.096,
+      "cube_pos": [
+        0.5,
+        8.246970049580897e-19,
+        0.417762723280573
+      ],
+      "hand_pos": [
+        0.52485067433734,
+        0.00016147028707555583,
+        0.636495587145875
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 54,
+      "time_sec": 0.108,
+      "cube_pos": [
+        0.5,
+        9.839662758314551e-19,
+        0.41775803130938705
+      ],
+      "hand_pos": [
+        0.522133064457212,
+        0.00016532089655718884,
+        0.6382891295381786
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 60,
+      "time_sec": 0.12,
+      "cube_pos": [
+        0.5,
+        1.154337776951072e-18,
+        0.4177618750206009
+      ],
+      "hand_pos": [
+        0.519729855006242,
+        0.00016369083701184671,
+        0.63983269478858
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 66,
+      "time_sec": 0.132,
+      "cube_pos": [
+        0.5,
+        1.3760570929596028e-18,
+        0.4177687160918311
+      ],
+      "hand_pos": [
+        0.5176057131221132,
+        0.00015787862654154423,
+        0.6411616417207116
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 72,
+      "time_sec": 0.14400000000000002,
+      "cube_pos": [
+        0.5,
+        1.5996218178657017e-18,
+        0.4177756848811846
+      ],
+      "hand_pos": [
+        0.5157288533079941,
+        0.00014894428669424083,
+        0.6423066095722758
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 78,
+      "time_sec": 0.156,
+      "cube_pos": [
+        0.5,
+        1.7980269945883205e-18,
+        0.4177815345540104
+      ],
+      "hand_pos": [
+        0.5140708927689125,
+        0.00013773493501498837,
+        0.6432937841755355
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 84,
+      "time_sec": 0.168,
+      "cube_pos": [
+        0.5,
+        1.9749333964007192e-18,
+        0.4177859211936733
+      ],
+      "hand_pos": [
+        0.5126065750796178,
+        0.00012492608104942995,
+        0.6441454736556016
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 90,
+      "time_sec": 0.18,
+      "cube_pos": [
+        0.5,
+        2.1905471578619546e-18,
+        0.41778894434657804
+      ],
+      "hand_pos": [
+        0.5113134701524388,
+        0.0001110600979313872,
+        0.6448806890967941
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 96,
+      "time_sec": 0.192,
+      "cube_pos": [
+        0.5,
+        2.4089364768847533e-18,
+        0.4177908761508212
+      ],
+      "hand_pos": [
+        0.5101716844255334,
+        9.657748922987889e-05,
+        0.6455156560086148
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 102,
+      "time_sec": 0.20400000000000001,
+      "cube_pos": [
+        0.5,
+        2.6467546988384917e-18,
+        0.4177920166081684
+      ],
+      "hand_pos": [
+        0.509163591680018,
+        8.184093726636237e-05,
+        0.6460642476714745
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 108,
+      "time_sec": 0.216,
+      "cube_pos": [
+        0.5,
+        2.9095529388462967e-18,
+        0.4177926270931288
+      ],
+      "hand_pos": [
+        0.5082735871511165,
+        6.715323353629581e-05,
+        0.6465383482060499
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 114,
+      "time_sec": 0.228,
+      "cube_pos": [
+        0.5,
+        3.1765145151964453e-18,
+        0.4177929084670375
+      ],
+      "hand_pos": [
+        0.5074878648796323,
+        5.277031096016628e-05,
+        0.6469481561251474
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 120,
+      "time_sec": 0.24,
+      "cube_pos": [
+        0.5,
+        3.4190809546231767e-18,
+        0.4177930019242127
+      ],
+      "hand_pos": [
+        0.506794217215074,
+        3.891045335857026e-05,
+        0.6473024383672539
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 126,
+      "time_sec": 0.252,
+      "cube_pos": [
+        0.5,
+        3.598456891258604e-18,
+        0.4177929994021076
+      ],
+      "hand_pos": [
+        0.5061818549671978,
+        2.5760571856080065e-05,
+        0.6476087432987161
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 132,
+      "time_sec": 0.264,
+      "cube_pos": [
+        0.5,
+        3.753767775354611e-18,
+        0.4177929563220173
+      ],
+      "hand_pos": [
+        0.5056412465504858,
+        1.3480270729482477e-05,
+        0.6478735796988133
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 138,
+      "time_sec": 0.276,
+      "cube_pos": [
+        0.5,
+        3.9449519356012704e-18,
+        0.4177929031791906
+      ],
+      "hand_pos": [
+        0.5051639744418728,
+        2.2042874235390044e-06,
+        0.6481025674864961
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 144,
+      "time_sec": 0.28800000000000003,
+      "cube_pos": [
+        0.5,
+        4.130939931791117e-18,
+        0.4177928546896898
+      ],
+      "hand_pos": [
+        0.5047426073170798,
+        -7.95621947194553e-06,
+        0.6483005649180125
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (APPROACH)",
+      "phase": "PHASE 1: TARGET LOCATING & HOVER APPROACH"
+    },
+    {
+      "step": 150,
+      "time_sec": 0.3,
+      "cube_pos": [
+        0.5,
+        4.32370785529053e-18,
+        0.4177928163535194
+      ],
+      "hand_pos": [
+        0.5043705863147444,
+        -1.691314986770326e-05,
+        0.6484717761492526
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 156,
+      "time_sec": 0.312,
+      "cube_pos": [
+        0.5,
+        4.54284357562479e-18,
+        0.4177927888091806
+      ],
+      "hand_pos": [
+        0.5036600794002309,
+        -6.471684525256122e-05,
+        0.6459782551697775
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 162,
+      "time_sec": 0.324,
+      "cube_pos": [
+        0.5,
+        4.780020420109208e-18,
+        0.41779277051179975
+      ],
+      "hand_pos": [
+        0.5040462473701648,
+        -0.00010215052780273261,
+        0.6372228273484839
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 168,
+      "time_sec": 0.336,
+      "cube_pos": [
+        0.5,
+        5.004707255566593e-18,
+        0.4177927592443921
+      ],
+      "hand_pos": [
+        0.5053627374428774,
+        -0.00010222606634102722,
+        0.6233911410258516
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 174,
+      "time_sec": 0.34800000000000003,
+      "cube_pos": [
+        0.5,
+        5.1834709135481715e-18,
+        0.41779275287635836
+      ],
+      "hand_pos": [
+        0.5068791904910556,
+        -8.984913242005631e-05,
+        0.6084324270632968
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 180,
+      "time_sec": 0.36,
+      "cube_pos": [
+        0.5,
+        5.316513316169077e-18,
+        0.41779274967281177
+      ],
+      "hand_pos": [
+        0.50793568941329,
+        -8.74337013032403e-05,
+        0.5944884795542366
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 186,
+      "time_sec": 0.372,
+      "cube_pos": [
+        0.5,
+        5.419383540115297e-18,
+        0.41779274836001445
+      ],
+      "hand_pos": [
+        0.5084816725148688,
+        -8.880283620328524e-05,
+        0.5820010487423611
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 192,
+      "time_sec": 0.384,
+      "cube_pos": [
+        0.5,
+        5.51809235513497e-18,
+        0.4177927480756544
+      ],
+      "hand_pos": [
+        0.5086309808530565,
+        -9.021719528566555e-05,
+        0.5709648421877953
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 198,
+      "time_sec": 0.396,
+      "cube_pos": [
+        0.5,
+        5.621054820488682e-18,
+        0.4177927482783233
+      ],
+      "hand_pos": [
+        0.5084975247606142,
+        -9.05458302991028e-05,
+        0.5612548444442002
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 204,
+      "time_sec": 0.40800000000000003,
+      "cube_pos": [
+        0.5,
+        5.736941504828925e-18,
+        0.41779274865481897
+      ],
+      "hand_pos": [
+        0.508172779520745,
+        -8.974672714378472e-05,
+        0.5527255042094431
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 210,
+      "time_sec": 0.42,
+      "cube_pos": [
+        0.5,
+        5.8887526911074244e-18,
+        0.41779274904213026
+      ],
+      "hand_pos": [
+        0.5077257157253221,
+        -8.80981750219129e-05,
+        0.5452379687108149
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 216,
+      "time_sec": 0.432,
+      "cube_pos": [
+        0.5,
+        6.133545055698281e-18,
+        0.4177927493688306
+      ],
+      "hand_pos": [
+        0.5072074725933136,
+        -8.029532596814934e-05,
+        0.5386672969951026
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 222,
+      "time_sec": 0.444,
+      "cube_pos": [
+        0.5,
+        6.3450307295503824e-18,
+        0.41779274961462887
+      ],
+      "hand_pos": [
+        0.5066543796159774,
+        -6.457630209785064e-05,
+        0.5329021112821527
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 228,
+      "time_sec": 0.456,
+      "cube_pos": [
+        0.5,
+        6.606476439510616e-18,
+        0.4177927497844861
+      ],
+      "hand_pos": [
+        0.5060919924260356,
+        -4.922353714505406e-05,
+        0.5278434285954352
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 234,
+      "time_sec": 0.468,
+      "cube_pos": [
+        0.5,
+        6.85959547678616e-18,
+        0.4177927498933104
+      ],
+      "hand_pos": [
+        0.5055381894502311,
+        -3.595248395101236e-05,
+        0.5234044294687796
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 240,
+      "time_sec": 0.48,
+      "cube_pos": [
+        0.5,
+        7.032728899076579e-18,
+        0.41779274995774607
+      ],
+      "hand_pos": [
+        0.5050049855140718,
+        -2.449869251298257e-05,
+        0.5195089678344129
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 246,
+      "time_sec": 0.492,
+      "cube_pos": [
+        0.5,
+        7.17444512941411e-18,
+        0.4177927499923761
+      ],
+      "hand_pos": [
+        0.504499883170208,
+        -1.5270149527780868e-05,
+        0.5160900540615304
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 252,
+      "time_sec": 0.504,
+      "cube_pos": [
+        0.5,
+        7.277198772427789e-18,
+        0.41779275000844684
+      ],
+      "hand_pos": [
+        0.5040273675510435,
+        -7.653394481317836e-06,
+        0.5130891237866545
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 258,
+      "time_sec": 0.516,
+      "cube_pos": [
+        0.5,
+        7.42580307370604e-18,
+        0.41779275001388644
+      ],
+      "hand_pos": [
+        0.5036067299838315,
+        -3.744468185860053e-05,
+        0.510509375358752
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 264,
+      "time_sec": 0.528,
+      "cube_pos": [
+        0.5,
+        7.584636811762697e-18,
+        0.4177927500138704
+      ],
+      "hand_pos": [
+        0.5032499463360965,
+        -0.00016491301674474707,
+        0.5085504877576941
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 270,
+      "time_sec": 0.54,
+      "cube_pos": [
+        0.5,
+        7.80036947983139e-18,
+        0.4177927500115276
+      ],
+      "hand_pos": [
+        0.502926415952288,
+        -0.00029949607800617184,
+        0.5070271590688938
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 276,
+      "time_sec": 0.552,
+      "cube_pos": [
+        0.5,
+        8.039694387173369e-18,
+        0.4177927500085858
+      ],
+      "hand_pos": [
+        0.5026361476538644,
+        -0.0004167407415284943,
+        0.5057871499914459
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 282,
+      "time_sec": 0.5640000000000001,
+      "cube_pos": [
+        0.5,
+        8.31093820647332e-18,
+        0.4177927500058837
+      ],
+      "hand_pos": [
+        0.5023768345552245,
+        -0.0005119290500867457,
+        0.504760410118068
+      ],
+      "dist_to_basket_m": 0.6726812023536856,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 288,
+      "time_sec": 0.5760000000000001,
+      "cube_pos": [
+        0.4999975949537869,
+        9.596897095520405e-07,
+        0.41779120342487575
+      ],
+      "hand_pos": [
+        0.5021456382238638,
+        -0.0005855941235301932,
+        0.5039048132422166
+      ],
+      "dist_to_basket_m": 0.6726788801318233,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 294,
+      "time_sec": 0.588,
+      "cube_pos": [
+        0.49995076854370996,
+        2.1195936390235292e-05,
+        0.4177536438740334
+      ],
+      "hand_pos": [
+        0.5019398714582638,
+        -0.0006397553779285254,
+        0.503190309136987
+      ],
+      "dist_to_basket_m": 0.6726325138037507,
+      "gripper_status": "OPEN (FLANKING CUBE)",
+      "phase": "PHASE 2: PRECISION VERTICAL DESCENT"
+    },
+    {
+      "step": 300,
+      "time_sec": 0.6,
+      "cube_pos": [
+        0.49987573360832116,
+        5.6095470823437445e-05,
+        0.4176636075418325
+      ],
+      "hand_pos": [
+        0.5017568644183262,
+        -0.0006770342141307676,
+        0.5025931102067218
+      ],
+      "dist_to_basket_m": 0.6725563793210972,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 306,
+      "time_sec": 0.612,
+      "cube_pos": [
+        0.4997923303518065,
+        9.448082096547967e-05,
+        0.417504049227995
+      ],
+      "hand_pos": [
+        0.5015949259254663,
+        -0.0006997966364520392,
+        0.5020992018097701
+      ],
+      "dist_to_basket_m": 0.6724720578202255,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 312,
+      "time_sec": 0.624,
+      "cube_pos": [
+        0.49971470423018843,
+        0.00013176659511613054,
+        0.41732651511435503
+      ],
+      "hand_pos": [
+        0.5014522399259632,
+        -0.0007116306593025904,
+        0.5017028229205136
+      ],
+      "dist_to_basket_m": 0.6723924196242588,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 318,
+      "time_sec": 0.636,
+      "cube_pos": [
+        0.4996596668119002,
+        0.00016253013905329484,
+        0.41714491617512905
+      ],
+      "hand_pos": [
+        0.5013275236384995,
+        -0.0007124737568013719,
+        0.5013964740144442
+      ],
+      "dist_to_basket_m": 0.6723327392254388,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 324,
+      "time_sec": 0.648,
+      "cube_pos": [
+        0.4996458329202681,
+        0.00017311326159205555,
+        0.41706066459216756
+      ],
+      "hand_pos": [
+        0.5012238329956998,
+        -0.0006925204984266103,
+        0.5012850481220976
+      ],
+      "dist_to_basket_m": 0.6723156191619908,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 330,
+      "time_sec": 0.66,
+      "cube_pos": [
+        0.49964760960391025,
+        0.00017612934471367258,
+        0.4170193205535808
+      ],
+      "hand_pos": [
+        0.5011307477176458,
+        -0.0006544597487897205,
+        0.5013104574426357
+      ],
+      "dist_to_basket_m": 0.672314565139967,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 336,
+      "time_sec": 0.672,
+      "cube_pos": [
+        0.4996548272160096,
+        0.00016695488462290263,
+        0.41704042388956564
+      ],
+      "hand_pos": [
+        0.5010479092670803,
+        -0.0006106877910860657,
+        0.5013729557360577
+      ],
+      "dist_to_basket_m": 0.6723262129561587,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 342,
+      "time_sec": 0.684,
+      "cube_pos": [
+        0.49965258978964533,
+        0.00014073666696886022,
+        0.4170984734119675
+      ],
+      "hand_pos": [
+        0.5009696881726597,
+        -0.0005746044710308572,
+        0.5013863665087952
+      ],
+      "dist_to_basket_m": 0.6723442084560375,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 348,
+      "time_sec": 0.6960000000000001,
+      "cube_pos": [
+        0.4996473056837687,
+        0.00012989702441713554,
+        0.41715897457888595
+      ],
+      "hand_pos": [
+        0.5008980616378369,
+        -0.0005428477588275589,
+        0.5013437859730813
+      ],
+      "dist_to_basket_m": 0.6723487334393458,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 354,
+      "time_sec": 0.708,
+      "cube_pos": [
+        0.49964587858921455,
+        0.0001329416718577798,
+        0.4172170331205843
+      ],
+      "hand_pos": [
+        0.5008367920914069,
+        -0.0005052365333941044,
+        0.5013343128039054
+      ],
+      "dist_to_basket_m": 0.672345515441203,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 360,
+      "time_sec": 0.72,
+      "cube_pos": [
+        0.49964387388429565,
+        0.0001267507070148563,
+        0.4172594360576112
+      ],
+      "hand_pos": [
+        0.500780960206571,
+        -0.00047097100474512296,
+        0.5013211090665992
+      ],
+      "dist_to_basket_m": 0.6723487775555208,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 366,
+      "time_sec": 0.732,
+      "cube_pos": [
+        0.49964303492032236,
+        0.00012289599331293433,
+        0.4172890373676024
+      ],
+      "hand_pos": [
+        0.5007317083208411,
+        -0.0004378568295621896,
+        0.5013119980233895
+      ],
+      "dist_to_basket_m": 0.6723510823687804,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 372,
+      "time_sec": 0.744,
+      "cube_pos": [
+        0.49964342264492223,
+        0.00012072459098013441,
+        0.4173081277952096
+      ],
+      "hand_pos": [
+        0.5006881809024719,
+        -0.0004064614048870405,
+        0.5013054893406499
+      ],
+      "dist_to_basket_m": 0.6723529560515719,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 378,
+      "time_sec": 0.756,
+      "cube_pos": [
+        0.49963954577242187,
+        0.00011515324356190326,
+        0.4173142142868454
+      ],
+      "hand_pos": [
+        0.5006491365103436,
+        -0.0003783157935327634,
+        0.5012927502291321
+      ],
+      "dist_to_basket_m": 0.6723545055542779,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 384,
+      "time_sec": 0.768,
+      "cube_pos": [
+        0.49962011583060495,
+        9.493289780382886e-05,
+        0.41731675929537276
+      ],
+      "hand_pos": [
+        0.5006149059354753,
+        -0.00035173351988115697,
+        0.5012843922890609
+      ],
+      "dist_to_basket_m": 0.6723565457954417,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 390,
+      "time_sec": 0.78,
+      "cube_pos": [
+        0.49958039531910103,
+        5.04579289844882e-05,
+        0.41731462166503325
+      ],
+      "hand_pos": [
+        0.5005843744808739,
+        -0.0003272817008324328,
+        0.501277872716324
+      ],
+      "dist_to_basket_m": 0.672363054065508,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 396,
+      "time_sec": 0.792,
+      "cube_pos": [
+        0.4995282628691379,
+        -1.9648581877829664e-05,
+        0.4173142177895362
+      ],
+      "hand_pos": [
+        0.5005571025546641,
+        -0.00030474790496629804,
+        0.5012716612166859
+      ],
+      "dist_to_basket_m": 0.6723803299369259,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 402,
+      "time_sec": 0.804,
+      "cube_pos": [
+        0.4994680192706101,
+        -0.00011720636876828897,
+        0.4173099142168645
+      ],
+      "hand_pos": [
+        0.5005326984167341,
+        -0.0002839870514435682,
+        0.5012652850923935
+      ],
+      "dist_to_basket_m": 0.6724126117594366,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 408,
+      "time_sec": 0.8160000000000001,
+      "cube_pos": [
+        0.4993988134646851,
+        -0.00022326200656729427,
+        0.41731165116816005
+      ],
+      "hand_pos": [
+        0.5005112261787141,
+        -0.00026391627248527116,
+        0.5012638041131516
+      ],
+      "dist_to_basket_m": 0.6724452434183453,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 414,
+      "time_sec": 0.8280000000000001,
+      "cube_pos": [
+        0.499320678311787,
+        -0.0003342734131377551,
+        0.41731260809072673
+      ],
+      "hand_pos": [
+        0.5004918393282333,
+        -0.00024597904742077717,
+        0.5012592376940931
+      ],
+      "dist_to_basket_m": 0.6724756182274692,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 420,
+      "time_sec": 0.84,
+      "cube_pos": [
+        0.49923964449487407,
+        -0.00044417422341144953,
+        0.4173115451233139
+      ],
+      "hand_pos": [
+        0.5004747737686207,
+        -0.00022860550062012874,
+        0.5012591683738189
+      ],
+      "dist_to_basket_m": 0.672503256274669,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 426,
+      "time_sec": 0.852,
+      "cube_pos": [
+        0.49915953583360767,
+        -0.0005431762910228749,
+        0.4173119099719262
+      ],
+      "hand_pos": [
+        0.5004595733618257,
+        -0.0002127095001940179,
+        0.5012571319897401
+      ],
+      "dist_to_basket_m": 0.672523427072818,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 432,
+      "time_sec": 0.864,
+      "cube_pos": [
+        0.49908136679197296,
+        -0.0006321318846163207,
+        0.41731367829591376
+      ],
+      "hand_pos": [
+        0.5004460273869341,
+        -0.00019768100010084645,
+        0.5012564970191679
+      ],
+      "dist_to_basket_m": 0.672537437972848,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 438,
+      "time_sec": 0.876,
+      "cube_pos": [
+        0.49900477396481624,
+        -0.0007155642897025254,
+        0.41731500506416364
+      ],
+      "hand_pos": [
+        0.5004339728928164,
+        -0.000183788414325378,
+        0.5012556625559399
+      ],
+      "dist_to_basket_m": 0.672548409681527,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 444,
+      "time_sec": 0.888,
+      "cube_pos": [
+        0.49892802811015935,
+        -0.0007944396647336763,
+        0.4173155311679241
+      ],
+      "hand_pos": [
+        0.500423155953683,
+        -0.00017092866847307948,
+        0.501254727550771
+      ],
+      "dist_to_basket_m": 0.6725559049045593,
+      "gripper_status": "CLAMPED (CONTACT FRICTION)",
+      "phase": "PHASE 3: FINGER FRICTION CLAMP"
+    },
+    {
+      "step": 450,
+      "time_sec": 0.9,
+      "cube_pos": [
+        0.49885182578860465,
+        -0.0008692034940671566,
+        0.41731775522302006
+      ],
+      "hand_pos": [
+        0.5004137103574313,
+        -0.000158820723056992,
+        0.5012546790338019
+      ],
+      "dist_to_basket_m": 0.6725607188370022,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 456,
+      "time_sec": 0.912,
+      "cube_pos": [
+        0.49917813119324983,
+        -0.0010754588247776844,
+        0.41858519823556606
+      ],
+      "hand_pos": [
+        0.5017727522746988,
+        5.073025276513827e-05,
+        0.502189039987735
+      ],
+      "dist_to_basket_m": 0.6729320983418177,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 462,
+      "time_sec": 0.924,
+      "cube_pos": [
+        0.4990821926143519,
+        -0.0014094334168302225,
+        0.4235183267176528
+      ],
+      "hand_pos": [
+        0.5037300936360432,
+        0.000145347580331653,
+        0.5066156145859987
+      ],
+      "dist_to_basket_m": 0.6731168068342229,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 468,
+      "time_sec": 0.936,
+      "cube_pos": [
+        0.49897456626410647,
+        -0.0017200965017765137,
+        0.4325518531359824
+      ],
+      "hand_pos": [
+        0.5054588607532629,
+        0.00011522022519973123,
+        0.5150982258141859
+      ],
+      "dist_to_basket_m": 0.673276478414176,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 474,
+      "time_sec": 0.9480000000000001,
+      "cube_pos": [
+        0.5013080866657164,
+        -0.0017962792182546787,
+        0.44559183216102594
+      ],
+      "hand_pos": [
+        0.5081238040489592,
+        9.082192841256542e-05,
+        0.5275988319363977
+      ],
+      "dist_to_basket_m": 0.6748914689986489,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 480,
+      "time_sec": 0.96,
+      "cube_pos": [
+        0.5050118950625624,
+        -0.0016788272614893921,
+        0.46226283584204303
+      ],
+      "hand_pos": [
+        0.5113937336410724,
+        5.521124490331628e-05,
+        0.5436439400805497
+      ],
+      "dist_to_basket_m": 0.6772868449710858,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 486,
+      "time_sec": 0.972,
+      "cube_pos": [
+        0.5075398313003138,
+        -0.0013747747940478867,
+        0.4799680299714481
+      ],
+      "hand_pos": [
+        0.5133527516366886,
+        4.3815164460817116e-07,
+        0.5605089273314344
+      ],
+      "dist_to_basket_m": 0.6787631118631167,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 492,
+      "time_sec": 0.984,
+      "cube_pos": [
+        0.5095551367200916,
+        -0.0010163961112208484,
+        0.49754488451198936
+      ],
+      "hand_pos": [
+        0.5142415875314325,
+        -3.926211983505195e-05,
+        0.5761517427281104
+      ],
+      "dist_to_basket_m": 0.6798590683796883,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 498,
+      "time_sec": 0.996,
+      "cube_pos": [
+        0.5112249292328518,
+        -0.0007774433996187707,
+        0.5130211062925807
+      ],
+      "hand_pos": [
+        0.5144783197250894,
+        -6.669144815911219e-05,
+        0.590092171542491
+      ],
+      "dist_to_basket_m": 0.6808131044300686,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 504,
+      "time_sec": 1.008,
+      "cube_pos": [
+        0.5123398415796758,
+        -0.0006339921366787951,
+        0.5260450291357442
+      ],
+      "hand_pos": [
+        0.5142799171687427,
+        -8.710897526766653e-05,
+        0.602376706237496
+      ],
+      "dist_to_basket_m": 0.6814635156738972,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 510,
+      "time_sec": 1.02,
+      "cube_pos": [
+        0.5130243281599057,
+        -0.000641575564478231,
+        0.5368768246388208
+      ],
+      "hand_pos": [
+        0.5137955331992945,
+        -0.00011307260391814428,
+        0.6131592351472633
+      ],
+      "dist_to_basket_m": 0.6819336592745773,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 516,
+      "time_sec": 1.032,
+      "cube_pos": [
+        0.5133778134491462,
+        -0.0007476547420401578,
+        0.5462093908121554
+      ],
+      "hand_pos": [
+        0.5131335051548778,
+        -0.00013863825186895168,
+        0.622609339083165
+      ],
+      "dist_to_basket_m": 0.6822515751000985,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 522,
+      "time_sec": 1.044,
+      "cube_pos": [
+        0.5134592718907467,
+        -0.000915411310984843,
+        0.5542123643803802
+      ],
+      "hand_pos": [
+        0.512370677516185,
+        -0.00015888339604505083,
+        0.6308881587860701
+      ],
+      "dist_to_basket_m": 0.6824300301059107,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 528,
+      "time_sec": 1.056,
+      "cube_pos": [
+        0.5133644437377772,
+        -0.001195823410124537,
+        0.5614255051291773
+      ],
+      "hand_pos": [
+        0.5115614807162702,
+        -0.00017484511860086423,
+        0.6381381209542133
+      ],
+      "dist_to_basket_m": 0.6825715062351875,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 534,
+      "time_sec": 1.068,
+      "cube_pos": [
+        0.5131980442527476,
+        -0.0014326840421277096,
+        0.5678210028192031
+      ],
+      "hand_pos": [
+        0.5107441476875607,
+        -0.0001871518581603298,
+        0.644488223119703
+      ],
+      "dist_to_basket_m": 0.6826325254668595,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 540,
+      "time_sec": 1.08,
+      "cube_pos": [
+        0.513057682364162,
+        -0.001651078260514407,
+        0.5734214776947224
+      ],
+      "hand_pos": [
+        0.5099443366104985,
+        -0.000196002290215502,
+        0.6500505584464714
+      ],
+      "dist_to_basket_m": 0.6826977526815259,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 546,
+      "time_sec": 1.092,
+      "cube_pos": [
+        0.5129359501022226,
+        -0.0018723826829452708,
+        0.5783276515258087
+      ],
+      "hand_pos": [
+        0.509179414318112,
+        -0.00020230183358920856,
+        0.6549232430899411
+      ],
+      "dist_to_basket_m": 0.6827778426376359,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 552,
+      "time_sec": 1.104,
+      "cube_pos": [
+        0.5127949677194582,
+        -0.0021099339492383806,
+        0.5826350524924186
+      ],
+      "hand_pos": [
+        0.5084599632116876,
+        -0.00020704111515660144,
+        0.6591922951864391
+      ],
+      "dist_to_basket_m": 0.6828569161376071,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 558,
+      "time_sec": 1.116,
+      "cube_pos": [
+        0.5126450516678448,
+        -0.002324090620211462,
+        0.5864129660239851
+      ],
+      "hand_pos": [
+        0.5077917645511105,
+        -0.00021032087141698212,
+        0.6629331186309788
+      ],
+      "dist_to_basket_m": 0.6829128318095694,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 564,
+      "time_sec": 1.1280000000000001,
+      "cube_pos": [
+        0.512498303006245,
+        -0.0025181165228433987,
+        0.5897153600880325
+      ],
+      "hand_pos": [
+        0.5071772667382973,
+        -0.00021265742686339087,
+        0.6662117342219939
+      ],
+      "dist_to_basket_m": 0.6829561755466615,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 570,
+      "time_sec": 1.1400000000000001,
+      "cube_pos": [
+        0.5123243430367548,
+        -0.002729628478409322,
+        0.5926234781874398
+      ],
+      "hand_pos": [
+        0.5066166337828143,
+        -0.0002140087657493594,
+        0.6690856819408761
+      ],
+      "dist_to_basket_m": 0.6829940537913974,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 576,
+      "time_sec": 1.1520000000000001,
+      "cube_pos": [
+        0.5121164984106279,
+        -0.002906361195435784,
+        0.5950471854448866
+      ],
+      "hand_pos": [
+        0.5061083282176525,
+        -0.0002148748619445765,
+        0.671605833533782
+      ],
+      "dist_to_basket_m": 0.6829835036325065,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 582,
+      "time_sec": 1.164,
+      "cube_pos": [
+        0.5118717855087694,
+        -0.003026427779515415,
+        0.5970727340256435
+      ],
+      "hand_pos": [
+        0.5056499210126949,
+        -0.00021535928038489267,
+        0.6738157745798793
+      ],
+      "dist_to_basket_m": 0.6829063869182063,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 588,
+      "time_sec": 1.176,
+      "cube_pos": [
+        0.5116400896733186,
+        -0.0031267132499655016,
+        0.5987963553176482
+      ],
+      "hand_pos": [
+        0.5052382818435611,
+        -0.000215325723393768,
+        0.6757538709483684
+      ],
+      "dist_to_basket_m": 0.6828235950663265,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 594,
+      "time_sec": 1.188,
+      "cube_pos": [
+        0.5114340833773144,
+        -0.0032181796380263586,
+        0.6003127473592311
+      ],
+      "hand_pos": [
+        0.504870090621621,
+        -0.00021492701528853287,
+        0.6774538154323234
+      ],
+      "dist_to_basket_m": 0.6827517481636143,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 600,
+      "time_sec": 1.2,
+      "cube_pos": [
+        0.511243479102634,
+        -0.003325561109004027,
+        0.6016963903674687
+      ],
+      "hand_pos": [
+        0.5045417931024876,
+        -0.00021420487550544224,
+        0.67894507691755
+      ],
+      "dist_to_basket_m": 0.6827021074234324,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 606,
+      "time_sec": 1.212,
+      "cube_pos": [
+        0.5110739955351572,
+        -0.0034150271857763996,
+        0.6029111060762412
+      ],
+      "hand_pos": [
+        0.5042497674965503,
+        -0.00021347652833320822,
+        0.6802537620741967
+      ],
+      "dist_to_basket_m": 0.6826535863490428,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 612,
+      "time_sec": 1.224,
+      "cube_pos": [
+        0.5109149924357205,
+        -0.0035154227700153373,
+        0.6040174494991042
+      ],
+      "hand_pos": [
+        0.5039906100581724,
+        -0.00021255796177169778,
+        0.6814021842780813
+      ],
+      "dist_to_basket_m": 0.6826202540353513,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 618,
+      "time_sec": 1.236,
+      "cube_pos": [
+        0.5107774887627726,
+        -0.0036190210840949325,
+        0.6050492269641146
+      ],
+      "hand_pos": [
+        0.5037610790907676,
+        -0.00021159935253932922,
+        0.682410107078813
+      ],
+      "dist_to_basket_m": 0.6826038474461078,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 624,
+      "time_sec": 1.248,
+      "cube_pos": [
+        0.510631392228062,
+        -0.0037132643648854838,
+        0.6059302449881562
+      ],
+      "hand_pos": [
+        0.5035580652391661,
+        -0.00021068423385877267,
+        0.6832951101173761
+      ],
+      "dist_to_basket_m": 0.6825747813998784,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 630,
+      "time_sec": 1.26,
+      "cube_pos": [
+        0.5105026706665837,
+        -0.003803169836519233,
+        0.6066969906583706
+      ],
+      "hand_pos": [
+        0.5033787460556232,
+        -0.00020975663681342292,
+        0.6840721007825908
+      ],
+      "dist_to_basket_m": 0.6825542788880461,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 636,
+      "time_sec": 1.272,
+      "cube_pos": [
+        0.5103808168571146,
+        -0.003887151879732139,
+        0.6073675363696179
+      ],
+      "hand_pos": [
+        0.5032206244926073,
+        -0.00020886929159008637,
+        0.6847543193755009
+      ],
+      "dist_to_basket_m": 0.6825340712077986,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 642,
+      "time_sec": 1.284,
+      "cube_pos": [
+        0.5102658636593645,
+        -0.003972007467879262,
+        0.6079652651034981
+      ],
+      "hand_pos": [
+        0.5030813327146088,
+        -0.0002079490260944666,
+        0.6853532973044953
+      ],
+      "dist_to_basket_m": 0.6825191935479213,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 648,
+      "time_sec": 1.296,
+      "cube_pos": [
+        0.5101618926650571,
+        -0.004055398407144022,
+        0.6084950726280827
+      ],
+      "hand_pos": [
+        0.5029587340536146,
+        -0.00020705838173620822,
+        0.6858792955410659
+      ],
+      "dist_to_basket_m": 0.6825106681396799,
+      "gripper_status": "LIFTING (ZERO WELD)",
+      "phase": "PHASE 4: VERTICAL LIFT OFF TABLE"
+    },
+    {
+      "step": 654,
+      "time_sec": 1.308,
+      "cube_pos": [
+        0.5100607524483769,
+        -0.004139968159278363,
+        0.6089698817404436
+      ],
+      "hand_pos": [
+        0.5028509318007153,
+        -0.00020606318763234953,
+        0.686341180309665
+      ],
+      "dist_to_basket_m": 0.6825049475564298,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 660,
+      "time_sec": 1.32,
+      "cube_pos": [
+        0.5099653923154277,
+        -0.004204661896027723,
+        0.6093805524944459
+      ],
+      "hand_pos": [
+        0.5027562341539218,
+        -0.00019844570943432482,
+        0.6867464344337362
+      ],
+      "dist_to_basket_m": 0.6824884637893691,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 666,
+      "time_sec": 1.332,
+      "cube_pos": [
+        0.5098849289944788,
+        -0.004230708555851935,
+        0.6097452465288582
+      ],
+      "hand_pos": [
+        0.5026732167999572,
+        -0.00016173801157123077,
+        0.68710048055986
+      ],
+      "dist_to_basket_m": 0.6824534822000642,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 672,
+      "time_sec": 1.344,
+      "cube_pos": [
+        0.5098049229781123,
+        -0.004183243086538144,
+        0.6100594878153415
+      ],
+      "hand_pos": [
+        0.5026007239943796,
+        -6.907243253671117e-05,
+        0.6874079738901744
+      ],
+      "dist_to_basket_m": 0.6823644992261592,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 678,
+      "time_sec": 1.356,
+      "cube_pos": [
+        0.5097391054945521,
+        -0.0040394586737938195,
+        0.6103291799390459
+      ],
+      "hand_pos": [
+        0.5025375936223297,
+        0.00010493488336838809,
+        0.6876728744928656
+      ],
+      "dist_to_basket_m": 0.6822139114831228,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 684,
+      "time_sec": 1.368,
+      "cube_pos": [
+        0.5096737745611165,
+        -0.0037868171504055683,
+        0.6105740445174351
+      ],
+      "hand_pos": [
+        0.5024828525811547,
+        0.0003828687212663591,
+        0.6878986343726816
+      ],
+      "dist_to_basket_m": 0.6819832374434143,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 690,
+      "time_sec": 1.3800000000000001,
+      "cube_pos": [
+        0.5096071889628268,
+        -0.0034176062806609755,
+        0.610823781664095
+      ],
+      "hand_pos": [
+        0.5024354589275974,
+        0.0007845862184314787,
+        0.6880882339732883
+      ],
+      "dist_to_basket_m": 0.6816656471171642,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 696,
+      "time_sec": 1.3920000000000001,
+      "cube_pos": [
+        0.5095718148498661,
+        -0.002900973539412714,
+        0.61116500776676
+      ],
+      "hand_pos": [
+        0.5023944214236721,
+        0.0013271325546690325,
+        0.6882442792610071
+      ],
+      "dist_to_basket_m": 0.6812603336400034,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 702,
+      "time_sec": 1.4040000000000001,
+      "cube_pos": [
+        0.5095225536933876,
+        -0.0022224488383806706,
+        0.6115165538244866
+      ],
+      "hand_pos": [
+        0.5023584742754583,
+        0.0020256477059401234,
+        0.6883695111916823
+      ],
+      "dist_to_basket_m": 0.6807263513851305,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 708,
+      "time_sec": 1.416,
+      "cube_pos": [
+        0.5094673690431577,
+        -0.001364025066176129,
+        0.6118168827313689
+      ],
+      "hand_pos": [
+        0.5023262457770699,
+        0.0028931464296985915,
+        0.688466067313259
+      ],
+      "dist_to_basket_m": 0.6800559894935112,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 714,
+      "time_sec": 1.428,
+      "cube_pos": [
+        0.5094141552314193,
+        -0.00031044307498169895,
+        0.6120494697069039
+      ],
+      "hand_pos": [
+        0.5022963228055304,
+        0.003940883634125497,
+        0.6885356316428745
+      ],
+      "dist_to_basket_m": 0.6792436274834555,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 720,
+      "time_sec": 1.44,
+      "cube_pos": [
+        0.509360784302919,
+        0.0009459577240888764,
+        0.6122194830721909
+      ],
+      "hand_pos": [
+        0.5022670797801994,
+        0.005178539076183749,
+        0.6885796971581218
+      ],
+      "dist_to_basket_m": 0.6782825865871243,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 726,
+      "time_sec": 1.452,
+      "cube_pos": [
+        0.5093152148729354,
+        0.0024106714057258467,
+        0.6123358897060963
+      ],
+      "hand_pos": [
+        0.5022366240872269,
+        0.006614379230869015,
+        0.6885996304337029
+      ],
+      "dist_to_basket_m": 0.6771747237934028,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 732,
+      "time_sec": 1.464,
+      "cube_pos": [
+        0.509289506538296,
+        0.00409516652031366,
+        0.612400811646131
+      ],
+      "hand_pos": [
+        0.5022027941927099,
+        0.008255329460924134,
+        0.6885967096900714
+      ],
+      "dist_to_basket_m": 0.6759204499678249,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 738,
+      "time_sec": 1.476,
+      "cube_pos": [
+        0.509264425398363,
+        0.006000613941115562,
+        0.6124262374700973
+      ],
+      "hand_pos": [
+        0.5021632102011622,
+        0.010107291459223114,
+        0.6885719662211487
+      ],
+      "dist_to_basket_m": 0.6745066388576493,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 744,
+      "time_sec": 1.488,
+      "cube_pos": [
+        0.5092276625965323,
+        0.00813129450548177,
+        0.6124184045752605
+      ],
+      "hand_pos": [
+        0.5021151507417881,
+        0.012175052112543418,
+        0.6885264008483238
+      ],
+      "dist_to_basket_m": 0.6729226326545479,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 750,
+      "time_sec": 1.5,
+      "cube_pos": [
+        0.5091743070346363,
+        0.010491007103575567,
+        0.6123811999832331
+      ],
+      "hand_pos": [
+        0.5020555695208258,
+        0.01446246907507793,
+        0.6884609045136096
+      ],
+      "dist_to_basket_m": 0.6711632427116447,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 756,
+      "time_sec": 1.512,
+      "cube_pos": [
+        0.5091100787854357,
+        0.013083881211901911,
+        0.6123160925528492
+      ],
+      "hand_pos": [
+        0.5019811316299524,
+        0.016972574522661644,
+        0.688376269734451
+      ],
+      "dist_to_basket_m": 0.6692304320471644,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 762,
+      "time_sec": 1.524,
+      "cube_pos": [
+        0.5090447832110286,
+        0.01591295508081639,
+        0.6122245281511687
+      ],
+      "hand_pos": [
+        0.5018881872937715,
+        0.019707586553773443,
+        0.6882732329208682
+      ],
+      "dist_to_basket_m": 0.6671299573934961,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 768,
+      "time_sec": 1.536,
+      "cube_pos": [
+        0.5089548341210149,
+        0.018975582081657602,
+        0.6121132772553618
+      ],
+      "hand_pos": [
+        0.5017728647463048,
+        0.022669077069519847,
+        0.6881523753942324
+      ],
+      "dist_to_basket_m": 0.6648488778637808,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 774,
+      "time_sec": 1.548,
+      "cube_pos": [
+        0.5088385624333884,
+        0.02227621626804349,
+        0.6119797297910116
+      ],
+      "hand_pos": [
+        0.5016309038802218,
+        0.025857859081997378,
+        0.6880143096312685
+      ],
+      "dist_to_basket_m": 0.6623842086879153,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 780,
+      "time_sec": 1.56,
+      "cube_pos": [
+        0.5086969119136541,
+        0.025811984597881796,
+        0.6118284115898905
+      ],
+      "hand_pos": [
+        0.5014577639056848,
+        0.029274180240154164,
+        0.6878595637731492
+      ],
+      "dist_to_basket_m": 0.659740199586263,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 786,
+      "time_sec": 1.572,
+      "cube_pos": [
+        0.5085267372426423,
+        0.02958387164520426,
+        0.6116589745285066
+      ],
+      "hand_pos": [
+        0.5012486653493782,
+        0.03291768549249683,
+        0.6876886360676654
+      ],
+      "dist_to_basket_m": 0.6569155977617663,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 792,
+      "time_sec": 1.584,
+      "cube_pos": [
+        0.5083170078992589,
+        0.03359194145271324,
+        0.6114712479188351
+      ],
+      "hand_pos": [
+        0.5009985626938906,
+        0.03678749148196307,
+        0.6875019545781476
+      ],
+      "dist_to_basket_m": 0.6539043942409155,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 798,
+      "time_sec": 1.596,
+      "cube_pos": [
+        0.5080637913579351,
+        0.03783067982750651,
+        0.6112697282075832
+      ],
+      "hand_pos": [
+        0.5007021155311911,
+        0.04088216458622265,
+        0.6872999608171222
+      ],
+      "dist_to_basket_m": 0.6507095492321522,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 804,
+      "time_sec": 1.608,
+      "cube_pos": [
+        0.5077615440304787,
+        0.0423005826672247,
+        0.6110526840271598
+      ],
+      "hand_pos": [
+        0.5003538042599863,
+        0.045199775072000785,
+        0.68708305294715
+      ],
+      "dist_to_basket_m": 0.6473286551821492,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 810,
+      "time_sec": 1.62,
+      "cube_pos": [
+        0.5074038731397313,
+        0.047000783837878604,
+        0.6108196761733293
+      ],
+      "hand_pos": [
+        0.49994786897068866,
+        0.04973789262861679,
+        0.6868516193433741
+      ],
+      "dist_to_basket_m": 0.6437597323588389,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 816,
+      "time_sec": 1.6320000000000001,
+      "cube_pos": [
+        0.5069978693031567,
+        0.05193322617945997,
+        0.6105675342200813
+      ],
+      "hand_pos": [
+        0.4994783426102779,
+        0.05449362763465479,
+        0.6866060345955217
+      ],
+      "dist_to_basket_m": 0.6400085049040928,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 822,
+      "time_sec": 1.6440000000000001,
+      "cube_pos": [
+        0.5065140342053887,
+        0.05708004041458438,
+        0.6103081463526546
+      ],
+      "hand_pos": [
+        0.4989391734436061,
+        0.05946374705680977,
+        0.6863465937774417
+      ],
+      "dist_to_basket_m": 0.6360685136253995,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 828,
+      "time_sec": 1.6560000000000001,
+      "cube_pos": [
+        0.5059573766095243,
+        0.06244854807619792,
+        0.6100326244698704
+      ],
+      "hand_pos": [
+        0.4983240906310371,
+        0.06464440825535686,
+        0.6860736714721927
+      ],
+      "dist_to_basket_m": 0.6319401889144786,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 834,
+      "time_sec": 1.668,
+      "cube_pos": [
+        0.5053159681487807,
+        0.06802737673121931,
+        0.6097472099306416
+      ],
+      "hand_pos": [
+        0.4976267253589652,
+        0.07003142391031512,
+        0.6857875945422307
+      ],
+      "dist_to_basket_m": 0.6276248705277487,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 840,
+      "time_sec": 1.68,
+      "cube_pos": [
+        0.5045939649402065,
+        0.07382152941614448,
+        0.6094447672179483
+      ],
+      "hand_pos": [
+        0.49684062480806135,
+        0.07562011404677797,
+        0.6854887246621535
+      ],
+      "dist_to_basket_m": 0.6231241944823294,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 846,
+      "time_sec": 1.692,
+      "cube_pos": [
+        0.5037793322681744,
+        0.07981880657298915,
+        0.6091318207462796
+      ],
+      "hand_pos": [
+        0.49595930214422224,
+        0.08140553438416,
+        0.6851773239787506
+      ],
+      "dist_to_basket_m": 0.6184399062993085,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 852,
+      "time_sec": 1.704,
+      "cube_pos": [
+        0.5028613350633101,
+        0.08601556404718236,
+        0.6088062203527924
+      ],
+      "hand_pos": [
+        0.494976218996154,
+        0.08738215436564647,
+        0.6848537552415656
+      ],
+      "dist_to_basket_m": 0.6135686611997847,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 858,
+      "time_sec": 1.716,
+      "cube_pos": [
+        0.5018319808332756,
+        0.09240383909064007,
+        0.608470070690291
+      ],
+      "hand_pos": [
+        0.49388484695132545,
+        0.09354419812621069,
+        0.6845182916741598
+      ],
+      "dist_to_basket_m": 0.6085119302789144,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 864,
+      "time_sec": 1.728,
+      "cube_pos": [
+        0.5006823683433202,
+        0.09897407031134857,
+        0.6081259800591584
+      ],
+      "hand_pos": [
+        0.49267867950264493,
+        0.09988538707518113,
+        0.6841712761045374
+      ],
+      "dist_to_basket_m": 0.6032714094155228,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 870,
+      "time_sec": 1.74,
+      "cube_pos": [
+        0.4994218156823929,
+        0.10573662224569383,
+        0.6077624277013343
+      ],
+      "hand_pos": [
+        0.49135127868964096,
+        0.10639903551575355,
+        0.6838130673541192
+      ],
+      "dist_to_basket_m": 0.5978491276647424,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 876,
+      "time_sec": 1.752,
+      "cube_pos": [
+        0.4980233479269277,
+        0.11266276872681588,
+        0.6073944723286965
+      ],
+      "hand_pos": [
+        0.4898963178453244,
+        0.1130782551505556,
+        0.6834439060888613
+      ],
+      "dist_to_basket_m": 0.5922457691009949,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 882,
+      "time_sec": 1.764,
+      "cube_pos": [
+        0.4964943975451908,
+        0.1197591839036772,
+        0.6070136651442612
+      ],
+      "hand_pos": [
+        0.4883075769909934,
+        0.11991560096540615,
+        0.683064159329362
+      ],
+      "dist_to_basket_m": 0.5864642574486876,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 888,
+      "time_sec": 1.776,
+      "cube_pos": [
+        0.4948196490953275,
+        0.12700880157231348,
+        0.6066259325862826
+      ],
+      "hand_pos": [
+        0.4865790172324191,
+        0.126903373786398,
+        0.6826741388338823
+      ],
+      "dist_to_basket_m": 0.5805057745843809,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 894,
+      "time_sec": 1.788,
+      "cube_pos": [
+        0.4930014874192079,
+        0.1344144982346079,
+        0.6062245211103195
+      ],
+      "hand_pos": [
+        0.4847047779323607,
+        0.13403347726657705,
+        0.682274181518946
+      ],
+      "dist_to_basket_m": 0.5743718977776369,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 900,
+      "time_sec": 1.8,
+      "cube_pos": [
+        0.4910280989441696,
+        0.1419602489356122,
+        0.6058148546487674
+      ],
+      "hand_pos": [
+        0.4826792292255954,
+        0.1412975216843584,
+        0.6818646056142943
+      ],
+      "dist_to_basket_m": 0.5680653548673401,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 906,
+      "time_sec": 1.812,
+      "cube_pos": [
+        0.48888840534551503,
+        0.1496285118956645,
+        0.6054026587423569
+      ],
+      "hand_pos": [
+        0.4804969973232696,
+        0.14868682280859083,
+        0.6814457239167553
+      ],
+      "dist_to_basket_m": 0.5615898966533992,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 912,
+      "time_sec": 1.824,
+      "cube_pos": [
+        0.48659259543125305,
+        0.15743501349669778,
+        0.6049723433614367
+      ],
+      "hand_pos": [
+        0.47815300029899194,
+        0.15619223389054296,
+        0.681017953532235
+      ],
+      "dist_to_basket_m": 0.5549449201167675,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 918,
+      "time_sec": 1.836,
+      "cube_pos": [
+        0.48412397390593376,
+        0.1653548522029752,
+        0.6045361903326358
+      ],
+      "hand_pos": [
+        0.47564246208779565,
+        0.16380457982936622,
+        0.6805815280486196
+      ],
+      "dist_to_basket_m": 0.5481341073715195,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 924,
+      "time_sec": 1.848,
+      "cube_pos": [
+        0.48147640394188884,
+        0.1733753896637181,
+        0.6040952183920772
+      ],
+      "hand_pos": [
+        0.4729609656944425,
+        0.17151422337442257,
+        0.6801368511906914
+      ],
+      "dist_to_basket_m": 0.5411612728530674,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 930,
+      "time_sec": 1.86,
+      "cube_pos": [
+        0.4786495990207534,
+        0.18149368994388676,
+        0.603645127868771
+      ],
+      "hand_pos": [
+        0.4701044590714535,
+        0.17931133356375709,
+        0.6796842649310142
+      ],
+      "dist_to_basket_m": 0.5340287897540859,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 936,
+      "time_sec": 1.872,
+      "cube_pos": [
+        0.4756389591949814,
+        0.1896994643209256,
+        0.6031855864204458
+      ],
+      "hand_pos": [
+        0.46706930027064475,
+        0.1871858511965269,
+        0.6792241329727995
+      ],
+      "dist_to_basket_m": 0.5267399225683465,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 942,
+      "time_sec": 1.8840000000000001,
+      "cube_pos": [
+        0.4724374115790981,
+        0.19797421050207253,
+        0.6027220823998236
+      ],
+      "hand_pos": [
+        0.4638522673626627,
+        0.19512755133114143,
+        0.678756787059664
+      ],
+      "dist_to_basket_m": 0.5193004373419059,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 948,
+      "time_sec": 1.8960000000000001,
+      "cube_pos": [
+        0.4690454399098217,
+        0.20631664479263404,
+        0.6022488811776312
+      ],
+      "hand_pos": [
+        0.46045060010725025,
+        0.20312597300455118,
+        0.6782826161690505
+      ],
+      "dist_to_basket_m": 0.5117118269446895,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 954,
+      "time_sec": 1.9080000000000001,
+      "cube_pos": [
+        0.4654569613827155,
+        0.21470717425565644,
+        0.6017718996706989
+      ],
+      "hand_pos": [
+        0.4568620001175732,
+        0.21117056556502206,
+        0.6778019577653642
+      ],
+      "dist_to_basket_m": 0.5039806377060051,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 960,
+      "time_sec": 1.92,
+      "cube_pos": [
+        0.46167185818589157,
+        0.22314105830951794,
+        0.6012875434919007
+      ],
+      "hand_pos": [
+        0.4530846729371758,
+        0.21925060639534907,
+        0.6773151995732285
+      ],
+      "dist_to_basket_m": 0.4961094560842381,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 966,
+      "time_sec": 1.932,
+      "cube_pos": [
+        0.45768689381064587,
+        0.23160226189174335,
+        0.6007992997880158
+      ],
+      "hand_pos": [
+        0.44911732833513573,
+        0.22735531567139183,
+        0.6768226988277284
+      ],
+      "dist_to_basket_m": 0.48810444497730315,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 972,
+      "time_sec": 1.944,
+      "cube_pos": [
+        0.4534915668725732,
+        0.24008974326427363,
+        0.6003089123762484
+      ],
+      "hand_pos": [
+        0.4449592379637444,
+        0.2354737917310816,
+        0.6763248333209658
+      ],
+      "dist_to_basket_m": 0.4799570669275695,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 978,
+      "time_sec": 1.956,
+      "cube_pos": [
+        0.44908597449845833,
+        0.2485870875275408,
+        0.599816569997094
+      ],
+      "hand_pos": [
+        0.4406101569013388,
+        0.2435951867955795,
+        0.6758219837526266
+      ],
+      "dist_to_basket_m": 0.471675807731612,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 984,
+      "time_sec": 1.968,
+      "cube_pos": [
+        0.4444773574117633,
+        0.25707934492467654,
+        0.5993166855699209
+      ],
+      "hand_pos": [
+        0.4360704085845372,
+        0.25170861997568317,
+        0.675314546233359
+      ],
+      "dist_to_basket_m": 0.4632740335619862,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 990,
+      "time_sec": 1.98,
+      "cube_pos": [
+        0.4396714349950377,
+        0.26555734229931977,
+        0.5987863885002593
+      ],
+      "hand_pos": [
+        0.43134087639498025,
+        0.25980323787450654,
+        0.6748029520425793
+      ],
+      "dist_to_basket_m": 0.4547605820658275,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 996,
+      "time_sec": 1.992,
+      "cube_pos": [
+        0.4346737363036636,
+        0.2740141121763912,
+        0.5981207519608335
+      ],
+      "hand_pos": [
+        0.4264229652719836,
+        0.2678681329832877,
+        0.6742879120811316
+      ],
+      "dist_to_basket_m": 0.446142919810732,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1002,
+      "time_sec": 2.004,
+      "cube_pos": [
+        0.4295122129843803,
+        0.2824550321572472,
+        0.5975526000688371
+      ],
+      "hand_pos": [
+        0.42131893223920797,
+        0.27589284120085894,
+        0.6737687610453446
+      ],
+      "dist_to_basket_m": 0.43744180508726643,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1008,
+      "time_sec": 2.016,
+      "cube_pos": [
+        0.42417324896430525,
+        0.29080579804726603,
+        0.5970691585761795
+      ],
+      "hand_pos": [
+        0.41603127197380424,
+        0.2838668436239679,
+        0.6732464402673788
+      ],
+      "dist_to_basket_m": 0.4286815069152683,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1014,
+      "time_sec": 2.028,
+      "cube_pos": [
+        0.41864439845899304,
+        0.2991375853667217,
+        0.5965709886138734
+      ],
+      "hand_pos": [
+        0.41056325420656387,
+        0.29177936685436956,
+        0.672721755229447
+      ],
+      "dist_to_basket_m": 0.4198147235716059,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1020,
+      "time_sec": 2.04,
+      "cube_pos": [
+        0.41292744900005657,
+        0.30738972570746204,
+        0.5960766471248352
+      ],
+      "hand_pos": [
+        0.404918495721884,
+        0.29962054217232664,
+        0.6721948163455984
+      ],
+      "dist_to_basket_m": 0.4108710880565039,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1026,
+      "time_sec": 2.052,
+      "cube_pos": [
+        0.40704026374619656,
+        0.3155624354437295,
+        0.5955697257362513
+      ],
+      "hand_pos": [
+        0.39910136209821057,
+        0.30738035583389794,
+        0.6716660552341225
+      ],
+      "dist_to_basket_m": 0.40186436163885203,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1032,
+      "time_sec": 2.064,
+      "cube_pos": [
+        0.4010993769254806,
+        0.32354889463830616,
+        0.5949768665047505
+      ],
+      "hand_pos": [
+        0.3931162848840999,
+        0.31504965802690615,
+        0.6711360563774134
+      ],
+      "dist_to_basket_m": 0.39294498986604254,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1038,
+      "time_sec": 2.076,
+      "cube_pos": [
+        0.39503902865237883,
+        0.33132228464419283,
+        0.5943778627734649
+      ],
+      "hand_pos": [
+        0.38696917968277633,
+        0.32261849708996193,
+        0.6706047278799188
+      ],
+      "dist_to_basket_m": 0.3840626289435511,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1044,
+      "time_sec": 2.088,
+      "cube_pos": [
+        0.3888451771235894,
+        0.338949733938871,
+        0.5937922398935684
+      ],
+      "hand_pos": [
+        0.38066620186718486,
+        0.3300775770799307,
+        0.6700726074450761
+      ],
+      "dist_to_basket_m": 0.3751709507121748,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1050,
+      "time_sec": 2.1,
+      "cube_pos": [
+        0.38251720795374694,
+        0.3464362874790819,
+        0.5931936434880103
+      ],
+      "hand_pos": [
+        0.3742136316301683,
+        0.33741835486018357,
+        0.6695402617707863
+      ],
+      "dist_to_basket_m": 0.36626425895596554,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1056,
+      "time_sec": 2.112,
+      "cube_pos": [
+        0.37605040339774304,
+        0.35378291651104915,
+        0.5925799540801133
+      ],
+      "hand_pos": [
+        0.36761838808274794,
+        0.34463258519535167,
+        0.6690080457673466
+      ],
+      "dist_to_basket_m": 0.3573349983696612,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1062,
+      "time_sec": 2.124,
+      "cube_pos": [
+        0.36944716784358295,
+        0.3609873431871024,
+        0.5919542548443842
+      ],
+      "hand_pos": [
+        0.3608878606079998,
+        0.3517124263615937,
+        0.6684763241804881
+      ],
+      "dist_to_basket_m": 0.34838342641042314,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1068,
+      "time_sec": 2.136,
+      "cube_pos": [
+        0.36273672337362867,
+        0.3680737349789087,
+        0.5913068605204068
+      ],
+      "hand_pos": [
+        0.35402987784529283,
+        0.35865037873461997,
+        0.667945523364384
+      ],
+      "dist_to_basket_m": 0.3394242147356148,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1074,
+      "time_sec": 2.148,
+      "cube_pos": [
+        0.35593618848991854,
+        0.3750737842441403,
+        0.5906573166378091
+      ],
+      "hand_pos": [
+        0.3470528069143557,
+        0.36543942426900905,
+        0.667416005611212
+      ],
+      "dist_to_basket_m": 0.3304595448928939,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1080,
+      "time_sec": 2.16,
+      "cube_pos": [
+        0.3489170542745124,
+        0.3819969585196518,
+        0.5900624263539687
+      ],
+      "hand_pos": [
+        0.33996568816336475,
+        0.3720729794549852,
+        0.6668879514243466
+      ],
+      "dist_to_basket_m": 0.3213660267277246,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1086,
+      "time_sec": 2.172,
+      "cube_pos": [
+        0.3417090541047069,
+        0.38882300355344085,
+        0.5894918434223952
+      ],
+      "hand_pos": [
+        0.33277704981588674,
+        0.37854534585622035,
+        0.6663620012015146
+      ],
+      "dist_to_basket_m": 0.31217702795936325,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1092,
+      "time_sec": 2.184,
+      "cube_pos": [
+        0.33436546622711605,
+        0.39549982082526763,
+        0.5889363583788366
+      ],
+      "hand_pos": [
+        0.3254960605713644,
+        0.38485119939278745,
+        0.6658385354469095
+      ],
+      "dist_to_basket_m": 0.3029587526877483,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1098,
+      "time_sec": 2.196,
+      "cube_pos": [
+        0.32691407801183686,
+        0.40200817441542586,
+        0.5883883984263161
+      ],
+      "hand_pos": [
+        0.318132503464374,
+        0.39098545929350087,
+        0.6653179395182266
+      ],
+      "dist_to_basket_m": 0.29374105004670914,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1104,
+      "time_sec": 2.208,
+      "cube_pos": [
+        0.31937706373861563,
+        0.4083383358761223,
+        0.5878456118725898
+      ],
+      "hand_pos": [
+        0.3106963991544216,
+        0.39694364390035464,
+        0.6648005775355506
+      ],
+      "dist_to_basket_m": 0.28454501074240746,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1110,
+      "time_sec": 2.22,
+      "cube_pos": [
+        0.3117269272151172,
+        0.4145269368482522,
+        0.5872865639839853
+      ],
+      "hand_pos": [
+        0.3031981932065921,
+        0.40272166290312317,
+        0.6642868915288458
+      ],
+      "dist_to_basket_m": 0.27533003641813203,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1116,
+      "time_sec": 2.232,
+      "cube_pos": [
+        0.3039778951880957,
+        0.4205449029277092,
+        0.5867279388925581
+      ],
+      "hand_pos": [
+        0.29564811934159646,
+        0.4083164006973037,
+        0.6637771324929264
+      ],
+      "dist_to_basket_m": 0.2661162973118003,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1122,
+      "time_sec": 2.244,
+      "cube_pos": [
+        0.2961560167575793,
+        0.42638547729647497,
+        0.5861671141212718
+      ],
+      "hand_pos": [
+        0.2880567161716948,
+        0.4137250999338277,
+        0.6632717086161645
+      ],
+      "dist_to_basket_m": 0.25692777689231167,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1128,
+      "time_sec": 2.2560000000000002,
+      "cube_pos": [
+        0.28829316254710996,
+        0.43203067306366977,
+        0.5856106230692144
+      ],
+      "hand_pos": [
+        0.2804346600699382,
+        0.4189455953946654,
+        0.6627709814255061
+      ],
+      "dist_to_basket_m": 0.247797216935302,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1134,
+      "time_sec": 2.2680000000000002,
+      "cube_pos": [
+        0.2803905151771377,
+        0.437472036461366,
+        0.5850649195829413
+      ],
+      "hand_pos": [
+        0.2727929290877503,
+        0.4239761530418041,
+        0.6622753061681301
+      ],
+      "dist_to_basket_m": 0.23872481167209172,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1140,
+      "time_sec": 2.2800000000000002,
+      "cube_pos": [
+        0.2724652148972297,
+        0.44271213230133144,
+        0.5845270229460846
+      ],
+      "hand_pos": [
+        0.26514236286507825,
+        0.4288157032866957,
+        0.6617850729328605
+      ],
+      "dist_to_basket_m": 0.2297230324210673,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1146,
+      "time_sec": 2.2920000000000003,
+      "cube_pos": [
+        0.2645129347399213,
+        0.4477595623570081,
+        0.5839912324381136
+      ],
+      "hand_pos": [
+        0.2574940001324413,
+        0.43346363448355324,
+        0.661300657864364
+      ],
+      "dist_to_basket_m": 0.22078238719577492,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1152,
+      "time_sec": 2.3040000000000003,
+      "cube_pos": [
+        0.2565706924816651,
+        0.4525996779162097,
+        0.5834627554181373
+      ],
+      "hand_pos": [
+        0.24985863384009707,
+        0.4379200525244447,
+        0.6608223802233508
+      ],
+      "dist_to_basket_m": 0.21193924017510704,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1158,
+      "time_sec": 2.316,
+      "cube_pos": [
+        0.2486164884671851,
+        0.45724557813192684,
+        0.5829333542260722
+      ],
+      "hand_pos": [
+        0.24224740116847587,
+        0.44218533332275706,
+        0.6603506196048925
+      ],
+      "dist_to_basket_m": 0.2031660652774194,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1164,
+      "time_sec": 2.328,
+      "cube_pos": [
+        0.24068010704379852,
+        0.4616900554739913,
+        0.5824084376845831
+      ],
+      "hand_pos": [
+        0.23467102027435474,
+        0.4462605959236207,
+        0.6598856817626078
+      ],
+      "dist_to_basket_m": 0.19449050123803044,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1170,
+      "time_sec": 2.34,
+      "cube_pos": [
+        0.23278002399677375,
+        0.4659307234955349,
+        0.5818901806012797
+      ],
+      "hand_pos": [
+        0.22714029827620252,
+        0.45014734300665504,
+        0.6594279052154275
+      ],
+      "dist_to_basket_m": 0.1859280849516793,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1176,
+      "time_sec": 2.352,
+      "cube_pos": [
+        0.22493061497387037,
+        0.46996786046124456,
+        0.5813794562662916
+      ],
+      "hand_pos": [
+        0.21966594368185832,
+        0.45384754169394426,
+        0.6589776256866562
+      ],
+      "dist_to_basket_m": 0.17748985734517833,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1182,
+      "time_sec": 2.364,
+      "cube_pos": [
+        0.21714465866389296,
+        0.4738032423473612,
+        0.5808766653991979
+      ],
+      "hand_pos": [
+        0.21225851938659032,
+        0.4573636171629835,
+        0.6585351708473447
+      ],
+      "dist_to_basket_m": 0.16918512650756382,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1188,
+      "time_sec": 2.376,
+      "cube_pos": [
+        0.2094342788725448,
+        0.47743953237990666,
+        0.5803839520437835
+      ],
+      "hand_pos": [
+        0.20492842031214728,
+        0.46069842877199774,
+        0.6581008550541019
+      ],
+      "dist_to_basket_m": 0.16102255736028312,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1194,
+      "time_sec": 2.388,
+      "cube_pos": [
+        0.20181124519681135,
+        0.4808799335299476,
+        0.5799045212795906
+      ],
+      "hand_pos": [
+        0.19768585438598174,
+        0.4638552456378274,
+        0.6576749845071539
+      ],
+      "dist_to_basket_m": 0.15301055881874817,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1200,
+      "time_sec": 2.4,
+      "cube_pos": [
+        0.19428655800358527,
+        0.48412807052944096,
+        0.5794297627320085
+      ],
+      "hand_pos": [
+        0.19054081691528907,
+        0.4668377045869357,
+        0.6572579033158773
+      ],
+      "dist_to_basket_m": 0.14515691153245294,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1206,
+      "time_sec": 2.412,
+      "cube_pos": [
+        0.18687762359065005,
+        0.48718833540308476,
+        0.578963928253108
+      ],
+      "hand_pos": [
+        0.18350306400117655,
+        0.4696498119213595,
+        0.6568498770792957
+      ],
+      "dist_to_basket_m": 0.13747589821335057,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1212,
+      "time_sec": 2.424,
+      "cube_pos": [
+        0.17960848270973767,
+        0.49006463086322083,
+        0.5785099473859724
+      ],
+      "hand_pos": [
+        0.17658207455168695,
+        0.47229591556927786,
+        0.6564511927215002
+      ],
+      "dist_to_basket_m": 0.12998873162780086,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1218,
+      "time_sec": 2.436,
+      "cube_pos": [
+        0.1724453108074664,
+        0.4927695143389789,
+        0.5780527405841487
+      ],
+      "hand_pos": [
+        0.1697873652799573,
+        0.4747805287935294,
+        0.6560621857155113
+      ],
+      "dist_to_basket_m": 0.12265860777634514,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1224,
+      "time_sec": 2.448,
+      "cube_pos": [
+        0.1654695469153723,
+        0.49531910618024266,
+        0.5775843152607144
+      ],
+      "hand_pos": [
+        0.16312749213289784,
+        0.47710865189243945,
+        0.6556831428779099
+      ],
+      "dist_to_basket_m": 0.11556438478957609,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1230,
+      "time_sec": 2.46,
+      "cube_pos": [
+        0.15861769121015273,
+        0.49769723625755385,
+        0.5771322010473118
+      ],
+      "hand_pos": [
+        0.1566116230275845,
+        0.47928533892943176,
+        0.6553141857472026
+      ],
+      "dist_to_basket_m": 0.1086420984916879,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1236,
+      "time_sec": 2.472,
+      "cube_pos": [
+        0.15193316022833706,
+        0.4999178002267821,
+        0.5766870605096878
+      ],
+      "hand_pos": [
+        0.15024784652322137,
+        0.48131594659244475,
+        0.6549556929405833
+      ],
+      "dist_to_basket_m": 0.10193319337163215,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1242,
+      "time_sec": 2.484,
+      "cube_pos": [
+        0.14541962682380363,
+        0.5019855689446505,
+        0.5762524883090784
+      ],
+      "hand_pos": [
+        0.14404431823083153,
+        0.4832059432154808,
+        0.6546078932910638
+      ],
+      "dist_to_basket_m": 0.09544028325203098,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1248,
+      "time_sec": 2.496,
+      "cube_pos": [
+        0.13909256614704915,
+        0.5039097444410257,
+        0.5758273399771825
+      ],
+      "hand_pos": [
+        0.13800883048036,
+        0.48496096062307165,
+        0.65427103875711
+      ],
+      "dist_to_basket_m": 0.08917831263407297,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1254,
+      "time_sec": 2.508,
+      "cube_pos": [
+        0.13293615097795355,
+        0.5056868439811569,
+        0.5754205217348937
+      ],
+      "hand_pos": [
+        0.13214893628224694,
+        0.4865867320156446,
+        0.6539453311263869
+      ],
+      "dist_to_basket_m": 0.08313089277461133,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1260,
+      "time_sec": 2.52,
+      "cube_pos": [
+        0.12697448268801756,
+        0.507328261754063,
+        0.5750298308253264
+      ],
+      "hand_pos": [
+        0.12647158726167,
+        0.4880890793172005,
+        0.6536310606466067
+      ],
+      "dist_to_basket_m": 0.07732253491333543,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1266,
+      "time_sec": 2.532,
+      "cube_pos": [
+        0.12122423227275227,
+        0.5088464848341337,
+        0.5746536549794378
+      ],
+      "hand_pos": [
+        0.12098363797367835,
+        0.48947384567699054,
+        0.6533284172275332
+      ],
+      "dist_to_basket_m": 0.07177152329972887,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1272,
+      "time_sec": 2.544,
+      "cube_pos": [
+        0.11567414557434491,
+        0.5102406207190583,
+        0.574296443252855
+      ],
+      "hand_pos": [
+        0.11569160390874272,
+        0.4907469131458315,
+        0.6530376262696492
+      ],
+      "dist_to_basket_m": 0.0664677644398535,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1278,
+      "time_sec": 2.556,
+      "cube_pos": [
+        0.11033880954405606,
+        0.5115231517826672,
+        0.573952478971484
+      ],
+      "hand_pos": [
+        0.11060155750255776,
+        0.4919141305670062,
+        0.652758906749468
+      ],
+      "dist_to_basket_m": 0.06142926797708284,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1284,
+      "time_sec": 2.568,
+      "cube_pos": [
+        0.10522314323190436,
+        0.5126994821990258,
+        0.5736216788823943
+      ],
+      "hand_pos": [
+        0.1057193237036059,
+        0.49298131355105146,
+        0.6524924383603281
+      ],
+      "dist_to_basket_m": 0.056664560322434325,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1290,
+      "time_sec": 2.58,
+      "cube_pos": [
+        0.10033460470535224,
+        0.513768581131122,
+        0.5733021213603049
+      ],
+      "hand_pos": [
+        0.10105032433761336,
+        0.4939542133201664,
+        0.6522384086608866
+      ],
+      "dist_to_basket_m": 0.05218377388813841,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1296,
+      "time_sec": 2.592,
+      "cube_pos": [
+        0.09568431341192524,
+        0.5147408521631537,
+        0.5729914842832112
+      ],
+      "hand_pos": [
+        0.0965997307676204,
+        0.4948384388468001,
+        0.6519969958343301
+      ],
+      "dist_to_basket_m": 0.0480036375123278,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1302,
+      "time_sec": 2.604,
+      "cube_pos": [
+        0.09127131783208711,
+        0.5156227067750793,
+        0.5726933538897928
+      ],
+      "hand_pos": [
+        0.09237241916638135,
+        0.49563948646471007,
+        0.6517683526140834
+      ],
+      "dist_to_basket_m": 0.04412924928635495,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1308,
+      "time_sec": 2.616,
+      "cube_pos": [
+        0.0871034124352139,
+        0.5164236450381615,
+        0.572406763098081
+      ],
+      "hand_pos": [
+        0.08837288401469748,
+        0.4963627040608301,
+        0.6515526460570089
+      ],
+      "dist_to_basket_m": 0.04057584664153186,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1314,
+      "time_sec": 2.628,
+      "cube_pos": [
+        0.08317891782872995,
+        0.51714956669386,
+        0.5721349179394974
+      ],
+      "hand_pos": [
+        0.08460533960018242,
+        0.49701325199946395,
+        0.6513500174864075
+      ],
+      "dist_to_basket_m": 0.03734900569055041,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1320,
+      "time_sec": 2.64,
+      "cube_pos": [
+        0.0795033913284367,
+        0.5178061487782468,
+        0.57187732684894
+      ],
+      "hand_pos": [
+        0.08107364724416916,
+        0.4975960943477778,
+        0.651160614505602
+      ],
+      "dist_to_basket_m": 0.034460252961809996,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1326,
+      "time_sec": 2.652,
+      "cube_pos": [
+        0.07608090939912902,
+        0.5183985881496549,
+        0.5716331388425672
+      ],
+      "hand_pos": [
+        0.077781397703063,
+        0.4981159598273109,
+        0.6509845690636336
+      ],
+      "dist_to_basket_m": 0.0319174228437416,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1332,
+      "time_sec": 2.664,
+      "cube_pos": [
+        0.0729147129425452,
+        0.5189306093558724,
+        0.5714008070792301
+      ],
+      "hand_pos": [
+        0.07473188684221804,
+        0.4985773300984261,
+        0.6508220044650214
+      ],
+      "dist_to_basket_m": 0.029722921118623135,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1338,
+      "time_sec": 2.676,
+      "cube_pos": [
+        0.07001149643396874,
+        0.5194029482127457,
+        0.5711821640986244
+      ],
+      "hand_pos": [
+        0.0719280941022843,
+        0.49898442065782866,
+        0.6506730194547834
+      ],
+      "dist_to_basket_m": 0.027873542811656264,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1344,
+      "time_sec": 2.688,
+      "cube_pos": [
+        0.06737399409627354,
+        0.5198263263895376,
+        0.5709777040865184
+      ],
+      "hand_pos": [
+        0.06937282140355831,
+        0.49934113835590754,
+        0.6505377160067342
+      ],
+      "dist_to_basket_m": 0.026361693590545805,
+      "gripper_status": "HOLDING & SWINGING",
+      "phase": "PHASE 5: S-CURVE TRANSPORT TO BASKET"
+    },
+    {
+      "step": 1350,
+      "time_sec": 2.7,
+      "cube_pos": [
+        0.06500112232126741,
+        0.520202348795648,
+        0.5707889552852848
+      ],
+      "hand_pos": [
+        0.06706852231883338,
+        0.49965110968610826,
+        0.650416183602228
+      ],
+      "dist_to_basket_m": 0.025162841011273872,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1356,
+      "time_sec": 2.712,
+      "cube_pos": [
+        0.06290056315106145,
+        0.520535165989756,
+        0.5706117923996444
+      ],
+      "hand_pos": [
+        0.06501657984253495,
+        0.49991773522546507,
+        0.6503084513389505
+      ],
+      "dist_to_basket_m": 0.024251135475300053,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1362,
+      "time_sec": 2.724,
+      "cube_pos": [
+        0.06104916577338746,
+        0.5208262039163789,
+        0.5704491812022516
+      ],
+      "hand_pos": [
+        0.06320706598356247,
+        0.5001454540837501,
+        0.6502136701328974
+      ],
+      "dist_to_basket_m": 0.023575725521272784,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1368,
+      "time_sec": 2.736,
+      "cube_pos": [
+        0.05943167980068722,
+        0.5210885889384779,
+        0.5702938578012203
+      ],
+      "hand_pos": [
+        0.06161654203434767,
+        0.5003398540085475,
+        0.6501303771114997
+      ],
+      "dist_to_basket_m": 0.0231016269400833,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1374,
+      "time_sec": 2.748,
+      "cube_pos": [
+        0.058013801605268214,
+        0.5213178348831418,
+        0.5701488631281044
+      ],
+      "hand_pos": [
+        0.060219855627704245,
+        0.5005061428241981,
+        0.6500571084363497
+      ],
+      "dist_to_basket_m": 0.022774351807976777,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1380,
+      "time_sec": 2.7600000000000002,
+      "cube_pos": [
+        0.056781343408061506,
+        0.5215267315460266,
+        0.5700072206232131
+      ],
+      "hand_pos": [
+        0.058993699674751376,
+        0.5006487020090767,
+        0.6499926274347745
+      ],
+      "dist_to_basket_m": 0.022569598788475507,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1386,
+      "time_sec": 2.7720000000000002,
+      "cube_pos": [
+        0.05569615193482702,
+        0.5217184894003425,
+        0.5698773918506018
+      ],
+      "hand_pos": [
+        0.05791750447835431,
+        0.5007711996298864,
+        0.6499358118749738
+      ],
+      "dist_to_basket_m": 0.022453038295460654,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1392,
+      "time_sec": 2.7840000000000003,
+      "cube_pos": [
+        0.0547430233811206,
+        0.5218973716106405,
+        0.5697562140309501
+      ],
+      "hand_pos": [
+        0.05697290917619911,
+        0.5008767008560462,
+        0.6498857572659144
+      ],
+      "dist_to_basket_m": 0.022405159098929487,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1398,
+      "time_sec": 2.7960000000000003,
+      "cube_pos": [
+        0.05390791291518149,
+        0.5220661564742005,
+        0.5696405778465279
+      ],
+      "hand_pos": [
+        0.05614382473883363,
+        0.5009677371754999,
+        0.6498416353919393
+      ],
+      "dist_to_basket_m": 0.022409530224807114,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1404,
+      "time_sec": 2.8080000000000003,
+      "cube_pos": [
+        0.05317358790374356,
+        0.5222227099269119,
+        0.5695315155051437
+      ],
+      "hand_pos": [
+        0.05541617310000138,
+        0.501046446582224,
+        0.6498027263805249
+      ],
+      "dist_to_basket_m": 0.022448173571104967,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1410,
+      "time_sec": 2.82,
+      "cube_pos": [
+        0.05253640628433731,
+        0.5223750904682158,
+        0.5694225306747823
+      ],
+      "hand_pos": [
+        0.05477750853652491,
+        0.5011145930536035,
+        0.6497684208047191
+      ],
+      "dist_to_basket_m": 0.022518393155375654,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1416,
+      "time_sec": 2.832,
+      "cube_pos": [
+        0.051973157211428825,
+        0.5225153792026667,
+        0.569320179440349
+      ],
+      "hand_pos": [
+        0.054217039399784984,
+        0.5011736984123678,
+        0.6497381351282707
+      ],
+      "dist_to_basket_m": 0.022601673611060046,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1422,
+      "time_sec": 2.844,
+      "cube_pos": [
+        0.05148095847531665,
+        0.5226507431117398,
+        0.569219097147694
+      ],
+      "hand_pos": [
+        0.053725145191093296,
+        0.5012250138315281,
+        0.6497114127737043
+      ],
+      "dist_to_basket_m": 0.022699105742730003,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1428,
+      "time_sec": 2.856,
+      "cube_pos": [
+        0.05105394049886021,
+        0.5227827345349346,
+        0.5691175405847374
+      ],
+      "hand_pos": [
+        0.05329344272759438,
+        0.5012696272460238,
+        0.6496878416815187
+      ],
+      "dist_to_basket_m": 0.022807099409272554,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1434,
+      "time_sec": 2.868,
+      "cube_pos": [
+        0.05067212490846981,
+        0.5229048517040135,
+        0.5690219230286581
+      ],
+      "hand_pos": [
+        0.05291463134215422,
+        0.5013084568084559,
+        0.6496670068771174
+      ],
+      "dist_to_basket_m": 0.022914711071175084,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1440,
+      "time_sec": 2.88,
+      "cube_pos": [
+        0.0503521141418762,
+        0.5230331312991084,
+        0.5689182990030326
+      ],
+      "hand_pos": [
+        0.05258212587315343,
+        0.5013422700441623,
+        0.649648647480686
+      ],
+      "dist_to_basket_m": 0.023035822577257323,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1446,
+      "time_sec": 2.892,
+      "cube_pos": [
+        0.05006203844101364,
+        0.5231506930893003,
+        0.5688213778277544
+      ],
+      "hand_pos": [
+        0.05229039780124316,
+        0.5013717594063365,
+        0.6496324024881662
+      ],
+      "dist_to_basket_m": 0.023150776213404587,
+      "gripper_status": "HOLDING ABOVE BASKET",
+      "phase": "PHASE 6: BASKET HOVER STABILIZATION"
+    },
+    {
+      "step": 1452,
+      "time_sec": 2.904,
+      "cube_pos": [
+        0.049411446870993435,
+        0.5238696158476912,
+        0.5701504617580394
+      ],
+      "hand_pos": [
+        0.05203529238581921,
+        0.5013969674983824,
+        0.6496148962628202
+      ],
+      "dist_to_basket_m": 0.023876870722563594,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1458,
+      "time_sec": 2.916,
+      "cube_pos": [
+        0.046450558500443745,
+        0.5271245957107658,
+        0.5746708333972781
+      ],
+      "hand_pos": [
+        0.05181925807670665,
+        0.5014204646965387,
+        0.6495902401609922
+      ],
+      "dist_to_basket_m": 0.02735584448397205,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1464,
+      "time_sec": 2.928,
+      "cube_pos": [
+        0.04435879653202784,
+        0.5300420761304382,
+        0.5764567158649636
+      ],
+      "hand_pos": [
+        0.05162005444654573,
+        0.5014396418494049,
+        0.649586257849777
+      ],
+      "dist_to_basket_m": 0.030567131281723267,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1470,
+      "time_sec": 2.94,
+      "cube_pos": [
+        0.04348214909878525,
+        0.5329641690669426,
+        0.5761608005698193
+      ],
+      "hand_pos": [
+        0.05144100406249385,
+        0.5014551890787636,
+        0.6495854265569807
+      ],
+      "dist_to_basket_m": 0.03360236334909255,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1476,
+      "time_sec": 2.952,
+      "cube_pos": [
+        0.04283667518160864,
+        0.5355138302809975,
+        0.5744772638083327
+      ],
+      "hand_pos": [
+        0.05128673066957089,
+        0.501469211313714,
+        0.6495836016254244
+      ],
+      "dist_to_basket_m": 0.03622906793834584,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1482,
+      "time_sec": 2.964,
+      "cube_pos": [
+        0.042443578890659375,
+        0.5379342252995365,
+        0.5721128510924846
+      ],
+      "hand_pos": [
+        0.05115225543862444,
+        0.501481597297268,
+        0.6495790373819994
+      ],
+      "dist_to_basket_m": 0.03867951588447926,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1488,
+      "time_sec": 2.976,
+      "cube_pos": [
+        0.04247543607276946,
+        0.540559286424721,
+        0.5692464844346161
+      ],
+      "hand_pos": [
+        0.05103382555407047,
+        0.5014927036075267,
+        0.6495736151437637
+      ],
+      "dist_to_basket_m": 0.04125136091788406,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1494,
+      "time_sec": 2.988,
+      "cube_pos": [
+        0.0427028157661572,
+        0.543332525058284,
+        0.5655623081078072
+      ],
+      "hand_pos": [
+        0.050930614109980524,
+        0.501502398878964,
+        0.6495695102695985
+      ],
+      "dist_to_basket_m": 0.04394265155483286,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1500,
+      "time_sec": 3.0,
+      "cube_pos": [
+        0.04288599183447395,
+        0.5460030364570024,
+        0.5607911210518448
+      ],
+      "hand_pos": [
+        0.05084122026168493,
+        0.5015107319874897,
+        0.6495669233414466
+      ],
+      "dist_to_basket_m": 0.04654984936005128,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1506,
+      "time_sec": 3.012,
+      "cube_pos": [
+        0.04293247041245524,
+        0.5485507710300895,
+        0.5548877120291076
+      ],
+      "hand_pos": [
+        0.050764269237540766,
+        0.5015176416246224,
+        0.6495650064040637
+      ],
+      "dist_to_basket_m": 0.04906248405948278,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1512,
+      "time_sec": 3.024,
+      "cube_pos": [
+        0.042939586366186916,
+        0.5510813541914487,
+        0.547683043228754
+      ],
+      "hand_pos": [
+        0.05069644031268358,
+        0.5015235692546721,
+        0.6495639251160424
+      ],
+      "dist_to_basket_m": 0.051566987372860584,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1518,
+      "time_sec": 3.036,
+      "cube_pos": [
+        0.042946702319918595,
+        0.5536119373528078,
+        0.5390657344284004
+      ],
+      "hand_pos": [
+        0.050636120355044854,
+        0.5015287219032677,
+        0.6495634913278554
+      ],
+      "dist_to_basket_m": 0.054073920099112736,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1524,
+      "time_sec": 3.048,
+      "cube_pos": [
+        0.042953818273650274,
+        0.5561425205141669,
+        0.5290357856280465
+      ],
+      "hand_pos": [
+        0.05058266963862171,
+        0.5015332663211916,
+        0.6495632222675539
+      ],
+      "dist_to_basket_m": 0.05658295933056521,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1530,
+      "time_sec": 3.06,
+      "cube_pos": [
+        0.043007335556452225,
+        0.5585915874134723,
+        0.5177658701410319
+      ],
+      "hand_pos": [
+        0.050535584369448015,
+        0.5015372584247109,
+        0.6495629997812845
+      ],
+      "dist_to_basket_m": 0.05900738489079666,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1536,
+      "time_sec": 3.072,
+      "cube_pos": [
+        0.044218011495542824,
+        0.5587675983559598,
+        0.5091385571866842
+      ],
+      "hand_pos": [
+        0.05049422637443204,
+        0.5015407590425459,
+        0.6495627965940625
+      ],
+      "dist_to_basket_m": 0.05905135059922917,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1542,
+      "time_sec": 3.084,
+      "cube_pos": [
+        0.04615310857917273,
+        0.5567762292337891,
+        0.5020141339181841
+      ],
+      "hand_pos": [
+        0.05045792777831911,
+        0.5015438284347382,
+        0.6495626050462797
+      ],
+      "dist_to_basket_m": 0.056906403678420966,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1548,
+      "time_sec": 3.096,
+      "cube_pos": [
+        0.04824514445236534,
+        0.5538080297329208,
+        0.494438309883435
+      ],
+      "hand_pos": [
+        0.05042607680129698,
+        0.5015465200033273,
+        0.6495624232477865
+      ],
+      "dist_to_basket_m": 0.05383663791259581,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1554,
+      "time_sec": 3.108,
+      "cube_pos": [
+        0.05028541870958516,
+        0.5506828015253855,
+        0.4856844486671692
+      ],
+      "hand_pos": [
+        0.05039813047495118,
+        0.5015488804896362,
+        0.6495622509565843
+      ],
+      "dist_to_basket_m": 0.050683605182557816,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1560,
+      "time_sec": 3.12,
+      "cube_pos": [
+        0.05232394110637691,
+        0.5475550558299767,
+        0.47552374805409603
+      ],
+      "hand_pos": [
+        0.05037361086497838,
+        0.501550950770985,
+        0.6495620882785893
+      ],
+      "dist_to_basket_m": 0.04761180565004971,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1566,
+      "time_sec": 3.132,
+      "cube_pos": [
+        0.054362463503168666,
+        0.5444273101345678,
+        0.46395040744102284
+      ],
+      "hand_pos": [
+        0.05035209821601557,
+        0.5015527666222532,
+        0.6495619352920311
+      ],
+      "dist_to_basket_m": 0.04464097863633311,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1572,
+      "time_sec": 3.144,
+      "cube_pos": [
+        0.05640098589996042,
+        0.5412995644391589,
+        0.4509644268279496
+      ],
+      "hand_pos": [
+        0.05033322409390832,
+        0.5015543593726808,
+        0.649561791960731
+      ],
+      "dist_to_basket_m": 0.041792662554038525,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1578,
+      "time_sec": 3.156,
+      "cube_pos": [
+        0.0581684438639192,
+        0.5385137468553355,
+        0.43849545837099285
+      ],
+      "hand_pos": [
+        0.05031666516648148,
+        0.5015557564700659,
+        0.649561658132179
+      ],
+      "dist_to_basket_m": 0.03937044795268226,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1584,
+      "time_sec": 3.168,
+      "cube_pos": [
+        0.059768855093187793,
+        0.5369134262157217,
+        0.4317102565855859
+      ],
+      "hand_pos": [
+        0.05030213769732424,
+        0.5015569819688048,
+        0.6495615335572474
+      ],
+      "dist_to_basket_m": 0.03818417950951978,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1590,
+      "time_sec": 3.18,
+      "cube_pos": [
+        0.06101898129501882,
+        0.536328353504893,
+        0.42935749630681636
+      ],
+      "hand_pos": [
+        0.05028939270186402,
+        0.5015580569541619,
+        0.6495614179127895
+      ],
+      "dist_to_basket_m": 0.0379627082431753,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1596,
+      "time_sec": 3.192,
+      "cube_pos": [
+        0.061819448563143566,
+        0.5364623794573974,
+        0.42964990383162527
+      ],
+      "hand_pos": [
+        0.05027821169347358,
+        0.5015589999121208,
+        0.649561310822026
+      ],
+      "dist_to_basket_m": 0.038330203234942954,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1602,
+      "time_sec": 3.204,
+      "cube_pos": [
+        0.062221503459157924,
+        0.5370484976949471,
+        0.4313201607492053
+      ],
+      "hand_pos": [
+        0.05026840294953999,
+        0.5015598270522679,
+        0.6495612118716667
+      ],
+      "dist_to_basket_m": 0.03901225869204077,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1608,
+      "time_sec": 3.216,
+      "cube_pos": [
+        0.06235206057705471,
+        0.5380102534467988,
+        0.43356003021372475
+      ],
+      "hand_pos": [
+        0.05025979823440056,
+        0.5015605525899433,
+        0.649561120625888
+      ],
+      "dist_to_basket_m": 0.039966895896342836,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1614,
+      "time_sec": 3.228,
+      "cube_pos": [
+        0.06228771546079252,
+        0.53931798865088,
+        0.4358136785547846
+      ],
+      "hand_pos": [
+        0.05025224992336083,
+        0.5015611889929594,
+        0.649561036637547
+      ],
+      "dist_to_basket_m": 0.041193351196474985,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1620,
+      "time_sec": 3.24,
+      "cube_pos": [
+        0.062075089525370386,
+        0.540905940585368,
+        0.437688622165428
+      ],
+      "hand_pos": [
+        0.05024562847875543,
+        0.5015617471974454,
+        0.649560959457068
+      ],
+      "dist_to_basket_m": 0.04265095265312801,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1626,
+      "time_sec": 3.2520000000000002,
+      "cube_pos": [
+        0.06174552222728656,
+        0.5427755147492527,
+        0.4388720769571786
+      ],
+      "hand_pos": [
+        0.05023982023497168,
+        0.5015622367967725,
+        0.6495608886393723
+      ],
+      "dist_to_basket_m": 0.04435878666572403,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1632,
+      "time_sec": 3.2640000000000002,
+      "cube_pos": [
+        0.06130506916087476,
+        0.5448959360253259,
+        0.43918930152465757
+      ],
+      "hand_pos": [
+        0.0502347254546332,
+        0.5015626662069697,
+        0.649560823749196
+      ],
+      "dist_to_basket_m": 0.04629740446636637,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1638,
+      "time_sec": 3.2760000000000002,
+      "cube_pos": [
+        0.06063230810788484,
+        0.5470411350331111,
+        0.438811796043215
+      ],
+      "hand_pos": [
+        0.05023025662275535,
+        0.501563042811616,
+        0.6495607643650738
+      ],
+      "dist_to_basket_m": 0.048227734353838245,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    },
+    {
+      "step": 1644,
+      "time_sec": 3.2880000000000003,
+      "cube_pos": [
+        0.05992288217170939,
+        0.5490350996014702,
+        0.43822202679841527
+      ],
+      "hand_pos": [
+        0.050226336949747215,
+        0.5015633730887825,
+        0.649560710082235
+      ],
+      "dist_to_basket_m": 0.05002903740348933,
+      "gripper_status": "OPEN (DEPOSITED)",
+      "phase": "PHASE 7: RELEASE & GRAVITY DEPOSIT"
+    }
+  ]
+}

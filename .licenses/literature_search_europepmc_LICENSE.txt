@@ -1,4 +1,4 @@
-Europe PMC Terms Notification
-Checked at: 2026-09-24T22:38:00+05:30
-Terms URL: https://europepmc.org/
-Always check the license of retrieved open-access papers before reuse.
+Notification Date: 2026-10-19
+Terms of Use: https://europepmc.org/
+User notified to check the terms and individual paper licenses.
+Rate limit: Enforced via wrapper scripts (1 req/s).

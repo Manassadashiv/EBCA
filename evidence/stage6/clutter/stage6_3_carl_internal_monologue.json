@@ -1,0 +1,92 @@
+[
+  {
+    "step": 0,
+    "time_sec": 0.0,
+    "quadrant": "Q1",
+    "pos": [
+      0.49,
+      0.49
+    ],
+    "thought": "\ud83e\udded CORRIDOR TRACKING: Navigating Q1. Heading error=-0.20 rad. Min clearance=0.314m. Active pan gaze sweep=0.00 rad."
+  },
+  {
+    "step": 1,
+    "time_sec": 0.02,
+    "quadrant": "Q1",
+    "pos": [
+      0.49,
+      0.5
+    ],
+    "thought": "\ud83e\udde0 SPAWN INCEPTION: Position (0.49, 0.50) initialized. Allocentric raster mapped. 2,114-unit CANN attractor phase locked to theta=1.56 rad. Starting inter-chamber navigation."
+  },
+  {
+    "step": 100,
+    "time_sec": 2.0,
+    "quadrant": "Q1",
+    "pos": [
+      1.2,
+      1.88
+    ],
+    "thought": "\ud83e\udded CORRIDOR TRACKING: Navigating Q1. Heading error=0.53 rad. Min clearance=0.173m. Active pan gaze sweep=-0.71 rad."
+  },
+  {
+    "step": 200,
+    "time_sec": 4.0,
+    "quadrant": "Q1",
+    "pos": [
+      2.11,
+      3.04
+    ],
+    "thought": "\ud83e\udded CORRIDOR TRACKING: Navigating Q1. Heading error=0.30 rad. Min clearance=0.213m. Active pan gaze sweep=-0.44 rad."
+  },
+  {
+    "step": 300,
+    "time_sec": 6.0,
+    "quadrant": "Q1",
+    "pos": [
+      2.36,
+      3.41
+    ],
+    "thought": "\ud83e\udded CORRIDOR TRACKING: Navigating Q1. Heading error=-0.47 rad. Min clearance=0.407m. Active pan gaze sweep=0.44 rad."
+  },
+  {
+    "step": 400,
+    "time_sec": 8.0,
+    "quadrant": "ATRIUM",
+    "pos": [
+      3.85,
+      4.23
+    ],
+    "thought": "\ud83d\udeaa CENTRAL ATRIUM TRANSIT: Doorway threshold crossed at (3.85, 4.23). Clearance=0.634m. Inter-quadrant transit verified."
+  },
+  {
+    "step": 500,
+    "time_sec": 10.0,
+    "quadrant": "Q4",
+    "pos": [
+      4.63,
+      5.5
+    ],
+    "thought": "\ud83e\udded CORRIDOR TRACKING: Navigating Q4. Heading error=-0.75 rad. Min clearance=0.313m. Active pan gaze sweep=-0.00 rad."
+  },
+  {
+    "step": 600,
+    "time_sec": 12.0,
+    "quadrant": "Q4",
+    "pos": [
+      5.92,
+      6.5
+    ],
+    "thought": "\ud83e\udded CORRIDOR TRACKING: Navigating Q4. Heading error=0.08 rad. Min clearance=0.270m. Active pan gaze sweep=-0.71 rad."
+  },
+  {
+    "step": 660,
+    "time_sec": 13.2,
+    "quadrant": "Q4",
+    "pos": [
+      6.66,
+      7.07
+    ],
+    "thought": "\ud83c\udfaf GOAL BEACON ATTAINED: Target (7.0, 7.0) reached at d=0.348m. Zero collisions across 52 obstacles. Free energy minimized."
+  }
+]

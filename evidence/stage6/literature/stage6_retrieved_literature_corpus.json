@@ -1,0 +1,420 @@
+{
+  "domain1_structural_plasticity": {
+    "name": "Phase 6.1: Structural Plasticity, Synaptogenesis & Sleep Spine Pruning",
+    "openalex": [
+      {
+        "source": "OpenAlex",
+        "title": "Structural Plasticity on the SpiNNaker Many-Core Neuromorphic System",
+        "year": 2018,
+        "citations": 19,
+        "doi": "https://doi.org/10.3389/fnins.2018.00434",
+        "url": "https://doi.org/10.3389/fnins.2018.00434",
+        "id": "https://openalex.org/W2794667948"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Plasticity and Adaptation in Neuromorphic Biohybrid Systems",
+        "year": 2020,
+        "citations": 49,
+        "doi": "https://doi.org/10.1016/j.isci.2020.101589",
+        "url": "https://doi.org/10.1016/j.isci.2020.101589",
+        "id": "https://openalex.org/W3088217251"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Hyperbranched Networks that Mimic Experience-Dependent Synaptogenesis",
+        "year": 2026,
+        "citations": 0,
+        "doi": "https://doi.org/10.26434/chemrxiv.15004767/v1",
+        "url": "https://doi.org/10.26434/chemrxiv.15004767/v1",
+        "id": "https://openalex.org/W7164920048"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Formation of structural attractors in neuromorphic systems",
+        "year": 2026,
+        "citations": 0,
+        "doi": "https://doi.org/10.48550/arxiv.2609.06826",
+        "url": "https://arxiv.org/abs/2609.06826",
+        "id": "https://openalex.org/W7212036916"
+      }
+    ],
+    "europepmc": [
+      {
+        "source": "Europe PMC",
+        "title": "Molecular and Cellular Mechanisms of Synaptogenesis and Synaptic Refinement During Cerebellar Circuit Formation.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.3390/ijms27177576",
+        "url": "https://europepmc.org/article/PMC/PMC13566788",
+        "abstract": "Interactions among molecular recognition systems, neuronal activity, and glial regulation transform early neuronal connectivity into precise functional circuits during brain development. The cerebellum is a powerful model for studying these mechanisms due to its stereotyped and accessible circuitry. Two major excitatory afferent pathways-climbing f..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Engram Synapses and Synapse Dynamics in Memory Processing.",
+        "year": "2026",
+        "citations": 1,
+        "doi": "10.1111/jnc.70404",
+        "url": "https://europepmc.org/article/PMC/PMC12980114",
+        "abstract": "Synaptic plasticity is believed to underlie a range of cognitive functions, including learning and memory. Numerous studies have shown that memory formation not only modifies the strength of existing synapses but also alters the dynamics of synaptic turnover. The dynamics of the synaptic landscape reflect brain-wide genetic changes and the activati..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Editorial: Synaptic Plasticity and the Neurobiology of Learning and Memory.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.3390/cells15131169",
+        "url": "https://europepmc.org/article/PMC/PMC13359698",
+        "abstract": "Synaptic plasticity, the activity-dependent modification of synaptic strength, is widely recognized as the principal cellular substrate of learning and memory [...]...."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Partners in plasticity: serotonergic glial interactions in brain circuit remodeling.",
+        "year": "2026",
+        "citations": 1,
+        "doi": "10.3389/fnins.2026.1782246",
+        "url": "https://europepmc.org/article/PMC/PMC13106485",
+        "abstract": "Experience-dependent brain circuit optimization choreographed by environmental sensory input activity involves synapse formation, pruning, and remodeling to sculpt appropriate connectivity. The serotonin (5-HT) neuromodulator acts as a core regulator of this circuit plasticity. Classically, serotonergic control has been understood solely through ne..."
+      }
+    ],
+    "arxiv": [
+      {
+        "source": "arXiv",
+        "title": "Self-Motivated Growing Neural Network for Adaptive Architecture via Local Structural Plasticity",
+        "year": "2025",
+        "url": "http://arxiv.org/abs/2512.12713v2",
+        "abstract": "Control policies are often implemented with fixed-capacity multilayer perceptrons trained by backpropagation, which require architecture selection in advance and cannot adapt their capacity during learning. This paper introduces the Self-Motivated Growing Neural Network (SMGrNN), a gradient-trained controller whose topology evolves online through a..."
+      },
+      {
+        "source": "arXiv",
+        "title": "A flexible framework for structural plasticity in GPU-accelerated sparse spiking neural networks",
+        "year": "2025",
+        "url": "http://arxiv.org/abs/2510.19764v2",
+        "abstract": "The majority of research in both training Artificial Neural Networks (ANNs) and modeling learning in biological brains focuses on synaptic plasticity, where learning equates to changing the strength of existing connections. However, in biological brains, structural plasticity - where new connections are created and others removed - is also vital, n..."
+      },
+      {
+        "source": "arXiv",
+        "title": "A theoretical framework for learning through structural plasticity",
+        "year": "2023",
+        "url": "http://arxiv.org/abs/2307.11735v6",
+        "abstract": "A growing body of research indicates that structural plasticity mechanisms are crucial for learning and memory consolidation. Starting from a simple phenomenological model, we exploit a mean-field approach to develop a theoretical framework of learning through this kind of plasticity, capable of taking into account several features of the connectiv..."
+      },
+      {
+        "source": "arXiv",
+        "title": "Efficient Network Construction through Structural Plasticity",
+        "year": "2019",
+        "url": "http://arxiv.org/abs/1905.11530v3",
+        "abstract": "Deep Neural Networks (DNNs) on hardware is facing excessive computation cost due to the massive number of parameters. A typical training pipeline to mitigate over-parameterization is to pre-define a DNN structure first with redundant learning units (filters and neurons) under the goal of high accuracy, then to prune redundant learning units after t..."
+      }
+    ]
+  },
+  "domain2_body_schema_transfer": {
+    "name": "Phase 6.2: Morphological Invariance & Body Schema Transfer",
+    "openalex": [
+      {
+        "source": "OpenAlex",
+        "title": "Muscleless motor synergies and actions without movements: From motor neuroscience to cognitive robotics",
+        "year": 2018,
+        "citations": 34,
+        "doi": "https://doi.org/10.1016/j.plrev.2018.04.005",
+        "url": "https://doi.org/10.1016/j.plrev.2018.04.005",
+        "id": "https://openalex.org/W2799330331"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Learning to exploit dynamics for robot motor coordination",
+        "year": 2003,
+        "citations": 14,
+        "doi": null,
+        "url": "https://scholarworks.umass.edu/cs_faculty_pubs/178",
+        "id": "https://openalex.org/W1800611401"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "A Schema-Based Robot Controller Complying With the Constraints of Biological Systems",
+        "year": 2022,
+        "citations": 2,
+        "doi": "https://doi.org/10.3389/fnbot.2022.836767",
+        "url": "https://doi.org/10.3389/fnbot.2022.836767",
+        "id": "https://openalex.org/W4229366177"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Robot Learning from Demonstration in Robotic Assembly: A Survey",
+        "year": 2018,
+        "citations": 256,
+        "doi": "https://doi.org/10.3390/robotics7020017",
+        "url": "https://doi.org/10.3390/robotics7020017",
+        "id": "https://openalex.org/W2796864868"
+      }
+    ],
+    "europepmc": [
+      {
+        "source": "Europe PMC",
+        "title": "Beyond motor recovery: emerging perspectives in the management of peripheral facial palsy-a narrative review.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.3389/fneur.2026.1915135",
+        "url": "https://europepmc.org/article/PMC/PMC13595365",
+        "abstract": "<h4>Background</h4>Peripheral facial palsy (PFP) is a common cranial nerve disorder that may result in persistent impairments extending beyond facial muscle weakness, including facial asymmetry, synkinesis, altered emotional expression, and reduced quality of life. Traditional rehabilitation approaches have predominantly focused on motor recovery a..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Neurosensory Integration and Balance Adaptation: Personalization of Postural Control Through the Prism of Individual Spatial Perception.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.3390/life16071125",
+        "url": "https://europepmc.org/article/PMC/PMC13412597",
+        "abstract": "Postural control is a multilevel adaptive system that stabilizes the body in space through dynamic sensory rebalancing and predictive neuromotor regulation. This review synthesizes current data on the neural mechanisms of balance maintenance, individual strategies for integrating multisensory information, and the role of immersive virtual reality a..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Performing is adapting: an ecological dynamics framework for skill learning &lt;i&gt;in&lt;/i&gt; development in handball.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.3389/fspor.2026.1869713",
+        "url": "https://europepmc.org/article/PMC/PMC13493607",
+        "abstract": "This conceptual paper proposes an ecological dynamics perspective as a theoretically coherent and practical framework for handball coaching, education and sport science. Handball is a fast-paced, complex sport in which skilled performance cannot be reduced to the execution of stored movement programmes. Drawing on Bernstein's analysis of the degree..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Proprioception and Cognitive Polarization in Autism: The Bipolar Tensile Model.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.17816/cp15678",
+        "url": "https://europepmc.org/article/PMC/PMC13056243",
+        "abstract": "This article introduces the Bipolar Tensile Model, a neurosemiotic and integrative framework for understanding Autism Spectrum Disorder (ASD). The model reinterprets ASD not as a collection of deficits, but as the outcome of an unresolved tension between two complementary hemispheric cognitive modalities: symbolic-sequential and corporeal-perceptua..."
+      }
+    ],
+    "arxiv": [
+      {
+        "source": "arXiv",
+        "title": "Diffusion-Based Body Schema Learning Enabling Abnormal-State Adaptation in Musculoskeletal Robots",
+        "year": "2026",
+        "url": "http://arxiv.org/abs/2608.01029v1",
+        "abstract": "Musculoskeletal robots require an internal body schema that remains consistent under a wide range of physical state changes, including abnormalities such as muscle rupture and actuator jamming. Conventional approaches based on autoencoders or variational autoencoders learn average behaviors by projecting sensor and actuator signals into a low-dimen..."
+      },
+      {
+        "source": "arXiv",
+        "title": "Adaptive Body Schema Learning System Considering Additional Muscles for Musculoskeletal Humanoids",
+        "year": "2024",
+        "url": "http://arxiv.org/abs/2411.06322v1",
+        "abstract": "One of the important advantages of musculoskeletal humanoids is that the muscle arrangement can be easily changed and the number of muscles can be increased according to the situation. In this study, we describe an overall system of muscle addition for musculoskeletal humanoids and the adaptive body schema learning while taking into account the add..."
+      },
+      {
+        "source": "arXiv",
+        "title": "GeMuCo: Generalized Multisensory Correlational Model for Body Schema Learning",
+        "year": "2024",
+        "url": "http://arxiv.org/abs/2409.06427v1",
+        "abstract": "Humans can autonomously learn the relationship between sensation and motion in their own bodies, estimate and control their own body states, and move while continuously adapting to the current environment. On the other hand, current robots control their bodies by learning the network structure described by humans from their experiences, making cert..."
+      },
+      {
+        "source": "arXiv",
+        "title": "Online Body Schema Adaptation through Cost-Sensitive Active Learning",
+        "year": "2021",
+        "url": "http://arxiv.org/abs/2101.10892v2",
+        "abstract": "Humanoid robots have complex bodies and kinematic chains with several Degrees-of-Freedom (DoF) which are difficult to model. Learning the parameters of a kinematic model can be achieved by observing the position of the robot links during prospective motions and minimising the prediction errors. This work proposes a movement efficient approach for e..."
+      }
+    ]
+  },
+  "domain3_dynamic_manipulation_catching": {
+    "name": "Phase 6.2 (Difficult): High-Speed Manipulation, Throwing & Visual Catching",
+    "openalex": [
+      {
+        "source": "OpenAlex",
+        "title": "Robust Ballistic Catching: A Hybrid System Stabilization Problem",
+        "year": 2018,
+        "citations": 17,
+        "doi": "https://doi.org/10.1109/tro.2018.2868857",
+        "url": "https://doi.org/10.1109/tro.2018.2868857",
+        "id": "https://openalex.org/W2899186968"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Catching Objects in Flight",
+        "year": 2014,
+        "citations": 220,
+        "doi": "https://doi.org/10.1109/tro.2014.2316022",
+        "url": "https://doi.org/10.1109/tro.2014.2316022",
+        "id": "https://openalex.org/W2018020788"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Run and Catch: Dynamic Object-Catching of Quadrupedal Robots",
+        "year": 2023,
+        "citations": 4,
+        "doi": "https://doi.org/10.1109/iros55552.2023.10341977",
+        "url": "https://doi.org/10.1109/iros55552.2023.10341977",
+        "id": "https://openalex.org/W4389667245"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Legged robots for object manipulation: A review",
+        "year": 2023,
+        "citations": 40,
+        "doi": "https://doi.org/10.3389/fmech.2023.1142421",
+        "url": "https://doi.org/10.3389/fmech.2023.1142421",
+        "id": "https://openalex.org/W4366827905"
+      }
+    ],
+    "europepmc": [
+      {
+        "source": "Europe PMC",
+        "title": "Tapping on a target: dealing with uncertainty about its position and motion.",
+        "year": "2023",
+        "citations": 23,
+        "doi": "10.1007/s00221-022-06503-7",
+        "url": "https://europepmc.org/article/PMC/PMC9870842",
+        "abstract": "Reaching movements are guided by estimates of the target object's location. Since the precision of instantaneous estimates is limited, one might accumulate visual information over time. However, if the object is not stationary, accumulating information can bias the estimate. How do people deal with this trade-off between improving precision and red..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "When up is down in 0g: how gravity sensing affects the timing of interceptive actions.",
+        "year": "2012",
+        "citations": 48,
+        "doi": "10.1523/jneurosci.3886-11.2012",
+        "url": "https://europepmc.org/article/PMC/PMC6621712",
+        "abstract": "Humans are known to regulate the timing of interceptive actions by modeling, in a simplified way, Newtonian mechanics. Specifically, when intercepting an approaching ball, humans trigger their movements a bit earlier when the target arrives from above than from below. This bias occurs regardless of the ball's true kinetics, and thus appears to refl..."
+      }
+    ],
+    "arxiv": [
+      {
+        "source": "arXiv",
+        "title": "Dynamic Object Catching with Quadruped Robot Front Legs",
+        "year": "2024",
+        "url": "http://arxiv.org/abs/2410.08065v1",
+        "abstract": "This paper presents a framework for dynamic object catching using a quadruped robot's front legs while it stands on its rear legs. The system integrates computer vision, trajectory prediction, and leg control to enable the quadruped to visually detect, track, and successfully catch a thrown object using an onboard camera. Leveraging a fine-tuned YO..."
+      },
+      {
+        "source": "arXiv",
+        "title": "Learning to Catch Piglets in Flight",
+        "year": "2020",
+        "url": "http://arxiv.org/abs/2001.10220v1",
+        "abstract": "Catching objects in-flight is an outstanding challenge in robotics. In this paper, we present a closed-loop control system fusing data from two sensor modalities: an RGB-D camera and a radar. To develop and test our method, we start with an easy to identify object: a stuffed Piglet. We implement and compare two approaches to detect and track the ob..."
+      },
+      {
+        "source": "arXiv",
+        "title": "Spatiotemporal Agility: Time-Constrained Reinforcement Learning for Vision-Guided Dynamic Quadrupedal Interception",
+        "year": "2026",
+        "url": "http://arxiv.org/abs/2608.06907v1",
+        "abstract": "Legged robots require robust agility to perceive and interact with complex and dynamic environments within a constrained time. However, most existing quadruped locomotion works rely on velocity-tracking policy, which struggle to reach precise targets within strict temporal constraints. Moreover, integrating real-time perception with agile locomotio..."
+      },
+      {
+        "source": "arXiv",
+        "title": "NMPC-based Motion Planning with Adaptive Weighting for Dynamic Object Interception",
+        "year": "2025",
+        "url": "http://arxiv.org/abs/2511.15532v1",
+        "abstract": "Catching fast-moving objects serves as a benchmark for robotic agility, posing significant coordination challenges for cooperative manipulator systems holding a catcher, particularly due to inherent closed-chain constraints. This paper presents a nonlinear model predictive control (MPC)-based motion planner that bridges high-level interception plan..."
+      }
+    ]
+  },
+  "domain4_dense_3d_clutter_navigation": {
+    "name": "Phase 6.3: Multi-Room Navigation in Dense 3D Clutter & Occlusion",
+    "openalex": [
+      {
+        "source": "OpenAlex",
+        "title": "Autonomous navigation of MAVs in unknown cluttered environments",
+        "year": 2020,
+        "citations": 53,
+        "doi": "https://doi.org/10.1002/rob.21959",
+        "url": "https://doi.org/10.1002/rob.21959",
+        "id": "https://openalex.org/W2949471801"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Visual\u2013Inertial Autonomous UAV Navigation in Complex Illumination and Highly Cluttered Under-Canopy Environments",
+        "year": 2025,
+        "citations": 17,
+        "doi": "https://doi.org/10.3390/drones9010027",
+        "url": "https://doi.org/10.3390/drones9010027",
+        "id": "https://openalex.org/W4405991752"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Autonomous Navigation System for a Delivery Drone",
+        "year": 2021,
+        "citations": 85,
+        "doi": "https://doi.org/10.1007/s40313-021-00828-4",
+        "url": "https://doi.org/10.1007/s40313-021-00828-4",
+        "id": "https://openalex.org/W3170250287"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "A Study on Autonomous Navigation and Obstacle Avoidance Systems for UAVs Using Deep Learning Techniques",
+        "year": 2025,
+        "citations": 0,
+        "doi": "https://doi.org/10.21203/rs.3.rs-7303597/v1",
+        "url": "https://doi.org/10.21203/rs.3.rs-7303597/v1",
+        "id": "https://openalex.org/W4413934745"
+      }
+    ],
+    "europepmc": [
+      {
+        "source": "Europe PMC",
+        "title": "A Survey of Map Construction and Management Methods for Single Embodied Agents",
+        "year": "2026",
+        "citations": 0,
+        "doi": null,
+        "url": "https://europepmc.org/article/PMC/PMC13667649",
+        "abstract": ""
+      },
+      {
+        "source": "Europe PMC",
+        "title": "CAS-YOLO: A lightweight and efficient object detector for infrared UAV imagery.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.1371/journal.pone.0359167",
+        "url": "https://europepmc.org/article/PMC/PMC13614547",
+        "abstract": "Infrared target detection is crucial for unmanned aerial vehicle (UAV) applications in civilian low-visibility environments, including urban nighttime monitoring, emergency rescue, and infrastructure inspection. However, thermal imaging blur, complex backgrounds, and extreme target aspect ratios pose significant challenges to thermal infrared targe..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Eye-Tracking-Based Evaluation of Cognitive Style and Driving Task Effects on AR-HUD Navigation Interfaces.",
+        "year": "2026",
+        "citations": 1,
+        "doi": "10.3390/s26133980",
+        "url": "https://europepmc.org/article/PMC/PMC13364102",
+        "abstract": "As augmented reality head-up display (AR-HUD) becomes increasingly integrated into intelligent vehicles, inappropriate interface designs may increase drivers' cognitive workload and delay hazard responses. This study investigates how cognitive style, driving task type, and AR-HUD navigation design jointly influence drivers' behavioral performance a..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Guidelines for visual cognitive rehabilitation of visual information processing disorders (2025).",
+        "year": "2026",
+        "citations": 1,
+        "doi": "10.18240/ijo.2026.08.06",
+        "url": "https://europepmc.org/article/PMC/PMC13407249",
+        "abstract": "Visual information processing (VIP) is essential for perception and cognition. It enables the brain to acquire and integrate visual stimuli into coherent representations. Visual information processing disorder (VIPD) is characterized by impairments in visuospatial ability, visual analysis, and visuomotor integration. These deficits significantly af..."
+      }
+    ],
+    "arxiv": [
+      {
+        "source": "arXiv",
+        "title": "An MPC framework for efficient navigation of mobile robots in cluttered environments",
+        "year": "2025",
+        "url": "http://arxiv.org/abs/2509.15917v2",
+        "abstract": "We present a model predictive control (MPC) framework for efficient navigation of mobile robots in cluttered environments. The proposed approach integrates a finite-segment shortest path planner into the finite-horizon trajectory optimization of the MPC. This formulation ensures convergence to dynamically selected targets and guarantees collision a..."
+      },
+      {
+        "source": "arXiv",
+        "title": "Geometry-Aware Safety-Critical Local Reactive Controller for Robot Navigation in Unknown and Cluttered Environments",
+        "year": "2023",
+        "url": "http://arxiv.org/abs/2310.05547v1",
+        "abstract": "This work proposes a safety-critical local reactive controller that enables the robot to navigate in unknown and cluttered environments. In particular, the trajectory tracking task is formulated as a constrained polynomial optimization problem. Then, safety constraints are imposed on the control variables invoking the notion of polynomial positivit..."
+      },
+      {
+        "source": "arXiv",
+        "title": "Autonomous Navigation of MAVs in Unknown Cluttered Environments",
+        "year": "2019",
+        "url": "http://arxiv.org/abs/1906.08839v3",
+        "abstract": "This paper presents an autonomous navigation framework for reaching a goal in unknown 3D cluttered environments. The framework consists of three main components. First, a computationally efficient method for mapping the environment from the disparity measurements obtained from a depth sensor. Second, a stochastic method to generate a path to a give..."
+      },
+      {
+        "source": "arXiv",
+        "title": "TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model",
+        "year": "2026",
+        "url": "http://arxiv.org/abs/2609.09158v2",
+        "abstract": "We study the problem of navigating cluttered indoor environments with a humanoid robot. Unlike conventional methods that model navigation as a 2D path planning problem, humanoid traversal in cluttered environments requires continuous geometry-aware whole-body adaptation, including coordinated arm placement, torso adjustment, and gait modulation for..."
+      }
+    ]
+  }
+}

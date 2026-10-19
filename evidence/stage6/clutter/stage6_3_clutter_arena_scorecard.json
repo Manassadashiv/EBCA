@@ -1,0 +1,318 @@
+{
+  "stage": "Stage 6.3 Heavy 3D Clutter Arena Stress Benchmark",
+  "arena": {
+    "dimensions_m": [
+      8.0,
+      8.0
+    ],
+    "chambers": 4,
+    "obstacle_count": 52,
+    "doorway_width_m": 0.8,
+    "goal_pos": [
+      7.0,
+      7.0
+    ]
+  },
+  "trials_evaluated": 20,
+  "metrics": {
+    "escape_rate": 1.0,
+    "collision_rate": 0.0,
+    "mean_clearance_m": 0.05814049961500524,
+    "occupancy_cells_visited": 279,
+    "occupancy_coverage_pct": 1.08984375,
+    "latency": {
+      "mean_ms": 0.3605915069500556,
+      "p95_ms": 0.5172000383026898
+    }
+  },
+  "all_gates_passed": true,
+  "figures": {
+    "3d_terrain_view": "D:\\ebca\\evidence\\stage6\\clutter\\figures\\stage6_3_3d_terrain_arena_view.png",
+    "trajectories": "D:\\ebca\\evidence\\stage6\\clutter\\figures\\stage6_3_clutter_trajectories.png",
+    "occupancy_heatmap": "D:\\ebca\\evidence\\stage6\\clutter\\figures\\stage6_3_occupancy_heatmap.png",
+    "cognitive_dashboard": "D:\\ebca\\evidence\\stage6\\clutter\\figures\\stage6_3_carl_internal_monologue_dashboard.png"
+  },
+  "internal_monologue_entries": 9,
+  "trials": [
+    {
+      "trial": 1,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.659888958887974,
+        7.071447026896867
+      ],
+      "final_dist_to_goal": 0.3475344557575665,
+      "min_clearance_m": 0.057663481128197136,
+      "steps": 662,
+      "duration_sec": 13.24,
+      "mean_latency_ms": 0.3778042422544042
+    },
+    {
+      "trial": 2,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.6580718369395875,
+        7.0674537097890004
+      ],
+      "final_dist_to_goal": 0.34851810807785405,
+      "min_clearance_m": 0.060725907087333386,
+      "steps": 655,
+      "duration_sec": 13.1,
+      "mean_latency_ms": 0.36839081181618305
+    },
+    {
+      "trial": 3,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.662011173991325,
+        7.07029671691129
+      ],
+      "final_dist_to_goal": 0.3452217764209385,
+      "min_clearance_m": 0.05829350394591848,
+      "steps": 658,
+      "duration_sec": 13.16,
+      "mean_latency_ms": 0.35267484781797975
+    },
+    {
+      "trial": 4,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.658835421588725,
+        7.071618137194136
+      ],
+      "final_dist_to_goal": 0.348600670019008,
+      "min_clearance_m": 0.0544834380290935,
+      "steps": 665,
+      "duration_sec": 13.3,
+      "mean_latency_ms": 0.3516668166549452
+    },
+    {
+      "trial": 5,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.661510545003171,
+        7.070810593737571
+      ],
+      "final_dist_to_goal": 0.34581678867504023,
+      "min_clearance_m": 0.05456802353918583,
+      "steps": 658,
+      "duration_sec": 13.16,
+      "mean_latency_ms": 0.3604184448038989
+    },
+    {
+      "trial": 6,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.657701727622749,
+        7.065616508439141
+      ],
+      "final_dist_to_goal": 0.34853067792117604,
+      "min_clearance_m": 0.057714953789463674,
+      "steps": 652,
+      "duration_sec": 13.040000000000001,
+      "mean_latency_ms": 0.3806041535706474
+    },
+    {
+      "trial": 7,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.661771811319283,
+        7.071364220023727
+      ],
+      "final_dist_to_goal": 0.34567493330849697,
+      "min_clearance_m": 0.06012073832898668,
+      "steps": 659,
+      "duration_sec": 13.18,
+      "mean_latency_ms": 0.35024155392006745
+    },
+    {
+      "trial": 8,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.657759555085956,
+        7.071825147443896
+      ],
+      "final_dist_to_goal": 0.34969611656451083,
+      "min_clearance_m": 0.058060128386274334,
+      "steps": 666,
+      "duration_sec": 13.32,
+      "mean_latency_ms": 0.3497763563169122
+    },
+    {
+      "trial": 9,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.661801032575305,
+        7.070978563481013
+      ],
+      "final_dist_to_goal": 0.3455669226661578,
+      "min_clearance_m": 0.05976092131837396,
+      "steps": 662,
+      "duration_sec": 13.24,
+      "mean_latency_ms": 0.35959924297816487
+    },
+    {
+      "trial": 10,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.660425778600326,
+        7.071618682408794
+      ],
+      "final_dist_to_goal": 0.34704450364350514,
+      "min_clearance_m": 0.05639333682633141,
+      "steps": 662,
+      "duration_sec": 13.24,
+      "mean_latency_ms": 0.3857448484543993
+    },
+    {
+      "trial": 11,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.658492430752143,
+        7.0701137757254315
+      ],
+      "final_dist_to_goal": 0.3486306948621361,
+      "min_clearance_m": 0.06074993154678032,
+      "steps": 659,
+      "duration_sec": 13.18,
+      "mean_latency_ms": 0.35979665127969834
+    },
+    {
+      "trial": 12,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.660151468885856,
+        7.070000254151785
+      ],
+      "final_dist_to_goal": 0.3469827945039287,
+      "min_clearance_m": 0.057903353439682115,
+      "steps": 659,
+      "duration_sec": 13.18,
+      "mean_latency_ms": 0.36321978738228117
+    },
+    {
+      "trial": 13,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.661765438465483,
+        7.070979503440752
+      ],
+      "final_dist_to_goal": 0.3456019509857292,
+      "min_clearance_m": 0.056909991585274156,
+      "steps": 662,
+      "duration_sec": 13.24,
+      "mean_latency_ms": 0.34553575731644576
+    },
+    {
+      "trial": 14,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.659950060265428,
+        7.070006318898841
+      ],
+      "final_dist_to_goal": 0.34718128722506425,
+      "min_clearance_m": 0.05546237225107209,
+      "steps": 659,
+      "duration_sec": 13.18,
+      "mean_latency_ms": 0.3613890413601728
+    },
+    {
+      "trial": 15,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.660540485892956,
+        7.068971954660485
+      ],
+      "final_dist_to_goal": 0.34639557192244574,
+      "min_clearance_m": 0.058774536591574555,
+      "steps": 658,
+      "duration_sec": 13.16,
+      "mean_latency_ms": 0.382545730844424
+    },
+    {
+      "trial": 16,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.6614717060836846,
+        7.070916610195838
+      ],
+      "final_dist_to_goal": 0.34587652621066917,
+      "min_clearance_m": 0.06193487599301667,
+      "steps": 659,
+      "duration_sec": 13.18,
+      "mean_latency_ms": 0.35058234311864234
+    },
+    {
+      "trial": 17,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.661611261026206,
+        7.071589288530039
+      ],
+      "final_dist_to_goal": 0.3458785406707272,
+      "min_clearance_m": 0.05963249182847885,
+      "steps": 660,
+      "duration_sec": 13.200000000000001,
+      "mean_latency_ms": 0.34164437616532695
+    },
+    {
+      "trial": 18,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.659882098832034,
+        7.071447159170635
+      ],
+      "final_dist_to_goal": 0.34754119647670045,
+      "min_clearance_m": 0.06034440086475351,
+      "steps": 662,
+      "duration_sec": 13.24,
+      "mean_latency_ms": 0.34722530284797715
+    },
+    {
+      "trial": 19,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.6575283900478945,
+        7.069609070318392
+      ],
+      "final_dist_to_goal": 0.3494742140613208,
+      "min_clearance_m": 0.05906243034380754,
+      "steps": 657,
+      "duration_sec": 13.14,
+      "mean_latency_ms": 0.36053664107870964
+    },
+    {
+      "trial": 20,
+      "escaped": true,
+      "collision": false,
+      "final_pos": [
+        6.661512209580346,
+        7.070810542295373
+      ],
+      "final_dist_to_goal": 0.34581514883437997,
+      "min_clearance_m": 0.05425117547650671,
+      "steps": 658,
+      "duration_sec": 13.16,
+      "mean_latency_ms": 0.3628847560143984
+    }
+  ]
+}

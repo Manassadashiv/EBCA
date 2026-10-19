@@ -1,0 +1,78 @@
+<mujoco model="carl_form1_skid_steer">
+  <compiler angle="radian" autolimits="true"/>
+  <option gravity="0 0 -9.81" timestep="0.005" iterations="50" integrator="implicitfast" solver="Newton" tolerance="1e-10"/>
+
+  <visual>
+    <headlight ambient="0.3 0.3 0.35" diffuse="0.6 0.6 0.7" specular="0 0 0"/>
+  </visual>
+
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" width="512" height="512"
+             rgb1="0.04 0.05 0.10" rgb2="0.06 0.08 0.16"/>
+    <material name="floor_mat" texture="grid" texrepeat="8 8" reflectance="0.1" rgba="0.05 0.06 0.12 1"/>
+    <material name="chassis" rgba="0.20 0.22 0.28 1" reflectance="0.3" shininess="0.7"/>
+    <material name="tire" rgba="0.08 0.08 0.10 1" reflectance="0" shininess="0.2"/>
+    <material name="hub" rgba="0.1 0.7 0.9 1" reflectance="0.5"/>
+    <material name="wall" rgba="0.12 0.14 0.22 1" reflectance="0.2"/>
+    <material name="exit" rgba="0.0 0.85 0.45 1" emission="0.6"/>
+  </asset>
+
+  <default>
+    <geom contype="1" conaffinity="1" condim="3"
+          friction="0.80 0.005 0.0001"
+          solimp="0.99 0.999 0.001" solref="0.004 1"/>
+  </default>
+
+  <worldbody>
+    <light name="sun" pos="0 0 6" dir="0 0 -1" directional="true" ambient="0.3 0.3 0.35"/>
+    <geom name="floor" type="plane" size="8 8 0.1" pos="0 0 0" material="floor_mat"/>
+
+    <!-- Slalom Obstacles -->
+    <geom name="obs1" type="cylinder" size="0.15 0.3" pos="0.8 0.3 0.3" material="wall"/>
+    <geom name="obs2" type="cylinder" size="0.15 0.3" pos="1.6 -0.3 0.3" material="wall"/>
+    <geom name="obs3" type="cylinder" size="0.15 0.3" pos="2.4 0.3 0.3" material="wall"/>
+    <geom name="goal_line" type="box" size="0.05 0.8 0.01" pos="3.2 0.0 0.01" material="exit"/>
+
+    <!-- Form 1: 4-Wheel Skid-Steer Rover (Planar 3-DOF Ground Kinematics) -->
+    <body name="carl_body" pos="0.0 0.0 0.055">
+      <joint name="root_x" type="slide" axis="1 0 0" damping="1.0"/>
+      <joint name="root_y" type="slide" axis="0 1 0" damping="1.0"/>
+      <joint name="root_yaw" type="hinge" axis="0 0 1" damping="0.8"/>
+      <geom name="chassis_geom" type="box" size="0.14 0.11 0.03" material="chassis" mass="2.2" contype="0" conaffinity="0"/>
+
+      <!-- Front-Left Wheel -->
+      <body name="fl_wheel" pos="0.09 0.13 0">
+        <geom name="fl_tire" type="cylinder" size="0.055 0.018" euler="1.5708 0 0" material="tire" mass="0.25" contype="0" conaffinity="0"/>
+      </body>
+
+      <!-- Front-Right Wheel -->
+      <body name="fr_wheel" pos="0.09 -0.13 0">
+        <geom name="fr_tire" type="cylinder" size="0.055 0.018" euler="1.5708 0 0" material="tire" mass="0.25" contype="0" conaffinity="0"/>
+      </body>
+
+      <!-- Rear-Left Wheel -->
+      <body name="rl_wheel" pos="-0.09 0.13 0">
+        <geom name="rl_tire" type="cylinder" size="0.055 0.018" euler="1.5708 0 0" material="tire" mass="0.25" contype="0" conaffinity="0"/>
+      </body>
+
+      <!-- Rear-Right Wheel -->
+      <body name="rr_wheel" pos="-0.09 -0.13 0">
+        <geom name="rr_tire" type="cylinder" size="0.055 0.018" euler="1.5708 0 0" material="tire" mass="0.25" contype="0" conaffinity="0"/>
+      </body>
+
+      <!-- Head & Eye -->
+      <body name="head" pos="0.08 0.0 0.07">
+        <joint name="neck_pan" type="hinge" axis="0 0 1" range="-1.2 1.2" damping="0.05"/>
+        <geom name="head_g" type="box" size="0.04 0.04 0.03" rgba="0.15 0.15 0.20 1" mass="0.3"/>
+        <camera name="eye_cam" pos="0.041 0 0" xyaxes="0 -1 0 0 0 1" fovy="65"/>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <velocity name="act_vx" joint="root_x" kv="40.0"/>
+    <velocity name="act_vy" joint="root_y" kv="40.0"/>
+    <velocity name="act_wz" joint="root_yaw" kv="25.0"/>
+    <position name="act_pan" joint="neck_pan" kp="8.0" kv="0.8"/>
+  </actuator>
+</mujoco>

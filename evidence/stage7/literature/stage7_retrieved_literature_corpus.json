@@ -1,0 +1,504 @@
+{
+  "domain1_nonverbal_acoustic_affect": {
+    "name": "Phase 7.1: Non-Verbal Acoustic Vocalization & Somatic Affect (R2-D2 Ethology)",
+    "openalex": [
+      {
+        "source": "OpenAlex",
+        "title": "Soundgen: An open-source tool for synthesizing nonverbal vocalizations",
+        "year": 2018,
+        "citations": 128,
+        "doi": "https://doi.org/10.3758/s13428-018-1095-7",
+        "url": "https://doi.org/10.3758/s13428-018-1095-7",
+        "id": "https://openalex.org/W2883879995"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Human nonverbal vocalizations",
+        "year": 2020,
+        "citations": 1,
+        "doi": null,
+        "url": "https://lup.lub.lu.se/record/3ac3badf-fbc6-47d0-9ac0-6fcb2f24c943",
+        "id": "https://openalex.org/W3005712354"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Nonverbal Sound in Human-Robot Interaction: A Systematic Review",
+        "year": 2023,
+        "citations": 51,
+        "doi": "https://doi.org/10.1145/3583743",
+        "url": "https://doi.org/10.1145/3583743",
+        "id": "https://openalex.org/W4321223270"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "The Sound of Emotional Prosody: Nearly 3 Decades of Research and Future Directions",
+        "year": 2024,
+        "citations": 58,
+        "doi": "https://doi.org/10.1177/17456916231217722",
+        "url": "https://doi.org/10.1177/17456916231217722",
+        "id": "https://openalex.org/W4390935750"
+      }
+    ],
+    "europepmc": [
+      {
+        "source": "Europe PMC",
+        "title": "Integrating Eye Tracking in Acoustic Research: Methods for Sound Localization, Event Detection, Multimodal Sensing, and Perceptual Analysis.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.3390/s26113603",
+        "url": "https://europepmc.org/article/PMC/PMC13259159",
+        "abstract": "Recent advances in eye-tracking technologies have fostered growing interest in their integration with acoustic research for investigating auditory perception and human behavioral responses. This study presents a structured literature review of recent developments at the intersection of eye tracking and acoustics, with the aim of analyzing how eye-m..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Auditory Emotional Prosody Perception Using Pseudo-Speech Stimuli in Native and Non-Native Listeners.",
+        "year": "2025",
+        "citations": 0,
+        "doi": "10.1002/brb3.70475",
+        "url": "https://europepmc.org/article/PMC/PMC11975632",
+        "abstract": "<h4>Objective</h4>To assess emotional recognition ability using corpora of emotions conveyed through nonlinguistic pseudo-sentences in native and non-native listeners (Turkish and English).<h4>Methods</h4>A cross-sectional design was employed, including a total of 60 young adults (aged 18-25 years). Of these, 30 were American English-speaking parti..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Let's talk about \"talking\" dogs! Reviewing the science behind a bold idea.",
+        "year": "2025",
+        "citations": 0,
+        "doi": "10.1007/s42977-025-00276-0",
+        "url": "https://europepmc.org/article/PMC/PMC12367964",
+        "abstract": "The concept of a \"talking\" dog has long fascinated humans, as presented throughout history in pieces of folklore, literature, and other fields of culture. While speech, as we know, is a uniquely human trait, the evolution of dogs in close proximity to humans has allowed them to develop strategies that facilitate heterospecific communication with us..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Robert Provine: the critical human importance of laughter, connections and contagion.",
+        "year": "2022",
+        "citations": 13,
+        "doi": "10.1098/rstb.2021.0178",
+        "url": "https://europepmc.org/article/PMC/PMC9489296",
+        "abstract": "Robert Provine made several critically important contributions to science, and in this paper, we will elaborate some of his research into laughter and behavioural contagion. To do this, we will employ Provine's observational methods and use a recorded example of naturalistic laughter to frame our discussion of Provine's work. The laughter is from a..."
+      }
+    ],
+    "arxiv": [
+      {
+        "source": "arXiv",
+        "title": "PuppetAI: A Customizable Platform for Designing Tactile-Rich Affective Robot Interaction",
+        "year": "2026",
+        "url": "http://arxiv.org/abs/2602.04787v2",
+        "abstract": "We introduce PuppetAI, a modular soft robot interaction platform. This platform offers a scalable cable-driven actuation system and a customizable, puppet-inspired robot gesture framework, supporting a multitude of interaction gesture robot design formats. The platform comprises a four-layer decoupled software architecture that includes perceptual ..."
+      },
+      {
+        "source": "arXiv",
+        "title": "The Effect of Robot Skill Level and Communication in Rapid, Proximate Human-Robot Collaboration",
+        "year": "2023",
+        "url": "http://arxiv.org/abs/2304.03756v1",
+        "abstract": "As high-speed, agile robots become more commonplace, these robots will have the potential to better aid and collaborate with humans. However, due to the increased agility and functionality of these robots, close collaboration with humans can create safety concerns that alter team dynamics and degrade task performance. In this work, we aim to enable..."
+      },
+      {
+        "source": "arXiv",
+        "title": "Can Voice Assistants Sound Cute? Towards a Model of Kawaii Vocalics",
+        "year": "2023",
+        "url": "http://arxiv.org/abs/2304.12809v1",
+        "abstract": "The Japanese notion of \"kawaii\" or expressions of cuteness, vulnerability, and/or charm is a global cultural export. Work has explored kawaii-ness as a design feature and factor of user experience in the visual appearance, nonverbal behaviour, and sound of robots and virtual characters. In this initial work, we consider whether voices can be kawaii..."
+      },
+      {
+        "source": "arXiv",
+        "title": "TrustNavGPT: Modeling Uncertainty to Improve Trustworthiness of Audio-Guided LLM-Based Robot Navigation",
+        "year": "2024",
+        "url": "http://arxiv.org/abs/2408.01867v1",
+        "abstract": "While LLMs are proficient at processing text in human conversations, they often encounter difficulties with the nuances of verbal instructions and, thus, remain prone to hallucinate trust in human command. In this work, we present TrustNavGPT, an LLM based audio guided navigation agent that uses affective cues in spoken communication elements such ..."
+      }
+    ]
+  },
+  "domain2_social_referencing_epistemic_gaze": {
+    "name": "Phase 7.2: Social Referencing, Joint Attention & Epistemic Inquiry",
+    "openalex": [
+      {
+        "source": "OpenAlex",
+        "title": "Social Eye Gaze in Human-Robot Interaction: A Review",
+        "year": 2017,
+        "citations": 589,
+        "doi": "https://doi.org/10.5898/jhri.6.1.admoni",
+        "url": "https://doi.org/10.5898/jhri.6.1.admoni",
+        "id": "https://openalex.org/W2617211984"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Social modulators of gaze-mediated orienting of attention: A review",
+        "year": 2020,
+        "citations": 510,
+        "doi": "https://doi.org/10.3758/s13423-020-01730-x",
+        "url": "https://doi.org/10.3758/s13423-020-01730-x",
+        "id": "https://openalex.org/W3015389658"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Interaction With Social Robots: Improving Gaze Toward Face but Not Necessarily Joint Attention in Children With Autism Spectrum Disorder",
+        "year": 2019,
+        "citations": 39,
+        "doi": "https://doi.org/10.3389/fpsyg.2019.01503",
+        "url": "https://doi.org/10.3389/fpsyg.2019.01503",
+        "id": "https://openalex.org/W2955350613"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Developmental robotics: a survey",
+        "year": 2003,
+        "citations": 625,
+        "doi": "https://doi.org/10.1080/09540090310001655110",
+        "url": "https://doi.org/10.1080/09540090310001655110",
+        "id": "https://openalex.org/W2162850206"
+      }
+    ],
+    "europepmc": [
+      {
+        "source": "Europe PMC",
+        "title": "Synthesizing the temporal self: robotic models of episodic and autobiographical memory.",
+        "year": "2024",
+        "citations": 2,
+        "doi": "10.1098/rstb.2023.0415",
+        "url": "https://europepmc.org/article/PMC/PMC11523108",
+        "abstract": "Episodic memories are experienced as belonging to a self that persists in time. We review evidence concerning the nature of human episodic memory and of the sense of self and how these emerge during development, proposing that the younger child experiences a persistent self that supports a subjective experience of remembering. We then explore recen..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Digital health technologies for adults with ADHD: a scoping review.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.3389/fdgth.2026.1746732",
+        "url": "https://europepmc.org/article/PMC/PMC12969067",
+        "abstract": "<h4>Introduction</h4>Adult Attention-Deficit/Hyperactivity Disorder (ADHD) is associated with negative long-term outcomes including accident and injury, impairment in social and occupational functioning, and a high rate of mental health comorbidities. Access to suitable healthcare remains challenging due to diagnostic delays, variable treatment res..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Evaluating co-design approaches with parents in paediatric healthcare: a systematic review.",
+        "year": "2025",
+        "citations": 3,
+        "doi": "10.1186/s12913-025-13495-x",
+        "url": "https://europepmc.org/article/PMC/PMC12570435",
+        "abstract": "BACKGROUND: Co-design is increasingly employed in healthcare to develop interventions that reflect the needs and preferences of patients and families. In paediatric settings, actively involving parents and guardians is particularly critical due to their central role in care delivery and decision-making. Despite growing interest in co-design, its im..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Disturbances of Shared Intentionality in Schizophrenia and Autism.",
+        "year": "2020",
+        "citations": 13,
+        "doi": "10.3389/fpsyt.2020.570597",
+        "url": "https://europepmc.org/article/PMC/PMC7902514",
+        "abstract": "Schizophrenia and autism are today considered complex spectrum disorders characterized by difficulties in social behavior. Drawing on recent advances in collective or shared intentionality studies, we present a novel theoretical approach to these social difficulties by exploring them from the angle of shared intentionality. We begin by describing t..."
+      }
+    ],
+    "arxiv": []
+  },
+  "domain3_proxemics_personal_space": {
+    "name": "Phase 7.3: Human-Aware Proxemics, Personal Space & Ankle Safety Bubble",
+    "openalex": [
+      {
+        "source": "OpenAlex",
+        "title": "Advancing a taxonomy of proxemics for socially aware robot navigation",
+        "year": 2026,
+        "citations": 1,
+        "doi": "https://doi.org/10.3389/frobt.2026.1800762",
+        "url": "https://doi.org/10.3389/frobt.2026.1800762",
+        "id": "https://openalex.org/W7162217886"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Neural-Network Based Adaptive Proxemics-Costmap for Human-Aware Autonomous Robot Navigation",
+        "year": 2019,
+        "citations": 2,
+        "doi": "https://doi.org/10.30880/ijie.2019.11.04.011",
+        "url": "https://doi.org/10.30880/ijie.2019.11.04.011",
+        "id": "https://openalex.org/W2979952110"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "An Approach of Social Navigation Based on Proxemics for Crowded Environments of Humans and Robots",
+        "year": 2021,
+        "citations": 57,
+        "doi": "https://doi.org/10.3390/mi12020193",
+        "url": "https://doi.org/10.3390/mi12020193",
+        "id": "https://openalex.org/W3133364292"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Learning Proxemics for Personalized Human\u2013Robot Social Interaction",
+        "year": 2019,
+        "citations": 62,
+        "doi": "https://doi.org/10.1007/s12369-019-00560-9",
+        "url": "https://doi.org/10.1007/s12369-019-00560-9",
+        "id": "https://openalex.org/W2945169717"
+      }
+    ],
+    "europepmc": [
+      {
+        "source": "Europe PMC",
+        "title": "Assessing pedestrian responses to autonomous and personal mobility robots in crowded public spaces.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.1126/sciadv.aef2576",
+        "url": "https://europepmc.org/article/PMC/PMC13440412",
+        "abstract": "Robots increasingly share spaces with people, supporting delivery services and mobility for the aging populations, yet their ability to share space comfortably lacks understanding and benchmarks for designers and policy-makers. We compared human-robot (HRI) and human-human (HHI) interactions across four real-world crowd datasets spanning Europe, No..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Advancing a taxonomy of proxemics for socially aware robot navigation.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.3389/frobt.2026.1800762",
+        "url": "https://europepmc.org/article/PMC/PMC13248410",
+        "abstract": "Socially aware robot navigation requires robots to move among people in ways that respect human social norms, comfort, and perceived safety. Proxemics, the regulation of interpersonal space, plays a central role in this process. Applied HRI work often relies on simplified, static representations of personal space, overlooking the dynamic, asymmetri..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Guide robots' acceptance in organizations: user self-efficacy and robots' organizational value.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.3389/frobt.2026.1842941",
+        "url": "https://europepmc.org/article/PMC/PMC13272404",
+        "abstract": "<h4>Introduction</h4>This article explores the self-efficacy of guide robot (GR) users and assesses the value of integrating GRs into organizational workflows.<h4>Methods</h4>The study consisted of two stages, both conducted in Estonia. First, we carried out a preliminary quantitative pilot study by applying the newly developed Guide Robot User Sel..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Enhanced Dynamic Window Approach for socially compliant robot navigation.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.3389/frobt.2026.1769678",
+        "url": "https://europepmc.org/article/PMC/PMC13186690",
+        "abstract": "While contemporary deep learning methods are frequently computationally costly, traditional local planners like the Dynamic Window Approach (DWA) are essentially constrained by their purely geometric, \"socially blind\" nature. This research introduces Semantic-DWA, a unique, lightweight, and interpretable framework that closes this gap by adding a c..."
+      }
+    ],
+    "arxiv": [
+      {
+        "source": "arXiv",
+        "title": "Efficient and Robust Pedestrian Detection using Deep Learning for Human-Aware Navigation",
+        "year": "2016",
+        "url": "http://arxiv.org/abs/1607.04441v3",
+        "abstract": "This paper addresses the problem of Human-Aware Navigation (HAN), using multi camera sensors to implement a vision-based person tracking system. The main contributions of this paper are as follows: a novel and efficient Deep Learning person detection and a standardization of human-aware constraints. In the first stage of the approach, we propose to..."
+      },
+      {
+        "source": "arXiv",
+        "title": "Enabling Socially Competent navigation through incorporating HRI",
+        "year": "2019",
+        "url": "http://arxiv.org/abs/1904.09116v1",
+        "abstract": "Over the last years, social robots have been deployed in public environments making evident the need of human-aware navigation capabilities. In this regard, the robotics community have made efforts to include proxemics or social conventions within the navigation approaches. Nevertheless, few works have tackled the problem of labelling humans as an ..."
+      }
+    ]
+  },
+  "domain4_oneshot_hdc_imprinting": {
+    "name": "Phase 7.4: One-Shot Visual Imprinting & Hyperdimensional Semantic Association",
+    "openalex": [
+      {
+        "source": "OpenAlex",
+        "title": "A Theoretical Perspective on Hyperdimensional Computing",
+        "year": 2021,
+        "citations": 102,
+        "doi": "https://doi.org/10.1613/jair.1.12664",
+        "url": "https://doi.org/10.1613/jair.1.12664",
+        "id": "https://openalex.org/W3204836041"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Memory-inspired spiking hyperdimensional network for robust online learning",
+        "year": 2022,
+        "citations": 24,
+        "doi": "https://doi.org/10.1038/s41598-022-11073-3",
+        "url": "https://doi.org/10.1038/s41598-022-11073-3",
+        "id": "https://openalex.org/W4229454639"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "EnHDC: Ensemble Learning for Brain-Inspired Hyperdimensional Computing",
+        "year": 2022,
+        "citations": 6,
+        "doi": "https://doi.org/10.1109/les.2022.3191641",
+        "url": "https://doi.org/10.1109/les.2022.3191641",
+        "id": "https://openalex.org/W4221147683"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "GrapHD: Graph-Based Hyperdimensional Memorization for Brain-Like Cognitive Learning",
+        "year": 2022,
+        "citations": 81,
+        "doi": "https://doi.org/10.3389/fnins.2022.757125",
+        "url": "https://doi.org/10.3389/fnins.2022.757125",
+        "id": "https://openalex.org/W4210566186"
+      }
+    ],
+    "europepmc": [
+      {
+        "source": "Europe PMC",
+        "title": "Learning is a fundamental source of individuality.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.7554/elife.111235",
+        "url": "https://europepmc.org/article/PMC/PMC13626652",
+        "abstract": "Learning and memory are essential components of our individuality. While it is established that behaviour can vary across genetically identical individuals, it remains unknown how much of this variation stems from momentary experience during learning compared to genetics and its past interactions with the environment. To address this, we measured b..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Functional MRI of imprinting memory in awake newborn domestic chicks.",
+        "year": "2024",
+        "citations": 5,
+        "doi": "10.1038/s42003-024-06991-z",
+        "url": "https://europepmc.org/article/PMC/PMC11480507",
+        "abstract": "Filial imprinting, a crucial ethological paradigm, provides insights into the neurobiology of early learning and its long-term impact on behaviour. To date, invasive techniques like autoradiography or lesions have been used to study it, limiting the exploration of whole brain networks. Recent advances in fMRI for avian brains now open new windows t..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Functional MRI of imprinting memory: a new avenue for neurobiology of early learning",
+        "year": "2024",
+        "citations": 0,
+        "doi": "10.21203/rs.3.rs-3970041/v1",
+        "url": "https://doi.org/10.21203/rs.3.rs-3970041/v1",
+        "abstract": "<title>Abstract</title>  <p>Filial imprinting, a crucial ethological paradigm, provides insights into the neurobiology of early learning and its long-term impact on behaviour. To date, only invasive techniques, such as autoradiography or lesion, have been employed to understand this behaviour. The primary limitation of these methods lies in their c..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Play robots to develop competences.",
+        "year": "2025",
+        "citations": 0,
+        "doi": "10.3389/frobt.2025.1646523",
+        "url": "https://europepmc.org/article/PMC/PMC12554578",
+        "abstract": "Play is a fundamental activity through which humans and animals acquire skills and competencies. Robots are increasingly capable of engaging in playful interactions with humans, offering new opportunities for learning, development, and social connection. Unlike traditional toys, robots possess autonomy and expressive capabilities, enabling them to ..."
+      }
+    ],
+    "arxiv": [
+      {
+        "source": "arXiv",
+        "title": "HDXplore: Automated Blackbox Testing of Brain-Inspired Hyperdimensional Computing",
+        "year": "2021",
+        "url": "http://arxiv.org/abs/2105.12770v1",
+        "abstract": "Inspired by the way human brain works, the emerging hyperdimensional computing (HDC) is getting more and more attention. HDC is an emerging computing scheme based on the working mechanism of brain that computes with deep and abstract patterns of neural activity instead of actual numbers. Compared with traditional ML algorithms such as DNN, HDC is m..."
+      },
+      {
+        "source": "arXiv",
+        "title": "HDTest: Differential Fuzz Testing of Brain-Inspired Hyperdimensional Computing",
+        "year": "2021",
+        "url": "http://arxiv.org/abs/2103.08668v1",
+        "abstract": "Brain-inspired hyperdimensional computing (HDC) is an emerging computational paradigm that mimics brain cognition and leverages hyperdimensional vectors with fully distributed holographic representation and (pseudo)randomness. Compared to other machine learning (ML) methods such as deep neural networks (DNNs), HDC offers several advantages includin..."
+      },
+      {
+        "source": "arXiv",
+        "title": "One-shot Learning for iEEG Seizure Detection Using End-to-end Binary Operations: Local Binary Patterns with Hyperdimensional Computing",
+        "year": "2018",
+        "url": "http://arxiv.org/abs/1809.01926v1",
+        "abstract": "This paper presents an efficient binarized algorithm for both learning and classification of human epileptic seizures from intracranial electroencephalography (iEEG). The algorithm combines local binary patterns with brain-inspired hyperdimensional computing to enable end-to-end learning and inference with binary operations. The algorithm first tra..."
+      },
+      {
+        "source": "arXiv",
+        "title": "MEMHD: Memory-Efficient Multi-Centroid Hyperdimensional Computing for Fully-Utilized In-Memory Computing Architectures",
+        "year": "2025",
+        "url": "http://arxiv.org/abs/2502.07834v1",
+        "abstract": "The implementation of Hyperdimensional Computing (HDC) on In-Memory Computing (IMC) architectures faces significant challenges due to the mismatch between highdimensional vectors and IMC array sizes, leading to inefficient memory utilization and increased computation cycles. This paper presents MEMHD, a Memory-Efficient Multi-centroid HDC framework..."
+      }
+    ]
+  },
+  "domain5_lowcost_edge_hri": {
+    "name": "Phase 7.5: Low-Cost Embedded Voice, Sound Localization & Companion Hardware",
+    "openalex": [
+      {
+        "source": "OpenAlex",
+        "title": "Design of a Multimodal Psychological Companion Robot Based on Embedded AI",
+        "year": 2025,
+        "citations": 0,
+        "doi": "https://doi.org/10.25236/ajets.2025.080509",
+        "url": "https://doi.org/10.25236/ajets.2025.080509",
+        "id": "https://openalex.org/W7125921174"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Development of a Low-Cost Social Robot for Personalized Human-Robot Interaction",
+        "year": 2015,
+        "citations": 0,
+        "doi": null,
+        "url": "http://rave.ohiolink.edu/etdc/view?acc_num=case1427889195",
+        "id": "https://openalex.org/W2626022680"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Texture recognition and localization in amorphous robotic skin",
+        "year": 2015,
+        "citations": 56,
+        "doi": "https://doi.org/10.1088/1748-3190/10/5/055002",
+        "url": "https://doi.org/10.1088/1748-3190/10/5/055002",
+        "id": "https://openalex.org/W1880957851"
+      },
+      {
+        "source": "OpenAlex",
+        "title": "Multi-modal interaction management for a robot companion",
+        "year": 2007,
+        "citations": 5,
+        "doi": null,
+        "url": "https://pub.uni-bielefeld.de/record/2302281",
+        "id": "https://openalex.org/W1760906804"
+      }
+    ],
+    "europepmc": [
+      {
+        "source": "Europe PMC",
+        "title": "Adaptive multi-robot formation control using distributed audio-visual sensing and bluetooth communication networks.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.1038/s41598-026-56312-z",
+        "url": "https://europepmc.org/article/PMC/PMC13487252",
+        "abstract": "This paper introduces a new method for distributed multi-robot formation control, in which the emphasis is placed on combining audio-visual inter-agent sensing with Bluetooth communication. We recommend a hierarchical control, which would include a local formation controller and centralized control for ESP32-based robots. The scheme is based on a t..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "A thermophone-based FM sonar for airborne ultrasonic sensing under drone flight noise.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.1038/s41598-026-65909-3",
+        "url": "https://europepmc.org/article/PMC/PMC13562668",
+        "abstract": "Bats achieve agile navigation, including obstacle avoidance and prey pursuit in complex environments, using a remarkably simple active sonar system consisting of a single sound emitter and two receivers. Their biosonar highlights the potential of broadband FM pulses in simple sensing architectures. Here, we present a bat-inspired FM sonar system fo..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Air-Coupled Ultrasound Systems for Biomedical Applications: Advances in Sensors, Electronic Interfaces and Signal Processing Strategies.",
+        "year": "2026",
+        "citations": 4,
+        "doi": "10.3390/s26051692",
+        "url": "https://europepmc.org/article/PMC/PMC12987149",
+        "abstract": "Air-coupled ultrasound (ACU) is emerging as a fully non-contact sensing modality in biomedical applications. ACU applications can be broadly classified into two main domains: (i) contactless monitoring of physiological parameters and (ii) assistive aids, robotic perception in unstructured real-world environments, enabling tracking and geometric rec..."
+      },
+      {
+        "source": "Europe PMC",
+        "title": "Survey on Reconnaissance Autonomous Robotic Systems for Disaster Management.",
+        "year": "2026",
+        "citations": 0,
+        "doi": "10.3390/s26051659",
+        "url": "https://europepmc.org/article/PMC/PMC12986560",
+        "abstract": "Systems that operate in dangerous environments are becoming essential in case of emergencies. This survey reviews the latest ground reconnaissance robots using computer vision (CV), machine learning (ML), MCU-based control, LoRa communication, DC motors, and dual-power systems. The analysis includes hardware and algorithms, and their performance in..."
+      }
+    ],
+    "arxiv": [
+      {
+        "source": "arXiv",
+        "title": "Sound Source Localization for Human-Robot Interaction in Outdoor Environments",
+        "year": "2025",
+        "url": "http://arxiv.org/abs/2507.21431v1",
+        "abstract": "This paper presents a sound source localization strategy that relies on a microphone array embedded in an unmanned ground vehicle and an asynchronous close-talking microphone near the operator. A signal coarse alignment strategy is combined with a time-domain acoustic echo cancellation algorithm to estimate a time-frequency ideal ratio mask to isol..."
+      },
+      {
+        "source": "arXiv",
+        "title": "Enhanced Robot Speech Recognition Using Biomimetic Binaural Sound Source Localization",
+        "year": "2019",
+        "url": "http://arxiv.org/abs/1902.05446v1",
+        "abstract": "Inspired by the behavior of humans talking in noisy environments, we propose an embodied embedded cognition approach to improve automatic speech recognition (ASR) systems for robots in challenging environments, such as with ego noise, using binaural sound source localization (SSL). The approach is verified by measuring the impact of SSL with a huma..."
+      },
+      {
+        "source": "arXiv",
+        "title": "An Efficient GPU-based Implementation for Noise Robust Sound Source Localization",
+        "year": "2025",
+        "url": "http://arxiv.org/abs/2504.03373v2",
+        "abstract": "Robot audition, encompassing Sound Source Localization (SSL), Sound Source Separation (SSS), and Automatic Speech Recognition (ASR), enables robots and smart devices to acquire auditory capabilities similar to human hearing. Despite their wide applicability, processing multi-channel audio signals from microphone arrays in SSL involves computational..."
+      },
+      {
+        "source": "arXiv",
+        "title": "CNN-based Robust Sound Source Localization with SRP-PHAT for the Extreme Edge",
+        "year": "2025",
+        "url": "http://arxiv.org/abs/2503.02046v1",
+        "abstract": "Robust sound source localization for environments with noise and reverberation are increasingly exploiting deep neural networks fed with various acoustic features. Yet, state-of-the-art research mainly focuses on optimizing algorithmic accuracy, resulting in huge models preventing edge-device deployment. The edge, however, urges for real-time low-f..."
+      }
+    ]
+  }
+}

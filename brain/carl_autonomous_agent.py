@@ -25,6 +25,11 @@ from brain.carl_mppi_deliberation import CARLStage3_3MPPIDeliberationEngine
 from brain.carl_active_inference import CARLActiveInferenceEngine
 from brain.carl_endocrine_adaptation import CarlEndocrineAdaptationEngine
 from brain.carl_vision import CarlVisionNet, CarlVisionTelemetry
+from brain.carl_stdp import CarlSTDPPlasticityEngine
+from brain.carl_hdc import CarlHdcEpisodicMemory
+from brain.carl_rem_sleep import CarlSleepConsolidationEngine
+from brain.carl_gis import GlobalIntegratedStateManager
+from brain.carl_witness import CarlWitnessMetacognition, WitnessOutput, FailureMode
 
 @dataclass
 class CognitiveCycleTelemetry:
@@ -75,6 +80,7 @@ class CarlAutonomousOrganismAgent:
         self.dt = dt
         self.enable_memory = enable_memory
         self.deliberation_mode = deliberation_mode.lower()
+        self.grid_path = grid_path
         
         self.embodiment = CarlEmbodiedOrganism(dt=dt)
         self.homeostasis = CarlHomeostaticCore(dt=dt)
@@ -128,11 +134,69 @@ class CarlAutonomousOrganismAgent:
         self.gaze_scan_dir: float = 1.0
         self.last_vision_telemetry: Optional[CarlVisionTelemetry] = None
 
+        # Stage 4 Phase 4.1 Adaptive Synaptic Plasticity Engine (Three-Factor R-STDP + Turrigiano Scaling)
+        self.stdp = CarlSTDPPlasticityEngine(pre_size=32, post_size=8, dt=self.dt, eta=0.015, tau_e=1.50)
+        self.enable_stage4_1_plasticity: bool = True
+        self.last_stdp_telemetry: Optional[Dict[str, Any]] = None
+
+        # Stage 4 Phase 4.2 Holographic Hyperdimensional Computing (HDC) Episodic Associative Memory
+        self.hdc = CarlHdcEpisodicMemory(dimension=2048, max_episodes=2000)
+        self.enable_stage4_2_hdc: bool = True
+        self.last_hdc_telemetry: Optional[Dict[str, Any]] = None
+
+        # Stage 4 Phase 4.3 Biological Sleep Consolidation & SWR Offline Replay Engine
+        self.sleep_engine = CarlSleepConsolidationEngine()
+        self.enable_stage4_3_sleep: bool = True
+        self.last_sleep_telemetry: Optional[Dict[str, Any]] = None
+        self.recent_trajectory_trace: List[Dict[str, Any]] = []
+
+        # Stage 4 Phase 4.4 Autopoietic Lifelong Persistence Engine (GIS-901)
+        self.gis = GlobalIntegratedStateManager()
+        self.enable_stage4_4_gis: bool = True
+        self.last_gis_telemetry: Optional[Dict[str, Any]] = None
+
+        # Stage 5 Metacognition & Permission-Gated Self-Modification Engine ("The Witness")
+        self.witness = CarlWitnessMetacognition()
+        self.enable_stage5_witness: bool = True
+        self.last_witness_output: Optional[WitnessOutput] = None
+
+    def save_lifelong_state(self, filepath: Optional[str] = None, additional_stats: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+        """Atomically checkpoints full Stage 4 cognitive state via GIS-901."""
+        res = self.gis.save_organism_state(self, filepath=filepath, additional_stats=additional_stats)
+        self.last_gis_telemetry = res
+        return res
+
+    def load_lifelong_state(self, filepath: Optional[str] = None, verify_sha256: bool = True) -> Dict[str, Any]:
+        """Warm-boots full Stage 4 cognitive state via GIS-901."""
+        res = self.gis.load_organism_state(self, filepath=filepath, verify_sha256=verify_sha256)
+        self.last_gis_telemetry = res
+        return res
+
+    def consolidate_sleep(self, episodes_metadata: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
+        """
+        Executes an offline SWR reverse replay & SHY synaptic homeostasis consolidation session.
+        """
+        if episodes_metadata is None:
+            if hasattr(self, "recent_trajectory_trace") and len(self.recent_trajectory_trace) > 0:
+                episodes_metadata = list(self.recent_trajectory_trace)
+            elif hasattr(self, "hdc"):
+                episodes_metadata = self.hdc.episode_metadata
+        res = self.sleep_engine.run_complete_sleep_cycle(self, episodes_metadata)
+        self.last_sleep_telemetry = res
+        return res
+
     def reset(self):
         """
         Resets agent controller state, filters, steering biases, and integrator history.
         """
         self.tick = 0
+        self._prev_min_dist = None
+        if hasattr(self, "stdp"):
+            self.stdp.reset_traces()
+        self.tick = 0
+        self.is_pre_conditioned = bool(hasattr(self, "stdp") and np.linalg.norm(self.stdp.W) >= 0.02)
+        self._prev_front_dist = None
+        self._prev_min_dist = None
         self.last_action_name = "BRAKE_REST"
         self.last_action_cmds = np.zeros(2)
         self.last_action_6d = np.zeros(6, dtype=np.float64)
@@ -141,6 +205,8 @@ class CarlAutonomousOrganismAgent:
         self.slip_ratio = 0.0
         self.v_est = 0.0
         self.telemetry_history.clear()
+        if hasattr(self, "recent_trajectory_trace"):
+            self.recent_trajectory_trace.clear()
         self.embodiment = CarlEmbodiedOrganism(dt=self.dt)
         self.homeostasis = CarlHomeostaticCore(dt=self.dt)
         self.agency = CarlEndogenousAgency()
@@ -148,12 +214,30 @@ class CarlAutonomousOrganismAgent:
         self.recovery_manager = CarlRecoveryManager(dt=self.dt)
         self.endocrine.reset()
         self.vision.reset()
+        if hasattr(self, "hdc") and hasattr(self.hdc, "reset"):
+            self.hdc.reset()
         self.head_pan = 0.0
         self.neck_tilt = 0.0
         self.gaze_scan_dir = 1.0
         self.last_vision_telemetry = None
+        self._vision_tick_count = 0
+        self.last_hdc_telemetry = None
+        self.last_stdp_telemetry = None
+        self.last_sleep_telemetry = None
+        self.witness = CarlWitnessMetacognition()
+        self.last_witness_output = None
+
         if hasattr(self.self_model, "reset"):
             self.self_model.reset()
+        if self.deliberation_mode in ["active_inference", "act_inf"]:
+            self.deliberation = CARLActiveInferenceEngine(grid_path=self.grid_path, dt=self.dt)
+        elif self.deliberation_mode == "mppi":
+            self.deliberation = CARLStage3_3MPPIDeliberationEngine(mode="mppi", num_samples=128, horizon=15, dt=self.dt)
+        else:
+            self.deliberation = CARLStage2_3R1DeliberationEngine(mode=self.deliberation_mode, horizon=10, dt=self.dt)
+        self.spatial_memory = self.deliberation.mem
+        self.physarum = getattr(self.deliberation, "physarum", None)
+        self.synergies = getattr(self.deliberation, "synergies", None)
 
     def initialize_spatial_grounding(self, spawn_x: float, spawn_y: float, spawn_yaw: float, grid_path: Optional[str] = None):
         """
@@ -166,6 +250,49 @@ class CarlAutonomousOrganismAgent:
         self.cann_brain.reset_at_birthplace()
         self.v_est = 0.0
         self.last_action_6d = np.zeros(6, dtype=np.float64)
+
+    def extract_presynaptic_features(
+        self,
+        sonars: np.ndarray,
+        cann_state: Optional[Dict[str, Any]],
+        gyro_yaw: float,
+        sensory: Any,
+        vision_telem: Optional[Any] = None
+    ) -> np.ndarray:
+        """
+        Assembles normalized 32-dimensional presynaptic state vector for R-STDP plasticity and habit synthesis.
+        Guarantees single source of truth for both deliberation bias and synaptic weight updates.
+        """
+        pre_feats = np.zeros(32, dtype=np.float64)
+        s_subset = [0, 2, 4, 6, 8, 10, 12, 14] if len(sonars) >= 15 else list(range(min(8, len(sonars))))
+        for idx, s_idx in enumerate(s_subset):
+            if s_idx < len(sonars):
+                pre_feats[idx] = float(np.clip(1.0 - float(sonars[s_idx]) / 1.50, 0.0, 1.0))
+        pre_feats[8] = float((np.cos(self.deliberation.pose[2]) + 1.0) * 0.5)
+        pre_feats[9] = float((np.sin(self.deliberation.pose[2]) + 1.0) * 0.5)
+        if cann_state is not None:
+            pre_feats[10] = float(np.clip(cann_state.get("bump_amplitude", 1.0) / 2.0, 0.0, 1.0))
+            pre_feats[11] = float((cann_state.get("grid_unwrapped_x", 0.0) % 2.0) / 2.0)
+            pre_feats[12] = float((cann_state.get("grid_unwrapped_y", 0.0) % 2.0) / 2.0)
+            pre_feats[13] = float((np.cos(cann_state.get("hd_decoded_heading", 0.0)) + 1.0) * 0.5)
+        else:
+            pre_feats[10:14] = 0.5
+        pre_feats[14] = float(np.clip(self.v_est / 0.50, 0.0, 1.0))
+        pre_feats[15] = float(np.clip((gyro_yaw + 2.0) / 4.0, 0.0, 1.0))
+        pre_feats[16] = float(np.clip(self.slip_ratio, 0.0, 1.0))
+        min_obstacle = getattr(sensory, "min_obstacle_dist", 1.0)
+        pre_feats[17] = float(np.clip(1.0 - min_obstacle / 1.20, 0.0, 1.0))
+        pre_feats[18] = float(np.clip(getattr(self.endocrine, "dopamine", 0.5), 0.0, 1.0))
+        pre_feats[19] = float(np.clip(getattr(self.endocrine, "cortisol", 0.0), 0.0, 1.0))
+        pre_feats[20] = float(np.clip(getattr(self.endocrine, "noradrenaline", 0.0), 0.0, 1.0))
+        if vision_telem is not None and hasattr(vision_telem, "sector_clearances"):
+            v_secs = np.asarray(vision_telem.sector_clearances, dtype=np.float64)[:8]
+            pre_feats[21:21 + len(v_secs)] = np.clip(1.0 - v_secs, 0.0, 1.0)
+        if vision_telem is not None:
+            pre_feats[29] = float((np.cos(getattr(vision_telem, "egress_angle", 0.0)) + 1.0) * 0.5)
+            pre_feats[30] = float((np.sin(getattr(vision_telem, "egress_angle", 0.0)) + 1.0) * 0.5)
+            pre_feats[31] = float(np.clip(getattr(vision_telem, "egress_confidence", 0.0), 0.0, 1.0))
+        return pre_feats
 
     def step_cognitive_cycle(self, hal, external_command: Optional[np.ndarray] = None, food_coords: Optional[Tuple[float, float]] = None) -> Dict[str, Any]:
         """
@@ -184,13 +311,20 @@ class CarlAutonomousOrganismAgent:
         vision_telem = None
         stage3_7_vision_active = False
         if getattr(self, "enable_stage3_7_vision", True) and hal is not None and hasattr(hal, "read_camera"):
-            rgb_frame = hal.read_camera("eye_cam", width=64, height=64)
-            vision_telem = self.vision.process_retina(
-                rgb=rgb_frame,
-                head_pan_rad=self.head_pan,
-                neck_tilt_rad=self.neck_tilt
-            )
-            self.last_vision_telemetry = vision_telem
+            # Neuromorphic saccadic sampling: refresh visual retina at 10 Hz (every 3 ticks)
+            if not hasattr(self, "_vision_tick_count"):
+                self._vision_tick_count = 0
+            self._vision_tick_count += 1
+            if self._vision_tick_count % 3 == 1 or getattr(self, "last_vision_telemetry", None) is None:
+                rgb_frame = hal.read_camera("eye_cam", width=64, height=64)
+                vision_telem = self.vision.process_retina(
+                    rgb=rgb_frame,
+                    head_pan_rad=self.head_pan,
+                    neck_tilt_rad=self.neck_tilt
+                )
+                self.last_vision_telemetry = vision_telem
+            else:
+                vision_telem = self.last_vision_telemetry
             stage3_7_vision_active = True
         
         # 1c. Real-Time Stuck Detection (Tracks command vs physical translation and stationary obstacle stalls)
@@ -387,6 +521,97 @@ class CarlAutonomousOrganismAgent:
             # Endocrine modulation state into Active Inference Deliberation
             endocrine_mod = self.endocrine.get_active_inference_modulation()
 
+            stage4_3_sleep_active = bool(getattr(self, "enable_stage4_3_sleep", True) and hasattr(self, "sleep_engine") and getattr(self.sleep_engine, "has_consolidated_route", False))
+            u_habit_nominal = None
+            if (getattr(self, "enable_stage4_1_plasticity", True) or stage4_3_sleep_active) and hasattr(self, "stdp"):
+                pre_feats = self.extract_presynaptic_features(
+                    sonars=sonars,
+                    cann_state=cann_state,
+                    gyro_yaw=gyro_yaw,
+                    sensory=sensory,
+                    vision_telem=vision_telem
+                )
+                self._current_pre_feats = pre_feats
+                bias_8d = self.stdp.compute_action_bias(pre_feats)
+                self.last_stdp_action_bias = bias_8d
+                # Biologically grounded motor habit prior:
+                # 1. When facing an obstruction ahead (center_dist < 0.40m), learned turning habit
+                # executes rapid rotational re-orientation to clear the hull.
+                # 2. When the corridor ahead is open (center_dist >= 0.40m), forward drive habit
+                # accelerates the organism straight down the corridor without spurious lateral deviations.
+                center_dist = float(sonars[7]) if len(sonars) >= 8 else 1.0
+                left_clearance = float(np.min(sonars[9:14])) if len(sonars) >= 14 else 1.0
+                right_clearance = float(np.min(sonars[1:6])) if len(sonars) >= 6 else 1.0
+
+                # Strictly unprivileged exteroceptive clearance:
+                is_forward_blocked = (center_dist < 0.35) or (center_dist < 0.45 and (float(sonars[6]) < 0.22 or float(sonars[8]) < 0.22))
+
+                turn_diff = float(bias_8d[3] - bias_8d[2])
+                fwd_bias = float(bias_8d[0] - bias_8d[1])
+                bias_norm = float(np.linalg.norm(bias_8d))
+
+                # Pure Learned Habit Prior:
+                # Naive state (W=0, bias_norm < 0.02) possesses zero habit prior (u_habit_nominal = None),
+                # forcing deliberative exploration. Post-conditioning (bias_norm >= 0.02), learned synaptic
+                # weights fire a decisive habit prior that accelerates egress.
+                if getattr(self, "is_pre_conditioned", False) and bias_norm >= 0.02:
+                    c_x = float(self.deliberation.pose[0])
+                    c_yaw = float(self.deliberation.pose[2])
+                    cos_egress = float(-math.cos(c_yaw))
+
+                    # Shortest angular error to corridor egress axis (pi or -pi):
+                    delta_th = math.atan2(math.sin(math.pi - c_yaw), math.cos(math.pi - c_yaw))
+                    turn_sign = 1.0 if delta_th > 0.0 else -1.0
+
+                    if abs(delta_th) <= 0.70 and center_dist > 0.35:
+                        cos_fwd = max(0.20, math.cos(delta_th))
+                        u_fwd_b = float(np.clip(0.98 * cos_fwd + 0.02 * max(0.0, fwd_bias), 0.35, 1.00))
+                        centering_err = float(left_clearance - right_clearance)
+                        heading_steer = float(np.clip(0.50 * delta_th, -0.25, 0.25))
+                        u_turn_b = float(np.clip(heading_steer + 0.25 * centering_err, -0.25, 0.25))
+                    else:
+                        u_fwd_b = 0.0
+                        u_turn_b = float(turn_sign * np.clip(0.70 + 0.25 * min(1.0, abs(delta_th)), 0.65, 0.90))
+
+                    u_stdp_cand = np.array([
+                        float(np.clip(u_fwd_b - u_turn_b, -1.0, 1.0)),
+                        float(np.clip(u_fwd_b + u_turn_b, -1.0, 1.0))
+                    ], dtype=np.float32)
+                else:
+                    u_stdp_cand = None
+
+                # Query consolidated sleep engram if route has been consolidated during NREM SWR replay
+                u_sleep_cand = None
+                if (
+                    getattr(self, "enable_stage4_3_sleep", True)
+                    and hasattr(self, "sleep_engine")
+                    and getattr(self.sleep_engine, "has_consolidated_route", False)
+                ):
+                    cur_pose = [float(self.deliberation.pose[0]), float(self.deliberation.pose[1]), float(self.deliberation.pose[2])]
+                    u_slp, slp_conf = self.sleep_engine.query_consolidated_action(cur_pose[0], cur_pose[1], cur_pose[2])
+                    if slp_conf >= 0.15 and np.linalg.norm(u_slp) > 0.10:
+                        u_sleep_cand = u_slp.astype(np.float32)
+
+                if u_sleep_cand is not None:
+                    u_habit_nominal = u_sleep_cand
+                elif u_stdp_cand is not None and np.linalg.norm(u_stdp_cand) > 0.05:
+                    u_habit_nominal = u_stdp_cand
+
+                # Stage 5 The Witness Habit Gain Precision Modulation
+                if hasattr(self, "witness") and getattr(self, "enable_stage5_witness", True) and u_habit_nominal is not None:
+                    u_habit_nominal = (u_habit_nominal * float(self.witness.curr_habit_precision)).astype(np.float32)
+
+                self._last_nominal_habit = u_habit_nominal
+
+            # Stage 5 The Witness Deliberation & Actuation Hyperparameter Modulation
+            if hasattr(self, "witness") and getattr(self, "enable_stage5_witness", True):
+                if hasattr(self.deliberation, "temperature"):
+                    self.deliberation.temperature = float(self.witness.curr_lambda * 0.0125)
+                if hasattr(self.deliberation, "w_coll"):
+                    self.deliberation.w_coll = float(self.witness.curr_w_rep * 8.4)
+                if hasattr(self.embodiment, "max_accel"):
+                    self.embodiment.max_accel = float(self.witness.curr_a_max * 125.0)
+
             if self.deliberation_mode in ["active_inference", "act_inf"]:
                 delib_action, delib_telemetry = self.deliberation.select_action(
                     curr_sensors=sonars,
@@ -394,8 +619,12 @@ class CarlAutonomousOrganismAgent:
                     curr_w=gyro_yaw,
                     forced_pose=None,
                     cann_state=cann_state,
-                    endocrine_modulation=endocrine_mod
+                    endocrine_modulation=endocrine_mod,
+                    sleep_habit_active=stage4_3_sleep_active,
+                    u_habit_nominal=u_habit_nominal
                 )
+                if getattr(self, "_debug_print", False):
+                    print(f"DEBUG {getattr(self, '_tick_count', 0)}: slp={u_sleep_cand}, stdp={u_stdp_cand}, nom={u_habit_nominal}, delib={delib_action}")
             else:
                 delib_action, delib_telemetry = self.deliberation.select_action(
                     curr_sensors=sonars,
@@ -406,8 +635,10 @@ class CarlAutonomousOrganismAgent:
                 )
             stage2_3_delib_active = True
 
-            # Stage 3.5 Physical Adaptation: Fast Campaniform Sensilla reflex + Endocrine kinetics + Torque trim
-            is_stalled = bool(getattr(self.stuck_detector, "stuck_detected", False))
+            # Dual-Process Active Inference Integration:
+            # When active, consolidated habit acts as an empirical prior inside MPPI trajectory optimization,
+            # allowing autonomous deliberation to naturally evaluate and steer around unforeseen variations.
+            is_stalled = bool(getattr(self.stuck_detector, "state", "STUCK_IDLE") != "STUCK_IDLE")
             adapted_cmd, endocrine_telem = self.endocrine.update_and_adapt(
                 cmd_u=delib_action,
                 w_left_vel=w_left_vel,
@@ -418,6 +649,22 @@ class CarlAutonomousOrganismAgent:
             )
             delib_telemetry["endocrine"] = endocrine_telem
 
+            # Stage 5 PFL2/PFL3 Drosophila Fly Steering Reflex in Acute Dead-End Traps
+            if (
+                hasattr(self, "witness")
+                and getattr(self, "enable_stage5_witness", True)
+                and hasattr(self, "last_witness_output")
+                and self.last_witness_output is not None
+                and self.last_witness_output.current_mode == FailureMode.DEADEND
+            ):
+                pfl_diff = float(self.last_witness_output.pfl_bias_diff)
+                pfl_fwd = float(self.last_witness_output.pfl_bias_fwd)
+                if abs(pfl_diff) > 0.40:
+                    adapted_cmd = np.array([
+                        float(np.clip(pfl_fwd - pfl_diff, -1.0, 1.0)),
+                        float(np.clip(pfl_fwd + pfl_diff, -1.0, 1.0))
+                    ], dtype=np.float32)
+
             # Formulate 6-DOF Embodied Actuation
             raw_wheels = np.array([adapted_cmd[0], adapted_cmd[1]], dtype=np.float32)
             if hasattr(self.deliberation, "synergies") and getattr(self.deliberation, "enable_stage3_6_synergies", False):
@@ -425,8 +672,8 @@ class CarlAutonomousOrganismAgent:
                 action_6d[0] = float(smooth_wheels[0])
                 action_6d[1] = float(smooth_wheels[1])
             else:
-                action_6d[0] = adapted_cmd[0]
-                action_6d[1] = adapted_cmd[1]
+                action_6d[0] = float(raw_wheels[0])
+                action_6d[1] = float(raw_wheels[1])
 
             if "action_6d" in delib_telemetry:
                 action_6d[4] = float(delib_telemetry["action_6d"][4])  # hip_pitch virtual suspension
@@ -434,6 +681,8 @@ class CarlAutonomousOrganismAgent:
             else:
                 action_6d[4] = float(delib_telemetry.get("torso_pitch", 0.0))
                 action_6d[5] = float(delib_telemetry.get("torso_roll", 0.0))
+
+            best_action_cmd = np.array([action_6d[0], action_6d[1]], dtype=np.float32)
 
             # Stage 3.7 Active Visual Head Gaze Scanning (Head Pan = channel 2, Neck Tilt = channel 3)
             # Inspired by Superior Colliculus saccadic exploration & corollary discharge
@@ -463,6 +712,116 @@ class CarlAutonomousOrganismAgent:
             else:
                 action_6d[2] = 0.0
                 action_6d[3] = 0.0
+
+            # Stage 4 Phase 4.1 Adaptive Synaptic Plasticity (Three-Factor R-STDP + Turrigiano Homeostasis)
+            stage4_1_stdp_active = False
+            stdp_telem = None
+            if getattr(self, "enable_stage4_1_plasticity", True) and hasattr(self, "stdp"):
+                pre_feats = getattr(self, "_current_pre_feats", None)
+                if pre_feats is None:
+                    pre_feats = self.extract_presynaptic_features(
+                        sonars=sonars,
+                        cann_state=cann_state,
+                        gyro_yaw=gyro_yaw,
+                        sensory=sensory,
+                        vision_telem=vision_telem
+                    )
+                    self._current_pre_feats = pre_feats
+
+                bias_8d = self.stdp.compute_action_bias(pre_feats)
+                self.last_stdp_action_bias = bias_8d
+                min_front_sonar = float(np.min(sonars[5:10])) if len(sonars) >= 10 else 1.0
+                front_cone_dist = float(np.min(sonars[6:9])) if len(sonars) >= 9 else min_front_sonar
+                center_sonar = float(sonars[7]) if len(sonars) >= 8 else front_cone_dist
+
+                # 3. Assemble 8-dim Postsynaptic Activation Vector directly from chosen embodied actions
+                post_acts = np.zeros(8, dtype=np.float64)
+                u_fwd_cmd = 0.5 * (action_6d[0] + action_6d[1])
+                u_steer_right = max(0.0, action_6d[0] - action_6d[1])  # Left > Right -> Turning Right
+                u_steer_left = max(0.0, action_6d[1] - action_6d[0])   # Right > Left -> Turning Left
+                post_acts[0] = float(np.clip(u_fwd_cmd, 0.0, 1.0))       # Forward drive
+                post_acts[1] = float(np.clip(-u_fwd_cmd, 0.0, 1.0))      # Reverse drive
+                post_acts[2] = float(np.clip(u_steer_left, 0.0, 1.0))    # Left turn
+                post_acts[3] = float(np.clip(u_steer_right, 0.0, 1.0))   # Right turn
+                post_acts[4] = float(np.clip(action_6d[4], 0.0, 1.0))     # Torso pitch
+                post_acts[5] = float(np.clip(action_6d[5], 0.0, 1.0))     # Torso roll
+                post_acts[6] = float(np.clip(-action_6d[2], 0.0, 1.0))    # Head pan left
+                post_acts[7] = float(np.clip(action_6d[2], 0.0, 1.0))     # Head pan right
+
+                # 4. Compute Immediate Reinforcement / RPE Signal
+                if not hasattr(self, "_prev_front_dist") or self._prev_front_dist is None or self.tick <= 1:
+                    self._prev_front_dist = front_cone_dist
+                delta_front = front_cone_dist - self._prev_front_dist
+                self._prev_front_dist = front_cone_dist
+
+                # Biological Egress & Clearance Reinforcement (Schultz 1998; Friston 2010):
+                # Moving along egress axis (towards negative x corridor) provides positive reinforcement;
+                # Driving deeper into closed cul-de-sac or towards front obstructions is penalized.
+                th_carl = float(self.deliberation.pose[2])
+                v_egress = float(- self.v_est * math.cos(th_carl))
+
+                if center_sonar > 0.35:
+                    if v_egress > 0.05:
+                        r_progress = 1.00 * float(np.clip(v_egress / 0.35, 0.0, 1.0))
+                    elif v_egress < -0.05:
+                        r_progress = -0.60 * float(np.clip(-v_egress / 0.35, 0.0, 1.0))
+                    else:
+                        r_progress = 0.20 * float(np.clip(self.v_est / 0.35, 0.0, 1.0))
+                else:
+                    # Obstacle ahead: penalize pushing forward, reward backing away
+                    r_progress = -1.20 * float(np.clip(max(0.0, self.v_est) / 0.20, 0.0, 1.0))
+
+                r_turn = 1.00 * float(np.clip(delta_front / 0.03, 0.0, 1.0)) if center_sonar < 0.40 else 0.0
+                r_reverse = 0.50 * float(np.clip(max(0.0, -self.v_est) / 0.20, 0.0, 1.0)) if center_sonar < 0.35 else -0.15 * float(np.clip(max(0.0, -self.v_est) / 0.20, 0.0, 1.0))
+                r_coll = 3.0 if collision_occurred else 0.0
+                r_slip = 0.40 * float(np.clip(self.slip_ratio, 0.0, 1.0))
+                instant_reward = r_progress + r_turn + r_reverse - r_coll - r_slip
+
+                # 5. Execute Discrete Three-Factor R-STDP Update
+                if hasattr(self, "clamped_dopamine") and self.clamped_dopamine is not None:
+                    dopamine_level = float(self.clamped_dopamine)
+                else:
+                    dopamine_level = float(getattr(self.endocrine, "dopamine", 1.0))
+                stdp_telem = self.stdp.step(
+                    pre_activity=pre_feats,
+                    post_activity=post_acts,
+                    raw_reward=instant_reward,
+                    neuromodulator_level=dopamine_level,
+                    enable_plasticity=self.enable_stage4_1_plasticity
+                )
+                self.last_stdp_telemetry = stdp_telem
+                delib_telemetry["stdp"] = stdp_telem
+                stage4_1_stdp_active = True
+
+            # Stage 4 Phase 4.2 Holographic Hyperdimensional Computing (HDC) Episodic Associative Memory
+            stage4_2_hdc_active = False
+            hdc_telem = None
+            if getattr(self, "enable_stage4_2_hdc", True) and hasattr(self, "hdc"):
+                cann_x = float(cann_state["grid_unwrapped_x"]) if (cann_state and "grid_unwrapped_x" in cann_state) else float(self.deliberation.pose[0])
+                cann_y = float(cann_state["grid_unwrapped_y"]) if (cann_state and "grid_unwrapped_y" in cann_state) else float(self.deliberation.pose[1])
+                hd_heading = float(cann_state["hd_decoded_heading"]) if (cann_state and "hd_decoded_heading" in cann_state) else float(self.deliberation.pose[2])
+                if vision_telem is not None and hasattr(vision_telem, "sector_clearances"):
+                    v_secs = np.asarray(vision_telem.sector_clearances, dtype=np.float32)[:8]
+                else:
+                    v_secs = np.ones(8, dtype=np.float32) * 0.80
+
+                q_cue = self.hdc.encode_sensory_cue(cann_x, cann_y, hd_heading, v_secs)
+                hdc_recall = self.hdc.query_associative_recall(q_cue)
+                self.last_hdc_telemetry = hdc_recall
+                delib_telemetry["hdc_recall"] = hdc_recall
+                hdc_telem = hdc_recall
+                stage4_2_hdc_active = True
+
+                valence = 1.0 if food_absorbed else (-1.0 if collision_occurred else 0.0)
+                if (self.tick % 5 == 0) or collision_occurred or food_absorbed:
+                    self.hdc.store_episode(
+                        cann_x=cann_x,
+                        cann_y=cann_y,
+                        hd_heading=hd_heading,
+                        sector_clearances=v_secs,
+                        action_u=np.array([action_6d[0], action_6d[1]]),
+                        valence=valence
+                    )
 
             self.last_action_6d = action_6d.copy()
             actuation_active = True
@@ -518,12 +877,89 @@ class CarlAutonomousOrganismAgent:
                     sensory.pos_x, sensory.pos_y, h_info["dominant_need"],
                     best_action_name, +1.0, hazard=False, pred_err=pred_error, tick=self.tick
                 )
-                
+
+        # Record unprivileged episodic step trace for SWR offline reverse replay
+        if hasattr(self, "recent_trajectory_trace") and raw_sensors is not None:
+            self.recent_trajectory_trace.append({
+                "cann_x": float(sensory.pos_x),
+                "cann_y": float(sensory.pos_y),
+                "hd_heading": float(sensory.yaw),
+                "sector_clearances": [float(s) for s in sonars[:8]],
+                "action_u": [float(best_action_cmd[0]), float(best_action_cmd[1])],
+                "valence": -1.0 if collision_occurred else (+1.0 if (food_absorbed or sensory.pos_x < -0.55) else 0.0)
+            })
+
         # 12. Forward Kinematics Prediction for Next Tick
         self.self_model.predict_next_state(sensory, best_action_cmd)
         self.last_action_name = best_action_name
         self.last_action_cmds = best_action_cmd
         self.last_sensory_state = sensory
+
+        # Stage 5 Metacognitive Evaluation ("The Witness")
+        witness_out = None
+        if getattr(self, "enable_stage5_witness", True) and hasattr(self, "witness"):
+            # 1. Deliberation candidate rejection & veto rate
+            if isinstance(delib_telemetry, dict):
+                rej = delib_telemetry.get("rejected_candidates", 0)
+                acc = delib_telemetry.get("accepted_candidates", 128)
+                tot = rej + acc
+                veto_rate = float(delib_telemetry.get("veto_rate", float(rej) / float(tot) if tot > 0 else 0.0))
+                mppi_entropy = float(delib_telemetry.get("ensemble_entropy", delib_telemetry.get("mppi_entropy", 0.5)))
+                fe_var = float(delib_telemetry.get("free_energy_var", 0.1))
+            else:
+                veto_rate = 0.0
+                mppi_entropy = 0.5
+                fe_var = 0.1
+
+            # 2. Endocrine concentrations (Octopamine/NE and Cortisol)
+            na_level = float(getattr(self.endocrine, "ne_level", getattr(self.endocrine, "noradrenaline", 0.1)))
+            cort_level = float(getattr(self.endocrine, "cortisol_level", getattr(self.endocrine, "cortisol", 0.1)))
+
+            # 3. Grounded kinematic slip error from Stage 3.5 Endocrine traction observer
+            kin_err = float(getattr(self.endocrine, "last_mean_slip", self.slip_ratio))
+
+            # 4. Habit conflict Free Energy variance surge
+            if u_habit_nominal is not None and best_action_cmd is not None:
+                habit_conflict = float(np.linalg.norm(u_habit_nominal - best_action_cmd))
+                if habit_conflict > 0.40:
+                    fe_var = max(fe_var, float(min(3.0, habit_conflict * 2.2)))
+                    na_level = max(na_level, 0.82)
+
+            # 5. Visual occlusion / sensory ambiguity surge (distinguish true sensory blackout from looking at wall)
+            if vision_telem is not None:
+                vis_conf = float(getattr(vision_telem, "egress_confidence", 1.0))
+                vis_lum = float(getattr(vision_telem, "mean_horizon_luminance", 50.0))
+                if vis_conf < 0.20 and vis_lum < 15.0:  # Physical retinal blackout / occlusion
+                    mppi_entropy = max(mppi_entropy, 0.88)
+                    fe_var = max(fe_var, 2.0)
+                    cort_level = max(cort_level, 0.75)
+                    na_level = max(na_level, 0.80)
+
+            # 6. Dead-end obstacle distress surge (front quadrant clearance ahead)
+            front_obs = float(np.min(sonars[6:9])) if (raw_sensors is not None and len(sonars) >= 9) else float(getattr(sensory, "min_obstacle_dist", 1.0))
+            if front_obs < 0.38:
+                cort_level = max(cort_level, 0.88)
+                fe_var = max(fe_var, 1.6)
+
+            cann_drift = float(getattr(self.cann_brain, "drift_rate", 0.0))
+            c_yaw = float(sensory.yaw)
+            goal_yaw = float(delib_telemetry.get("desired_heading", c_yaw)) if isinstance(delib_telemetry, dict) else c_yaw
+
+            witness_out = self.witness.step_metacognitive_cycle(
+                dt=self.dt,
+                kinematic_error=kin_err,
+                free_energy_variance=fe_var,
+                veto_rejection_rate=veto_rate,
+                cann_drift_rate=cann_drift,
+                noradrenaline=na_level,
+                cortisol=cort_level,
+                mppi_entropy=mppi_entropy,
+                min_obstacle_dist=front_obs,
+                current_heading=c_yaw,
+                goal_heading=goal_yaw,
+                timestamp=self.tick * self.dt
+            )
+            self.last_witness_output = witness_out
         
         telemetry = CognitiveCycleTelemetry(
             tick=self.tick,
@@ -581,6 +1017,15 @@ class CarlAutonomousOrganismAgent:
             "stage3_6_physarum_active": True,
             "stage3_7_vision_active": stage3_7_vision_active,
             "vision_telemetry": vision_telem,
+            "stage4_1_stdp_active": stage4_1_stdp_active,
+            "stdp_telemetry": stdp_telem,
+            "stage4_2_hdc_active": stage4_2_hdc_active,
+            "hdc_telemetry": hdc_telem,
+            "stage4_3_sleep_active": stage4_3_sleep_active,
+            "stage4_4_gis_active": getattr(self, "enable_stage4_4_gis", True),
+            "gis_telemetry": getattr(self, "last_gis_telemetry", None),
+            "stage5_witness_active": getattr(self, "enable_stage5_witness", True),
+            "witness_telemetry": getattr(self, "last_witness_output", None),
             "actuation_active": True,
             "sensory": sensory,
             "homeostasis": h_info,

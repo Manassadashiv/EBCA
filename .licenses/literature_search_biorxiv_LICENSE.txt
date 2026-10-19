@@ -1,4 +1,4 @@
-bioRxiv Terms Notification
-Checked at: 2026-09-24T22:38:00+05:30
-Terms URL: https://api.biorxiv.org/ and https://www.biorxiv.org/content/about-biorxiv
-Always check the license of retrieved preprints before reuse.
+Notification Date: 2026-10-19
+Terms of Use: https://api.biorxiv.org/ and https://www.biorxiv.org/content/about-biorxiv
+User notified to check the terms and individual preprint licenses.
+Rate limit: Enforced via wrapper scripts.

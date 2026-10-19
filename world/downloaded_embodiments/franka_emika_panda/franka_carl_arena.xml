@@ -1,0 +1,39 @@
+<mujoco model="franka_carl_arena">
+  <include file="panda.xml"/>
+
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
+    <global offwidth="1280" offheight="720" azimuth="140" elevation="-25"/>
+  </visual>
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.1 0.15 0.25" rgb2="0.02 0.03 0.05" width="512" height="512"/>
+    <material name="table_mat" rgba="0.15 0.18 0.25 1" reflectance="0.2"/>
+    <material name="cube_mat" rgba="0.95 0.35 0.15 1" reflectance="0.3"/>
+    <material name="bin_mat" rgba="0.10 0.80 0.45 0.8" reflectance="0.3"/>
+  </asset>
+
+  <worldbody>
+    <light pos="0.5 0.5 2.5" dir="-0.3 -0.3 -1" directional="true"/>
+    <geom name="floor" size="5 5 0.05" type="plane" rgba="0.05 0.06 0.10 1"/>
+
+    <!-- Workstation Table in front of robot (Surface at z=0.40) -->
+    <geom name="table" type="box" size="0.22 0.40 0.20" pos="0.52 0.0 0.20" material="table_mat"/>
+
+    <!-- Pedestal for Delivery Basket to robot's left (Surface at z=0.40) -->
+    <geom name="bin_table" type="box" size="0.20 0.20 0.20" pos="0.05 0.50 0.20" material="table_mat"/>
+
+    <!-- Target Cube (at x=0.50, y=0.0, z=0.42) -->
+    <body name="target_cube" pos="0.50 0.0 0.42">
+      <freejoint name="cube_joint"/>
+      <geom name="cube_geom" type="box" size="0.02 0.02 0.02" material="cube_mat" mass="0.04" friction="3.0 0.01 0.001"/>
+    </body>
+
+    <!-- Target Delivery Basket (at x=0.05, y=0.50, z=0.40) -->
+    <geom name="bin_base" type="box" size="0.10 0.10 0.01" pos="0.05 0.50 0.41" material="bin_mat"/>
+    <geom name="bin_w1" type="box" size="0.10 0.01 0.05" pos="0.05 0.59 0.45" material="bin_mat"/>
+    <geom name="bin_w2" type="box" size="0.10 0.01 0.05" pos="0.05 0.41 0.45" material="bin_mat"/>
+    <geom name="bin_w3" type="box" size="0.01 0.10 0.05" pos="-0.04 0.50 0.45" material="bin_mat"/>
+    <geom name="bin_w4" type="box" size="0.01 0.10 0.05" pos="0.14 0.50 0.45" material="bin_mat"/>
+  </worldbody>
+</mujoco>

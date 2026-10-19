@@ -1,277 +1,289 @@
 """
-carl_stdp.py — Reward-Modulated Spike-Timing Dependent Plasticity (R-STDP)
-Based on: Markram 1997 (STDP) + Izhikevich 2007 (reward modulation + eligibility traces)
+brain/carl_stdp.py — Reward-Modulated Spike-Timing-Dependent Plasticity (R-STDP) Engine
+Classification: Stage 4 Phase 4.1 Canonical Developmental Organ
 
-Three-factor learning rule:
-  ΔW = learning_rate × Reward × Eligibility_Trace
+Theoretical Foundations:
+1. Markram et al. (1997) — Spike-Timing-Dependent Plasticity (STDP).
+2. Izhikevich (2007) — Solving the Distal Reward Problem via Eligibility Traces and Neuromodulatory Gating.
+3. Frémaux & Gerstner (2016) — Unified Theory of Three-Factor Learning Rules.
+4. Turrigiano (2008, 2011) — Homeostatic Synaptic Scaling preventing runaway Hebbian saturation.
 
-Where eligibility trace tracks STDP correlations:
-  dE/dt = -E/tau_E + STDP(pre, post)
-
-And STDP:
-  pre before post  → LTP (Long Term Potentiation) — strengthen
-  post before pre  → LTD (Long Term Depression)   — weaken
-
-This is BIOLOGICALLY CORRECT memory — far more precise than Hebb's "fire together wire together."
+Mathematical Formulation:
+- Presynaptic Activity Trace:
+    A_pre_j(t + dt) = A_pre_j(t) * exp(-dt / tau_pre) + x_pre_j(t)
+- Postsynaptic Activity Trace:
+    A_post_i(t + dt) = A_post_i(t) * exp(-dt / tau_post) + y_post_i(t)
+- Synaptic Eligibility Trace:
+    E_ij(t + dt) = E_ij(t) * exp(-dt / tau_e) + [ A^+ * (A_pre_j * y_post_i) - A^- * (x_pre_j * A_post_i) ]
+- Neuromodulated Three-Factor Update:
+    delta_W_ij(t) = eta * E_ij(t) * (R(t) - R_bar(t))
+- Turrigiano Multiplicative Scaling:
+    s_i = 1.0 + gamma * (a_target - a_bar_i)
+    W_{:, i} <- W_{:, i} * s_i
+    subject to ||W||_F <= W_max and W_ij in [W_min, W_max]
 """
-import numpy as np
-from collections import deque
-
-
-# ── Parameters ───────────────────────────────────────────────
-TAU_PRE   = 20.0   # ms — pre-synaptic trace decay
-TAU_POST  = 20.0   # ms — post-synaptic trace decay
-TAU_E     = 50.0   # ms — eligibility trace decay
-A_PLUS    = 0.01   # LTP amplitude
-A_MINUS   = 0.012  # LTD amplitude (slightly asymmetric — bias toward depression)
-W_MAX     = 2.0    # Maximum synaptic weight
-W_MIN     = -0.5   # Minimum (allows weak inhibition)
-LR        = 0.008  # Reward modulation learning rate
-
-
-class STDPSynapse:
-    """
-    A single population of STDP synapses between two neural populations.
-    
-    pre_size:  number of pre-synaptic neurons (e.g., state dimension)
-    post_size: number of post-synaptic neurons (e.g., action candidates)
-    """
-
-    def __init__(self, pre_size, post_size, init_scale=0.1):
-        self.pre_size  = pre_size
-        self.post_size = post_size
-
-        # Synaptic weights
-        self.W = np.random.randn(pre_size, post_size) * init_scale
-
-        # Eligibility traces (per synapse)
-        self.E = np.zeros((pre_size, post_size), dtype=float)
-
-        # Activity traces
-        self.A_pre  = np.zeros(pre_size,  dtype=float)  # pre-synaptic trace
-        self.A_post = np.zeros(post_size, dtype=float)  # post-synaptic trace
-
-        # Reward signal buffer (3-factor rule needs short delay)
-        self.reward_buf = deque(maxlen=5)
-
-        # Learning metrics
-        self.ltp_events = 0
-        self.ltd_events = 0
-        self.total_weight_change = 0.0
-
-    def step(self, pre_spikes, post_spikes, reward, dt=1.0):
-        """
-        Update weights given pre/post spikes and delayed reward.
-
-        pre_spikes:  (pre_size,) binary or rate vector [0,1]
-        post_spikes: (post_size,) binary or rate vector [0,1]
-        reward:      scalar reward signal (positive = good, negative = bad)
-        dt:          timestep in ms-equivalent units
-        """
-        # ── Decay traces ──────────────────────────────────────
-        decay_pre  = np.exp(-dt / TAU_PRE)
-        decay_post = np.exp(-dt / TAU_POST)
-        decay_e    = np.exp(-dt / TAU_E)
-
-        self.A_pre  *= decay_pre
-        self.A_post *= decay_post
-        self.E      *= decay_e
-
-        # ── STDP correlation ──────────────────────────────────
-        # LTP: post fired, pre just fired (pre causes post) → strengthen
-        if np.any(post_spikes > 0):
-            # Each pre-spike that occurred before contributes A_pre
-            ltp = np.outer(self.A_pre, post_spikes) * A_PLUS  # (pre, post)
-            self.E  += ltp
-            self.ltp_events += int(np.sum(post_spikes > 0))
-
-        # LTD: pre fired, post just fired before → depress
-        if np.any(pre_spikes > 0):
-            # Each post-spike before contributes A_post
-            ltd = np.outer(pre_spikes, self.A_post) * (-A_MINUS)
-            self.E  += ltd
-            self.ltd_events += int(np.sum(pre_spikes > 0))
-
-        # ── Update traces AFTER correlation (causal order) ───
-        self.A_pre  += pre_spikes
-        self.A_post += post_spikes
-
-        # ── Reward modulation ─────────────────────────────────
-        self.reward_buf.append(reward)
-        avg_reward = float(np.mean(self.reward_buf)) if self.reward_buf else 0.0
-
-        if abs(avg_reward) > 1e-4:
-            dW = LR * avg_reward * self.E
-            self.W  = np.clip(self.W + dW, W_MIN, W_MAX)
-            self.total_weight_change += float(np.linalg.norm(dW))
-
-        return self.W.copy()
-
-    def predict(self, pre_activity):
-        """Forward pass through synaptic weights."""
-        return np.tanh(self.W.T @ pre_activity)   # (post_size,)
-
-    def plasticity_report(self):
-        return {
-            'ltp': self.ltp_events,
-            'ltd': self.ltd_events,
-            'mean_w': float(np.mean(self.W)),
-            'total_dw': round(self.total_weight_change, 4),
-        }
-
-
-# ── STDP-based Action Evaluator ──────────────────────────────────────────────
-class STDPActionEvaluator:
-    """
-    Replaces the hand-crafted Hebbian associator with a proper R-STDP network.
-    
-    Encodes: state → action quality weights via STDP
-    
-    The "pre-synapse" is the state representation.
-    The "post-synapse" is the action identity.
-    A "spike" occurs when surprise > threshold (unexpected outcome = signal).
-    Reward = dopamine signal (negative surprise = prediction match = reward).
-    """
-
-    def __init__(self, state_dim=5, visual_dim=15, n_actions=9):
-        self.state_dim = state_dim
-        self.visual_dim = visual_dim
-        self.n_actions = n_actions
-        self.full_dim = state_dim + visual_dim
-
-        # State-to-action STDP synapse
-        self.synapse = STDPSynapse(self.full_dim, n_actions, init_scale=0.05)
-
-        # Running average reward (for baseline subtraction)
-        self.reward_baseline = 0.0
-        self.baseline_tau    = 200.0  # steps
-
-        # Map action values to action indices
-        self.action_map = [-8., -5., -2., -1., 0., 1., 2., 5., 8.]
-
-    def encode_state(self, x, v_pop):
-        """Encode state vector as firing rates ∈ [0, 1]."""
-        proprio = np.clip(np.abs(x) / np.array([8., 3., 0.7, 3., 0.35]), 0., 1.)
-        return np.concatenate([proprio, v_pop])
-
-    def encode_action(self, u):
-        """One-hot encode the chosen action."""
-        idx = int(np.argmin([abs(u - a) for a in self.action_map]))
-        spikes = np.zeros(self.n_actions)
-        spikes[idx] = 1.0
-        return spikes
-
-    def update(self, xk, v_pop, uk, surprise, nm_DA):
-        """
-        Called every step with (previous state, action taken, outcome surprise).
-        
-        surprise: RLS prediction error (high = unexpected)
-        nm_DA:    dopamine level (reward proxy)
-        """
-        pre_spikes  = self.encode_state(xk, v_pop)
-        post_spikes = self.encode_action(uk)
-
-        # Reward: high DA + low surprise = positive reward
-        raw_reward  = nm_DA - surprise * 0.5
-        # Subtract baseline (reward prediction error = dopamine-like signal)
-        reward = raw_reward - self.reward_baseline
-        self.reward_baseline += (raw_reward - self.reward_baseline) / self.baseline_tau
-
-        # Threshold for spiking: only update when something notable happened
-        threshold = 0.15
-        pre_spikes  = pre_spikes * float(surprise > threshold)
-        post_spikes = post_spikes * float(surprise > threshold)
-
-        self.synapse.step(pre_spikes, post_spikes, reward, dt=1.0)
-
-    def action_quality(self, x, v_pop, u):
-        """
-        Return the STDP-learned quality of action u in state x.
-        Used as a prior in action selection (replaces Hebbian association_cost).
-        """
-        pre = self.encode_state(x, v_pop)
-        q   = self.synapse.predict(pre)      # (n_actions,)
-        idx = int(np.argmin([abs(u - a) for a in self.action_map]))
-        return float(-q[idx])  # negate: higher quality → lower cost
-
-    def best_action_bias(self, x, v_pop):
-        """Return action quality vector for all actions (for deliberation)."""
-        pre = self.encode_state(x, v_pop)
-        return self.synapse.predict(pre)  # (n_actions,) — higher = better
-
-    def plasticity_stats(self):
-        return self.synapse.plasticity_report()
-
-
-# ── Quantum-Inspired Superposition Deliberation ──────────────────────────────
-class QuantumDeliberator:
-    """
-    Innovation 6: Quantum-inspired decision making.
-    
-    Instead of argmin(cost), each strategy is a quantum amplitude.
-    Interference between strategies: aligned predictions amplify,
-    conflicting predictions cancel. Final choice by Born rule probability.
-    
-    This produces GENUINELY PROBABILISTIC decisions — not random noise,
-    but structured uncertainty that reflects actual ambiguity.
-    """
-
-    def __init__(self):
-        self.history = deque(maxlen=50)
-
-    def deliberate(self, strategies_costs):
-        """
-        strategies_costs: list of (name, u, s, cost) tuples
-        Returns: chosen (name, u, s) by quantum Born rule
-        """
-        if not strategies_costs:
-            return ('BALANCED', 0., 0.)
-
-        costs = np.array([c for _, _, _, c in strategies_costs], dtype=float)
-
-        # Map cost to quantum phase: low cost → small phase (constructive)
-        # high cost → large phase (destructive)
-        costs_norm = costs - costs.min()
-        if costs_norm.max() > 1e-6:
-            costs_norm /= costs_norm.max()
-
-        # Amplitude: A_i = exp(i * phase_i) where phase ∈ [0, π]
-        phases = costs_norm * math.pi
-        amplitudes = np.exp(1j * phases)  # complex amplitudes
-
-        # Interference: coherent sum
-        total_amplitude = amplitudes.sum()
-
-        # Relative amplitudes (Born rule)
-        # prob_i = |A_i|² / |A_total|²... but we want interference:
-        # Use overlap with total amplitude direction
-        coherent_probs = np.abs(amplitudes * np.conj(total_amplitude)).real
-        coherent_probs = np.clip(coherent_probs, 0., None)
-
-        total_p = coherent_probs.sum()
-        if total_p < 1e-8:
-            probs = np.ones(len(strategies_costs)) / len(strategies_costs)
-        else:
-            probs = coherent_probs / total_p
-
-        # Sample by Born rule
-        chosen_idx = int(np.random.choice(len(strategies_costs), p=probs))
-        name, u, s, _ = strategies_costs[chosen_idx]
-
-        # Track history for uncertainty estimation
-        self.history.append({'probs': probs.copy(), 'chosen': chosen_idx})
-
-        return name, u, s, probs
-
-    def decision_uncertainty(self):
-        """Shannon entropy of recent decisions — high = genuinely uncertain."""
-        if not self.history:
-            return 0.5
-        last = self.history[-1]['probs']
-        last = np.clip(last, 1e-8, 1.)
-        entropy = float(-np.sum(last * np.log(last)))
-        max_ent = float(np.log(len(last)))
-        return float(entropy / max_ent) if max_ent > 0 else 0.5
-
 
 import math
+import time
+from typing import Dict, Any, Optional, Tuple
+import numpy as np
+
+
+class CarlSTDPPlasticityEngine:
+    """
+    Reward-Modulated Spike-Timing-Dependent Plasticity (R-STDP) engine with
+    Turrigiano homeostatic scaling and structural plasticity quarantine.
+    """
+
+    def __init__(
+        self,
+        pre_size: int = 32,
+        post_size: int = 8,
+        dt: float = 0.0333,
+        tau_pre: float = 0.050,      # 50 ms presynaptic trace decay
+        tau_post: float = 0.050,     # 50 ms postsynaptic trace decay
+        tau_e: float = 1.50,         # 1.5 s eligibility trace decay
+        tau_reward: float = 3.0,     # 3.0 s reward baseline moving average
+        eta: float = 0.015,          # Learning rate
+        a_plus: float = 0.035,       # LTP amplitude (Hebbian positive coincidence)
+        a_minus: float = 0.015,      # LTD amplitude (anti-causal depression)
+        w_min: float = -1.0,         # Weight saturation lower bound
+        w_max: float = 1.0,          # Weight saturation upper bound
+        w_frobenius_max: float = 15.0, # Global Frobenius norm ceiling
+        a_target: float = 0.25,      # Turrigiano target firing activity
+        gamma_homeostatic: float = 0.0005, # Homeostatic scaling rate (physiological timescale)
+        seed: int = 42,
+    ):
+        self.pre_size = pre_size
+        self.post_size = post_size
+        self.dt = dt
+        self.tau_pre = tau_pre
+        self.tau_post = tau_post
+        self.tau_e = tau_e
+        self.tau_reward = tau_reward
+        self.eta = eta
+        self.a_plus = a_plus
+        self.a_minus = a_minus
+        self.w_min = w_min
+        self.w_max = w_max
+        self.w_frobenius_max = w_frobenius_max
+        self.a_target = a_target
+        self.gamma_homeostatic = gamma_homeostatic
+
+        # Initial weight matrix (unbiased tabula rasa initialization)
+        self.W_initial = np.zeros((pre_size, post_size), dtype=np.float64)
+        self.W = self.W_initial.copy()
+
+        # Eligibility traces (pre x post)
+        self.E = np.zeros((pre_size, post_size), dtype=np.float64)
+
+        # Activity traces
+        self.A_pre = np.zeros(pre_size, dtype=np.float64)
+        self.A_post = np.zeros(post_size, dtype=np.float64)
+
+        # Homeostatic running average of postsynaptic firing
+        self.a_bar = np.ones(post_size, dtype=np.float64) * self.a_target
+
+        # Reward baseline (RPE reference)
+        self.reward_baseline = 0.0
+
+        # Diagnostics & Cumulative Telemetry
+        self.total_cycles = 0
+        self.ltp_events = 0
+        self.ltd_events = 0
+        self.total_dw_norm = 0.0
+        self.last_cycle_latency_ms = 0.0
+        self.weight_history_snapshots = []
+        self.trace_history_snapshots = []
+
+        # Quarantine verification
+        self.cann_weights_untouched = True
+
+    def reset_traces(self) -> None:
+        """Resets dynamic eligibility and activity traces between distinct lifespans/episodes."""
+        self.E.fill(0.0)
+        self.A_pre.fill(0.0)
+        self.A_post.fill(0.0)
+        self.reward_baseline = 0.0
+
+    def compute_action_bias(self, pre_features: np.ndarray) -> np.ndarray:
+        """
+        Computes the adaptive motor prior bias vector:
+            b_plastic = tanh(W.T @ pre_features)  (dimension: post_size,)
+        """
+        feat = np.asarray(pre_features, dtype=np.float64).flatten()
+        if len(feat) != self.pre_size:
+            if len(feat) < self.pre_size:
+                feat = np.pad(feat, (0, self.pre_size - len(feat)))
+            else:
+                feat = feat[:self.pre_size]
+        net_input = self.W.T @ feat
+        return np.tanh(net_input)
+
+    def step(
+        self,
+        pre_activity: np.ndarray,
+        post_activity: np.ndarray,
+        raw_reward: float,
+        neuromodulator_level: float = 1.0,
+        enable_plasticity: bool = True,
+    ) -> Dict[str, Any]:
+        """
+        Executes one discrete R-STDP control cycle:
+        1. Decays activity and eligibility traces.
+        2. Computes causal STDP coincidence (LTP vs LTD).
+        3. Updates eligibility traces.
+        4. Modulates weights via Three-Factor Rule (Pre x Post x Neuromodulator RPE).
+        5. Applies Turrigiano homeostatic scaling.
+        6. Enforces hard boundedness constraints.
+        """
+        t_start = time.perf_counter()
+        dt = self.dt
+
+        # Format inputs
+        pre = np.asarray(pre_activity, dtype=np.float64).flatten()
+        if len(pre) != self.pre_size:
+            pre = np.pad(pre, (0, max(0, self.pre_size - len(pre))))[:self.pre_size]
+        pre = np.clip(pre, 0.0, 1.0)
+
+        post = np.asarray(post_activity, dtype=np.float64).flatten()
+        if len(post) != self.post_size:
+            post = np.pad(post, (0, max(0, self.post_size - len(post))))[:self.post_size]
+        post = np.clip(post, 0.0, 1.0)
+
+        reward = float(raw_reward)
+        nm = max(0.0, float(neuromodulator_level))
+
+        # 1. Decay Activity Traces
+        decay_pre = math.exp(-dt / self.tau_pre)
+        decay_post = math.exp(-dt / self.tau_post)
+        decay_e = math.exp(-dt / self.tau_e)
+
+        self.A_pre *= decay_pre
+        self.A_post *= decay_post
+        self.E *= decay_e
+
+        # 2. STDP Coincidence Correlation
+        # LTP: Post fired, Pre fired previously -> Strengthen
+        ltp_matrix = np.outer(self.A_pre, post) * self.a_plus
+
+        # LTD: Pre fired, Post fired previously -> Weaken
+        ltd_matrix = np.outer(pre, self.A_post) * self.a_minus
+
+        # 3. Update Eligibility Trace Matrix
+        stdp_step = ltp_matrix - ltd_matrix
+        self.E += stdp_step
+
+        self.ltp_events += int(np.sum(ltp_matrix > 1e-5))
+        self.ltd_events += int(np.sum(ltd_matrix > 1e-5))
+
+        # 4. Integrate Activity Traces AFTER Correlation (strictly causal)
+        self.A_pre += pre
+        self.A_post += post
+
+        # 5. Reward Prediction Error (RPE) Baseline Subtraction
+        decay_rew = math.exp(-dt / self.tau_reward)
+        self.reward_baseline = self.reward_baseline * decay_rew + reward * (1.0 - decay_rew)
+        rpe = reward - self.reward_baseline
+
+        # 6. Three-Factor Synaptic Weight Update
+        dW = np.zeros_like(self.W)
+        if enable_plasticity and abs(rpe) > 1e-5 and nm > 1e-4:
+            # dW = eta * E * RPE * Neuromodulator
+            dW = self.eta * self.E * rpe * nm
+            self.W += dW
+            self.total_dw_norm += float(np.linalg.norm(dW))
+
+        # 7. Turrigiano Multiplicative Homeostatic Scaling
+        # Update running average postsynaptic firing activity
+        alpha_homeo = 0.02
+        self.a_bar = (1.0 - alpha_homeo) * self.a_bar + alpha_homeo * post
+
+        if enable_plasticity and nm > 1e-4:
+            # Multiplicative scaling per postsynaptic neuron column
+            scaling_factors = 1.0 + self.gamma_homeostatic * (self.a_target - self.a_bar)
+            scaling_factors = np.clip(scaling_factors, 0.90, 1.10)
+            self.W = self.W * scaling_factors[np.newaxis, :]
+
+        # 8. Hard Boundedness Clamping
+        self.W = np.clip(self.W, self.w_min, self.w_max)
+
+        # Frobenius norm ceiling
+        f_norm = float(np.linalg.norm(self.W, ord="fro"))
+        if f_norm > self.w_frobenius_max:
+            self.W = self.W * (self.w_frobenius_max / f_norm)
+            f_norm = self.w_frobenius_max
+
+        # Latency tracking
+        self.total_cycles += 1
+        latency_ms = (time.perf_counter() - t_start) * 1000.0
+        self.last_cycle_latency_ms = latency_ms
+
+        return {
+            "latency_ms": latency_ms,
+            "rpe": rpe,
+            "reward_baseline": self.reward_baseline,
+            "frobenius_norm": f_norm,
+            "mean_weight": float(np.mean(self.W)),
+            "max_abs_weight": float(np.max(np.abs(self.W))),
+            "dw_step_norm": float(np.linalg.norm(dW)),
+            "total_dw_norm": self.total_dw_norm,
+            "mean_eligibility": float(np.mean(np.abs(self.E))),
+            "max_eligibility": float(np.max(np.abs(self.E))),
+            "a_bar_mean": float(np.mean(self.a_bar)),
+        }
+
+    def get_weight_divergence(self) -> float:
+        """Returns the mean absolute weight difference relative to initial weights: ||W - W0||_1 / N"""
+        diff = np.abs(self.W - self.W_initial)
+        return float(np.mean(diff))
+
+    def get_active_synapses_fraction(self, threshold: float = 0.010) -> float:
+        """Returns the fraction of synapses that experienced significant change (|Delta W| >= threshold)."""
+        diff = np.abs(self.W - self.W_initial)
+        active_count = np.sum(diff >= threshold)
+        return float(active_count / (self.pre_size * self.post_size))
+
+    def get_plasticity_snapshot(self) -> Dict[str, Any]:
+        """Exports a complete statistical snapshot of current synaptic state."""
+        diff = self.W - self.W_initial
+        return {
+            "pre_size": self.pre_size,
+            "post_size": self.post_size,
+            "total_cycles": self.total_cycles,
+            "ltp_events": self.ltp_events,
+            "ltd_events": self.ltd_events,
+            "frobenius_norm": float(np.linalg.norm(self.W, ord="fro")),
+            "mean_weight": float(np.mean(self.W)),
+            "std_weight": float(np.std(self.W)),
+            "max_weight": float(np.max(self.W)),
+            "min_weight": float(np.min(self.W)),
+            "mean_abs_delta_w": float(np.mean(np.abs(diff))),
+            "active_synapse_fraction": self.get_active_synapses_fraction(0.010),
+            "total_dw_norm": self.total_dw_norm,
+            "cann_quarantined": self.cann_weights_untouched,
+        }
+
+    def save_state(self, filepath: str) -> None:
+        """Serializes plastic synaptic state for GIS-901 autopoietic persistence."""
+        np.savez_compressed(
+            filepath,
+            W=self.W,
+            W_initial=self.W_initial,
+            E=self.E,
+            reward_baseline=self.reward_baseline,
+            a_bar=self.a_bar,
+            total_cycles=self.total_cycles,
+            total_dw_norm=self.total_dw_norm,
+        )
+
+    def load_state(self, filepath: str) -> None:
+        """Loads serialized plastic state during warm boot."""
+        data = np.load(filepath)
+        self.W = data["W"].astype(np.float64)
+        self.W_initial = data["W_initial"].astype(np.float64)
+        self.E = data["E"].astype(np.float64)
+        self.reward_baseline = float(data["reward_baseline"])
+        self.a_bar = data["a_bar"].astype(np.float64)
+        self.total_cycles = int(data["total_cycles"])
+        self.total_dw_norm = float(data["total_dw_norm"])

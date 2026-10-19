@@ -1,0 +1,62 @@
+{
+  "milestone": "Stage 4 Phase 4.3 \u2014 Memory Consolidation, SWR Offline Replay & Sleep Dynamics",
+  "timestamp": "2026-10-18T02:57:38",
+  "all_gates_passed": true,
+  "gates": {
+    "gate1_swr_reverse_replay": {
+      "passed": true,
+      "reward_propagated": 4.42624,
+      "delta_w_replay": 0.011044899992679894
+    },
+    "gate2_shy_pruning": {
+      "passed": true,
+      "pruned_pct": 17.1875,
+      "pruning_threshold_min_pct": 15.0,
+      "engrams_safe": true,
+      "frobenius_post": 1.740373231237184
+    },
+    "gate3_causal_sleep_advantage": {
+      "passed": true,
+      "mean_sleep_gain_pct": 59.251170046801874,
+      "mean_wake_gain_pct": -54.882995319812785,
+      "net_sleep_advantage_pct": 114.13416536661467,
+      "target_advantage_min_pct": 20.0,
+      "paired_ttest_p_value": 0.0004246812415268891,
+      "wilcoxon_p_value": 0.00010940105194816415
+    },
+    "gate4_competence_preservation": {
+      "passed": true,
+      "escapes_cleared": 20,
+      "collisions_total": 0
+    },
+    "gate5_physical_mujoco_integration": {
+      "passed": true,
+      "organ_activation_fractions": {
+        "stage1_slip": 100.0,
+        "stage2_1_attractor": 100.0,
+        "stage2_2_memory": 100.0,
+        "stage2_3_delib": 100.0,
+        "stage3_5_endocrine": 100.0,
+        "stage3_6_physarum": 100.0,
+        "stage3_7_vision": 100.0,
+        "stage4_1_stdp": 100.0,
+        "stage4_2_hdc": 100.0,
+        "stage4_3_sleep": 100.0
+      }
+    },
+    "gate6_latency_budget": {
+      "passed": true,
+      "mean_sleep_latency_ms": 3.741455002455041,
+      "mean_cycle_latency_ms": 11.927009998098006,
+      "p95_cycle_latency_ms": 19.839499989757314,
+      "sleep_ceiling_ms": 10.0,
+      "cycle_mean_ceiling_ms": 25.0,
+      "cycle_p95_ceiling_ms": 50.0
+    },
+    "gate7_ast_anti_cheat": {
+      "passed": true,
+      "files_scanned": 16,
+      "violations_found": 0
+    }
+  }
+}

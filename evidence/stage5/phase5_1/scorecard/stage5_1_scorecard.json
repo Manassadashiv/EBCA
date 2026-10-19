@@ -1,0 +1,52 @@
+{
+  "milestone": "STAGE_5_PHASE_5_1",
+  "timestamp": "2026-10-18 22:32:29",
+  "gates": {
+    "gate1_telemetry_stream": {
+      "status": "PASS",
+      "buffer_capacity": 150,
+      "rollover_verified": true,
+      "nan_count": 0,
+      "channels_tracked": 7,
+      "threshold": "nan_count == 0 and rollover_verified == True"
+    },
+    "gate2_noise_attenuation": {
+      "status": "PASS",
+      "raw_variance": 0.0018737402307462785,
+      "filtered_variance": 6.396058462893281e-05,
+      "variance_reduction_pct": 96.58647535131065,
+      "threshold": ">= 40.0%"
+    },
+    "gate3_surprise_dynamics": {
+      "status": "PASS",
+      "nominal_surprise_mean": 0.09999999403953552,
+      "nominal_surprise_max": 0.09999999403953552,
+      "acute_surprise_peak": 0.9599999785423279,
+      "ticks_to_trigger": 1,
+      "threshold": "nominal_max <= 0.20 and ticks_to_trigger <= 3"
+    },
+    "gate4_latency_budget": {
+      "status": "PASS",
+      "mean_latency_ms": 0.019367400382179767,
+      "p95_latency_ms": 0.02370000584051013,
+      "max_latency_ms": 0.13080000644549727,
+      "budget_limit_ms": 1.5,
+      "threshold": "mean <= 0.08ms, p95 <= 0.15ms"
+    },
+    "gate5_anti_cheat_quarantine": {
+      "status": "PASS",
+      "violations_found": 0,
+      "forbidden_tokens_audited": [
+        "mj_ray",
+        "geom_xpos",
+        "qvel",
+        "geom_xmat",
+        "qacc",
+        "qpos"
+      ],
+      "target_file": "carl_witness.py",
+      "threshold": "0 violations"
+    }
+  },
+  "overall_status": "CERTIFIED"
+}

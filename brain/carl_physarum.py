@@ -530,11 +530,24 @@ class CarlPhysarumRoutingEngine:
         self.impedance = (1.0 / (D_cell + 1e-4)).astype(np.float32)
         self.impedance[self.obstacle_mask] = 1000.0
 
-        # Negative pressure gradient: V = -grad P
-        gy, gx = np.gradient(self.pressure)
-        # Note: In grid coords, i is y and j is x
-        self.grad_x = -gx / self.res
-        self.grad_y = -gy / self.res
+        # Canonical Hagen-Poiseuille tube edge fluxes (Tero et al. Science 2007)
+        # Horizontal flux between (i, j) and (i, j+1): positive when flowing East (+x)
+        Q_h = self.D_h * (self.pressure[:, :-1] - self.pressure[:, 1:])
+        # Vertical flux between (i, j) and (i+1, j): positive when flowing North (+y)
+        Q_v = self.D_v * (self.pressure[:-1, :] - self.pressure[1:, :])
+
+        # Cell-wise average flux vector (strictly preserves no-flux Neumann boundary at walls)
+        self.grad_x.fill(0.0)
+        self.grad_x[:, :-1] += Q_h * 0.5
+        self.grad_x[:, 1:] += Q_h * 0.5
+
+        self.grad_y.fill(0.0)
+        self.grad_y[:-1, :] += Q_v * 0.5
+        self.grad_y[1:, :] += Q_v * 0.5
+
+        # Strictly zero out obstacle cells
+        self.grad_x[self.obstacle_mask] = 0.0
+        self.grad_y[self.obstacle_mask] = 0.0
 
     def get_topological_current(self, x: float, y: float) -> Tuple[float, float, float]:
         """

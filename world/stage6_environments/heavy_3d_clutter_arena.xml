@@ -1,0 +1,133 @@
+<mujoco model="carl_heavy_3d_clutter_arena">
+  <compiler angle="radian" autolimits="true"/>
+  <option gravity="0 0 -9.81" timestep="0.005" iterations="50" integrator="implicitfast" solver="Newton" tolerance="1e-10"/>
+
+  <visual>
+    <global offwidth="1920" offheight="1080"/>
+    <headlight ambient="0.25 0.25 0.30" diffuse="0.55 0.55 0.65" specular="0 0 0"/>
+    <map fogstart="8" fogend="20" znear="0.01"/>
+  </visual>
+
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" width="512" height="512"
+             rgb1="0.035 0.042 0.090" rgb2="0.055 0.068 0.145"/>
+    <material name="floor_mat" texture="grid" texrepeat="12 12" reflectance="0.08" rgba="0.05 0.06 0.12 1"/>
+    <material name="wall_mat" rgba="0.10 0.12 0.20 1" reflectance="0.2"/>
+    <material name="clutter_mat1" rgba="0.85 0.35 0.15 1" reflectance="0.3"/>
+    <material name="clutter_mat2" rgba="0.20 0.65 0.85 1" reflectance="0.3"/>
+    <material name="clutter_mat3" rgba="0.75 0.80 0.25 1" reflectance="0.3"/>
+    <material name="clutter_mat4" rgba="0.60 0.25 0.80 1" reflectance="0.3"/>
+    <material name="goal_mat" rgba="0.0 0.95 0.45 1" emission="0.7" reflectance="0.4"/>
+    <material name="chassis" rgba="0.18 0.20 0.26 1" reflectance="0.3"/>
+    <material name="tire" rgba="0.08 0.08 0.10 1"/>
+  </asset>
+
+  <default>
+    <geom contype="1" conaffinity="1" condim="3"
+          friction="0.80 0.005 0.0001"
+          solimp="0.99 0.999 0.001" solref="0.004 1"/>
+  </default>
+
+  <worldbody>
+    <light name="sun" pos="4 4 8" dir="-0.2 -0.2 -1" directional="true" ambient="0.25 0.25 0.30"/>
+    <geom name="floor" type="plane" size="10 10 0.1" pos="4 4 0" material="floor_mat"/>
+
+    <!-- Outer Perimeter Boundary (8m x 8m) -->
+    <geom name="w_south" type="box" size="4.04 0.04 0.25" pos="4.0 0.0 0.25" material="wall_mat"/>
+    <geom name="w_north" type="box" size="4.04 0.04 0.25" pos="4.0 8.0 0.25" material="wall_mat"/>
+    <geom name="w_west"  type="box" size="0.04 4.04 0.25" pos="0.0 4.0 0.25" material="wall_mat"/>
+    <geom name="w_east"  type="box" size="0.04 4.04 0.25" pos="8.0 4.0 0.25" material="wall_mat"/>
+
+    <!-- Chamber Dividers (4 Connected Quadrants with 0.8m Doorways) -->
+    <geom name="div_v1" type="box" size="0.04 1.5 0.25" pos="4.0 1.5 0.25" material="wall_mat"/>
+    <geom name="div_v2" type="box" size="0.04 1.5 0.25" pos="4.0 6.5 0.25" material="wall_mat"/>
+    <geom name="div_h1" type="box" size="1.5 0.04 0.25" pos="1.5 4.0 0.25" material="wall_mat"/>
+    <geom name="div_h2" type="box" size="1.5 0.04 0.25" pos="6.5 4.0 0.25" material="wall_mat"/>
+
+    <!-- 50+ Heavy Geometric 3D Clutter Obstacles Distributed Across All 4 Chambers -->
+    <!-- Quadrant 1 (South-West: [0..4] x [0..4]) -->
+    <geom name="clutter_01" type="cylinder" size="0.14 0.25" pos="1.0 1.0 0.25" material="clutter_mat1"/>
+    <geom name="clutter_02" type="box"      size="0.12 0.12 0.25" pos="2.2 0.8 0.25" material="clutter_mat2"/>
+    <geom name="clutter_03" type="cylinder" size="0.10 0.25" pos="1.6 2.0 0.25" material="clutter_mat3"/>
+    <geom name="clutter_04" type="box"      size="0.16 0.08 0.25" pos="3.0 1.5 0.25" material="clutter_mat4"/>
+    <geom name="clutter_05" type="cylinder" size="0.12 0.25" pos="0.8 2.8 0.25" material="clutter_mat1"/>
+    <geom name="clutter_06" type="box"      size="0.10 0.14 0.25" pos="2.4 2.6 0.25" material="clutter_mat2"/>
+    <geom name="clutter_07" type="cylinder" size="0.08 0.25" pos="3.2 3.2 0.25" material="clutter_mat3"/>
+    <geom name="clutter_08" type="box"      size="0.12 0.12 0.25" pos="1.5 3.5 0.25" material="clutter_mat4"/>
+    <geom name="clutter_09" type="cylinder" size="0.14 0.25" pos="0.6 1.8 0.25" material="clutter_mat1"/>
+    <geom name="clutter_10" type="box"      size="0.15 0.08 0.25" pos="2.8 0.4 0.25" material="clutter_mat2"/>
+    <geom name="clutter_11" type="cylinder" size="0.10 0.25" pos="1.2 0.4 0.25" material="clutter_mat3"/>
+    <geom name="clutter_12" type="box"      size="0.08 0.14 0.25" pos="3.5 2.2 0.25" material="clutter_mat4"/>
+    <geom name="clutter_13" type="cylinder" size="0.12 0.25" pos="1.8 1.4 0.25" material="clutter_mat1"/>
+
+    <!-- Quadrant 2 (South-East: [4..8] x [0..4]) -->
+    <geom name="clutter_14" type="box"      size="0.14 0.14 0.25" pos="5.2 0.8 0.25" material="clutter_mat2"/>
+    <geom name="clutter_15" type="cylinder" size="0.12 0.25" pos="6.5 1.0 0.25" material="clutter_mat3"/>
+    <geom name="clutter_16" type="box"      size="0.10 0.16 0.25" pos="7.2 2.2 0.25" material="clutter_mat4"/>
+    <geom name="clutter_17" type="cylinder" size="0.14 0.25" pos="5.8 2.0 0.25" material="clutter_mat1"/>
+    <geom name="clutter_18" type="box"      size="0.12 0.10 0.25" pos="4.6 3.0 0.25" material="clutter_mat2"/>
+    <geom name="clutter_19" type="cylinder" size="0.10 0.25" pos="6.8 3.2 0.25" material="clutter_mat3"/>
+    <geom name="clutter_20" type="box"      size="0.15 0.12 0.25" pos="5.5 3.4 0.25" material="clutter_mat4"/>
+    <geom name="clutter_21" type="cylinder" size="0.08 0.25" pos="7.4 0.8 0.25" material="clutter_mat1"/>
+    <geom name="clutter_22" type="box"      size="0.12 0.12 0.25" pos="6.0 0.4 0.25" material="clutter_mat2"/>
+    <geom name="clutter_23" type="cylinder" size="0.14 0.25" pos="4.8 1.6 0.25" material="clutter_mat3"/>
+    <geom name="clutter_24" type="box"      size="0.10 0.14 0.25" pos="7.0 1.6 0.25" material="clutter_mat4"/>
+    <geom name="clutter_25" type="cylinder" size="0.12 0.25" pos="6.2 2.6 0.25" material="clutter_mat1"/>
+
+    <!-- Quadrant 3 (North-West: [0..4] x [4..8]) -->
+    <geom name="clutter_26" type="cylinder" size="0.12 0.25" pos="0.8 5.2 0.25" material="clutter_mat3"/>
+    <geom name="clutter_27" type="box"      size="0.14 0.10 0.25" pos="2.0 4.8 0.25" material="clutter_mat4"/>
+    <geom name="clutter_28" type="cylinder" size="0.10 0.25" pos="3.2 5.0 0.25" material="clutter_mat1"/>
+    <geom name="clutter_29" type="box"      size="0.12 0.14 0.25" pos="1.5 6.2 0.25" material="clutter_mat2"/>
+    <geom name="clutter_30" type="cylinder" size="0.14 0.25" pos="2.8 6.4 0.25" material="clutter_mat3"/>
+    <geom name="clutter_31" type="box"      size="0.16 0.08 0.25" pos="0.6 7.2 0.25" material="clutter_mat4"/>
+    <geom name="clutter_32" type="cylinder" size="0.10 0.25" pos="2.2 7.4 0.25" material="clutter_mat1"/>
+    <geom name="clutter_33" type="box"      size="0.12 0.12 0.25" pos="3.4 7.0 0.25" material="clutter_mat2"/>
+    <geom name="clutter_34" type="cylinder" size="0.08 0.25" pos="1.0 4.4 0.25" material="clutter_mat3"/>
+    <geom name="clutter_35" type="box"      size="0.10 0.15 0.25" pos="3.5 5.8 0.25" material="clutter_mat4"/>
+    <geom name="clutter_36" type="cylinder" size="0.14 0.25" pos="2.5 5.5 0.25" material="clutter_mat1"/>
+    <geom name="clutter_37" type="box"      size="0.12 0.10 0.25" pos="0.5 6.0 0.25" material="clutter_mat2"/>
+    <geom name="clutter_38" type="cylinder" size="0.10 0.25" pos="1.8 7.0 0.25" material="clutter_mat3"/>
+
+    <!-- Quadrant 4 (North-East: [4..8] x [4..8] - Goal Zone at [7.0, 7.0]) -->
+    <geom name="clutter_39" type="box"      size="0.14 0.12 0.25" pos="4.8 4.8 0.25" material="clutter_mat4"/>
+    <geom name="clutter_40" type="cylinder" size="0.12 0.25" pos="6.0 5.2 0.25" material="clutter_mat1"/>
+    <geom name="clutter_41" type="box"      size="0.10 0.16 0.25" pos="7.2 5.0 0.25" material="clutter_mat2"/>
+    <geom name="clutter_42" type="cylinder" size="0.14 0.25" pos="5.0 6.2 0.25" material="clutter_mat3"/>
+    <geom name="clutter_43" type="box"      size="0.12 0.10 0.25" pos="6.4 6.2 0.25" material="clutter_mat4"/>
+    <geom name="clutter_44" type="cylinder" size="0.10 0.25" pos="4.6 7.4 0.25" material="clutter_mat1"/>
+    <geom name="clutter_45" type="box"      size="0.15 0.12 0.25" pos="5.8 7.2 0.25" material="clutter_mat2"/>
+    <geom name="clutter_46" type="cylinder" size="0.08 0.25" pos="7.5 6.0 0.25" material="clutter_mat3"/>
+    <geom name="clutter_47" type="box"      size="0.12 0.12 0.25" pos="5.2 5.5 0.25" material="clutter_mat4"/>
+    <geom name="clutter_48" type="cylinder" size="0.14 0.25" pos="6.8 4.4 0.25" material="clutter_mat1"/>
+    <geom name="clutter_49" type="box"      size="0.10 0.14 0.25" pos="4.5 6.8 0.25" material="clutter_mat2"/>
+    <geom name="clutter_50" type="cylinder" size="0.12 0.25" pos="7.4 7.4 0.25" material="clutter_mat3"/>
+    <geom name="clutter_51" type="box"      size="0.08 0.10 0.25" pos="6.0 4.5 0.25" material="clutter_mat4"/>
+    <geom name="clutter_52" type="cylinder" size="0.10 0.25" pos="6.8 6.8 0.25" material="clutter_mat1"/>
+
+    <!-- Target Goal Zone at (7.0, 7.0) -->
+    <geom name="goal_beacon" type="cylinder" size="0.30 0.02" pos="7.0 7.0 0.02" material="goal_mat" contype="0" conaffinity="0"/>
+
+    <!-- CARL Unified Autonomous Agent (Differential Base with Active Pan Head) -->
+    <body name="carl_agent" pos="0.8 0.8 0.055">
+      <joint name="root_x" type="slide" axis="1 0 0" damping="1.0"/>
+      <joint name="root_y" type="slide" axis="0 1 0" damping="1.0"/>
+      <joint name="root_yaw" type="hinge" axis="0 0 1" damping="0.8"/>
+      <geom name="chassis_geom" type="cylinder" size="0.14 0.03" material="chassis" mass="2.2" contype="0" conaffinity="0"/>
+
+      <!-- Active Pan Gaze Head -->
+      <body name="head" pos="0.08 0.0 0.07">
+        <joint name="neck_pan" type="hinge" axis="0 0 1" range="-1.2 1.2" damping="0.05"/>
+        <geom name="head_g" type="box" size="0.04 0.04 0.03" rgba="0.15 0.15 0.20 1" mass="0.3"/>
+        <camera name="eye_cam" pos="0.041 0 0" xyaxes="0 -1 0 0 0 1" fovy="70"/>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <velocity name="act_vx" joint="root_x" kv="40.0"/>
+    <velocity name="act_vy" joint="root_y" kv="40.0"/>
+    <velocity name="act_wz" joint="root_yaw" kv="25.0"/>
+    <position name="act_pan" joint="neck_pan" kp="8.0" kv="0.8"/>
+  </actuator>
+</mujoco>

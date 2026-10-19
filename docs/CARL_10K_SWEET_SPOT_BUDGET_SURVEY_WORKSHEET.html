@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CARL-DX — 10K Sweet Spot Budget Survey &amp; Price Comparison Worksheet</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 8mm 9mm 8mm 9mm;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #0f172a;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 8.2pt;
+    line-height: 1.28;
+  }
+
+  .page-container {
+    height: 281mm;
+    max-height: 281mm;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+  }
+
+  .page-container:last-child {
+    page-break-after: avoid;
+  }
+
+  .header {
+    border-bottom: 2.5px solid #7c3aed;
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .header-left h1 {
+    font-size: 13.5pt;
+    font-weight: 800;
+    color: #5b21b6;
+    margin: 0 0 1px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .header-left .subtitle {
+    font-size: 7.8pt;
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .header-right {
+    text-align: right;
+    font-size: 7.3pt;
+    color: #334155;
+    line-height: 1.25;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 7pt;
+    text-transform: uppercase;
+  }
+
+  .badge-10k {
+    background: #ede9fe;
+    color: #5b21b6;
+    border: 1px solid #8b5cf6;
+  }
+
+  .badge-survey {
+    background: #fef3c7;
+    color: #92400e;
+    border: 1px solid #f59e0b;
+  }
+
+  .badge-nosolder {
+    background: #dbeafe;
+    color: #1e40af;
+    border: 1px solid #3b82f6;
+  }
+
+  .survey-banner {
+    background: #faf5ff;
+    border: 1.5px solid #8b5cf6;
+    border-left: 5px solid #6d28d9;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 7.5pt;
+    color: #581c87;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .survey-script-box {
+    background: #fffbeb;
+    border: 1px dashed #d97706;
+    border-radius: 4px;
+    padding: 4px 7px;
+    margin-bottom: 5px;
+    font-size: 7.3pt;
+    color: #78350f;
+  }
+
+  .survey-script-box strong {
+    color: #92400e;
+  }
+
+  .section-title {
+    font-size: 8.6pt;
+    font-weight: 700;
+    color: #0f172a;
+    background: #f3f4f6;
+    padding: 2.5px 6px;
+    border-radius: 3px;
+    margin: 4px 0 3px 0;
+    border-left: 3.5px solid #7c3aed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-title .section-budget {
+    font-size: 7.4pt;
+    font-weight: 600;
+    color: #6d28d9;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 4px;
+    font-size: 7.6pt;
+  }
+
+  th {
+    background: #1e293b;
+    color: #f8fafc;
+    text-align: left;
+    padding: 3px 4px;
+    font-weight: 600;
+    font-size: 7.1pt;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    border: 1px solid #1e293b;
+  }
+
+  th.center, td.center {
+    text-align: center;
+  }
+
+  th.right, td.right {
+    text-align: right;
+  }
+
+  td {
+    padding: 2.8px 4px;
+    border: 1px solid #cbd5e1;
+    vertical-align: middle;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+
+  .item-name {
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 7.9pt;
+  }
+
+  .item-spec {
+    font-size: 7pt;
+    color: #475569;
+  }
+
+  .plug-tag {
+    display: inline-block;
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+    border-radius: 2.5px;
+    font-size: 6.4pt;
+    font-weight: 700;
+    padding: 0.5px 3px;
+    margin-top: 1px;
+    text-transform: uppercase;
+  }
+
+  .survey-tip {
+    font-size: 6.8pt;
+    color: #b45309;
+    font-weight: 600;
+    margin-top: 1px;
+  }
+
+  .fallback {
+    font-size: 6.7pt;
+    color: #64748b;
+    font-style: italic;
+  }
+
+  .write-in-box {
+    border: 1px dashed #94a3b8;
+    background: #ffffff;
+    height: 17px;
+    border-radius: 2px;
+  }
+
+  .total-row td {
+    font-weight: 700;
+    background: #ede9fe;
+    border-top: 2px solid #5b21b6;
+    color: #2e1065;
+    padding: 3.5px 5px;
+  }
+
+  .grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin: 4px 0;
+  }
+
+  .card {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 4px 6px;
+    font-size: 7.3pt;
+  }
+
+  .card h3 {
+    margin: 0 0 2px 0;
+    font-size: 7.9pt;
+    color: #5b21b6;
+    font-weight: 700;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 2px;
+  }
+
+  .card ul {
+    margin: 0;
+    padding-left: 12px;
+    color: #334155;
+  }
+
+  .card li {
+    margin-bottom: 2px;
+  }
+
+  .tier-box {
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 4px 6px;
+    background: #fff;
+    margin-top: 3px;
+  }
+
+  .tier-title {
+    font-weight: 700;
+    color: #5b21b6;
+    font-size: 7.7pt;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-note {
+    font-size: 6.8pt;
+    color: #64748b;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 2px;
+    margin-top: auto;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1 ==================== -->
+  <div class="page-container">
+    <div>
+      <div class="header">
+        <div class="header-left">
+          <h1>CARL-Ω — 10K Sweet Spot Budget Survey Worksheet</h1>
+          <div class="subtitle">FLAGSHIP PHYSICAL MAKER &amp; RESEARCH PROTOTYPE &bull; SUB-&#8377;10,000 INR CEILING</div>
+        </div>
+        <div class="header-right">
+          <div><span class="badge badge-10k">&#128161; 10K Sweet Spot</span> <span class="badge badge-survey">&#128221; Budget Survey</span> <span class="badge badge-nosolder">&#9889; Zero-Solder</span></div>
+          <div style="margin-top:2px;">Target Ceiling: &#8377;10,000 INR | Sim-to-Real: <code>vessel_kinetic.xml</code></div>
+        </div>
+      </div>
+
+      <div class="survey-banner">
+        <div>
+          <strong>10K ARCHITECTURAL GOAL:</strong> Dual-processor embodiment (Orange Pi 5 6.0 TOPS NPU for 60FPS YOLOv8 vision + ESP32 PNS for microsecond motor PWM), 6x Solid-State ToF LiDAR array, current sensing &amp; active head gaze.
+        </div>
+        <div>
+          <strong>Market:</strong> Koti, Hyderabad
+        </div>
+      </div>
+
+      <div class="survey-script-box">
+        <strong>&#128483; 10K BUDGET SURVEY SCRIPT FOR KOTI COUNTERS (Universal / Sagar / CTC Computer Dealers):</strong><br>
+        &bull; <em>"Bhaiya, M.Tech/R&amp;D thesis project ke liye <strong>Orange Pi 5 (RK3588S) ya Raspberry Pi 4</strong> aur accompanying sensors ka <strong>rough quotation estimate</strong> bana rahe hain."</em><br>
+        &bull; <em>"Agar Orange Pi 5 stock mein nahi hai, toh <strong>Orange Pi 3B (with NPU) ya Pi Zero 2 W</strong> ka kya rate padega?"</em><br>
+        &bull; <em>"Mujhe soldering nahi aati, saare sensors (VL53L1X, PCA9685, INA219, IMU) <strong>pre-soldered pins ya screw terminals</strong> ke saath chahiye."</em>
+      </div>
+
+      <!-- SECTION 1: HIGH-LEVEL COMPUTE & CO-PROCESSOR -->
+      <div class="section-title">
+        <span>1. High-Level AI Compute &amp; Co-Processor (Brain Subsystem)</span>
+        <span class="section-budget">Target Range: &#8377;6,900 – &#8377;7,300</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20px;" class="center">#</th>
+            <th style="width: 130px;">Component</th>
+            <th>Specification &amp; Survey Inquiry</th>
+            <th style="width: 28px;" class="center">Qty</th>
+            <th style="width: 55px;" class="right">Target</th>
+            <th style="width: 55px;" class="center">Shop 1 (&#8377;)</th>
+            <th style="width: 55px;" class="center">Shop 2 (&#8377;)</th>
+            <th style="width: 60px;" class="center">Stock Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">1</td>
+            <td>
+              <div class="item-name">Orange Pi 5 (4GB RAM)</div>
+              <div class="item-spec">Rockchip RK3588S, 6.0 TOPS NPU</div>
+              <div class="plug-tag">&#10004; Standalone SBC</div>
+            </td>
+            <td>
+              High-level brain: runs local quantized 60FPS YOLOv8 on NPU + CANN spatial torus memory directly on-chassis.
+              <div class="survey-tip">&#128065; Ask: "Orange Pi 5 4GB RAM ya equivalent 6 TOPS NPU board mil jayega?"</div>
+              <div class="fallback">Fallback A: Orange Pi 3B 2GB/4GB (0.8 TOPS NPU, ₹3,800–₹4,200).<br>Fallback B: Raspberry Pi 4 4GB (₹4,800) / Pi Zero 2 W (₹1,650).</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;6,600–<br>&#8377;6,900</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] In Stock<br>[ ] Order (2-day)</td>
+          </tr>
+          <tr>
+            <td class="center">2</td>
+            <td>
+              <div class="item-name">ESP32 Dev Board (30-pin)</div>
+              <div class="item-spec">NodeMCU / WROOM-32</div>
+              <div class="plug-tag">&#10004; Pre-Soldered Pins</div>
+            </td>
+            <td>
+              PNS Co-processor: microsecond motor PWM, I2C telemetry polling, UART link to Orange Pi.
+              <div class="survey-tip">&#128065; Ask: "30-pin narrow ESP32 board with pre-soldered pins rate kya hai?"</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;300–330</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Soldered</td>
+          </tr>
+          <tr>
+            <td class="center">3</td>
+            <td>
+              <div class="item-name">USB-C Power Cable / Supply</div>
+              <div class="item-spec">5V 4A / Type-C Power Lead</div>
+              <div class="plug-tag">&#10004; Plug &amp; Play USB-C</div>
+            </td>
+            <td>
+              Feeds high-current clean 5V to Orange Pi 5 to prevent brownouts under 6 TOPS NPU AI load.
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;90–140</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Available</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- SECTION 2: PERCEPTION & SOLID-STATE LIDAR -->
+      <div class="section-title">
+        <span>2. Solid-State Micro-LiDAR Array &amp; Vision Perception</span>
+        <span class="section-budget">Target Range: &#8377;1,550 – &#8377;1,750</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20px;" class="center">#</th>
+            <th style="width: 130px;">Component</th>
+            <th>Specification &amp; Survey Inquiry</th>
+            <th style="width: 28px;" class="center">Qty</th>
+            <th style="width: 55px;" class="right">Target</th>
+            <th style="width: 55px;" class="center">Shop 1 (&#8377;)</th>
+            <th style="width: 55px;" class="center">Shop 2 (&#8377;)</th>
+            <th style="width: 60px;" class="center">Stock Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">4</td>
+            <td>
+              <div class="item-name">VL53L1X Laser ToF</div>
+              <div class="item-spec">Solid-State Micro-LiDAR (4m)</div>
+              <div class="plug-tag">&#10004; Pre-Soldered Pins</div>
+            </td>
+            <td>
+              Up to 4.0m range, 940nm Class-1 laser pulses. Millimeter precision in pitch-black rooms.
+              <div class="survey-tip">&#128065; Ask: "VL53L1X (4 meter range) per-piece rate kitna hai? 6 pieces ka bundle discount?"</div>
+              <div class="fallback">Fallback: VL53L0X (2m range, ₹150/ea) saves ~₹180 total on the array.</div>
+            </td>
+            <td class="center"><strong>6</strong></td>
+            <td class="right">&#8377;1,020–<br>&#8377;1,140<br><span style="font-size:6.5pt;">(~₹180/ea)</span></td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Pre-soldered<br>[ ] Loose pins</td>
+          </tr>
+          <tr>
+            <td class="center">5</td>
+            <td>
+              <div class="item-name">720p HD USB Web Camera</div>
+              <div class="item-spec">Wide-Angle Driverless USB</div>
+              <div class="plug-tag">&#10004; Standard USB-A Plug</div>
+            </td>
+            <td>
+              Feeds 30–60 FPS live video to Orange Pi NPU for open-vocabulary grounding and Gemini Robotics API.
+              <div class="survey-tip">&#128065; Ask: "Wide-angle driverless USB camera module (mini PCB or webcam) rate kya hai?"</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;450–520</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Available</td>
+          </tr>
+          <tr>
+            <td class="center">6</td>
+            <td>
+              <div class="item-name">TCA9548A I2C Mux</div>
+              <div class="item-spec">8-Channel I2C Bus Multiplexer</div>
+              <div class="plug-tag">&#10004; Pre-Soldered Pins</div>
+            </td>
+            <td>
+              Channels all 6x VL53L1X laser sensors without I2C address collision.
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;75–90</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Soldered</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- SURVEY NOTE -->
+      <div class="card" style="margin-top:3px;">
+        <h3>&#128269; Single-Board Computer (SBC) Survey Tip in Hyderabad</h3>
+        If Orange Pi 5 is not on the shelf in Gujarati Galli: Universal Electronics can arrange it within 24 hours from distributor, or you can walk 15 mins to <strong>CTC (Chenoy Trade Centre, Parklane, Secunderabad)</strong> where SBC distributors have Orange Pi / Raspberry Pi stock on spot.
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Page 1 of 3 &bull; CARL-Ω 10K Sweet Spot Budget Survey Worksheet &bull; Gujarati Galli &amp; Troop Bazaar, Hyderabad
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 2 ==================== -->
+  <div class="page-container">
+    <div>
+      <div class="header">
+        <div class="header-left">
+          <h1>CARL-Ω — Servos, Force Sensors &amp; Locomotion</h1>
+          <div class="subtitle">12-BIT PWM CONTROLLER, PRESSURE SENSORS, CHASSIS &amp; DUAL SUSPENSION</div>
+        </div>
+        <div class="header-right">
+          <div><span class="badge badge-10k">Page 2 Survey</span> <span class="badge badge-nosolder">Servo &amp; Sensor Sockets</span></div>
+          <div style="margin-top:2px;">Target Subtotal: &#8377;1,850 – &#8377;2,150</div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: ACTUATION & SERVO CONTROLLER -->
+      <div class="section-title">
+        <span>3. Jitter-Free Servo Controller, Pan/Tilt Head &amp; Gripper Servos</span>
+        <span class="section-budget">Target Range: &#8377;800 – &#8377;950</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20px;" class="center">#</th>
+            <th style="width: 130px;">Component</th>
+            <th>Specification &amp; Survey Inquiry</th>
+            <th style="width: 28px;" class="center">Qty</th>
+            <th style="width: 55px;" class="right">Target</th>
+            <th style="width: 55px;" class="center">Shop 1 (&#8377;)</th>
+            <th style="width: 55px;" class="center">Shop 2 (&#8377;)</th>
+            <th style="width: 60px;" class="center">Stock Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">7</td>
+            <td>
+              <div class="item-name">PCA9685 16-Ch PWM</div>
+              <div class="item-spec">12-Bit I2C Servo Controller</div>
+              <div class="plug-tag">&#10004; Standard 3-Pin Servo Sockets</div>
+            </td>
+            <td>
+              4,096 discrete PWM steps over I2C. Eliminates jitter on all neck &amp; arm servos. Zero software timing overhead.
+              <div class="survey-tip">&#128065; Ask: "PCA9685 16-channel servo driver board hai kya?"</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;170–190</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Available</td>
+          </tr>
+          <tr>
+            <td class="center">8</td>
+            <td>
+              <div class="item-name">MG996R Neck Servo</div>
+              <div class="item-spec">Metal Gear High-Torque (11kg&middot;cm)</div>
+              <div class="plug-tag">&#10004; 3-Pin Female Servo Plug</div>
+            </td>
+            <td>
+              High-torque metal gear servo for active camera/head pan-tilt gaze scanning without gear strip.
+              <div class="survey-tip">&#128065; Ask: "Original metal gear MG996R servo rate kya hai?"</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;280–320</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Available</td>
+          </tr>
+          <tr>
+            <td class="center">9</td>
+            <td>
+              <div class="item-name">SG90 Micro Servos (9g)</div>
+              <div class="item-spec">Bilateral Reach &amp; Claw Actuators</div>
+              <div class="plug-tag">&#10004; 3-Pin Female Servo Plug</div>
+            </td>
+            <td>
+              Lightweight micro servos for arm joint articulation and tactile claw grasping.
+              <div class="survey-tip">&#128065; Ask: "SG90 servos (TowerPro) 4 pieces ka packet rate kya hai?"</div>
+            </td>
+            <td class="center"><strong>4</strong></td>
+            <td class="right">&#8377;300–350<br><span style="font-size:6.5pt;">(~₹75-85/ea)</span></td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Available</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- SECTION 4: TACTILE SKIN & CURRENT TELEMETRY -->
+      <div class="section-title">
+        <span>4. Tactile Force Skin &amp; Motor Load Telemetry (Fatigue Sensing)</span>
+        <span class="section-budget">Target Range: &#8377;420 – &#8377;480</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20px;" class="center">#</th>
+            <th style="width: 130px;">Component</th>
+            <th>Specification &amp; Survey Inquiry</th>
+            <th style="width: 28px;" class="center">Qty</th>
+            <th style="width: 55px;" class="right">Target</th>
+            <th style="width: 55px;" class="center">Shop 1 (&#8377;)</th>
+            <th style="width: 55px;" class="center">Shop 2 (&#8377;)</th>
+            <th style="width: 60px;" class="center">Stock Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">10</td>
+            <td>
+              <div class="item-name">FSR-402 Pressure Pads</div>
+              <div class="item-spec">Force Sensitive Resistors (Fingertips)</div>
+              <div class="plug-tag">&#10004; 2.54mm Breadboard Push-in</div>
+            </td>
+            <td>
+              Polymer tactile skin reading claw grip force (0.1N to 10N) to prevent crushing fragile objects.
+              <div class="survey-tip">&#128065; Ask: "FSR-402 pressure / force sensor pad available hai kya?"</div>
+            </td>
+            <td class="center"><strong>2</strong></td>
+            <td class="right">&#8377;300–350<br><span style="font-size:6.5pt;">(~₹160/ea)</span></td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Available</td>
+          </tr>
+          <tr>
+            <td class="center">11</td>
+            <td>
+              <div class="item-name">INA219 Current Sensor</div>
+              <div class="item-spec">High-Side I2C Power Monitor</div>
+              <div class="plug-tag">&#10004; Screw Terminal Block</div>
+            </td>
+            <td>
+              Measures live motor current (I &prop; Torque) &rarr; feeds <code>carl_fatigue.py</code> to trigger organic limping.
+              <div class="survey-tip">&#128065; Ask: "INA219 I2C current sensor with screw terminals rate kya hai?"</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;110–130</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Available</td>
+          </tr>
+          <tr>
+            <td class="center">12</td>
+            <td>
+              <div class="item-name">MPU6050 IMU Sensor</div>
+              <div class="item-spec">6-DOF Accel + Gyroscope</div>
+              <div class="plug-tag">&#10004; Pre-Soldered Pins</div>
+            </td>
+            <td>
+              Measures yaw angular rate and slip acceleration. Grounds CANN head-direction ring.
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;130–145</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Soldered</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- SECTION 5: LOCOMOTION, DUAL SUSPENSION & POWER -->
+      <div class="section-title">
+        <span>5. Locomotion Deck, Dual Spring Casters &amp; High-Current Power</span>
+        <span class="section-budget">Target Range: &#8377;980 – &#8377;1,150</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20px;" class="center">#</th>
+            <th style="width: 130px;">Component</th>
+            <th>Specification &amp; Survey Inquiry</th>
+            <th style="width: 28px;" class="center">Qty</th>
+            <th style="width: 55px;" class="right">Target</th>
+            <th style="width: 55px;" class="center">Shop 1 (&#8377;)</th>
+            <th style="width: 55px;" class="center">Shop 2 (&#8377;)</th>
+            <th style="width: 60px;" class="center">Stock Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">13</td>
+            <td>
+              <div class="item-name">2WD Smart Chassis + Encoders</div>
+              <div class="item-spec">Base Deck + BO Motors + Discs</div>
+              <div class="plug-tag">&#10004; Bolt-together Assembly</div>
+            </td>
+            <td>
+              Acrylic plate, 2x 1:48 BO motors with optical encoder slotted discs, 2x 66mm rubber wheels.
+              <div class="survey-tip">&#128065; Ask: "2WD chassis with encoder speed discs rate kya hai? Motors wired hain?"</div>
+            </td>
+            <td class="center"><strong>1 kit</strong></td>
+            <td class="right">&#8377;380–440</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] With Encoders</td>
+          </tr>
+          <tr>
+            <td class="center">14</td>
+            <td>
+              <div class="item-name">Dual CY-15A Spring Casters</div>
+              <div class="item-spec">Front &amp; Rear Cushioned Ball Units</div>
+              <div class="plug-tag">&#10004; Screw Mount</div>
+            </td>
+            <td>
+              Front &amp; rear suspension compliance ($k=350	ext{ N/m}$). Eliminates teeter-totter hull pitch oscillation.
+              <div class="survey-tip">&#128065; Ask: "CY-15A metal ball casters 2 pieces rate kya hai?"</div>
+            </td>
+            <td class="center"><strong>2</strong></td>
+            <td class="right">&#8377;120–160<br><span style="font-size:6.5pt;">(~₹75/ea)</span></td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Available</td>
+          </tr>
+          <tr>
+            <td class="center">15</td>
+            <td>
+              <div class="item-name">L298N Motor Driver</div>
+              <div class="item-spec">Dual H-Bridge with Heat Sink</div>
+              <div class="plug-tag">&#10004; Heavy Screw Terminals</div>
+            </td>
+            <td>
+              Heavy-duty red board with aluminum heatsink and screw terminal blocks for motor wires and battery.
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;110–135</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Screw Blocks</td>
+          </tr>
+          <tr>
+            <td class="center">16</td>
+            <td>
+              <div class="item-name">High-Drain 18650 Cells + 2S Box</div>
+              <div class="item-spec">2x 2600mAh High-Discharge</div>
+              <div class="plug-tag">&#10004; Snap-in Cells</div>
+            </td>
+            <td>
+              High-drain cells capable of handling simultaneous Orange Pi NPU burst + 5 servos + 2 drive motors.
+            </td>
+            <td class="center"><strong>1 set</strong></td>
+            <td class="right">&#8377;260–320</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">Brand: _____</td>
+          </tr>
+          <tr>
+            <td class="center">17</td>
+            <td>
+              <div class="item-name">LM2596 5V 3A Buck Regulator</div>
+              <div class="item-spec">Synchronous Step-Down</div>
+              <div class="plug-tag">&#10004; Screw Terminals</div>
+            </td>
+            <td>
+              Delivers solid 5.0V regulated power to Orange Pi 5 and ESP32 with zero voltage sag.
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;75–90</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Screw Blocks</td>
+          </tr>
+          <tr>
+            <td class="center">18</td>
+            <td>
+              <div class="item-name">Dupont Wires &amp; Breadboard</div>
+              <div class="item-spec">3x 40-pin Ribbons + 400-pt Board</div>
+              <div class="plug-tag">&#10004; Plug &amp; Socket Bus</div>
+            </td>
+            <td>
+              F-F, M-F, M-M jumper ribbons + mini breadboard + CH-2 spring lever clamps.
+            </td>
+            <td class="center"><strong>1 set</strong></td>
+            <td class="right">&#8377;150–180</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">[ ] Complete Set</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 10K TOTAL ROW -->
+      <table>
+        <tr class="total-row">
+          <td colspan="4" style="font-size:8.4pt;">&#128176; GRAND TOTAL ESTIMATED 10K SWEET SPOT EMBODIMENT (18 ITEMS)</td>
+          <td class="right" style="font-size:8.8pt;color:#5b21b6;">&#8377;9,650–10,250</td>
+          <td class="center" style="font-size:8.4pt;font-weight:700;">&#8377; ________</td>
+          <td class="center" style="font-size:8.4pt;font-weight:700;">&#8377; ________</td>
+          <td class="center" style="font-size:7pt;color:#166534;font-weight:700;">&le; &#8377;10,000 Target</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="footer-note">
+      Page 2 of 3 &bull; CARL-Ω 10K Sweet Spot Budget Survey Worksheet &bull; Gujarati Galli &amp; Troop Bazaar, Hyderabad
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 3 ==================== -->
+  <div class="page-container">
+    <div>
+      <div class="header">
+        <div class="header-left">
+          <h1>CARL-Ω — Procurement Strategy &amp; Sub-10K Tiers</h1>
+          <div class="subtitle">TWO-STAGE PHASED BUYING PLAN, KOTI SBC SHOPS &amp; COUNTER CHECKLIST</div>
+        </div>
+        <div class="header-right">
+          <div><span class="badge badge-10k">&#128205; Page 3 Strategy</span></div>
+          <div style="margin-top:2px;"><span class="badge badge-budget">Phased Procurement</span></div>
+        </div>
+      </div>
+
+      <div class="grid-2col">
+        <!-- SBC SHOPS DIRECTORY -->
+        <div class="card">
+          <h3>&#128205; Where to Inquire for Single-Board Computers (SBC)</h3>
+          <ul>
+            <li><strong>In Gujarati Galli / Troop Bazaar (Koti):</strong>
+              <ul>
+                <li><strong>Universal Electronics (Gujarati Galli):</strong> Largest selection of development boards; can source Orange Pi 5 or Pi 4 from their central warehouse within 24 hours.</li>
+                <li><strong>Sagar Electronics (Gujarati Galli):</strong> Competitive pricing on all sensors, PCA9685, INA219, and motors.</li>
+                <li><strong>Vishal Electronics (Troop Bazaar):</strong> Chassis, dual CY-15A casters, BO gearmotors with encoder discs.</li>
+              </ul>
+            </li>
+            <li><strong>Nearby Specialized Computer Markets (If SBC not in Koti):</strong>
+              <ul>
+                <li><strong>Chenoy Trade Centre (CTC), Parklane, Secunderabad:</strong> 15-20 min metro ride from Koti. Hyderabad's central IT hardware hub with direct Pi/Orange Pi distributors.</li>
+                <li><strong>Online Sourcing (Robu.in / Silverline Electronics):</strong> If Koti quotes &gt;₹7,200 for Orange Pi 5, Robu.in delivers to Hyderabad in 2-3 days at ₹6,800.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- TWO-PHASE PROCUREMENT PLAN -->
+        <div class="card">
+          <h3>&#128161; The Smart Two-Phase Procurement Strategy</h3>
+          <ul>
+            <li><strong>Phase 1 (The Sensorimotor Mobility Foundation — Month 1):</strong>
+              <ul>
+                <li>Buy the 2WD chassis kit, BO motors, ESP32, 3x ToF sensors, L298N driver, battery pack &amp; breadboard.</li>
+                <li><strong>Phase 1 Out-of-Pocket: &#8377;2,150 – &#8377;2,350 INR.</strong></li>
+                <li>You validate Stage 1 Body Babbling, Stage 2 CANN, and Stage 3.4 MPPI steering immediately using laptop Wi-Fi telemetry!</li>
+              </ul>
+            </li>
+            <li><strong>Phase 2 (The High-Compute NPU &amp; Vision Upgrade — Month 2):</strong>
+              <ul>
+                <li>Once the chassis is rolling smoothly, purchase the Orange Pi 5, 720p USB camera, PCA9685, and servos.</li>
+                <li><strong>Phase 2 Out-of-Pocket: &#8377;7,500 – &#8377;7,900 INR.</strong></li>
+                <li>Mounts directly on top of the tested rolling chassis! Zero risk of buying expensive compute before kinematics work.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- THREE BUDGET TIERS UNDER 10K SPECIFICATION -->
+      <div class="section-title" style="margin-top:3px;">
+        <span>3 Formal Embodiment Tiers under the &#8377;10,000 Budget Window</span>
+        <span class="section-budget">Dissertation Budget Scenarios</span>
+      </div>
+
+      <div class="grid-2col" style="margin-top:2px;">
+        <!-- TIER 1 -->
+        <div class="tier-box">
+          <div class="tier-title">
+            <span>Tier 1: Frugal Edge Organism (Sub-&#8377;4.5K)</span>
+            <span style="color:#166534;">Est: &#8377;4,100 – &#8377;4,600</span>
+          </div>
+          <div style="font-size:7.1pt;color:#475569;margin-bottom:2px;">
+            Raspberry Pi Zero 2 W (Quad-Core 64-bit @ 1.0 GHz) + ESP32 + 3x ToF + 2WD Chassis + Dual Casters.
+          </div>
+          <ul style="margin:0;padding-left:11px;font-size:6.9pt;color:#334155;">
+            <li>100% standalone onboard Linux host running Python 3 without external PC.</li>
+            <li>Zero tethering required during maze traversal.</li>
+            <li>Ultra-low power drain (2-3 hour runtimes on dual 18650 pack).</li>
+          </ul>
+        </div>
+
+        <!-- TIER 2 -->
+        <div class="tier-box">
+          <div class="tier-title">
+            <span>Tier 2: The Final Sweet Spot Flagship (Sub-&#8377;10K)</span>
+            <span style="color:#5b21b6;">Est: &#8377;9,650 – &#8377;10,200</span>
+          </div>
+          <div style="font-size:7.1pt;color:#475569;margin-bottom:2px;">
+            Orange Pi 5 (6 TOPS NPU) + 6x VL53L1X Micro-LiDAR + 720p Cam + PCA9685 + Servos + INA219.
+          </div>
+          <ul style="margin:0;padding-left:11px;font-size:6.9pt;color:#334155;">
+            <li>Local 60 FPS YOLOv8 NPU object detection + Google Gemini Robotics API streaming.</li>
+            <li>Solid-state laser micro-LiDAR array measuring 360&deg; spatial boundaries in pitch darkness.</li>
+            <li>Real-time joint current load telemetry for organic limping dynamics under load.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COUNTER VERIFICATION PROTOCOL -->
+      <div class="card" style="margin-top:4px;">
+        <h3>&#128269; Counter Testing &amp; Warranty Questions for 10K Items</h3>
+        <ul style="font-size:7.1pt;">
+          <li><strong>Orange Pi 5:</strong> Ask: <em>"Board DOA (Dead-on-Arrival) testing guarantee hai na? Agar power nahi aayi toh return/exchange policy kya hai?"</em> (Reputable shops provide 7-day testing replacement).</li>
+          <li><strong>PCA9685 &amp; Servos:</strong> Ensure PCA9685 board includes screw power terminal for servo rail and 3-pin headers. Check that servo motor horns and mounting screws are inside the polybag.</li>
+          <li><strong>VL53L1X Laser Sensors:</strong> Inspect protective amber film over the tiny dual optical apertures. Ensure it is not scratched or peeled off.</li>
+          <li><strong>Dual CY-15A Casters:</strong> Roll the ball with your thumb—it must roll freely in all directions without gritty resistance or metal grinding.</li>
+        </ul>
+      </div>
+
+      <!-- NOTES BOX -->
+      <div class="card" style="margin-top:3px;padding:3px 6px;">
+        <strong>&#128221; Market Survey Quotation Notes (Shop Name &amp; Contact Person):</strong>
+        <div style="border-bottom: 1px dashed #cbd5e1; height: 15px; margin-top:2px;"></div>
+        <div style="border-bottom: 1px dashed #cbd5e1; height: 15px; margin-top:2px;"></div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Page 3 of 3 &bull; CARL-Ω 10K Sweet Spot Budget Survey Worksheet &bull; JNTUH IDP EBCA Dissertation Research Prototype
+    </div>
+  </div>
+
+</body>
+</html>

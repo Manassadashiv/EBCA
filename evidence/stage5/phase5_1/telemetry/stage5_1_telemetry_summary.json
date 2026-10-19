@@ -1,0 +1,6 @@
+{
+  "samples_collected": 200,
+  "variance_reduction_pct": 96.58647535131065,
+  "mean_latency_us": 19.367400382179767,
+  "p95_latency_us": 23.70000584051013
+}

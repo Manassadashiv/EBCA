@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CARL-DX — Koti Budget Planning &amp; Price Survey Worksheet</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 8mm 9mm 8mm 9mm;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #0f172a;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 8.3pt;
+    line-height: 1.30;
+  }
+
+  .page-container {
+    height: 281mm;
+    max-height: 281mm;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+  }
+
+  .page-container:last-child {
+    page-break-after: avoid;
+  }
+
+  .header {
+    border-bottom: 2.5px solid #1e3a8a;
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .header-left h1 {
+    font-size: 13.5pt;
+    font-weight: 800;
+    color: #1e3a8a;
+    margin: 0 0 1px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .header-left .subtitle {
+    font-size: 7.8pt;
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .header-right {
+    text-align: right;
+    font-size: 7.3pt;
+    color: #334155;
+    line-height: 1.25;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 7pt;
+    text-transform: uppercase;
+  }
+
+  .badge-survey {
+    background: #fef3c7;
+    color: #92400e;
+    border: 1px solid #f59e0b;
+  }
+
+  .badge-nosolder {
+    background: #dbeafe;
+    color: #1e40af;
+    border: 1px solid #3b82f6;
+  }
+
+  .badge-budget {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #22c55e;
+  }
+
+  .survey-banner {
+    background: #f8fafc;
+    border: 1.5px solid #0284c7;
+    border-left: 5px solid #0369a1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 7.6pt;
+    color: #075985;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .survey-script-box {
+    background: #fffbeb;
+    border: 1px dashed #d97706;
+    border-radius: 4px;
+    padding: 4px 7px;
+    margin-bottom: 6px;
+    font-size: 7.4pt;
+    color: #78350f;
+  }
+
+  .survey-script-box strong {
+    color: #92400e;
+  }
+
+  .section-title {
+    font-size: 8.8pt;
+    font-weight: 700;
+    color: #0f172a;
+    background: #f1f5f9;
+    padding: 2.5px 6px;
+    border-radius: 3px;
+    margin: 5px 0 3px 0;
+    border-left: 3.5px solid #1e3a8a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-title .section-budget {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #1e3a8a;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    font-size: 7.7pt;
+  }
+
+  th {
+    background: #1e293b;
+    color: #f8fafc;
+    text-align: left;
+    padding: 3.5px 4px;
+    font-weight: 600;
+    font-size: 7.2pt;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    border: 1px solid #1e293b;
+  }
+
+  th.center, td.center {
+    text-align: center;
+  }
+
+  th.right, td.right {
+    text-align: right;
+  }
+
+  td {
+    padding: 3px 4px;
+    border: 1px solid #cbd5e1;
+    vertical-align: middle;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+
+  .check-box {
+    width: 11px;
+    height: 11px;
+    border: 1.5px solid #475569;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .item-name {
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 8pt;
+  }
+
+  .item-spec {
+    font-size: 7.1pt;
+    color: #475569;
+  }
+
+  .plug-tag {
+    display: inline-block;
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+    border-radius: 2.5px;
+    font-size: 6.5pt;
+    font-weight: 700;
+    padding: 0.5px 3px;
+    margin-top: 1px;
+    text-transform: uppercase;
+  }
+
+  .survey-tip {
+    font-size: 6.9pt;
+    color: #b45309;
+    font-weight: 600;
+    margin-top: 1px;
+  }
+
+  .fallback {
+    font-size: 6.8pt;
+    color: #64748b;
+    font-style: italic;
+  }
+
+  .write-in-box {
+    border: 1px dashed #94a3b8;
+    background: #ffffff;
+    height: 18px;
+    border-radius: 2px;
+  }
+
+  .total-row td {
+    font-weight: 700;
+    background: #e2e8f0;
+    border-top: 2px solid #0f172a;
+    color: #0f172a;
+    padding: 3.5px 5px;
+  }
+
+  .grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin: 4px 0;
+  }
+
+  .card {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 5px 6px;
+    font-size: 7.4pt;
+  }
+
+  .card h3 {
+    margin: 0 0 3px 0;
+    font-size: 8pt;
+    color: #1e3a8a;
+    font-weight: 700;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 2px;
+  }
+
+  .card ul {
+    margin: 0;
+    padding-left: 12px;
+    color: #334155;
+  }
+
+  .card li {
+    margin-bottom: 2px;
+  }
+
+  .pinout-table {
+    width: 100%;
+    font-size: 7pt;
+    border-collapse: collapse;
+  }
+
+  .pinout-table td, .pinout-table th {
+    padding: 2px 3.5px;
+  }
+
+  .tier-box {
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 5px;
+    background: #fff;
+    margin-top: 4px;
+  }
+
+  .tier-title {
+    font-weight: 700;
+    color: #1e3a8a;
+    font-size: 7.8pt;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-note {
+    font-size: 6.8pt;
+    color: #64748b;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 3px;
+    margin-top: auto;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1 ==================== -->
+  <div class="page-container">
+    <div>
+      <div class="header">
+        <div class="header-left">
+          <h1>CARL-DX — Koti Budget Survey &amp; Price Comparison Worksheet</h1>
+          <div class="subtitle">PHYSICAL EMBODIMENT PLANNING &bull; 100% SOLDERLESS (PIN &amp; SOCKET / SCREW CLAMP)</div>
+        </div>
+        <div class="header-right">
+          <div><span class="badge badge-survey">&#128221; Market Survey / Budget Planning</span> <span class="badge badge-nosolder">&#9889; Zero-Solder</span></div>
+          <div style="margin-top:2px;"><span class="badge badge-budget">Target Ceiling: &#8377;2,500</span> | Sim-to-Real: <code>vessel_kinetic.xml</code></div>
+        </div>
+      </div>
+
+      <div class="survey-banner">
+        <div>
+          <strong>PURPOSE OF VISIT:</strong> Market price estimation, verifying solderless stock availability, and collecting quotations before purchasing.
+        </div>
+        <div>
+          <strong>Target Area:</strong> Gujarati Galli &amp; Troop Bazaar, Koti
+        </div>
+      </div>
+
+      <div class="survey-script-box">
+        <strong>&#128483; NO-PRESSURE SURVEY SCRIPT (How to ask for prices without feeling obligated to buy):</strong><br>
+        &bull; <em>"Bhaiya, M.Tech/B.Tech robotics project submission ke liye <strong>budget estimate aur rough quotation slip</strong> bana rahe hain. In components ka rate bata sakte ho kya?"</em><br>
+        &bull; <em>"Agar yeh poore 15-20 items ek saath lenge (complete student kit pack), toh total bill pe kitna <strong>package discount</strong> milega?"</em><br>
+        &bull; <em>"Bhaiya, mujhe soldering nahi aati, kya aapke paas yeh saare boards <strong>pre-soldered pins</strong> ke saath milenge, ya counter pe solder karke doge?"</em>
+      </div>
+
+      <!-- SECTION 1: CORE COMPUTE & MOTOR DRIVER -->
+      <div class="section-title">
+        <span>1. Core Controller &amp; Motor Driver (PNS Subsystem)</span>
+        <span class="section-budget">Target Range: &#8377;420 – &#8377;490</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20px;" class="center">#</th>
+            <th style="width: 125px;">Component</th>
+            <th>Solderless Spec &amp; Survey Inquiry</th>
+            <th style="width: 28px;" class="center">Qty</th>
+            <th style="width: 52px;" class="right">Target</th>
+            <th style="width: 55px;" class="center">Shop 1 (&#8377;)</th>
+            <th style="width: 55px;" class="center">Shop 2 (&#8377;)</th>
+            <th style="width: 58px;" class="center">Soldered?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">1</td>
+            <td>
+              <div class="item-name">ESP32 Dev Module</div>
+              <div class="item-spec">ESP-WROOM-32 (30-Pin)</div>
+              <div class="plug-tag">&#10004; Pre-Soldered Pins</div>
+            </td>
+            <td>
+              Dual-core 240MHz, Wi-Fi+BLE, micro-USB port (CP2102/CH340).
+              <div class="survey-tip">&#128065; Ask: "30-pin narrow board hai na (male pins already soldered downward)?"</div>
+              <div class="fallback">Fallback: 38-Pin (₹290) or ESP32-CAM + OV2640 (₹420).</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;300–330</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Yes [ ] No</td>
+          </tr>
+          <tr>
+            <td class="center">2</td>
+            <td>
+              <div class="item-name">Motor Driver Module</div>
+              <div class="item-spec">DRV8833 or L298N Mini</div>
+              <div class="plug-tag">&#10004; Pins / Screw Terminal</div>
+            </td>
+            <td>
+              <strong>Option A:</strong> DRV8833 MOSFET (ask if male header pins are pre-soldered).<br>
+              <strong>Option B:</strong> L298N Mini / Standard L298N (has built-in screw terminals for motor wires).
+              <div class="survey-tip">&#128065; Ask: "Screw terminal wala driver hai kya ya pins soldered hain?"</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;55–80</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Yes [ ] No</td>
+          </tr>
+          <tr>
+            <td class="center">3</td>
+            <td>
+              <div class="item-name">Micro-USB Data Cable</div>
+              <div class="item-spec">4-Wire Sync &amp; Flash Cable</div>
+              <div class="plug-tag">&#10004; Plug &amp; Play USB</div>
+            </td>
+            <td>
+              Connects ESP32 to PC. Must support data transmission for programming.
+              <div class="survey-tip">&#128065; Ask: "Data sync cable hai na (sirf charging wali nahi honi chahiye)?"</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;40–60</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">N/A (Cable)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- SECTION 2: SENSORS & PERCEPTION -->
+      <div class="section-title">
+        <span>2. Spatial Perception &amp; Inertial Sensors (mj_ray &amp; CANN Grounding)</span>
+        <span class="section-budget">Target Range: &#8377;650 – &#8377;740</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20px;" class="center">#</th>
+            <th style="width: 125px;">Component</th>
+            <th>Solderless Spec &amp; Survey Inquiry</th>
+            <th style="width: 28px;" class="center">Qty</th>
+            <th style="width: 52px;" class="right">Target</th>
+            <th style="width: 55px;" class="center">Shop 1 (&#8377;)</th>
+            <th style="width: 55px;" class="center">Shop 2 (&#8377;)</th>
+            <th style="width: 58px;" class="center">Soldered?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">4</td>
+            <td>
+              <div class="item-name">VL53L0X Laser ToF</div>
+              <div class="item-spec">Time-of-Flight Ranging (I2C)</div>
+              <div class="plug-tag">&#10004; Pre-Soldered Pins</div>
+            </td>
+            <td>
+              STMicro 940nm laser (30–2000mm). Physical <code>mj_ray</code>: Front, Left, Right.<br>
+              <div class="survey-tip">&#128065; Ask: "VL53L0X pe pins pehle se soldered hain kya? Per-piece rate kitna hai?"</div>
+              <div class="fallback">Fallback: VL53L1X (₹180/ea) or HC-SR04 Ultrasonic (₹65/ea).</div>
+            </td>
+            <td class="center"><strong>3</strong><br><span style="font-size:6.5pt;color:#64748b;">(4 opt)</span></td>
+            <td class="right">&#8377;450–490<br><span style="font-size:6.5pt;">(~₹150/ea)</span></td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Yes [ ] No</td>
+          </tr>
+          <tr>
+            <td class="center">5</td>
+            <td>
+              <div class="item-name">TCA9548A I2C Mux</div>
+              <div class="item-spec">8-Channel I2C Bus Switch</div>
+              <div class="plug-tag">&#10004; Pre-Soldered Pins</div>
+            </td>
+            <td>
+              Connects multiple VL53L0X sensors sharing address <code>0x29</code>.
+              <div class="survey-tip">&#128065; Ask: "TCA9548A board with soldered header pins available hai?"</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;75–90</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Yes [ ] No</td>
+          </tr>
+          <tr>
+            <td class="center">6</td>
+            <td>
+              <div class="item-name">GY-521 MPU-6050 IMU</div>
+              <div class="item-spec">6-DOF Accel + Gyroscope</div>
+              <div class="plug-tag">&#10004; Pre-Soldered Pins</div>
+            </td>
+            <td>
+              Measures yaw rate &amp; linear slip acceleration. Direct I2C socket link.
+              <div class="survey-tip">&#128065; Ask: "GY-521 module blue color board with header pins rate kya hai?"</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;120–140</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Yes [ ] No</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ON THE SPOT SOLDERING INQUIRY CARD -->
+      <div class="card" style="margin-top:4px;">
+        <h3>&#128295; Counter Soldering Service Inquiry (If boards have loose pins)</h3>
+        Ask the counter in-charge or technician: <em>"Bhaiya, agar yeh 5 boards (ESP32, 3x ToF, Mux, IMU) ke loose pins yahi counter pe solder karwa ke lenge, toh kitna service charge loge?"</em> (Standard market charge in Gujarati Galli is <strong>&#8377;10 – &#8377;20 total</strong> for all boards).
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Page 1 of 3 &bull; CARL-DX Koti Budget Survey &amp; Price Comparison Worksheet &bull; Gujarati Galli &amp; Troop Bazaar, Hyderabad
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 2 ==================== -->
+  <div class="page-container">
+    <div>
+      <div class="header">
+        <div class="header-left">
+          <h1>CARL-DX — Power, Chassis &amp; Solderless Connectors</h1>
+          <div class="subtitle">PRICE SURVEY &amp; STOCK INQUIRY FOR HARDWARE, BATTERY &amp; WIRING</div>
+        </div>
+        <div class="header-right">
+          <div><span class="badge badge-survey">Page 2 Survey</span> <span class="badge badge-nosolder">Screw &amp; Spring Clamps</span></div>
+          <div style="margin-top:2px;">Target Subtotal: &#8377;850 – &#8377;1,020</div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: POWER SYSTEM -->
+      <div class="section-title">
+        <span>3. Autonomous Power &amp; Solderless Voltage Regulation</span>
+        <span class="section-budget">Target Range: &#8377;360 – &#8377;420</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20px;" class="center">#</th>
+            <th style="width: 125px;">Component</th>
+            <th>Solderless Spec &amp; Survey Inquiry</th>
+            <th style="width: 28px;" class="center">Qty</th>
+            <th style="width: 52px;" class="right">Target</th>
+            <th style="width: 55px;" class="center">Shop 1 (&#8377;)</th>
+            <th style="width: 55px;" class="center">Shop 2 (&#8377;)</th>
+            <th style="width: 58px;" class="center">Stock Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">7</td>
+            <td>
+              <div class="item-name">18650 Li-ion Cells</div>
+              <div class="item-spec">3.7V Rechargeable (2000–2600mAh)</div>
+              <div class="plug-tag">&#10004; Standard Snap-in</div>
+            </td>
+            <td>
+              Two cells in series = 7.4V nominal. Snaps into holder with zero tools.
+              <div class="survey-tip">&#128065; Ask: "Original 2000-2600mAh brand kaunsa hai? Multimeter pe voltage check karoge?"</div>
+              <div class="fallback">Note: Reject suspiciously cheap cells claiming "9900mAh" or weighing &lt;35g!</div>
+            </td>
+            <td class="center"><strong>2</strong></td>
+            <td class="right">&#8377;180–220<br><span style="font-size:6.5pt;">(~₹100/ea)</span></td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">Brand: _____</td>
+          </tr>
+          <tr>
+            <td class="center">8</td>
+            <td>
+              <div class="item-name">2S 18650 Battery Case</div>
+              <div class="item-spec">Dual Series Box with Leads</div>
+              <div class="plug-tag">&#10004; Wire Leads</div>
+            </td>
+            <td>
+              Holds two 18650 cells in series (7.4V).
+              <div class="survey-tip">&#128065; Ask: "2S dual battery holder with thick wire leads hai kya?"</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;30–45</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] With Leads</td>
+          </tr>
+          <tr>
+            <td class="center">9</td>
+            <td>
+              <div class="item-name">LM2596 Buck Module</div>
+              <div class="item-spec">Step-Down with Screw Terminals</div>
+              <div class="plug-tag">&#10004; Screw Clamp Blocks</div>
+            </td>
+            <td>
+              Steps 7.4V battery down to clean 5.0V for ESP32 VIN.
+              <div class="survey-tip">&#128065; Ask: "LM2596 buck screw terminal block wala hai kya (jisme wires screw se tight hoti hain)?"</div>
+              <div class="fallback">Fallback: Mini360 Buck (ask: "pins solder karke doge?").</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;50–65</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Screw [ ] Pin</td>
+          </tr>
+          <tr>
+            <td class="center">10</td>
+            <td>
+              <div class="item-name">CH-2 Quick Connectors</div>
+              <div class="item-spec">Spring-Lever 2-Pin Blocks</div>
+              <div class="plug-tag">&#10004; Press-to-Clamp</div>
+            </td>
+            <td>
+              WAGO-style toolless wire connectors. Finger press &rarr; insert wire &rarr; release clamp!
+              <div class="survey-tip">&#128065; Ask: "CH-2 ya press-type 2-pin terminal block connectors milenge?"</div>
+            </td>
+            <td class="center"><strong>4 pcs</strong></td>
+            <td class="right">&#8377;20–30<br><span style="font-size:6.5pt;">(~₹5/ea)</span></td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Available</td>
+          </tr>
+          <tr>
+            <td class="center">11</td>
+            <td>
+              <div class="item-name">2S 8.4V Li-ion Charger</div>
+              <div class="item-spec">Wall Adapter or TP5100 Module</div>
+              <div class="plug-tag">&#10004; Plug-in DC Jack</div>
+            </td>
+            <td>
+              Recharges 7.4V pack safely. Ask rate for 8.4V 1A DC adapter vs TP5100 module.
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;60–90</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Adapter [ ] Mod</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- SECTION 4: CHASSIS & LOCOMOTION -->
+      <div class="section-title">
+        <span>4. Mobile Chassis &amp; Locomotion Hardware</span>
+        <span class="section-budget">Target Range: &#8377;350 – &#8377;420</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20px;" class="center">#</th>
+            <th style="width: 125px;">Component</th>
+            <th>Solderless Spec &amp; Survey Inquiry</th>
+            <th style="width: 28px;" class="center">Qty</th>
+            <th style="width: 52px;" class="right">Target</th>
+            <th style="width: 55px;" class="center">Shop 1 (&#8377;)</th>
+            <th style="width: 55px;" class="center">Shop 2 (&#8377;)</th>
+            <th style="width: 58px;" class="center">Stock Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">12</td>
+            <td>
+              <div class="item-name">2WD Smart Chassis Kit</div>
+              <div class="item-spec">Acrylic Deck + 2 BO Motors + Wheels</div>
+              <div class="plug-tag">&#10004; Bolt-together Assembly</div>
+            </td>
+            <td>
+              Acrylic plate, 2x 1:48 yellow BO motors, 2x rubber wheels (66mm), caster, screws.
+              <div class="survey-tip">&#128065; Ask: "Motors pe lead wires pehle se lage hain ya alag se solder karwa ke doge?"</div>
+            </td>
+            <td class="center"><strong>1 kit</strong></td>
+            <td class="right">&#8377;260–300</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Wires on [ ] Bare</td>
+          </tr>
+          <tr>
+            <td class="center">13</td>
+            <td>
+              <div class="item-name">CY-15A Metal Ball Caster</div>
+              <div class="item-spec">Cushioned Caster / Omni Ball Unit</div>
+              <div class="plug-tag">&#10004; Screw Mount</div>
+            </td>
+            <td>
+              Metal ball transfer unit to eliminate chassis pitch teeter-totter wobble.
+              <div class="survey-tip">&#128065; Ask: "CY-15A ball caster ya standard metal ball caster hai kya?"</div>
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;50–75</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Available</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- SECTION 5: SOLDERLESS INTERCONNECTS -->
+      <div class="section-title">
+        <span>5. Solderless Interconnects, Breadboard &amp; Tools</span>
+        <span class="section-budget">Target Range: &#8377;140 – &#8377;180</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20px;" class="center">#</th>
+            <th style="width: 125px;">Component</th>
+            <th>Solderless Spec &amp; Survey Inquiry</th>
+            <th style="width: 28px;" class="center">Qty</th>
+            <th style="width: 52px;" class="right">Target</th>
+            <th style="width: 55px;" class="center">Shop 1 (&#8377;)</th>
+            <th style="width: 55px;" class="center">Shop 2 (&#8377;)</th>
+            <th style="width: 58px;" class="center">Stock Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">14</td>
+            <td>
+              <div class="item-name">Dupont Jumper Wires</div>
+              <div class="item-spec">40-Pin Ribbon Wires (20cm)</div>
+              <div class="plug-tag">&#10004; Pin &amp; Socket Jumpers</div>
+            </td>
+            <td>
+              Need 3 packs: <strong>1x F-F</strong> (sensors to mux), <strong>1x M-F</strong> (boards to breadboard), <strong>1x M-M</strong> (rails).
+              <div class="survey-tip">&#128065; Ask: "Teeno types (F-F, M-F, M-M) ke 40-wire packets ka bundle rate kya hai?"</div>
+            </td>
+            <td class="center"><strong>3 packs</strong></td>
+            <td class="right">&#8377;90–110<br><span style="font-size:6.5pt;">(~₹35/pkt)</span></td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] All 3 types</td>
+          </tr>
+          <tr>
+            <td class="center">15</td>
+            <td>
+              <div class="item-name">400-Point Breadboard</div>
+              <div class="item-spec">Half-Size Solderless Breadboard</div>
+              <div class="plug-tag">&#10004; 100% Solderless Push-fit</div>
+            </td>
+            <td>
+              Self-adhesive back mounts directly on robot deck for 3.3V/GND socket rails.
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;45–60</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Available</td>
+          </tr>
+          <tr>
+            <td class="center">16</td>
+            <td>
+              <div class="item-name">Mini Screwdriver</div>
+              <div class="item-spec">Dual Flathead / Phillips (2mm)</div>
+              <div class="plug-tag">&#10004; For Screw Terminals</div>
+            </td>
+            <td>
+              Tightens screw terminals on LM2596 buck converter and M3 chassis bolts.
+            </td>
+            <td class="center"><strong>1</strong></td>
+            <td class="right">&#8377;15–25</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.8pt;">[ ] Available</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- TOTAL QUOTATION COMPARISON ROW -->
+      <table>
+        <tr class="total-row">
+          <td colspan="4" style="font-size:8.5pt;">TOTAL ESTIMATED OUT-OF-POCKET EXPENSE (16 ITEMS)</td>
+          <td class="right" style="font-size:8.8pt;color:#1e3a8a;">&#8377;1,920–2,250</td>
+          <td class="center" style="font-size:8.5pt;font-weight:700;">&#8377; ________</td>
+          <td class="center" style="font-size:8.5pt;font-weight:700;">&#8377; ________</td>
+          <td class="center" style="font-size:7pt;color:#166534;font-weight:700;">&le; &#8377;2,500 Goal</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="footer-note">
+      Page 2 of 3 &bull; CARL-DX Koti Budget Survey &amp; Price Comparison Worksheet &bull; JNTUH IDP EBCA
+    </div>
+  </div>
+
+  <!-- ==================== PAGE 3 ==================== -->
+  <div class="page-container">
+    <div>
+      <div class="header">
+        <div class="header-left">
+          <h1>CARL-DX — Market Survey Guide &amp; Budget Tiers</h1>
+          <div class="subtitle">SHOP DIRECTORY, ESTIMATION SLIPS &amp; 3 FORMAL BUDGET TIERS</div>
+        </div>
+        <div class="header-right">
+          <div><span class="badge badge-survey">&#128205; Page 3 Planning Guide</span></div>
+          <div style="margin-top:2px;"><span class="badge badge-budget">3 Budget Tiers Defined</span></div>
+        </div>
+      </div>
+
+      <div class="grid-2col">
+        <!-- SHOP DIRECTORY -->
+        <div class="card">
+          <h3>&#128205; Koti Component Shops to Visit for Quotes</h3>
+          <ul>
+            <li><strong>Gujarati Galli (Main electronics lane):</strong>
+              <ul>
+                <li><strong>Universal Electronics / Universal Components:</strong> Best for ESP32, ToF sensors, and pre-soldered module breakouts. Ask for Mr. Ramesh/counter manager.</li>
+                <li><strong>Sagar Electronics / Sagar Components:</strong> Excellent competitive pricing on sensors, buck converters, and multiplexers.</li>
+                <li><strong>Metro Electronics / Shweta Electronics:</strong> Great for 18650 cells, battery cases, chargers, breadboards, and jumper ribbons.</li>
+              </ul>
+            </li>
+            <li><strong>Troop Bazaar (Hardware &amp; Motors):</strong>
+              <ul>
+                <li><strong>Vishal Electronics &amp; Pioneer Electronics:</strong> Best for 2WD chassis kits, BO gearmotors, rubber wheels, casters, brass spacers &amp; screws.</li>
+              </ul>
+            </li>
+            <li><strong>How to Walk the Market:</strong> Start at Gujarati Galli (Bank Street entrance) &rarr; survey electronics/sensors &rarr; walk through to Troop Bazaar for chassis &amp; motors.</li>
+          </ul>
+        </div>
+
+        <!-- HOW TO GET A ROUGH ESTIMATE SLIP -->
+        <div class="card">
+          <h3>&#128221; How to Request an "Estimation Slip"</h3>
+          <ul>
+            <li><strong>College Requirement Pretext:</strong> Always say: <em>"Bhaiya, guide/college approval ke liye quotation estimate chahiye, sanction aane pe poora set yahi se khareedenge."</em></li>
+            <li><strong>They Will Write it on a Memo:</strong> Most shops will write down individual rates on their small printed rough memo slip with their shop stamp/visiting card!</li>
+            <li><strong>Collect Visiting Cards:</strong> Take the shop's visiting card and staple/attach their rough estimate slip so you can compare prices at home tonight.</li>
+            <li><strong>Ask About Package Discount:</strong> Always ask: <em>"Agar 16 items ka complete package lein, toh kitna kam karoge?"</em> (Usually 5% to 10% lower than individual items).</li>
+            <li><strong>Take Multimeter for Reference:</strong> If you have a small multimeter, keep it in your bag to verify batteries when you return to buy.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3 BUDGET TIERS SPECIFICATION -->
+      <div class="section-title" style="margin-top:3px;">
+        <span>CARL Physical Embodiment — 3 Formal Budget Tiers</span>
+        <span class="section-budget">Dissertation Budget Scenarios</span>
+      </div>
+
+      <div class="grid-2col" style="margin-top:2px;">
+        <!-- TIER A -->
+        <div class="tier-box">
+          <div class="tier-title">
+            <span>Tier A: Bare-Bones Minimal Frugal</span>
+            <span style="color:#166534;">Est: &#8377;1,850 – &#8377;2,050</span>
+          </div>
+          <div style="font-size:7.2pt;color:#475569;margin-bottom:3px;">
+            Core differential drive + 2x ToF sensors (Front &amp; Flank) + ESP32 + 18650 pack + Drag caster.
+          </div>
+          <ul style="margin:0;padding-left:12px;font-size:7pt;color:#334155;">
+            <li>Sufficient for Stage 1 Body Babbling &amp; Stage 2 2D raster memory exploration.</li>
+            <li>Eliminates I2C multiplexer (uses direct GPIO XSHUT pins for ToF addressing).</li>
+            <li>Standard plastic drag caster included in ₹280 chassis kit.</li>
+          </ul>
+        </div>
+
+        <!-- TIER B -->
+        <div class="tier-box">
+          <div class="tier-title">
+            <span>Tier B: Recommended Complete Solderless</span>
+            <span style="color:#1e3a8a;">Est: &#8377;2,150 – &#8377;2,400</span>
+          </div>
+          <div style="font-size:7.2pt;color:#475569;margin-bottom:3px;">
+            Full 3x ToF array (0&deg;, &plusmn;90&deg;) + TCA9548A mux + MPU-6050 + CY-15A suspension caster + CH-2 lever blocks.
+          </div>
+          <ul style="margin:0;padding-left:12px;font-size:7pt;color:#334155;">
+            <li>1:1 exact mathematical match with <code>vessel_kinetic.xml</code> in MuJoCo!</li>
+            <li>100% solderless plug-and-play assembly (spring clamps + Dupont).</li>
+            <li>Smooth caster suspension eliminates drive wheel lift-off &amp; pitch wobble.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TIER C OPTIONAL ADD-ONS TABLE -->
+      <div class="section-title" style="margin-top:4px;">
+        <span>Tier C: Optional Active Vision &amp; Telemetry Upgrades (Stage 3.7 Add-Ons)</span>
+        <span class="section-budget">Optional Add: ~&#8377;250 – &#8377;550</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 20px;" class="center">#</th>
+            <th style="width: 130px;">Component</th>
+            <th>Plug-and-Play Role / Specification</th>
+            <th style="width: 28px;" class="center">Qty</th>
+            <th style="width: 52px;" class="right">Target</th>
+            <th style="width: 55px;" class="center">Shop 1 (&#8377;)</th>
+            <th style="width: 55px;" class="center">Shop 2 (&#8377;)</th>
+            <th style="width: 58px;" class="center">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">17</td>
+            <td>
+              <div class="item-name">ESP32-CAM + OV2640</div>
+              <div class="item-spec">Camera Dev Board</div>
+            </td>
+            <td>Adds 64x64 retinal vision stream for Stage 3.7 gaze. Ribbon camera snaps into connector.</td>
+            <td class="center">1</td>
+            <td class="right">&#8377;380–450</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">Vision stream</td>
+          </tr>
+          <tr>
+            <td class="center">18</td>
+            <td>
+              <div class="item-name">INA219 Current Sensor</div>
+              <div class="item-spec">I2C Power Monitor</div>
+            </td>
+            <td>Pre-soldered screw terminals! Measures real-time motor load for <code>carl_fatigue.py</code>.</td>
+            <td class="center">1</td>
+            <td class="right">&#8377;110–130</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">Torque/Load</td>
+          </tr>
+          <tr>
+            <td class="center">19</td>
+            <td>
+              <div class="item-name">SG90 Micro Servo (9g)</div>
+              <div class="item-spec">Pan Actuator (3-pin plug)</div>
+            </td>
+            <td>Standard 3-pin servo plug. Controls active pan head gaze (&plusmn;0.85 rad). Zero solder.</td>
+            <td class="center">1</td>
+            <td class="right">&#8377;70–85</td>
+            <td><div class="write-in-box"></div></td>
+            <td><div class="write-in-box"></div></td>
+            <td class="center" style="font-size:6.5pt;">Pan gaze</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- NOTES BOX -->
+      <div class="card" style="margin-top:3px;padding:4px 6px;">
+        <strong>&#128221; Market Survey Notes &amp; Shop Visiting Cards:</strong>
+        <div style="border-bottom: 1px dashed #cbd5e1; height: 16px; margin-top:2px;"></div>
+        <div style="border-bottom: 1px dashed #cbd5e1; height: 16px; margin-top:2px;"></div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Page 3 of 3 &bull; CARL-DX Koti Budget Survey &amp; Price Comparison Worksheet &bull; JNTUH IDP EBCA Dissertation Planning
+    </div>
+  </div>
+
+</body>
+</html>

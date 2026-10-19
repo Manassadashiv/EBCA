@@ -43,6 +43,7 @@ COGNITIVE_DECISION_PIPELINE_FILES = [
     REPO_ROOT / "brain" / "carl_physarum.py",
     REPO_ROOT / "brain" / "carl_motor_synergies.py",
     REPO_ROOT / "brain" / "carl_vision.py",
+    REPO_ROOT / "brain" / "carl_stdp.py",
 ]
 
 # 2. Frozen Stage 3 Cognitive Baseline Hashes (Full 14-File Decision Pipeline Locked)

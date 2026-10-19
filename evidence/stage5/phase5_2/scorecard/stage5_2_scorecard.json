@@ -1,0 +1,87 @@
+{
+  "milestone": "STAGE_5_PHASE_5_2",
+  "timestamp": "2026-10-18 23:57:23",
+  "gates": {
+    "gate1_hdc_contrast_margin": {
+      "status": "PASS",
+      "threshold": "Mean Delta cos >= 0.12, Min Delta cos >= 0.10",
+      "overall_mean_margin": 0.5388,
+      "min_margin": 0.2351,
+      "per_mode_mean_similarity": {
+        "SLIP": 0.9433,
+        "OCCLUSION": 0.8366,
+        "DEADEND": 0.864,
+        "HABIT_MISFIRE": 0.8422
+      },
+      "per_mode_mean_margin": {
+        "SLIP": 1.1989,
+        "OCCLUSION": 0.324,
+        "DEADEND": 0.351,
+        "HABIT_MISFIRE": 0.2811
+      }
+    },
+    "gate2_attribution_accuracy": {
+      "status": "PASS",
+      "threshold": "Overall Acc >= 95.0%, Per-Class Acc >= 90.0%",
+      "overall_accuracy": 100.0,
+      "per_class_accuracy": {
+        "SLIP": 100.0,
+        "OCCLUSION": 100.0,
+        "DEADEND": 100.0,
+        "HABIT_MISFIRE": 100.0
+      },
+      "confusion_matrix": [
+        [
+          50,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          50,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          50,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          50
+        ]
+      ]
+    },
+    "gate3_pearl_causal_dag": {
+      "status": "PASS",
+      "threshold": "100.0% Wall Contact Veto of Naive Slip Attribution",
+      "override_success_rate": 100.0,
+      "mean_attribution_confidence": 0.92
+    },
+    "gate4_drosophila_steering": {
+      "status": "PASS",
+      "threshold": "PFL3 Tracking r > 0.98, PFL2 Forward Suppression <= 0.25, Latency < 0.05 ms",
+      "pfl3_tracking_correlation": 1.0,
+      "pfl2_max_forward_drive": 0.2425,
+      "pfl2_min_pivot_diff": 0.75,
+      "mean_latency_ms": 0.00407,
+      "p95_latency_ms": 0.00491
+    },
+    "gate5_anti_cheat_quarantine": {
+      "status": "PASS",
+      "threshold": "0 simulator coordinate leaks in decision loop",
+      "files_scanned": [
+        "carl_witness.py",
+        "carl_autonomous_agent.py",
+        "run_stage5_2_complete_battery.py"
+      ],
+      "violations_found": []
+    }
+  },
+  "overall_status": "CERTIFIED_PASS"
+}
